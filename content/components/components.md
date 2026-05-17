@@ -1,0 +1,13 @@
+# TXN — Components
+
+> **Vision:** [[vision]]
+
+## Overview
+
+_Components will be identified during vision extraction and component deep-dive sessions._
+
+## Components
+
+| Component | What it does | Status | Link |
+|-----------|-------------|--------|------|
+| | | | |
