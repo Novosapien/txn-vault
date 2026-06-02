@@ -16,7 +16,7 @@ ___
 |----------|------------|--------|
 | [[vision]] | Product vision — what we're building and why | Draft complete (all 8 §§); per-section gaps inline |
 | [[architecture]] | Cross-cutting technical decisions — tech stack, infrastructure, integrations | Integrations collecting (build-partner stack) |
-| [[components]] | Component map — Novosapien's deliverables within the TXN product | 8 components mapped; agentic experience (Co-pilot, Inbox, Full Agentic, A2A, Developer Support, Agent Access Layer) all in definition |
+| [[components]] | Component map — Novosapien's deliverables within the TXN product | 8 components mapped; Agent Access Layer **defined** (5 sub-components, buildable depth); rest of the agentic experience in definition |
 
 ## External Resources
 
@@ -32,6 +32,7 @@ _Updated as work progresses. Most recent first._
 
 | Date | What happened |
 |------|--------------|
+| 2026-06-02 | [[agent-access-layer]] taken to buildable depth — 5 sub-components with entity journeys + acceptance criteria: [[mcp-server]], [[permission-scoping]], [[approval-queue-integration]], [[audit-attribution]] (new 5th), [[tool-catalogue]] (gated on full API docs). Component now **Defined**. |
 | 2026-06-02 | Full agentic-experience scope captured across Console, Developer Portal, and A2A (phasing deliberately excluded). New component docs: [[co-pilot]], [[agent-inbox-alerts]], [[developer-support]], [[a2a-endpoint]] (promoted from a sub-component); [[full-agentic-experience]] and [[agent-access-layer]] enriched. Sources: [[01-06-2026-component-1-Agent-Access-Layer]], [[02-06-2026-component-2-alerts-agent-inbox]]. Map now 8 components. |
 | 2026-06-02 | Digested [[29-05-2026-stackworkz-meeting]]: build partners named — **Stackworkz** (Console + Dev Portal), **Super Ultra** (design), **Direct Transact** (Core API + Data Lake). Stack/infra captured in [[integrations]]; MCP-ownership split logged on [[agent-access-layer]]. Timeline: **Dev Portal + API target October**, Console a fast-follow. |
 | 2026-06-01 | Component map re-scoped 6 → 7 along the trust-concept spine ([[components]]); Agent Access Layer deep-dive started. Transaction primer added to [[vision]] §1. |

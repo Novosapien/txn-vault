@@ -473,6 +473,6 @@ _Components are identified during vision extraction (visible in the §1 narrativ
 | Full Agentic Experience | Agent-as-interface (C2→C3) — do-anything, renders UI in real time | Defining | [[full-agentic-experience]] |
 | A2A Endpoint | Agent-to-agent door for clients' own agents — represented-user scope, prompted-trust + approval + audit | Defining | [[a2a-endpoint]] |
 | Developer Support | Portal/docs chatbot, scoped Q&A, defensive triage, feedback routing; MCP/LLMS.txt machine layer | Defining | [[developer-support]] |
-| Agent Access Layer | Foundational tool surface every agent calls, permission-scoped; Core API wrapped as MCP tools | Defining | [[agent-access-layer]] |
+| Agent Access Layer | Foundational tool surface every agent calls, permission-scoped; Core API wrapped as MCP tools | Defined | [[agent-access-layer]] |
 | Fraud & Risk Assist | Real-time enrichment of the approve/decline pass-through + rules engine; advise, don't decide | Collecting | [[fraud-risk-assist]] |
 | Internal Ops Agents | Run TXN agentically — release pipeline, Documentation Engine, ticket routing, process automation | Collecting | [[internal-ops-agents]] |

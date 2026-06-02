@@ -1,6 +1,6 @@
 ---
 component: "[[components]]"
-status: Defining
+status: Defined
 sources:
   - "[[13-05-2026-txn-vision-meeting]]"
   - "[[01-06-2026-component-1-Agent-Access-Layer]]"
@@ -42,12 +42,13 @@ If the Agent Access Layer is wrong, every agent is wrong. That is why it is the 
 
 ## Sub-components
 
-| Sub-component | What it does | Status |
-|---------------|-------------|--------|
-| Tool catalogue | Maps Core API endpoints into agent-callable tools with business-language descriptions | Collecting |
-| Permission & authorization scoping | Mirrors the Console's granular permission model so an agent can only do what its user can | Collecting |
-| MCP server | The Model Context Protocol server exposing the tools to internal and external agents | Collecting |
-| Approval-queue integration | Routes sign-off-required actions through the Console's existing multi-user approval flow | Collecting |
+| Sub-component | What it does | Status | Link |
+|---------------|-------------|--------|------|
+| MCP server (validation & execution) | Single monolith MCP server; per-turn tool gating, server-side validation, Core API execution with self-correcting errors | Defined | [[mcp-server]] |
+| Permission & authorization scoping | Resolves identity and computes the per-turn exposed tool set; mirrors the Console's granular permission model | Defined | [[permission-scoping]] |
+| Approval-queue integration | Prompted-trust + two-person approval for product/multi-card changes; privileged single-card actions execute directly | Defined | [[approval-queue-integration]] |
+| Audit & attribution | Combined console + API + chat trail that makes "prompted trust" provable; dispute reconstruction | Defined | [[audit-attribution]] |
+| Tool catalogue | Business-language tools mapped from the Core API endpoints; exact list gated on full API docs | Collecting | [[tool-catalogue]] |
 
 ## Dependencies — what we need from TXN
 

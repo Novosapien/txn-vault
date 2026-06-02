@@ -26,7 +26,7 @@ Components were first surfaced in the [[13-05-2026-txn-vision-meeting|vision mee
 | Full Agentic Experience | *Client-facing, C2→C3.* The agent is the interface — do-anything, renders UI in real time, acts on approval. | Defining | [[full-agentic-experience]] |
 | A2A Endpoint | *Agent surface.* The inbound door for a client's own agents to act on TXN, scoped to the represented user; prompted-trust + approval + audit still apply. | Defining | [[a2a-endpoint]] |
 | Developer Support | Portal + docs chatbot, scoped Q&A, defensive triage layers, feedback routing (bug / enhancement / support); machine layer (MCP / LLMS.txt) for devs' own agents. | Defining | [[developer-support]] |
-| Agent Access Layer | *Foundational.* The tool surface every agent calls, scoped to the acting user's Console permissions. Wraps the Core API as agent-callable tools; exposed via MCP. | Defining | [[agent-access-layer]] |
+| Agent Access Layer | *Foundational.* The tool surface every agent calls, scoped to the acting user's Console permissions. Wraps the Core API as agent-callable tools; exposed via MCP. | Defined | [[agent-access-layer]] |
 | Fraud & Risk Assist | *Payment stream.* Real-time enrichment of the approve/decline pass-through, plus a rules engine and rule recommendations. Advise, don't decide. Data-dependent (later phase). | Collecting | [[fraud-risk-assist]] |
 | Internal Ops Agents | *Internal.* Run TXN agentically — release pipeline, Documentation Engine (auto change-logs, self-healing), ticket routing, process automation. | Collecting | [[internal-ops-agents]] |
 
