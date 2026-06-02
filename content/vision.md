@@ -4,7 +4,7 @@
 > **Date:** 2026-05-13
 > **Status:** Draft
 > **Owner:** Ian Johnson (TXN)
-> **Sources:** [[13-05-2026-txn-vision-meeting]]
+> **Sources:** [[13-05-2026-txn-vision-meeting]], [[29-05-2026-stackworkz-meeting]] (partner landscape)
 
 ---
 
@@ -121,10 +121,10 @@ graph LR
 - ✅ The agentic AI layer rendered inside the Console and Developer Portal (co-pilot, alerts, agent inbox, scoped chatbot)
 - ✅ The MCP server and A2A endpoint that expose TXN's capabilities to external agents
 - ✅ Internal-operations agents (release-note generation, support triage, doc self-healing, simulation testing)
-- ❌ **The Core API itself** — built by TXN's own dev team. *Novosapien works from existing Core API documentation.*
-- ❌ **The TXN Console frontend / backend** — built by TXN's console build team. *Novosapien works from existing console design prototype documentation (third-party designer).*
-- ❌ **The Developer Portal site / CMS (Umbraco)** — built by a third-party portal team. *Novosapien works from existing developer portal site documentation.*
-- ❌ **The Data Lake** — built by **DT (TXN's internal dev partner)**.
+- ❌ **The Core API / card-system backend** — built by **Direct Transact (DT)**, TXN's internal dev partner. This is the same API TXN's clients call directly (not only via the Console). *Novosapien works from existing Core API documentation.*
+- ❌ **The TXN Console (frontend + back-end-for-frontend)** — built by **Stackworkz**; frontend design by **Super Ultra**. The BFF talks to the Core API over API only, and **permissions + user management live in Stackworkz's BFF, not the Core API**. *Novosapien works from existing console design prototype documentation.*
+- ❌ **The Developer Portal (site + Umbraco headless CMS)** — built by **Stackworkz**. *Novosapien works from existing developer portal site documentation.*
+- ❌ **The Data Lake** — built by **Direct Transact (DT)**.
 - 🤝 **Influence on the above** where the AI layer integrates: API shapes, console component instrumentation, portal AI plug-in points, data lake schema/tables for AI consumption.
 
 ---
@@ -468,10 +468,11 @@ _Components are identified during vision extraction (visible in the §1 narrativ
 
 | Component | Overview | Status | Link |
 |-----------|----------|--------|------|
-| Co-pilot | Reactive in-console assistant (C1) — Q&A, inline recommendations, impact preview, guided onboarding | Collecting | [[co-pilot]] |
-| Agent Inbox & Alerts | Proactive lane (C1→C2) — event analysis surfaced as actionable alerts and investigated, approvable plans | Collecting | [[agent-inbox-alerts]] |
-| Full Agentic Experience | Agent-as-interface (C2→C3) — do-anything, renders UI in real time, A2A external access | Collecting | [[full-agentic-experience]] |
-| Developer Support | Portal/docs chatbot, scoped Q&A, defensive triage, feedback routing | Collecting | [[developer-support]] |
-| Agent Access Layer | Foundational tool surface every agent calls, permission-scoped; Core API wrapped as MCP tools | Defining | [[agent-access-layer]] |
+| Co-pilot | Reactive in-console assistant (C1) — Q&A, inline recommendations, impact preview, guided onboarding | Defining | [[co-pilot]] |
+| Agent Inbox & Alerts | Proactive lane (C1→C2) — event analysis surfaced as actionable alerts and investigated, approvable plans | Defined | [[agent-inbox-alerts]] |
+| Full Agentic Experience | Agent-as-interface (C2→C3) — do-anything, renders UI in real time | Defining | [[full-agentic-experience]] |
+| A2A Endpoint | Agent-to-agent door for clients' own agents — represented-user scope, prompted-trust + approval + audit | Defining | [[a2a-endpoint]] |
+| Developer Support | Portal/docs chatbot, scoped Q&A, defensive triage, feedback routing; MCP/LLMS.txt machine layer | Defining | [[developer-support]] |
+| Agent Access Layer | Foundational tool surface every agent calls, permission-scoped; Core API wrapped as MCP tools | Defined | [[agent-access-layer]] |
 | Fraud & Risk Assist | Real-time enrichment of the approve/decline pass-through + rules engine; advise, don't decide | Collecting | [[fraud-risk-assist]] |
 | Internal Ops Agents | Run TXN agentically — release pipeline, Documentation Engine, ticket routing, process automation | Collecting | [[internal-ops-agents]] |
