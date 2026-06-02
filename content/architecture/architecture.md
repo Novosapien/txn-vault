@@ -8,7 +8,7 @@ Cross-cutting technical decisions that affect the whole product. This directory 
 
 | Section | What it covers | Status | Link |
 |---------|---------------|--------|------|
-| Integrations | Third-party services, APIs, data feeds | Not started | [[integrations]] |
+| Integrations | Third-party services, APIs, data feeds, build-partner environments | Collecting | [[integrations]] |
 
 ## Open Questions
 

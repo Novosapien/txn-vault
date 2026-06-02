@@ -48,7 +48,7 @@ These are part of the TXN product but built by other partners. They appear here 
 
 | Component | Built by | Reference material |
 |-----------|---------|--------------------|
-| Core API | TXN dev team | Core API documentation (from TXN) |
-| TXN Console (frontend + backend) | TXN console build team (frontend designed by third-party) | Console design prototype documentation |
-| Developer Portal (site + Umbraco CMS) | Third-party portal team | Developer portal site documentation |
-| Data Lake | DT (TXN's internal dev partner) | _(schema input from Novosapien for AI consumption)_ |
+| Core API / card-system backend | **Direct Transact (DT)** — TXN's internal dev partner | Core API documentation (from TXN) |
+| TXN Console (frontend + back-end-for-frontend) | **Stackworkz** (frontend design by **Super Ultra**) | Console design prototype documentation |
+| Developer Portal (site + Umbraco headless CMS) | **Stackworkz** | Developer portal site documentation |
+| Data Lake | **Direct Transact (DT)** | _(schema input from Novosapien for AI consumption)_ |

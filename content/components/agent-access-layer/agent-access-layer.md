@@ -3,6 +3,7 @@ component: "[[components]]"
 status: Defining
 sources:
   - "[[13-05-2026-txn-vision-meeting]]"
+  - "[[29-05-2026-stackworkz-meeting]]"
 ---
 
 # Agent Access Layer
@@ -53,12 +54,16 @@ This component cannot be fully specced without:
 
 - **Core API documentation + YAML spec** — the source for the tool catalogue
 - **API stability + breaking-change / versioning policy** — when is it stable enough to build tools against, and how are breaking changes managed?
-- **The Console's granular permission model** (from the console build team) — to mirror role → tool-permission mapping
-- **Approval-queue mechanics** (from the console build team) — so AI-initiated actions route correctly
+- **The Console's granular permission model** (from **Stackworkz** — it lives in their back-end-for-frontend, not the Core API) — to mirror role → tool-permission mapping
+- **Approval-queue mechanics** (from **Stackworkz**) — so AI-initiated actions route correctly
 - **Data-lake schema** (from DT) — what the tools can read for grounding
 
 ## Open questions — raise with TXN
 
+- **MCP-server ownership split** (from [[29-05-2026-stackworkz-meeting]]) — two distinct MCP servers are in play with different likely owners:
+  - a **docs / dev-portal MCP** (consumes documentation, `LLMS.txt`) that **Stackworkz wants to own**, "regardless of scope" — this may *remove* surface area from Novosapien here;
+  - a **card-acquiring-API MCP** (exposes/executes against the production Core API) whose ownership is **unresolved** — possibly Direct Transact (DT).
+  Resolve who builds which, and avoid building duplicate MCP servers that do the same thing (one reusable server should serve internal + external agents).
 - **One layer or two?** Do TXN's own agents call the same MCP server, or call the Core API tools directly, with MCP only for external consumers?
 - **Who owns the role → tool-permission mapping?** (Dorte's question in the vision call — aligning our model with theirs.)
 - **Permission source of truth** — does the layer read live Console permissions per call, or hold its own copy?
@@ -72,3 +77,4 @@ _Pending sub-component deep-dives. To be defined per sub-component (tool-catalog
 ## Sources
 
 - [[13-05-2026-txn-vision-meeting]] — MCP / permission-scoping discussion (~00:57–01:06); approval-queue (~01:35–01:37)
+- [[29-05-2026-stackworkz-meeting]] — MCP-server ownership split (~00:13–00:16); permissions live in Stackworkz BFF (~00:10)

@@ -4,7 +4,7 @@
 > **Date:** 2026-05-13
 > **Status:** Draft
 > **Owner:** Ian Johnson (TXN)
-> **Sources:** [[13-05-2026-txn-vision-meeting]]
+> **Sources:** [[13-05-2026-txn-vision-meeting]], [[29-05-2026-stackworkz-meeting]] (partner landscape)
 
 ---
 
@@ -121,10 +121,10 @@ graph LR
 - ✅ The agentic AI layer rendered inside the Console and Developer Portal (co-pilot, alerts, agent inbox, scoped chatbot)
 - ✅ The MCP server and A2A endpoint that expose TXN's capabilities to external agents
 - ✅ Internal-operations agents (release-note generation, support triage, doc self-healing, simulation testing)
-- ❌ **The Core API itself** — built by TXN's own dev team. *Novosapien works from existing Core API documentation.*
-- ❌ **The TXN Console frontend / backend** — built by TXN's console build team. *Novosapien works from existing console design prototype documentation (third-party designer).*
-- ❌ **The Developer Portal site / CMS (Umbraco)** — built by a third-party portal team. *Novosapien works from existing developer portal site documentation.*
-- ❌ **The Data Lake** — built by **DT (TXN's internal dev partner)**.
+- ❌ **The Core API / card-system backend** — built by **Direct Transact (DT)**, TXN's internal dev partner. This is the same API TXN's clients call directly (not only via the Console). *Novosapien works from existing Core API documentation.*
+- ❌ **The TXN Console (frontend + back-end-for-frontend)** — built by **Stackworkz**; frontend design by **Super Ultra**. The BFF talks to the Core API over API only, and **permissions + user management live in Stackworkz's BFF, not the Core API**. *Novosapien works from existing console design prototype documentation.*
+- ❌ **The Developer Portal (site + Umbraco headless CMS)** — built by **Stackworkz**. *Novosapien works from existing developer portal site documentation.*
+- ❌ **The Data Lake** — built by **Direct Transact (DT)**.
 - 🤝 **Influence on the above** where the AI layer integrates: API shapes, console component instrumentation, portal AI plug-in points, data lake schema/tables for AI consumption.
 
 ---
