@@ -14,6 +14,32 @@
 
 TXN is an issuer processor delivered through three product surfaces — a Core API, a TXN Console for client admins, and a Developer Portal for integrators. Novosapien provides the agentic AI layer that powers every human and agent-facing interaction across all three.
 
+**Primer — how a card transaction works, and where TXN sits:**
+
+TXN is an *issuer processor*: the technical engine that lets a business launch and run its own card programme without building card infrastructure itself and without becoming a bank. Same category as Marqeta or Galileo. TXN's customer is the **issuer** — the business whose name is on the card — not the cardholder.
+
+Every card transaction passes through a chain of players:
+
+- **Cardholder** — the person holding the card
+- **Merchant** — where they spend
+- **Acquirer** — the merchant's side / merchant's bank
+- **Card network (Visa/Mastercard)** — the rails connecting both sides
+- **Issuer** — the business whose card it is; owns the customer relationship and the funds
+- **Issuer processor (TXN)** — operates the cards for the issuer: mints them, sets their rules, and answers the real-time *"approve or decline?"*
+
+When a card is tapped:
+
+1. Cardholder taps → merchant → acquirer → Visa.
+2. Visa routes the authorisation request to TXN, because TXN runs that card.
+3. TXN checks the card-level rules — valid, not suspended, within its spend controls.
+4. **The MVP twist:** TXN doesn't hold the money. Rather than deciding itself, it asks the client's own banking system — which holds the accounts and balances — *"approve this for £X?"*
+5. The client's system (the system of record) returns approve/decline.
+6. TXN relays that back through Visa → acquirer → merchant — in well under a second.
+
+So TXN does two core jobs: **issuing** (defining card products and minting individual cards — the "50–60 properties" configuration object) and **processing** (handling Visa's real-time authorisation messages and the pass-through approval above).
+
+What TXN is **not**, in MVP: not a bank (no accounts, balances, or held funds — the client's stack stays the system of record), and not a complete fraud system (it signals; the client decides). This pass-through model is why several Novosapien components — particularly transaction/fraud assist — are shaped as *advise, don't decide*.
+
 **Detailed narrative:**
 
 Structurally, TXN is a card issuing platform — an issuer processor in the same category as Marqeta or Galileo. It is composed of three connected product surfaces: a **Core API** that does the actual card issuing and transactional processing; a **TXN Console** where TXN's clients run their card programs day-to-day (admin + customer service); and a **Developer Portal** that is simultaneously a public marketing site, an integration tool, and a self-serve support hub for developers building against the API. On its own this is a standard issuer-processor stack. What makes TXN distinct is that **AI is not a feature on the side — it is the operating principle of the product**, and Novosapien provides that AI layer end-to-end across all three surfaces.
@@ -442,9 +468,10 @@ _Components are identified during vision extraction (visible in the §1 narrativ
 
 | Component | Overview | Status | Link |
 |-----------|----------|--------|------|
-| In-app Co-pilot | AI assistant rendered inside Console + Portal — recommends actions, explains impact, executes on confirmation | Collecting | [[in-app-co-pilot]] |
-| Agent Inbox / Alerts | Proactive notification surface where the AI pre-investigates issues and proposes executable plans for approval | Collecting | [[agent-inbox]] |
-| Scoped Support Chatbot | Documentation-scoped chatbot in the Developer Portal with defensive fallback routing to internal queues | Collecting | [[scoped-support-chatbot]] |
-| MCP Server | Direct agent access to TXN capabilities via Model Context Protocol — for Claude and other LLMs | Collecting | [[mcp-server]] |
-| A2A Endpoint | Agent-to-agent communication endpoint for clients running their own agents against TXN | Collecting | [[a2a-endpoint]] |
-| Internal Ops Agents | TXN's own agentic operations — release notes, support triage, doc self-healing, simulation testing | Collecting | [[internal-ops-agents]] |
+| Co-pilot | Reactive in-console assistant (C1) — Q&A, inline recommendations, impact preview, guided onboarding | Collecting | [[co-pilot]] |
+| Agent Inbox & Alerts | Proactive lane (C1→C2) — event analysis surfaced as actionable alerts and investigated, approvable plans | Collecting | [[agent-inbox-alerts]] |
+| Full Agentic Experience | Agent-as-interface (C2→C3) — do-anything, renders UI in real time, A2A external access | Collecting | [[full-agentic-experience]] |
+| Developer Support | Portal/docs chatbot, scoped Q&A, defensive triage, feedback routing | Collecting | [[developer-support]] |
+| Agent Access Layer | Foundational tool surface every agent calls, permission-scoped; Core API wrapped as MCP tools | Defining | [[agent-access-layer]] |
+| Fraud & Risk Assist | Real-time enrichment of the approve/decline pass-through + rules engine; advise, don't decide | Collecting | [[fraud-risk-assist]] |
+| Internal Ops Agents | Run TXN agentically — release pipeline, Documentation Engine, ticket routing, process automation | Collecting | [[internal-ops-agents]] |
