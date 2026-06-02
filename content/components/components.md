@@ -22,7 +22,7 @@ Components were first surfaced in the [[13-05-2026-txn-vision-meeting|vision mee
 | Component | What it does | Status | Link |
 |-----------|-------------|--------|------|
 | Co-pilot | *Client-facing, C1.* Reactive in-console assistant — Q&A, inline recommendations, impact preview, guided onboarding. You drive; AI augments. | Defining | [[co-pilot]] |
-| Agent Inbox & Alerts | *Client-facing, proactive C1→C2.* Event → AI analyses → surfaces. C1 actionable alert; C2 investigated plan you approve, debate, or delegate. | Defining | [[agent-inbox-alerts]] |
+| Agent Inbox & Alerts | *Client-facing, proactive C1→C2.* Event → AI analyses → surfaces. C1 actionable alert; C2 investigated plan you approve, debate, or delegate. | Defined | [[agent-inbox-alerts]] |
 | Full Agentic Experience | *Client-facing, C2→C3.* The agent is the interface — do-anything, renders UI in real time, acts on approval. | Defining | [[full-agentic-experience]] |
 | A2A Endpoint | *Agent surface.* The inbound door for a client's own agents to act on TXN, scoped to the represented user; prompted-trust + approval + audit still apply. | Defining | [[a2a-endpoint]] |
 | Developer Support | Portal + docs chatbot, scoped Q&A, defensive triage layers, feedback routing (bug / enhancement / support); machine layer (MCP / LLMS.txt) for devs' own agents. | Defining | [[developer-support]] |

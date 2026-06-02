@@ -1,6 +1,6 @@
 ---
 component: "[[components]]"
-status: Defining
+status: Defined
 sources:
   - "[[02-06-2026-component-2-alerts-agent-inbox]]"
   - "[[01-06-2026-component-1-Agent-Access-Layer]]"
@@ -11,7 +11,7 @@ sources:
 
 > **Component map:** [[components]] · **Vision:** [[vision]]
 > **Date:** 2026-06-02
-> **Status:** Defining
+> **Status:** Defined
 > **Owner:** _TBC_
 > **Sources:** [[02-06-2026-component-2-alerts-agent-inbox]] (primary), [[01-06-2026-component-1-Agent-Access-Layer]] (approval/audit), [[13-05-2026-txn-vision-meeting]]
 
@@ -181,11 +181,11 @@ _Phasing is out of scope for this exercise — full scope captured. (Noted: Ian 
 
 | Sub-Component | Overview | Status | Link |
 |--------------|----------|--------|------|
-| Alert detection | Cheap threshold/anomaly detection (observability tool or middleware) feeding the AI on trip | Collecting | _[[sub-components/alert-detection]]_ |
-| AI analysis & impact | Orchestrator + specialist agents that explain cause, meaning, and estimated impact | Collecting | _[[sub-components/ai-analysis-impact]]_ |
-| Plan & execute (C2) | Proposed action → confirm → execute via Agent Access Layer, through approval queue | Collecting | _[[sub-components/plan-and-execute]]_ |
-| Scheduled reporting | Cadence-based reflective program summaries delivered to a channel | Collecting | _[[sub-components/scheduled-reporting]]_ |
-| Notification routing | Composing for the central hub → user's preferred channel (with Stackworkz) | Collecting | _[[sub-components/notification-routing]]_ |
+| Alert detection | Cheap threshold/anomaly detection (observability tool or middleware) feeding the AI on trip; two creation paths | Defined | [[alert-detection]] |
+| AI analysis & impact | Orchestrator + specialist agents that explain cause, meaning, and estimated impact (predictive + diagnostic) | Defined | [[ai-analysis-impact]] |
+| Plan & execute (C2) | Proposed action → confirm → execute via Agent Access Layer, through approval queue | Defined | [[plan-and-execute]] |
+| Scheduled reporting | Cadence-based reflective program summaries with drivers, delivered to a channel | Defined | [[scheduled-reporting]] |
+| Notification routing | Composing for the central hub → user's preferred channel (with Stackworkz); in-context dashboard insights | Defined | [[notification-routing]] |
 
 ---
 

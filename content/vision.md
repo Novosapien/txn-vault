@@ -469,7 +469,7 @@ _Components are identified during vision extraction (visible in the §1 narrativ
 | Component | Overview | Status | Link |
 |-----------|----------|--------|------|
 | Co-pilot | Reactive in-console assistant (C1) — Q&A, inline recommendations, impact preview, guided onboarding | Defining | [[co-pilot]] |
-| Agent Inbox & Alerts | Proactive lane (C1→C2) — event analysis surfaced as actionable alerts and investigated, approvable plans | Defining | [[agent-inbox-alerts]] |
+| Agent Inbox & Alerts | Proactive lane (C1→C2) — event analysis surfaced as actionable alerts and investigated, approvable plans | Defined | [[agent-inbox-alerts]] |
 | Full Agentic Experience | Agent-as-interface (C2→C3) — do-anything, renders UI in real time | Defining | [[full-agentic-experience]] |
 | A2A Endpoint | Agent-to-agent door for clients' own agents — represented-user scope, prompted-trust + approval + audit | Defining | [[a2a-endpoint]] |
 | Developer Support | Portal/docs chatbot, scoped Q&A, defensive triage, feedback routing; MCP/LLMS.txt machine layer | Defining | [[developer-support]] |
