@@ -23,7 +23,7 @@ Permission & authorization scoping decides **which tools an agent may use, for t
 
 Permissions live in three places (per the deep-dive): **DT API keys** at the *program* level (`read` / `write` / `program-manager`); **Stackworkz's Console back-end** holds the *granular, role-based user* permissions; and — because neither covers AI used outside the Console — TXN will build a **third "AI permission config"** that mirrors the Console model at org + user level (Super Ultra designed a screen for it; no API exists today). The simplifying rule Ian Johnson (TXN's CEO) pushed: a user can never have more than the business, so the layer only ever needs to check the **user ID**; a **client with no Console users is treated as a single super-user** with everything TXN makes available to them.
 
-Beyond the static permission set, the exposed tool set is further narrowed by **runtime state** — for the [[co-pilot]], the page the user is on; for onboarding, the step they've reached (step-six tools only once steps one-to-five are done). A small set of **holistic tools** is always available.
+Beyond the static permission set, the exposed tool set is further narrowed by **runtime state** — for the [[co-pilot]], the page the user is on; for onboarding, the step they've reached (step-six tools only once steps one-to-five are done). A set of **holistic tools** is always available.
 
 **Entities that interact with it:**
 
@@ -133,7 +133,7 @@ graph TD
 |-----------|-------------|----------|
 | Stackworkz Console permission model | The source of truth for user permissions | **Yes** |
 | AI permission config (new build) | Org/user permission mirror for non-Console access | **Yes** |
-| Console runtime state | Page / onboarding context for tool narrowing | No — holistic-only fallback |
+| Console runtime state | Page / onboarding context for tool narrowing | No — holistic-only fallback assumed _[⚠ open — see [[open-questions]] #2]_ |
 
 **What siblings/other components need from this one:**
 - [[mcp-server]] consumes the per-turn exposed set.

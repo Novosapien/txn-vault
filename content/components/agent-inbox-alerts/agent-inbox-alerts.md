@@ -61,9 +61,10 @@ Agent Inbox & Alerts
 
 **Business rules and constraints:**
 
-- **System-defined vs user-defined.** TXN provides a baseline corpus of critical alerts it feels *obliged* to raise (severe decline, "no auth response from your host for 10 minutes", failed card creation); users define the finer-grained, interest-based ones.
-- **Critical/instantaneous vs interest-based** (Ian's dividing line): critical alerts may need immediate, traditional detection (candidate for DT); interest-based monitors are fine on a scheduled cadence and are AI-friendly.
+- **System-defined vs user-defined.** TXN will provide a baseline of **system-defined** critical alerts it feels obliged to raise; users define the finer-grained, interest-based ones. _[⚠ open — see [[open-questions]] #4]_
+- **Critical/instantaneous vs interest-based** (Ian's dividing line): critical alerts may need immediate, traditional detection (DT's alerting role was narrowed post-AI-discussion to a context-less "post an alert" API; the detection/alerting build is currently **unowned** — see [[open-questions]] #13); interest-based monitors are fine on a scheduled cadence and are AI-friendly.
 - **Bounded, not free-form.** The AI experience must not be "ask anything, we'll pay for it." A framework (semi-structured: slash commands, predefined workflows, "filters before search") keeps queries built-for-success and protects token cost.
+- **Build as you observe (don't pre-design every alert).** Rather than designing the full alert catalogue up front, monitor real queries, watch where the agent gets stuck or has "no net to catch it in," then decide whether to build — an explicit guard against over-building alerts that go unused (Brett). _(Source: 02-06.)_
 - **Approval queue respected** — actions affecting multiple cards (product/spend-control level) route through the Console's two-person approval flow before execution.
 
 **Edge cases and error states:**

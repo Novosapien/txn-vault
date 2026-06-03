@@ -51,7 +51,7 @@ It reuses the [[ai-analysis-impact]] engine (orchestrator + specialist sub-agent
 
 - Sparse data (early client) → lighter report; avoid manufacturing significance.
 - A driver itself warrants an action → bridge into [[plan-and-execute]].
-- Missed/failed run → retried; user told the report is delayed, not silently dropped.
+- Missed/failed-run handling (retry? notify of delay vs silent drop?) is undecided. _[⚠ open — see [[open-questions]] #14]_
 
 ---
 

@@ -51,7 +51,7 @@ Two flavours of impact, per the deep-dive: **predictive** ("you're reducing the 
 **Edge cases:**
 
 - Sparse early data → low-confidence analysis; avoid false anomalies.
-- Stale data (analysis before a write settles) → impact figures misleading.
+- Stale data (analysis before a write settles) → impact figures misleading. _[⚠ open — see [[open-questions]] #17]_
 - Cross-program benchmarking requested → data-gated (see Risks / parent §10).
 
 ---
@@ -125,7 +125,7 @@ graph TD
 
 **Controls to build into the journeys:**
 - Ground analysis in the data lake; cite the data behind an impact figure.
-- Respect consistency boundaries (don't analyse before a write settles).
+- Respect consistency boundaries (don't analyse before a write settles). _[⚠ open — see [[open-questions]] #17]_
 - Bounded specialist scope; cap depth per analysis.
 
 ---

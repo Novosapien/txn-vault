@@ -3,6 +3,7 @@ component: "[[agent-access-layer]]"
 status: Collecting
 sources:
   - "[[01-06-2026-component-1-Agent-Access-Layer]]"
+  - "[[02-06-2026-component-2-alerts-agent-inbox]]"
 ---
 
 # TXN — Tool Catalogue
@@ -11,7 +12,7 @@ sources:
 > **Date:** 2026-06-02
 > **Status:** Collecting
 > **Owner:** _TBC_
-> **Sources:** [[01-06-2026-component-1-Agent-Access-Layer]]
+> **Sources:** [[01-06-2026-component-1-Agent-Access-Layer]], [[02-06-2026-component-2-alerts-agent-inbox]] (~210-docs figure)
 
 ---
 
@@ -28,7 +29,7 @@ The Tool Catalogue is the inventory of agent-callable tools mapped from DT's Cor
 - **Product** — the configuration template, **~200 fields** controlling look, expiry, and what can transact; configured infrequently ("once per country per year")
 - **Reporting** — endpoints whose full extent is still TBC
 
-These split into **platform-management** (infrequent, high-impact — chiefly *product*) and **day-to-day operational** (issue/suspend a card, the kind of thing a banking app hits). The **product/configuration layer is the highest-value AI target**: most users don't understand the ~200 fields, so the catalogue's product tools wrap them in business language and lean on client-category patterns — "this is what 90% of travel clients do."
+These split into **platform-management** (infrequent, high-impact — chiefly *product*) and **day-to-day operational** (issue/suspend a card, the kind of thing a banking app hits). The **product/configuration layer is the highest-value AI target**: most users don't understand the ~200 fields, so the catalogue's product tools wrap them in business language and lean on client-category patterns — Mike's framing was "this is what 90% of people do," applied to a recognised category pattern (e.g. travel).
 
 > **Status note:** kept at *Collecting* because the **exact tool list depends on the full Core API docs** (TXN is sending ~210 markdown/Word documents + the YAML spec). The *shape* is clear; the enumerated catalogue is not yet.
 
@@ -81,7 +82,7 @@ graph TD
     A[Agent intent] --> B[Match intent to catalogued tool<br/>via business-language description]
     B --> C[Populate required arguments]
     C --> D{Product-config intent?}
-    D -->|yes| E[Offer category-pattern recommendation<br/>'90% of travel clients…']
+    D -->|yes| E[Offer category-pattern recommendation<br/>'90% of people do' + category pattern]
     D -->|no| F[Proceed]
     E --> F
     F --> G[Hand tool call to MCP server]

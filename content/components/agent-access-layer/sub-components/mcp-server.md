@@ -37,7 +37,7 @@ Its load-bearing job is **safe execution**: server-side validation plus the Core
 
 - Expose catalogued tools over MCP, scoped to the **per-turn allowed set** from [[permission-scoping]].
 - **Server-side validate** each call (tool is exposed this turn; arguments well-formed) before forwarding.
-- Forward permitted calls to the correct **per-program Core API instance**.
+- Forward permitted calls to the Core API with the appropriate API key. _[⚠ open — see [[open-questions]] #2]_
 - On Core API rejection, return a **formatted, machine-readable error** the agent can parse, correct, and retry.
 - Carry the runtime context (universal API key + user-ID + the user's permissions in the payload) so tool exposure is recomputed each turn.
 
@@ -49,7 +49,7 @@ Its load-bearing job is **safe execution**: server-side validation plus the Core
 **Edge cases:**
 
 - Agent calls a tool it shouldn't → blocked at the server / rejected by Core API → formatted error → agent corrects.
-- Retry after a corrected error must not double-execute a partially-applied change (idempotency).
+- Retry after a corrected error must not double-execute a partially-applied change (idempotency). _[⚠ open — see [[open-questions]] #5]_
 - Core API unavailable → graceful, surfaced failure (not a silent drop).
 
 ---
@@ -88,7 +88,7 @@ graph TD
 - [ ] An unpermitted call is rejected by the Core API and never takes effect.
 - [ ] Rejections return a structured, machine-readable error (reason + offending field).
 - [ ] The agent can correct from the error and retry without human intervention.
-- [ ] A corrected retry does not double-apply a change (idempotency).
+- [ ] A corrected retry does not double-apply a change (idempotency). _[⚠ open — see [[open-questions]] #5]_
 - [ ] Every executed call is handed to [[audit-attribution]].
 
 ### 3b. Cross-Component Journeys
@@ -145,7 +145,7 @@ graph TD
 
 **Controls to build into the journeys:**
 - Server-side validation + Core API backstop as two independent gates.
-- Idempotency keys on mutating calls.
+- Idempotency keys on mutating calls. _[⚠ open — see [[open-questions]] #5]_
 - Recompute exposed tools per turn from trusted permission source, never from agent-supplied claims.
 
 ---

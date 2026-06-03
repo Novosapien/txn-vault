@@ -84,7 +84,7 @@ graph TD
 - [ ] Each AI action logs actor (agent + represented user), timestamp, tool/endpoint, and before→after / transition.
 - [ ] The record links the chat message where impact was surfaced and the message where the user confirmed.
 - [ ] Approval-routed actions additionally log the approver and approval time.
-- [ ] Audit records are immutable.
+- [ ] Audit records are immutable. _[⚠ open — see [[open-questions]] #6]_
 - [ ] Retention policy is applied (value TBD with TXN).
 
 #### Journey 2: Reconstruct a dispute trail
@@ -145,13 +145,13 @@ graph TD
 
 **Specific risks:**
 - **Storage & retention undecided** — chat + transition history volume and retention window are open (raised but not resolved).
-- **PII in chat/audit** — cardholder data may appear in chat logs; handling and residency must be respected.
+- **PII / residency / redaction** — whether cardholder PII appears in chat/audit logs, and what residency/redaction policy applies, was not discussed. _[⚠ open — see [[open-questions]] #16]_
 - **Gaps undermine the defence** — if the impact/confirmation link is missing, the "we prompted, you confirmed" position fails exactly when it's needed.
 
 **Controls to build into the journeys:**
 - Immutable, append-only audit writes.
 - Always link impact + confirmation to the executed action (acceptance criterion above).
-- Define retention + PII-redaction policy with TXN before build.
+- Define the retention policy with TXN before build (PII / residency / redaction is open — see [[open-questions]] #16).
 
 ---
 

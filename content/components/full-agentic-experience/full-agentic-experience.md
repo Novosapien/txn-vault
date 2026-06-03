@@ -14,6 +14,9 @@ sources:
 > **Owner:** _TBC_
 > **Sources:** [[29-05-2026-stackworkz-meeting]] (AG-UI design, ~00:16–00:25), [[13-05-2026-txn-vision-meeting]] (trust Concept 3 / A2A)
 
+> [!warning] Partially scoped — not a formal deep-dive
+> Touched on in a semi-structured session, not a dedicated deep-dive. The detail below reflects what was discussed plus some inference — treat scope, sub-components, and acceptance criteria as **proposals to confirm**. Open questions tracked in [[open-questions]].
+
 ---
 
 ## 1. What Does This Component Do?
@@ -26,7 +29,7 @@ The user interacts through a chat surface (text or voice) — conceptually "TXN'
 
 The mechanism (proposed): the agent emits a **tool call whose arguments describe a component to render**, the front end receives that payload and renders the component — the payload carries arguments, not code. Underneath, the agent queries data exactly the way the front end would (e.g. user ID + date range → the same API call), so the rendered result is consistent with what the user would see by navigating manually.
 
-Because the agent has access to the tool surface ([[agent-access-layer]]), the data APIs, and a component library, the experience is **portable** — it manifests in the Console as its primary entry point, but in principle the same agent could surface anywhere (even a desktop outlet), since it carries its own access to capabilities and data. External / client-owned agents reach the same capabilities through the [[a2a-endpoint]] (a sibling component) rather than this experience directly.
+Because the agent has access to the tool surface ([[agent-access-layer]]), the data APIs, and a component library, the experience is **portable** — it manifests in the Console as its primary entry point, but in principle the same agent could surface anywhere (even a desktop outlet), since it carries its own access to capabilities and data. External / client-owned agents reach the same capabilities through the [[a2a-endpoint]] (a sub-component of the [[agent-access-layer]]) rather than this experience directly.
 
 ```
 Full Agentic Experience
@@ -41,7 +44,7 @@ Full Agentic Experience
 |---------|---------------------------|----------------------|
 | **Card Program Operators** (Console) | The "speak to my computer" user — drives the entire program through conversation rather than navigation; asks for views, dashboards, and actions and gets live UI back | Trust that the rendered view is real and current; the ability to act, not just look; continuity (come back tomorrow, the dashboard is still there) |
 
-_External / client-owned agents are served by the [[a2a-endpoint]] component, not this one._
+_External / client-owned agents are served by the [[a2a-endpoint]] (a sub-component of the [[agent-access-layer]]), not this one._
 
 ---
 
@@ -110,7 +113,7 @@ _External / client-owned agents are served by the [[a2a-endpoint]] component, no
 | Persona / Role | Access level | Notes |
 |---------------|-------------|-------|
 | Card Program Operators | Gated to the user's Console permissions | Scoped via [[agent-access-layer]]; actions requiring sign-off route through approval queue |
-| Client's own agents | Permission parity with the human they represent | Served by the [[a2a-endpoint]] component |
+| Client's own agents | Permission parity with the human they represent | Served by the [[a2a-endpoint]] (in the [[agent-access-layer]]) |
 
 _Detailed access rules not discussed in this call — inherits the permission model from [[agent-access-layer]]._
 
@@ -139,7 +142,7 @@ _Not discussed in this call. Candidate metrics to validate with TXN:_
 
 **What other components need from this one:**
 
-- This experience and the [[a2a-endpoint]] are siblings: both let an agent drive TXN, one as TXN's own in-Console interface, the other as the inbound door for the client's own agents. They share the [[agent-access-layer]] tool surface.
+- This experience and the [[a2a-endpoint]] are complementary: both let an agent drive TXN — one as TXN's own in-Console interface, the other (a sub-component of the [[agent-access-layer]]) as the inbound door for the client's own agents — both riding the same [[agent-access-layer]] tool surface.
 
 ---
 
@@ -170,11 +173,11 @@ _Phasing/sequencing is deliberately out of scope for this exercise — we are ca
 
 ## Sub-Components
 
-| Sub-Component | Overview | Status | Link |
-|--------------|----------|--------|------|
-| Conversational interface | Text / voice chat surface — the "TXN's Claude" entry point in the Console | Collecting | _[[sub-components/conversational-interface]]_ |
-| Generative UI rendering | AG-UI pipeline: tool call + arguments → live React/MUI component, reusing the Console library | Collecting | _[[sub-components/generative-ui-rendering]]_ |
-| Session persistence | Saved, revisitable rendered views (dashboards persist and re-open as rendered pages) | Collecting | _[[sub-components/session-persistence]]_ |
+_Proposed from the semi-structured discussion — not yet documented or deep-dived. Listed as plain text (no links) until the docs exist:_
+
+- **Conversational interface** — text / voice chat surface, the "TXN's Claude" entry point in the Console
+- **Generative UI rendering** — AG-UI pipeline: tool call + arguments → live React/MUI component, reusing the Console library
+- **Session persistence** — saved, revisitable rendered views (dashboards persist and re-open as rendered pages)
 
 ---
 

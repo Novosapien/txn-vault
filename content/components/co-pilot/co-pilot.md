@@ -15,6 +15,9 @@ sources:
 > **Owner:** _TBC_
 > **Sources:** [[13-05-2026-txn-vision-meeting]], [[01-06-2026-component-1-Agent-Access-Layer]] (co-pilot scope + permissions), [[29-05-2026-stackworkz-meeting]]
 
+> [!warning] Partially scoped — not a formal deep-dive
+> Touched on in a semi-structured session, not a dedicated deep-dive. The detail below reflects what was discussed plus some inference — treat scope, sub-components, and acceptance criteria as **proposals to confirm**. Open questions tracked in [[open-questions]].
+
 ---
 
 ## 1. What Does This Component Do?
@@ -51,7 +54,7 @@ Co-pilot
 - User can open a conversational co-pilot in the Console (and Portal) and ask questions in natural language about anything in their program — not just the current page.
 - Co-pilot **guides navigation** — points the user to the right place / surfaces the right information without them knowing where to click.
 - Before a change, co-pilot **previews impact** using data-lake/analytical data ("this affects N cards / ~X% of transactions").
-- Co-pilot offers **guided configuration**: recognises the program pattern and proposes the standard configuration ("90% of travel clients do this") for the user to confirm.
+- Co-pilot offers **guided configuration**: recognises the program pattern and proposes the standard configuration ("90% of people do this", applied to the recognised category — e.g. travel) for the user to confirm.
 - Co-pilot can **execute an action on confirmation** via [[agent-access-layer]], honouring the user's permissions and the approval queue.
 - **Prompted-trust confirmation**: the co-pilot always confirms what it is about to do before doing it ("this is the change I'll make — happy?"), surfacing recommendations at that step. Many actions need no second step beyond the confirmation.
 
@@ -166,9 +169,9 @@ _Phasing out of scope for this exercise — full scope captured. (Noted: the Con
 
 ## Sub-Components
 
-| Sub-Component | Overview | Status | Link |
-|--------------|----------|--------|------|
-| Conversational Q&A | Ask-anything assistant, guided to the right screen | Collecting | _[[sub-components/conversational-qa]]_ |
-| Impact preview | Pre-change "this affects N cards / X% of transactions" | Collecting | _[[sub-components/impact-preview]]_ |
-| Guided configuration | Pattern-recognised onboarding; confirm-not-configure over ~200 fields | Collecting | _[[sub-components/guided-configuration]]_ |
-| Action-on-confirmation | Execute via Agent Access Layer with prompted-trust | Collecting | _[[sub-components/action-on-confirmation]]_ |
+_Proposed from the semi-structured discussion — not yet documented or deep-dived. Listed as plain text (no links) until the docs exist:_
+
+- **Conversational Q&A** — ask-anything assistant, guided to the right screen
+- **Impact preview** — pre-change "this affects N cards / X% of transactions"
+- **Guided configuration** — pattern-recognised onboarding; confirm-not-configure over the product config
+- **Action-on-confirmation** — execute via [[agent-access-layer]] with prompted-trust
