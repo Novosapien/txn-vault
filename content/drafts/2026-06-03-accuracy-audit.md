@@ -1,3 +1,8 @@
+---
+draft: true
+title: "Accuracy / Completeness / Ambiguity Audit — 2026-06-03"
+---
+
 # TXN Product Knowledge Vault — Accuracy / Completeness / Ambiguity Audit
 
 ## 1. Executive Summary
