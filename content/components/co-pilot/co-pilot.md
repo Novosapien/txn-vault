@@ -54,7 +54,7 @@ Co-pilot
 - User can open a conversational co-pilot in the Console (and Portal) and ask questions in natural language about anything in their program — not just the current page.
 - Co-pilot **guides navigation** — points the user to the right place / surfaces the right information without them knowing where to click.
 - Before a change, co-pilot **previews impact** using data-lake/analytical data ("this affects N cards / ~X% of transactions").
-- Co-pilot offers **guided configuration**: recognises the program pattern and proposes the standard configuration ("90% of travel clients do this") for the user to confirm.
+- Co-pilot offers **guided configuration**: recognises the program pattern and proposes the standard configuration ("90% of people do this", applied to the recognised category — e.g. travel) for the user to confirm.
 - Co-pilot can **execute an action on confirmation** via [[agent-access-layer]], honouring the user's permissions and the approval queue.
 - **Prompted-trust confirmation**: the co-pilot always confirms what it is about to do before doing it ("this is the change I'll make — happy?"), surfacing recommendations at that step. Many actions need no second step beyond the confirmation.
 

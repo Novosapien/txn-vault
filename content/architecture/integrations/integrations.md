@@ -10,7 +10,7 @@ _Surfaced in the [[29-05-2026-stackworkz-meeting]] (ways-of-working call between
 
 | Partner | Builds | Stack | Infra |
 |---------|--------|-------|-------|
-| **Stackworkz** | TXN Console (frontend + back-end-for-frontend) and Developer Portal | C#/.NET BFF · React + Material UI front end · **Umbraco headless** CMS (exposes APIs) | Azure DevOps · **VM-based** dev environment |
+| **Stackworkz** | TXN Console (frontend + back-end-for-frontend) and Developer Portal | C#/.NET BFF · React + Material UI front end · **Umbraco headless** CMS (exposes APIs) | DevOps · **VM-based** dev environment |
 | **Direct Transact (DT)** | Core API / card-system backend + Data Lake | _(not detailed)_ | **Kubernetes** |
 | **Super Ultra** | Design (Console + Developer Portal) | — | — |
 

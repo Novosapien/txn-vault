@@ -49,7 +49,7 @@ Its load-bearing job is **safe execution**: server-side validation plus the Core
 **Edge cases:**
 
 - Agent calls a tool it shouldn't → blocked at the server / rejected by Core API → formatted error → agent corrects.
-- Retry after a corrected error must not double-execute a partially-applied change (idempotency).
+- Retry after a corrected error must not double-execute a partially-applied change (idempotency). _[⚠ open — see [[open-questions]] #5]_
 - Core API unavailable → graceful, surfaced failure (not a silent drop).
 
 ---
@@ -145,7 +145,7 @@ graph TD
 
 **Controls to build into the journeys:**
 - Server-side validation + Core API backstop as two independent gates.
-- Idempotency keys on mutating calls.
+- Idempotency keys on mutating calls. _[⚠ open — see [[open-questions]] #5]_
 - Recompute exposed tools per turn from trusted permission source, never from agent-supplied claims.
 
 ---

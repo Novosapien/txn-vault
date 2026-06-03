@@ -12,4 +12,4 @@ Cross-cutting technical decisions that affect the whole product. This directory 
 
 ## Open Questions
 
-_Architecture decisions that need resolving. Move to the relevant section document when decided._
+Tracked centrally in the [[open-questions]] register. Architecture-level items currently open include the site-wide LLM owner (#3), the MCP-ownership split (#8), and AI data-access / dev-environment questions (see [[integrations]]).

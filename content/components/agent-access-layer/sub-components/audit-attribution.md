@@ -145,13 +145,13 @@ graph TD
 
 **Specific risks:**
 - **Storage & retention undecided** — chat + transition history volume and retention window are open (raised but not resolved).
-- **PII in chat/audit** — cardholder data may appear in chat logs; handling and residency must be respected.
+- **PII / residency / redaction** — whether cardholder PII appears in chat/audit logs, and what residency/redaction policy applies, was not discussed. _[⚠ open — see [[open-questions]] #16]_
 - **Gaps undermine the defence** — if the impact/confirmation link is missing, the "we prompted, you confirmed" position fails exactly when it's needed.
 
 **Controls to build into the journeys:**
 - Immutable, append-only audit writes.
 - Always link impact + confirmation to the executed action (acceptance criterion above).
-- Define retention + PII-redaction policy with TXN before build.
+- Define the retention policy with TXN before build (PII / residency / redaction is open — see [[open-questions]] #16).
 
 ---
 

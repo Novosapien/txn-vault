@@ -26,6 +26,12 @@ Central register of unresolved questions across the vault. Each links to the doc
 | 10 | **Product webhook** — will DT add it, and on what timeline? (Underpins change-impact alerts.) | Access Layer / Inbox & Alerts | [[agent-access-layer]], [[alert-detection]] | 01-06 | Open |
 | 11 | **Core API stability + versioning policy** — when is it stable enough to build tools against; how are breaking changes managed? | Access Layer | [[agent-access-layer]] | 01-06 | Open |
 | 12 | **Data-lake schema** — when does DT share it? | Access Layer | [[agent-access-layer]] | 01-06 | Open |
+| 13 | **Alerting-system build ownership** — DT's role was narrowed (post-AI discussion) to a context-less "post an alert" API; nobody is currently scoped to build the alerting/detection system. Who owns it? | Inbox & Alerts | [[agent-inbox-alerts]], [[alert-detection]] | 02-06 | Open |
+| 14 | **Scheduled-report failure handling** — are missed/failed runs retried, and is the user notified of a delay vs a silent drop? Assumed in [[scheduled-reporting]], not discussed. | Inbox & Alerts | [[scheduled-reporting]] | (assumption) | Open |
+| 15 | **Alert priority field + multi-surface fan-out** — is there a `priority` field on the delivery payload, and do high-priority items fan out to multiple surfaces at once? Asserted in [[notification-routing]], not discussed. | Inbox & Alerts | [[notification-routing]] | (assumption) | Open |
+| 16 | **AI-layer PII / data-residency / redaction** — may cardholder PII appear in chat/audit logs, and what residency + redaction policy applies? Asserted in [[audit-attribution]] beyond the grounded retention point (#6). | Access Layer | [[audit-attribution]] | (assumption) | Open |
+| 17 | **AI-analysis consistency boundaries** — must the AI avoid analysing before a write settles (read-after-write guards)? Stated in [[ai-analysis-impact]] but flagged in [[vision]] §8 as a Novosapien inference. | Inbox & Alerts | [[ai-analysis-impact]] | (assumption) | Open |
+| 18 | **User-defined optimization metric** — should the user set an objective the agent optimises toward, with the agent able to suggest additional objectives? Floated 13-05; not yet scoped. | Full Agentic Experience | [[full-agentic-experience]] | 13-05 | Open |
 
 ## Notes
 

@@ -26,7 +26,7 @@ First working session between Novosapien (AI layer), Stackworkz (Console + Devel
 | Finding | Destination | Action |
 |---------|-------------|--------|
 | **Partner landscape named** — Stackworkz builds the Console (frontend + back-end-for-frontend) **and** the Developer Portal; Super Ultra is the design team; Direct Transact (DT) builds the Core API / card-system backend + Data Lake | [[vision]] §1 Scope boundary · [[components]] out-of-scope | Updated |
-| **Stackworkz stack & infra** — C#/.NET BFF, React + Material UI, Umbraco headless CMS, Azure DevOps, VM-based; DT on Kubernetes; BFF↔Core API is API-only; permissions + user management live in the Stackworkz BFF, not the Core API | [[integrations]] | Note added |
+| **Stackworkz stack & infra** — C#/.NET BFF, React + Material UI, Umbraco headless CMS, DevOps, VM-based; DT on Kubernetes; BFF↔Core API is API-only; permissions + user management live in the Stackworkz BFF, not the Core API | [[integrations]] | Note added |
 | **MCP-server ownership split** — docs/dev-portal MCP (LLMS.txt) Stackworkz wants to own; card-acquiring-API MCP ownership unresolved (possibly DT); avoid duplicate MCP servers | [[agent-access-layer]] | Open question added |
 | **Permission model source** — granular permissions live in Stackworkz's BFF; the agent permission model must mirror it | [[agent-access-layer]] | Dependency updated |
 | **AI data-access pattern** — data-lake plug-in vs pull-and-aggregate via Core API; DT open, depends on their timeline | [[integrations]] | Open question noted |

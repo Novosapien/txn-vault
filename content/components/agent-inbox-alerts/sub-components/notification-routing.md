@@ -21,7 +21,7 @@ sources:
 
 Notification routing is the last mile — it takes a composed alert, report, or insight and gets it to the user **where they are**. Mike Moores (TXN's CTO) was firm that TXN wants a **central notification hub**: one place where *anything* can raise something for a user — the AI, DT, or the Console — delivered to the user's **preferred channel** (in-console, Slack, Teams, email). The principle is *meet people where they are.*
 
-The ownership split: **Stackworkz owns notification preferences and the actual sending**; this sub-component is the AI side that **composes** what gets surfaced and **hands it to the hub** with the right routing. Beyond push channels, surfacing can also be **in-context** — Brett's idea of an AI recommendation as a "dot" on a dashboard metric, explaining *why* it spiked or dropped. As the deep-dive put it, the job is delivering *"insight packaged at the right time"* — sometimes an alert, sometimes a notification, sometimes an embedded annotation.
+The ownership split: **Stackworkz owns notification preferences and the actual sending**; this sub-component is the AI side that **routes** an already-composed item (from [[ai-analysis-impact]] / [[scheduled-reporting]]) to the hub with the right channel. Beyond push channels, surfacing can also be **in-context** — Brett's idea of an AI recommendation as a "dot" on a dashboard metric, explaining *why* it spiked or dropped. As the deep-dive put it, the job is delivering *"insight packaged at the right time"* — sometimes an alert, sometimes a notification, sometimes an embedded annotation.
 
 **Entities that interact with it:**
 
@@ -36,7 +36,7 @@ The ownership split: **Stackworkz owns notification preferences and the actual s
 
 **Functional requirements:**
 
-- Compose the surfaced item (alert / report / insight) for delivery.
+- Take the already-composed item (alert / report / insight) and prepare it for delivery.
 - Resolve the user's **preferred channel** from Stackworkz notification preferences.
 - Hand off to the **central hub** for delivery (console / Slack / Teams / email).
 - Support **in-context surfacing** — e.g. a dashboard "dot" with an explanation — as an alternative to a push.
@@ -46,12 +46,12 @@ The ownership split: **Stackworkz owns notification preferences and the actual s
 
 - **Meet people where they are** — deliver to the chosen channel, not only in-console.
 - **Action or silence** — only route items that carry an action or insight.
-- **Stackworkz delivers; we compose** — respect the ownership split.
+- **Stackworkz delivers; we route** — respect the ownership split.
 
 **Edge cases:**
 
 - No channel preference set → sensible default (in-console).
-- High-priority item → may surface in multiple places (push + dashboard dot).
+- An item surfaces in-context (dashboard dot) **or** as a push — chosen per item. _[⚠ open — see [[open-questions]] #15]_
 - Delivery failure on a channel → fall back / retry; don't silently drop.
 
 ---
@@ -66,7 +66,7 @@ The ownership split: **Stackworkz owns notification preferences and the actual s
 
 **Input:** A composed alert, report, or insight from [[ai-analysis-impact]] / [[scheduled-reporting]].
 
-**Handoff point:** Crosses into the **central notification hub / Stackworkz delivery** — state passed: the composed item + resolved channel + priority. Stackworkz performs the actual send.
+**Handoff point:** Crosses into the **central notification hub / Stackworkz delivery** — state passed: the composed item + resolved channel. Stackworkz performs the actual send.
 
 **Components involved:** Agent Inbox & Alerts → central hub (Stackworkz) → user channel
 
@@ -103,7 +103,7 @@ graph TD
 |------|-----------|------------|---------------------|
 | Composed item | In | Alert / report / insight to deliver | [[ai-analysis-impact]] / [[scheduled-reporting]] |
 | Channel preference | In | The user's preferred channel | Stackworkz notification preferences |
-| Delivery payload | Out | Item + channel + priority | → central hub (Stackworkz) |
+| Delivery payload | Out | Item + channel | → central hub (Stackworkz) |
 | Delivery status | In | Success / failure for fallback | Central hub |
 
 ---

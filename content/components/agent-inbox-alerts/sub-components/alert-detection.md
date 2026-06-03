@@ -189,7 +189,7 @@ graph TD
 **Specific risks:**
 - A user defining a monitor that forces per-transaction AI (cost blow-up).
 - Missed critical event if detection coverage is incomplete.
-- Prompt injection via merchant names/descriptors carried in the event.
+- Prompt injection via merchant names/descriptors carried in the event. _[⚠ Novosapien-added inference — not raised in the call]_
 
 **Controls to build into the journeys:**
 - Cheap-detect / AI-on-trip pattern enforced; bounded alert-definition framework.

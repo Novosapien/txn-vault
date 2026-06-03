@@ -1,0 +1,100 @@
+# TXN Product Knowledge Vault — Accuracy / Completeness / Ambiguity Audit
+
+## 1. Executive Summary
+
+This audit confirms **23 findings** across the vault. After adversarial verification and severity re-calibration, the corrected severity distribution is **0 critical · 3 moderate · 20 minor**. By axis: **accuracy 15** (1 moderate, 14 minor), **completeness 6** (2 moderate, 4 minor), **ambiguity 2** (both minor). No finding rises to critical: the vault's architecture and load-bearing specs are sound. The dominant pattern is **inference dressed as discovered fact** — plausible engineering or business detail (consistency boundaries, idempotency, PII/residency, a buyer taxonomy, a priority payload field) stated declaratively in `Defined`-status docs without the `[⚠ open]` marker the vault's own convention requires. The three moderate findings are the two that would actually misdirect a builder (`notification-routing` priority field/fan-out, `scheduled-reporting` retry guarantee, `audit-attribution` PII/residency risk) plus one real unowned-work gap (DT's narrowed alerting role). Secondary patterns: **mis-sourced provenance** (figures correct but attributed to the wrong meeting) and **lost meeting nuggets** (concrete client rules flattened or dropped).
+
+---
+
+## 2. Findings by Document
+
+### `content/vision.md`
+- **[minor · accuracy]** §2 "Who Are You Building It For?" (Business context, "Two broad shapes") · A named buyer taxonomy ("Established issuers" migrating vs "New entrants" adding cards) is stated as TXN's customer model · *Absent in all four transcripts*; nearest source is Michael (13-05, l.591/600) describing console-vs-build integration split and "future banks," not a maturity-based segmentation; the 13-05 post-call analysis records only Operators/Integrators/Client's-Agent/Internal, not this taxonomy · **Fix:** attribute as Novosapien inference or drop; the grounded audience/surface table is unaffected.
+- **[minor · accuracy]** §1 data-flywheel paragraph · "tens of thousands of synthetic flows" · George (13-05, l.432) states "a hundred personas... thousands of simulations" — he gave the total himself as *thousands*; "tens of thousands" overstates by ~an order of magnitude and was framed as Novosapien's salesperson-testing example · **Fix:** change to "thousands" and note it is illustrative, not a committed TXN volume.
+- **[minor · accuracy]** §7 "What Exists Today?" — Developer Portal bullet · "started 12 May 2026" asserted as a hard date · Michael (13-05, l.469): "the portal started development this week pretty much" — call was Wed 13-05, so the precise day is unsupported · **Fix:** soften to "~w/c 11 May 2026" or "this week of the 13-05 call."
+
+### `content/components/agent-inbox-alerts/sub-components/notification-routing.md`
+- **[moderate · accuracy]** §3 handoff state (l.69) + §5 Data Requirements (l.106, "Delivery payload | Out | Item + channel + priority") + §2 edge case (l.54) · A `priority` field is stated as a delivery-payload contract field, and "high-priority item → may surface in multiple places (push + dashboard dot)" as a fan-out rule · *"priority" never appears as a notification concept* in any transcript — all hits are build/project priority (02-06 l.600/736); Brett (02-06 l.689/696/700) frames push vs notification vs dashboard-dot as *alternatives chosen per item*, not a priority-keyed simultaneous fan-out · **Fix:** remove `priority` from the payload contract and the multi-surface rule, or demote to an explicitly-flagged open assumption (this is a cross-component contract a builder would implement as-is).
+- **[minor · ambiguity]** §1 (l.24) + §2 FR1/business rule (l.39/49) vs §3 Input (l.67) / §5 (l.104) / mermaid · Doc says this sub-component "composes what gets surfaced" while its own Input, data table, and diagram receive an *already-composed* item from `[[ai-analysis-impact]]` / `[[scheduled-reporting]]` · Sibling docs confirm composition is upstream: `ai-analysis-impact` outputs "Composed analysis + impact → notification-routing"; `scheduled-reporting` "composes the result... delivered via [[notification-routing]]"; "compose" appears in no transcript · **Fix:** reword §1/FR1 to "routes and delivers" — composition is upstream.
+
+### `content/components/agent-inbox-alerts/sub-components/alert-detection.md`
+- **[minor · accuracy]** §7 Risks → "Specific risks" (l.192) · "Prompt injection via merchant names/descriptors" listed as a grounded, established risk with no speculative marker · *Neither declared source mentions it*; "prompt injection" appears only once across all transcripts (13-05 l.34) inside a post-call table explicitly annotated "Novosapien-added; not raised in the call," and the merchant-as-injection-surface vector appears nowhere (merchants are only monitoring targets, 02-06 l.175/208) · **Fix:** mark as Novosapien-added inference or apply the doc's own `[⚠ open]` convention.
+
+### `content/components/agent-inbox-alerts/sub-components/ai-analysis-impact.md`
+- **[minor · accuracy]** §2 edge case (l.54, "Stale data — analysis before a write settles") + §7 control (l.128, "Respect consistency boundaries") · A write-settling/read-after-write hazard is stated as a decided edge case and a control to build · *Absent in all four transcripts* (no discussion of write/read consistency timing). The concept originates only in `vision.md` §8, which *honestly prefaces* it as "Novosapien's read of the AI-layer threat surface" — that caveat is dropped here · **Fix:** carry the "author inference / not client-validated" caveat into this doc, or flag open.
+
+### `content/components/agent-inbox-alerts/sub-components/scheduled-reporting.md`
+- **[moderate · accuracy]** §2 edge case (l.54) · "Missed/failed run → retried; user told the report is delayed, not silently dropped" stated as a `Defined`-status requirement · *Absent in all four transcripts* — grep for retry/delay/silent/fail/miss finds only an unrelated MCP tool-call validation retry (01-06 l.407/414); the declared 02-06 source covers cadence/drivers/channels but never run-failure handling · **Fix:** demote to an open design question (failure/retry behaviour for scheduled reports is undecided).
+
+### `content/components/agent-access-layer/sub-components/mcp-server.md`
+- **[minor · ambiguity]** §2 edge case (l.52) + §7 Risks/Controls (l.143/148) vs §3a AC (l.91) · Idempotency / non-double-execution is flagged `[⚠ open — see #5]` at the §3a acceptance criterion but restated as a firm requirement (§2) and a confirmed control to build (§7) *without* the marker · The vault's own register marks #5 "Raised in: (assumption) — assumed, not discussed"; idempotency appears in no transcript · **Fix:** propagate the `[⚠ open — see #5]` marker to the §2 and §7 restatements.
+
+### `content/components/agent-access-layer/sub-components/permission-scoping.md`
+- **[minor · accuracy]** §6 Dependencies table (l.136), Console-runtime-state row, Blocking? column · "No — holistic-only fallback" asserts a defined degraded mode (expose only holistic tools when page/onboarding state is unavailable) as the reason the dependency is non-blocking · "holistic tools" appears once (01-06 l.342) and only describes normal operation; "fallback"/"degrade" appear in *no* transcript; unlike the structurally-identical `notification-routing` fallback (covered by #7), this has no open-questions entry · **Fix:** flag the fallback mode as an assumption (open question) and re-assess whether Console runtime state is actually blocking.
+- **[minor · accuracy]** §1 final paragraph (l.26), echoed in §2 ACs · "A small set of holistic tools is always available" · Transcript only says "let's call them the holistic tools" (01-06 l.342) — no size or availability guarantee; "always available" is a defensible inference but the quantifier *"small"* is unsupported and stated as fact · **Fix:** drop "small" (the buildable intersection formula does not depend on cardinality).
+
+### `content/components/agent-access-layer/sub-components/audit-attribution.md`
+- **[moderate · accuracy]** §1 Entities note + §7 Risks ("PII in chat/audit — cardholder data... handling and residency must be respected") + §7 Controls ("Define retention + PII-redaction policy") + §2 edge case · A specific PII-in-chat-logs / data-residency / redaction risk is stated as a recognised risk with a control to "define before build" · *PII, residency, redaction, cardholder data, GDPR appear in NO transcript*; the only adjacent fragment is Ian's garbled "I think it's always given a personal information" (01-06 l.757), which is part of his prompted-trust audit argument, not a PII-in-logs/residency discussion. Only the *storage/retention* question (Ian l.796-798, already open #6) is grounded · **Fix:** strip the residency/redaction framing or demote to an explicitly-flagged open question; keep only the grounded retention point.
+
+### `content/components/agent-access-layer/sub-components/tool-catalogue.md`
+- **[minor · accuracy]** §1 Status note (l.33) · "~210 markdown/Word documents + the YAML spec" stated as fact, implicitly attributed to the doc's sole declared source (01-06) · The "about 210 documents... markdown and word doc" figure appears *only* in the 02-06 meeting (Michael Moores, l.64); it is absent from the declared 01-06 source · **Fix:** add `[[02-06-2026-component-2-alerts-agent-inbox]]` to the doc's `sources`.
+- **[minor · accuracy]** §1 (l.31) + §3 Journey-1 mermaid node E (l.84) · The verbatim-style quote "this is what 90% of travel clients do" / "'90% of travel clients…'" fabricates a quote by fusing two separate statements · In 01-06 Mike says *generically* "this is what 90% of people do" (l.173) and *separately* "this is what we know about our people in the travel industry" (l.189) — no percentage on travel. `co-pilot.md` (l.29) handles the same material correctly · **Fix:** split into the verbatim 90%-of-people quote plus a paraphrased travel pattern, mirroring `co-pilot.md`.
+
+### `content/components/fraud-risk-assist/fraud-risk-assist.md`
+- **[minor · accuracy]** Frontmatter `sources` (only 13-05) vs Overview (l.27, "May surface a fraud flag into [[agent-inbox-alerts]], but services the action on its own dedicated page") · The "dedicated fraud page / flag-then-service-separately" framing is from the 02-06 Alerts meeting (l.222), not the cited 13-05 vision meeting · **Fix:** add `[[02-06-2026-component-2-alerts-agent-inbox]]` to `sources` (content is correct; this is provenance hygiene — the 02-06 routing table already cross-refs this doc).
+
+### `content/architecture/architecture.md`
+- **[minor · completeness]** "## Open Questions" section (l.13-16) · The section is empty and retains the stale instruction "_Move to the relevant section document when decided._", reflecting the local-questions pattern the vault abandoned · The 2026-06-03 index changelog announces the "New central [[open-questions]] register," and live architecture-level items exist there (#3 LLM ownership, #8 MCP-ownership split). Mitigant: the router links to `[[integrations]]`, whose own open-questions section surfaces AI data-access, dev-env/cost, and card-API MCP ownership · **Fix:** replace the stale stub with a `[[open-questions]]` backlink (the only major router missing it).
+
+### `content/architecture/integrations/integrations.md`
+- **[minor · accuracy]** Build partners table, Stackworkz row, Infra column (l.13) · "Azure DevOps" stated as fact · Corneil only says bare "DevOps" (29-05 l.233/242); the single "Azure" mention (l.525) is a *separate* hypothetical TXN-controlled environment, already a distinct open question in the doc (l.30) · **Fix:** write "DevOps" (or "DevOps — likely Azure DevOps, inferred").
+
+### `content/index.md`
+- **[minor · accuracy]** Recent Activity, 2026-06-02 row (l.40) · "Timeline: Dev Portal + API target October, Console a fast-follow" mis-attributes "fast-follow" to the Console · In 29-05, "fast follow" (Michael Moores l.449) is about *the AI layer* ("AI... otherwise it'd be sort of a fast follow"); the Console is "shortly after / aligned to first-customer onboarding" (l.474-480). The meeting doc's own post-call table (l.36) gets this right; only the index summary conflates them · **Fix:** correct the changelog to "Console follows (first-customer onboarding); AI layer may be a fast-follow if it misses MVP dates."
+
+### Meeting-sourced gaps (no doc captures these)
+- **[moderate · completeness]** *Source: 02-06 Inbox & Alerts (l.379, l.390).* DT's alerting-endpoint ownership was deliberately narrowed and the alerting build is currently **unowned**. Mike: DT was "originally had... down for it in a later phase, but this was before the AI discussion... it doesn't really fit with them anymore... just building the API for the ability to post an alert... with no real context or link to their system," and "we haven't got a dedicated person building that alerting system right now... not specifically scoped at the moment." Docs say detection is a "candidate for DT" (overstating the decided reality) but never record the narrowing or the unowned-work gap; open #4 covers only the alert corpus. **Belongs in:** `agent-inbox-alerts.md` §4/§8 and/or `integrations.md`. **Fix:** record the rescoping + unassigned build, and log as an open question.
+- **[minor · completeness]** *Source: 13-05 vision (l.948, ~01:42).* User-defined optimization metric: the user sets an objective the agent optimizes actions toward, and the agent can proactively suggest an additional objective. Absent from the graph (grep for optimi/metric finds only unrelated dashboard-metric and "portal optimised" hits). A governance mechanism for the autonomous "it just does the changes" mode. **Belongs in:** `full-agentic-experience.md` or `agent-inbox-alerts.md`. **Fix:** one-line capture or open question (a single forward-looking brainstorm by George in a Collecting-status component).
+- **[minor · completeness]** *Source: 13-05 vision (l.491/493, ~00:46).* Mike's enhancement/bug prioritization rule is dropped: an enhancement asked by one customer won't be built, but "three or four... we probably should"; bugs get tighter timelines, enhancements need a full review. `developer-support.md` captures only the bug/enhancement/support classification + queue routing, not the rule. **Belongs in:** `internal-ops-agents.md` (stub) / `developer-support.md`. **Fix:** capture the threshold + differential SLA rule.
+- **[minor · completeness]** *Source: 02-06 Inbox & Alerts (l.592, ~00:57).* Brett's emergent/reactive build philosophy is uncaptured: don't design every alert up front — monitor real queries, observe where the agent is stopped or has "no net to catch it in," then decide whether to build; explicit guard against over-building ("you end up building too much that isn't used"). Docs present the bounded "fishing nets" framework as static. **Belongs in:** `agent-inbox-alerts.md` §2/§3 or `co-pilot.md`. **Fix:** add the build-as-you-observe methodology to the bounded-framework section.
+- **[minor · completeness]** *Source: 13-05 vision (l.484-493).* (Doc-side counterpart of the prioritization gap above, found in `developer-support.md`.) The doc flattens Mike's spec to a three-way classification, omitting (a) the **sales/marketing destination** — a fourth routing target Mike called "a core component" ("split the sales team from the product enhancement bug team from the actual technical support team"), and (b) the differential enhancement-review-gate vs bug-SLA handling. **Fix:** add the sales destination to the classifier's target set and note the differential downstream handling.
+
+---
+
+## 3. Proposed Open-Questions Register Additions
+
+Only genuinely *unresolved* items (not fixable errors) are proposed below. Most accuracy/provenance findings are corrections, not open questions, and are excluded. These are ready to paste into `content/open-questions.md` (next free numbers continue from #12):
+
+| # | Question | Area | Answer goes in | Raised in | Status |
+|---|----------|------|----------------|-----------|--------|
+| 13 | **Alerting-system build ownership** — DT's role was narrowed (post-AI discussion) to a context-less "post an alert" API; no one is currently scoped to build the alerting/detection system itself. Who owns this build? | Inbox & Alerts | [[agent-inbox-alerts]], [[alert-detection]] | 02-06 | Open |
+| 14 | **Scheduled-report failure handling** — are missed/failed runs retried, and is the user notified of a delay vs silent drop? Assumed in [[scheduled-reporting]], not discussed. Confirm. | Inbox & Alerts | [[scheduled-reporting]] | (assumption) | Open |
+| 15 | **Alert priority field + multi-surface fan-out** — is there a `priority` field on the delivery payload, and do high-priority items fan out to multiple surfaces (push + dashboard dot) simultaneously? Asserted in [[notification-routing]], not discussed. Confirm. | Inbox & Alerts | [[notification-routing]] | (assumption) | Open |
+| 16 | **AI-layer PII / data-residency / redaction** — may cardholder PII appear in chat/audit logs, and what residency + redaction policy applies? Asserted in [[audit-attribution]] beyond the grounded retention point (#6). Confirm with TXN. | Access Layer | [[audit-attribution]] | (assumption) | Open |
+| 17 | **AI-analysis consistency boundaries** — must the AI avoid analysing before a write settles (read-after-write guards)? Stated as a control in [[ai-analysis-impact]] but flagged in [[vision]] §8 as a Novosapien inference, not client-validated. Confirm. | Inbox & Alerts | [[ai-analysis-impact]] | (assumption) | Open |
+| 18 | **User-defined optimization metric** — should the user set an objective the agent optimizes actions toward, with the agent able to suggest additional objectives? Floated in 13-05; not yet scoped. | Full Agentic Experience | [[full-agentic-experience]] | 13-05 | Open |
+
+*Note:* #2 (existing) already covers the MCP permission model and partially overlaps the `permission-scoping` "holistic-only fallback" inference; if the fallback/degraded-mode behaviour is to be tracked separately, append it to #2's answer-location or add a sibling row. The prompt-injection-via-merchant-names risk (`alert-detection`) and the idempotency restatements (`mcp-server`, already #5) are convention/marker fixes, not new questions.
+
+---
+
+## 4. Clean (No Confirmed Findings)
+
+The following audited artifacts had no confirmed findings:
+
+**Documents**
+- `content/components/components.md` (component map / router)
+- `content/components/co-pilot/co-pilot.md` — notably handles the 90%-of-people vs travel-pattern material *correctly* (the model that `tool-catalogue.md` should follow)
+- `content/components/full-agentic-experience/full-agentic-experience.md` (Collecting; gap #18 is a proposed capture, not an error in the doc)
+- `content/components/internal-ops-agents/internal-ops-agents.md` (explicit stub)
+- `content/components/agent-access-layer/agent-access-layer.md` (router)
+- `content/components/agent-inbox-alerts/agent-inbox-alerts.md` (router itself clean; the unowned-alerting gap is a meeting-sourced omission to be added)
+- `content/open-questions.md` (register; disciplined and accurate — used as the convention benchmark)
+
+**Meetings** (all four transcripts verified as faithfully captured where cited; the gaps in §2 are *omissions* from the docs, not errors in the transcripts)
+- `content/meetings/13-05-2026-txn-vision-meeting.md`
+- `content/meetings/29-05-2026-stackworkz-meeting.md`
+- `content/meetings/01-06-2026-component-1-Agent-Access-Layer.md`
+- `content/meetings/02-06-2026-component-2-alerts-agent-inbox.md`
+
+Each meeting doc's own post-call analysis table was accurate in every case checked (13-05 audience model, 13-05 dev-portal timing, 29-05 fast-follow attribution, 02-06 fraud-page cross-ref) — the recurring pattern is that downstream *summaries and sub-component docs* drift from these correct canonical captures, not the meeting docs themselves.

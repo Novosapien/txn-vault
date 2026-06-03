@@ -3,6 +3,7 @@ component: "[[components]]"
 status: Collecting
 sources:
   - "[[13-05-2026-txn-vision-meeting]]"
+  - "[[02-06-2026-component-2-alerts-agent-inbox]]"
 ---
 
 # TXN — Fraud & Risk Assist&ast;
