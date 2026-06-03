@@ -14,6 +14,9 @@ sources:
 > **Owner:** _TBC_
 > **Sources:** [[13-05-2026-txn-vision-meeting]] (developer experience), [[29-05-2026-stackworkz-meeting]] (portal AI split, MCP / LLMS.txt)
 
+> [!warning] Partially scoped — not a formal deep-dive
+> Touched on in a semi-structured session, not a dedicated deep-dive. The detail below reflects what was discussed plus some inference — treat scope, sub-components, and acceptance criteria as **proposals to confirm**. Open questions tracked in [[open-questions]].
+
 ---
 
 ## 1. What Does This Component Do?
@@ -22,7 +25,7 @@ sources:
 
 Developer Support is the agentic AI experience in the **Developer Portal** — the surface where integrators (and their own AI assistants) build against the TXN API. It buckets everything AI-facing for the portal: a **documentation-scoped chatbot** that answers integration questions grounded in TXN's docs; a **defensive triage stack** that catches anything the chatbot can't confidently answer and routes it onward rather than guessing; a **feedback path** on every interaction that classifies an input as bug, product enhancement, or support request and drops it into the right internal queue *without the developer having to choose*; and a **machine-facing layer** (an MCP server over the docs plus an `LLMS.txt`) so a developer's own coding agent can consume TXN's documentation directly.
 
-The portal serves two distinct AI consumers, and the call drew a clear line between them. The **site-wide chatbot** is operational — it has access to the relevant documentation, guides the user on what to click, and in some cases performs actions; this is where Novosapien integrates the LLM. The **developer-facing machine layer** is different: many developers will use their *own* agent / LLM, so what they need from TXN is a clean MCP server and `LLMS.txt` — the LLM is theirs, not TXN's. Stackworkz indicated they are happy to own the docs MCP / `LLMS.txt` piece "regardless of scope," since it sits naturally in their domain (the [[agent-access-layer]] notes this ownership split as an open question).
+The portal serves two distinct AI consumers, and the call drew a clear line between them. The **site-wide chatbot** is operational — it has access to the relevant documentation, guides the user on what to click, and in some cases performs actions. **Ownership of the site-wide LLM is open:** on the 29 May call, Ruan Sunkel (Stackworkz) said the site-wide / agentic AI "is a different story" and that **Teraflow** would most likely be involved in it — Stackworkz scoped themselves to the developer-side MCP / `LLMS.txt`, "because we don't have to worry about the LLM component." Where Novosapien sits on the site-wide LLM is therefore to be confirmed. _[⚠ open — see [[open-questions]] #3]_ The **developer-facing machine layer** is different: many developers will use their *own* agent / LLM, so what they need from TXN is a clean MCP server and `LLMS.txt` — the LLM is theirs, not TXN's. Stackworkz indicated they are happy to own the docs MCP / `LLMS.txt` piece "regardless of scope," since it sits naturally in their domain (the [[agent-access-layer]] notes this ownership split as an open question).
 
 The knowledge the chatbot answers from is the **same central knowledge piece** that serves the Console — Mike Moores (TXN's CTO) described portal AI as *knowledge-base-centred*: searching documentation, helping developers understand it, and surfacing existing support-case tickets so a known answer is reused rather than re-raised. The docs themselves come from the portal's **Umbraco (headless) CMS**, which Stackworkz can expose via API for AI search.
 
@@ -88,7 +91,7 @@ Developer Support
 
 | Capability | Build / Buy / Access | Provider / Approach | Rationale |
 |-----------|---------------------|-------------------|-----------|
-| Docs chatbot (LLM) | Build | Novosapien-integrated LLM over the docs corpus | The site-wide operational AI — Novosapien provides the LLM |
+| Docs chatbot (LLM) | Build / **ownership TBC** | Site-wide operational AI over the docs corpus | LLM ownership open — **Teraflow likely involved per 29 May**; confirm whether Novosapien provides this LLM |
 | Docs source | Access | Umbraco headless CMS APIs (Stackworkz) | Stackworkz can expose docs via API for AI search |
 | Docs MCP / `LLMS.txt` | Access / **ownership TBD** | Likely **Stackworkz** ("happy to own, regardless of scope") | Developers bring their own LLM; this is the machine-readable doc layer — see [[agent-access-layer]] MCP split |
 | Defensive triage + routing | Build | Confidence gating → classify (bug/enhancement/support) → internal queue | Hands off to [[internal-ops-agents]] for triage/resolution |
@@ -167,10 +170,10 @@ _Phasing out of scope for this exercise — full scope captured. (Noted: Mike sc
 
 ## Sub-Components
 
-| Sub-Component | Overview | Status | Link |
-|--------------|----------|--------|------|
-| Docs chatbot | Scoped Q&A grounded in documentation | Collecting | _[[sub-components/docs-chatbot]]_ |
-| Defensive triage | Confidence-gated routing of low-confidence queries | Collecting | _[[sub-components/defensive-triage]]_ |
-| Feedback routing | Auto-classify bug/enhancement/support → internal queue | Collecting | _[[sub-components/feedback-routing]]_ |
-| Support-ticket surfacing | Reuse known answers from existing tickets | Collecting | _[[sub-components/support-ticket-surfacing]]_ |
-| Machine layer (MCP / LLMS.txt) | Docs exposed for developers' own agents — ownership split with Stackworkz | Collecting | _[[sub-components/docs-machine-layer]]_ |
+_Proposed from the semi-structured discussion — not yet documented or deep-dived. Listed as plain text (no links) until the docs exist:_
+
+- **Docs chatbot** — scoped Q&A grounded in documentation
+- **Defensive triage** — confidence-gated routing of low-confidence queries
+- **Feedback routing** — auto-classify bug/enhancement/support → internal queue
+- **Support-ticket surfacing** — reuse known answers from existing tickets
+- **Machine layer (MCP / LLMS.txt)** — docs exposed for developers' own agents (ownership split with Stackworkz)

@@ -84,7 +84,7 @@ graph TD
 - [ ] Each AI action logs actor (agent + represented user), timestamp, tool/endpoint, and before→after / transition.
 - [ ] The record links the chat message where impact was surfaced and the message where the user confirmed.
 - [ ] Approval-routed actions additionally log the approver and approval time.
-- [ ] Audit records are immutable.
+- [ ] Audit records are immutable. _[⚠ open — see [[open-questions]] #6]_
 - [ ] Retention policy is applied (value TBD with TXN).
 
 #### Journey 2: Reconstruct a dispute trail

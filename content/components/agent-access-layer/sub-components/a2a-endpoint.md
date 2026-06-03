@@ -1,6 +1,6 @@
 ---
-component: "[[components]]"
-status: Defining
+component: "[[agent-access-layer]]"
+status: Collecting
 sources:
   - "[[13-05-2026-txn-vision-meeting]]"
   - "[[01-06-2026-component-1-Agent-Access-Layer]]"
@@ -9,11 +9,14 @@ sources:
 
 # TXN — A2A Endpoint
 
-> **Component map:** [[components]] · **Vision:** [[vision]]
+> **Parent component:** [[agent-access-layer]] · **Vision:** [[vision]]
 > **Date:** 2026-06-02
-> **Status:** Defining
+> **Status:** Collecting
 > **Owner:** _TBC_
 > **Sources:** [[13-05-2026-txn-vision-meeting]] (Concept 3 / A2A), [[01-06-2026-component-1-Agent-Access-Layer]] (permission scoping, approval, audit), [[29-05-2026-stackworkz-meeting]] (external agents)
+
+> [!warning] Sub-component of the Agent Access Layer — not yet deep-dived
+> The A2A endpoint is the inbound door for external agents and rides on the access layer's tool surface, so it lives **inside** [[agent-access-layer]] rather than as a standalone component. It has not had its own deep-dive — detail below reflects the vision and the access-layer session plus inference. Treat scope and acceptance criteria as **proposals to confirm**. Open questions tracked in [[open-questions]].
 
 ---
 
@@ -139,13 +142,13 @@ _Inherits and extends the permission model from [[agent-access-layer]]._
 | A2A protocol standard | A stable protocol to implement against | No — track and adopt |
 
 **What other components need from this one:**
-- [[full-agentic-experience]] references the A2A Endpoint as the external door to the same capabilities (A2A is no longer a sub-component of it).
+- [[full-agentic-experience]] references the A2A endpoint as the external door to the same capabilities; the A2A endpoint is a sub-component of [[agent-access-layer]] (not of the full agentic experience).
 
 ---
 
 ## 9. Priority
 
-_Phasing out of scope for this exercise — full scope captured. (Concept 3 is the destination of the trust spine per [[vision]]; included in full.)_
+_Phasing out of scope. Scope here is inferred from the vision + access-layer session (not a dedicated deep-dive); Concept 3 is the destination of the trust spine per [[vision]]._
 
 ---
 
@@ -169,9 +172,4 @@ _Phasing out of scope for this exercise — full scope captured. (Concept 3 is t
 
 ## Sub-Components
 
-| Sub-Component | Overview | Status | Link |
-|--------------|----------|--------|------|
-| Agent-to-agent protocol | The A2A connection surface over the MCP tool layer | Collecting | _[[sub-components/agent-to-agent-protocol]]_ |
-| Identity & scoping | Map external agent → represented user's permissions (user/org) | Collecting | _[[sub-components/identity-and-scoping]]_ |
-| Prompted-trust & approval | Confirmation, impact, and approval-queue routing for agent actions | Collecting | _[[sub-components/prompted-trust-approval]]_ |
-| Audit | Attribution and logging of every A2A-initiated action | Collecting | _[[sub-components/a2a-audit]]_ |
+_Not separately documented — the A2A endpoint hasn't been deep-dived. The aspects surfaced so far (agent-to-agent protocol surface, identity/permission scoping, prompted-trust + approval routing, audit) are described inline above and inherit the [[agent-access-layer]] mechanisms. They'll be decomposed if/when A2A gets its own session._

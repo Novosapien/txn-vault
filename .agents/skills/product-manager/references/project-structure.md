@@ -228,6 +228,24 @@ When a new document is created, the parent must be updated:
 
 **Always backfill immediately after creating a new document.** Don't batch — if you create a document and don't backfill, the knowledge graph has a broken link.
 
+**Never write a dangling wikilink.** A routing-table or cross-link target must point to a file that already exists. If you're listing something not yet documented (a surfaced-but-undocumented sub-component, a not-yet-created component), list it as **plain text** (no `[[link]]`) or create a stub first — add the `[[link]]` only once the file exists. Use shortest-path links (`[[name]]`, never `[[../name]]` or `[[sub-components/name]]`). After any write, run `python3 scripts/check-wikilinks.py` and fix anything it reports.
+
+**Status reflects real coverage.** Only mark a component or sub-component **Defined** after a dedicated deep-dive produced its scope and acceptance criteria. Content from a semi-structured or partial discussion stays **Collecting/Defining** and carries a "partially scoped — not a formal deep-dive" banner. Never present inferred acceptance criteria as decided.
+
+---
+
+## Open Questions Register
+
+Unresolved questions live in one central register — `open-questions.md` at the project root — not buried at the bottom of individual documents. Each row: the question, the area, where the answer belongs (a wikilink), the meeting it was raised in, and status (`Open` / `Answered` / `Parked`).
+
+In the doc where a question is relevant, leave a short inline marker linking to the register:
+
+```markdown
+_[⚠ open — see [[open-questions]] #N]_
+```
+
+When a question is answered, set its status to `Answered` and note where the answer landed. The register is linked from `index.md` so it's reachable from the root.
+
 ---
 
 ## Agent Navigation and Interlinking

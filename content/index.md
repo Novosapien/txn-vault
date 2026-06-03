@@ -16,7 +16,8 @@ ___
 |----------|------------|--------|
 | [[vision]] | Product vision — what we're building and why | Draft complete (all 8 §§); per-section gaps inline |
 | [[architecture]] | Cross-cutting technical decisions — tech stack, infrastructure, integrations | Integrations collecting (build-partner stack) |
-| [[components]] | Component map — Novosapien's deliverables within the TXN product | 8 components mapped; Agent Access Layer + Agent Inbox & Alerts **defined** to buildable depth (5 sub-components each); rest of the agentic experience in definition |
+| [[components]] | Component map — Novosapien's deliverables within the TXN product | 7 components mapped; Agent Access Layer + Agent Inbox & Alerts **defined** to buildable depth; rest of the agentic experience partially scoped |
+| [[open-questions]] | Central register of unresolved questions across the vault, each linked to where it gets answered | Living |
 
 ## External Resources
 
@@ -32,6 +33,7 @@ _Updated as work progresses. Most recent first._
 
 | Date | What happened |
 |------|--------------|
+| 2026-06-03 | Reviewed Brett's PR #4 for accuracy. **A2A Endpoint folded into [[agent-access-layer]]** as a sub-component (no longer standalone). Teraflow attribution restored on [[developer-support]]; transcript-ungrounded assumptions flagged. "Partially scoped" banners added to [[co-pilot]], [[developer-support]], [[full-agentic-experience]]; their undocumented sub-components de-linked. Stubs created: [[internal-ops-agents]], [[fraud-risk-assist]] (stretch). New central [[open-questions]] register. Map now **7 components**. |
 | 2026-06-02 | [[agent-inbox-alerts]] taken to buildable depth — 5 sub-components with entity journeys + acceptance criteria: [[alert-detection]], [[ai-analysis-impact]], [[plan-and-execute]], [[scheduled-reporting]], [[notification-routing]]. Component now **Defined**. |
 | 2026-06-02 | [[agent-access-layer]] taken to buildable depth — 5 sub-components with entity journeys + acceptance criteria: [[mcp-server]], [[permission-scoping]], [[approval-queue-integration]], [[audit-attribution]] (new 5th), [[tool-catalogue]] (gated on full API docs). Component now **Defined**. |
 | 2026-06-02 | Full agentic-experience scope captured across Console, Developer Portal, and A2A (phasing deliberately excluded). New component docs: [[co-pilot]], [[agent-inbox-alerts]], [[developer-support]], [[a2a-endpoint]] (promoted from a sub-component); [[full-agentic-experience]] and [[agent-access-layer]] enriched. Sources: [[01-06-2026-component-1-Agent-Access-Layer]], [[02-06-2026-component-2-alerts-agent-inbox]]. Map now 8 components. |

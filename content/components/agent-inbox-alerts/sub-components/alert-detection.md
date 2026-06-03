@@ -36,7 +36,7 @@ The load-bearing constraint is cost: analysing every transaction with AI explode
 
 **Functional requirements:**
 
-- Support **user-defined** monitors ("alert me if Amazon transactions drop 20% over 7 days") and a **system-defined** baseline corpus (severe declines, failed card creation, host-auth loss).
+- Support **user-defined** monitors ("alert me if Amazon transactions drop 20% over 7 days") and a **system-defined** baseline of critical alerts. _[⚠ open — see [[open-questions]] #4]_
 - **Cheap detection** — threshold maths in middleware/observability, not per-transaction AI; only a trip invokes the AI.
 - React to **config changes** via the product webhook (DT to add) so any change (Console/API/AI) produces an event.
 - Run **scheduled scans** on a cadence (e.g. twice daily) for anomalies not surfaced by events.

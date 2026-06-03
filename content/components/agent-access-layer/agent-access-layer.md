@@ -19,8 +19,10 @@ Every other client-facing component consumes it:
 
 - **[[co-pilot]]** — to answer questions and, later, take actions.
 - **[[agent-inbox-alerts]]** — to investigate triggers and execute approved plans.
-- **[[full-agentic-experience]]** — to do anything the user asks; its A2A endpoint lets a client's *own* agent reach the same tools.
+- **[[full-agentic-experience]]** — to do anything the user asks.
 - **[[fraud-risk-assist]]** — to read transaction state and write rule changes.
+
+It also exposes the **[[a2a-endpoint]]** — the inbound agent-to-agent door for a client's *own* external agents, riding on the same tool surface (see sub-components).
 
 If the Agent Access Layer is wrong, every agent is wrong. That is why it is the first deep-dive — but note it is also the component most dependent on materials and decisions that sit with TXN (see Dependencies).
 
@@ -32,12 +34,12 @@ If the Agent Access Layer is wrong, every agent is wrong. That is why it is the 
 - The permission model that scopes each tool call to what the acting user is allowed to do in the Console
 - The MCP server that exposes those tools to TXN's own agents and to external LLMs (Claude, etc.)
 - The routing of any action that requires sign-off into the Console's existing approval queue
+- The **A2A endpoint** — the inbound agent-to-agent door for clients' own external agents, riding on the same tool surface (see [[a2a-endpoint]])
 
 **The Agent Access Layer IS NOT:**
 
 - The **Core API** itself — built by TXN's dev team; we wrap it, we don't build it
 - The **agent that decides which tools to call** — that intelligence lives in the consuming components ([[co-pilot]], [[agent-inbox-alerts]], [[full-agentic-experience]])
-- The **A2A protocol surface** — the external agent-to-agent face lives in [[full-agentic-experience]]; this layer only provides the tools it exposes
 - The **data lake** — built by DT; the layer reads from it but does not own it
 
 ## Sub-components
@@ -49,6 +51,7 @@ If the Agent Access Layer is wrong, every agent is wrong. That is why it is the 
 | Approval-queue integration | Prompted-trust + two-person approval for product/multi-card changes; privileged single-card actions execute directly | Defined | [[approval-queue-integration]] |
 | Audit & attribution | Combined console + API + chat trail that makes "prompted trust" provable; dispute reconstruction | Defined | [[audit-attribution]] |
 | Tool catalogue | Business-language tools mapped from the Core API endpoints; exact list gated on full API docs | Collecting | [[tool-catalogue]] |
+| A2A endpoint | Inbound agent-to-agent door for clients' own external agents; represented-user scope + prompted-trust + approval + audit | Collecting (not deep-dived) | [[a2a-endpoint]] |
 
 ## Dependencies — what we need from TXN
 

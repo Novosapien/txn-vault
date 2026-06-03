@@ -61,7 +61,7 @@ Agent Inbox & Alerts
 
 **Business rules and constraints:**
 
-- **System-defined vs user-defined.** TXN provides a baseline corpus of critical alerts it feels *obliged* to raise (severe decline, "no auth response from your host for 10 minutes", failed card creation); users define the finer-grained, interest-based ones.
+- **System-defined vs user-defined.** TXN will provide a baseline of **system-defined** critical alerts it feels obliged to raise; users define the finer-grained, interest-based ones. _[⚠ open — see [[open-questions]] #4]_
 - **Critical/instantaneous vs interest-based** (Ian's dividing line): critical alerts may need immediate, traditional detection (candidate for DT); interest-based monitors are fine on a scheduled cadence and are AI-friendly.
 - **Bounded, not free-form.** The AI experience must not be "ask anything, we'll pay for it." A framework (semi-structured: slash commands, predefined workflows, "filters before search") keeps queries built-for-success and protects token cost.
 - **Approval queue respected** — actions affecting multiple cards (product/spend-control level) route through the Console's two-person approval flow before execution.

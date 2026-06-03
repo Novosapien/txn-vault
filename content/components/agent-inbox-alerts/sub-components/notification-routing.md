@@ -92,7 +92,7 @@ graph TD
 - [ ] An item is delivered to the user's preferred channel.
 - [ ] The hub accepts items from any source (AI / DT / Console).
 - [ ] In-context surfacing (dashboard dot + explanation) is available as an alternative to a push.
-- [ ] Delivery failures fall back / retry rather than dropping silently.
+- [ ] Delivery failures fall back / retry rather than dropping silently. _[⚠ open — see [[open-questions]] #7]_
 - [ ] Only items carrying an action or insight are routed.
 
 ---

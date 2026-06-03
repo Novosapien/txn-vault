@@ -58,7 +58,7 @@ A **data flywheel** makes the platform smarter over time. TXN launches with no c
 
 ```mermaid
 graph LR
-    subgraph TXN["TXN Product"]
+    subgraph TXN["TXN Product (built by partners)"]
         API[Core API<br/>issuer processing]
         Console[TXN Console<br/>client admin + CS]
         Portal[Developer Portal<br/>public site + integration]
@@ -67,24 +67,32 @@ graph LR
     end
 
     subgraph Novo["Novosapien — Agentic AI Layer"]
-        Copilot[In-app Co-pilot]
-        Inbox[Agent Inbox / Alerts]
-        Chatbot[Scoped Support Chatbot]
-        MCP[MCP Server]
-        A2A[A2A Endpoint]
+        Copilot[Co-pilot]
+        Inbox[Agent Inbox & Alerts]
+        Full[Full Agentic Experience]
+        DevSup[Developer Support]
         Ops[Internal Ops Agents]
+        Fraud["Fraud &amp; Risk Assist*"]
+        subgraph AAL["Agent Access Layer — foundational tool surface"]
+            MCP[MCP Server]
+            A2A[A2A Endpoint]
+        end
     end
 
     Copilot -.renders inside.-> Console
     Inbox -.renders inside.-> Console
-    Chatbot -.renders inside.-> Portal
-    MCP -.exposes.-> API
-    A2A -.exposes.-> API
+    Full -.renders inside.-> Console
+    DevSup -.renders inside.-> Portal
 
-    ClientAgent[Client's own agent<br/>or Claude] -->|MCP / A2A| MCP
-    ClientAgent -->|MCP / A2A| A2A
+    Copilot --> AAL
+    Inbox --> AAL
+    Full --> AAL
+    Fraud --> AAL
+    AAL -.exposes tools.-> API
 
-    Lake[(Data Lake<br/>built by DT — TXN internal partner)]
+    ClientAgent[Client's own agent<br/>or Claude] -->|A2A| A2A
+
+    Lake[(Data Lake<br/>built by DT)]
     API --> Lake
     Lake --> Copilot
     Lake --> Inbox
@@ -234,7 +242,7 @@ Incumbents are API-first but UX-thin. Common operations require integration work
 
 > *"Yes we have all these properties but unless you know what they mean and understand truly what they do in terms of the business sense people turn them on and off and they can break things."*
 
-Configuration exposes raw mechanics. Card products have 50–60 properties on the JSON object; users without card-domain expertise cannot reason about which to change or what the consequences will be. There is no business-language wrapper over the technical interface.
+Configuration exposes raw mechanics. Card products have 50–60 properties on the JSON object; users without card-domain expertise cannot reason about which to change or what the consequences will be. There is no business-language wrapper over the technical interface. _[⚠ open — see [[open-questions]] #1]_
 
 ### Unfair advantage
 
@@ -471,8 +479,7 @@ _Components are identified during vision extraction (visible in the §1 narrativ
 | Co-pilot | Reactive in-console assistant (C1) — Q&A, inline recommendations, impact preview, guided onboarding | Defining | [[co-pilot]] |
 | Agent Inbox & Alerts | Proactive lane (C1→C2) — event analysis surfaced as actionable alerts and investigated, approvable plans | Defined | [[agent-inbox-alerts]] |
 | Full Agentic Experience | Agent-as-interface (C2→C3) — do-anything, renders UI in real time | Defining | [[full-agentic-experience]] |
-| A2A Endpoint | Agent-to-agent door for clients' own agents — represented-user scope, prompted-trust + approval + audit | Defining | [[a2a-endpoint]] |
 | Developer Support | Portal/docs chatbot, scoped Q&A, defensive triage, feedback routing; MCP/LLMS.txt machine layer | Defining | [[developer-support]] |
-| Agent Access Layer | Foundational tool surface every agent calls, permission-scoped; Core API wrapped as MCP tools | Defined | [[agent-access-layer]] |
+| Agent Access Layer | Foundational tool surface every agent calls, permission-scoped; Core API wrapped as MCP tools; **includes the A2A endpoint** for clients' own external agents | Defined | [[agent-access-layer]] |
 | Fraud & Risk Assist | Real-time enrichment of the approve/decline pass-through + rules engine; advise, don't decide | Collecting | [[fraud-risk-assist]] |
 | Internal Ops Agents | Run TXN agentically — release pipeline, Documentation Engine, ticket routing, process automation | Collecting | [[internal-ops-agents]] |
