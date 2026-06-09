@@ -236,8 +236,8 @@ _Phasing out of scope for this exercise — full scope captured. (Noted: the Con
 | Sub-Component | Overview | Status | Link |
 |--------------|----------|--------|------|
 | Conversational Q&A & Navigation | Ask-anything assistant; guides to the right screen; hands off off-context execution to the agentic experience; CS-resolution journey | Defined | [[conversational-qa]] |
-| Impact preview | Pre-change "this affects N cards / X% of transactions" | Collecting | _[[sub-components/impact-preview]]_ |
+| Impact preview | Pre-change "this affects N cards / X% of transactions"; advisory, analytical-data-based | Defined | [[impact-preview]] |
 | Guided configuration & validation | Real-time validation + conflict detection + impact analysis before activation; advisory; critical conflicts block | Defined | [[guided-configuration]] |
 | Guided onboarding & provisioning | Pattern-recognised config + field-collapse; CRM→technical handoff; admin + user setup and permissions; environment gating (UAT→prod) | Defined | [[guided-onboarding]] |
-| Action-on-confirmation | Plan-then-act; direct API calls; button confirmation; minimise clicks | Collecting | _[[sub-components/action-on-confirmation]]_ |
-| Process surfacing / trust UI | Bucketed step display; risk-tiered agent depth; universal altitude | Collecting | _[[sub-components/process-surfacing]]_ |
+| Action-on-confirmation | Plan-then-act; direct API calls; button confirmation; no auto-approve; minimise clicks | Defined | [[action-on-confirmation]] |
+| Process surfacing / trust UI | Bucketed step display; risk-tiered verification depth; universal altitude | Defined | [[process-surfacing]] |
