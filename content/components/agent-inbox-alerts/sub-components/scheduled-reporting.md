@@ -3,15 +3,17 @@ component: "[[agent-inbox-alerts]]"
 status: Defined
 sources:
   - "[[02-06-2026-component-2-alerts-agent-inbox]]"
+  - "[[ux-ai-user-stories-reporting]]"
+  - "[[ux-entity-performance-insights]]"
 ---
 
-# TXN — Scheduled Reporting
+# TXN — Scheduled & On-Demand Reporting
 
-> **Component:** [[agent-inbox-alerts]]
-> **Date:** 2026-06-02
+> **Component:** [[agent-inbox-alerts]] · **Journey sources:** [[ux-ai-user-stories-reporting|NL Reporting]], [[ux-entity-performance-insights|Entity Performance Insights]]
+> **Date:** 2026-06-09
 > **Status:** Defined
 > **Owner:** _TBC_
-> **Sources:** [[02-06-2026-component-2-alerts-agent-inbox]]
+> **Sources:** [[02-06-2026-component-2-alerts-agent-inbox]] (cadence reporting), [[ux-ai-user-stories-reporting]] (on-demand NL reports + reusable templates), [[ux-entity-performance-insights]] (entity health insights)
 
 ---
 
@@ -22,6 +24,8 @@ sources:
 Scheduled reporting is the **reflective** mode of the inbox — the "reporting" half of the alerting-vs-reporting distinction. Rather than reacting to a point-in-time event, it runs on a **cadence** and produces a written, program-level summary: *what's going on, what changed versus the previous period, and the drivers behind it.* Ian Johnson (TXN's CEO) described the target directly — a card-program owner with a Wednesday exec meeting wants, every Tuesday, a *"perfectly written summary of exactly what's going on... here are the key things you need to be aware of,"* including *why* (e.g. "transaction rate down 20% because decline rate rose 20%, because the max transaction limit was lowered from £400 to £200 on this date"). He cast this as the genuinely **AI-first** experience — not bolting AI onto a legacy alert, but doing the analysis a human analyst would and delivering it ready-to-use.
 
 It reuses the [[ai-analysis-impact]] engine (orchestrator + specialist sub-agents), but on a schedule rather than a trigger, and composes the result into prose delivered via [[notification-routing]]. Where a finding implies an action, it can carry the same *"you might want to do this — shall I?"* hook into [[plan-and-execute]].
+
+**On-demand, conversational reports (from [[ux-ai-user-stories-reporting]]).** Beyond the cadence mode, the same engine generates reports **on demand from a natural-language query** — a user (Programme Ops Admin / Customer Success Manager) asks for a custom report in plain language and receives a structured result, governed by their role-based permissions and programme scope. The conversational *ask* overlaps the [[co-pilot]] Q&A surface; the *generation* is this sub-component. A generated report can be **saved as a reusable template** and re-run later **without AI processing** — reducing AI usage and operational cost on repeat runs. This also covers the **entity performance insights** journey ([[ux-entity-performance-insights]]): automated health/behavioural summaries for business and payment entities.
 
 **Entities that interact with it:**
 
@@ -40,12 +44,16 @@ It reuses the [[ai-analysis-impact]] engine (orchestrator + specialist sub-agent
 - Reuse the orchestrator + specialist analysis pattern over the client's data.
 - **Deliver** to the user's preferred channel via [[notification-routing]].
 - Where a finding implies an action, attach a **"you might want to do X — shall I?"** hook.
+- Generate a report **on demand from a natural-language query** (custom reports not available as a predefined view).
+- **Save a generated report as a reusable template** and re-run it later **without AI processing**.
 
 **Business rules:**
 
 - **Driver-first** — don't just report the number moved; explain *why*.
 - **Action or insight** — the report carries usable insight, not raw dumps.
 - **Client-scoped, cost-bounded** — scheduled, so naturally cheaper than per-event AI.
+- **Governed data access** — on-demand reports return only data within the user's role-based permissions and programme scope.
+- **Reusable templates skip the AI** — a saved report re-runs deterministically to control cost.
 
 **Edge cases:**
 
@@ -89,6 +97,33 @@ graph TD
 - [ ] It is delivered to the user's preferred channel.
 - [ ] Where relevant, an action hook into [[plan-and-execute]] is attached.
 
+#### Journey 2: Generate a report on demand from a natural-language query
+
+**Entity:** Programme Operations Administrator / Customer Success Manager (user) + Agent (hybrid)
+
+**Input:** User asks for a custom report in natural language (e.g. "transactions last month grouped by declined/accepted in these amount buckets").
+
+**Outcome:** The user gets a structured report scoped to their permissions, and can save it as a reusable template that re-runs without AI.
+
+**Steps:**
+
+```mermaid
+graph TD
+    A[User asks for a report in natural language] --> B[Interpret request · scope to role permissions + programme]
+    B --> C[Generate structured report from authorised data]
+    C --> D{Save as template?}
+    D -->|Yes| E[Save reusable report definition]
+    D -->|No| F[Return report]
+    E --> G[Later: re-run template deterministically · no AI processing]
+```
+
+**Acceptance criteria:**
+- [ ] A user can request a custom report in natural language and receive a structured result.
+- [ ] The report returns only data within the user's role-based permissions and programme scope.
+- [ ] A generated report can be saved as a reusable template.
+- [ ] A saved template can be re-run later without AI processing.
+- [ ] The conversational request can originate from the [[co-pilot]] surface (shared ask, this engine generates).
+
 ---
 
 ## 5. Data Requirements
@@ -96,8 +131,10 @@ graph TD
 | What | Direction | Description | Source / Destination |
 |------|-----------|------------|---------------------|
 | Cadence / schedule | In/Stored | When and how often to run | User config |
-| Program data (period + previous) | In | Basis for the comparison + drivers | Data Lake (via [[agent-access-layer]]) |
+| NL report request | In | A natural-language custom-report query | User / [[co-pilot]] |
+| Program / entity data (period + previous) | In | Basis for the comparison + drivers + entity health | Data Lake (via [[agent-access-layer]]) |
 | Composed report | Out | The written summary (+ optional action) | → [[notification-routing]] |
+| Saved report template | Stored | Reusable report definition, re-run without AI | Internal store |
 
 ---
 
@@ -109,9 +146,11 @@ graph TD
 | Data Lake / [[agent-access-layer]] | Period data for the comparison | **Yes** |
 | [[notification-routing]] | Delivery to the user's channel | **Yes** |
 | [[plan-and-execute]] | Optional attached action | No |
+| [[co-pilot]] | Conversational entry point for on-demand report requests (shared ask) | No |
 
 **What siblings/other components need from this one:**
 - Feeds [[notification-routing]]; may invoke [[plan-and-execute]].
+- [[co-pilot]] routes a conversational "make me a report" request to this engine for generation.
 
 ---
 

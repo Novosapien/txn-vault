@@ -185,7 +185,7 @@ _Phasing is out of scope for this exercise — full scope captured. (Noted: Ian 
 | Alert detection | Cheap threshold/anomaly detection (observability tool or middleware) feeding the AI on trip; two creation paths | Defined | [[alert-detection]] |
 | AI analysis & impact | Orchestrator + specialist agents that explain cause, meaning, and estimated impact (predictive + diagnostic) | Defined | [[ai-analysis-impact]] |
 | Plan & execute (C2) | Proposed action → confirm → execute via Agent Access Layer, through approval queue | Defined | [[plan-and-execute]] |
-| Scheduled reporting | Cadence-based reflective program summaries with drivers, delivered to a channel | Defined | [[scheduled-reporting]] |
+| Scheduled & on-demand reporting | Cadence-based reflective summaries with drivers, plus on-demand NL reports + reusable templates (re-run without AI); entity health insights | Defined | [[scheduled-reporting]] |
 | Notification routing | Composing for the central hub → user's preferred channel (with Stackworkz); in-context dashboard insights | Defined | [[notification-routing]] |
 
 ---

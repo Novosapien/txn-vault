@@ -8,7 +8,7 @@ sources:
 
 # TXN — Alert Detection
 
-> **Component:** [[agent-inbox-alerts]]
+> **Component:** [[agent-inbox-alerts]] · **Journey sources:** [[ux-ai-configurable-operational-alerting|Operational Alerting]], [[ux-txn-Intelligence-ai-autonomous-anomaly-detection|Anomaly Detection]]
 > **Date:** 2026-06-02
 > **Status:** Defined
 > **Owner:** _TBC_

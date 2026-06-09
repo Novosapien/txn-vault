@@ -7,7 +7,7 @@ sources:
 
 # TXN — Notification Routing
 
-> **Component:** [[agent-inbox-alerts]]
+> **Component:** [[agent-inbox-alerts]] · **Journey source:** [[ux-ai-configurable-operational-alerting|Operational Alerting]]
 > **Date:** 2026-06-02
 > **Status:** Defined
 > **Owner:** _TBC_
