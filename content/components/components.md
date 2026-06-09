@@ -6,9 +6,9 @@
 
 This is the component map for **Novosapien's deliverables within the TXN product** — the agentic AI layer embedded into TXN's three product surfaces (Core API, Console, Developer Portal). The platform itself is built by other partners (see [[vision#Scope boundary]]) and is not represented here as a Novosapien component.
 
-The map is organised by **how the AI shows up**, not by technology. The three client-facing components are lanes along TXN's trust concepts — reactive co-pilot (C1), proactive inbox (C1→C2), and full agentic (C2→C3). Beside them sits the A2A Endpoint (the inbound door for clients' own agents); beneath them a support component, a foundational tool layer every agent rides on, a payment-stream component, and the internal-operations agents.
+The map is organised by **how the AI shows up**, not by technology. The three client-facing components are lanes along TXN's trust concepts — reactive co-pilot (C1), proactive inbox (C1→C2), and full agentic (C2→C3). Beneath them sit a support component, a foundational tool layer every agent rides on (the Agent Access Layer — whose **external edge, the [[a2a-endpoint]], is the inbound door for clients' own agents**), a payment-stream component, and the internal-operations agents.
 
-Components were first surfaced in the [[13-05-2026-txn-vision-meeting|vision meeting]], re-scoped on 2026-06-01, and deep-dived across the agentic-experience sessions ([[01-06-2026-component-1-Agent-Access-Layer|Agent Access Layer]], [[02-06-2026-component-2-alerts-agent-inbox|Alerts & Inbox]], [[29-05-2026-stackworkz-meeting|Stackworkz ways-of-working]]). Each is formalised through a dedicated deep-dive.
+Components were first surfaced in the [[13-05-2026-txn-vision-meeting|vision meeting]], re-scoped on 2026-06-01, and deep-dived across the agentic-experience sessions ([[01-06-2026-component-1-Agent-Access-Layer|Agent Access Layer]], [[02-06-2026-component-2-alerts-agent-inbox|Alerts & Inbox]], [[04-06-2026-component-3-co-pilot|Co-pilot]], [[05-06-2026-component-4-full-agentic-experience|Full Agentic Experience]], [[29-05-2026-stackworkz-meeting|Stackworkz ways-of-working]]). Each is formalised through a dedicated deep-dive.
 
 **Status legend:**
 - **Collecting** — surfaced; details still being gathered
@@ -21,12 +21,11 @@ Components were first surfaced in the [[13-05-2026-txn-vision-meeting|vision mee
 
 | Component | What it does | Status | Link |
 |-----------|-------------|--------|------|
-| Co-pilot | *Client-facing, C1.* Reactive in-console assistant — Q&A, inline recommendations, impact preview, guided onboarding. You drive; AI augments. | Defining | [[co-pilot]] |
+| Co-pilot | *Client-facing, C1.* Reactive in-console assistant — Q&A, inline recommendations, impact preview, guided onboarding/configuration. Levels 2–3 of the manual→agentic graduation; you drive, AI augments. | Defined | [[co-pilot]] |
 | Agent Inbox & Alerts | *Client-facing, proactive C1→C2.* Event → AI analyses → surfaces. C1 actionable alert; C2 investigated plan you approve, debate, or delegate. | Defined | [[agent-inbox-alerts]] |
-| Full Agentic Experience | *Client-facing, C2→C3.* The agent is the interface — do-anything, renders UI in real time, acts on approval. | Defining | [[full-agentic-experience]] |
-| A2A Endpoint | *Agent surface.* The inbound door for a client's own agents to act on TXN, scoped to the represented user; prompted-trust + approval + audit still apply. | Defining | [[a2a-endpoint]] |
+| Full Agentic Experience | *Client-facing, C2→C3.* Level 4 — the agent is the interface; renders UI in real time, composes/merges journeys, acts on approval. Simple face, specialised multi-agent core. | Defined | [[full-agentic-experience]] |
 | Developer Support | Portal + docs chatbot, scoped Q&A, defensive triage layers, feedback routing (bug / enhancement / support); machine layer (MCP / LLMS.txt) for devs' own agents. | Defining | [[developer-support]] |
-| Agent Access Layer | *Foundational.* The tool surface every agent calls, scoped to the acting user's Console permissions. Wraps the Core API as agent-callable tools; exposed via MCP. | Defined | [[agent-access-layer]] |
+| Agent Access Layer | *Foundational.* The tool surface every agent calls, scoped to the acting user's Console permissions. Wraps the Core API as agent-callable tools; exposed via MCP. Includes the **external A2A edge** ([[a2a-endpoint]]) — the inbound door for clients' own agents (expose-the-agent, not raw tools). | Defined | [[agent-access-layer]] |
 | Fraud & Risk Assist | *Payment stream.* Real-time enrichment of the approve/decline pass-through, plus a rules engine and rule recommendations. Advise, don't decide. Data-dependent (later phase). | Collecting | [[fraud-risk-assist]] |
 | Internal Ops Agents | *Internal.* Run TXN agentically — release pipeline, Documentation Engine (auto change-logs, self-healing), ticket routing, process automation. | Collecting | [[internal-ops-agents]] |
 

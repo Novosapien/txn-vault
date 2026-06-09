@@ -1,37 +1,45 @@
 ---
-component: "[[components]]"
-status: Defining
+component: "[[agent-access-layer]]"
+status: Defined
 sources:
   - "[[13-05-2026-txn-vision-meeting]]"
   - "[[01-06-2026-component-1-Agent-Access-Layer]]"
   - "[[29-05-2026-stackworkz-meeting]]"
+  - "[[05-06-2026-component-4-full-agentic-experience]]"
 ---
 
-# TXN — A2A Endpoint
+# TXN — A2A Endpoint (external edge)
 
-> **Component map:** [[components]] · **Vision:** [[vision]]
-> **Date:** 2026-06-02
-> **Status:** Defining
+> **Component:** [[agent-access-layer]] · **Vision:** [[vision]]
+> **Date:** 2026-06-05
+> **Status:** Defined
 > **Owner:** _TBC_
-> **Sources:** [[13-05-2026-txn-vision-meeting]] (Concept 3 / A2A), [[01-06-2026-component-1-Agent-Access-Layer]] (permission scoping, approval, audit), [[29-05-2026-stackworkz-meeting]] (external agents)
+> **Sources:** [[13-05-2026-txn-vision-meeting]] (Concept 3 / A2A), [[01-06-2026-component-1-Agent-Access-Layer]] (permission scoping, approval, audit), [[29-05-2026-stackworkz-meeting]] (external agents), [[05-06-2026-component-4-full-agentic-experience]] (expose-the-agent mechanism)
 
 ---
 
-## 1. What Does This Component Do?
+## 1. What Does This Sub-Component Do?
 
 **Functional purpose:**
 
-The A2A Endpoint is TXN's **agent-to-agent face** — the surface through which a client's *own* agent (or an LLM like Claude in the client team's hands) acts on TXN's capabilities on behalf of a human user, over standard agent-to-agent protocols. It is the destination end of the trust spine (Concept 3): where the [[full-agentic-experience]] is TXN's *own* agent as the interface, the A2A Endpoint is the *inbound* door for *external* agents the client controls. It is treated as a co-equal surface alongside the Console and Developer Portal because it is how a whole class of clients will prefer to integrate — TXN's CEO Ian Johnson noted that many clients will run their own AI over the data TXN gives them, and Mike Moores (TXN's CTO) raised the explicit case of *"what if I want my whole business to work with your agent, agent-to-agent."*
+The A2A Endpoint is the **external edge of the [[agent-access-layer]]** — its agent-to-agent face. Where the rest of the access layer is the *internal* core that TXN's own agents ([[co-pilot]], [[agent-inbox-alerts]], [[full-agentic-experience]]) call directly, this sub-component is the *inbound* door through which a client's *own* agent (or an LLM like Claude in the client team's hands) reaches the same capabilities on behalf of a human user, over standard agent-to-agent protocols. It is the destination end of the trust spine (Concept 3). It matters because it is how a whole class of clients will prefer to integrate — TXN's CEO Ian Johnson noted that many clients will run their own AI over the data TXN gives them, and Mike Moores (TXN's CTO) raised the explicit case of *"what if I want my whole business to work with your agent, agent-to-agent."* It is the most security-critical line in the access layer: the boundary where traffic crosses in from *outside* the tenant.
 
 The endpoint exposes the same capabilities the rest of the AI layer uses — it rides on the tool surface and MCP server of the [[agent-access-layer]] — but adds the agent-to-agent protocol, identity, and scoping needed for an external agent to be trusted. The load-bearing rule is that an external agent **gets exactly the permissions of the human user it represents, and no more**. Because TXN's permission model was designed around the Console, an external/agent-to-agent consumer needs an **AI-specific permission configuration** that mirrors the granular Console permissions (there is no such API today — see [[agent-access-layer]]).
 
-Critically, **the agentic shortcut does not bypass TXN's safeguards**. Ian was firm that "if it's agent-to-agent we don't care, we'll just do whatever's asked" is *not* the model — the same **prompted-trust** confirmation, impact information, **approval queue**, and **audit trail** that protect a Console user apply to an external agent. The whole proposition is that TXN helps non-experts avoid costly mistakes; abandoning that for A2A would undermine it. Approvals can themselves be **agent-mediated**: where an action needs sign-off, the request routes to the named approver (or their agent), who confirms, and only then does it execute.
+**Expose the agent, not the tools.** This is the core architecture decision the deep-dive resolved ([[05-06-2026-component-4-full-agentic-experience]]). The common approach — hand the client a raw MCP server and let their Claude call the tools directly — is **deliberately rejected** for TXN. George Westbrook's reasoning: raw tool exposure carries none of the context that makes TXN safe — "how things should be done, what the impacts are" — so "just exposing MCP tools is not going to be good enough." Instead, TXN exposes its **agent**, which carries the skills, ways-of-working, approval layers, and impact-awareness, and the external agent talks *to that agent*. Two mechanisms deliver this:
+
+- **Preferred — A2A:** the client's agent (e.g. Claude) speaks to the **TXN agent over A2A**; the TXN agent executes the [[agent-access-layer]] MCP tools behind its own guard rails and replies. This depends on providers shipping direct A2A connections (assumed to be coming for the major providers).
+- **Fallback — MCP-as-message (available today):** TXN's agent is wrapped and exposed to the client's Claude *as MCP tools*. When Claude wants to (say) update a setting, it sends a payload to the MCP server, which is passed as a **user message into the TXN agent** — the agent (not Claude) does the work and replies back. The client agent never touches raw tools directly.
+
+Ian's mental model for the target is the agentic e-commerce / travel-booking experience inside Claude (find hotel → "best price, shall I book?" → complete) — "something similar, of a TXN flavour." Rendering generative UI back into the client's Claude is *possible* but "not in exactly the same way" as TXN's own [[full-agentic-experience]] surface — the rich rendering is for TXN-hosted surfaces.
+
+Critically, **the agentic shortcut does not bypass TXN's safeguards**. Ian was firm that "if it's agent-to-agent we don't care, we'll just do whatever's asked" is *not* the model — the same **prompted-trust** confirmation, impact information, **approval queue**, and **audit trail** that protect a Console user apply to an external agent. The whole proposition is that TXN helps non-experts avoid costly mistakes; abandoning that for A2A would undermine it. Approvals can themselves be **agent-mediated**: where an action needs sign-off, the request routes to the named approver (or their agent), who confirms, and only then does it execute. Because the request lands as a message to the *TXN agent*, those safeguards are enforced agent-side regardless of which mechanism (A2A or MCP-as-message) the client uses.
 
 ```
 A2A Endpoint
-├── Agent-to-agent protocol     (external/client agent connects, over A2A standards)
+├── Agent-to-agent protocol     (external agent → TXN agent: A2A preferred, MCP-as-message fallback)
 ├── Identity & scoping           (maps the agent to its human user's permissions)
-├── Prompted-trust + approval    (confirm / impact / approval-queue still enforced)
+├── Prompted-trust + approval    (confirm / impact / approval-queue still enforced, agent-side)
 └── Audit                         (every A2A-initiated action attributed and logged)
 ```
 
@@ -89,7 +97,8 @@ A2A Endpoint
 
 | Capability | Build / Buy / Access | Provider / Approach | Rationale |
 |-----------|---------------------|-------------------|-----------|
-| Agent-to-agent protocol surface | Build / Access | A2A standard(s) on top of the [[agent-access-layer]] MCP server | Reuse the tool surface; add the agent-to-agent face |
+| Agent exposure (preferred) | Build / Access | External agent → **TXN agent over A2A** → TXN agent executes [[agent-access-layer]] MCP tools → replies | Expose the agent (with skills, approval layers, impact-awareness), not raw tools; depends on provider A2A enablement |
+| Agent exposure (fallback, today) | Build | Wrap TXN agent **as MCP tools**; client Claude's payload passed as a **user message** to the TXN agent | Works now without provider A2A support; client agent never calls raw tools directly |
 | Identity & permission scoping | Build | AI-specific permission config mirroring Console permissions (user + org) | No API exists today; must mirror granular Console model |
 | Prompted-trust + approval | Access | Reuse confirmation + Console approval queue (via [[agent-access-layer]]) | Same safeguards as Console/Co-pilot |
 | Audit | Access | Combined console/API/chat audit (see [[agent-access-layer]]) | Attribute agent + user; provable "prompted + confirmed" |
@@ -137,9 +146,11 @@ _Inherits and extends the permission model from [[agent-access-layer]]._
 | AI-specific permission config | Org/user permission mirror for non-Console access (new build) | **Yes** |
 | Combined audit store | Attribution of agent + user actions | No — extends existing audit |
 | A2A protocol standard | A stable protocol to implement against | No — track and adopt |
+| Provider A2A enablement | Major providers (e.g. Anthropic) shipping direct A2A connections | No — MCP-as-message fallback carries it until then |
+| TXN agent | The agent that gets exposed (shared with [[full-agentic-experience]]) | **Yes** — A2A exposes the agent, not raw tools |
 
 **What other components need from this one:**
-- [[full-agentic-experience]] references the A2A Endpoint as the external door to the same capabilities (A2A is no longer a sub-component of it).
+- [[full-agentic-experience]] relies on this edge as the external door to the same capabilities — it and this edge share the **"expose the agent, not the tools"** mechanism (TXN's own agent surface and the inbound external door, one mechanism).
 
 ---
 
@@ -155,6 +166,10 @@ _Phasing out of scope for this exercise — full scope captured. (Concept 3 is t
 - **Permission escalation / scope abuse** — an external agent sending misleading framing to act beyond its user's rights; mitigated by server-side validation + least privilege.
 - **Approval-queue bypass** — the endpoint must not let an agent self-approve or impersonate an approver.
 - **Cross-tenant leakage** — an agent for Client A must never reach Client B's data.
+- **Raw-tool exposure temptation** — shipping a plain MCP tool server (skipping the TXN agent) would strip the impact-awareness and approval layers; explicitly rejected in favour of exposing the agent.
+
+**Delivery risks:**
+- **Provider A2A enablement** — the preferred path depends on providers supporting A2A; the MCP-as-message fallback must carry the experience until that lands.
 
 **Data risks:**
 - Acting on stale state; impact estimates computed before a write settles.
@@ -167,11 +182,13 @@ _Phasing out of scope for this exercise — full scope captured. (Concept 3 is t
 
 ---
 
-## Sub-Components
+## Shared machinery
 
-| Sub-Component | Overview | Status | Link |
-|--------------|----------|--------|------|
-| Agent-to-agent protocol | The A2A connection surface over the MCP tool layer | Collecting | _[[sub-components/agent-to-agent-protocol]]_ |
-| Identity & scoping | Map external agent → represented user's permissions (user/org) | Collecting | _[[sub-components/identity-and-scoping]]_ |
-| Prompted-trust & approval | Confirmation, impact, and approval-queue routing for agent actions | Collecting | _[[sub-components/prompted-trust-approval]]_ |
-| Audit | Attribution and logging of every A2A-initiated action | Collecting | _[[sub-components/a2a-audit]]_ |
+This edge does not own its own copies of identity, approval, or audit — those are the [[agent-access-layer]]'s sub-components, reused. What is *distinct* to this edge is only the **agent-to-agent protocol surface** (A2A-preferred, MCP-as-message fallback) and the **external trust boundary**. Everything else is shared:
+
+| Concern | Where it lives | This edge adds |
+|---------|---------------|----------------|
+| Tool execution & validation | [[mcp-server]] | The external agent talks to the *TXN agent*, which calls the MCP server — it never touches raw tools |
+| Identity & permission scoping | [[permission-scoping]] | Maps an *external* agent → its represented user's permissions (same AI-permission config) |
+| Prompted-trust & approval | [[approval-queue-integration]] | Same confirmation + approval-queue, enforced agent-side regardless of A2A vs MCP-as-message |
+| Audit & attribution | [[audit-attribution]] | Attributes the action to the external agent *and* the user it represents |
