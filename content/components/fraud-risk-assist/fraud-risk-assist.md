@@ -30,7 +30,7 @@ Imported UX journeys ([[user-journeys]]) that exercise this component:
 | Journey | What it covers |
 |---------|----------------|
 | [[ux-ai-driven-fraud-alerts\|AI Driven Fraud Alerts]] | AI detection of emerging fraud patterns and merchant risk signals across programmes |
-| [[ux-ai-enhanced-authorisation-reconciliation\|AI Enhanced Authorisation Reconciliation]] | AI-assisted reconciliation improving match accuracy beyond rule-based matching _(mapping provisional — could sit with internal ops)_ |
+| [[ux-txn-Intelligence-ai-autonomous-anomaly-detection\|Autonomous Anomaly Detection]] | Detection engine for unusual transaction behaviour _(primary home [[agent-inbox-alerts]]; Fraud is the analytical source)_ |
 
 ---
 

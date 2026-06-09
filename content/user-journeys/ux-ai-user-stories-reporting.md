@@ -1,5 +1,5 @@
 ---
-component: "[[full-agentic-experience]]"
+component: "[[agent-inbox-alerts]]"
 type: user-journey
 author: M.Moores
 status: imported
@@ -7,7 +7,7 @@ status: imported
 
 # AI User Stories Reporting v1.0
 
-> **Component:** [[full-agentic-experience]] · **Journeys index:** [[user-journeys]] · **Vision:** [[vision]]
+> **Component:** [[agent-inbox-alerts]] · **Journeys index:** [[user-journeys]] · **Vision:** [[vision]]
 
 AI generated reports from conversational queries with governed data access Version: 1.0 Author: M.Moores Date: 06/03/2026 Natural Language Reporting in TXN Console
 

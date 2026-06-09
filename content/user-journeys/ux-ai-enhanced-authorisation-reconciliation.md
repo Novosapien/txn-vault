@@ -1,5 +1,5 @@
 ---
-component: "[[fraud-risk-assist]]"
+component: "[[internal-ops-agents]]"
 type: user-journey
 author: M.Moores
 status: imported
@@ -7,7 +7,7 @@ status: imported
 
 # AI Enhanced Authorisation Reconciliation v1.0
 
-> **Component:** [[fraud-risk-assist]] · **Journeys index:** [[user-journeys]] · **Vision:** [[vision]]
+> **Component:** [[internal-ops-agents]] · **Journeys index:** [[user-journeys]] · **Vision:** [[vision]]
 
 AI assisted reconciliation improving match accuracy beyond traditional rule based matching Version: 1.0 Author: M.Moores Date: 06/03/2026 AI Enhanced Authorisation and Clearing Reconciliation
 

@@ -36,6 +36,7 @@ Imported UX journeys ([[user-journeys]]) that exercise this component:
 |---------|----------------|
 | [[ux-ai-knowledge-base-updates\|AI Knowledge Base Updates]] | AI-suggested documentation improvements based on recurring support patterns |
 | [[ux-ai-knowledge-learning\|AI Knowledge Learning]] | AI knowledge improvement through governed support-case resolution feedback |
+| [[ux-ai-enhanced-authorisation-reconciliation\|AI Enhanced Authorisation Reconciliation]] | AI-assisted auth/clearing settlement reconciliation — finance/settlement analysts _(candidate for its own payment-ops scope; moved here from Fraud)_ |
 
 _The knowledge-base / learning loop overlaps with [[developer-support]] (where the support tickets originate) — confirm the boundary in a focused session._
 
