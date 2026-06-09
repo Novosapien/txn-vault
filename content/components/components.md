@@ -29,6 +29,10 @@ Components were first surfaced in the [[13-05-2026-txn-vision-meeting|vision mee
 | Fraud & Risk Assist | *Payment stream.* Real-time enrichment of the approve/decline pass-through, plus a rules engine and rule recommendations. Advise, don't decide. Data-dependent (later phase). | Collecting | [[fraud-risk-assist]] |
 | Internal Ops Agents | *Internal.* Run TXN agentically — release pipeline, Documentation Engine (auto change-logs, self-healing), ticket routing, process automation. | Collecting | [[internal-ops-agents]] |
 
+## User journeys
+
+Behavioural UX journeys authored by M. Moores (TXN), Mar 2026, are catalogued in [[user-journeys]] and routed to the components they exercise. Each component above links its related journeys in its header. They are source UX material that feeds the User Stories & Requirements beneath each component — not component definitions themselves.
+
 ## Parked
 
 | Item | Why parked |

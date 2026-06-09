@@ -9,6 +9,7 @@ sources:
 # TXN — Developer Support
 
 > **Component map:** [[components]] · **Vision:** [[vision]]
+> **User journeys:** [[ux-txn-intelligence-enhanced-documentation-discovery|Documentation Discovery]], [[ux-ai-user-stories-and-requirements|User Stories & Requirements]] — see [[user-journeys]]
 > **Date:** 2026-06-02
 > **Status:** Defining
 > **Owner:** _TBC_

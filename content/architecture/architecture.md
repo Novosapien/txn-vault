@@ -1,6 +1,7 @@
 # TXN — Architecture
 
 > **Project:** [[index]]
+> **User journeys:** [[ux-ai-cost-governance|AI Cost Governance]] (cross-cutting AI-infra concern) — see [[user-journeys]]
 
 Cross-cutting technical decisions that affect the whole product. This directory covers tech stack choices, infrastructure, and third-party integrations.
 

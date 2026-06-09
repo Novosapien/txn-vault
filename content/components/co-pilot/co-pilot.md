@@ -11,6 +11,7 @@ sources:
 # TXN — Co-pilot
 
 > **Component map:** [[components]] · **Vision:** [[vision]]
+> **User journeys:** [[ux-ai-guided-product-onboarding|Guided Onboarding]], [[ux-ai-configuration-validation|Config Validation]], [[ux-ai-assisted-customer-service-resolution|CS Resolution]] — see [[user-journeys]]
 > **Date:** 2026-06-04
 > **Status:** Defined
 > **Owner:** _TBC_

@@ -11,6 +11,7 @@ sources:
 # TXN — A2A Endpoint (external edge)
 
 > **Component:** [[agent-access-layer]] · **Vision:** [[vision]]
+> **User journeys:** [[ux-ai-transaction-query|Transaction Query (read)]], [[ux-ai-user-stories-mapping|API Actions (write)]] — see [[user-journeys]]
 > **Date:** 2026-06-05
 > **Status:** Defined
 > **Owner:** _TBC_

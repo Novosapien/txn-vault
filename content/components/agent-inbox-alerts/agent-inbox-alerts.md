@@ -10,6 +10,7 @@ sources:
 # TXN — Agent Inbox & Alerts
 
 > **Component map:** [[components]] · **Vision:** [[vision]]
+> **User journeys:** [[ux-ai-configurable-operational-alerting|Operational Alerting]], [[ux-entity-performance-insights|Entity Performance Insights]], [[ux-txn-Intelligence-ai-autonomous-anomaly-detection|Anomaly Detection]] — see [[user-journeys]]
 > **Date:** 2026-06-02
 > **Status:** Defined
 > **Owner:** _TBC_

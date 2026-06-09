@@ -10,6 +10,7 @@ sources:
 # TXN — Full Agentic Experience
 
 > **Component map:** [[components]] · **Vision:** [[vision]]
+> **User journeys:** [[ux-ai-user-stories-reporting|AI Reporting]] — see [[user-journeys]]
 > **Date:** 2026-06-05
 > **Status:** Defined
 > **Owner:** _TBC_

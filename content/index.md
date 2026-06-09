@@ -16,7 +16,8 @@ ___
 |----------|------------|--------|
 | [[vision]] | Product vision — what we're building and why | Draft complete (all 8 §§); per-section gaps inline |
 | [[architecture]] | Cross-cutting technical decisions — tech stack, infrastructure, integrations | Integrations collecting (build-partner stack) |
-| [[components]] | Component map — Novosapien's deliverables within the TXN product | 8 components mapped; Agent Access Layer + Agent Inbox & Alerts **defined** to buildable depth (5 sub-components each); rest of the agentic experience in definition |
+| [[components]] | Component map — Novosapien's deliverables within the TXN product | 7 top-level components; Access Layer, Alerts, Co-pilot, Full Agentic **defined**; A2A folded into the Access Layer as its external edge |
+| [[user-journeys]] | Behavioural UX journeys (M. Moores, Mar 2026) routed to the components they exercise | 16 journeys imported + cross-linked; provisional mappings to reconcile |
 
 ## External Resources
 
