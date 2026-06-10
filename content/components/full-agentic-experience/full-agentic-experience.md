@@ -225,10 +225,10 @@ _Phasing/sequencing is deliberately out of scope for this exercise — we are ca
 
 | Sub-Component | Overview | Status | Link |
 |--------------|----------|--------|------|
-| Conversational interface | Text / voice chat surface — the "TXN's Claude" entry point in the Console | Collecting | _[[sub-components/conversational-interface]]_ |
-| Generative UI rendering | AG-UI pipeline: tool call + arguments → live React/MUI component, reusing the Console library | Collecting | _[[sub-components/generative-ui-rendering]]_ |
-| Agent orchestration & planning | Specialised agent teams; cross-journey plan→approve→execute; risk-tiered verification; bucketed process surfacing | Collecting | _[[sub-components/agent-orchestration]]_ |
-| Session persistence | Saved, revisitable rendered views + scheduled/recurring task definitions | Collecting | _[[sub-components/session-persistence]]_ |
+| Conversational interface | Text / voice chat surface — the "TXN's Claude" entry point; simple face over the multi-agent core | Defined | [[conversational-interface]] |
+| Generative UI rendering | AG-UI pipeline: tool call + arguments → live React/MUI component, reusing the Console library; render-to-select; click-through consistency | Defined | [[generative-ui-rendering]] |
+| Agent orchestration & planning | Specialised agent teams; cross-journey plan→approve→execute; risk-tiered verification; API-must-exist guard rails | Defined | [[agent-orchestration]] |
+| Session persistence | Saved, revisitable (live-refreshed) rendered views + scheduled/recurring task definitions; store TBC | Defined | [[session-persistence]] |
 
 ---
 
