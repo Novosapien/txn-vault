@@ -5,16 +5,17 @@ sources:
   - "[[13-05-2026-txn-vision-meeting]]"
   - "[[29-05-2026-stackworkz-meeting]]"
   - "[[09-06-2026-developer-support]]"
+  - "[[10-06-2026-developer-support-and-internal-ops]]"
 ---
 
 # TXN — Developer Support
 
 > **Component map:** [[components]] · **Vision:** [[vision]]
 > **User journeys:** [[ux-txn-intelligence-enhanced-documentation-discovery|Documentation Discovery]], [[ux-ai-user-stories-and-requirements|User Stories & Requirements]] — see [[user-journeys]]
-> **Date:** 2026-06-09
+> **Date:** 2026-06-10
 > **Status:** Defined
 > **Owner:** _TBC_
-> **Sources:** [[13-05-2026-txn-vision-meeting]] (developer experience), [[29-05-2026-stackworkz-meeting]] (portal AI split, MCP / LLMS.txt), [[09-06-2026-developer-support]] (dedicated deep-dive — four-level access, hosted MCP strategy, support triage)
+> **Sources:** [[13-05-2026-txn-vision-meeting]] (developer experience), [[29-05-2026-stackworkz-meeting]] (portal AI split, MCP / LLMS.txt), [[09-06-2026-developer-support]] (dedicated deep-dive — four-level access, hosted MCP strategy, support triage), [[10-06-2026-developer-support-and-internal-ops]] (wrap-up — docs hosting, Umbraco draft-API, cold-start)
 
 ---
 
@@ -193,6 +194,11 @@ _Sign-up/login is **not yet scoped in the MVP design** (docs are currently fully
 - **Public sandbox API-key model (DT)** — unknown; *changes whether/when sign-up is required*.
 - **Cost per level** — Ian wants the actual cost-per-1000-calls understood before finalising the gates.
 - **Voice support (Tier 2)** — parked pending real-user feedback.
+
+**Confirmed / added in the 10-Jun wrap-up ([[10-06-2026-developer-support-and-internal-ops]]):**
+- **Docs hosted in two stores** — the **DT YAML** (API reference) + **Umbraco** (guides + change log, API-accessible). Umbraco supports **edit-via-API in draft mode**, so the [[internal-ops-agents]] knowledge engine can propose doc updates for human approval. Guides are kept stable/business-level (code specifics link to the API reference to avoid staleness).
+- **Pre-launch cold-start** — the portal co-pilot / MCP are trained *before* launch via the [[internal-ops-agents]] simulation harness (auto-generated + ambiguous questions, 20+ developer personas) so day-zero isn't a "read the documentation" experience.
+- **Open:** the Super-Ultra `LLMS.txt`-style downloadable doc file (a lighter-than-MCP "here's TXN + endpoints" file) — ownership + cadence undecided (see [[architecture]]).
 
 ---
 
