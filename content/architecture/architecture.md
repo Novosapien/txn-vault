@@ -21,7 +21,4 @@ _Cross-cutting calls made in client sessions._
 
 ## Open Questions
 
-_Architecture decisions that need resolving. Move to the relevant section document when decided._
-
-- **CRM ↔ Console data split** — exactly which client data items live only in the CRM vs are needed in the Console, and how they sync (Dorte raised; [[10-06-2026-developer-support-and-internal-ops]]).
-- **AI-ready downloadable doc file** — the Super-Ultra-designed `LLMS.txt`-style file (less than the MCP: "here's TXN, here are the endpoints"); who builds it (Stackworkz from portal data vs AI-generated) and on what release cadence ([[developer-support]]).
+Tracked centrally in the [[open-questions]] register. Architecture-level items currently open include the site-wide LLM owner (#3), the MCP-ownership split (#8), the CRM ↔ Console data split (#19), the AI-ready downloadable doc file (#20), and AI data-access / dev-environment questions (see [[integrations]]).

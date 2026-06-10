@@ -33,7 +33,7 @@ The user interacts through a chat surface (text or voice) — conceptually "TXN'
 
 The mechanism for rendering (proposed): the agent emits a **tool call whose arguments describe a component to render**, the front end receives that payload and renders the component — the payload carries arguments, not code. Underneath, the agent queries data exactly the way the front end would (e.g. user ID + date range → the same API call), so the rendered result is consistent with what the user would see by navigating manually.
 
-Because the agent has access to the tool surface ([[agent-access-layer]]), the data APIs, and a component library, the experience is **portable** — it manifests in the Console as its primary entry point, but in principle the same agent could surface anywhere. **External / client-owned agents** reach the same capabilities through the [[a2a-endpoint]] (the external edge of [[agent-access-layer]]) — and the deep-dive resolved *how*: TXN exposes the **agent**, not raw tools (see §4).
+Because the agent has access to the tool surface ([[agent-access-layer]]), the data APIs, and a component library, the experience is **portable** — it manifests in the Console as its primary entry point, but in principle the same agent could surface anywhere. **External / client-owned agents** reach the same capabilities through the [[a2a-endpoint]] (a sub-component of [[agent-access-layer]], its external edge) — and the deep-dive resolved *how*: TXN exposes the **agent**, not raw tools (see §4).
 
 ```
 Full Agentic Experience  (Level 4 of the graduation)
@@ -49,7 +49,7 @@ Full Agentic Experience  (Level 4 of the graduation)
 |---------|---------------------------|----------------------|
 | **Card Program Operators** (Console) | The "speak to my computer" user — drives the entire program through conversation rather than navigation; asks for views, dashboards, and combined actions and gets live UI back | Trust that the rendered view is real and current; the ability to act, not just look; combined-journey outcomes the Console can't give; continuity (come back tomorrow, the dashboard is still there) |
 
-_External / client-owned agents are served by the [[a2a-endpoint]] (the external edge of [[agent-access-layer]]), not this surface — but via the same "expose the agent" mechanism resolved here._
+_External / client-owned agents are served by the [[a2a-endpoint]] (a sub-component of [[agent-access-layer]], its external edge), not this surface — but via the same "expose the agent" mechanism resolved here._
 
 ---
 
@@ -150,7 +150,7 @@ graph TD
 | Persona / Role | Access level | Notes |
 |---------------|-------------|-------|
 | Card Program Operators | Gated to the user's Console permissions | Scoped via [[agent-access-layer]]; actions requiring sign-off route through approval queue; only capabilities with a backing API are reachable |
-| Client's own agents | Permission parity with the human they represent | Served by the [[a2a-endpoint]] via the "expose the agent" mechanism; same guard rails, approval, and audit apply |
+| Client's own agents | Permission parity with the human they represent | Served by the [[a2a-endpoint]] (a sub-component of [[agent-access-layer]]) via the "expose the agent" mechanism; same guard rails, approval, and audit apply |
 
 _Inherits the permission model from [[agent-access-layer]]. Ian's non-negotiable: guard rails must be **strong and auditable** — know who the actor is, what they're permitted to do, and stop early if they're not._
 
@@ -182,7 +182,7 @@ _Inherits the permission model from [[agent-access-layer]]. Ian's non-negotiable
 
 **What other components need from this one:**
 
-- This experience and the [[a2a-endpoint]] (the external edge of [[agent-access-layer]]) are two faces of one idea: TXN's own in-Console agent interface, and the inbound door for the client's own agents. They share the [[agent-access-layer]] tool surface **and** the "expose the agent, not the tools" mechanism resolved in this session.
+- This experience and the [[a2a-endpoint]] (a sub-component of [[agent-access-layer]], its external edge) are two faces of one idea: TXN's own in-Console agent interface, and the inbound door for the client's own agents. They share the [[agent-access-layer]] tool surface **and** the "expose the agent, not the tools" mechanism resolved in this session.
 - [[co-pilot]] hands off to this experience for complex / off-context tasks (the boundary defined from the co-pilot side).
 - Shares the agent/agent-team machinery with [[agent-inbox-alerts]].
 

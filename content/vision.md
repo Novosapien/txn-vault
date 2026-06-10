@@ -50,7 +50,7 @@ The **core client experience** is built around the principle that the user is no
 
 The **developer experience** is a self-serve portal optimised for both human integrators and their AI assistants. The API reference is auto-rendered from the live YAML spec — always current. The change log is generated from git commits and Linear issues — release notes written in business-readable English rather than commit messages. A public sandbox lets developers try the API without signing up. A scoped chatbot answers integration questions from the documentation, and routes anything it can't answer to a defensive support stack. Every interaction has a feedback path — bug, product enhancement, or support request — that flows into the right internal queue without the developer having to choose.
 
-A **data flywheel** makes the platform smarter over time. TXN launches with no customers and no transaction history. Early AI is navigation, configuration help, and ticket triage — value the platform can deliver from day one with no data. As transaction volume accumulates the AI moves to fraud signalling, anomaly detection, and cross-program recommendations ("five programs in your sector apply this control — should we apply it for you?"). Where data is sparse early, **simulation fills the gap**: agent-driven personas exercise the platform in tens of thousands of synthetic flows to test, train, and surface gaps in the documentation and the product itself.
+A **data flywheel** makes the platform smarter over time. TXN launches with no customers and no transaction history. Early AI is navigation, configuration help, and ticket triage — value the platform can deliver from day one with no data. As transaction volume accumulates the AI moves to fraud signalling, anomaly detection, and cross-program recommendations ("five programs in your sector apply this control — should we apply it for you?"). Where data is sparse early, **simulation fills the gap**: agent-driven personas exercise the platform in thousands of synthetic flows (illustrative — Novosapien's simulation tooling, not a committed TXN volume) to test, train, and surface gaps in the documentation and the product itself.
 
 **Internal operations are part of the vision, not a side-project.** Ian Johnson (TXN's CEO) was explicit: the worst outcome is delivering an agentic client experience while the business behind it is throttled by humans doing manual work. Release notes are auto-drafted by an agent that reads git + Linear and produces business-readable output. Support tickets are pre-triaged and partially diagnosed before they ever reach a human queue, with the human-resolved answer feeding back into the documentation so the next ticket of that shape never escalates. Documentation is self-healing: production errors caught by Sentry route to an agent that navigates the knowledge graph, identifies the failing component, and opens a PR. The same agentic philosophy that powers the client surfaces powers the business that runs them.
 
@@ -58,7 +58,7 @@ A **data flywheel** makes the platform smarter over time. TXN launches with no c
 
 ```mermaid
 graph LR
-    subgraph TXN["TXN Product"]
+    subgraph TXN["TXN Product (built by partners)"]
         API[Core API<br/>issuer processing]
         Console[TXN Console<br/>client admin + CS]
         Portal[Developer Portal<br/>public site + integration]
@@ -67,24 +67,32 @@ graph LR
     end
 
     subgraph Novo["Novosapien — Agentic AI Layer"]
-        Copilot[In-app Co-pilot]
-        Inbox[Agent Inbox / Alerts]
-        Chatbot[Scoped Support Chatbot]
-        MCP[MCP Server]
-        A2A[A2A Endpoint]
+        Copilot[Co-pilot]
+        Inbox[Agent Inbox & Alerts]
+        Full[Full Agentic Experience]
+        DevSup[Developer Support]
         Ops[Internal Ops Agents]
+        Fraud["Fraud &amp; Risk Assist*"]
+        subgraph AAL["Agent Access Layer — foundational tool surface"]
+            MCP[MCP Server]
+            A2A[A2A Endpoint]
+        end
     end
 
     Copilot -.renders inside.-> Console
     Inbox -.renders inside.-> Console
-    Chatbot -.renders inside.-> Portal
-    MCP -.exposes.-> API
-    A2A -.exposes.-> API
+    Full -.renders inside.-> Console
+    DevSup -.renders inside.-> Portal
 
-    ClientAgent[Client's own agent<br/>or Claude] -->|MCP / A2A| MCP
-    ClientAgent -->|MCP / A2A| A2A
+    Copilot --> AAL
+    Inbox --> AAL
+    Full --> AAL
+    Fraud --> AAL
+    AAL -.exposes tools.-> API
 
-    Lake[(Data Lake<br/>built by DT — TXN internal partner)]
+    ClientAgent[Client's own agent<br/>or Claude] -->|A2A| A2A
+
+    Lake[(Data Lake<br/>built by DT)]
     API --> Lake
     Lake --> Copilot
     Lake --> Inbox
@@ -135,7 +143,7 @@ _This section is deliberately lightweight. TXN's product is B2B and Novosapien d
 
 ### Business context
 
-TXN sells to **businesses that need card issuing capabilities**. Two broad shapes:
+TXN sells to **businesses that need card issuing capabilities**. Two broad shapes (Novosapien's working hypothesis — not a segmentation TXN stated in-call):
 
 - **Established issuers** — businesses with a card already in market who want to migrate to a more modern / agentic processor, or expand their offering
 - **New entrants** — businesses with an existing customer base who want to add financial services (cards) to what they already do
@@ -234,7 +242,7 @@ Incumbents are API-first but UX-thin. Common operations require integration work
 
 > *"Yes we have all these properties but unless you know what they mean and understand truly what they do in terms of the business sense people turn them on and off and they can break things."*
 
-Configuration exposes raw mechanics. Card products have 50–60 properties on the JSON object; users without card-domain expertise cannot reason about which to change or what the consequences will be. There is no business-language wrapper over the technical interface.
+Configuration exposes raw mechanics. Card products have 50–60 properties on the JSON object; users without card-domain expertise cannot reason about which to change or what the consequences will be. There is no business-language wrapper over the technical interface. _[⚠ open — see [[open-questions]] #1]_
 
 ### Unfair advantage
 
@@ -362,7 +370,7 @@ TXN is **pre-launch**. The platform is being built by multiple partners and is a
 
 - **Core API** — under active development by TXN's own dev team. A YAML spec is generated on every deploy and is the canonical interface definition.
 - **TXN Console** — design is "pretty clear" (Michael Moores, TXN's CTO); being built by TXN's Console build team with frontend designed by a third-party designer. Approval queue logic, granular permissions model, and notifications/alerts backend are already part of the design.
-- **Developer Portal** — in MVP build phase, started 12 May 2026. Built by a third-party portal team using **Umbraco CMS**. Full prototype reviewed; MVP narrowing in progress. **A final prototype review is scheduled for Thursday 19 May 2026 — Novosapien is invited.**
+- **Developer Portal** — in MVP build phase, started ~w/c 11 May 2026 (the week of the 13 May call). Built by a third-party portal team using **Umbraco CMS**. Full prototype reviewed; MVP narrowing in progress. **A final prototype review is scheduled for Thursday 19 May 2026 — Novosapien is invited.**
 - **Data Lake** — planned, being built by DT (TXN's internal dev partner). Not yet operational.
 - **Visa** — upstream payment network. Connectivity assumed in place at the API level.
 
@@ -472,6 +480,6 @@ _Components are identified during vision extraction (visible in the §1 narrativ
 | Agent Inbox & Alerts | Proactive lane (C1→C2) — event analysis surfaced as actionable alerts and investigated, approvable plans | Defined | [[agent-inbox-alerts]] |
 | Full Agentic Experience | Agent-as-interface (C2→C3, Level 4) — renders UI in real time, merges journeys; simple face over specialised multi-agent core | Defined | [[full-agentic-experience]] |
 | Developer Support | Developer Portal — hosted docs **MCP server** (strategic surface) + light portal co-pilot, sandbox assist, support triage; four-level access gating with API-key lead-gen | Defined | [[developer-support]] |
-| Agent Access Layer | Foundational tool surface every agent calls, permission-scoped; Core API wrapped as MCP tools. Includes the external **A2A edge** ([[a2a-endpoint]]) — inbound door for clients' own agents (expose-the-agent) | Defined | [[agent-access-layer]] |
+| Agent Access Layer | Foundational tool surface every agent calls, permission-scoped; Core API wrapped as MCP tools. Includes the **[[a2a-endpoint]] sub-component** (its external edge) — inbound door for clients' own agents (expose-the-agent) | Defined | [[agent-access-layer]] |
 | Fraud & Risk Assist | Real-time enrichment of the approve/decline pass-through + rules engine; advise, don't decide | Collecting | [[fraud-risk-assist]] |
 | Internal Ops Agents | Run TXN agentically — customer onboarding (first build target), knowledge engine, support triage, release pipeline, process automation, simulation; CRM as source of truth | Defining | [[internal-ops-agents]] |

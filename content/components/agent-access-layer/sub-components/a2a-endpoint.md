@@ -10,12 +10,15 @@ sources:
 
 # TXN — A2A Endpoint (external edge)
 
-> **Component:** [[agent-access-layer]] · **Vision:** [[vision]]
+> **Parent component:** [[agent-access-layer]] · **Vision:** [[vision]]
 > **User journeys:** [[ux-ai-transaction-query|Transaction Query (read)]], [[ux-ai-user-stories-mapping|API Actions (write)]] — see [[user-journeys]]
 > **Date:** 2026-06-05
 > **Status:** Defined
 > **Owner:** _TBC_
 > **Sources:** [[13-05-2026-txn-vision-meeting]] (Concept 3 / A2A), [[01-06-2026-component-1-Agent-Access-Layer]] (permission scoping, approval, audit), [[29-05-2026-stackworkz-meeting]] (external agents), [[05-06-2026-component-4-full-agentic-experience]] (expose-the-agent mechanism)
+
+> [!note] Sub-component of the Agent Access Layer
+> The A2A endpoint is the inbound door for external agents and rides on the access layer's tool surface, so it lives **inside** [[agent-access-layer]] rather than as a standalone component. It has not had a dedicated A2A session — the core mechanism ("expose the agent, not the tools") was resolved in the [[05-06-2026-component-4-full-agentic-experience]] deep-dive; remaining open questions tracked in [[open-questions]].
 
 ---
 
@@ -151,13 +154,13 @@ _Inherits and extends the permission model from [[agent-access-layer]]._
 | TXN agent | The agent that gets exposed (shared with [[full-agentic-experience]]) | **Yes** — A2A exposes the agent, not raw tools |
 
 **What other components need from this one:**
-- [[full-agentic-experience]] relies on this edge as the external door to the same capabilities — it and this edge share the **"expose the agent, not the tools"** mechanism (TXN's own agent surface and the inbound external door, one mechanism).
+- [[full-agentic-experience]] relies on this edge as the external door to the same capabilities — it and this edge share the **"expose the agent, not the tools"** mechanism (TXN's own agent surface and the inbound external door, one mechanism). The A2A endpoint remains a sub-component of [[agent-access-layer]] (not of the full agentic experience).
 
 ---
 
 ## 9. Priority
 
-_Phasing out of scope for this exercise — full scope captured. (Concept 3 is the destination of the trust spine per [[vision]]; included in full.)_
+_Phasing out of scope. Scope here is inferred from the vision + access-layer session (not a dedicated deep-dive); Concept 3 is the destination of the trust spine per [[vision]]._
 
 ---
 
@@ -185,7 +188,7 @@ _Phasing out of scope for this exercise — full scope captured. (Concept 3 is t
 
 ## Shared machinery
 
-This edge does not own its own copies of identity, approval, or audit — those are the [[agent-access-layer]]'s sub-components, reused. What is *distinct* to this edge is only the **agent-to-agent protocol surface** (A2A-preferred, MCP-as-message fallback) and the **external trust boundary**. Everything else is shared:
+This sub-component does not own its own copies of identity, approval, or audit — those are the [[agent-access-layer]]'s other sub-components, reused. What is *distinct* to this edge is only the **agent-to-agent protocol surface** (A2A-preferred, MCP-as-message fallback) and the **external trust boundary**. Everything else is shared:
 
 | Concern | Where it lives | This edge adds |
 |---------|---------------|----------------|

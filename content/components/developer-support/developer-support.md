@@ -25,6 +25,8 @@ sources:
 
 Developer Support is the agentic AI experience in the **Developer Portal** — the surface where integrators (and increasingly their own AI agents) evaluate and build against the TXN API. Much of the portal is a traditional, auto-rendered developer portal (API reference from the YAML, change log from git/Linear, a public sandbox) and is therefore "light-touch" for AI; the deep-dive ([[09-06-2026-developer-support]]) focused on the *AI surfaces* and, decisively, on **where TXN should and shouldn't invest**.
 
+The knowledge the AI answers from is the **same central knowledge piece** that serves the Console — Mike Moores (TXN's CTO) described portal AI as *knowledge-base-centred*. The docs come from the portal's **Umbraco (headless) CMS**, which Stackworkz exposes via API for AI search. **Ownership of the site-wide LLM remains open:** on the 29 May call, Ruan Sunkel (Stackworkz) said **Teraflow** would most likely be involved in the site-wide / agentic AI, with Stackworkz scoped to the developer-side MCP / `LLMS.txt`. Where Novosapien sits on the site-wide LLM is to be confirmed. _[⚠ open — see [[open-questions]] #3]_
+
 **The access spine — four levels.** Ian Johnson (TXN's CEO) framed everything around how much AI/capability is unlocked at each stage, balancing a best-in-class evaluation experience against cost and abuse:
 
 ```
@@ -81,7 +83,8 @@ _(Note: the session also confirmed, from the client side, that **A2A is not a st
 - **Public-facing means confidential-safe** — for prospects/unknowns, never leak internal specifics or other-tenant data; portal answers draw only on documentation + anonymised/known-answer knowledge.
 - **Hosted MCP** is the chosen model (local MCP is a worse experience; most use Claude in-browser).
 - **Documentation-scoped** co-pilot — not a general assistant; grounded in TXN docs.
-- **No forced triage choice** — the developer describes the problem; the system classifies (bug / enhancement / support) and routes.
+- **No forced triage choice** — the developer describes the problem; the system classifies (bug / enhancement / support / sales enquiry) and routes.
+- **Differential downstream handling.** Bugs carry tighter SLAs; product enhancements pass through a review gate and are built only on repeated demand (one customer's request usually isn't built; three or four is); sales/marketing enquiries route to the sales team — Mike called separating sales from product-enhancement from technical-support "a core component". _(Source: 13-05.)_
 - **Don't over-build the co-pilot** — invest in MCP; ship a best-in-class but not "every conceivable feature" experience, then learn from real users.
 
 **Edge cases and error states:**
@@ -115,7 +118,7 @@ _(Note: the session also confirmed, from the client side, that **A2A is not a st
 | Capability                        | Build / Buy / Access | Provider / Approach                                                                        | Rationale                                                                                                    |
 | --------------------------------- | -------------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ |
 | **Hosted docs MCP server**        | Build                | TXN-hosted MCP over the docs corpus; API-key gated; L1 docs query, L2 sandbox test         | The strategic surface — devs plug it into Claude/Claude Code; hosted beats local for the common browser case |
-| Portal co-pilot (LLM)             | Build (light)        | Novosapien-integrated LLM over the docs corpus                                             | Baseline scoped Q&A; deliberately not over-invested                                                          |
+| Portal co-pilot (LLM)             | Build (light) / **ownership TBC** | Novosapien-integrated LLM over the docs corpus                                  | Baseline scoped Q&A; deliberately not over-invested. Site-wide LLM ownership still open — **Teraflow likely involved per 29 May** _[⚠ see [[open-questions]] #3]_ |
 | Docs source                       | Access               | Umbraco headless CMS APIs (Stackworkz)                                                     | Stackworkz exposes docs via API for AI search; same central knowledge as the Console                         |
 | Sandbox assist                    | Build                | AI explanation / pre-validation over a failed sandbox request                              | Cheap, high-value "why did my call fail" help                                                                |
 | Support triage & ticket packaging | Build                | Logged-in agent queries the user's API logs → diagnose → package ticket → swarm pre-triage | Entry point here; resolution handed to [[internal-ops-agents]]                                               |
@@ -136,7 +139,7 @@ _Cost is a first-order constraint throughout: the surface is free, so AI capabil
 | API key + usage | In / Stored | Per-key rate-limit + abuse tracking | Meters MCP / sandbox usage |
 | Developer's API request logs | In | Core API logs (via [[agent-access-layer]]) | For logged-in error diagnosis |
 | Existing support tickets | In | Support system | Surfaced to reuse known answers |
-| Packaged / classified ticket | Out | Internal queues ([[internal-ops-agents]]) | Well-formed, pre-triaged; bug / enhancement / support |
+| Packaged / classified ticket | Out | Internal queues ([[internal-ops-agents]]) / sales team | Well-formed, pre-triaged; bug / enhancement / support / sales |
 
 ---
 

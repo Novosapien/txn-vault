@@ -36,7 +36,7 @@ The load-bearing constraint is cost: analysing every transaction with AI explode
 
 **Functional requirements:**
 
-- Support **user-defined** monitors ("alert me if Amazon transactions drop 20% over 7 days") and a **system-defined** baseline corpus (severe declines, failed card creation, host-auth loss).
+- Support **user-defined** monitors ("alert me if Amazon transactions drop 20% over 7 days") and a **system-defined** baseline of critical alerts. _[⚠ open — see [[open-questions]] #4]_
 - **Cheap detection** — threshold maths in middleware/observability, not per-transaction AI; only a trip invokes the AI.
 - React to **config changes** via the product webhook (DT to add) so any change (Console/API/AI) produces an event.
 - Run **scheduled scans** on a cadence (e.g. twice daily) for anomalies not surfaced by events.
@@ -189,7 +189,7 @@ graph TD
 **Specific risks:**
 - A user defining a monitor that forces per-transaction AI (cost blow-up).
 - Missed critical event if detection coverage is incomplete.
-- Prompt injection via merchant names/descriptors carried in the event.
+- Prompt injection via merchant names/descriptors carried in the event. _[⚠ Novosapien-added inference — not raised in the call]_
 
 **Controls to build into the journeys:**
 - Cheap-detect / AI-on-trip pattern enforced; bounded alert-definition framework.
