@@ -27,7 +27,7 @@ Components were first surfaced in the [[13-05-2026-txn-vision-meeting|vision mee
 | Developer Support | *Developer Portal.* Hosted **docs MCP server** (the strategic surface — devs plug into their own agent) + a deliberately-light portal co-pilot, sandbox assist, and support triage that packages well-formed tickets (→ internal ops). Four-level access gating (unknown → signed-up → prospect → client) with API-key lead-gen. | Defined | [[developer-support]] |
 | Agent Access Layer | *Foundational.* The tool surface every agent calls, scoped to the acting user's Console permissions. Wraps the Core API as agent-callable tools; exposed via MCP. Includes the **external A2A edge** ([[a2a-endpoint]]) — the inbound door for clients' own agents (expose-the-agent, not raw tools). | Defined | [[agent-access-layer]] |
 | Fraud & Risk Assist | *Payment stream.* Real-time enrichment of the approve/decline pass-through, plus a rules engine and rule recommendations. Advise, don't decide. Data-dependent (later phase). | Collecting | [[fraud-risk-assist]] |
-| Internal Ops Agents | *Internal.* Run TXN agentically — release pipeline, Documentation Engine (auto change-logs, self-healing), ticket routing, process automation. | Collecting | [[internal-ops-agents]] |
+| Internal Ops Agents | *Internal.* Run TXN agentically — release pipeline; **knowledge engine** (self-healing docs + reactive capture + proactive mining, human-approved); support triage/resolution; process automation; simulation. Addresses Ian's "single point of failure" risk; day-one value. | Defining | [[internal-ops-agents]] |
 
 ## User journeys
 
@@ -37,7 +37,7 @@ Behavioural UX journeys authored by M. Moores (TXN), Mar 2026, are catalogued in
 
 | Item | Why parked |
 |------|-----------|
-| Simulation & Evaluation | Synthetic-persona test harness and cold-start data bridge (Dorte's no-data gap). Valuable but not a launch component — revisit once a client-facing slice exists to test. |
+| Simulation & Evaluation | Synthetic-persona test harness and cold-start data bridge (Dorte's no-data gap). Valuable but not a launch component — revisit once a client-facing slice exists to test. _Now also documented as a sub-component of [[internal-ops-agents]]._ |
 
 ## Architecture, not components
 

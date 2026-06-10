@@ -111,15 +111,15 @@ _(Note: the session also confirmed, from the client side, that **A2A is not a st
 
 ## 4. How Are We Going to Solve It?
 
-| Capability | Build / Buy / Access | Provider / Approach | Rationale |
-|-----------|---------------------|-------------------|-----------|
-| **Hosted docs MCP server** | Build | TXN-hosted MCP over the docs corpus; API-key gated; L1 docs query, L2 sandbox test | The strategic surface — devs plug it into Claude/Claude Code; hosted beats local for the common browser case |
-| Portal co-pilot (LLM) | Build (light) | Novosapien-integrated LLM over the docs corpus | Baseline scoped Q&A; deliberately not over-invested |
-| Docs source | Access | Umbraco headless CMS APIs (Stackworkz) | Stackworkz exposes docs via API for AI search; same central knowledge as the Console |
-| Sandbox assist | Build | AI explanation / pre-validation over a failed sandbox request | Cheap, high-value "why did my call fail" help |
-| Support triage & ticket packaging | Build | Logged-in agent queries the user's API logs → diagnose → package ticket → swarm pre-triage | Entry point here; resolution handed to [[internal-ops-agents]] |
-| Access gating & lead-gen | Build | Four-level stage gates; API-key issuance on email capture; per-key rate limits | Balances best-in-class evaluation against free-surface cost/abuse |
-| Currency of docs | Access | Auto-rendered API ref (YAML) + change log (git/Linear) | Keeps answers accurate (per [[vision]]) |
+| Capability                        | Build / Buy / Access | Provider / Approach                                                                        | Rationale                                                                                                    |
+| --------------------------------- | -------------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ |
+| **Hosted docs MCP server**        | Build                | TXN-hosted MCP over the docs corpus; API-key gated; L1 docs query, L2 sandbox test         | The strategic surface — devs plug it into Claude/Claude Code; hosted beats local for the common browser case |
+| Portal co-pilot (LLM)             | Build (light)        | Novosapien-integrated LLM over the docs corpus                                             | Baseline scoped Q&A; deliberately not over-invested                                                          |
+| Docs source                       | Access               | Umbraco headless CMS APIs (Stackworkz)                                                     | Stackworkz exposes docs via API for AI search; same central knowledge as the Console                         |
+| Sandbox assist                    | Build                | AI explanation / pre-validation over a failed sandbox request                              | Cheap, high-value "why did my call fail" help                                                                |
+| Support triage & ticket packaging | Build                | Logged-in agent queries the user's API logs → diagnose → package ticket → swarm pre-triage | Entry point here; resolution handed to [[internal-ops-agents]]                                               |
+| Access gating & lead-gen          | Build                | Four-level stage gates; API-key issuance on email capture; per-key rate limits             | Balances best-in-class evaluation against free-surface cost/abuse                                            |
+| Currency of docs                  | Access               | Auto-rendered API ref (YAML) + change log (git/Linear)                                     | Keeps answers accurate (per [[vision]])                                                                      |
 
 _Cost is a first-order constraint throughout: the surface is free, so AI capability is metered per level and per API key. Tier-2 **voice support** was discussed (call an AI assistant; ~18–30p/min) and **parked** as a possible later add-on — text first._
 

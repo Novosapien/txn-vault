@@ -474,4 +474,4 @@ _Components are identified during vision extraction (visible in the §1 narrativ
 | Developer Support | Developer Portal — hosted docs **MCP server** (strategic surface) + light portal co-pilot, sandbox assist, support triage; four-level access gating with API-key lead-gen | Defined | [[developer-support]] |
 | Agent Access Layer | Foundational tool surface every agent calls, permission-scoped; Core API wrapped as MCP tools. Includes the external **A2A edge** ([[a2a-endpoint]]) — inbound door for clients' own agents (expose-the-agent) | Defined | [[agent-access-layer]] |
 | Fraud & Risk Assist | Real-time enrichment of the approve/decline pass-through + rules engine; advise, don't decide | Collecting | [[fraud-risk-assist]] |
-| Internal Ops Agents | Run TXN agentically — release pipeline, Documentation Engine, ticket routing, process automation | Collecting | [[internal-ops-agents]] |
+| Internal Ops Agents | Run TXN agentically — release pipeline, knowledge engine (self-healing + capture + mining), support triage/resolution, process automation, simulation | Defining | [[internal-ops-agents]] |

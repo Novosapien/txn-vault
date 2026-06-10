@@ -16,7 +16,7 @@ ___
 |----------|------------|--------|
 | [[vision]] | Product vision — what we're building and why | Draft complete (all 8 §§); per-section gaps inline |
 | [[architecture]] | Cross-cutting technical decisions — tech stack, infrastructure, integrations | Integrations collecting (build-partner stack) |
-| [[components]] | Component map — Novosapien's deliverables within the TXN product | 7 top-level components; Access Layer, Alerts, Co-pilot, Full Agentic, Developer Support **defined**; A2A folded into the Access Layer as its external edge |
+| [[components]] | Component map — Novosapien's deliverables within the TXN product | 7 top-level components; Access Layer, Alerts, Co-pilot, Full Agentic, Developer Support **defined**; Internal Ops **defining**; Fraud collecting; A2A folded into the Access Layer as its external edge |
 | [[user-journeys]] | Behavioural UX journeys (M. Moores, Mar 2026) routed to the components they exercise | 16 journeys imported + cross-linked; provisional mappings to reconcile |
 
 ## External Resources
@@ -33,6 +33,7 @@ _Updated as work progresses. Most recent first._
 
 | Date | What happened |
 |------|--------------|
+| 2026-06-10 | [[internal-ops-agents]] built out from the vision + the Developer Support hand-off + its 3 journeys → **Defining**. Centrepiece is the **knowledge engine** (self-healing docs, reactive capture from unresolved cases, proactive pattern-mining — all human-approved, re-indexed); plus release pipeline, support triage/resolution, process automation, simulation, and (provisional) settlement reconciliation. No dedicated deep-dive yet — a session must confirm the dev-support boundary, reconciliation's home, and simulation timing. |
 | 2026-06-09 | [[developer-support]] deep-dive ([[09-06-2026-developer-support]]) processed → **Defined**. Four-level access spine (unknown → signed-up → prospect → client); the strategic bet is a **hosted docs MCP server** over the portal co-pilot; support triage packages well-formed tickets (resolution in [[internal-ops-agents]]); API-key lead-gen + per-key rate limits. Session also confirmed, client-side, that A2A folds into [[agent-access-layer]]. |
 | 2026-06-09 | [[agent-inbox-alerts]] swept against its 4 UX journeys — all covered by the existing 5 sub-components; journey-source cross-links added; [[scheduled-reporting]] enriched with on-demand NL reports + reusable templates (the one genuine gap). |
 | 2026-06-09 | [[co-pilot]] fully decomposed — **all 6 sub-components Defined** to buildable depth with entity journeys + acceptance criteria: [[conversational-qa]], [[impact-preview]], [[guided-configuration]], [[guided-onboarding]], [[action-on-confirmation]], [[process-surfacing]]. First three from their UX journeys; latter three from the deep-dive. |
