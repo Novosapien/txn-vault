@@ -237,8 +237,8 @@ _Internal-facing. Approval authority stays with TXN staff; clients touch only th
 
 | Sub-Component | Overview | Status | Link |
 |--------------|----------|--------|------|
-| Customer onboarding | Client-commit → due diligence → SoW/contract → scheme project → CIQ → project plan; the first internal-ops build target | Collecting | _[[sub-components/customer-onboarding]]_ |
-| Meeting capture & analysis | Notetaker + CRM-aware meeting-analysis agent teams; notes + actions looped across meetings | Collecting | _[[sub-components/meeting-capture-analysis]]_ |
+| Customer onboarding | Client-commit → due diligence → SoW/contract → scheme project → CIQ → project plan; the first internal-ops build target (decomposes further into stage units) | Defined | [[customer-onboarding]] |
+| Meeting capture & analysis | Notetaker + CRM-aware meeting-analysis agent teams; notes + actions looped across meetings | Defined | [[meeting-capture-analysis]] |
 | Release pipeline | git + Linear → business-readable release notes | Collecting | _[[sub-components/release-pipeline]]_ |
 | Knowledge engine | Self-improving docs/KB loop — self-healing (Sentry→PR), reactive capture, proactive mining; Umbraco draft-API; human-approved, re-indexed | Collecting | _[[sub-components/knowledge-engine]]_ |
 | Support triage & resolution | Swarm pre-triage of packaged tickets; route + resolve; feeds the knowledge engine | Collecting | _[[sub-components/support-triage-resolution]]_ |
