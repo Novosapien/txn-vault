@@ -280,7 +280,7 @@ _This sub-component is large enough to decompose further — each stage is close
 
 | Sub-Sub-Component | Overview | Status | Link |
 |------------------|----------|--------|------|
-| Due diligence | Application-form-triggered, sourced checks → validated report | Collecting | _[[sub-components/due-diligence]]_ |
-| SoW &amp; intent capture | Onboarding-interview agent; intent snapshot; drift detection | Collecting | _[[sub-components/sow-intent-capture]]_ |
-| Scheme &amp; CIQ | Scheme project, triparty/BIN, CIQ data assembly | Collecting | _[[sub-components/scheme-and-ciq]]_ |
-| Project plan | Realistic dates anchored on real lead times | Collecting | _[[sub-components/project-plan]]_ |
+| Due diligence | Application-form-triggered, sourced checks → validated report | Defined | [[due-diligence]] |
+| SoW &amp; intent capture | Onboarding-interview agent; intent snapshot; drift detection | Defined | [[sow-intent-capture]] |
+| Scheme &amp; CIQ | Scheme project, triparty/BIN, CIQ data assembly | Defined | [[scheme-and-ciq]] |
+| Project plan | Realistic dates anchored on real lead times | Defined | [[project-plan]] |
