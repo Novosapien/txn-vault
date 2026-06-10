@@ -219,8 +219,8 @@ _Sign-up/login is **not yet scoped in the MVP design** (docs are currently fully
 
 | Sub-Component | Overview | Status | Link |
 |--------------|----------|--------|------|
-| Docs MCP server (hosted) | The strategic surface — L1 docs query, L2 sandbox test; API-key gated; plugs into the developer's own agent | Collecting | _[[sub-components/docs-mcp-server]]_ |
-| Portal co-pilot | Scoped docs Q&A (deliberately light); surfaces known-ticket answers | Collecting | _[[sub-components/portal-co-pilot]]_ |
-| Sandbox assist | Explain a failed "try it now" request; optional pre-validation | Collecting | _[[sub-components/sandbox-assist]]_ |
-| Support triage & ticket packaging | Logged-in error diagnosis from API logs → well-formed ticket → swarm pre-triage (entry point; resolution in [[internal-ops-agents]]) | Collecting | _[[sub-components/support-triage]]_ |
-| Access gating & lead-gen | Four-level stage gates; API-key issuance on email capture; rate-limiting; lead capture | Collecting | _[[sub-components/access-gating]]_ |
+| Docs MCP server (hosted) | The strategic surface — L1 docs query, L2 sandbox test; API-key gated; plugs into the developer's own agent | Defined | [[docs-mcp-server]] |
+| Portal co-pilot | Semantic doc discovery + conversational guidance (deliberately light); grounded, deterministic fallback; surfaces known-ticket answers | Defined | [[portal-co-pilot]] |
+| Sandbox assist | Explain a failed "try it now" request; optional pre-validation | Defined | [[sandbox-assist]] |
+| Support triage & ticket packaging | Logged-in error diagnosis from API logs → well-formed ticket → swarm pre-triage (entry point; resolution in [[internal-ops-agents]]) | Defined | [[support-triage]] |
+| Access gating & lead-gen | Four-level stage gates; API-key issuance on email capture; rate-limiting; lead capture; entitlement source for the others | Defined | [[access-gating]] |
