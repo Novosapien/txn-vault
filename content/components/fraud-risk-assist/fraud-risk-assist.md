@@ -3,30 +3,45 @@ component: "[[components]]"
 status: Collecting
 sources:
   - "[[13-05-2026-txn-vision-meeting]]"
-  - "[[02-06-2026-component-2-alerts-agent-inbox]]"
 ---
 
-# TXN — Fraud & Risk Assist&ast;
+# TXN — Fraud & Risk Assist
 
 > **Component map:** [[components]] · **Vision:** [[vision]]
-> **Status:** Collecting · **&ast; Stretch — only if time permits**
+> **Status:** Collecting
 > **Owner:** _TBC_
 
-> [!note] Stub — stretch component, not yet scoped
-> Marked stretch (&ast;): in scope only if time allows. Surfaced in the [[vision]] but not deep-dived. The summary below is from the vision and component map; no detailed scope yet, and it is data-dependent (a later phase). Open questions tracked in [[open-questions]].
+---
 
-## Overview
+## 1. What Does This Component Do?
 
-Real-time enrichment of the approve/decline transaction pass-through, plus a rules engine and rule recommendations. The load-bearing principle from the [[vision]]: **advise, don't decide** — TXN signals, the client owns the fraud decision and tells TXN what was fraud after the fact.
+The **payment-stream** component: real-time enrichment of the approve/decline pass-through, plus a rules engine and AI **rule recommendations**. The guiding principle is **advise, don't decide** — the AI surfaces risk signals, emerging fraud patterns, and recommended controls, but the authoritative approve/decline decision stays in the payment rail. It is **data-dependent** and therefore a **later phase**: it needs accumulated transaction history before it can detect patterns (the data flywheel in [[vision]] §"data flywheel"). At launch there is nothing to analyse.
 
-Threads surfaced so far (from the vision, not deep-dived):
+It surfaces its findings through the proactive [[agent-inbox-alerts]] surface rather than being a screen of its own, and reads transaction state through the [[agent-access-layer]].
 
-- **Real-time enrichment** of the approve/decline pass-through.
-- **Rules engine + rule recommendations** — propose controls, don't enforce.
-- **Data-dependent** — relies on transaction volume accumulating (the data flywheel); a later phase.
+> **Status: Collecting** — surfaced at the vision level and through imported UX journeys; no dedicated deep-dive yet. Scope, sub-components, and acceptance criteria are pending a focused session.
 
-May surface a fraud flag *into* [[agent-inbox-alerts]], but services the action on its own dedicated page.
+---
 
-## Status
+## Related user journeys
 
-Stretch component — only if time permits. Not yet scoped. See [[open-questions]].
+Imported UX journeys ([[user-journeys]]) that exercise this component:
+
+| Journey | What it covers |
+|---------|----------------|
+| [[ux-ai-driven-fraud-alerts\|AI Driven Fraud Alerts]] | AI detection of emerging fraud patterns and merchant risk signals across programmes |
+| [[ux-txn-Intelligence-ai-autonomous-anomaly-detection\|Autonomous Anomaly Detection]] | Detection engine for unusual transaction behaviour _(primary home [[agent-inbox-alerts]]; Fraud is the analytical source)_ |
+
+---
+
+## Dependencies
+
+- [[agent-access-layer]] — read transaction state, write rule changes
+- [[agent-inbox-alerts]] — the surface that delivers risk signals to the user
+- Data Lake (DT) — transaction history the analysis depends on (not available until volume accumulates)
+
+---
+
+## Sources
+
+- [[13-05-2026-txn-vision-meeting]] — payment-stream / advise-don't-decide framing

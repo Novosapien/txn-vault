@@ -476,10 +476,10 @@ _Components are identified during vision extraction (visible in the §1 narrativ
 
 | Component | Overview | Status | Link |
 |-----------|----------|--------|------|
-| Co-pilot | Reactive in-console assistant (C1) — Q&A, inline recommendations, impact preview, guided onboarding | Defining | [[co-pilot]] |
+| Co-pilot | Reactive in-console assistant (C1) — Q&A, inline recommendations, impact preview, guided onboarding/configuration; levels 2–3 of the manual→agentic graduation | Defined | [[co-pilot]] |
 | Agent Inbox & Alerts | Proactive lane (C1→C2) — event analysis surfaced as actionable alerts and investigated, approvable plans | Defined | [[agent-inbox-alerts]] |
-| Full Agentic Experience | Agent-as-interface (C2→C3) — do-anything, renders UI in real time | Defining | [[full-agentic-experience]] |
-| Developer Support | Portal/docs chatbot, scoped Q&A, defensive triage, feedback routing; MCP/LLMS.txt machine layer | Defining | [[developer-support]] |
-| Agent Access Layer | Foundational tool surface every agent calls, permission-scoped; Core API wrapped as MCP tools; **includes the A2A endpoint** for clients' own external agents | Defined | [[agent-access-layer]] |
+| Full Agentic Experience | Agent-as-interface (C2→C3, Level 4) — renders UI in real time, merges journeys; simple face over specialised multi-agent core | Defined | [[full-agentic-experience]] |
+| Developer Support | Developer Portal — hosted docs **MCP server** (strategic surface) + light portal co-pilot, sandbox assist, support triage; four-level access gating with API-key lead-gen | Defined | [[developer-support]] |
+| Agent Access Layer | Foundational tool surface every agent calls, permission-scoped; Core API wrapped as MCP tools. Includes the **[[a2a-endpoint]] sub-component** (its external edge) — inbound door for clients' own agents (expose-the-agent) | Defined | [[agent-access-layer]] |
 | Fraud & Risk Assist | Real-time enrichment of the approve/decline pass-through + rules engine; advise, don't decide | Collecting | [[fraud-risk-assist]] |
-| Internal Ops Agents | Run TXN agentically — release pipeline, Documentation Engine, ticket routing, process automation | Collecting | [[internal-ops-agents]] |
+| Internal Ops Agents | Run TXN agentically — customer onboarding (first build target), knowledge engine, support triage, release pipeline, process automation, simulation; CRM as source of truth | Defining | [[internal-ops-agents]] |

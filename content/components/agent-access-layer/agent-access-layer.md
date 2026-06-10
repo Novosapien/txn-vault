@@ -13,13 +13,13 @@ sources:
 
 ## Overview
 
-The Agent Access Layer is the **foundational tool surface** that lets any agent act on TXN's capabilities. It wraps the Core API as agent-callable tools, scoped to the acting user's permissions, and exposes them via the Model Context Protocol (MCP). It is not an experience the client sees — it is the substrate every experience rides on.
+The Agent Access Layer is the **foundational tool surface** that lets any agent act on TXN's capabilities. It wraps the Core API as agent-callable tools, scoped to the acting user's permissions, and exposes them via the Model Context Protocol (MCP). It is not an experience the client sees — it is the substrate every experience rides on. It has an **internal core** (the tools, MCP server, permission scoping, validation, approval routing, and audit that TXN's own agents call) and an **external edge** — the [[a2a-endpoint]] — through which a client's *own* agents reach the same capabilities from outside the tenant.
 
-Every other client-facing component consumes it:
+Every other client-facing component consumes the internal core:
 
 - **[[co-pilot]]** — to answer questions and, later, take actions.
 - **[[agent-inbox-alerts]]** — to investigate triggers and execute approved plans.
-- **[[full-agentic-experience]]** — to do anything the user asks.
+- **[[full-agentic-experience]]** — to do anything the user asks; it shares with the [[a2a-endpoint]] sub-component the "expose the agent, not the tools" mechanism for external callers.
 - **[[fraud-risk-assist]]** — to read transaction state and write rule changes.
 
 It also exposes the **[[a2a-endpoint]]** — the inbound agent-to-agent door for a client's *own* external agents, riding on the same tool surface (see sub-components).
@@ -34,7 +34,7 @@ If the Agent Access Layer is wrong, every agent is wrong. That is why it is the 
 - The permission model that scopes each tool call to what the acting user is allowed to do in the Console
 - The MCP server that exposes those tools to TXN's own agents and to external LLMs (Claude, etc.)
 - The routing of any action that requires sign-off into the Console's existing approval queue
-- The **A2A endpoint** — the inbound agent-to-agent door for clients' own external agents, riding on the same tool surface (see [[a2a-endpoint]])
+- The **[[a2a-endpoint]] sub-component** (the external agent-to-agent edge) — the inbound door for a client's own agents, which exposes the *TXN agent* (not raw tools) over A2A / MCP and reuses this layer's scoping, approval, and audit
 
 **The Agent Access Layer IS NOT:**
 
@@ -51,7 +51,7 @@ If the Agent Access Layer is wrong, every agent is wrong. That is why it is the 
 | Approval-queue integration | Prompted-trust + two-person approval for product/multi-card changes; privileged single-card actions execute directly | Defined | [[approval-queue-integration]] |
 | Audit & attribution | Combined console + API + chat trail that makes "prompted trust" provable; dispute reconstruction | Defined | [[audit-attribution]] |
 | Tool catalogue | Business-language tools mapped from the Core API endpoints; exact list gated on full API docs | Collecting | [[tool-catalogue]] |
-| A2A endpoint | Inbound agent-to-agent door for clients' own external agents; represented-user scope + prompted-trust + approval + audit | Collecting (not deep-dived) | [[a2a-endpoint]] |
+| A2A endpoint (external-edge sub-component) | The inbound agent-to-agent door for clients' own agents; exposes the TXN agent (not raw tools) via A2A / MCP-as-message, scoped to the represented user; reuses the scoping, approval, and audit sub-components | Defined | [[a2a-endpoint]] |
 
 ## Dependencies — what we need from TXN
 
@@ -101,3 +101,4 @@ _Pending sub-component deep-dives. To be defined per sub-component (tool-catalog
 - [[13-05-2026-txn-vision-meeting]] — MCP / permission-scoping discussion (~00:57–01:06); approval-queue (~01:35–01:37)
 - [[01-06-2026-component-1-Agent-Access-Layer]] — DT API shape; permission architecture; three-layer validation; approval-as-permission + two-person rule; combined audit; product webhook (full session)
 - [[29-05-2026-stackworkz-meeting]] — MCP-server ownership split (~00:13–00:16); permissions live in Stackworkz BFF (~00:10)
+- [[05-06-2026-component-4-full-agentic-experience]] — "expose the agent, not the tools" (A2A-preferred / MCP-as-message fallback) for the external [[a2a-endpoint]] edge

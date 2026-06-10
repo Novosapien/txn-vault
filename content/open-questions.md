@@ -32,6 +32,8 @@ Central register of unresolved questions across the vault. Each links to the doc
 | 16 | **AI-layer PII / data-residency / redaction** — may cardholder PII appear in chat/audit logs, and what residency + redaction policy applies? Asserted in [[audit-attribution]] beyond the grounded retention point (#6). | Access Layer | [[audit-attribution]] | (assumption) | Open |
 | 17 | **AI-analysis consistency boundaries** — must the AI avoid analysing before a write settles (read-after-write guards)? Stated in [[ai-analysis-impact]] but flagged in [[vision]] §8 as a Novosapien inference. | Inbox & Alerts | [[ai-analysis-impact]] | (assumption) | Open |
 | 18 | **User-defined optimization metric** — should the user set an objective the agent optimises toward, with the agent able to suggest additional objectives? Floated 13-05; not yet scoped. | Full Agentic Experience | [[full-agentic-experience]] | 13-05 | Open |
+| 19 | **CRM ↔ Console data split** — exactly which client data items live only in the CRM vs are needed in the Console, and how they sync (Dorte raised). | Architecture / Internal Ops | [[architecture]], [[integrations]] | 10-06 | Open |
+| 20 | **AI-ready downloadable doc file** — the Super-Ultra-designed `LLMS.txt`-style file (less than the MCP: "here's TXN, here are the endpoints"); who builds it (Stackworkz from portal data vs AI-generated) and on what release cadence. | Developer Support | [[developer-support]] | 09-06 | Open |
 
 ## Notes
 

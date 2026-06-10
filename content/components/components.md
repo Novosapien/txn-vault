@@ -6,9 +6,9 @@
 
 This is the component map for **Novosapien's deliverables within the TXN product** — the agentic AI layer embedded into TXN's three product surfaces (Core API, Console, Developer Portal). The platform itself is built by other partners (see [[vision#Scope boundary]]) and is not represented here as a Novosapien component.
 
-The map is organised by **how the AI shows up**, not by technology. The three client-facing components are lanes along TXN's trust concepts — reactive co-pilot (C1), proactive inbox (C1→C2), and full agentic (C2→C3). Beneath them: a support component, a foundational tool layer every agent rides on (which also exposes the **A2A endpoint** — the inbound door for clients' own agents), a payment-stream component (stretch), and the internal-operations agents.
+The map is organised by **how the AI shows up**, not by technology. The three client-facing components are lanes along TXN's trust concepts — reactive co-pilot (C1), proactive inbox (C1→C2), and full agentic (C2→C3). Beneath them sit a support component, a foundational tool layer every agent rides on (the Agent Access Layer — whose **sub-component [[a2a-endpoint]], its external edge, is the inbound door for clients' own agents**), a payment-stream component, and the internal-operations agents.
 
-Components were first surfaced in the [[13-05-2026-txn-vision-meeting|vision meeting]], re-scoped on 2026-06-01, and deep-dived across the agentic-experience sessions ([[01-06-2026-component-1-Agent-Access-Layer|Agent Access Layer]], [[02-06-2026-component-2-alerts-agent-inbox|Alerts & Inbox]], [[29-05-2026-stackworkz-meeting|Stackworkz ways-of-working]]). Each is formalised through a dedicated deep-dive.
+Components were first surfaced in the [[13-05-2026-txn-vision-meeting|vision meeting]], re-scoped on 2026-06-01, and deep-dived across the agentic-experience sessions ([[01-06-2026-component-1-Agent-Access-Layer|Agent Access Layer]], [[02-06-2026-component-2-alerts-agent-inbox|Alerts & Inbox]], [[04-06-2026-component-3-co-pilot|Co-pilot]], [[05-06-2026-component-4-full-agentic-experience|Full Agentic Experience]], [[09-06-2026-developer-support|Developer Support]], [[10-06-2026-developer-support-and-internal-ops|Developer Support + Internal Ops wrap-up]], [[29-05-2026-stackworkz-meeting|Stackworkz ways-of-working]]). Each is formalised through a dedicated deep-dive.
 
 **Status legend:**
 - **Collecting** — surfaced; details still being gathered
@@ -21,19 +21,23 @@ Components were first surfaced in the [[13-05-2026-txn-vision-meeting|vision mee
 
 | Component | What it does | Status | Link |
 |-----------|-------------|--------|------|
-| Co-pilot | *Client-facing, C1.* Reactive in-console assistant — Q&A, inline recommendations, impact preview, guided onboarding. You drive; AI augments. | Defining | [[co-pilot]] |
+| Co-pilot | *Client-facing, C1.* Reactive in-console assistant — Q&A, inline recommendations, impact preview, guided onboarding/configuration. Levels 2–3 of the manual→agentic graduation; you drive, AI augments. | Defined | [[co-pilot]] |
 | Agent Inbox & Alerts | *Client-facing, proactive C1→C2.* Event → AI analyses → surfaces. C1 actionable alert; C2 investigated plan you approve, debate, or delegate. | Defined | [[agent-inbox-alerts]] |
-| Full Agentic Experience | *Client-facing, C2→C3.* The agent is the interface — do-anything, renders UI in real time, acts on approval. | Defining | [[full-agentic-experience]] |
-| Developer Support | Portal + docs chatbot, scoped Q&A, defensive triage layers, feedback routing (bug / enhancement / support); machine layer (MCP / LLMS.txt) for devs' own agents. | Defining | [[developer-support]] |
-| Agent Access Layer | *Foundational.* The tool surface every agent calls, scoped to the acting user's Console permissions. Wraps the Core API as agent-callable tools; exposed via MCP. **Includes the A2A endpoint** (the inbound door for clients' own external agents). | Defined | [[agent-access-layer]] |
-| Fraud & Risk Assist&ast; | *Payment stream.* Real-time enrichment of the approve/decline pass-through, plus a rules engine and rule recommendations. Advise, don't decide. Data-dependent (later phase). **&ast; Stretch — only if time permits.** | Collecting | [[fraud-risk-assist]] |
-| Internal Ops Agents | *Internal.* Run TXN agentically — release pipeline, Documentation Engine (auto change-logs, self-healing), ticket routing, process automation. | Collecting | [[internal-ops-agents]] |
+| Full Agentic Experience | *Client-facing, C2→C3.* Level 4 — the agent is the interface; renders UI in real time, composes/merges journeys, acts on approval. Simple face, specialised multi-agent core. | Defined | [[full-agentic-experience]] |
+| Developer Support | *Developer Portal.* Hosted **docs MCP server** (the strategic surface — devs plug into their own agent) + a deliberately-light portal co-pilot, sandbox assist, and support triage that packages well-formed tickets (→ internal ops). Four-level access gating (unknown → signed-up → prospect → client) with API-key lead-gen. | Defined | [[developer-support]] |
+| Agent Access Layer | *Foundational.* The tool surface every agent calls, scoped to the acting user's Console permissions. Wraps the Core API as agent-callable tools; exposed via MCP. Includes the **[[a2a-endpoint]] sub-component** (its external edge) — the inbound door for clients' own agents (expose-the-agent, not raw tools). | Defined | [[agent-access-layer]] |
+| Fraud & Risk Assist | *Payment stream.* Real-time enrichment of the approve/decline pass-through, plus a rules engine and rule recommendations. Advise, don't decide. Data-dependent (later phase). | Collecting | [[fraud-risk-assist]] |
+| Internal Ops Agents | *Internal.* Run TXN agentically — **customer onboarding** (due diligence → SoW → scheme/CIQ → go-live; the first build target), knowledge engine (self-healing + capture + mining), support triage, release pipeline, process automation, simulation (incl. cold-start). Keeps headcount flat against client growth; CRM is the source of truth. | Defining | [[internal-ops-agents]] |
+
+## User journeys
+
+Behavioural UX journeys authored by M. Moores (TXN), Mar 2026, are catalogued in [[user-journeys]] and routed to the components they exercise. Each component above links its related journeys in its header. They are source UX material that feeds the User Stories & Requirements beneath each component — not component definitions themselves.
 
 ## Parked
 
 | Item | Why parked |
 |------|-----------|
-| Simulation & Evaluation | Synthetic-persona test harness and cold-start data bridge (Dorte's no-data gap). Valuable but not a launch component — revisit once a client-facing slice exists to test. |
+| Simulation & Evaluation | Synthetic-persona test harness and cold-start data bridge (Dorte's no-data gap). Valuable but not a launch component — revisit once a client-facing slice exists to test. _Now also documented as a sub-component of [[internal-ops-agents]]._ |
 
 ## Architecture, not components
 
