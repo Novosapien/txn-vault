@@ -19,49 +19,37 @@
   *{box-sizing:border-box}
   html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
   body{font-family:var(--font);color:var(--navy);background:var(--bg);margin:0;line-height:1.55;font-size:15px}
-  .wrap{max-width:1080px;margin:0 auto;padding:0 28px 64px}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 28px 64px}
 
-  /* Header */
-  header.cover{background:linear-gradient(150deg,var(--navy) 0%,var(--navy-2) 70%,#020a1c 100%);color:var(--white);
-    margin:0;padding:48px 0 40px;position:relative;overflow:hidden}
-  header.cover::after{content:"";position:absolute;right:-120px;top:-120px;width:360px;height:360px;border-radius:50%;
-    background:radial-gradient(circle,rgba(161,188,209,.18),transparent 65%)}
+  header.cover{background:linear-gradient(150deg,var(--navy) 0%,var(--navy-2) 70%,#020a1c 100%);color:var(--white);margin:0;padding:48px 0 40px;position:relative;overflow:hidden}
+  header.cover::after{content:"";position:absolute;right:-120px;top:-120px;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,rgba(161,188,209,.18),transparent 65%)}
   .cover .wrap{position:relative;z-index:1}
   .wordmark{font-weight:700;letter-spacing:.18em;text-transform:uppercase;font-size:13px;color:var(--teal);display:flex;align-items:center;gap:10px}
   .wordmark .dot{width:9px;height:9px;border-radius:50%;background:var(--teal);box-shadow:0 0 0 4px rgba(161,188,209,.18)}
   header h1{font-size:2.35em;line-height:1.1;margin:18px 0 8px;font-weight:700}
   header h1 .accent{color:var(--teal)}
-  header .sub{color:var(--teal);opacity:.95;font-size:1.05em;max-width:680px}
+  header .sub{color:var(--teal);opacity:.95;font-size:1.05em;max-width:700px}
   header .meta{margin-top:22px;display:flex;flex-wrap:wrap;gap:10px 26px;font-size:.82em;color:var(--slate-l);font-family:var(--mono)}
   header .meta b{color:#cdd9e4;font-weight:500}
 
-  h2{font-size:1.28em;margin:46px 0 6px;font-weight:600;display:flex;align-items:center;gap:11px}
+  h2{font-size:1.28em;margin:46px 0 4px;font-weight:600;display:flex;align-items:center;gap:11px}
   h2 .bar{width:5px;height:22px;border-radius:3px;background:var(--teal)}
   h2 .count{font-family:var(--mono);font-size:.62em;color:var(--slate);font-weight:500;background:var(--white);border:1px solid var(--line);padding:2px 9px;border-radius:20px;margin-left:auto}
-  .lead{color:var(--slate);max-width:760px;margin:2px 0 18px}
+  .lead{color:var(--slate);max-width:820px;margin:2px 0 16px}
+  .owner{font-size:.82em;color:var(--slate);margin:0 0 12px}
 
-  /* Stat cards */
   .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:-30px;position:relative;z-index:2}
   .stat{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:18px 18px 16px;box-shadow:0 8px 24px -16px rgba(9,20,47,.35)}
   .stat .n{font-size:2em;font-weight:700;line-height:1;font-family:var(--mono)}
   .stat .l{font-size:.74em;color:var(--slate);text-transform:uppercase;letter-spacing:.08em;margin-top:7px}
   .stat.b .n{color:var(--red)} .stat.c .n{color:var(--amber)} .stat.p .n{color:var(--teal-deep)} .stat.d .n{color:var(--slate)}
+  .statusbar{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;font-family:var(--mono);font-size:.8em}
+  .statusbar span{padding:4px 11px;border-radius:7px;border:1px solid var(--line);background:var(--white)}
+  .statusbar .open{color:#b45309;background:#fffbeb;border-color:#fde68a}
+  .statusbar .answered{color:#16A34A;background:#f0fdf4;border-color:#bbf7d0}
+  .statusbar .parked{color:#64748B;background:#f1f5f9}
 
-  /* Progress */
-  .progress{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-top:18px}
-  .progress .row{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
-  .progress .label{font-weight:600;font-size:.92em;min-width:210px}
-  .track{flex:1;height:10px;border-radius:6px;background:var(--bg);overflow:hidden;min-width:180px}
-  .track span{display:block;height:100%;background:linear-gradient(90deg,var(--teal),var(--teal-deep))}
-  .progress .pct{font-family:var(--mono);font-size:.82em;color:var(--slate)}
-  .chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}
-  .chip{font-size:.74em;font-family:var(--mono);padding:4px 10px;border-radius:7px;border:1px solid var(--line);background:var(--bg-2)}
-  .chip.ok{border-color:rgba(34,197,94,.35);background:#f0fdf4;color:#16A34A}
-  .chip.mid{border-color:rgba(245,158,11,.4);background:#fffbeb;color:#b45309}
-  .chip.low{border-color:var(--line);color:var(--slate)}
-
-  /* Legend */
-  .legend{display:flex;flex-wrap:wrap;gap:18px;margin:14px 0 4px;font-size:.84em;color:var(--slate)}
+  .legend{display:flex;flex-wrap:wrap;gap:16px;margin:16px 0 0;font-size:.84em;color:var(--slate)}
   .legend span{display:inline-flex;align-items:center;gap:8px}
   .tag{display:inline-block;font-family:var(--mono);font-size:.72em;font-weight:500;padding:3px 9px;border-radius:6px;white-space:nowrap}
   .t-build{background:#fef2f2;color:#b91c1c;border:1px solid #fecaca}
@@ -69,34 +57,22 @@
   .t-partner{background:#eef4f9;color:#3d6a8e;border:1px solid #cfe0ec}
   .t-design{background:#f1f5f9;color:#475569;border:1px solid #e2e8f0}
 
-  /* Tables */
-  table{width:100%;border-collapse:separate;border-spacing:0;margin-top:8px;background:var(--white);border:1px solid var(--line);border-radius:14px;overflow:hidden;font-size:.9em}
-  thead th{background:var(--navy);color:#cfdcea;text-align:left;font-weight:500;font-size:.78em;text-transform:uppercase;letter-spacing:.06em;padding:11px 14px}
-  tbody td{padding:12px 14px;border-top:1px solid var(--line);vertical-align:top}
+  table{width:100%;border-collapse:separate;border-spacing:0;margin-top:8px;background:var(--white);border:1px solid var(--line);border-radius:14px;overflow:hidden;font-size:.89em}
+  thead th{background:var(--navy);color:#cfdcea;text-align:left;font-weight:500;font-size:.76em;text-transform:uppercase;letter-spacing:.06em;padding:11px 14px}
+  tbody td{padding:11px 14px;border-top:1px solid var(--line);vertical-align:top}
   tbody tr:nth-child(even){background:#f7fafc}
-  td.id{font-family:var(--mono);font-weight:600;color:var(--teal-deep);white-space:nowrap}
-  td.item b{display:block;margin-bottom:3px}
-  td.item small{color:var(--slate)}
-  .comp{font-family:var(--mono);font-size:.82em;color:var(--navy);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:2px 7px;display:inline-block}
-  td.owner{font-size:.86em;color:var(--slate);white-space:nowrap}
-  .sev{font-family:var(--mono);font-size:.72em;font-weight:600;padding:2px 8px;border-radius:20px;white-space:nowrap}
-  .sev.hi{background:#fef2f2;color:#b91c1c} .sev.md{background:#fffbeb;color:#b45309} .sev.lo{background:#f1f5f9;color:#64748B}
-
-  /* Session cards */
-  .sessions{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:10px}
-  .scard{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:18px 20px;border-top:4px solid var(--teal)}
-  .scard.client{border-top-color:var(--amber)} .scard.dt{border-top-color:var(--teal-deep)} .scard.sw{border-top-color:var(--violet)} .scard.int{border-top-color:var(--navy)}
-  .scard h3{margin:0 0 4px;font-size:1.02em}
-  .scard .who{font-size:.76em;font-family:var(--mono);color:var(--slate);text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px}
-  .scard ul{margin:0;padding-left:18px;font-size:.88em;color:var(--navy)}
-  .scard li{margin:5px 0}
-  .scard li code{font-family:var(--mono);font-size:.85em;color:var(--teal-deep)}
+  td.id{font-family:var(--mono);font-weight:700;color:var(--teal-deep);white-space:nowrap}
+  td.q b{display:block}
+  .chip{font-family:var(--mono);font-size:.82em;color:var(--navy);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:2px 7px;display:inline-block;margin:1px 2px 1px 0}
+  td.area{font-size:.84em;color:var(--slate);white-space:nowrap}
+  td.raised{font-family:var(--mono);font-size:.8em;color:var(--slate);white-space:nowrap}
+  .st{font-family:var(--mono);font-size:.72em;font-weight:600;padding:2px 9px;border-radius:20px;white-space:nowrap}
+  .st.open{background:#fffbeb;color:#b45309} .st.answered{background:#f0fdf4;color:#16A34A} .st.parked{background:#f1f5f9;color:#64748B}
 
   footer{margin-top:50px;padding-top:20px;border-top:1px solid var(--line);font-size:.8em;color:var(--slate);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
   footer .wm{font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--navy)}
-  a{color:var(--teal-deep)}
-  @media (max-width:760px){.stats{grid-template-columns:repeat(2,1fr)}.sessions{grid-template-columns:1fr}header h1{font-size:1.8em}}
-  @media print{body{background:#fff}.stat,.progress,.scard,table{box-shadow:none}h2{break-after:avoid}table{break-inside:auto}tr{break-inside:avoid}}
+  @media (max-width:760px){.stats{grid-template-columns:repeat(2,1fr)}header h1{font-size:1.8em}}
+  @media print{body{background:#fff}.stat,table{box-shadow:none}h2{break-after:avoid}tr{break-inside:avoid}}
 </style>
 </head>
 <body>
@@ -105,12 +81,12 @@
   <div class="wrap">
     <div class="wordmark"><span class="dot"></span> Novosapien &nbsp;·&nbsp; TXN Engagement</div>
     <h1>Open Questions &amp; <span class="accent">Gap Register</span></h1>
-    <div class="sub">Every unresolved decision and dependency across the TXN agentic-AI scope — what blocks build, what TXN must decide, and what we need from delivery partners.</div>
+    <div class="sub">The 46 unresolved questions across the TXN agentic-AI scope — what blocks build, what TXN must decide, and what we need from delivery partners. A generated view of the vault's <code>open-questions</code> register.</div>
     <div class="meta">
       <span><b>Prepared by</b> Novosapien</span>
-      <span><b>Date</b> 10 June 2026</span>
-      <span><b>Scope</b> Agentic AI layer · 7 components</span>
-      <span><b>Source</b> Product vault (component &amp; sub-component docs)</span>
+      <span><b>Date</b> 11 June 2026 · v2</span>
+      <span><b>Source</b> content/open-questions.md (single source of truth)</span>
+      <span><b>Total</b> 46 questions</span>
     </div>
   </div>
 </header>
@@ -119,176 +95,111 @@
 
   <div class="stats">
     <div class="stat b"><div class="n">4</div><div class="l">Build-blocking</div></div>
-    <div class="stat c"><div class="n">8</div><div class="l">Client decisions</div></div>
-    <div class="stat p"><div class="n">11</div><div class="l">Partner dependencies</div></div>
-    <div class="stat d"><div class="n">10</div><div class="l">Design / open</div></div>
+    <div class="stat c"><div class="n">14</div><div class="l">Client decisions</div></div>
+    <div class="stat p"><div class="n">12</div><div class="l">Partner dependencies</div></div>
+    <div class="stat d"><div class="n">16</div><div class="l">Design / open</div></div>
   </div>
 
-  <div class="progress">
-    <div class="row">
-      <span class="label">Component decomposition</span>
-      <span class="track"><span style="width:71.4%"></span></span>
-      <span class="pct">5 / 7 fully decomposed to buildable depth</span>
-    </div>
-    <div class="chips">
-      <span class="chip ok">Agent Access Layer ✓</span>
-      <span class="chip ok">Agent Inbox &amp; Alerts ✓</span>
-      <span class="chip ok">Co-pilot ✓</span>
-      <span class="chip ok">Developer Support ✓</span>
-      <span class="chip ok">Full Agentic Experience ✓</span>
-      <span class="chip mid">Internal Ops — defining</span>
-      <span class="chip low">Fraud &amp; Risk — collecting</span>
-    </div>
+  <div class="statusbar">
+    <span class="open">44 Open</span>
+    <span class="answered">1 Answered</span>
+    <span class="parked">1 Parked</span>
   </div>
 
-  <p class="lead" style="margin-top:22px">The scope is documented; the work now is resolution. Each item below is tagged by who must close it. Nothing here is a blocker to <em>documenting</em> — these are the gates to <em>building</em> and to the next client conversations.</p>
+  <p class="lead" style="margin-top:20px">Merged from George's in-vault <code>open-questions</code> register and the earlier gap register into one typed set. Each row carries the doc where its answer belongs, the session it was raised in, and a status. This HTML is regenerated from that table — the markdown register is the source of truth.</p>
 
   <div class="legend">
-    <span><span class="tag t-build">BUILD-BLOCKING</span> resolve before the dependent piece can be built</span>
-    <span><span class="tag t-client">CLIENT</span> TXN product / commercial decision</span>
+    <span><span class="tag t-build">BUILD</span> ours to build — blocks the dependent piece</span>
+    <span><span class="tag t-client">CLIENT</span> TXN product / commercial / risk decision</span>
     <span><span class="tag t-partner">PARTNER</span> needed from DT / Stackworkz / Super Ultra / provider</span>
     <span><span class="tag t-design">DESIGN</span> our design work — land &amp; iterate</span>
   </div>
 
-  <!-- BUILD-BLOCKING -->
-  <h2><span class="bar"></span> Build-blocking <span class="count">4 items</span></h2>
-  <p class="lead">Ours to build, but the dependent surfaces can't ship until they exist.</p>
+  <!-- BUILD -->
+  <h2><span class="bar"></span> Build-blocking <span class="count">4</span></h2>
+  <p class="owner">Owner: <b>Novosapien build</b> — resolve before the dependent surface can ship.</p>
   <table>
-    <thead><tr><th>ID</th><th>Item</th><th>Component</th><th>What resolves it</th><th>Severity</th></tr></thead>
+    <thead><tr><th>#</th><th>Question</th><th>Area</th><th>Answer in</th><th>Raised</th><th>Status</th></tr></thead>
     <tbody>
-      <tr><td class="id">B1</td><td class="item"><b>AI-specific permission config</b><small>No permission API exists for AI acting outside the Console; must mirror the granular Console model (Super Ultra designed a screen).</small></td><td><span class="comp">agent-access-layer</span></td><td>Build the org/user permission mirror; confirm owner &amp; timing. Gates <em>all</em> agent execution outside the Console.</td><td><span class="sev hi">HIGH</span></td></tr>
-      <tr><td class="id">B2</td><td class="item"><b>Sign-up / login design</b><small>Not scoped in the portal MVP (docs are fully public) — needed to gate MCP/sandbox and capture leads.</small></td><td><span class="comp">developer-support</span></td><td>Design the sign-up + API-key flow (also a product decision — see C). Depends on P4.</td><td><span class="sev hi">HIGH</span></td></tr>
-      <tr><td class="id">B3</td><td class="item"><b>Persistence store</b><small>Where saved rendered views and recurring-task definitions live is unresolved.</small></td><td><span class="comp">full-agentic-experience</span></td><td>Choose the store / state model for revisitable views + schedules.</td><td><span class="sev md">MED</span></td></tr>
-      <tr><td class="id">B4</td><td class="item"><b>Audit retention &amp; storage</b><small>How much chat/transition history is kept, where, and for how long — underpins “prompted trust”.</small></td><td><span class="comp">agent-access-layer</span></td><td>Decide retention policy + store (Brett proposed the data-warehouse / knowledge-graph audit store).</td><td><span class="sev md">MED</span></td></tr>
+      <tr><td class="id">6</td><td class="q"><b>Audit immutability / append-only + retention</b> — assumed immutable; retention window + storage location undecided.</td><td class="area">Access Layer</td><td><span class="chip">audit-attribution</span></td><td class="raised">01-06</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">9</td><td class="q"><b>AI-permission config</b> — build the org/user permission mirror for non-Console access (no API today). When &amp; owned by whom? Gates all agent execution outside the Console.</td><td class="area">Access Layer</td><td><span class="chip">agent-access-layer</span></td><td class="raised">01-06</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">21</td><td class="q"><b>Sign-up / login design</b> — not scoped in the portal MVP; needed to gate MCP/sandbox + capture leads. Depends on #31.</td><td class="area">Developer Support</td><td><span class="chip">access-gating</span></td><td class="raised">09-06</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">22</td><td class="q"><b>Persistence store</b> — where saved rendered views + recurring-task definitions live (state model for revisitable dashboards).</td><td class="area">Full Agentic</td><td><span class="chip">session-persistence</span></td><td class="raised">05-06</td><td><span class="st open">Open</span></td></tr>
     </tbody>
   </table>
 
   <!-- CLIENT -->
-  <h2><span class="bar"></span> Client decisions <span class="count">8 items</span></h2>
-  <p class="lead">TXN product, commercial, or risk calls — best taken in a focused decisions round.</p>
+  <h2><span class="bar"></span> Client decisions <span class="count">14</span></h2>
+  <p class="owner">Owner: <b>TXN</b> — product, commercial, or risk calls (best taken in a decisions round + the Internal Ops vision session).</p>
   <table>
-    <thead><tr><th>ID</th><th>Item</th><th>Component</th><th>What resolves it</th><th>Severity</th></tr></thead>
+    <thead><tr><th>#</th><th>Question</th><th>Area</th><th>Answer in</th><th>Raised</th><th>Status</th></tr></thead>
     <tbody>
-      <tr><td class="id">C1</td><td class="item"><b>External name for “Co-pilot”</b><small>“Co-pilot” is a Microsoft trademark (Dorte). Internally it needn’t be named; the constraint is market/collateral use.</small></td><td><span class="comp">co-pilot</span></td><td>Decide the external name before launch collateral; research the MS restriction.</td><td><span class="sev md">MED</span></td></tr>
-      <tr><td class="id">C2</td><td class="item"><b>Per-level cost / token model</b><small>The free surfaces (portal, MCP, sandbox) need a cost-per-1000-calls understanding to set the access gates.</small></td><td><span class="comp">developer-support</span> <span class="comp">agent-inbox-alerts</span></td><td>Finalise the token-cost model Ian started; set where each stage gate sits.</td><td><span class="sev hi">HIGH</span></td></tr>
-      <tr><td class="id">C3</td><td class="item"><b>Reconciliation’s home</b><small>Auth/clearing settlement reconciliation fits neither the client lanes nor fraud cleanly.</small></td><td><span class="comp">internal-ops-agents</span></td><td>Decide: its own payment-ops component, or stays in Internal Ops.</td><td><span class="sev md">MED</span></td></tr>
-      <tr><td class="id">C4</td><td class="item"><b>AI risk-tolerance boundaries</b><small>What AI actions are never allowed even with approval? What blast radius forces a human override regardless of trust level?</small></td><td><span class="comp">vision</span> <span class="comp">agent-access-layer</span></td><td>Define the hard “never” list + blast-radius override thresholds.</td><td><span class="sev hi">HIGH</span></td></tr>
-      <tr><td class="id">C5</td><td class="item"><b>Cross-program benchmarking consent</b><small>With few clients per use case, “anonymised” comparisons can still identify a client. Data + contractual gated.</small></td><td><span class="comp">agent-inbox-alerts</span></td><td>Decide consent model + identification thresholds. Later phase.</td><td><span class="sev lo">LATER</span></td></tr>
-      <tr><td class="id">C6</td><td class="item"><b>In-product pricing transparency</b><small>Is pricing surfaced inside the Console (so the co-pilot can reference it) or held externally?</small></td><td><span class="comp">co-pilot</span></td><td>Decide whether/how pricing is exposed in-product.</td><td><span class="sev lo">LATER</span></td></tr>
-      <tr><td class="id">C7</td><td class="item"><b>Corporate-email gating policy</b><small>The Marqeta lesson: personal-email signups that never convert — but don’t block genuine startups.</small></td><td><span class="comp">developer-support</span></td><td>Set the email policy + limits for edge cases.</td><td><span class="sev lo">LOW</span></td></tr>
-      <tr><td class="id">C8</td><td class="item"><b>Voice support (Tier&nbsp;2) go / no-go</b><small>Parked — Ian skeptical of overkill (~18–30p/min); George 50/50. Text-first agreed.</small></td><td><span class="comp">developer-support</span></td><td>Validate with a user group post-launch; decide if it ships.</td><td><span class="sev lo">PARKED</span></td></tr>
+      <tr><td class="id">1</td><td class="q"><b>Product config size</b> — ~200 fields or 50–60 properties? (Two figures from two calls.)</td><td class="area">Co-pilot / Access</td><td><span class="chip">vision</span><span class="chip">co-pilot</span></td><td class="raised">13-05/01-06</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">3</td><td class="q"><b>Site-wide LLM ownership</b> — "Teraflow" on 29 May = Novosapien's former brand (rebranded). Same party; the LLM is Novosapien's.</td><td class="area">Developer Support</td><td><span class="chip">developer-support</span></td><td class="raised">29-05</td><td><span class="st answered">Answered</span></td></tr>
+      <tr><td class="id">4</td><td class="q"><b>System-defined alert corpus</b> — which alerts is TXN obliged to raise? (Catalogue undefined.)</td><td class="area">Inbox &amp; Alerts</td><td><span class="chip">alert-detection</span></td><td class="raised">02-06</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">16</td><td class="q"><b>AI-layer PII / residency / redaction</b> — may cardholder PII appear in chat/audit logs; residency + redaction policy?</td><td class="area">Access Layer</td><td><span class="chip">audit-attribution</span></td><td class="raised">assumption</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">18</td><td class="q"><b>User-defined optimization metric</b> — should the user set an objective the agent optimises toward (and suggest more)?</td><td class="area">Full Agentic</td><td><span class="chip">full-agentic-experience</span></td><td class="raised">13-05</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">19</td><td class="q"><b>CRM ↔ Console data split</b> — which client data lives only in the CRM vs needed in the Console, and how they sync (Dorte).</td><td class="area">Architecture / Int Ops</td><td><span class="chip">architecture</span><span class="chip">integrations</span></td><td class="raised">10-06</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">23</td><td class="q"><b>External name for "Co-pilot"</b> — Microsoft trademark (Dorte). Decide the market name before launch collateral.</td><td class="area">Co-pilot</td><td><span class="chip">co-pilot</span></td><td class="raised">04-06</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">24</td><td class="q"><b>Per-level cost / token model</b> — cost-per-1000-calls to set the free-surface access gates (Ian).</td><td class="area">Dev Support / Alerts</td><td><span class="chip">developer-support</span></td><td class="raised">09-06/02-06</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">25</td><td class="q"><b>Reconciliation's home</b> — its own payment-ops component, or stays in Internal Ops?</td><td class="area">Internal Ops</td><td><span class="chip">internal-ops-agents</span></td><td class="raised">06-03</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">26</td><td class="q"><b>AI risk-tolerance boundaries</b> — what's never allowed even with approval? What blast radius forces a human override?</td><td class="area">Cross-cutting</td><td><span class="chip">vision</span><span class="chip">agent-access-layer</span></td><td class="raised">13-05 §8</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">27</td><td class="q"><b>Cross-program benchmarking consent</b> — "anonymised" can still identify with few clients. Consent + thresholds (later).</td><td class="area">Inbox &amp; Alerts</td><td><span class="chip">agent-inbox-alerts</span></td><td class="raised">02-06</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">28</td><td class="q"><b>In-product pricing transparency</b> — pricing in the Console (so the co-pilot can reference it) or held externally?</td><td class="area">Co-pilot</td><td><span class="chip">co-pilot</span></td><td class="raised">13-05 §8</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">29</td><td class="q"><b>Corporate-email gating policy</b> — avoid junk signups (Marqeta lesson) without blocking genuine startups.</td><td class="area">Developer Support</td><td><span class="chip">access-gating</span></td><td class="raised">09-06</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">30</td><td class="q"><b>Voice support (Tier 2)</b> — voice agent (~18–30p/min) vs text-first. Validate with a user group post-launch.</td><td class="area">Developer Support</td><td><span class="chip">support-triage</span></td><td class="raised">09-06</td><td><span class="st parked">Parked</span></td></tr>
     </tbody>
   </table>
 
   <!-- PARTNER -->
-  <h2><span class="bar"></span> Partner dependencies <span class="count">11 items</span></h2>
-  <p class="lead">Needed from Direct Transact (Core API + data), Stackworkz / Super Ultra (Console, Portal, design), or external providers.</p>
+  <h2><span class="bar"></span> Partner dependencies <span class="count">12</span></h2>
+  <p class="owner">Owner: <b>DT · Stackworkz · Super Ultra · providers</b> — coordinate in partner syncs.</p>
   <table>
-    <thead><tr><th>ID</th><th>Item</th><th>Owner</th><th>Blocks</th><th>Severity</th></tr></thead>
+    <thead><tr><th>#</th><th>Question</th><th>Area</th><th>Owner / answer in</th><th>Raised</th><th>Status</th></tr></thead>
     <tbody>
-      <tr><td class="id">P1</td><td class="item"><b>Core API stability + versioning policy</b><small>When is it stable enough to build tools against; how are breaking changes managed?</small></td><td class="owner">Direct Transact</td><td>Tool catalogue <span class="comp">agent-access-layer</span></td><td><span class="sev hi">HIGH</span></td></tr>
-      <tr><td class="id">P2</td><td class="item"><b>Product / config webhook</b><small>An event whenever a config change happens (Console / API / AI) so the AI can react.</small></td><td class="owner">Direct Transact</td><td>Change-impact <span class="comp">agent-inbox-alerts</span></td><td><span class="sev hi">HIGH</span></td></tr>
-      <tr><td class="id">P3</td><td class="item"><b>Data Lake schema + availability</b><small>Not operational yet; needed for impact, analytics, anomaly, benchmarking, reconciliation.</small></td><td class="owner">Direct Transact</td><td>Impact preview, Alerts, Fraud, reconciliation</td><td><span class="sev hi">HIGH</span></td></tr>
-      <tr><td class="id">P4</td><td class="item"><b>Public sandbox grounds + API-key model</b><small>Whether the sandbox needs a per-user key changes the whole sign-up decision.</small></td><td class="owner">Direct Transact</td><td>MCP L2, sandbox assist, sign-up (B2) <span class="comp">developer-support</span></td><td><span class="sev hi">HIGH</span></td></tr>
-      <tr><td class="id">P5</td><td class="item"><b>Endpoint QA / test status</b><small>~80 endpoints, ~80–90% untested; affects mock-API fidelity for early build.</small></td><td class="owner">Direct Transact</td><td>Mock-API build &amp; simulation</td><td><span class="sev md">MED</span></td></tr>
-      <tr><td class="id">P6</td><td class="item"><b>Console instrumentation depth</b><small>Page state, component identifiers, action handlers — Michael flagged additional work may be needed to “plug in the AI”.</small></td><td class="owner">Stackworkz</td><td>Co-pilot context + Full Agentic rendering</td><td><span class="sev hi">HIGH</span></td></tr>
-      <tr><td class="id">P7</td><td class="item"><b>Notification preferences + delivery</b><small>Delivery to the user’s preferred channel (Slack / Teams / email / in-console).</small></td><td class="owner">Stackworkz</td><td>Notification routing <span class="comp">agent-inbox-alerts</span></td><td><span class="sev md">MED</span></td></tr>
-      <tr><td class="id">P8</td><td class="item"><b>Umbraco doc APIs + vector index</b><small>Docs exposed via API for AI search, embedded for semantic retrieval.</small></td><td class="owner">Stackworkz</td><td>Docs MCP + portal co-pilot <span class="comp">developer-support</span></td><td><span class="sev hi">HIGH</span></td></tr>
-      <tr><td class="id">P9</td><td class="item"><b>MCP-server ownership split</b><small>Docs/dev-portal MCP (Stackworkz wants to own) vs card-acquiring-API MCP (DT?) — avoid duplicate servers.</small></td><td class="owner">Stackworkz / DT</td><td>MCP build <span class="comp">agent-access-layer</span></td><td><span class="sev md">MED</span></td></tr>
-      <tr><td class="id">P10</td><td class="item"><b>Console component library handle</b><small>Addressable React/MUI components for the agent to render (generative UI).</small></td><td class="owner">Stackworkz / Super Ultra</td><td>Generative UI rendering <span class="comp">full-agentic-experience</span></td><td><span class="sev md">MED</span></td></tr>
-      <tr><td class="id">P11</td><td class="item"><b>A2A provider enablement</b><small>Direct A2A connections from the big providers. MCP-as-message fallback carries it until then.</small></td><td class="owner">Anthropic / providers</td><td>External-agent path <span class="comp">a2a-endpoint</span></td><td><span class="sev lo">WATCH</span></td></tr>
+      <tr><td class="id">8</td><td class="q"><b>MCP-server ownership split</b> — docs/dev-portal MCP (Stackworkz) vs card-acquiring-API MCP (DT?). Avoid duplicates.</td><td class="area">Access Layer</td><td><span class="chip">Stackworkz / DT</span></td><td class="raised">29-05</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">10</td><td class="q"><b>Product webhook</b> — will DT add it, and on what timeline? (Underpins change-impact alerts.)</td><td class="area">Access / Alerts</td><td><span class="chip">Direct Transact</span></td><td class="raised">01-06</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">11</td><td class="q"><b>Core API stability + versioning</b> — when stable enough to build tools against; breaking-change policy.</td><td class="area">Access Layer</td><td><span class="chip">Direct Transact</span></td><td class="raised">01-06</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">12</td><td class="q"><b>Data-lake schema</b> — when does DT share it?</td><td class="area">Access Layer</td><td><span class="chip">Direct Transact</span></td><td class="raised">01-06</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">13</td><td class="q"><b>Alerting-system build ownership</b> — DT narrowed to a context-less "post an alert" API; nobody scoped to build detection.</td><td class="area">Inbox &amp; Alerts</td><td><span class="chip">DT / unowned</span></td><td class="raised">02-06</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">20</td><td class="q"><b>AI-ready downloadable doc file</b> — the `LLMS.txt`-style file; Stackworkz vs AI-generated, and cadence.</td><td class="area">Developer Support</td><td><span class="chip">Stackworkz / Super Ultra</span></td><td class="raised">09-06</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">31</td><td class="q"><b>Public sandbox API-key model</b> — does the sandbox need a per-user key? Changes whether/when sign-up (#21) is required.</td><td class="area">Developer Support</td><td><span class="chip">Direct Transact</span></td><td class="raised">09-06</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">32</td><td class="q"><b>Endpoint QA / test status</b> — ~80 endpoints, ~80–90% untested; affects mock-API fidelity for early build.</td><td class="area">Access Layer</td><td><span class="chip">Direct Transact</span></td><td class="raised">05-06</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">33</td><td class="q"><b>Console instrumentation depth</b> — page state, component IDs, action handlers (Michael flagged plug-in work).</td><td class="area">Co-pilot / Full Agentic</td><td><span class="chip">Stackworkz</span></td><td class="raised">13-05</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">34</td><td class="q"><b>Umbraco doc APIs + vector index</b> — docs via API for AI search + draft-API for the knowledge engine.</td><td class="area">Developer Support</td><td><span class="chip">Stackworkz</span></td><td class="raised">09-06/10-06</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">35</td><td class="q"><b>Console component library handle</b> — addressable React/MUI components for the agent to render (generative UI).</td><td class="area">Full Agentic</td><td><span class="chip">Stackworkz / Super Ultra</span></td><td class="raised">29-05/05-06</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">36</td><td class="q"><b>A2A provider enablement</b> — direct A2A connections from providers; MCP-as-message fallback meanwhile.</td><td class="area">Access Layer (A2A)</td><td><span class="chip">Anthropic / providers</span></td><td class="raised">05-06</td><td><span class="st open">Open</span></td></tr>
     </tbody>
   </table>
 
   <!-- DESIGN -->
-  <h2><span class="bar"></span> Design &amp; open <span class="count">10 items</span></h2>
-  <p class="lead">Our design work — several are “land something and iterate from real-user feedback” (Ian’s repeated steer).</p>
+  <h2><span class="bar"></span> Design &amp; open <span class="count">16</span></h2>
+  <p class="owner">Owner: <b>Novosapien design</b> — several are "land something and iterate from real-user feedback" (Ian).</p>
   <table>
-    <thead><tr><th>ID</th><th>Item</th><th>Component</th><th>What resolves it</th><th>Severity</th></tr></thead>
+    <thead><tr><th>#</th><th>Question</th><th>Area</th><th>Answer in</th><th>Raised</th><th>Status</th></tr></thead>
     <tbody>
-      <tr><td class="id">D1</td><td class="item"><b>Process-surfacing altitude</b><small>How much of the multi-agent work to show — “won’t know until tested in the wild”.</small></td><td><span class="comp">co-pilot</span> <span class="comp">full-agentic-experience</span></td><td>Land one universal level; instrument; iterate.</td><td><span class="sev md">MED</span></td></tr>
-      <tr><td class="id">D2</td><td class="item"><b>Real-time vs cached writes</b><small>Console-wide principle: fire each call live, or cache &amp; commit on review?</small></td><td><span class="comp">co-pilot</span></td><td>Land the write principle (Mike: depends on action type — confirm console-wide).</td><td><span class="sev md">MED</span></td></tr>
-      <tr><td class="id">D3</td><td class="item"><b>Stuck-user replay mechanism</b><small>Restate goal → replay completed steps → correct — agreed in principle, undesigned.</small></td><td><span class="comp">conversational-qa</span></td><td>Design the action-cache + replay flow.</td><td><span class="sev md">MED</span></td></tr>
-      <tr><td class="id">D4</td><td class="item"><b>Bounding open-ended composition</b><small>The agent “starts with all the data but doesn’t know where it’s going” (Stackworkz) — the hardest problem.</small></td><td><span class="comp">generative-ui-rendering</span> <span class="comp">agent-orchestration</span></td><td>Define guard rails on what the agent may compose.</td><td><span class="sev hi">HIGH</span></td></tr>
-      <tr><td class="id">D5</td><td class="item"><b>Generative UI inside client’s Claude</b><small>“Probably could, but not exactly the same way” — rich rendering is for the TXN surface.</small></td><td><span class="comp">full-agentic-experience</span> <span class="comp">a2a-endpoint</span></td><td>Decide how much renders through the A2A path.</td><td><span class="sev lo">LOW</span></td></tr>
-      <tr><td class="id">D6</td><td class="item"><b>One MCP server vs several</b><small>Leaning to a single “monolith” with per-turn tool gating — confirm as tool count grows.</small></td><td><span class="comp">agent-access-layer</span></td><td>Confirm the server topology.</td><td><span class="sev lo">LOW</span></td></tr>
-      <tr><td class="id">D7</td><td class="item"><b>Simulation scope &amp; timing</b><small>Vision puts it in Internal Ops scope; the map parks it as a launch component.</small></td><td><span class="comp">internal-ops-agents</span></td><td>Decide when the synthetic-persona harness is built / used.</td><td><span class="sev md">MED</span></td></tr>
-      <tr><td class="id">D8</td><td class="item"><b>Dev-Support ↔ Internal-Ops boundary</b><small>Triage entry point (portal) vs resolution + knowledge loop (internal ops).</small></td><td><span class="comp">internal-ops-agents</span> <span class="comp">developer-support</span></td><td>Confirm the hand-off contract in the Internal Ops session.</td><td><span class="sev md">MED</span></td></tr>
-      <tr><td class="id">D9</td><td class="item"><b>Component success metrics</b><small>Several §7 sections are placeholder-quality; no agreed targets.</small></td><td><span class="comp">cross-cutting</span></td><td>Quantify the evals per component with TXN.</td><td><span class="sev lo">LOW</span></td></tr>
-      <tr><td class="id">D10</td><td class="item"><b>Internal Ops dedicated deep-dive</b><small>The component is assembled from the vision + adjacent sessions + journeys — no focused client session yet.</small></td><td><span class="comp">internal-ops-agents</span></td><td>Run the session (resolves C3, D7, D8).</td><td><span class="sev md">MED</span></td></tr>
+      <tr><td class="id">2</td><td class="q"><b>MCP permission model</b> — program- + user-defined permissions, switchable per level; how API keys map.</td><td class="area">Access Layer</td><td><span class="chip">mcp-server</span><span class="chip">permission-scoping</span></td><td class="raised">01-06</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">5</td><td class="q"><b>Idempotency</b> on mutating MCP calls — assumed; confirm the requirement.</td><td class="area">Access Layer</td><td><span class="chip">mcp-server</span></td><td class="raised">assumption</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">7</td><td class="q"><b>Notification delivery</b> — fallback/retry on failure + a default channel (assumed, not discussed).</td><td class="area">Inbox &amp; Alerts</td><td><span class="chip">notification-routing</span></td><td class="raised">assumption</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">14</td><td class="q"><b>Scheduled-report failure handling</b> — missed/failed runs retried; user told of a delay vs silent drop?</td><td class="area">Inbox &amp; Alerts</td><td><span class="chip">scheduled-reporting</span></td><td class="raised">assumption</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">15</td><td class="q"><b>Alert priority field + fan-out</b> — is there a `priority` payload field, and do high-priority items fan out to multiple surfaces?</td><td class="area">Inbox &amp; Alerts</td><td><span class="chip">notification-routing</span></td><td class="raised">assumption</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">17</td><td class="q"><b>AI-analysis consistency boundaries</b> — read-after-write guards before analysing? (Novosapien inference.)</td><td class="area">Inbox &amp; Alerts</td><td><span class="chip">ai-analysis-impact</span></td><td class="raised">assumption</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">37</td><td class="q"><b>Process-surfacing altitude</b> — how much multi-agent work to show; land one universal level &amp; iterate.</td><td class="area">Co-pilot / Full Agentic</td><td><span class="chip">process-surfacing</span></td><td class="raised">04-06/05-06</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">38</td><td class="q"><b>Real-time vs cached writes</b> — fire each call live, or cache &amp; commit on review? Confirm console-wide.</td><td class="area">Co-pilot</td><td><span class="chip">co-pilot</span></td><td class="raised">04-06</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">39</td><td class="q"><b>Stuck-user replay</b> — restate goal → replay completed steps → correct. Agreed, undesigned.</td><td class="area">Co-pilot</td><td><span class="chip">conversational-qa</span></td><td class="raised">04-06</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">40</td><td class="q"><b>Bounding open-ended composition</b> — the agent "has all the data, no destination." Guard rails — the hardest problem.</td><td class="area">Full Agentic</td><td><span class="chip">generative-ui-rendering</span><span class="chip">agent-orchestration</span></td><td class="raised">05-06/29-05</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">41</td><td class="q"><b>Generative UI inside client's Claude</b> — how much renders through the A2A path vs the TXN surface?</td><td class="area">Full Agentic / A2A</td><td><span class="chip">full-agentic-experience</span><span class="chip">a2a-endpoint</span></td><td class="raised">05-06</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">42</td><td class="q"><b>One MCP server vs several</b> — leaning monolith with per-turn tool gating; confirm as tool count grows.</td><td class="area">Access Layer</td><td><span class="chip">agent-access-layer</span></td><td class="raised">01-06</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">43</td><td class="q"><b>Simulation scope &amp; timing</b> — Internal Ops scope vs parked launch component; when built/used (cold-start).</td><td class="area">Internal Ops</td><td><span class="chip">internal-ops-agents</span></td><td class="raised">10-06</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">44</td><td class="q"><b>Dev-Support ↔ Internal-Ops boundary</b> — triage entry point vs resolution + knowledge loop. Confirm the contract.</td><td class="area">Dev Support / Int Ops</td><td><span class="chip">developer-support</span><span class="chip">internal-ops-agents</span></td><td class="raised">10-06</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">45</td><td class="q"><b>Component success metrics</b> — quantify the §7 evals per component with TXN (several are placeholders).</td><td class="area">Cross-cutting</td><td><span class="chip">components</span></td><td class="raised">multiple</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">46</td><td class="q"><b>Internal Ops vision / dedicated session</b> — Ian said it needs its own vision (resolves #25, #43, #44).</td><td class="area">Internal Ops</td><td><span class="chip">internal-ops-agents</span></td><td class="raised">10-06</td><td><span class="st open">Open</span></td></tr>
     </tbody>
   </table>
 
-  <!-- RESOLVE IT HERE -->
-  <h2><span class="bar"></span> Where each gets resolved</h2>
-  <p class="lead">Grouped by the conversation that closes them — so the register turns straight into agendas.</p>
-  <div class="sessions">
-    <div class="scard int">
-      <h3>Internal Ops deep-dive</h3>
-      <div class="who">Client session · TXN + Novosapien</div>
-      <ul>
-        <li><code>D10</code> Run the missing session</li>
-        <li><code>C3</code> Reconciliation’s home</li>
-        <li><code>D7</code> Simulation scope &amp; timing</li>
-        <li><code>D8</code> Dev-Support ↔ Internal-Ops boundary</li>
-      </ul>
-    </div>
-    <div class="scard client">
-      <h3>TXN decisions round</h3>
-      <div class="who">Client · product / commercial / risk</div>
-      <ul>
-        <li><code>C4</code> AI risk-tolerance boundaries</li>
-        <li><code>C2</code> Per-level cost / token model</li>
-        <li><code>C1</code> External “Co-pilot” name</li>
-        <li><code>C6 C7 C8</code> Pricing, email policy, voice</li>
-        <li><code>B2</code> Sign-up / login (product side)</li>
-      </ul>
-    </div>
-    <div class="scard dt">
-      <h3>Direct Transact coordination</h3>
-      <div class="who">Partner · Core API + data</div>
-      <ul>
-        <li><code>P1</code> API stability + versioning</li>
-        <li><code>P2</code> Product / config webhook</li>
-        <li><code>P3</code> Data Lake schema + availability</li>
-        <li><code>P4</code> Sandbox grounds + API-key model</li>
-        <li><code>P5</code> Endpoint QA status</li>
-      </ul>
-    </div>
-    <div class="scard sw">
-      <h3>Stackworkz / Super Ultra</h3>
-      <div class="who">Partner · Console, Portal, design</div>
-      <ul>
-        <li><code>P6</code> Console instrumentation depth</li>
-        <li><code>P8</code> Umbraco doc APIs + vector index</li>
-        <li><code>P7</code> Notification delivery</li>
-        <li><code>P9 P10</code> MCP ownership, component library</li>
-      </ul>
-    </div>
-    <div class="scard">
-      <h3>Novosapien internal design</h3>
-      <div class="who">Our build · design &amp; iterate</div>
-      <ul>
-        <li><code>B1 B3 B4</code> Permission config, persistence store, audit store</li>
-        <li><code>D4</code> Bounding open-ended composition</li>
-        <li><code>D1 D2 D3</code> Surfacing altitude, write model, replay</li>
-        <li><code>D6 D9</code> MCP topology, success metrics</li>
-      </ul>
-    </div>
-    <div class="scard">
-      <h3>Watch list</h3>
-      <div class="who">External · monitor</div>
-      <ul>
-        <li><code>P11</code> A2A provider enablement (Anthropic)</li>
-        <li><code>C5</code> Cross-program benchmarking consent (later)</li>
-        <li><code>D5</code> Generative UI through the A2A path</li>
-      </ul>
-    </div>
-  </div>
-
   <footer>
     <span class="wm">Novosapien</span>
-    <span>TXN — Open Questions &amp; Gap Register · v1.0 · 10 June 2026 · generated from the product knowledge vault</span>
+    <span>TXN — Open Questions &amp; Gap Register · v2 · 11 June 2026 · generated from content/open-questions.md (46 questions)</span>
   </footer>
 
 </div>
