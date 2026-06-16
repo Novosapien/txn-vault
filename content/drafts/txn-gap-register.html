@@ -81,12 +81,12 @@
   <div class="wrap">
     <div class="wordmark"><span class="dot"></span> Novosapien &nbsp;·&nbsp; TXN Engagement</div>
     <h1>Open Questions &amp; <span class="accent">Gap Register</span></h1>
-    <div class="sub">The 46 unresolved questions across the TXN agentic-AI scope — what blocks build, what TXN must decide, and what we need from delivery partners. A generated view of the vault's <code>open-questions</code> register.</div>
+    <div class="sub">The open questions across the TXN agentic-AI scope — what blocks build, what TXN needs to decide, and what's needed from the delivery partners — with the answers captured in the 11 June review.</div>
     <div class="meta">
       <span><b>Prepared by</b> Novosapien</span>
-      <span><b>Date</b> 11 June 2026 · v2</span>
-      <span><b>Source</b> content/open-questions.md (single source of truth)</span>
-      <span><b>Total</b> 46 questions</span>
+      <span><b>Date</b> 15 June 2026 · v3</span>
+      <span><b>Status</b> 6 answered · 2 parked · 39 open</span>
+      <span><b>Total</b> 47 questions</span>
     </div>
   </div>
 </header>
@@ -96,17 +96,17 @@
   <div class="stats">
     <div class="stat b"><div class="n">4</div><div class="l">Build-blocking</div></div>
     <div class="stat c"><div class="n">14</div><div class="l">Client decisions</div></div>
-    <div class="stat p"><div class="n">12</div><div class="l">Partner dependencies</div></div>
+    <div class="stat p"><div class="n">13</div><div class="l">Partner dependencies</div></div>
     <div class="stat d"><div class="n">16</div><div class="l">Design / open</div></div>
   </div>
 
   <div class="statusbar">
-    <span class="open">44 Open</span>
-    <span class="answered">1 Answered</span>
-    <span class="parked">1 Parked</span>
+    <span class="open">39 Open</span>
+    <span class="answered">6 Answered</span>
+    <span class="parked">2 Parked</span>
   </div>
 
-  <p class="lead" style="margin-top:20px">Merged from George's in-vault <code>open-questions</code> register and the earlier gap register into one typed set. Each row carries the doc where its answer belongs, the session it was raised in, and a status. This HTML is regenerated from that table — the markdown register is the source of truth.</p>
+  <p class="lead" style="margin-top:20px">Each question is tagged by who closes it — <b>build-blocking</b>, a <b>TXN decision</b>, a <b>partner dependency</b>, or a <b>design</b> call — and carries the session it was raised in and its status. The <b>11 June review worked through #19</b>; answered rows carry an <b>A:</b> note. The remainder will be answered in the next pass.</p>
 
   <div class="legend">
     <span><span class="tag t-build">BUILD</span> ours to build — blocks the dependent piece</span>
@@ -121,10 +121,10 @@
   <table>
     <thead><tr><th>#</th><th>Question</th><th>Area</th><th>Answer in</th><th>Raised</th><th>Status</th></tr></thead>
     <tbody>
-      <tr><td class="id">6</td><td class="q"><b>Audit immutability / append-only + retention</b> — assumed immutable; retention window + storage location undecided.</td><td class="area">Access Layer</td><td><span class="chip">audit-attribution</span></td><td class="raised">01-06</td><td><span class="st open">Open</span></td></tr>
-      <tr><td class="id">9</td><td class="q"><b>AI-permission config</b> — build the org/user permission mirror for non-Console access (no API today). When &amp; owned by whom? Gates all agent execution outside the Console.</td><td class="area">Access Layer</td><td><span class="chip">agent-access-layer</span></td><td class="raised">01-06</td><td><span class="st open">Open</span></td></tr>
-      <tr><td class="id">21</td><td class="q"><b>Sign-up / login design</b> — not scoped in the portal MVP; needed to gate MCP/sandbox + capture leads. Depends on #31.</td><td class="area">Developer Support</td><td><span class="chip">access-gating</span></td><td class="raised">09-06</td><td><span class="st open">Open</span></td></tr>
-      <tr><td class="id">22</td><td class="q"><b>Persistence store</b> — where saved rendered views + recurring-task definitions live (state model for revisitable dashboards).</td><td class="area">Full Agentic</td><td><span class="chip">session-persistence</span></td><td class="raised">05-06</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">6</td><td class="q"><b>Audit immutability / append-only + retention</b> — assumed immutable; retention window + storage location undecided. <b>A (11-06):</b> immutable confirmed; storage → the <b>DT data lake</b>; hot/cold split + 7-yr PCI retention still being worked with DT.</td><td class="area">Access Layer</td><td><span class="chip">audit-attribution</span></td><td class="raised">01-06</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">9</td><td class="q"><b>AI-permission config</b> — build the org/user permission mirror for non-Console access. <b>A (11-06):</b> org = super-user, users = subsets; gate tools per <b>user ID</b> (OAuth for the Claude/MCP path); likely a separate AI/MCP key (JWT vs key TBD with DT); long-lived, rotate/suspend on leak.</td><td class="area">Access Layer</td><td><span class="chip">agent-access-layer</span></td><td class="raised">01-06</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">21</td><td class="q"><b>Sign-up / login design</b> — not scoped in the portal MVP; needed to gate MCP/sandbox + capture leads. <b>A (11-06):</b> <b>phase two</b> of the portal; capture email + company even without full login; a separate lighter lead-MCP; track usage to feed sales.</td><td class="area">Developer Support</td><td><span class="chip">access-gating</span></td><td class="raised">09-06</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">22</td><td class="q"><b>Persistence store</b> — where saved rendered views + recurring-task definitions live. <b>A (11-06):</b> store in the <b>same Stackworkz/Console DB</b> (single source of truth, one clean IO; avoids two DBs). Recurring task = a job. Caveat: watch volume so agentic caching doesn't overload their DB.</td><td class="area">Full Agentic</td><td><span class="chip">session-persistence</span></td><td class="raised">05-06</td><td><span class="st answered">Answered</span></td></tr>
     </tbody>
   </table>
 
@@ -134,13 +134,13 @@
   <table>
     <thead><tr><th>#</th><th>Question</th><th>Area</th><th>Answer in</th><th>Raised</th><th>Status</th></tr></thead>
     <tbody>
-      <tr><td class="id">1</td><td class="q"><b>Product config size</b> — ~200 fields or 50–60 properties? (Two figures from two calls.)</td><td class="area">Co-pilot / Access</td><td><span class="chip">vision</span><span class="chip">co-pilot</span></td><td class="raised">13-05/01-06</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">1</td><td class="q"><b>Product config size</b> — ~200 fields or 50–60 properties? <b>A (11-06):</b> don't fixate on a number — it's large &amp; grows, nothing mandatory; configure at <b>feature level</b> with AI recommendations by region/vertical.</td><td class="area">Co-pilot / Access</td><td><span class="chip">vision</span><span class="chip">co-pilot</span></td><td class="raised">13-05/01-06</td><td><span class="st answered">Answered</span></td></tr>
       <tr><td class="id">3</td><td class="q"><b>Site-wide LLM ownership</b> — "Teraflow" on 29 May = Novosapien's former brand (rebranded). Same party; the LLM is Novosapien's.</td><td class="area">Developer Support</td><td><span class="chip">developer-support</span></td><td class="raised">29-05</td><td><span class="st answered">Answered</span></td></tr>
-      <tr><td class="id">4</td><td class="q"><b>System-defined alert corpus</b> — which alerts is TXN obliged to raise? (Catalogue undefined.)</td><td class="area">Inbox &amp; Alerts</td><td><span class="chip">alert-detection</span></td><td class="raised">02-06</td><td><span class="st open">Open</span></td></tr>
-      <tr><td class="id">16</td><td class="q"><b>AI-layer PII / residency / redaction</b> — may cardholder PII appear in chat/audit logs; residency + redaction policy?</td><td class="area">Access Layer</td><td><span class="chip">audit-attribution</span></td><td class="raised">assumption</td><td><span class="st open">Open</span></td></tr>
-      <tr><td class="id">18</td><td class="q"><b>User-defined optimization metric</b> — should the user set an objective the agent optimises toward (and suggest more)?</td><td class="area">Full Agentic</td><td><span class="chip">full-agentic-experience</span></td><td class="raised">13-05</td><td><span class="st open">Open</span></td></tr>
-      <tr><td class="id">19</td><td class="q"><b>CRM ↔ Console data split</b> — which client data lives only in the CRM vs needed in the Console, and how they sync (Dorte).</td><td class="area">Architecture / Int Ops</td><td><span class="chip">architecture</span><span class="chip">integrations</span></td><td class="raised">10-06</td><td><span class="st open">Open</span></td></tr>
-      <tr><td class="id">23</td><td class="q"><b>External name for "Co-pilot"</b> — Microsoft trademark (Dorte). Decide the market name before launch collateral.</td><td class="area">Co-pilot</td><td><span class="chip">co-pilot</span></td><td class="raised">04-06</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">4</td><td class="q"><b>System-defined alert corpus</b> — which alerts is TXN obliged to raise? <b>A (11-06):</b> still scoping (blocked partly on DT log access); known: <b>core transaction declines</b> + infra-level thresholds; signals land in central logging + the data lake.</td><td class="area">Inbox &amp; Alerts</td><td><span class="chip">alert-detection</span></td><td class="raised">02-06</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">16</td><td class="q"><b>AI-layer PII / residency / redaction</b> — may cardholder PII appear in chat/audit logs; residency + redaction policy? <b>A (11-06):</b> limit PII; redact from logs; <b>EU data stays in Europe</b> (at rest); provider APIs secure — confirm standards for a financial product.</td><td class="area">Access Layer</td><td><span class="chip">audit-attribution</span></td><td class="raised">assumption</td><td><span class="st answered">Answered</span></td></tr>
+      <tr><td class="id">18</td><td class="q"><b>User-defined optimization metric</b> — should the user set an objective the agent optimises toward (and suggest more)? <b>A (11-06):</b> not a separate feature — the objective is the user's request per interaction; long-horizon tasks use a checklist.</td><td class="area">Full Agentic</td><td><span class="chip">full-agentic-experience</span></td><td class="raised">13-05</td><td><span class="st answered">Answered</span></td></tr>
+      <tr><td class="id">19</td><td class="q"><b>CRM ↔ Console data split</b> — which client data lives only in the CRM vs needed in the Console. <b>A (11-06):</b> CRM = sales/onboarding; Console DB = operational; handoff at <b>contract signing</b> (CRM triggers the build); console captures only name + email, not a full sync.</td><td class="area">Architecture / Int Ops</td><td><span class="chip">architecture</span><span class="chip">integrations</span></td><td class="raised">10-06</td><td><span class="st answered">Answered</span></td></tr>
+      <tr><td class="id">23</td><td class="q"><b>External name for "Co-pilot"</b> — Microsoft trademark (Dorte). Decide the market name before launch collateral. <b>A (11-06):</b> names floated (Nova, Dot, Jarvis…) but explicitly still undecided.</td><td class="area">Co-pilot</td><td><span class="chip">co-pilot</span></td><td class="raised">04-06</td><td><span class="st open">Open</span></td></tr>
       <tr><td class="id">24</td><td class="q"><b>Per-level cost / token model</b> — cost-per-1000-calls to set the free-surface access gates (Ian).</td><td class="area">Dev Support / Alerts</td><td><span class="chip">developer-support</span></td><td class="raised">09-06/02-06</td><td><span class="st open">Open</span></td></tr>
       <tr><td class="id">25</td><td class="q"><b>Reconciliation's home</b> — its own payment-ops component, or stays in Internal Ops?</td><td class="area">Internal Ops</td><td><span class="chip">internal-ops-agents</span></td><td class="raised">06-03</td><td><span class="st open">Open</span></td></tr>
       <tr><td class="id">26</td><td class="q"><b>AI risk-tolerance boundaries</b> — what's never allowed even with approval? What blast radius forces a human override?</td><td class="area">Cross-cutting</td><td><span class="chip">vision</span><span class="chip">agent-access-layer</span></td><td class="raised">13-05 §8</td><td><span class="st open">Open</span></td></tr>
@@ -152,7 +152,7 @@
   </table>
 
   <!-- PARTNER -->
-  <h2><span class="bar"></span> Partner dependencies <span class="count">12</span></h2>
+  <h2><span class="bar"></span> Partner dependencies <span class="count">13</span></h2>
   <p class="owner">Owner: <b>DT · Stackworkz · Super Ultra · providers</b> — coordinate in partner syncs.</p>
   <table>
     <thead><tr><th>#</th><th>Question</th><th>Area</th><th>Owner / answer in</th><th>Raised</th><th>Status</th></tr></thead>
@@ -160,7 +160,7 @@
       <tr><td class="id">8</td><td class="q"><b>MCP-server ownership split</b> — docs/dev-portal MCP (Stackworkz) vs card-acquiring-API MCP (DT?). Avoid duplicates.</td><td class="area">Access Layer</td><td><span class="chip">Stackworkz / DT</span></td><td class="raised">29-05</td><td><span class="st open">Open</span></td></tr>
       <tr><td class="id">10</td><td class="q"><b>Product webhook</b> — will DT add it, and on what timeline? (Underpins change-impact alerts.)</td><td class="area">Access / Alerts</td><td><span class="chip">Direct Transact</span></td><td class="raised">01-06</td><td><span class="st open">Open</span></td></tr>
       <tr><td class="id">11</td><td class="q"><b>Core API stability + versioning</b> — when stable enough to build tools against; breaking-change policy.</td><td class="area">Access Layer</td><td><span class="chip">Direct Transact</span></td><td class="raised">01-06</td><td><span class="st open">Open</span></td></tr>
-      <tr><td class="id">12</td><td class="q"><b>Data-lake schema</b> — when does DT share it?</td><td class="area">Access Layer</td><td><span class="chip">Direct Transact</span></td><td class="raised">01-06</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">12</td><td class="q"><b>Data-lake schema</b> — when does DT share it? <b>A (11-06):</b> DT actively building it (draft arch incoming; early/changeable) — raw→curated→consumption layers, tabular SQL + JSON/<b>1536-dim vectors</b>, row-level security, settlement data stored for later reconciliation.</td><td class="area">Access Layer</td><td><span class="chip">Direct Transact</span></td><td class="raised">01-06</td><td><span class="st open">Open</span></td></tr>
       <tr><td class="id">13</td><td class="q"><b>Alerting-system build ownership</b> — DT narrowed to a context-less "post an alert" API; nobody scoped to build detection.</td><td class="area">Inbox &amp; Alerts</td><td><span class="chip">DT / unowned</span></td><td class="raised">02-06</td><td><span class="st open">Open</span></td></tr>
       <tr><td class="id">20</td><td class="q"><b>AI-ready downloadable doc file</b> — the `LLMS.txt`-style file; Stackworkz vs AI-generated, and cadence.</td><td class="area">Developer Support</td><td><span class="chip">Stackworkz / Super Ultra</span></td><td class="raised">09-06</td><td><span class="st open">Open</span></td></tr>
       <tr><td class="id">31</td><td class="q"><b>Public sandbox API-key model</b> — does the sandbox need a per-user key? Changes whether/when sign-up (#21) is required.</td><td class="area">Developer Support</td><td><span class="chip">Direct Transact</span></td><td class="raised">09-06</td><td><span class="st open">Open</span></td></tr>
@@ -169,6 +169,7 @@
       <tr><td class="id">34</td><td class="q"><b>Umbraco doc APIs + vector index</b> — docs via API for AI search + draft-API for the knowledge engine.</td><td class="area">Developer Support</td><td><span class="chip">Stackworkz</span></td><td class="raised">09-06/10-06</td><td><span class="st open">Open</span></td></tr>
       <tr><td class="id">35</td><td class="q"><b>Console component library handle</b> — addressable React/MUI components for the agent to render (generative UI).</td><td class="area">Full Agentic</td><td><span class="chip">Stackworkz / Super Ultra</span></td><td class="raised">29-05/05-06</td><td><span class="st open">Open</span></td></tr>
       <tr><td class="id">36</td><td class="q"><b>A2A provider enablement</b> — direct A2A connections from providers; MCP-as-message fallback meanwhile.</td><td class="area">Access Layer (A2A)</td><td><span class="chip">Anthropic / providers</span></td><td class="raised">05-06</td><td><span class="st open">Open</span></td></tr>
+      <tr><td class="id">47</td><td class="q"><b>Self-healing <i>code</i> ownership</b> — can self-healing extend to code (Sentry → PR), or only docs/knowledge? <b>A (11-06):</b> code self-healing is <b>off the table for now</b> — DT owns the codebase post-handover (strict policies) and Novosapien lacks log/data access (DT firewall). Focus is self-healing docs/knowledge.</td><td class="area">Internal Ops</td><td><span class="chip">self-healing-docs</span></td><td class="raised">11-06</td><td><span class="st parked">Parked</span></td></tr>
     </tbody>
   </table>
 
@@ -199,7 +200,7 @@
 
   <footer>
     <span class="wm">Novosapien</span>
-    <span>TXN — Open Questions &amp; Gap Register · v2 · 11 June 2026 · generated from content/open-questions.md (46 questions)</span>
+    <span>TXN — Open Questions &amp; Gap Register · v3 · 15 June 2026 · 47 questions · prepared by Novosapien</span>
   </footer>
 
 </div>
