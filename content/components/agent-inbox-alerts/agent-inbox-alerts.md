@@ -5,6 +5,7 @@ sources:
   - "[[02-06-2026-component-2-alerts-agent-inbox]]"
   - "[[01-06-2026-component-1-Agent-Access-Layer]]"
   - "[[13-05-2026-txn-vision-meeting]]"
+  - "[[18-06-2026-finalised-gap-analysis]]"
 ---
 
 # TXN — Agent Inbox & Alerts
@@ -14,7 +15,9 @@ sources:
 > **Date:** 2026-06-02
 > **Status:** Defined
 > **Owner:** _TBC_
-> **Sources:** [[02-06-2026-component-2-alerts-agent-inbox]] (primary), [[01-06-2026-component-1-Agent-Access-Layer]] (approval/audit), [[13-05-2026-txn-vision-meeting]]
+> **Sources:** [[02-06-2026-component-2-alerts-agent-inbox]] (primary), [[01-06-2026-component-1-Agent-Access-Layer]] (approval/audit), [[13-05-2026-txn-vision-meeting]], [[18-06-2026-finalised-gap-analysis]] (gap-analysis updates)
+
+> **18-06 gap-analysis update ([[18-06-2026-finalised-gap-analysis]]):** Alerting direction — a standard **observability platform triggers** alerts into a **central store** the Console surfaces (graded/flagged); who pushes and owns it is still being scoped with DT ([[open-questions]] #13). Cross-program benchmarking: **summary data only**, never PII / client name / PAN-CVV; field-map the allowed comparisons from the API spec; consider an agent-vs-agent de-anonymisation test (#27). Product webhooks (change-impact alerts) sit late in DT's order, post-Visa-certification (#10).
 
 ---
 

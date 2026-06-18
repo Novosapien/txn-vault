@@ -39,4 +39,13 @@ Partner-supplied specs and definitions held in the vault for context (these are 
 
 - **AI data access** — does AI consume data via a **data-lake plug-in** (DT exposes tables) or **pull-and-aggregate through the Core API**? DT is open to either; depends on their timeline and priorities. Affects [[agent-access-layer]] and the data & insight layer.
 - **Dev environment — RESOLVED: TXN-controlled Azure.** The platform will run on a **TXN-controlled Azure environment**, drawn out in [[workstream-1-2-architecture]] (multi-region AKS, Front Door, API Management, Key Vault). This settles the earlier open question (build inside Stackworkz's existing environment vs. a TXN-controlled Azure environment). The previously recorded partner stack (DT on Kubernetes, Stackworkz VM-based dev env) describes the build partners' own environments; the target deployment platform is TXN's Azure.
-- **Card-API MCP ownership** — see the MCP-ownership split in [[agent-access-layer]].
+- **Card-API MCP ownership — RESOLVED (18-06):** docs/dev-portal MCP = Stackworkz; card-acquiring-API MCP = DT; DT owns and manages all of it post-handover ([[open-questions]] #8).
+- **DT multi-tenancy (18-06, open)** — DT built **one central system** for every client; TXN leans **per-client** isolation (the API gateway is a single containerised instance, but databases are per-client). The driver is commercial (clients expect their data fully separate) and risk (per-client limits one client's load affecting others). Being ironed out with DT ([[open-questions]] #48).
+- **TXN ↔ DT infrastructure separation (18-06, open)** — DT's current build sits **inside the DT domain** (their emails / VPNs) and uses 3+ core services shared with DT's own clients; end goal is **full separation** on TXN-controlled Azure in Europe (see [[workstream-1-2-architecture]]). DT can grant access to TXN, not the reverse; the environment must be stood up before access is granted ([[open-questions]] #49).
+
+## Timeline (from 18-06)
+
+- **Developer portal:** end-July (APIs as soon as possible; DT delivery is Visa-certification-first, so webhooks/spend-controls come later).
+- **Console (config portion):** October; remaining surfaces (e.g. customer service) follow.
+- **Market launch:** early October.
+- **Super Ultra → Stackworkz console handover:** 9 July (Figma component frameworks; portal handover already done).

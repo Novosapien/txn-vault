@@ -5,11 +5,15 @@ sources:
   - "[[13-05-2026-txn-vision-meeting]]"
   - "[[01-06-2026-component-1-Agent-Access-Layer]]"
   - "[[29-05-2026-stackworkz-meeting]]"
+  - "[[18-06-2026-finalised-gap-analysis]]"
 ---
 
 # Agent Access Layer
 
 > **Component map:** [[components]] · **Vision:** [[vision]]
+> **Sources include:** [[18-06-2026-finalised-gap-analysis]] (gap-analysis updates)
+
+> **18-06 gap-analysis update ([[18-06-2026-finalised-gap-analysis]]):** **MCP ownership confirmed** — docs/dev-portal MCP = Stackworkz; card-acquiring-API MCP = DT; DT owns all post-handover ([[open-questions]] #8, Answered). **Risk boundaries:** the API layer already blocks the worst (no card/cardholder deletes; only public APIs exposed; no whole-program deactivation), so the AI can only do what a client could via their own script; add a confirmation step on large-scale changes; detail the rest per use case (#26). **Endpoint QA:** YAML delivered, currently **0% passed** (strict Postman + Claude testing; field/name changes expected) (#32). **Auth model** under review — DT proposes JWT over long-lived keys (#31, #9). **Multi-tenancy:** DT built one central system; TXN leans per-client (single containerised gateway + per-client DBs) (#48). Permission model stays test-driven (#2, #42). A2A handled via MCP message passthrough (#36, see [[a2a-endpoint]]).
 
 ## Overview
 
