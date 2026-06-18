@@ -10,6 +10,7 @@ Cross-cutting technical decisions that affect the whole product. This directory 
 | Section | What it covers | Status | Link |
 |---------|---------------|--------|------|
 | Integrations | Third-party services, APIs, data feeds, build-partner environments | Collecting | [[integrations]] |
+| Workstream 1 & 2 deployment | TXN-controlled Azure multi-region platform (Front Door, WAF, IAM, API Management, AKS, Key Vault, SQL) | Confirmed · diagram 1st draft | [[workstream-1-2-architecture]] |
 
 ## Decisions
 
@@ -17,6 +18,7 @@ _Cross-cutting calls made in client sessions._
 
 - **CRM (Freshsales) is the system of record for client data** _(Ian, [[10-06-2026-developer-support-and-internal-ops]])._ Everything client-related lives in the CRM; the Console receives the data it needs *sent* to it, rather than context being split across systems or written directly to the Console. Flat documents are avoided — they limit how the data items can be reused. Shapes what [[internal-ops-agents]] (customer onboarding) writes to, and what [[agent-access-layer]] / the Console read.
 - **TXN runs its own operations through the agentic experience + Teams, not bespoke Console admin UI** _(Ian, same session)._ TXN-as-user accesses AI-driven information through the Claude-like experience ([[full-agentic-experience]]) and receives alerts in Teams; do **not** build more AI-management software into the Console. Affects where internal alerts/reviews surface and keeps the Console from bloating.
+- **Platform runs on a TXN-controlled Azure environment** _(confirmed 2026-06)._ The deployment target is TXN's own Azure (multi-region AKS, Front Door, API Management, Key Vault) as drawn in [[workstream-1-2-architecture]], not Stackworkz's existing dev environment. Resolves the dev-environment open question in [[integrations]].
 - **Documentation is hosted in two stores** _(Mike, same session)._ The **DT YAML** is the source for the API reference (the same API the portal renders); **guides + change log live in Umbraco** (headless CMS, API-accessible). The AI reads both; Umbraco supports **edit-via-API in draft mode** for the [[internal-ops-agents]] knowledge engine.
 
 ## Open Questions

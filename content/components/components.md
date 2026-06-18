@@ -52,7 +52,8 @@ These are part of the TXN product but built by other partners. They appear here 
 
 | Component | Built by | Reference material |
 |-----------|---------|--------------------|
-| Core API / card-system backend | **Direct Transact (DT)** — TXN's internal dev partner | Core API documentation (from TXN) |
+| Core API / card-system backend | **Direct Transact (DT)** — TXN's internal dev partner | Core API documentation (from TXN); OpenAPI spec [[txn-api-reference]] |
 | TXN Console (frontend + back-end-for-frontend) | **Stackworkz** (frontend design by **Super Ultra**) | Console design prototype documentation |
-| Developer Portal (site + Umbraco headless CMS) | **Stackworkz** | Developer portal site documentation |
+| Developer Portal (site + Umbraco headless CMS) | **Stackworkz** | Developer portal site documentation; Umbraco content models [[umbraco-guide-content-model]], [[umbraco-changelog-content-model]] |
+| Platform infrastructure (proposed) | _TBC (Michael's draft)_ | Azure multi-region deployment [[workstream-1-2-architecture]] |
 | Data Lake | **Direct Transact (DT)** | _(schema input from Novosapien for AI consumption)_ |

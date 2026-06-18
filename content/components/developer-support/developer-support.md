@@ -233,3 +233,17 @@ _Sign-up/login is **not yet scoped in the MVP design** (docs are currently fully
 | Sandbox assist | Explain a failed "try it now" request; optional pre-validation | Defined | [[sandbox-assist]] |
 | Support triage & ticket packaging | Logged-in error diagnosis from API logs → well-formed ticket → swarm pre-triage (entry point; resolution in [[internal-ops-agents]]) | Defined | [[support-triage]] |
 | Access gating & lead-gen | Four-level stage gates; API-key issuance on email capture; rate-limiting; lead capture; entitlement source for the others | Defined | [[access-gating]] |
+
+---
+
+## Reference Material
+
+Partner-supplied specs for the Developer Portal (an **out-of-scope** build by Stackworkz + SuperUltra; see [[components#Out of scope for Novosapien]]). Held here because they define the docs corpus the AI surfaces ground on.
+
+| Artifact | From | What it defines | Link |
+|----------|------|-----------------|------|
+| Umbraco Guide content model | SuperUltra | Content blocks for guide pages (the structure of guides the [[docs-mcp-server]] / [[portal-co-pilot]] read) | [[umbraco-guide-content-model]] |
+| Umbraco Changelog content model | SuperUltra | Change Entry + Upcoming Change Entry types for the Changelog / What's Coming sections | [[umbraco-changelog-content-model]] |
+| TXN Global API (OpenAPI v1) | Direct Transact | The DT YAML the API reference renders from and the MCP/sandbox ground on | [[txn-api-reference]] |
+
+_One-spec-vs-many (in debate, leaning **many**): SuperUltra assume **multiple API specs** (Payments, Cards, Webhooks); the current DT artifact is a **single combined `TxnGlobal` spec** (51 endpoints). The team is still debating this and at present **leans toward a many-spec basis rather than one** (noted, not yet final). This drives SuperUltra's Code Block operation-picker design (scope by spec first) — see [[umbraco-guide-content-model#Next Steps from SuperUltra]]._
