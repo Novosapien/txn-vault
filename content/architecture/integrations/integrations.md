@@ -20,12 +20,32 @@ _Surfaced in the [[29-05-2026-stackworkz-meeting]] (ways-of-working call between
 
 | Service | Purpose | Status | Notes |
 |---------|---------|--------|-------|
-| Umbraco (headless) CMS | Source of Developer Portal docs/content; exposes APIs | Available | Stackworkz can expose docs via API for AI search — feeds [[developer-support]] |
-| DT Core API | Card issuing + transaction processing; the tool surface agents act on | In build (DT) | Wrapped by [[agent-access-layer]] |
+| Umbraco (headless) CMS | Source of Developer Portal docs/content; exposes APIs | Available | Stackworkz can expose docs via API for AI search — feeds [[developer-support]]. Content model defined by SuperUltra — see [[umbraco-guide-content-model]] + [[umbraco-changelog-content-model]] |
+| DT Core API | Card issuing + transaction processing; the tool surface agents act on | In build (DT) | Wrapped by [[agent-access-layer]]. OpenAPI spec: [[txn-api-reference]] (`txn-api-spec.yaml`) |
 | Data Lake (DT) | Analytics/insight source for AI recommendations + alerts | Planned (DT) | Access pattern for AI **open** — see below |
+
+## Reference artifacts
+
+Partner-supplied specs and definitions held in the vault for context (these are out-of-scope builds; see [[components#Out of scope for Novosapien]]).
+
+| Artifact | From | What it is | Link |
+|----------|------|-----------|------|
+| TXN Global API (OpenAPI v1) | Direct Transact | The "DT YAML" the portal API reference renders from; grounds the MCP/sandbox. 51 endpoints, ~464 schemas | [[txn-api-reference]] |
+| Umbraco Guide content model | SuperUltra | Content blocks for Developer Portal guide pages | [[umbraco-guide-content-model]] |
+| Umbraco Changelog content model | SuperUltra | Content types for the Changelog + What's Coming sections | [[umbraco-changelog-content-model]] |
+| Workstream 1 & 2 architecture (draft) | Michael | Proposed Azure multi-region deployment | [[workstream-1-2-architecture]] |
 
 ## Open questions
 
 - **AI data access** — does AI consume data via a **data-lake plug-in** (DT exposes tables) or **pull-and-aggregate through the Core API**? DT is open to either; depends on their timeline and priorities. Affects [[agent-access-layer]] and the data & insight layer.
-- **Dev environment** — build inside Stackworkz's existing (cost-controlled) environment for a consolidated setup, vs. a TXN-controlled Azure environment. Cost attribution unresolved; **Mike (TXN CTO) to resolve with Ian (TXN CEO)**.
-- **Card-API MCP ownership** — see the MCP-ownership split in [[agent-access-layer]].
+- **Dev environment — RESOLVED: TXN-controlled Azure.** The platform will run on a **TXN-controlled Azure environment**, drawn out in [[workstream-1-2-architecture]] (multi-region AKS, Front Door, API Management, Key Vault). This settles the earlier open question (build inside Stackworkz's existing environment vs. a TXN-controlled Azure environment). The previously recorded partner stack (DT on Kubernetes, Stackworkz VM-based dev env) describes the build partners' own environments; the target deployment platform is TXN's Azure.
+- **Card-API MCP ownership — RESOLVED (18-06):** docs/dev-portal MCP = Stackworkz; card-acquiring-API MCP = DT; DT owns and manages all of it post-handover ([[open-questions]] #8).
+- **DT multi-tenancy (18-06, open)** — DT built **one central system** for every client; TXN leans **per-client** isolation (the API gateway is a single containerised instance, but databases are per-client). The driver is commercial (clients expect their data fully separate) and risk (per-client limits one client's load affecting others). Being ironed out with DT ([[open-questions]] #48).
+- **TXN ↔ DT infrastructure separation (18-06, open)** — DT's current build sits **inside the DT domain** (their emails / VPNs) and uses 3+ core services shared with DT's own clients; end goal is **full separation** on TXN-controlled Azure in Europe (see [[workstream-1-2-architecture]]). DT can grant access to TXN, not the reverse; the environment must be stood up before access is granted ([[open-questions]] #49).
+
+## Timeline (from 18-06)
+
+- **Developer portal:** end-July (APIs as soon as possible; DT delivery is Visa-certification-first, so webhooks/spend-controls come later).
+- **Console (config portion):** October; remaining surfaces (e.g. customer service) follow.
+- **Market launch:** early October.
+- **Super Ultra → Stackworkz console handover:** 9 July (Figma component frameworks; portal handover already done).

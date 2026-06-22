@@ -28,6 +28,7 @@ Components were first surfaced in the [[13-05-2026-txn-vision-meeting|vision mee
 | Agent Access Layer | *Foundational.* The tool surface every agent calls, scoped to the acting user's Console permissions. Wraps the Core API as agent-callable tools; exposed via MCP. Includes the **[[a2a-endpoint]] sub-component** (its external edge) — the inbound door for clients' own agents (expose-the-agent, not raw tools). | Defined | [[agent-access-layer]] |
 | Fraud & Risk Assist | *Payment stream.* Real-time enrichment of the approve/decline pass-through, plus a rules engine and rule recommendations. Advise, don't decide. Data-dependent (later phase). | Collecting | [[fraud-risk-assist]] |
 | Internal Ops Agents | *Internal.* Run TXN agentically — **customer onboarding** (due diligence → SoW → scheme/CIQ → go-live; the first build target), knowledge engine (self-healing + capture + mining), support triage, release pipeline, process automation, simulation (incl. cold-start). Keeps headcount flat against client growth; CRM is the source of truth. | Defining | [[internal-ops-agents]] |
+| Reconciliation | *Payment ops — dual-use.* Auth/clearing settlement reconciliation: TXN internal verification **and** client-facing (clients will use it heavily). Promoted from Internal Ops on 18-06 ([[open-questions]] #25); DT data format still unknown. | Collecting | _capture session pending — currently referenced in [[internal-ops-agents]]_ |
 
 ## User journeys
 
@@ -52,7 +53,8 @@ These are part of the TXN product but built by other partners. They appear here 
 
 | Component | Built by | Reference material |
 |-----------|---------|--------------------|
-| Core API / card-system backend | **Direct Transact (DT)** — TXN's internal dev partner | Core API documentation (from TXN) |
+| Core API / card-system backend | **Direct Transact (DT)** — TXN's internal dev partner | Core API documentation (from TXN); OpenAPI spec [[txn-api-reference]] |
 | TXN Console (frontend + back-end-for-frontend) | **Stackworkz** (frontend design by **Super Ultra**) | Console design prototype documentation |
-| Developer Portal (site + Umbraco headless CMS) | **Stackworkz** | Developer portal site documentation |
+| Developer Portal (site + Umbraco headless CMS) | **Stackworkz** | Developer portal site documentation; Umbraco content models [[umbraco-guide-content-model]], [[umbraco-changelog-content-model]] |
+| Platform infrastructure (proposed) | _TBC (Michael's draft)_ | Azure multi-region deployment [[workstream-1-2-architecture]] |
 | Data Lake | **Direct Transact (DT)** | _(schema input from Novosapien for AI consumption)_ |

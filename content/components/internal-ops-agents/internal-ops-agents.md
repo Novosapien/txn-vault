@@ -7,6 +7,7 @@ sources:
   - "[[10-06-2026-developer-support-and-internal-ops]]"
   - "[[ux-ai-knowledge-base-updates]]"
   - "[[ux-ai-knowledge-learning]]"
+  - "[[18-06-2026-finalised-gap-analysis]]"
 ---
 
 # TXN — Internal Ops Agents
@@ -16,7 +17,9 @@ sources:
 > **Date:** 2026-06-10
 > **Status:** Defining
 > **Owner:** _TBC_
-> **Sources:** [[13-05-2026-txn-vision-meeting]] (internal-operations vision), [[09-06-2026-developer-support]] (support-triage hand-off), [[10-06-2026-developer-support-and-internal-ops]] (customer-onboarding workstream, CRM-as-record, cold-start simulation), [[ux-ai-knowledge-base-updates]] + [[ux-ai-knowledge-learning]] (the knowledge loop)
+> **Sources:** [[13-05-2026-txn-vision-meeting]] (internal-operations vision), [[09-06-2026-developer-support]] (support-triage hand-off), [[10-06-2026-developer-support-and-internal-ops]] (customer-onboarding workstream, CRM-as-record, cold-start simulation), [[ux-ai-knowledge-base-updates]] + [[ux-ai-knowledge-learning]] (the knowledge loop), [[18-06-2026-finalised-gap-analysis]] (gap-analysis updates)
+
+> **18-06 gap-analysis update ([[18-06-2026-finalised-gap-analysis]]):** **Reconciliation** is promoted to its **own component**, dual-use (internal + client-facing, clients will use it heavily); it stays cross-referenced here but gets its own capture session, and DT's data format is still unknown ([[open-questions]] #25, Answered; new **Reconciliation** component, capture session pending). **Self-healing:** code self-healing remains off-table for the DT codebase, but **Novosapien-side** self-healing is in scope (e.g. a 422 on a changed endpoint → Slack → diagnose → fix the YAML/docs in minutes), with a future crossover when TXN takes over development (#47). Internal Ops is **populated incrementally** from standups/meetings rather than one big session (#46).
 
 ---
 

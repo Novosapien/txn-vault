@@ -6,6 +6,7 @@ sources:
   - "[[01-06-2026-component-1-Agent-Access-Layer]]"
   - "[[29-05-2026-stackworkz-meeting]]"
   - "[[04-06-2026-component-3-co-pilot]]"
+  - "[[18-06-2026-finalised-gap-analysis]]"
 ---
 
 # TXN — Co-pilot
@@ -15,7 +16,9 @@ sources:
 > **Date:** 2026-06-04
 > **Status:** Defined
 > **Owner:** _TBC_
-> **Sources:** [[13-05-2026-txn-vision-meeting]], [[01-06-2026-component-1-Agent-Access-Layer]] (co-pilot scope + permissions), [[29-05-2026-stackworkz-meeting]], [[04-06-2026-component-3-co-pilot]] (dedicated deep-dive)
+> **Sources:** [[13-05-2026-txn-vision-meeting]], [[01-06-2026-component-1-Agent-Access-Layer]] (co-pilot scope + permissions), [[29-05-2026-stackworkz-meeting]], [[04-06-2026-component-3-co-pilot]] (dedicated deep-dive), [[18-06-2026-finalised-gap-analysis]] (gap-analysis updates)
+
+> **18-06 gap-analysis update ([[18-06-2026-finalised-gap-analysis]]):** Pricing is **not** surfaced to the co-pilot (bespoke per client); pricing/cost questions route to the account manager / CS via the CRM ([[open-questions]] #28, Answered). The **session-replay** behaviour (restate goal → replay steps → guide back) and deeper Console awareness depend on Stackworkz exposing page state / component IDs + a caching layer, to discuss after the 9-July design handover (#33, #39). External name still undecided (Nexa favoured) (#23).
 
 ---
 
