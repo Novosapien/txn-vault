@@ -6,6 +6,7 @@ sources:
   - "[[01-06-2026-component-1-Agent-Access-Layer]]"
   - "[[29-05-2026-stackworkz-meeting]]"
   - "[[18-06-2026-finalised-gap-analysis]]"
+  - "[[24-06-2026-final-vault-review]]"
 ---
 
 # Agent Access Layer
@@ -14,6 +15,8 @@ sources:
 > **Sources include:** [[18-06-2026-finalised-gap-analysis]] (gap-analysis updates)
 
 > **18-06 gap-analysis update ([[18-06-2026-finalised-gap-analysis]]):** **MCP ownership confirmed** — docs/dev-portal MCP = Stackworkz; card-acquiring-API MCP = DT; DT owns all post-handover ([[open-questions]] #8, Answered). **Risk boundaries:** the API layer already blocks the worst (no card/cardholder deletes; only public APIs exposed; no whole-program deactivation), so the AI can only do what a client could via their own script; add a confirmation step on large-scale changes; detail the rest per use case (#26). **Endpoint QA:** YAML delivered, currently **0% passed** (strict Postman + Claude testing; field/name changes expected) (#32). **Auth model** under review — DT proposes JWT over long-lived keys (#31, #9). **Multi-tenancy:** DT built one central system; TXN leans per-client (single containerised gateway + per-client DBs) (#48). Permission model stays test-driven (#2, #42). A2A handled via MCP message passthrough (#36, see [[a2a-endpoint]]).
+
+> **24-06 update ([[24-06-2026-final-vault-review]]):** **Auth confirmed — JWT.** Reuse **Console authentication** and append the **user ID to every tool call / data-access request**; every agent action is authenticated and scoped to the user's Console permissions ([[open-questions]] #9, #31). **Multi-tenancy is now a live disagreement** — Ian (TXN CEO) wants **ring-fenced per-client stacks**; DT proposes **central API management + an orchestration layer**; to be resolved with the CTO (#48). The AI layer is **containerised** (Azure/GCP; Terraform + Azure DevOps), with the AI-specific Azure components still to be specified (#49).
 
 ## Overview
 

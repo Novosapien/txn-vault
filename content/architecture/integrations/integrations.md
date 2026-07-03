@@ -40,8 +40,8 @@ Partner-supplied specs and definitions held in the vault for context (these are 
 - **AI data access** — does AI consume data via a **data-lake plug-in** (DT exposes tables) or **pull-and-aggregate through the Core API**? DT is open to either; depends on their timeline and priorities. Affects [[agent-access-layer]] and the data & insight layer.
 - **Dev environment — RESOLVED: TXN-controlled Azure.** The platform will run on a **TXN-controlled Azure environment**, drawn out in [[workstream-1-2-architecture]] (multi-region AKS, Front Door, API Management, Key Vault). This settles the earlier open question (build inside Stackworkz's existing environment vs. a TXN-controlled Azure environment). The previously recorded partner stack (DT on Kubernetes, Stackworkz VM-based dev env) describes the build partners' own environments; the target deployment platform is TXN's Azure.
 - **Card-API MCP ownership — RESOLVED (18-06):** docs/dev-portal MCP = Stackworkz; card-acquiring-API MCP = DT; DT owns and manages all of it post-handover ([[open-questions]] #8).
-- **DT multi-tenancy (18-06, open)** — DT built **one central system** for every client; TXN leans **per-client** isolation (the API gateway is a single containerised instance, but databases are per-client). The driver is commercial (clients expect their data fully separate) and risk (per-client limits one client's load affecting others). Being ironed out with DT ([[open-questions]] #48).
-- **TXN ↔ DT infrastructure separation (18-06, open)** — DT's current build sits **inside the DT domain** (their emails / VPNs) and uses 3+ core services shared with DT's own clients; end goal is **full separation** on TXN-controlled Azure in Europe (see [[workstream-1-2-architecture]]). DT can grant access to TXN, not the reverse; the environment must be stood up before access is granted ([[open-questions]] #49).
+- **DT multi-tenancy (18-06, open)** — DT built **one central system** for every client; TXN leans **per-client** isolation (the API gateway is a single containerised instance, but databases are per-client). The driver is commercial (clients expect their data fully separate) and risk (per-client limits one client's load affecting others). Being ironed out with DT ([[open-questions]] #48). **24-06:** now a live disagreement — Ian (TXN CEO) wants **ring-fenced per-client stacks**; DT proposes **central API management + an orchestration layer**; to be resolved with the CTO (the *Confirm Architecture* action).
+- **TXN ↔ DT infrastructure separation (18-06, open)** — DT's current build sits **inside the DT domain** (their emails / VPNs) and uses 3+ core services shared with DT's own clients; end goal is **full separation** on TXN-controlled Azure in Europe (see [[workstream-1-2-architecture]]). DT can grant access to TXN, not the reverse; the environment must be stood up before access is granted ([[open-questions]] #49). **24-06:** Novosapien's AI layer is **containerised** (Azure **or** GCP; Terraform + Azure DevOps CI/CD), so infra location is less critical for portability; the **AI-specific components inside Azure still need specifying** (the *Define AI Requirements* action).
 
 ## Timeline (from 18-06)
 
@@ -49,3 +49,9 @@ Partner-supplied specs and definitions held in the vault for context (these are 
 - **Console (config portion):** October; remaining surfaces (e.g. customer service) follow.
 - **Market launch:** early October.
 - **Super Ultra → Stackworkz console handover:** 9 July (Figma component frameworks; portal handover already done).
+
+**Update (24-06, [[24-06-2026-final-vault-review]]):**
+
+- **Go-to-market: September.** **First client onboarded: December.** **DT completes its work: October** — Ian flagged the October DT date complicates end-to-end testing (full UX eval needs the Console + AI finished first).
+- Developer-portal core **end-July**, then **August** iteration via standups → **September** launch (refines the "early October" line above).
+- **Marketing messaging is gated** on finalising the "AI story" scope and the September-GTM vs December-operational deliverables.
