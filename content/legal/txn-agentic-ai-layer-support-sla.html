@@ -38,6 +38,8 @@
   th { background: #F4F7FA; font-weight: 600; color: var(--ns-navy); }
   .mono { font-family: 'Geist Mono', monospace; }
   .ph { background: #FFF3D6; padding: 0 3px; border-radius: 2px; }
+  .fill { display: inline-block; min-width: 9em; border-bottom: 1px solid var(--ns-ink); vertical-align: baseline; }
+  .tickbox { display: inline-block; width: 11px; height: 11px; border: 1.5px solid var(--ns-ink); border-radius: 2px; vertical-align: middle; }
   .schedule { break-before: page; }
   .schedule-label { font-size: 10pt; letter-spacing: .12em; text-transform: uppercase; color: var(--ns-muted); font-weight: 600; }
   .signatures { break-inside: avoid; margin-top: 1.6em; }
@@ -57,15 +59,15 @@
   <div class="doc-title">Support &amp; Service Level Agreement</div>
   <hr class="title-rule">
   <p class="parties-line">
-    Dated <span class="ph">[date]</span> &middot; between
+    Dated <span class="fill" style="min-width:11em">&nbsp;</span> &middot; between
     <strong>Novosapien</strong> (Novosapien Global Ltd, a company registered in England and Wales (company no. 17308181),
     registered office Aldgate Tower, 2 Leman Street, London E1 8FA) and
-    <strong>TXN</strong> (TXN Global Limited, a company incorporated in Cyprus (company no. <span class="ph">[HE no.]</span>),
+    <strong>TXN</strong> (TXN Global Limited, a company incorporated in Cyprus (company no. <span class="fill" style="min-width:8em">&nbsp;</span>),
     registered office Office 303, 20 Iacovou Patatsou, Egkomi, 2408 Nicosia, Cyprus).
   </p>
 
   <div class="clause"><p><strong>Background.</strong> Novosapien built the agentic AI layer for the TXN platform under the Master
-  Service Agreement dated <span class="ph">[date]</span>. This Agreement is the managed support and maintenance for that layer after
+  Service Agreement dated <span class="fill" style="min-width:11em">&nbsp;</span>. This Agreement is the managed support and maintenance for that layer after
   launch. It is a managed service, not a break-fix contract: Novosapien runs the agentic layer, keeps it healthy as TXN's API and
   documentation change, and responds to issues against the targets in Schedule 2.</p></div>
 
@@ -202,8 +204,7 @@
   <div class="clause"><p>9.4 General terms (entire agreement excluding fraud; variation in writing; no third-party rights;
   independent contractors; no waiver by delay; severance; counterparts and electronic signature) apply. Novosapien maintains
   the insurance described in the Master Service Agreement throughout the term of this Agreement. Notices are given in writing,
-  by email or letter: to Novosapien at info@novosapien.ai or its registered office; to TXN at <span class="ph">[TXN notice
-  email]</span> or its registered office; an email notice is deemed received on the next Business Day after sending, unless the
+  by email or letter: to Novosapien at info@novosapien.ai or its registered office; to TXN at <span class="fill" style="min-width:15em">&nbsp;</span> or its registered office; an email notice is deemed received on the next Business Day after sending, unless the
   sender receives a delivery-failure message. This Agreement is governed
   by the law of England and Wales, and the courts of England and Wales have exclusive jurisdiction.</p></div>
 
@@ -250,9 +251,9 @@
     <p><strong>Selected Support Tier</strong> (tick one; charges for the selected tier are in Schedule 3):</p>
     <table>
       <tr><th></th><th>Tier</th><th>Human cover (Service Hours)</th><th>Availability target</th></tr>
-      <tr><td class="ph">[&nbsp;&nbsp;]</td><td><strong>Business Hours</strong></td><td>Monday to Friday, 09:00 to 18:00 UK time, Business Days only</td><td class="mono">99.5% / month</td></tr>
-      <tr><td class="ph">[&nbsp;&nbsp;]</td><td><strong>Extended</strong></td><td>7 days, 08:00 to 20:00 UK time, including weekends and public holidays</td><td class="mono">99.7% / month</td></tr>
-      <tr><td class="ph">[&nbsp;&nbsp;]</td><td><strong>Mission Critical</strong></td><td>24/7/365 for P1 and P2; 7 days, 08:00 to 20:00 for P3 and P4</td><td class="mono">99.9% / month</td></tr>
+      <tr><td style="text-align:center"><span class="tickbox"></span></td><td><strong>Business Hours</strong></td><td>Monday to Friday, 09:00 to 18:00 UK time, Business Days only</td><td class="mono">99.5% / month</td></tr>
+      <tr><td style="text-align:center"><span class="tickbox"></span></td><td><strong>Extended</strong></td><td>7 days, 08:00 to 20:00 UK time, including weekends and public holidays</td><td class="mono">99.7% / month</td></tr>
+      <tr><td style="text-align:center"><span class="tickbox"></span></td><td><strong>Mission Critical</strong></td><td>24/7/365 for P1 and P2; 7 days, 08:00 to 20:00 for P3 and P4</td><td class="mono">99.9% / month</td></tr>
     </table>
     <p>Automated monitoring and alerting run 24/7 at every tier (clause 1.2). Public holidays follow the England &amp; Wales
     calendar. At the Business Hours and Extended tiers,
