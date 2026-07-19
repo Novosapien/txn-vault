@@ -471,7 +471,7 @@
     unless the law prohibits it;</p>
     <p>(b) <strong>People.</strong> Ensure that everyone it authorises to process the personal data is committed to
     confidentiality;</p>
-    <p>(c) <strong>Security.</strong> Implement and maintain the technical and organisational measures in Part B, and keep them
+    <p>(c) <strong>Security.</strong> Implement and maintain the technical and organisational measures in Part C, and keep them
     appropriate to the risk as Article 32 requires;</p>
     <p>(d) <strong>Sub-processors.</strong> Engage only its own sub-processors listed in Part B, impose these same obligations
     on them in writing, remain fully responsible for their performance, and give TXN prior written notice of any intended
@@ -495,7 +495,7 @@
       <tr><td>Types of personal data</td><td>Console user account and activity data; support-ticket and log content; developer-portal user data. No cardholder data (clause 4.5); if a SoW later brings limited cardholder data into scope, it is redacted before any AI model context</td></tr>
       <tr><td>Data subjects</td><td>TXN's staff and client operators using the Console; developers and integrators using the Developer Portal; cardholders only if a later SoW brings them into scope</td></tr>
       <tr><td>Applicable regime</td><td>EU GDPR (TXN Global Limited is established in Cyprus); UK GDPR for Novosapien's processing in the UK</td></tr>
-      <tr><td>Security measures</td><td>Access control and least privilege; encryption in transit and at rest; logging and audit trails; environment separation <span class="ph">[under review by Brett St Clair; must match Novosapien's actual security posture before signature]</span></td></tr>
+      <tr><td>Security measures</td><td>The technical and organisational measures set out in Part C of this Schedule</td></tr>
       <tr><td>Novosapien sub-processors</td><td>Only Novosapien's own tools that process TXN personal data in providing the
       Services: <span class="ph">[list Novosapien's own sub-processors, e.g. its Agent Ops / monitoring platform and ticketing;
       or state "none beyond TXN's own providers"]</span>, with an agreed list, notice of changes, and a right to object. The AI
@@ -509,10 +509,50 @@
       makes outside the UK or EEA. Any transfer to the AI model providers is made under TXN's own accounts and is TXN's transfer
       to cover; Novosapien assists by pinning EU or regional model endpoints and zero-data-retention options where the provider
       offers them</td></tr>
-      <tr><td>Breach notification</td><td>Without undue delay after becoming aware, with the information TXN needs for its own 72-hour notification obligations</td></tr>
+      <tr><td>Breach notification</td><td>Without undue delay and in any event within 24 hours of becoming aware, with the information TXN needs for its own 72-hour notification obligations</td></tr>
       <tr><td>Audit rights</td><td>TXN and its auditors may audit compliance with this Schedule on reasonable notice, subject to confidentiality; regulator access per clause 4.4(a)</td></tr>
       <tr><td>Deletion / return</td><td>On termination, per clause 10.3: return in an accessible format, then deletion, at TXN's choice</td></tr>
     </table>
+
+    <p><strong>Part C: Technical and organisational measures</strong></p>
+    <div class="clause"><p>The TXN Platform and the Deliverables run in production on TXN's own infrastructure (Microsoft Azure,
+    engaged on TXN's account, per clause 4.6). The measures below cover what Novosapien controls: its access, tooling,
+    development practice, and personnel.</p></div>
+    <div class="clause"><p>(a) <strong>Governance.</strong> Novosapien maintains an information-security programme owned by
+    Brett St Clair (Co-Founder), with security practices reviewed at least annually. Novosapien does not currently hold ISO
+    27001 or SOC 2 certification; it commits to pursuing alignment with ISO 27001 controls and will discuss a certification
+    roadmap with TXN in good faith.</p></div>
+    <div class="clause"><p>(b) <strong>Access control.</strong> Access to systems processing TXN data is granted on a
+    least-privilege, role-based basis to named individual accounts, with no shared accounts for production access.
+    Multi-factor authentication is enforced on all systems used to deliver the Services. Credentials are held in a password
+    manager; production secrets live in the hosting platform's managed secret store, never in source code. Access is reviewed
+    periodically and revoked within one Business Day when no longer required, including for leavers.</p></div>
+    <div class="clause"><p>(c) <strong>Encryption.</strong> Data in transit is encrypted using TLS 1.2 or higher. Data at rest
+    is encrypted using AES-256 or equivalent via the hosting platform's managed encryption.</p></div>
+    <div class="clause"><p>(d) <strong>Infrastructure.</strong> Physical and environmental security is inherited from
+    Microsoft Azure's certifications (ISO 27001, SOC 2). Development and production environments are separated; TXN personal
+    data is not used in development or test environments.</p></div>
+    <div class="clause"><p>(e) <strong>Secure development.</strong> Code changes are reviewed before merge to a protected main
+    branch and deployed through CI/CD. Dependencies are monitored for known vulnerabilities, and critical vulnerabilities in
+    components Novosapien controls are remediated promptly, targeting 14 days for critical severity.</p></div>
+    <div class="clause"><p>(f) <strong>Logging and monitoring.</strong> Production systems emit centralised logs;
+    administrative and support access to systems holding TXN data is logged. Security-relevant logs are retained for at least
+    90 days.</p></div>
+    <div class="clause"><p>(g) <strong>Endpoint security.</strong> Devices used to deliver the Services have full-disk
+    encryption, screen lock, and automatic security updates enabled.</p></div>
+    <div class="clause"><p>(h) <strong>Personnel.</strong> All personnel with access to TXN data are bound by written
+    confidentiality obligations. Documented security-awareness onboarding is being implemented and will be in place before
+    support under the Support &amp; SLA Agreement begins.</p></div>
+    <div class="clause"><p>(i) <strong>Incident response.</strong> Novosapien maintains a documented incident-response process
+    covering identification, containment, remediation, and post-incident review, and notifies TXN of a personal-data breach
+    affecting TXN data within 24 hours of becoming aware, with the information TXN needs for its own 72-hour controller
+    obligations.</p></div>
+    <div class="clause"><p>(j) <strong>Resilience and backup.</strong> Backup and disaster recovery for the TXN Platform and
+    its data stores are TXN's responsibility (clause 4.6). Novosapien keeps its production configuration defined as code and
+    re-deployable, and takes periodic precautionary snapshots of the configuration and artefacts it controls, without
+    assuming responsibility for TXN's backup regime.</p></div>
+    <div class="clause"><p>(k) <strong>No degradation.</strong> Novosapien flows materially equivalent obligations down to its
+    own sub-processors and will not materially degrade the measures in this Part C during the term.</p></div>
   </div>
 
   <div class="footer">
