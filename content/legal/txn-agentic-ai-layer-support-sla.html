@@ -90,7 +90,7 @@
   <div class="clause"><p>2.2 The support fee for the selected Support Tier is set out in Schedule 3, invoiced monthly in advance
   and exclusive of VAT. Novosapien may review the fee at each anniversary on 60 days' notice, with any increase capped at the
   change in the UK Consumer Prices Index since the last review plus <span class="ph">[3]</span>%. Interest on late payment
-  accrues at 4% above the Bank of England base rate.</p></div>
+  accrues at 6% above the Bank of England base rate.</p></div>
 
   <h2>3. What the fee covers</h2>
   <div class="clause"><p>3.1 <strong>Run and monitor.</strong> Novosapien's Agent Ops platform watches model usage, cost, agent
@@ -123,8 +123,9 @@
   a change request and charged at Novosapien's standard day rates in Schedule 3.</p></div>
   <div class="clause"><p>3.7 <strong>Reporting and reviews.</strong> Novosapien provides a monthly service report (Incidents,
   automated remediations and escalations, response performance, Availability, Support Allocation used). At the Extended tier the
-  parties hold a quarterly service review; at the Mission Critical tier, a monthly service review, and Novosapien provides a
-  written post-incident report within 5 Business Days of any Priority 1 Incident.</p></div>
+  parties hold a quarterly service review; at the Mission Critical tier, a monthly service review. At every tier, Novosapien
+  provides a written post-incident report within 5 Business Days of resolving any Priority 1 Incident, covering root cause,
+  impact, remediation, and prevention.</p></div>
   <div class="clause"><p>3.8 <strong>Tier changes.</strong> TXN may change Support Tier on 30 days' written notice, effective from
   the next billing month, at the charges agreed for the new tier. A downgrade below the tier TXN's regulatory obligations require
   needs TXN's written confirmation.</p></div>
@@ -176,6 +177,10 @@
   needs for its own notification obligations (including the 72-hour window under the GDPR), and gives TXN reasonable assistance
   with its regulatory incident reporting, including major-incident reporting under Regulation (EU) 2022/2554 (DORA) where it
   applies to TXN.</p></div>
+  <div class="clause"><p>8.4 <strong>Regulatory cooperation.</strong> Clauses 4.4 (Regulatory cooperation), 4.4A (DORA
+  termination rights), and 4.4B (Critical or important function) of the Master Service Agreement apply to this Agreement as
+  they apply to that agreement, with references to the Services read as references to the Support and the Supported
+  System.</p></div>
 
   <h2>9. Data protection, liability, and general</h2>
   <div class="clause"><p>9.1 Where Novosapien processes personal data to provide Support, it acts as processor and TXN as controller,
@@ -283,14 +288,20 @@
     </table>
 
     <p><strong>Availability</strong> is measured monthly for the components of the Supported System within Novosapien's control,
-    excluding the clause 7 exclusions and agreed maintenance windows. At the Mission Critical tier, maintenance is performed only
+    excluding the clause 7 exclusions and agreed maintenance windows. It is measured from the Agent Ops monitoring telemetry;
+    the monthly service report states the measured figure and the underlying downtime events, and Novosapien makes the
+    underlying monitoring data available on request. TXN may dispute a reported month within 10 Business Days of receiving the
+    report, and the parties resolve the dispute in good faith by reference to that data. At the Mission Critical tier,
+    maintenance is performed only
     in agreed windows on advance notice and outside TXN's stated peak periods.</p>
 
     <p><strong>Remedies:</strong> performance against the targets above is reported monthly (clause 3.7). TXN's protections are
     transparency, the chronic-failure termination right below, and the liability regime in clause 9.2. No service credits apply
     under this Agreement.</p>
-    <p><strong>Chronic failure:</strong> if the Availability target is missed in any 3 months within a rolling 6-month period
-    (any 2 months at Mission Critical), TXN may terminate this Agreement for material breach under clause 9.3.</p>
+    <p><strong>Chronic failure:</strong> a month counts as missed if the Availability target is missed in it, or if the P1
+    response or resolution target is missed for a majority of the P1 Incidents escalated in it. If any 3 months are missed
+    within a rolling 6-month period (any 2 at Mission Critical), TXN may terminate this Agreement for material breach under
+    clause 9.3.</p>
   </div>
 
   <!-- SCHEDULE 3 -->
@@ -358,6 +369,7 @@
       <tr><td>Nature &amp; purpose</td><td>Operating, monitoring, and maintaining the agentic AI layer</td></tr>
       <tr><td>Types of personal data</td><td>Console user account and activity data; support-ticket, incident, and log content; developer-portal user data. No cardholder data (MSA clause 4.5)</td></tr>
       <tr><td>Data subjects</td><td>TXN's staff and client operators using the Console; developers and integrators using the Developer Portal; cardholders only if a later SoW brings them into scope</td></tr>
+      <tr><td>Processing locations</td><td>United Kingdom (Novosapien's operations and support access); the AI model and hosting locations are set by TXN's own provider accounts (European regions where TXN so configures them); notice of changes to Novosapien's own locations per MSA clause 4.4(b)</td></tr>
       <tr><td>Applicable regime</td><td>EU GDPR (TXN Global Limited is established in Cyprus); UK GDPR for Novosapien's processing in the UK</td></tr>
       <tr><td>Security measures</td><td>The technical and organisational measures set out in Part C of this Schedule</td></tr>
       <tr><td>Novosapien sub-processors</td><td>Only Novosapien's own tools that process TXN personal data in providing Support:

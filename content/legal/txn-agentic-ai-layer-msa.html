@@ -177,7 +177,9 @@
   <div class="clause"><p>5.2 If TXN does not reject a Deliverable with written reasons within that period, it is deemed
   accepted. If TXN rejects it, Novosapien corrects and re-submits it, and clause 5.1 applies again. If the same Deliverable
   fails acceptance <span class="ph">[2]</span> times after re-submission, TXN may, at its choice, accept it at a price reduction
-  agreed under clause 5.3 or terminate the SoW as to that Deliverable and receive a refund of the charges paid for it.</p></div>
+  agreed under clause 5.3 or terminate the SoW as to that Deliverable and receive a refund of the charges paid for it. If that
+  Deliverable is the Agent Access Layer, on which the other Deliverables depend, TXN may instead terminate the SoW as a whole
+  and receive a refund of the charges paid for every Deliverable not yet accepted.</p></div>
   <div class="clause"><p>5.3 Either party may request a change. Changes to scope, charges, or timeline take effect only when
   agreed in writing. Given the multi-vendor build, a change to the TXN Platform that affects a Deliverable is handled under
   this clause.</p></div>
@@ -229,6 +231,14 @@
   human-oversight design in clause 3. Neither party will use the Deliverables for a prohibited practice, and any new or changed
   use case that could make a Deliverable a high-risk AI system (including creditworthiness assessment of natural persons)
   requires the parties' prior written agreement and a joint assessment before deployment.</p></div>
+  <div class="clause"><p>6.8 <strong>Sector exclusivity and references.</strong> For 12 months from the Launch Date, Novosapien
+  will not provide a card-issuing platform or issuer-processor operating in the UK or the EU with services or deliverables
+  substantially similar to the Deliverables. This restriction does not extend to Novosapien's separate AI Workforce products
+  (clause 6.4) or to customers outside that sector. In consideration, TXN grants Novosapien the right, during the term of this
+  Agreement, to name TXN as a customer, use TXN's name and logo in customer lists and marketing materials, publish an agreed
+  case study, act as a reference for prospective customers, and refer to the engagement at conferences. Any case study, and any
+  use of TXN's Confidential Information in reference materials, requires TXN's prior written approval, not to be unreasonably
+  withheld or delayed.</p></div>
 
   <h2>7. Charges and payment</h2>
   <div class="clause"><p>7.1 TXN pays the charges in each SoW. All charges are exclusive of VAT, which is added where
@@ -245,7 +255,8 @@
   SLA Agreement where the only outstanding issue is unpaid undisputed sums; its remedies there are interest under this clause
   and its termination rights for material breach.</p></div>
   <div class="clause"><p>7.5 Managed support and maintenance after launch is provided under the separate Support &amp; SLA
-  Agreement between the parties at £4,250 per month (Business Hours tier). That agreement, not this clause, governs the
+  Agreement between the parties, at the fee for the Support Tier TXN selects under that agreement (Business Hours, £4,250 per
+  month, unless TXN selects a higher tier). That agreement, not this clause, governs the
   service levels and charging for support.</p></div>
 
   <h2>8. Confidentiality and data protection</h2>
@@ -256,7 +267,7 @@
   2018, in each case as applicable to the processing concerned. Where Novosapien processes personal data on TXN's behalf to
   provide the Services, Novosapien acts as processor and TXN as controller, and the parties comply with Schedule 3 (Data
   Processing), which meets Article 28 of the EU GDPR and the UK GDPR, including on security, Novosapien's own sub-processors,
-  audit rights, and breach notification without undue delay (supporting TXN's own 72-hour notification obligations). Where the
+  audit rights, and breach notification within 24 hours (supporting TXN's own 72-hour notification obligations). Where the
   AI model and hosting services run on TXN's own provider accounts, those providers are TXN's processors, not Novosapien's
   sub-processors (Schedule 3). Any transfer of personal data outside the UK or the EEA is made only under a valid transfer mechanism (the EU
   Standard Contractual Clauses and/or the UK IDTA or UK Addendum, as applicable) with a completed transfer risk assessment.
@@ -273,8 +284,8 @@
   <div class="clause"><p>9.3 Subject to clause 9.2, neither party is liable for indirect or consequential loss, or for loss of
   profit, revenue, goodwill, or anticipated savings.</p></div>
   <div class="clause"><p>9.4 Subject to clause 9.2, each party's total liability under this Agreement and all SoWs is capped at
-  the greater of £150,000 and the total charges paid under this Agreement and all SoWs. A separate, higher cap of
-  £250,000 applies to Novosapien's liability for a breach of the
+  the greater of £150,000 and the total charges paid under this Agreement and all SoWs. A separate, higher cap of the
+  greater of £250,000 and the general cap above applies to Novosapien's liability for a breach of the
   Data Protection Laws or of Schedule 3. The caps in this clause 9.4 apply only to this Agreement and its SoWs; the Support
   &amp; SLA Agreement carries its own separate cap, and the two are not a shared pool. The caps in this clause 9.4 and the
   exclusion in clause 9.3 do not apply to a breach of
@@ -480,7 +491,8 @@
     <p>(e) <strong>Data-subject rights.</strong> Taking into account the nature of the processing, help TXN by appropriate
     technical and organisational measures to respond to data subjects exercising their rights;</p>
     <p>(f) <strong>Assistance and breach notice.</strong> Help TXN meet its obligations on security, breach notification, and
-    data protection impact assessments, and notify TXN without undue delay after becoming aware of a personal data breach, with
+    data protection impact assessments, and notify TXN without undue delay, and in any event within 24 hours, after becoming
+    aware of a personal data breach, with
     the information TXN needs for its own notification obligations (including the 72-hour window);</p>
     <p>(g) <strong>End of processing.</strong> On termination, return the personal data in an accessible format or delete it,
     at TXN's choice, unless the law requires a copy to be kept; and</p>
