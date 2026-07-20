@@ -45,6 +45,17 @@
   .footer { margin-top: 26px; padding-top: 8px; border-top: 1px solid var(--ns-rule); display: flex; justify-content: space-between;
             color: var(--ns-muted); font-size: 9pt; }
   @media print { .page { max-width: none; margin: 0; padding: 0; } .footer { position: fixed; bottom: 8mm; left: 20mm; right: 20mm; } .ph { background: none; } }
+
+  /* Print pagination: keep tables, captions, and headings intact across pages */
+  thead { display: table-header-group; }
+  tfoot { display: table-footer-group; }
+  tr { break-inside: avoid; }
+  h2 { break-after: avoid; break-inside: avoid; }
+  .schedule-label { break-after: avoid; }
+  p:has(+ table), p:has(+ ul), p:has(+ ol), p:has(+ .clause) { break-after: avoid; }
+  li { break-inside: avoid; }
+  .signatures, .sig-grid { break-before: page; }
+  .sig-block, .sig-grid { break-inside: avoid; }
 </style>
 </head>
 <body>
@@ -89,7 +100,7 @@
   <div class="clause"><p>3.2 <strong>Content Workforce fee</strong> (tick the route and, for the committed programme, the
   tier):</p>
   <table>
-    <tr><th style="width:6%"></th><th>Route / tier</th><th>Pieces per month</th><th>Monthly fee</th></tr>
+    <thead><tr><th style="width:6%"></th><th>Route / tier</th><th>Pieces per month</th><th>Monthly fee</th></tr></thead>
     <tr><td style="text-align:center"><span class="tickbox"></span></td><td>Committed &middot; Core</td><td>200</td><td class="mono">£1,750</td></tr>
     <tr><td style="text-align:center"><span class="tickbox"></span></td><td>Committed &middot; Growth</td><td>300</td><td class="mono">£2,500</td></tr>
     <tr><td style="text-align:center"><span class="tickbox"></span></td><td>Committed &middot; Scale</td><td>500</td><td class="mono">£3,500</td></tr>
@@ -154,7 +165,7 @@
   <div class="clause"><p>9.1 These particulars apply to this Order in place of the MSA Schedule 3 Part B table; MSA Schedule 3
   Parts A and C (processing obligations and TOMs) apply to this processing unchanged.</p></div>
   <table>
-    <tr><th style="width:28%">Particular</th><th>Detail</th></tr>
+    <thead><tr><th style="width:28%">Particular</th><th>Detail</th></tr></thead>
     <tr><td>Subject matter &amp; duration</td><td>Personal data processed in operating the Workforces, for the term of this Order plus return/deletion</td></tr>
     <tr><td>Nature &amp; purpose</td><td>Content production and scheduling (minimal personal data); outbound prospecting: research, personalised outreach by email, LinkedIn, and voice, follow-up, and meeting booking</td></tr>
     <tr><td>Types of personal data</td><td>Prospect business-contact data: name, role, employer, business email and phone, LinkedIn profile, publicly available professional activity; TXN staff contact details; call recordings or transcripts only as configured under clause 8.2. No special-category data; no cardholder data</td></tr>

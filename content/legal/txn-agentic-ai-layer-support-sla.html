@@ -50,6 +50,17 @@
             color: var(--ns-muted); font-size: 8.5pt; display: flex; justify-content: space-between; }
   @page { size: A4; margin: 18mm 20mm 16mm; }
   @media print { .page { max-width: none; margin: 0; padding: 0; } .footer { position: fixed; bottom: 8mm; left: 20mm; right: 20mm; } .ph { background: none; } }
+
+  /* Print pagination: keep tables, captions, and headings intact across pages */
+  thead { display: table-header-group; }
+  tfoot { display: table-footer-group; }
+  tr { break-inside: avoid; }
+  h2 { break-after: avoid; break-inside: avoid; }
+  .schedule-label { break-after: avoid; }
+  p:has(+ table), p:has(+ ul), p:has(+ ol), p:has(+ .clause) { break-after: avoid; }
+  li { break-inside: avoid; }
+  .signatures, .sig-grid { break-before: page; }
+  .sig-block, .sig-grid { break-inside: avoid; }
 </style>
 </head>
 <body>
@@ -249,7 +260,7 @@
 
     <p><strong>Selected Support Tier</strong> (tick one; charges for the selected tier are in Schedule 3):</p>
     <table>
-      <tr><th></th><th>Tier</th><th>Human cover (Service Hours)</th><th>Availability target</th></tr>
+      <thead><tr><th></th><th>Tier</th><th>Human cover (Service Hours)</th><th>Availability target</th></tr></thead>
       <tr><td style="text-align:center"><span class="tickbox" style="line-height:9px;font-size:9.5px;font-weight:700;color:var(--ns-navy)">&#10003;</span></td><td><strong>Business Hours</strong> (selected)</td><td>Monday to Friday, 09:00 to 18:00 UK time, Business Days only</td><td class="mono">99.5% / month</td></tr>
       <tr><td style="text-align:center"><span class="tickbox"></span></td><td><strong>Extended</strong></td><td>7 days, 08:00 to 20:00 UK time, including weekends and public holidays</td><td class="mono">99.7% / month</td></tr>
       <tr><td style="text-align:center"><span class="tickbox"></span></td><td><strong>Mission Critical</strong></td><td>24/7/365 for P1 and P2; 7 days, 08:00 to 20:00 for P3 and P4</td><td class="mono">99.9% / month</td></tr>
@@ -261,7 +272,7 @@
 
     <p><strong>Priority definitions</strong></p>
     <table>
-      <tr><th>Priority</th><th>Definition</th></tr>
+      <thead><tr><th>Priority</th><th>Definition</th></tr></thead>
       <tr><td>P1 Critical</td><td>Supported System unavailable or unusable across the fleet; a security incident in progress; or the kill switch (Master Service Agreement clause 3.6) engaged in response to an agent acting outside its authorised scope; no workaround</td></tr>
       <tr><td>P2 High</td><td>A component down, or AI output materially degraded; workaround difficult</td></tr>
       <tr><td>P3 Medium</td><td>Minor function impaired; workaround available</td></tr>
@@ -272,7 +283,7 @@
     Mission Critical P1/P2 targets are clock hours, around the clock). The P1 targets are the same at every tier: what a
     higher tier buys is the wider Service Hours window in which they are committed.</p>
     <table>
-      <tr><th>Priority</th><th>Business Hours<br>response / resolution</th><th>Extended<br>response / resolution</th><th>Mission Critical<br>response / resolution</th></tr>
+      <thead><tr><th>Priority</th><th>Business Hours<br>response / resolution</th><th>Extended<br>response / resolution</th><th>Mission Critical<br>response / resolution</th></tr></thead>
       <tr><td>P1</td><td class="mono">15 min / 4 SH</td><td class="mono">15 min / 4 SH</td><td class="mono">15 min / 4 hours</td></tr>
       <tr><td>P2</td><td class="mono">4 SH / 2 BD</td><td class="mono">2 SH / 1 day</td><td class="mono">1 hour / 8 hours</td></tr>
       <tr><td>P3</td><td class="mono">1 BD / 5 BD</td><td class="mono">1 day / 4 days</td><td class="mono">4 SH / 3 days</td></tr>
@@ -281,7 +292,7 @@
 
     <p><strong>Escalation and incident communications</strong></p>
     <table>
-      <tr><th>Tier</th><th>Escalation</th><th>P1 update cadence</th></tr>
+      <thead><tr><th>Tier</th><th>Escalation</th><th>P1 update cadence</th></tr></thead>
       <tr><td>Business Hours</td><td>Named contact during Service Hours</td><td>Every 60 minutes during Service Hours until resolved</td></tr>
       <tr><td>Extended</td><td>Duty engineer rota</td><td>Every 60 minutes during Service Hours until resolved</td></tr>
       <tr><td>Mission Critical</td><td>On-call rota, named escalation manager, and a phone/page wake-up channel</td><td>Every 60 minutes until resolved</td></tr>
@@ -310,14 +321,14 @@
     <h2>Charges</h2>
     <p><strong>Support fee by tier</strong> (the fee for the selected Support Tier applies; see clause 2.2)</p>
     <table>
-      <tr><th>Support Tier</th><th>Basis</th><th>Monthly fee</th></tr>
+      <thead><tr><th>Support Tier</th><th>Basis</th><th>Monthly fee</th></tr></thead>
       <tr><td>Business Hours</td><td>Fixed monthly, in advance; includes up to 20 hours/month (clause 3.4)</td><td class="mono">£4,250 / mo</td></tr>
       <tr><td>Extended</td><td>Fixed monthly, in advance; includes up to 20 hours/month (clause 3.4)</td><td class="mono">£6,750 / mo</td></tr>
       <tr><td>Mission Critical</td><td>Fixed monthly, in advance; includes up to 20 hours/month (clause 3.4)</td><td class="mono">£12,750 / mo</td></tr>
     </table>
     <p><strong>Standard day rates</strong> (change requests and work beyond the Support Allocation)</p>
     <table>
-      <tr><th>Role</th><th>Day rate</th></tr>
+      <thead><tr><th>Role</th><th>Day rate</th></tr></thead>
       <tr><td>AI Product Owner</td><td class="mono">£950</td></tr>
       <tr><td>AI Engineer</td><td class="mono">£850</td></tr>
       <tr><td>Forward Deploy Engineer</td><td class="mono">£750</td></tr>
@@ -364,7 +375,7 @@
 
     <p><strong>Part B: Processing particulars</strong></p>
     <table>
-      <tr><th>Particular</th><th>Detail</th></tr>
+      <thead><tr><th>Particular</th><th>Detail</th></tr></thead>
       <tr><td>Subject matter &amp; duration</td><td>Personal data processed in providing Support, for the term of this Agreement and any period needed for return or deletion under clause 9.3</td></tr>
       <tr><td>Nature &amp; purpose</td><td>Operating, monitoring, and maintaining the agentic AI layer</td></tr>
       <tr><td>Types of personal data</td><td>Console user account and activity data; support-ticket, incident, and log content; developer-portal user data. No cardholder data (MSA clause 4.5)</td></tr>

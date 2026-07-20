@@ -55,6 +55,17 @@
     .footer { position: fixed; bottom: 8mm; left: 20mm; right: 20mm; }
     .ph { background: none; }
   }
+
+  /* Print pagination: keep tables, captions, and headings intact across pages */
+  thead { display: table-header-group; }
+  tfoot { display: table-footer-group; }
+  tr { break-inside: avoid; }
+  h2 { break-after: avoid; break-inside: avoid; }
+  .schedule-label { break-after: avoid; }
+  p:has(+ table), p:has(+ ul), p:has(+ ol), p:has(+ .clause) { break-after: avoid; }
+  li { break-inside: avoid; }
+  .signatures, .sig-grid { break-before: page; }
+  .sig-block, .sig-grid { break-inside: avoid; }
 </style>
 </head>
 <body>
@@ -455,7 +466,7 @@
     <h2>Charges</h2>
     <p><strong>Payment schedule: build phase (4 months) and committed Phase 3 initial term (months 5 to 7)</strong></p>
     <table>
-      <tr><th>Tranche</th><th>When</th><th>Amount</th></tr>
+      <thead><tr><th>Tranche</th><th>When</th><th>Amount</th></tr></thead>
       <tr><td>Build M1</td><td>On commencement</td><td class="mono">£36,125</td></tr>
       <tr><td>Build M2</td><td>Month 2</td><td class="mono">£36,125</td></tr>
       <tr><td>Build M3</td><td>Month 3</td><td class="mono">£36,125</td></tr>
@@ -468,7 +479,7 @@
     </table>
     <p><strong>Deliverable price allocation</strong> (for clauses 5.2 and 5.3; from the proposal dated 17 June 2026)</p>
     <table>
-      <tr><th>Deliverable</th><th>Allocation</th></tr>
+      <thead><tr><th>Deliverable</th><th>Allocation</th></tr></thead>
       <tr><td>Full Agentic Experience (production, wired)</td><td class="mono">£48,000</td></tr>
       <tr><td>Agent Access Layer (foundation, mock to real API)</td><td class="mono">£36,500</td></tr>
       <tr><td>Co-pilot v1</td><td class="mono">£18,000</td></tr>
@@ -479,13 +490,13 @@
     </table>
     <p><strong>Retainer and support</strong></p>
     <table>
-      <tr><th>Item</th><th>Basis</th><th>Amount</th></tr>
+      <thead><tr><th>Item</th><th>Basis</th><th>Amount</th></tr></thead>
       <tr><td>Phase 3 team retainer</td><td>Monthly in advance; committed initial term of 3 months (months 5 to 7); continues after that only if agreed in writing (clause 7.3)</td><td class="mono">£36,125 / mo</td></tr>
       <tr><td>Managed support &amp; maintenance</td><td>Fixed monthly; up to 20 hours/month support &amp; improvement</td><td class="mono">£4,250 / mo</td></tr>
     </table>
     <p><strong>Standard day rates</strong> (change requests / work beyond the support allocation)</p>
     <table>
-      <tr><th>Role</th><th>Day rate</th></tr>
+      <thead><tr><th>Role</th><th>Day rate</th></tr></thead>
       <tr><td>AI Product Owner</td><td class="mono">£950</td></tr>
       <tr><td>AI Engineer</td><td class="mono">£850</td></tr>
       <tr><td>Forward Deploy Engineer</td><td class="mono">£750</td></tr>
@@ -533,7 +544,7 @@
 
     <p><strong>Part B: Processing particulars</strong></p>
     <table>
-      <tr><th>Particular</th><th>Detail</th></tr>
+      <thead><tr><th>Particular</th><th>Detail</th></tr></thead>
       <tr><td>Subject matter &amp; duration</td><td>Personal data processed in providing the Services, for the term of this Agreement and any period needed for return or deletion under clause 10.3</td></tr>
       <tr><td>Nature &amp; purpose</td><td>Building and operating the agentic AI layer for the TXN Platform</td></tr>
       <tr><td>Types of personal data</td><td>Console user account and activity data; support-ticket and log content; developer-portal user data. No cardholder data (clause 4.5); if a SoW later brings limited cardholder data into scope, it is redacted before any AI model context</td></tr>
