@@ -35,14 +35,19 @@ body{font-family:'Geist',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans
 @page{size:A4 portrait; margin:0;}
 @media print{
   body{background:#fff;}
-  .page{margin:0; box-shadow:none; width:auto; height:297mm; min-height:297mm; overflow:hidden; padding:0; position:relative; page-break-after:always; break-after:page;}
+  /* Normal document margins, identical on every page. Height is fixed to one
+     sheet and overflow hidden so nothing can bleed onto the following page. */
+  .page{margin:0; box-shadow:none; width:210mm; height:297mm; min-height:297mm; overflow:hidden;
+        padding:18mm 20mm 16mm; position:relative; page-break-after:always; break-after:page;}
   .page:last-child{page-break-after:auto; break-after:auto;}
-  .fitwrap{display:flex; flex-direction:column; width:100%; min-height:297mm; padding:15mm 20mm; transform-origin:top left;}
   .page.cover-hero, .page.closing-hero{padding:22mm 20mm;}
-  .pagefoot{position:static; margin-top:auto; bottom:auto; left:auto; right:auto; padding-top:8px;}
+  .pagefoot{position:absolute; bottom:10mm; left:20mm; right:20mm; display:flex; justify-content:space-between; padding-top:8px;}
   .no-print{display:none !important;}
   *{-webkit-print-color-adjust:exact; print-color-adjust:exact;}
 }
+/* Per-page fit: content lays out at 1/s width then scales by s, so a dense page
+   shrinks to the margin box instead of running off the sheet. s=1 unless set. */
+.fit{transform-origin:top left; transform:scale(var(--s,1)); width:calc(100% / var(--s,1));}
 
 /* typography */
 .kicker{font-size:.72rem; letter-spacing:.16em; text-transform:uppercase; color:var(--ns-muted); font-weight:600; margin-bottom:.9rem;}
@@ -205,6 +210,7 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
 
 <!-- ============ 2. EXECUTIVE SUMMARY ============ -->
 <section class="page">
+  <div class="fit" style="--s:0.99">
   <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Agentic Layer &middot; Proposal v1.1</span></div>
 
   <div class="sechead"><div class="bar"></div><div>
@@ -228,13 +234,14 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
   <div class="two-col" style="margin-top:.6rem;">
     <div class="card"><div class="ct">What this proposal covers</div><div class="cd">The remaining build to the October launch, a three-month Phase 3 (November to January) of remaining deliverables to version one with scope agreed with TXN, the flight plan and vendor dependencies, the delivery team, and the full commercial model.</div></div>
     <div class="card"><div class="ct">What stays with TXN</div><div class="cd">The Core API and data lake (Direct Transact), the Console and Developer Portal (Stackworkz, design by Super Ultra), all compliance frameworks, and pricing strategy. Novosapien delivers the agentic layer only.</div></div>
-  </div>
+  </div></div>
 
   <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 01</span></div>
 </section>
 
 <!-- ============ 3. WHERE WE ARE ============ -->
 <section class="page">
+  <div class="fit" style="--s:0.82">
   <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Agentic Layer &middot; Proposal v1.1</span></div>
 
   <div class="sechead"><div class="bar"></div><div>
@@ -266,13 +273,14 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
       <tr><td><strong>Fraud &amp; Risk Assist</strong></td><td>Real-time enrichment and rules, advise not decide</td><td><span class="tag next">Collecting</span></td><td><span class="tag m">M</span></td></tr>
       <tr><td><strong>Reconciliation</strong></td><td>Auth/clearing settlement reconciliation, dual-use (internal + client-facing)</td><td><span class="tag next">Collecting</span></td><td><span class="tag s">TBC</span></td></tr>
     </tbody>
-  </table>
+  </table></div>
 
   <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 02</span></div>
 </section>
 
 <!-- ============ 02b. SOLUTION ARCHITECTURE ============ -->
 <section class="page">
+  <div class="fit">
   <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Agentic Layer &middot; Proposal v1.1</span></div>
 
   <div class="sechead"><div class="bar"></div><div>
@@ -385,13 +393,14 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
     <span><span style="display:inline-block;width:11px;height:11px;background:#e7edf2;border:1px solid #94a3b8;border-radius:3px;vertical-align:middle;"></span> Direct Transact / TXN</span>
     <span><span style="display:inline-block;width:11px;height:11px;background:#FBFCFD;border:1px dashed #09142F;border-radius:3px;vertical-align:middle;"></span> Stackworkz surface (agent renders inside)</span>
     <span><span style="display:inline-block;width:11px;height:11px;background:#e7fdfd;border:1px solid #0bb6bb;border-radius:3px;vertical-align:middle;"></span> External client agent</span>
-  </div>
+  </div></div>
 
   <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 02</span></div>
 </section>
 
 <!-- ============ 4. STRATEGIC CONTEXT ============ -->
 <section class="page">
+  <div class="fit">
   <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Agentic Layer &middot; Proposal v1.1</span></div>
 
   <div class="sechead"><div class="bar"></div><div>
@@ -424,13 +433,14 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
 
   <p>The agentic stack that makes this buildable, MCP, A2A, dependable tool-use, multi-step reasoning, reached production-readiness only recently. A small lead in agentic maturity converts into a structural product advantage during this window. The cost of waiting is concrete: ship Concept 1 alone and the product can feel a year behind on launch day.</p>
 
-  <div class="callout"><strong>The plan is built around that risk.</strong> The pilot demonstrates the agentic experience in six weeks, independent of the other vendors' timelines, so TXN can show the market its difference now rather than after the platform plumbing is finished.</div>
+  <div class="callout"><strong>The plan is built around that risk.</strong> The pilot demonstrates the agentic experience in six weeks, independent of the other vendors' timelines, so TXN can show the market its difference now rather than after the platform plumbing is finished.</div></div>
 
   <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 03</span></div>
 </section>
 
 <!-- ============ 5. APPROACH / TRUST LADDER ============ -->
 <section class="page">
+  <div class="fit">
   <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Agentic Layer &middot; Proposal v1.1</span></div>
 
   <div class="sechead"><div class="bar"></div><div>
@@ -453,13 +463,14 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
     <div class="card"><div class="ct">Scale</div><div class="cd">Earn autonomy component by component as the data flywheel fills and confidence is evidenced in production.</div></div>
   </div>
 
-  <div class="callout flag"><strong>Governance is built in, not bolted on.</strong> Permission scoping mirrors the Console, high-blast-radius changes route through the existing two-person approval queue, every agent action is logged to an append-only audit trail (immutable by design; storage being finalised with DT), and model-tier routing plus caching and budget thresholds keep consumption bounded by design.</div>
+  <div class="callout flag"><strong>Governance is built in, not bolted on.</strong> Permission scoping mirrors the Console, high-blast-radius changes route through the existing two-person approval queue, every agent action is logged to an append-only audit trail (immutable by design; storage being finalised with DT), and model-tier routing plus caching and budget thresholds keep consumption bounded by design.</div></div>
 
   <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 04</span></div>
 </section>
 
 <!-- ============ 6. THE AGENTIC LAYER (catalogue + architecture) ============ -->
 <section class="page">
+  <div class="fit" style="--s:0.85">
   <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Agentic Layer &middot; Proposal v1.1</span></div>
 
   <div class="sechead"><div class="bar"></div><div>
@@ -502,13 +513,14 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
     <div class="comp"><div class="h"><span class="nm">Internal Ops Agents</span><span class="tag xl">XL</span></div><div class="ds">Customer onboarding (the first build target), a self-healing knowledge engine, support triage, the release pipeline, and a simulation harness for the cold-start period. CRM is the source of truth. Keeps headcount flat against client growth.</div></div>
   </div>
 
-  <div class="callout txn"><strong>Internal operations are part of the product, not a side-project.</strong> The same agentic philosophy that powers the client surfaces powers the business that runs them, so the experience clients see is not throttled by humans doing manual work behind it.</div>
+  <div class="callout txn"><strong>Internal operations are part of the product, not a side-project.</strong> The same agentic philosophy that powers the client surfaces powers the business that runs them, so the experience clients see is not throttled by humans doing manual work behind it.</div></div>
 
   <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 05</span></div>
 </section>
 
 <!-- ============ 7. PHASE 1 PILOT ============ -->
 <section class="page">
+  <div class="fit">
   <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Agentic Layer &middot; Proposal v1.1</span></div>
 
   <div class="sechead"><div class="bar"></div><div>
@@ -543,13 +555,14 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
     <div class="chip"><div class="v">Wks 1-6</div><div class="l">20 July to end-August 2026</div></div>
     <div class="chip"><div class="v">0</div><div class="l">vendor dependencies on the critical path</div></div>
     <div class="chip"><div class="v">3</div><div class="l">components advanced: Full Agentic, Access Layer, Internal Ops v1</div></div>
-  </div>
+  </div></div>
 
   <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 06</span></div>
 </section>
 
 <!-- ============ 06b. FIRST FOUR MONTHS, DETAIL ============ -->
 <section class="page">
+  <div class="fit" style="--s:0.94">
   <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Agentic Layer &middot; Proposal v1.1</span></div>
 
   <div class="sechead"><div class="bar"></div><div>
@@ -579,13 +592,14 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
     <li>Natural-language Q&amp;A and navigation, page-scoped with page context and guard rails.</li>
     <li>Guided configuration that collapses 100+ product-config fields into a confirm-not-configure conversation, surfacing what most clients in a given pattern do.</li>
     <li>Action on confirmation: plan-then-act for multi-step flows via the Access Layer, with explicit button confirmation and bundled approvals.</li>
-  </ul>
+  </ul></div>
 
   <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 06</span></div>
 </section>
 
 <!-- ============ 06c. FIRST FOUR MONTHS, DETAIL CONTINUED ============ -->
 <section class="page">
+  <div class="fit" style="--s:0.84">
   <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Agentic Layer &middot; Proposal v1.1</span></div>
 
   <div class="sechead"><div class="bar"></div><div>
@@ -622,13 +636,14 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
     <div class="chip"><div class="v">9 Jul</div><div class="l">Console handover (Stackworkz design pack)</div></div>
     <div class="chip"><div class="v">end-Jul</div><div class="l">Developer Portal live: docs MCP, portal co-pilot, triage</div></div>
     <div class="chip"><div class="v">early-Oct</div><div class="l">Market launch: Console + Co-pilot, Full Agentic, Alerts v1 live</div></div>
-  </div>
+  </div></div>
 
   <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 06</span></div>
 </section>
 
 <!-- ============ 8. FLIGHT PLAN ============ -->
 <section class="page">
+  <div class="fit" style="--s:0.84">
   <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Agentic Layer &middot; Proposal v1.1</span></div>
 
   <div class="sechead"><div class="bar"></div><div>
@@ -706,13 +721,14 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
     </tbody>
   </table>
 
-  <div class="callout flag"><strong>Two fixed dates.</strong> The Developer Portal launches end-July and the market launches early October (the partners' stated targets). With the build commencing around 20 July, Developer Support fast-follows the portal, and the in-Console components wire in from the 9 July Console handover toward the October launch. If a component slips on an upstream dependency, it fast-follows rather than holding the launch.</div>
+  <div class="callout flag"><strong>Two fixed dates.</strong> The Developer Portal launches end-July and the market launches early October (the partners' stated targets). With the build commencing around 20 July, Developer Support fast-follows the portal, and the in-Console components wire in from the 9 July Console handover toward the October launch. If a component slips on an upstream dependency, it fast-follows rather than holding the launch.</div></div>
 
   <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 07</span></div>
 </section>
 
 <!-- ============ 9. DEPENDENCIES ============ -->
 <section class="page">
+  <div class="fit" style="--s:0.88">
   <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Agentic Layer &middot; Proposal v1.1</span></div>
 
   <div class="sechead"><div class="bar"></div><div>
@@ -738,13 +754,14 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
     <div class="card"><div class="ct">Infrastructure separation</div><div class="cd">TXN-to-DT separation: DT's build must be stood up in TXN's own Azure (Europe) before we can wire to the real API. The current critical-path dependency. MCP ownership is now settled (Stackworkz docs MCP, DT card-API MCP).</div></div>
     <div class="card"><div class="ct">Data retention location</div><div class="cd">Data residency is settled (EU isolation, with prompt and log minimisation and redaction). The seven-year PCI retention location is the remaining open item with DT.</div></div>
     <div class="card"><div class="ct">Open with DT</div><div class="cd">Reconciliation is now its own component (dual-use). Its scope, the sandbox API-key model (JWT versus long-lived), product-webhook timing (post-Visa-certification), and alerting ownership are being finalised with DT.</div></div>
-  </div>
+  </div></div>
 
   <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 08</span></div>
 </section>
 
 <!-- ============ 10. TEAM ============ -->
 <section class="page">
+  <div class="fit" style="--s:0.9">
   <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Agentic Layer &middot; Proposal v1.1</span></div>
 
   <div class="sechead"><div class="bar"></div><div>
@@ -776,12 +793,13 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
       <tr><td>Forward Deploy Engineer</td><td class="num">£750</td></tr>
     </tbody>
   </table>
-  <div class="callout"><strong>The retainer is the value.</strong> The retainer secures all three roles full-time for £36,125 per month. At standard day rates the same team is £2,550 per day, about £53,550 per month across 21 working days, so the retainer runs roughly a third below buying the equivalent days. Change requests outside the retainer are charged at these standard rates.</div>
+  <div class="callout"><strong>The retainer is the value.</strong> The retainer secures all three roles full-time for £36,125 per month. At standard day rates the same team is £2,550 per day, about £53,550 per month across 21 working days, so the retainer runs roughly a third below buying the equivalent days. Change requests outside the retainer are charged at these standard rates.</div></div>
   <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 09</span></div>
 </section>
 
 <!-- ============ 11. INVESTMENT ============ -->
 <section class="page">
+  <div class="fit" style="--s:0.97">
   <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Agentic Layer &middot; Proposal v1.1</span></div>
 
   <div class="sechead"><div class="bar"></div><div>
@@ -807,13 +825,14 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
 
   <h3>B &middot; Phase 3, the remaining deliverables</h3>
   <p>After the October launch, Phase 3 runs as a committed three-month engagement across November, December, and January, taking the remaining deliverables to version one. They are set out in detail on the next two pages, component by component. TXN chooses which deliverables are in scope and in what order; the team works them in parallel, and a substantial share of the menu is deliverable within the three months. If kickoff moves, the window moves with it (at the latest, December to February).</p>
-  <div class="callout txn"><strong>How to buy the team.</strong> The full three-person team is <strong>£36,125 per month</strong>. That rate is the same whichever deliverables TXN selects: you are buying the team for the period, not a fixed scope. Phase 3 is a committed three months, November to January, <strong>£108,375 in total</strong>, invoiced monthly in advance.</div>
+  <div class="callout txn"><strong>How to buy the team.</strong> The full three-person team is <strong>£36,125 per month</strong>. That rate is the same whichever deliverables TXN selects: you are buying the team for the period, not a fixed scope. Phase 3 is a committed three months, November to January, <strong>£108,375 in total</strong>, invoiced monthly in advance.</div></div>
 
   <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 10</span></div>
 </section>
 
 <!-- ============ 10b. WHAT'S LEFT TO V1 ============ -->
 <section class="page">
+  <div class="fit">
   <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Agentic Layer &middot; Proposal v1.1</span></div>
 
   <div class="sechead"><div class="bar"></div><div>
@@ -842,13 +861,14 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
     <li>The stuck-user replay mechanism, once Stackworkz exposes Console instrumentation after the 9 July handover.</li>
     <li>Deeper Console awareness and multi-page execution.</li>
     <li>Data-lake impact analysis for merged journeys.</li>
-  </ul>
+  </ul></div>
 
   <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 10</span></div>
 </section>
 
 <!-- ============ 10c. WHAT'S LEFT TO V1, CONTINUED ============ -->
 <section class="page">
+  <div class="fit" style="--s:0.95">
   <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Agentic Layer &middot; Proposal v1.1</span></div>
 
   <div class="sechead"><div class="bar"></div><div>
@@ -885,13 +905,14 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
     <li>Scoped after a capture session with DT; the data format is not yet known.</li>
   </ul>
 
-  <div class="callout"><strong>A three-month phase, scope agreed together.</strong> Phase 3 runs November to January. The team works deliverables in parallel, so a substantial share of this menu is deliverable within the three months; we agree the selection and order together. The cost is £36,125 per month for the three months, £108,375 in total. If the start slips, the window shifts with it (at the latest, December to February).</div>
+  <div class="callout"><strong>A three-month phase, scope agreed together.</strong> Phase 3 runs November to January. The team works deliverables in parallel, so a substantial share of this menu is deliverable within the three months; we agree the selection and order together. The cost is £36,125 per month for the three months, £108,375 in total. If the start slips, the window shifts with it (at the latest, December to February).</div></div>
 
   <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 10</span></div>
 </section>
 
 <!-- ============ 11b. INVESTMENT cont: payment, support fee, TCV ============ -->
 <section class="page">
+  <div class="fit">
   <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Agentic Layer &middot; Proposal v1.1</span></div>
 
   <div class="sechead"><div class="bar"></div><div>
@@ -913,13 +934,14 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
       <tr class="total"><td colspan="2">Phase 3 total &middot; 3 months</td><td class="num">£108,375</td></tr>
     </tbody>
   </table>
-  <p class="small muted">Payment schedule for the build phase to launch and the three-month Phase 3 that follows, all invoiced monthly in advance. If kickoff moves, the milestone months shift with it (Phase 3 at the latest December to February); the amounts do not change.</p>
+  <p class="small muted">Payment schedule for the build phase to launch and the three-month Phase 3 that follows, all invoiced monthly in advance. If kickoff moves, the milestone months shift with it (Phase 3 at the latest December to February); the amounts do not change.</p></div>
 
   <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 10</span></div>
 </section>
 
 <!-- ============ 11c. INVESTMENT cont: support fee, TCV ============ -->
 <section class="page">
+  <div class="fit">
   <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Agentic Layer &middot; Proposal v1.1</span></div>
 
   <div class="sechead"><div class="bar"></div><div>
@@ -947,13 +969,14 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
       <tr><td>Support &amp; Maintenance, after Phase 3</td><td class="num">£4,250 / mo</td></tr>
     </tbody>
   </table>
-  <p class="small muted">Total committed cost: £270,375, comprising Sprint Zero, the four build months to the October launch, and the three Phase 3 months to January at the unchanged £36,125 monthly rate. The Phase 3 scope is agreed from section B. Support and maintenance then runs at £4,250 per month.</p>
+  <p class="small muted">Total committed cost: £270,375, comprising Sprint Zero, the four build months to the October launch, and the three Phase 3 months to January at the unchanged £36,125 monthly rate. The Phase 3 scope is agreed from section B. Support and maintenance then runs at £4,250 per month.</p></div>
 
   <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 10</span></div>
 </section>
 
 <!-- ============ 10c. SERVICE LEVELS / SLA ============ -->
 <section class="page">
+  <div class="fit" style="--s:0.82">
   <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Agentic Layer &middot; Proposal v1.1</span></div>
 
   <div class="sechead"><div class="bar"></div><div>
@@ -986,13 +1009,14 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
     <div class="card"><div class="ct">Change requests</div><div class="cd">Work beyond the monthly support allocation, or any new scope, is scoped as a change request and charged at our standard day rates (see section 9).</div></div>
   </div>
 
-  <div class="callout flag"><strong>Newly defined for TXN.</strong> The severity-based targets above extend our existing managed-support model (Agent Ops monitoring, 09:00 to 17:00 service hours, change requests at a day rate) into a formal SLA appropriate for a payments platform. The targets are a proposed baseline and can be tuned, including SLA credits, before signature.</div>
+  <div class="callout flag"><strong>Newly defined for TXN.</strong> The severity-based targets above extend our existing managed-support model (Agent Ops monitoring, 09:00 to 17:00 service hours, change requests at a day rate) into a formal SLA appropriate for a payments platform. The targets are a proposed baseline and can be tuned, including SLA credits, before signature.</div></div>
 
   <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 10</span></div>
 </section>
 
 <!-- ============ 12. TERMS + ACCEPTANCE ============ -->
 <section class="page">
+  <div class="fit" style="--s:0.91">
   <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Agentic Layer &middot; Proposal v1.1</span></div>
 
   <div class="sechead"><div class="bar"></div><div>
@@ -1015,12 +1039,26 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
       <tr><td><strong>Warranties</strong></td><td>Reasonable skill and care. The architecture is designed to support and not impede TXN's PCI-DSS, GDPR, and FCA obligations; TXN owns its certifications and compliance frameworks.</td></tr>
       <tr><td><strong>Governing law</strong></td><td>England and Wales.</td></tr>
     </tbody>
-  </table>
+  </table></div>
+
+  <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 11</span></div>
+</section>
+
+<!-- ============ 12b. ACCEPTANCE ============ -->
+<section class="page">
+  <div class="fit">
+  <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Agentic Layer &middot; Proposal v1.1</span></div>
+
+  <div class="sechead"><div class="bar"></div><div>
+    <div class="secno">11</div><h2 class="sect">Acceptance</h2>
+  </div></div>
+
+  <p class="lead">Countersignature below authorises commencement of Phase 1 on the terms set out in section 11 and the commercial model in section 10. All amounts exclusive of VAT.</p>
 
   <div class="sign-grid">
     <div><strong>For TXN</strong><div class="sign-box">Name &middot; Ian Johnson</div><div class="sign-box">Signature</div><div class="sign-box">Date</div></div>
     <div><strong>For Novosapien</strong><div class="sign-box">Name</div><div class="sign-box">Signature</div><div class="sign-box">Date</div></div>
-  </div>
+  </div></div>
 
   <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 11</span></div>
 </section>
