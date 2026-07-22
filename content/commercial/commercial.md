@@ -9,7 +9,7 @@ The commercial pack for the Novosapien <> TXN engagement: the proposals that def
 | [Agentic Layer proposal](txn-agentic-layer-proposal.html) ([PDF](txn-agentic-layer-proposal_final.pdf)) | The platform engagement: the agentic AI layer across Console, Core API, and Developer Portal. **v1.2 (22 July): pilot carved out** — build reprices to £90,312.50 (wire-in only), pilot shown as separate/underway, total committed £270,375 unchanged | v1.2, 2026-07-22 |
 | [GTM Workforces proposal](txn-gtm-workforces-proposal.html) ([PDF](txn-gtm-workforces-proposal.pdf)) | Companion proposal: Content Workforce + Outbound Workforce (test-partner terms) for the TXN launch | Draft v3, 2026-07-19; awaiting internal review |
 | [[txn-agentic-pilot-order]] | **Standalone Pilot Order** for the 6-week agentic pilot (£54,187.50, 50/50), so Ian can approve before his leave without waiting on the MSA | Draft v0.1, 2026-07-22; awaiting review (deadline Fri 24 July) |
-| [[txn-agentic-ai-layer-msa]] | Master Service Agreement, signing copy with commercial terms filled | Drafted; under persona review |
+| [[txn-agentic-ai-layer-msa]] | Master Service Agreement, signing copy. **v0.2 (22 July): pilot adopted as SoW 1 (clause 2.1A), wider engagement is SoW 2, build repriced to £90,312.50 wire-in, total £270,375 unchanged** | Drafted; under persona review |
 | [[txn-agentic-ai-layer-support-sla]] | Support & SLA agreement, signing copy | Drafted; under persona review |
 
 ## Review material
