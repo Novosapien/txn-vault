@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TXN Agentic Layer: Build and Retainer Proposal, Novosapien</title>
+<title>TXN Agentic Pilot: Proposal, Novosapien</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -182,848 +182,151 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
 </head>
 <body>
 
-<!-- ============ COVER ============ -->
 <section class="page dark cover-hero">
   <div style="display:flex; justify-content:space-between; align-items:center;">
     <span style="display:inline-flex;align-items:center;gap:9px;"><span class="brandmark" style="width:1.5rem;height:1.5rem;"></span><span class="wordmark" style="font-size:1.3rem; color:#fff;">novo<span class="sp">sapien</span></span></span>
     <span class="txnmark" style="font-size:1.25rem; color:#fff;">TXN<span class="dot1">.</span><span class="dot2">.</span></span>
   </div>
-
   <div style="margin-top:34mm;">
-    <span class="kicker">Engagement Proposal &middot; Build to Launch &amp; Phase 3</span>
-    <h1 class="headline" style="color:#fff; font-size:3rem; max-width:16ch;">The agentic layer for the <span class="accent">TXN platform.</span></h1>
+    <span class="kicker">Pilot Proposal &middot; companion to the Pilot Order</span>
+    <h1 class="headline" style="color:#fff; font-size:3rem; max-width:15ch;">The six-week <span class="accent">agentic pilot.</span></h1>
     <p class="lead" style="color:var(--ns-dark-muted); max-width:60ch; margin-top:1.2rem;">
-      From a six-week agentic pilot to version one of every component across the Console, the Developer Portal, and TXN's own operations. Built to ship the differentiation before the window closes.
+      Prove the agentic experience TXN is betting on, in six weeks, on simulation, before the platform surfaces are ready. A fixed-price, self-contained start that answers the "someone will beat us to it" risk now, and that everything else builds on.
     </p>
   </div>
-
   <div class="cover-foot">
     <div class="divider" style="background:var(--ns-dark-border);"></div>
     <div style="display:flex; justify-content:space-between; font-size:.82rem; color:var(--ns-dark-muted);">
       <div><strong style="color:#fff;">Prepared for</strong><br>Ian Johnson, CEO, TXN</div>
       <div><strong style="color:#fff;">Prepared by</strong><br>Novosapien</div>
       <div><strong style="color:#fff;">Date</strong><br>22 July 2026</div>
-      <div><strong style="color:#fff;">Version</strong><br>1.2</div>
+      <div><strong style="color:#fff;">Version</strong><br>1.0</div>
     </div>
   </div>
 </section>
-
-<!-- ============ 2. EXECUTIVE SUMMARY ============ -->
 <section class="page">
-  <div class="fit" style="--s:0.99">
-  <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Agentic Layer &middot; Proposal v1.2</span></div>
-
+  <div class="fit">
+  <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Agentic Pilot &middot; Proposal v1.0</span></div>
   <div class="sechead"><div class="bar"></div><div>
-    <div class="secno">01</div><h2 class="sect">Executive summary</h2>
+    <div class="secno">01</div><h2 class="sect">Why a pilot, and why now</h2>
   </div></div>
-
-  <p class="lead">TXN is building the first agentic-native issuer processor. Sprint Zero is delivered, and the six-week agentic pilot is authorised separately and already underway under the Pilot Order. This proposal covers what follows: the launch-critical components, including the full Agentic experience wired into production, for the October launch, then a committed three-month Phase 3, November to January, taking the remaining deliverables to version one with the team retained monthly at the same rate.</p>
-
-  <div class="chips" style="grid-template-columns:repeat(4,1fr)">
-    <div class="chip"><div class="v">Underway</div><div class="l">the six-week pilot, authorised separately under the Pilot Order and already running</div></div>
-    <div class="chip"><div class="v">2.5 months</div><div class="l">of wire-in to the October launch, the full Agentic experience live in production</div></div>
-    <div class="chip"><div class="v">+3 months</div><div class="l">Phase 3 through to the end of January: remaining deliverables to version one</div></div>
-    <div class="chip"><div class="v">8</div><div class="l">components, taken to version one across the engagement</div></div>
-  </div>
-
+  <p class="lead">TXN is building the first agentic-native issuer processor. The differentiation is the agentic experience, and the risk is time: the platform surfaces are still being built by the other vendors, and the agentic story cannot wait behind a year of plumbing. The pilot proves the experience in six weeks, on simulation, so TXN can show its difference now.</p>
   <div class="quote">I don't think we can do concept one and then at some point in the future do concept two, because somebody will beat us to it.
     <span class="who">Ian Johnson, CEO, TXN</span></div>
-
-  <p>The plan answers that concern directly. We do not sequence the agentic experience behind a year of platform plumbing. The pilot proves Concept 2 and Concept 3 in six weeks on simulated tools, so the differentiation is demonstrable while Direct Transact and Stackworkz finish the surfaces it will later run on. As those dependencies land, we wire the same agentic layer into the real APIs, data lake, and Console.</p>
-
-  <div class="two-col" style="margin-top:.6rem;">
-    <div class="card"><div class="ct">What this proposal covers</div><div class="cd">The remaining build to the October launch, a three-month Phase 3 (November to January) of remaining deliverables to version one with scope agreed with TXN, the flight plan and vendor dependencies, the delivery team, and the full commercial model.</div></div>
-    <div class="card"><div class="ct">What stays with TXN</div><div class="cd">The Core API and data lake (Direct Transact), the Console and Developer Portal (Stackworkz, design by Super Ultra), all compliance frameworks, and pricing strategy. Novosapien delivers the agentic layer only.</div></div>
-  </div></div>
-
-  <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 01</span></div>
-</section>
-
-<!-- ============ 3. WHERE WE ARE ============ -->
-<section class="page">
-  <div class="fit" style="--s:0.81">
-  <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Agentic Layer &middot; Proposal v1.2</span></div>
-
-  <div class="sechead"><div class="bar"></div><div>
-    <div class="secno">02</div><h2 class="sect">Where we are today</h2>
-  </div></div>
-
-  <p class="lead">This is not a standing start. Sprint Zero is complete and the engagement is live. This proposal continues work already underway, now delivered under the Novosapien name following the management buyout.</p>
-
-  <h3>Delivered in Sprint Zero <span class="tag done">Complete</span></h3>
+  <p>The pilot answers that concern directly. It runs on simulated tools and synthetic data, so almost nothing in it waits on Direct Transact or Stackworkz. It proves Concept 2 and Concept 3 up front, de-risks the hardest component before a penny of wire-in spend, and banks value from the internal-ops work that needs no platform dependency.</p>
   <div class="cards cols-2">
-    <div class="card"><div class="ct">Requirements alignment</div><div class="cd">A validated, prioritised backlog with acceptance criteria across the full component set, agreed with TXN's stakeholders.</div></div>
-    <div class="card"><div class="ct">Architecture and approach</div><div class="cd">The solution architecture, the model-tier routing and cost-governance approach, and a verified LLM operating-cost model across the component set.</div></div>
-    <div class="card"><div class="ct">Partner and dependency mapping</div><div class="cd">A dependency map across Direct Transact, Stackworkz, and Super Ultra, with the integration points the agentic layer needs from each.</div></div>
-    <div class="card"><div class="ct">Component deep-dives</div><div class="cd">Scope, sub-components, and sequencing captured for the Agent Access Layer, Alerts &amp; Inbox, Co-pilot, Full Agentic Experience, Developer Support, and Internal Ops.</div></div>
+    <div class="card"><div class="ct">Prove the differentiation now</div><div class="cd">A demonstrable agentic experience TXN can show its market and its board in six weeks, not after the platform is finished.</div></div>
+    <div class="card"><div class="ct">De-risk the hardest part first</div><div class="cd">The XL Full Agentic Experience is built and hardened on simulation before any production wire-in is committed.</div></div>
+    <div class="card"><div class="ct">No vendor dependency</div><div class="cd">Built against mocked APIs and synthetic data, so the pilot does not stall waiting on Direct Transact or Stackworkz.</div></div>
+    <div class="card"><div class="ct">Value from day one</div><div class="cd">Internal Ops v1 (onboarding, meeting capture, knowledge) needs no Core API or Console, so it returns value while the platform stabilises.</div></div>
   </div>
-
-  <div class="callout txn"><strong>Commercial position.</strong> Sprint Zero (£17,500) is delivered, and the six-week pilot (£54,187.50) is contracted separately under the Pilot Order and already underway; it is set out in full in the separate Pilot Proposal. This proposal covers the rest: the wire-in build to the October launch and the three-month Phase 3 that takes the platform to a complete version-one agentic layer. Separating the pilot does not change the total; it lets the work start now.</div>
-
-  <h3>The eight components in scope</h3>
-  <table>
-    <thead><tr><th>Component</th><th>Role</th><th>Status</th><th>V1 build size</th></tr></thead>
-    <tbody>
-      <tr><td><strong>Agent Access Layer</strong> (+ A2A endpoint)</td><td>Foundational tool surface every agent rides on</td><td><span class="tag now">Defined</span></td><td><span class="tag l">L</span></td></tr>
-      <tr><td><strong>Co-pilot</strong></td><td>Reactive in-console assistant (Concept 1)</td><td><span class="tag now">Defined</span></td><td><span class="tag m">M</span></td></tr>
-      <tr><td><strong>Agent Inbox &amp; Alerts</strong></td><td>Proactive analysis and approvable plans (C1 to C2)</td><td><span class="tag now">Defined</span></td><td><span class="tag m">M</span></td></tr>
-      <tr><td><strong>Full Agentic Experience</strong></td><td>Agent as the interface (C2 to C3)</td><td><span class="tag now">Defined</span></td><td><span class="tag xl">XL</span></td></tr>
-      <tr><td><strong>Developer Support</strong></td><td>Docs MCP server, portal co-pilot, support triage</td><td><span class="tag now">Defined</span></td><td><span class="tag s">S</span></td></tr>
-      <tr><td><strong>Internal Ops Agents</strong></td><td>Run TXN agentically, onboarding first</td><td><span class="tag next">Defining</span></td><td><span class="tag xl">XL</span></td></tr>
-      <tr><td><strong>Fraud &amp; Risk Assist</strong></td><td>Real-time enrichment and rules, advise not decide</td><td><span class="tag next">Collecting</span></td><td><span class="tag m">M</span></td></tr>
-      <tr><td><strong>Reconciliation</strong></td><td>Auth/clearing settlement reconciliation, dual-use (internal + client-facing)</td><td><span class="tag next">Collecting</span></td><td><span class="tag s">TBC</span></td></tr>
-    </tbody>
-  </table></div>
-
-  <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 02</span></div>
+    </div>
+  <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 1</span></div>
 </section>
-
-<!-- ============ 02b. SOLUTION ARCHITECTURE ============ -->
 <section class="page">
   <div class="fit">
-  <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Agentic Layer &middot; Proposal v1.2</span></div>
-
+  <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Agentic Pilot &middot; Proposal v1.0</span></div>
   <div class="sechead"><div class="bar"></div><div>
-    <div class="secno">02</div><h2 class="sect">Solution architecture</h2>
+    <div class="secno">02</div><h2 class="sect">What the pilot delivers</h2>
   </div></div>
-
-  <p class="lead">How the parts connect. The Novosapien agentic layer (Co-pilot, Agent Inbox, Full Agentic Experience, Developer Support, Internal Ops, Fraud &amp; Risk, and Reconciliation) renders inside TXN's surfaces and rides on a single Agent Access Layer that exposes the Core API as permission-scoped tools. The A2A endpoint is the inbound door for a client's own agent.</p>
-
-  <div class="gantt">
-    <svg viewBox="0 0 985 612" xmlns="http://www.w3.org/2000/svg" font-family="Geist, sans-serif">
-      <defs>
-        <marker id="ah" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#64748B"/></marker>
-        <marker id="ahc" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#0bb6bb"/></marker>
-      </defs>
-
-      <!-- bands -->
-      <rect x="10" y="10"  width="965" height="76"  rx="8" fill="#f3f7fa"/>
-      <rect x="10" y="120" width="965" height="166" rx="8" fill="#eef3f7"/>
-      <rect x="10" y="320" width="965" height="72"  rx="8" fill="#f3f7fa"/>
-      <rect x="10" y="426" width="965" height="70"  rx="8" fill="#eef3f7"/>
-      <rect x="10" y="530" width="965" height="72"  rx="8" fill="#f3f7fa"/>
-
-      <g font-size="10" fill="#64748B" font-weight="600" letter-spacing="0.5">
-        <text x="22" y="52">USERS &amp; AGENTS</text>
-        <text x="22" y="207">TXN SURFACES</text>
-        <text x="22" y="360">ACCESS LAYER</text>
-        <text x="22" y="465">AGENTIC SERVICES</text>
-        <text x="22" y="569">PLATFORM &amp; DATA</text>
-      </g>
-
-      <!-- connectors -->
-      <g stroke="#64748B" stroke-width="1.5" fill="none">
-        <path d="M240,76 L240,130" marker-end="url(#ah)"/>
-        <path d="M740,76 L740,130" marker-end="url(#ah)"/>
-        <path d="M300,282 L300,330" marker-end="url(#ah)"/>
-        <path d="M730,282 L730,330" marker-end="url(#ah)"/>
-        <path d="M390,390 L390,540" marker-end="url(#ah)"/>
-        <path d="M265,492 L265,540" marker-end="url(#ah)"/>
-        <path d="M525,492 L525,540" marker-end="url(#ah)"/>
-        <path d="M785,492 L785,540" marker-end="url(#ah)"/>
-        <path d="M400,569 L427,569" marker-end="url(#ah)"/>
-      </g>
-      <g stroke="#0bb6bb" stroke-width="1.6" fill="none">
-        <path d="M907,76 L907,308 L880,308 L880,330" marker-end="url(#ahc)"/>
-      </g>
-
-      <!-- ROW 1 actors -->
-      <rect x="150" y="30" width="180" height="46" rx="8" fill="#e7edf2" stroke="#94a3b8"/>
-      <text x="240" y="58" text-anchor="middle" font-size="11" fill="#09142F">Card Program Operators</text>
-      <rect x="650" y="30" width="180" height="46" rx="8" fill="#e7edf2" stroke="#94a3b8"/>
-      <text x="740" y="58" text-anchor="middle" font-size="11" fill="#09142F">Integrators &amp; Developers</text>
-      <rect x="850" y="30" width="115" height="46" rx="8" fill="#e7fdfd" stroke="#0bb6bb"/>
-      <text x="907" y="52" text-anchor="middle" font-size="10" fill="#09142F">Client's own agent</text>
-      <text x="907" y="66" text-anchor="middle" font-size="9" fill="#33495f">Claude (external)</text>
-
-      <!-- ROW 2 surfaces -->
-      <rect x="140" y="132" width="460" height="150" rx="10" fill="#FBFCFD" stroke="#09142F" stroke-dasharray="6 4"/>
-      <text x="152" y="151" font-size="11" font-weight="700" fill="#09142F">TXN Console <tspan font-size="9" font-weight="400" fill="#64748B">&middot; Stackworkz</tspan></text>
-      <rect x="150" y="162" width="148" height="110" rx="8" fill="#A1BCD1" stroke="#6f93ad"/>
-      <text x="224" y="214" text-anchor="middle" font-size="12" font-weight="600" fill="#09142F">Co-pilot</text>
-      <text x="224" y="232" text-anchor="middle" font-size="9.5" fill="#33495f">Concept 1</text>
-      <rect x="308" y="162" width="140" height="110" rx="8" fill="#A1BCD1" stroke="#6f93ad"/>
-      <text x="378" y="206" text-anchor="middle" font-size="11.5" font-weight="600" fill="#09142F">Agent Inbox</text>
-      <text x="378" y="222" text-anchor="middle" font-size="11.5" font-weight="600" fill="#09142F">&amp; Alerts</text>
-      <text x="378" y="238" text-anchor="middle" font-size="9.5" fill="#33495f">C1 &#8594; C2</text>
-      <rect x="458" y="162" width="124" height="110" rx="8" fill="#A1BCD1" stroke="#6f93ad"/>
-      <text x="520" y="206" text-anchor="middle" font-size="11.5" font-weight="600" fill="#09142F">Full Agentic</text>
-      <text x="520" y="222" text-anchor="middle" font-size="11.5" font-weight="600" fill="#09142F">Experience</text>
-      <text x="520" y="238" text-anchor="middle" font-size="9.5" fill="#33495f">C2 &#8594; C3</text>
-      <rect x="630" y="132" width="220" height="150" rx="10" fill="#FBFCFD" stroke="#09142F" stroke-dasharray="6 4"/>
-      <text x="642" y="151" font-size="11" font-weight="700" fill="#09142F">Developer Portal <tspan font-size="9" font-weight="400" fill="#64748B">&middot; Stackworkz</tspan></text>
-      <rect x="642" y="162" width="196" height="110" rx="8" fill="#A1BCD1" stroke="#6f93ad"/>
-      <text x="740" y="214" text-anchor="middle" font-size="12" font-weight="600" fill="#09142F">Developer Support</text>
-      <text x="740" y="232" text-anchor="middle" font-size="9.5" fill="#33495f">hosted docs MCP server</text>
-
-      <!-- ROW 3 AAL -->
-      <rect x="140" y="332" width="820" height="58" rx="10" fill="#cdddea" stroke="#6f93ad"/>
-      <rect x="200" y="344" width="340" height="34" rx="7" fill="#A1BCD1" stroke="#6f93ad"/>
-      <text x="370" y="366" text-anchor="middle" font-size="11.5" font-weight="600" fill="#09142F">MCP Server</text>
-      <rect x="560" y="344" width="340" height="34" rx="7" fill="#A1BCD1" stroke="#6f93ad"/>
-      <text x="730" y="366" text-anchor="middle" font-size="11.5" font-weight="600" fill="#09142F">A2A Endpoint</text>
-
-      <!-- ROW 4 services -->
-      <text x="398" y="414" font-size="9" font-style="italic" fill="#64748B">exposes Core API as tools</text>
-      <rect x="150" y="438" width="230" height="54" rx="10" fill="#A1BCD1" stroke="#6f93ad"/>
-      <text x="265" y="464" text-anchor="middle" font-size="11.5" font-weight="600" fill="#09142F">Reconciliation</text>
-      <text x="265" y="480" text-anchor="middle" font-size="9.5" fill="#33495f">settlement &middot; dual-use</text>
-      <rect x="410" y="438" width="230" height="54" rx="10" fill="#A1BCD1" stroke="#6f93ad"/>
-      <text x="525" y="464" text-anchor="middle" font-size="11.5" font-weight="600" fill="#09142F">Fraud &amp; Risk Assist</text>
-      <text x="525" y="480" text-anchor="middle" font-size="9.5" fill="#33495f">advise, not decide</text>
-      <rect x="670" y="438" width="230" height="54" rx="10" fill="#A1BCD1" stroke="#6f93ad"/>
-      <text x="785" y="464" text-anchor="middle" font-size="11.5" font-weight="600" fill="#09142F">Internal Ops Agents</text>
-      <text x="785" y="480" text-anchor="middle" font-size="9.5" fill="#33495f">runs TXN agentically</text>
-
-      <!-- ROW 5 platform/data -->
-      <rect x="150" y="542" width="250" height="54" rx="9" fill="#e7edf2" stroke="#94a3b8"/>
-      <text x="275" y="568" text-anchor="middle" font-size="11.5" font-weight="600" fill="#09142F">Core API</text>
-      <text x="275" y="584" text-anchor="middle" font-size="9.5" fill="#64748B">issuer processing &middot; Direct Transact</text>
-      <rect x="430" y="542" width="230" height="54" rx="9" fill="#e7edf2" stroke="#94a3b8"/>
-      <text x="545" y="568" text-anchor="middle" font-size="11.5" font-weight="600" fill="#09142F">Data Lake</text>
-      <text x="545" y="584" text-anchor="middle" font-size="9.5" fill="#64748B">Direct Transact</text>
-      <rect x="690" y="542" width="230" height="54" rx="9" fill="#e7edf2" stroke="#94a3b8"/>
-      <text x="805" y="568" text-anchor="middle" font-size="11.5" font-weight="600" fill="#09142F">CRM &middot; Freshsales</text>
-      <text x="805" y="584" text-anchor="middle" font-size="9.5" fill="#64748B">TXN &middot; source of truth</text>
-    </svg>
-  </div>
-
-  <div style="display:flex; flex-wrap:wrap; gap:14px 22px; font-size:.72rem; color:var(--ns-muted); margin-top:2px;">
-    <span><span style="display:inline-block;width:11px;height:11px;background:#A1BCD1;border:1px solid #6f93ad;border-radius:3px;vertical-align:middle;"></span> Novosapien delivers</span>
-    <span><span style="display:inline-block;width:11px;height:11px;background:#e7edf2;border:1px solid #94a3b8;border-radius:3px;vertical-align:middle;"></span> Direct Transact / TXN</span>
-    <span><span style="display:inline-block;width:11px;height:11px;background:#FBFCFD;border:1px dashed #09142F;border-radius:3px;vertical-align:middle;"></span> Stackworkz surface (agent renders inside)</span>
-    <span><span style="display:inline-block;width:11px;height:11px;background:#e7fdfd;border:1px solid #0bb6bb;border-radius:3px;vertical-align:middle;"></span> External client agent</span>
-  </div></div>
-
-  <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 02</span></div>
-</section>
-
-<!-- ============ 4. STRATEGIC CONTEXT ============ -->
-<section class="page">
-  <div class="fit">
-  <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Agentic Layer &middot; Proposal v1.2</span></div>
-
-  <div class="sechead"><div class="bar"></div><div>
-    <div class="secno">03</div><h2 class="sect">The bet, and why timing decides it</h2>
-  </div></div>
-
-  <p class="lead">TXN's differentiation is not feature parity with Marqeta or Galileo. It is being agentic-native where they are retrofitted. That is a structural advantage an incumbent cannot copy quickly: they cannot redesign a console built for expert users into an agent-first product without disrupting the customers they already have.</p>
-
+  <p class="lead">Six weeks from 27 July 2026, delivered by the full-time team, on simulated tools and synthetic data. Three deliverables, chosen because they prove the most and depend on the least.</p>
   <div class="two-col">
     <div>
-      <h3 style="color:var(--ns-destructive);">The incumbent model</h3>
-      <ul class="muted">
-        <li>API-first but operationally heavy: clients still need card experts to configure and run programs.</li>
-        <li>50 to 60 configuration properties exposed raw, with no business-language wrapper. People turn them on and off and break things.</li>
-        <li>AI bolted onto a console designed for experts. A side panel, not the interface.</li>
+      <h3>What we build</h3>
+      <ul>
+        <li>A working <strong>Full Agentic Experience</strong> showcase: a Claude-like interface that takes a goal, plans, renders live UI in the conversation, and acts on approval.</li>
+        <li>The <strong>Agent Access Layer</strong> foundations: the MCP tool surface and permission model, running against mocked Core API endpoints built from the API specification and sample payloads.</li>
+        <li><strong>Internal Ops v1:</strong> the customer-onboarding agent, meeting capture, and the knowledge engine, the low-dependency parts that return value from day one.</li>
       </ul>
     </div>
     <div>
-      <h3 style="color:var(--ns-success);">The agentic-native model</h3>
-      <ul class="muted">
-        <li>The user does not become a card expert. The agent is the card expert.</li>
-        <li>Onboarding collapses from a multi-week exercise into a guided conversation.</li>
-        <li>The agent is the primary interface from day one, with a human in the loop until trust is earned.</li>
+      <h3>How it runs</h3>
+      <ul>
+        <li><strong>On simulation.</strong> Mocked APIs and synthetic or test data, no real personal data, so nothing waits on the other vendors.</li>
+        <li><strong>Six weeks, from 27 July.</strong> A fixed window ending on or around 7 September 2026.</li>
+        <li><strong>One team.</strong> The same full-time three-person team that delivers the wider engagement, with a named lead accountable for the work.</li>
+        <li><strong>Handover.</strong> Source, prompts, configurations, and the simulation harness handed over in a documented state.</li>
       </ul>
     </div>
   </div>
-
-  <div class="quote">I want to know as little as possible about the details of card programs. I don't want to employ a card expert. I want you to be my card expert.
-    <span class="who">Ian Johnson, CEO, TXN</span></div>
-
-  <p>The agentic stack that makes this buildable, MCP, A2A, dependable tool-use, multi-step reasoning, reached production-readiness only recently. A small lead in agentic maturity converts into a structural product advantage during this window. The cost of waiting is concrete: ship Concept 1 alone and the product can feel a year behind on launch day.</p>
-
-  <div class="callout"><strong>The plan is built around that risk.</strong> The pilot demonstrates the agentic experience in six weeks, independent of the other vendors' timelines, so TXN can show the market its difference now rather than after the platform plumbing is finished.</div></div>
-
-  <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 03</span></div>
+  <div class="callout"><strong>Outcome.</strong> A demonstrable agentic experience TXN can show its market and its board, plus a hardened foundation (tool surface, permission model, simulation harness) that the wider build plugs straight into. The pilot also surfaces gaps in the API contract and the data the agents need, feeding the wire-in phase.</div>
+  <div class="chips" style="grid-template-columns:repeat(3,1fr);">
+    <div class="chip"><div class="v">6 weeks</div><div class="l">from 27 July 2026, on simulation</div></div>
+    <div class="chip"><div class="v">0</div><div class="l">vendor dependencies on the critical path</div></div>
+    <div class="chip"><div class="v">3</div><div class="l">components advanced: Full Agentic, Access Layer, Internal Ops v1</div></div>
+  </div>
+    </div>
+  <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 2</span></div>
 </section>
-
-<!-- ============ 5. APPROACH / TRUST LADDER ============ -->
 <section class="page">
   <div class="fit">
-  <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Agentic Layer &middot; Proposal v1.2</span></div>
-
+  <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Agentic Pilot &middot; Proposal v1.0</span></div>
   <div class="sechead"><div class="bar"></div><div>
-    <div class="secno">04</div><h2 class="sect">How we deliver, and how we de-risk it</h2>
+    <div class="secno">03</div><h2 class="sect">Investment</h2>
   </div></div>
+  <p class="lead">A fixed price for the six weeks, built from the same team rate as the wider engagement. No early-start premium: you pay for the team for the period, at the rate you would pay anyway. All figures exclusive of VAT.</p>
 
-  <p class="lead">Every component graduates along the same trust ladder, mapped to TXN's three concepts. A human stays in the loop until the agent has earned autonomy, and the platform's approval queues are respected at every step.</p>
-
-  <div class="ladder">
-    <div class="rung"><div class="n">CONCEPT 1</div><div class="t">Co-pilot</div><div class="d">The user drives. The agent recommends and explains impact before anything changes. Human-initiated, human-validated.</div></div>
-    <div class="rung"><div class="n">CONCEPT 2</div><div class="t">Agent-advisor</div><div class="d">The agent initiates: "I have noticed this, here is the plan, may I execute?" The named approver signs off. Agent-initiated, human-validated.</div></div>
-    <div class="rung"><div class="n">CONCEPT 3</div><div class="t">Full agentic / A2A</div><div class="d">The client's own agent talks to TXN's agent through MCP and A2A, with the same permissions and approvals as the human it represents.</div></div>
-  </div>
-
-  <h3>Map, Train, Deploy, Scale</h3>
   <div class="cards cols-2">
-    <div class="card"><div class="ct">Map</div><div class="cd">Lock the work each component owns, its tools, permissions, and the approval gates it must respect. Largely delivered in Sprint Zero.</div></div>
-    <div class="card"><div class="ct">Train</div><div class="cd">Ground each agent in TXN's documentation and the live API contract, then harden against the failure modes that matter in payments.</div></div>
-    <div class="card"><div class="ct">Deploy</div><div class="cd">Ship behind feature flags and a kill switch, starting human-validated, with full audit on every agent action.</div></div>
-    <div class="card"><div class="ct">Scale</div><div class="cd">Earn autonomy component by component as the data flywheel fills and confidence is evidenced in production.</div></div>
-  </div>
-
-  <div class="callout flag"><strong>Governance is built in, not bolted on.</strong> Permission scoping mirrors the Console, high-blast-radius changes route through the existing two-person approval queue, every agent action is logged to an append-only audit trail (immutable by design; storage being finalised with DT), and model-tier routing plus caching and budget thresholds keep consumption bounded by design.</div></div>
-
-  <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 04</span></div>
-</section>
-
-<!-- ============ 6. THE AGENTIC LAYER (catalogue + architecture) ============ -->
-<section class="page">
-  <div class="fit" style="--s:0.85">
-  <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Agentic Layer &middot; Proposal v1.2</span></div>
-
-  <div class="sechead"><div class="bar"></div><div>
-    <div class="secno">05</div><h2 class="sect">The agentic layer</h2>
-  </div></div>
-
-  <p class="lead">Eight components, organised by how the agent shows up, not by technology. Three client-facing lanes along the trust ladder, a foundational tool surface beneath them, the developer surface, and the agents that run TXN itself.</p>
-
-  <div class="lane">
-    <div class="lane-h">Client-facing &middot; rendered inside the Console</div>
-    <div class="cards cols-3">
-      <div class="comp"><div class="h"><span class="nm">Co-pilot</span><span class="tag m">M</span></div><div class="ds">Context-aware chat, guided configuration, impact preview before any change. Concept 1.</div></div>
-      <div class="comp"><div class="h"><span class="nm">Agent Inbox &amp; Alerts</span><span class="tag m">M</span></div><div class="ds">Change-impact, threshold, and scheduled analysis surfaced as actionable, approvable plans. C1 to C2.</div></div>
-      <div class="comp"><div class="h"><span class="nm">Full Agentic Experience</span><span class="tag xl">XL</span></div><div class="ds">The agent as interface: renders live UI, composes journeys, acts on approval. C2 to C3.</div></div>
+    <div class="card" style="border-top:3px solid var(--ns-primary);">
+      <div class="ct">The pilot fee</div>
+      <div class="mono" style="font-size:2.2rem; font-weight:800; color:var(--ns-navy); line-height:1; margin:.3rem 0;">£54,187.50</div>
+      <div class="cd">1.5 months of the full-time three-person team at £36,125 per month. The same team, the same rate as the wider engagement.</div>
+    </div>
+    <div class="card">
+      <div class="ct">How it is charged</div>
+      <table style="margin:.4rem 0 0;">
+        <tr><td>50% on signature of the Pilot Order</td><td class="num">£27,093.75</td></tr>
+        <tr><td>50% on completion and acceptance</td><td class="num">£27,093.75</td></tr>
+        <tr class="total"><td>Total for the six-week pilot</td><td class="num">£54,187.50</td></tr>
+      </table>
+      <div class="cd" style="margin-top:.5rem;">Each invoice is payable on its date of issue. Acceptance is on demonstration of the deliverables and handover, with a 5 business day window to raise any material shortfall.</div>
     </div>
   </div>
 
-  <div class="lane">
-    <div class="lane-h">Foundational &middot; every agent rides on this</div>
-    <div class="comp"><div class="h"><span class="nm">Agent Access Layer (+ A2A endpoint)</span><span class="tag l">L</span></div><div class="ds">Wraps the Core API as permission-scoped, agent-callable tools, exposed via MCP. Three-layer permission validation, approval-as-permission on high-risk changes, and combined Console, API, and chat audit. The A2A endpoint is its external edge: the inbound door for clients' own agents.</div></div>
-  </div>
-
-  <div class="lane">
-    <div class="lane-h">Developer Portal</div>
-    <div class="comp"><div class="h"><span class="nm">Developer Support</span><span class="tag s">S</span></div><div class="ds">A hosted docs MCP server (the strategic surface: developers plug it into their own agents), a light portal co-pilot, sandbox assist, and triage that packages well-formed tickets into Internal Ops.</div></div>
-  </div>
-
-  <div class="lane">
-    <div class="lane-h">Payment stream &middot; later phase</div>
-    <div class="comp"><div class="h"><span class="nm">Fraud &amp; Risk Assist</span><span class="tag m">M</span></div><div class="ds">Real-time enrichment of the approve/decline pass-through plus a rules engine and recommendations. Advise, don't decide. Data-dependent, sequenced once transaction volume accumulates.</div></div>
-  </div>
-
-  <div class="lane">
-    <div class="lane-h">Settlement &middot; dual-use</div>
-    <div class="comp"><div class="h"><span class="nm">Reconciliation</span><span class="tag s">TBC</span></div><div class="ds">Auth and clearing settlement reconciliation. TXN uses it internally to verify the platform; clients use it heavily too. Promoted from Internal Ops on 18 June; scope confirmed in a capture session with DT.</div></div>
-  </div>
-
-  <div class="lane">
-    <div class="lane-h">Internal &middot; runs TXN agentically</div>
-    <div class="comp"><div class="h"><span class="nm">Internal Ops Agents</span><span class="tag xl">XL</span></div><div class="ds">Customer onboarding (the first build target), a self-healing knowledge engine, support triage, the release pipeline, and a simulation harness for the cold-start period. CRM is the source of truth. Keeps headcount flat against client growth.</div></div>
-  </div>
-
-  <div class="callout txn"><strong>Internal operations are part of the product, not a side-project.</strong> The same agentic philosophy that powers the client surfaces powers the business that runs them, so the experience clients see is not throttled by humans doing manual work behind it.</div></div>
-
-  <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 05</span></div>
-</section>
-
-<!-- ============ 06b. WIRE-IN, DETAIL ============ -->
-<section class="page">
-  <div class="fit" style="--s:0.94">
-  <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Agentic Layer &middot; Proposal v1.2</span></div>
-
-  <div class="sechead"><div class="bar"></div><div>
-    <div class="secno">06</div><h2 class="sect">Phase 2: what we deliver to launch</h2>
-  </div></div>
-
-  <p class="lead">The wire-in build carries the agentic layer into production across roughly 2.5 months to the October launch, set out component by component. Each is built synthetic-first: against mock APIs and data, with the demo-data flags dropping as the real surfaces land, so nothing stalls waiting on the platform. This page covers the launch-critical layer; the next covers the Developer Portal and Internal Ops.</p>
-
-  <h3>Agent Access Layer <span class="tag l">L</span> <span style="font-weight:400;color:#64748B;font-size:.82em;">the foundation every agent rides on</span></h3>
-  <ul>
-    <li>A single MCP tool surface that wraps the Core API as business-language tools (issue or suspend a card, configure a product, query transactions), gated per user, permission, and turn.</li>
-    <li>A permission model that mirrors the Console's granular roles, plus an AI-specific permission config, with approvals routed into the existing Console approval queue under the two-person rule.</li>
-    <li>A combined audit trail across Console, Core API, and AI chat, so every agent action is attributable and reconstructable.</li>
-    <li>The A2A endpoint: an inbound door for a client's own external agent, reusing the same tools, scoping, approval, and audit.</li>
-  </ul>
-
-  <h3>Full Agentic Experience <span class="tag xl">XL</span> <span style="font-weight:400;color:#64748B;font-size:.82em;">the showcase, agent as the interface</span></h3>
-  <ul>
-    <li>A Claude-like surface: state a goal in natural language, the agent plans, renders live interface inside the conversation, and acts only on approval.</li>
-    <li>Generative UI: the agent calls a tool and the front end renders the matching component from the Console library, live and clickable, deep-linking back into the Console.</li>
-    <li>Multi-agent planning that composes across journeys (for example, "change a transaction limit and show me the impact"), runs steps concurrently, and executes in order on approval.</li>
-    <li>Saved, revisitable views and scheduled tasks, proven on roughly 100-run guard-rail simulations, then wired onto the live Core API so the full experience runs in production before mid-October.</li>
-  </ul>
-
-  <h3>Co-pilot v1 <span class="tag m">M</span> <span style="font-weight:400;color:#64748B;font-size:.82em;">reactive in-Console assistant</span></h3>
-  <ul>
-    <li>Natural-language Q&amp;A and navigation, page-scoped with page context and guard rails.</li>
-    <li>Guided configuration that collapses 100+ product-config fields into a confirm-not-configure conversation, surfacing what most clients in a given pattern do.</li>
-    <li>Action on confirmation: plan-then-act for multi-step flows via the Access Layer, with explicit button confirmation and bundled approvals.</li>
-  </ul></div>
-
-  <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 06</span></div>
-</section>
-
-<!-- ============ 06c. FIRST FOUR MONTHS, DETAIL CONTINUED ============ -->
-<section class="page">
-  <div class="fit" style="--s:0.84">
-  <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Agentic Layer &middot; Proposal v1.2</span></div>
-
-  <div class="sechead"><div class="bar"></div><div>
-    <div class="secno">06</div><h2 class="sect">Phase 2: what we deliver to launch, continued</h2>
-  </div></div>
-
-  <p class="lead">The Developer Portal lands at the end of July. Internal Ops returns value from day one because it needs no transaction data.</p>
-
-  <h3>Alerts v1 <span class="tag m">M</span> <span style="font-weight:400;color:#64748B;font-size:.82em;">proactive change-impact and scheduled alerts</span></h3>
-  <ul>
-    <li>Change-impact alerts the moment a setting changes, whatever the channel (Console, API, or AI).</li>
-    <li>User-defined threshold monitors on a standard observability platform, with the AI invoked only when a threshold trips, to control cost.</li>
-    <li>Scheduled analysis and reporting: cadence summaries with the drivers behind the numbers, on-demand reports, and reusable templates.</li>
-  </ul>
-
-  <h3>Developer Support <span class="tag s">S</span> <span style="font-weight:400;color:#64748B;font-size:.82em;">for the end-July Developer Portal</span></h3>
-  <ul>
-    <li>A hosted docs MCP server developers plug straight into Claude or Claude Code, API-key-gated and rate-limited.</li>
-    <li>A portal co-pilot that answers from the docs corpus, grounded and deterministic, surfacing known answers and resolved tickets.</li>
-    <li>Support triage that reads the developer's recent API logs, diagnoses the likely cause, and packages a well-formed ticket the agent swarm pre-investigates before a human sees it.</li>
-    <li>Four access levels (visitor, signed-up, prospect, client) that double as lead capture.</li>
-  </ul>
-
-  <h3>Internal Ops v1 <span class="tag xl">XL</span> <span style="font-weight:400;color:#64748B;font-size:.82em;">value from day one, no transaction data needed</span></h3>
-  <ul>
-    <li>Customer onboarding: automated due diligence with fully sourced reports (Companies House and data providers), an onboarding-interview agent that captures intent and surfaces hard realities (the roughly 12-week Visa lead time), Statement of Work assembly with drift detection, and CIQ assembly for the processor-side fields.</li>
-    <li>Meeting capture: a notetaker records the call, looks attendees up in the CRM, routes the transcript to the right analysis team, and writes structured notes and actions back.</li>
-    <li>Knowledge engine: one central knowledge base (Umbraco) that improves itself three ways, reactive capture from support, proactive mining of recurring questions, and self-healing docs (a production error opens a fix PR), every change human-approved.</li>
-  </ul>
-
-  <div class="callout"><strong>Built synthetic-first.</strong> Every component is built against mock APIs and simulated surfaces, validated in simulation, then switched to the real Core API, data lake, and Console as each lands. Progress does not wait on any single vendor dependency.</div>
-
-  <div class="chips" style="grid-template-columns:repeat(3,1fr);">
-    <div class="chip"><div class="v">9 Jul</div><div class="l">Console handover (Stackworkz design pack)</div></div>
-    <div class="chip"><div class="v">end-Jul</div><div class="l">Developer Portal live: docs MCP, portal co-pilot, triage</div></div>
-    <div class="chip"><div class="v">early-Oct</div><div class="l">Market launch: Console + Co-pilot, Full Agentic, Alerts v1 live</div></div>
-  </div></div>
-
-  <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 06</span></div>
-</section>
-
-<!-- ============ 8. FLIGHT PLAN ============ -->
-<section class="page">
-  <div class="fit" style="--s:0.82">
-  <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Agentic Layer &middot; Proposal v1.2</span></div>
-
-  <div class="sechead"><div class="bar"></div><div>
-    <div class="secno">07</div><h2 class="sect">Flight plan</h2>
-  </div></div>
-
-  <p class="lead">Three phases beyond Sprint Zero. The six-week pilot is authorised separately under the Pilot Order and already running from 27 July. The wire-in build then carries the launch-critical components, including the full Agentic experience wired into production, toward the October market launch. Phase 3 takes the remaining deliverables to version one over a committed three months, November to the end of January, with the tail landing in early February, on a scope agreed with TXN. We build synthetic-first: each component is built against mock data and APIs in parallel, then the demo-data flags drop as the real APIs and data land, so progress does not stall waiting on the platform.</p>
-
-  <div class="gantt">
-    <svg viewBox="0 0 940 326" xmlns="http://www.w3.org/2000/svg" font-family="Geist, sans-serif">
-      <g font-size="11" fill="#64748B">
-        <text x="150" y="18">Jun</text><text x="230" y="18">Jul</text><text x="310" y="18">Aug</text>
-        <text x="390" y="18">Sep</text><text x="470" y="18">Oct</text>
-        <text x="550" y="18">Nov</text><text x="630" y="18">Dec</text><text x="710" y="18">Jan</text>
-        <text x="790" y="18">Feb</text>
-        <text x="840" y="18" font-weight="600" fill="#09142F">Phase 3 &middot; 3 mo</text>
-      </g>
-      <g stroke="#dbe3ea" stroke-width="1">
-        <line x1="150" y1="26" x2="150" y2="300"/><line x1="230" y1="26" x2="230" y2="300"/>
-        <line x1="310" y1="26" x2="310" y2="300"/><line x1="390" y1="26" x2="390" y2="300"/>
-        <line x1="470" y1="26" x2="470" y2="300"/><line x1="550" y1="26" x2="550" y2="300"/>
-        <line x1="630" y1="26" x2="630" y2="300"/><line x1="710" y1="26" x2="710" y2="300"/>
-        <line x1="790" y1="26" x2="790" y2="300"/><line x1="870" y1="26" x2="870" y2="300"/>
-      </g>
-      <line x1="290" y1="26" x2="290" y2="300" stroke="#A8CDFF" stroke-width="2" stroke-dasharray="4 3"/>
-      <text x="294" y="38" font-size="9" fill="#4a6b86" font-weight="600">Dev Portal end-Jul</text>
-      <line x1="470" y1="26" x2="470" y2="300" stroke="#ed0a59" stroke-width="2" stroke-dasharray="4 3"/>
-      <text x="474" y="38" font-size="10" fill="#ed0a59" font-weight="600">Market launch</text>
-
-      <g font-size="11.5" fill="#09142F">
-        <text x="10" y="50">Sprint Zero</text>
-        <text x="10" y="76">Pilot (Pilot Order)</text>
-        <text x="10" y="102">Internal Ops v1</text>
-        <text x="10" y="128">Phase 2: Wire-in</text>
-        <text x="10" y="154">Developer Support</text>
-        <text x="10" y="180">Phase 3: Remaining (Nov-early Feb)</text>
-      </g>
-      <rect x="110" y="39" width="40" height="15" rx="4" fill="#22C55E"/>
-      <text x="112" y="50" font-size="9" fill="#fff">done</text>
-      <rect x="280" y="65" width="120" height="15" rx="4" fill="#A1BCD1"/>
-      <text x="286" y="76" font-size="9" fill="#09142F">6-week pilot, on simulation</text>
-      <rect x="280" y="91" width="210" height="15" rx="4" fill="#A1BCD1"/>
-      <text x="286" y="102" font-size="9" fill="#09142F">onboarding + capture + knowledge</text>
-      <rect x="360" y="117" width="230" height="15" rx="4" fill="#A8CDFF"/>
-      <text x="366" y="128" font-size="9" fill="#002c3c">Access Layer, Full Agentic, Co-pilot, Alerts</text>
-      <rect x="310" y="143" width="110" height="15" rx="4" fill="#A8CDFF"/>
-      <text x="316" y="154" font-size="9" fill="#002c3c">docs MCP + portal</text>
-      <rect x="550" y="169" width="250" height="15" rx="4" fill="#09142F"/>
-      <text x="556" y="180" font-size="9" fill="#fff">v1 of agreed deliverables, hardened</text>
-
-      <line x1="10" y1="198" x2="900" y2="198" stroke="#dbe3ea" stroke-width="1"/>
-      <text x="10" y="214" font-size="9" fill="#64748B" font-weight="600" letter-spacing="0.5">DEPENDENCY MILESTONES &middot; partner-led, dates are targets</text>
-      <g font-size="11.5" fill="#09142F">
-        <text x="10" y="242">DT</text>
-        <text x="10" y="272">Stackworkz</text>
-      </g>
-      <path d="M300,232 l6,6 l-6,6 l-6,-6 z" fill="#ed0a59"/>
-      <text x="312" y="242" font-size="9" fill="#09142F">Core API (target)</text>
-      <path d="M410,232 l6,6 l-6,6 l-6,-6 z" fill="#ed0a59"/>
-      <text x="422" y="242" font-size="9" fill="#09142F">Data Lake (owed)</text>
-      <path d="M245,262 l6,6 l-6,6 l-6,-6 z" fill="#ed0a59"/>
-      <text x="257" y="272" font-size="9" fill="#09142F">Console handover (9 Jul)</text>
-      <path d="M420,262 l6,6 l-6,6 l-6,-6 z" fill="#ed0a59"/>
-      <text x="432" y="272" font-size="9" fill="#09142F">Console instrumented</text>
-    </svg>
-  </div>
-
+  <h3>How the price is built up</h3>
   <table>
-    <thead><tr><th>Phase</th><th>Window</th><th>Delivers</th><th>Gated by</th></tr></thead>
-    <tbody>
-      <tr><td><strong>0 &middot; Sprint Zero</strong> <span class="tag done">Done</span></td><td>Complete</td><td>Requirements, architecture, dependency map</td><td>Nothing</td></tr>
-      <tr><td><strong>1 &middot; Agentic pilot</strong> <span class="tag now">Separate · underway</span></td><td>Wks 1-6 &middot; from 27 Jul</td><td>Full Agentic showcase, Access Layer foundations, and Internal Ops v1 (onboarding, capture, knowledge). Contracted under the Pilot Order.</td><td><span class="tag dep">Low</span> runs on simulation</td></tr>
-      <tr><td><strong>2 &middot; Wire-in</strong></td><td>Aug to mid-Nov</td><td>Developer Support for the end-July portal; Access Layer on the real API; the full Agentic experience wired into production; Co-pilot v1 and Alerts v1 for the October Console launch</td><td><span class="tag dep">DT API</span> <span class="tag dep">Stackworkz</span> <span class="tag dep">Infra separation</span></td></tr>
-      <tr><td><strong>3 &middot; Remaining deliverables</strong></td><td>Nov to early Feb &middot; 3 months</td><td>The remaining deliverables taken to version one, scope agreed with TXN</td><td><span class="tag dep">Data lake</span> <span class="tag dep">Volume</span></td></tr>
-    </tbody>
+    <thead><tr><th>Basis</th><th class="num">Rate</th><th class="num">Amount</th></tr></thead>
+    <tr><td>Full-time three-person team, per month</td><td class="num">£36,125</td><td class="num">&mdash;</td></tr>
+    <tr><td>Pilot duration</td><td class="num">1.5 months</td><td class="num">&mdash;</td></tr>
+    <tr class="grand"><td>Pilot fee (1.5 &times; £36,125)</td><td class="num"></td><td class="num">£54,187.50</td></tr>
   </table>
-
-  <div class="callout flag"><strong>Two fixed dates.</strong> The Developer Portal launches end-July and the market launches early October (the partners' stated targets). With the pilot running from 27 July, Developer Support fast-follows the portal, and the in-Console components wire in from the 9 July Console handover toward the October launch. If a component slips on an upstream dependency, it fast-follows rather than holding the launch.</div></div>
-
-  <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 07</span></div>
+  <div class="callout txn"><strong>Fair by construction.</strong> At standard day rates the same team over six weeks is about £76,500. The pilot is £54,187.50, close to a third less, because it is charged at the committed monthly team rate, not a day rate. You are buying the team for six weeks, not a fixed scope, so the price does not move with what the team builds.</div>
+    </div>
+  <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 3</span></div>
 </section>
-
-<!-- ============ 9. DEPENDENCIES ============ -->
 <section class="page">
-  <div class="fit" style="--s:0.88">
-  <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Agentic Layer &middot; Proposal v1.2</span></div>
-
+  <div class="fit" style="--s:0.92">
+  <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Agentic Pilot &middot; Proposal v1.0</span></div>
   <div class="sechead"><div class="bar"></div><div>
-    <div class="secno">08</div><h2 class="sect">Dependencies</h2>
+    <div class="secno">04</div><h2 class="sect">How the pilot fits the wider engagement</h2>
   </div></div>
+  <p class="lead">Separating the pilot does not add cost. It is the first 1.5 months of the build, contracted on its own so it can start now, and it folds cleanly into the full engagement when the Master Service Agreement is signed.</p>
 
-  <p class="lead">Novosapien plugs into a multi-vendor build. The pilot is designed to need none of it. Everything after the pilot has a clear owner and a clear readiness gate.</p>
-
+  <h3>Cost-neutral to the full engagement</h3>
   <table>
-    <thead><tr><th>Provided by</th><th>What the agentic layer needs</th><th>Gates which work</th></tr></thead>
-    <tbody>
-      <tr><td><strong>Direct Transact</strong><br><span class="muted xsmall">Core API + Data Lake</span></td><td>Stable API endpoints and the YAML contract; data-lake schema and access for analytics, alerts, and audit storage</td><td>Access Layer wire-in, Co-pilot data reads, Inbox anomaly scans, Fraud &amp; Risk, audit trail</td></tr>
-      <tr><td><strong>Stackworkz</strong><br><span class="muted xsmall">Console + BFF + Portal</span></td><td>Console instrumentation (page state, component handles, action handlers); BFF permission model (the source of truth the agent mirrors); Umbraco docs/guides API (reference sourced from the DT YAML)</td><td>Co-pilot and Inbox in-console, Full Agentic generative UI, Developer Support docs</td></tr>
-      <tr><td><strong>Super Ultra</strong><br><span class="muted xsmall">Console design</span></td><td>The component library and interaction patterns the agent renders into</td><td>Full Agentic Experience generative UI</td></tr>
-      <tr><td><strong>TXN</strong><br><span class="muted xsmall">Product + data</span></td><td>CRM (Freshsales) as source of truth; AI permission config; brand guidelines; transaction volume over time</td><td>Internal Ops onboarding, permission scoping, Fraud &amp; Risk maturity</td></tr>
-      <tr><td><strong>Providers</strong><br><span class="muted xsmall">Anthropic / Google</span></td><td>A thin MCP-as-message passthrough is the confirmed A2A design; direct provider A2A is a later enhancement</td><td>External client agents (A2A)</td></tr>
-    </tbody>
+    <thead><tr><th>Stage</th><th class="num">Charge</th></tr></thead>
+    <tr><td>Sprint Zero (delivered)</td><td class="num">£17,500</td></tr>
+    <tr><td>Pilot, this proposal (Pilot Order)</td><td class="num">£54,187.50</td></tr>
+    <tr><td>Wire-in build to launch (2.5 months)</td><td class="num">£90,312.50</td></tr>
+    <tr><td>Phase 3 team, November to January (3 months)</td><td class="num">£108,375</td></tr>
+    <tr class="grand"><td>Total committed to version one</td><td class="num">£270,375</td></tr>
   </table>
-
-  <h3>Open items that affect scope or sequence</h3>
-  <div class="cards cols-2">
-    <div class="card"><div class="ct">API readiness</div><div class="cd">Around 50 endpoints in the current YAML; functional testing is underway (Postman and automation). Endpoint names and fields are still settling; the architecture is stable. This sets mock-API fidelity for the pilot and wire-in.</div></div>
-    <div class="card"><div class="ct">Infrastructure separation</div><div class="cd">TXN-to-DT separation: DT's build must be stood up in TXN's own Azure (Europe) before we can wire to the real API. The current critical-path dependency. MCP ownership is now settled (Stackworkz docs MCP, DT card-API MCP).</div></div>
-    <div class="card"><div class="ct">Data retention location</div><div class="cd">Data residency is settled (EU isolation, with prompt and log minimisation and redaction). The seven-year PCI retention location is the remaining open item with DT.</div></div>
-    <div class="card"><div class="ct">Open with DT</div><div class="cd">Reconciliation is now its own component (dual-use). Its scope, the sandbox API-key model (JWT versus long-lived), product-webhook timing (post-Visa-certification), and alerting ownership are being finalised with DT.</div></div>
-  </div></div>
-
-  <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 08</span></div>
-</section>
-
-<!-- ============ 10. TEAM ============ -->
-<section class="page">
-  <div class="fit" style="--s:0.9">
-  <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Agentic Layer &middot; Proposal v1.2</span></div>
-
-  <div class="sechead"><div class="bar"></div><div>
-    <div class="secno">09</div><h2 class="sect">Delivery team and ways of working</h2>
-  </div></div>
-
-  <p class="lead">A dedicated, full-time team of three carries the build and then the three-month Phase 3 at the same monthly fee. The same continuity from pilot to version one is what keeps the agentic layer coherent across surfaces.</p>
-
-  <div class="cards cols-3">
-    <div class="card"><div class="ct">AI Product Owner</div><div class="cd">Full-time. Owns scope, sequencing, acceptance, and the line to TXN's stakeholders and the other vendors. Holds the agentic vision across components.</div></div>
-    <div class="card"><div class="ct">AI Engineer</div><div class="cd">Full-time. Builds the agents, the MCP tool surface, the orchestration, evaluation, and guardrails.</div></div>
-    <div class="card"><div class="ct">Forward Deploy Engineer</div><div class="cd">Full-time. Wires the layer into the real APIs, Console, data lake, and Developer Portal as each dependency lands.</div></div>
-  </div>
-
-  <h3>Ways of working</h3>
-  <div class="cards cols-2">
-    <div class="card"><div class="ct">Cadence</div><div class="cd">Fortnightly demonstrations of working software to TXN stakeholders, with a standing weekly management update.</div></div>
-    <div class="card"><div class="ct">Quality</div><div class="cd">An evaluation harness with regression suites validates every prompt and agent change before it ships. Agent observability traces calls, latency, tokens, and quality.</div></div>
-  </div>
-
-  <div class="callout txn"><strong>One team, end to end.</strong> The same three people run the four-month build to launch, then continue through the three-month Phase 3 to January. No re-mobilisation, no knowledge loss, no ramp tax between phases.</div>
-
-  <h3>Standard day rates</h3>
-  <table>
-    <thead><tr><th>Role</th><th class="num">Standard day rate</th></tr></thead>
-    <tbody>
-      <tr><td>AI Product Owner</td><td class="num">£950</td></tr>
-      <tr><td>AI Engineer</td><td class="num">£850</td></tr>
-      <tr><td>Forward Deploy Engineer</td><td class="num">£750</td></tr>
-    </tbody>
-  </table>
-  <div class="callout"><strong>The retainer is the value.</strong> The retainer secures all three roles full-time for £36,125 per month. At standard day rates the same team is £2,550 per day, about £53,550 per month across 21 working days, so the retainer runs roughly a third below buying the equivalent days. Change requests outside the retainer are charged at these standard rates.</div></div>
-  <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 09</span></div>
-</section>
-
-<!-- ============ 11. INVESTMENT ============ -->
-<section class="page">
-  <div class="fit" style="--s:0.95">
-  <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Agentic Layer &middot; Proposal v1.2</span></div>
-
-  <div class="sechead"><div class="bar"></div><div>
-    <div class="secno">10</div><h2 class="sect">Investment</h2>
-  </div></div>
-
-  <p class="lead">The wire-in build to launch, the Phase 3 deliverables that remain by component, the three-month team retainer to January, and a fixed support and maintenance fee. The six-week pilot is contracted separately under the Pilot Order (£54,187.50). All figures exclusive of VAT.</p>
-
-  <h3>A &middot; Wire-in build to launch</h3>
-  <table>
-    <thead><tr><th>Component focus</th><th class="num">Allocation</th></tr></thead>
-    <tbody>
-      <tr><td>Full Agentic Experience (wired to production)</td><td class="num">£34,000</td></tr>
-      <tr><td>Agent Access Layer (mock to real API)</td><td class="num">£20,000</td></tr>
-      <tr><td>Co-pilot v1</td><td class="num">£16,000</td></tr>
-      <tr><td>Developer Support (for the end-July portal)</td><td class="num">£12,000</td></tr>
-      <tr><td>Alerts v1</td><td class="num">£8,312.50</td></tr>
-      <tr class="total"><td>Wire-in build total &middot; 2.5 months</td><td class="num">£90,312.50</td></tr>
-    </tbody>
-  </table>
-  <p class="small muted">The wire-in build after the pilot, delivered across roughly 2.5 months by the full-time team to the October launch, at the £36,125 monthly team rate. The pilot (Full Agentic showcase, Access Layer foundations, Internal Ops v1) is contracted separately under the Pilot Order and already underway. Allocations are indicative of where capacity lands, not fixed price-per-component.</p>
-
-  <h3>B &middot; Phase 3, the remaining deliverables</h3>
-  <p>After the October launch, Phase 3 runs as a committed three-month engagement across November, December, and January, taking the remaining deliverables to version one. They are set out in detail on the next two pages, component by component. TXN chooses which deliverables are in scope and in what order; the team works them in parallel, and a substantial share of the menu is deliverable within the three months. If kickoff moves, the window moves with it (at the latest, December to February).</p>
-  <div class="callout txn"><strong>How to buy the team.</strong> The full three-person team is <strong>£36,125 per month</strong>. That rate is the same whichever deliverables TXN selects: you are buying the team for the period, not a fixed scope. Phase 3 is a committed three months, November to January, <strong>£108,375 in total</strong>, invoiced monthly in advance.</div></div>
-
-  <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 10</span></div>
-</section>
-
-<!-- ============ 10b. WHAT'S LEFT TO V1 ============ -->
-<section class="page">
-  <div class="fit">
-  <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Agentic Layer &middot; Proposal v1.2</span></div>
-
-  <div class="sechead"><div class="bar"></div><div>
-    <div class="secno">10</div><h2 class="sect">B &middot; Phase 3 deliverables (November to January)</h2>
-  </div></div>
-
-  <p class="lead">The remaining deliverables after the October launch, by component, worked across the three-month Phase 3 to January. This is a menu: TXN picks what is in scope and in what order within the window. Sizes (S to XL) are indicative effort only.</p>
-
-  <h3>Agent Access Layer + A2A endpoint <span class="tag l">L</span></h3>
-  <ul>
-    <li>Complete the tool catalogue from the finalised Core API docs, wired onto the live API once multi-tenancy and the move to TXN's Azure Europe are done.</li>
-    <li>Product webhooks for change-impact triggers, which land late in DT's order, after Visa certification.</li>
-    <li>Productionise the A2A endpoint for clients' own external agents, and finalise the audit store schema, retention, and PII handling with DT.</li>
-  </ul>
-
-  <h3>Internal Ops Agents, full suite <span class="tag xl">XL</span></h3>
-  <ul>
-    <li>Extend onboarding beyond v1: full CIQ assembly, scheme project and BIN handling, and project-plan automation.</li>
-    <li>Settlement Reconciliation (promoted from Internal Ops on 18 June, dual-use internal and client-facing), after a data-capture session with DT.</li>
-    <li>Scale the knowledge engine: proactive mining on a schedule, self-healing docs in production, and deeper CRM automation across the customer lifecycle.</li>
-  </ul>
-
-  <h3>Co-pilot <span class="tag m">M</span></h3>
-  <ul>
-    <li>Impact preview before a change ("drop the limit from £200 to £100 and roughly 20% of recent transactions would decline"), powered by the data lake.</li>
-    <li>The stuck-user replay mechanism, once Stackworkz exposes Console instrumentation after the 9 July handover.</li>
-    <li>Deeper Console awareness and multi-page execution.</li>
-    <li>Data-lake impact analysis for merged journeys.</li>
-  </ul></div>
-
-  <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 10</span></div>
-</section>
-
-<!-- ============ 10c. WHAT'S LEFT TO V1, CONTINUED ============ -->
-<section class="page">
-  <div class="fit" style="--s:0.95">
-  <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Agentic Layer &middot; Proposal v1.2</span></div>
-
-  <div class="sechead"><div class="bar"></div><div>
-    <div class="secno">10</div><h2 class="sect">B &middot; Phase 3 deliverables, continued</h2>
-  </div></div>
-
-  <p class="lead">The remaining components. Fraud &amp; Risk Assist and Reconciliation are net-new, not started in the build phase; the rest deepen from their launch v1 to full version one.</p>
-
-  <h3>Agent Inbox &amp; advanced Alerts <span class="tag l">L</span></h3>
-  <ul>
-    <li>The Agent Inbox: a central queue where proactive items and agent-proposed plans land for review and approval.</li>
-    <li>Approvable plans, where an alert implies an action: the agent proposes it and executes on confirmation through the approval queue.</li>
-    <li>Notification routing to the user's preferred channel: in-Console, Slack, Teams, or email.</li>
-    <li>Data-lake anomaly detection at scale, plus cross-program benchmarking (needs multiple clients, contractual consent, and de-anonymisation safeguards).</li>
-    <li>Finalise the central alert store and the observability integration with DT.</li>
-  </ul>
-
-  <h3>Developer Support <span class="tag s">S</span></h3>
-  <ul>
-    <li>Sign-up and login, with the full four-level access gating deferred from the July portal.</li>
-    <li>An autogenerated LLMS.txt-style downloadable doc for external agents.</li>
-    <li>Voice support evaluation and a deeper lead-generation funnel.</li>
-  </ul>
-
-  <h3>Fraud &amp; Risk Assist v1 <span class="tag m">M</span> <span style="font-weight:400;color:#64748B;font-size:.82em;">net-new</span></h3>
-  <ul>
-    <li>Real-time enrichment and rules that advise, not decide.</li>
-    <li>Depends on the data lake and live transaction volume (the data flywheel); requirements still being collected.</li>
-  </ul>
-
-  <h3>Reconciliation <span class="tag s">TBC</span> <span style="font-weight:400;color:#64748B;font-size:.82em;">net-new</span></h3>
-  <ul>
-    <li>Auth and clearing settlement reconciliation, dual-use internal and client-facing.</li>
-    <li>Scoped after a capture session with DT; the data format is not yet known.</li>
-  </ul>
-
-  <div class="callout"><strong>A three-month phase, scope agreed together.</strong> Phase 3 runs November to January. The team works deliverables in parallel, so a substantial share of this menu is deliverable within the three months; we agree the selection and order together. The cost is £36,125 per month for the three months, £108,375 in total. If the start slips, the window shifts with it (at the latest, December to February).</div></div>
-
-  <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 10</span></div>
-</section>
-
-<!-- ============ 11b. INVESTMENT cont: payment, support fee, TCV ============ -->
-<section class="page">
-  <div class="fit">
-  <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Agentic Layer &middot; Proposal v1.2</span></div>
-
-  <div class="sechead"><div class="bar"></div><div>
-    <div class="secno">10</div><h2 class="sect">Investment, continued</h2>
-  </div></div>
-
-  <h3>C &middot; Payment schedule</h3>
-  <table>
-    <thead><tr><th>Tranche</th><th>Trigger</th><th class="num">Amount</th></tr></thead>
-    <tbody>
-      <tr><td>Sprint Zero</td><td>Delivered (invoiced)</td><td class="num">£17,500</td></tr>
-      <tr><td>Pilot</td><td>Under the Pilot Order: 50% on signature, 50% on completion</td><td class="num">£54,187.50</td></tr>
-      <tr><td>Wire-in M1</td><td>On commencement</td><td class="num">£36,125</td></tr>
-      <tr><td>Wire-in M2</td><td>Month 2</td><td class="num">£36,125</td></tr>
-      <tr><td>Wire-in M3</td><td>Month 3, part month to launch</td><td class="num">£18,062.50</td></tr>
-      <tr class="total"><td colspan="2">Wire-in build total &middot; 2.5 months</td><td class="num">£90,312.50</td></tr>
-      <tr><td>Phase 3 M1</td><td>November</td><td class="num">£36,125</td></tr>
-      <tr><td>Phase 3 M2</td><td>December</td><td class="num">£36,125</td></tr>
-      <tr><td>Phase 3 M3</td><td>January</td><td class="num">£36,125</td></tr>
-      <tr class="total"><td colspan="2">Phase 3 total &middot; 3 months</td><td class="num">£108,375</td></tr>
-    </tbody>
-  </table>
-  <p class="small muted">Sprint Zero is delivered and the pilot is contracted separately under the Pilot Order. This proposal commits the wire-in build and Phase 3, invoiced monthly in advance; the final wire-in month is pro-rated. If kickoff moves, the milestone months shift with it (Phase 3 at the latest December to February); the amounts do not change.</p></div>
-
-  <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 10</span></div>
-</section>
-
-<!-- ============ 11c. INVESTMENT cont: support fee, TCV ============ -->
-<section class="page">
-  <div class="fit">
-  <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Agentic Layer &middot; Proposal v1.2</span></div>
-
-  <div class="sechead"><div class="bar"></div><div>
-    <div class="secno">10</div><h2 class="sect">Investment, continued</h2>
-  </div></div>
-
-  <h3>D &middot; Support &amp; Maintenance fee</h3>
-  <p>After the build and the three Phase 3 months, a fixed monthly support and maintenance fee covers the run, monitoring, evaluation upkeep, and the support and continuous-improvement effort that keeps the agentic layer current as the platform evolves. AI model consumption is <strong>not charged by Novosapien</strong>: it runs on TXN's own provider accounts.</p>
-  <table>
-    <thead><tr><th>Support &amp; Maintenance</th><th class="num">Monthly</th></tr></thead>
-    <tbody>
-      <tr><td>Managed support &amp; maintenance (fixed)</td><td class="num">£4,250</td></tr>
-      <tr class="sub-row"><td>Indicative annual value</td><td class="num">£51,000</td></tr>
-    </tbody>
-  </table>
-  <p class="small muted">Includes Agent Ops monitoring (model usage, cost tracking, agent performance, anomaly detection across the fleet), up to 20 hours of support and enhancement per month, and the service levels set out below. AI consumption is billed to TXN directly by the provider, not by Novosapien.</p>
-
-  <h3>E &middot; Total committed value</h3>
-  <table>
-    <tbody>
-      <tr><td>Sprint Zero (delivered)</td><td class="num">£17,500</td></tr>
-      <tr><td>Pilot (Pilot Order, underway)</td><td class="num">£54,187.50</td></tr>
-      <tr><td>Wire-in build to launch (2.5 months)</td><td class="num">£90,312.50</td></tr>
-      <tr><td>Phase 3 team, November to January (3 months)</td><td class="num">£108,375</td></tr>
-      <tr class="grand"><td>Total committed to version one</td><td class="num">£270,375</td></tr>
-      <tr><td>Support &amp; Maintenance, after Phase 3</td><td class="num">£4,250 / mo</td></tr>
-    </tbody>
-  </table>
-  <p class="small muted">Total committed cost: £270,375, unchanged. It comprises Sprint Zero (delivered), the six-week pilot (contracted separately under the Pilot Order and already underway), the 2.5-month wire-in build to the October launch, and the three Phase 3 months to January, all at the £36,125 monthly team rate. Separating the pilot does not change the total; it lets the pilot start now. Support and maintenance then runs at £4,250 per month.</p></div>
-
-  <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 10</span></div>
-</section>
-
-<!-- ============ 10c. SERVICE LEVELS / SLA ============ -->
-<section class="page">
-  <div class="fit" style="--s:0.82">
-  <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Agentic Layer &middot; Proposal v1.2</span></div>
-
-  <div class="sechead"><div class="bar"></div><div>
-    <div class="secno">10</div><h2 class="sect">Service levels and support</h2>
-  </div></div>
-
-  <p class="lead">The £4,250 monthly fee is a managed service, not a break-fix contract. It runs the agentic layer, keeps it healthy as TXN's API and documentation change, and responds to issues against defined targets.</p>
-
-  <h3>What the fee covers</h3>
-  <div class="cards cols-2">
-    <div class="card"><div class="ct">Run &amp; monitor</div><div class="cd">The Agent Ops platform watches model usage, cost, agent performance, and anomalies across the full fleet, with proactive alerting before issues reach users.</div></div>
-    <div class="card"><div class="ct">Keep current</div><div class="cd">Evaluation and regression upkeep as the Core API, data lake schema, and documentation change. The self-healing knowledge loop keeps answers accurate.</div></div>
-    <div class="card"><div class="ct">Support &amp; improve</div><div class="cd">Up to 20 hours per month of support and continuous improvement: prompt tuning, guardrail adjustments, and small enhancements.</div></div>
-    <div class="card"><div class="ct">Incident response</div><div class="cd">Triage, workaround, and resolution against the severity targets below, with a single named point of contact.</div></div>
-  </div>
-
-  <h3>Service level targets</h3>
-  <table>
-    <thead><tr><th>Severity</th><th>Definition</th><th class="num">Response</th><th class="num">Resolution target</th></tr></thead>
-    <tbody>
-      <tr><td><strong>P1 Critical</strong></td><td>Agentic layer unavailable across a surface, or an agent taking unsafe actions. Kill switch engaged.</td><td class="num">15 minutes</td><td class="num">Workaround within 4 hours</td></tr>
-      <tr><td><strong>P2 High</strong></td><td>A major component degraded for multiple clients with no workaround (e.g. Co-pilot or Inbox failing).</td><td class="num">4 hours</td><td class="num">1 business day</td></tr>
-      <tr><td><strong>P3 Medium</strong></td><td>A single feature impaired; a workaround exists.</td><td class="num">1 business day</td><td class="num">5 business days</td></tr>
-      <tr><td><strong>P4 Low</strong></td><td>Minor or cosmetic issue, or an enhancement request.</td><td class="num">2 business days</td><td class="num">Next release cycle</td></tr>
-    </tbody>
-  </table>
+  <div class="callout"><strong>The pilot plus the wire-in equals the original build.</strong> £54,187.50 + £90,312.50 = £144,500, the four-month build phase in the main proposal. Pulling the pilot out changes the paperwork and the timing, not the total. The full engagement remains £270,375.</div>
 
   <div class="cards cols-2">
-    <div class="card"><div class="ct">Service hours</div><div class="cd">09:00 to 17:00 UK, Monday to Friday, excluding public holidays. Response and resolution targets apply within service hours; outside them, P1 incidents are handled on a best-effort basis.</div></div>
-    <div class="card"><div class="ct">Change requests</div><div class="cd">Work beyond the monthly support allocation, or any new scope, is scoped as a change request and charged at our standard day rates (see section 9).</div></div>
+    <div class="card"><div class="ct">Everything built belongs to TXN</div><div class="cd">Under the Pilot Order, Novosapien assigns all intellectual property in the pilot deliverables to TXN as it is created, with full title guarantee, and not conditional on payment. Novosapien keeps only its own reusable frameworks and tooling.</div></div>
+    <div class="card"><div class="ct">It rolls into the MSA</div><div class="cd">On signature of the MSA, the pilot is adopted as the completed Statement of Work 1, its £54,187.50 reconciled in the MSA charges. Nothing is rebuilt or re-charged; the wider engagement continues from a proven foundation.</div></div>
   </div>
 
-  <div class="callout flag"><strong>Newly defined for TXN.</strong> The severity-based targets above extend our existing managed-support model (Agent Ops monitoring, 09:00 to 17:00 service hours, change requests at a day rate) into a formal SLA appropriate for a payments platform. The targets are a proposed baseline and can be tuned, including SLA credits, before signature.</div></div>
-
-  <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 10</span></div>
+  <h3>How to proceed</h3>
+  <ul>
+    <li>Review this proposal alongside the <strong>Pilot Order</strong>, the short standalone contract that governs the six weeks.</li>
+    <li>Sign the Pilot Order to authorise the pilot; it does not depend on the MSA and can start immediately.</li>
+    <li>Kickoff week commencing 27 July 2026. The wider engagement (wire-in build and Phase 3) is set out in the main agentic-layer proposal and papered under the MSA on your return.</li>
+  </ul>
+    </div>
+  <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 4</span></div>
 </section>
-
-<!-- ============ 12. TERMS + ACCEPTANCE ============ -->
-<section class="page">
-  <div class="fit" style="--s:0.85">
-  <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Agentic Layer &middot; Proposal v1.2</span></div>
-
-  <div class="sechead"><div class="bar"></div><div>
-    <div class="secno">11</div><h2 class="sect">Commercial terms and acceptance</h2>
-  </div></div>
-
-  <table>
-    <tbody>
-      <tr><td style="width:32%"><strong>Validity</strong></td><td>14 days from issue.</td></tr>
-      <tr><td><strong>VAT</strong></td><td>All amounts exclusive of VAT.</td></tr>
-      <tr><td><strong>Pilot</strong></td><td>Contracted separately under the Pilot Order: £54,187.50, 50% on signature and 50% on completion. On signature of this engagement's MSA the pilot is carried in as the completed Statement of Work 1.</td></tr>
-      <tr><td><strong>Wire-in build payment</strong></td><td>£90,312.50 across roughly 2.5 months, invoiced monthly in advance at £36,125, the final month pro-rated.</td></tr>
-      <tr><td><strong>Phase 3 retainer</strong></td><td>£36,125 per month for the committed three-month Phase 3, November to January (shifts with kickoff, at latest December to February), to deliver the agreed Phase 3 scope (section 10B). Invoiced monthly in advance.</td></tr>
-      <tr><td><strong>Support &amp; Maintenance</strong></td><td>Fixed fee of £4,250 per month, commencing once Phase 3 ends, against the service levels in section 10. Invoiced monthly in advance. Change requests beyond the monthly allocation are charged at our standard day rates (section 10).</td></tr>
-      <tr><td><strong>AI consumption &amp; infrastructure</strong></td><td>AI model usage runs on TXN's own provider accounts and is not charged by Novosapien. Cloud, vector store, and observability hosting are excluded, provisioned in TXN's own multi-region Azure (Europe) or by Novosapien with permission.</td></tr>
-      <tr><td><strong>IP</strong></td><td>TXN owns all intellectual property in the Deliverables: the components, agents, source code, models, prompts, configurations, and documentation Novosapien builds to meet the requirements agreed in Sprint Zero (the user stories, component and sub-component specifications, and acceptance criteria recorded in the TXN requirements set). Novosapien assigns that work product to TXN on creation, not contingent on final payment, and hands over the complete source, so TXN can operate, modify, and evolve the capability independently.</td></tr>
-      <tr><td><strong>Late payment</strong></td><td>Interest at 4% above the Bank of England base rate.</td></tr>
-      <tr><td><strong>Liability</strong></td><td>Capped at total fees paid. No indirect or consequential damages, except confidentiality or wilful misconduct.</td></tr>
-      <tr><td><strong>Confidentiality</strong></td><td>Two-year survival post-termination.</td></tr>
-      <tr><td><strong>Termination</strong></td><td>30 days' notice. Deliverables handed over in a deployable, documented state.</td></tr>
-      <tr><td><strong>Warranties</strong></td><td>Reasonable skill and care. The architecture is designed to support and not impede TXN's PCI-DSS, GDPR, and FCA obligations; TXN owns its certifications and compliance frameworks.</td></tr>
-      <tr><td><strong>Governing law</strong></td><td>England and Wales.</td></tr>
-    </tbody>
-  </table></div>
-
-  <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 11</span></div>
-</section>
-
-<!-- ============ 12b. ACCEPTANCE ============ -->
-<section class="page">
-  <div class="fit">
-  <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Agentic Layer &middot; Proposal v1.2</span></div>
-
-  <div class="sechead"><div class="bar"></div><div>
-    <div class="secno">11</div><h2 class="sect">Acceptance</h2>
-  </div></div>
-
-  <p class="lead">Countersignature below authorises the wider engagement, the wire-in build and Phase 3, on the terms set out in section 11 and the commercial model in section 10. The six-week pilot is authorised separately under the Pilot Order and already underway. All amounts exclusive of VAT.</p>
-
-  <div class="sign-grid">
-    <div><strong>For TXN</strong><div class="sign-box">Name &middot; Ian Johnson</div><div class="sign-box">Signature</div><div class="sign-box">Date</div></div>
-    <div><strong>For Novosapien</strong><div class="sign-box">Name</div><div class="sign-box">Signature</div><div class="sign-box">Date</div></div>
-  </div></div>
-
-  <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 11</span></div>
-</section>
-
-<!-- ============ CLOSING ============ -->
 <section class="page dark closing-hero">
   <div style="display:flex; justify-content:space-between; align-items:center;">
     <span style="display:inline-flex;align-items:center;gap:8px;"><span class="brandmark" style="width:1.25rem;height:1.25rem;"></span><span class="wordmark" style="font-size:1.1rem; color:#fff;">novo<span class="sp">sapien</span></span></span>
@@ -1031,16 +334,15 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
   </div>
   <div style="margin-top:40mm;">
     <span class="kicker">The next step</span>
-    <h1 class="headline" style="color:#fff; max-width:18ch;">Ship the difference <span class="accent">before the window closes.</span></h1>
+    <h1 class="headline" style="color:#fff; max-width:16ch;">Prove it in six weeks. <span class="accent">Start now.</span></h1>
     <p class="lead" style="color:var(--ns-dark-muted); max-width:58ch; margin-top:1.2rem;">
-      The six-week pilot is already underway under the Pilot Order. Countersign to commence the wider engagement: the launch-critical layer wired into production for October, then a three-month Phase 3, November to January, taking the remaining deliverables to version one on a scope agreed with you.
+      Sign the companion Pilot Order to start the pilot on 27 July, on your terms and with the IP yours from day one. The wider engagement follows under the MSA, from a foundation already proven.
     </p>
   </div>
   <div class="cover-foot">
     <div class="divider" style="background:var(--ns-dark-border);"></div>
-    <p class="muted" style="font-size:.8rem;">Novosapien &middot; Prepared for Ian Johnson, TXN &middot; 22 July 2026 &middot; v1.2 &middot; Commercial in confidence</p>
+    <p class="muted" style="font-size:.8rem;">Novosapien &middot; Prepared for Ian Johnson, TXN &middot; 22 July 2026 &middot; v1.0 &middot; Commercial in confidence</p>
   </div>
 </section>
-
 </body>
 </html>
