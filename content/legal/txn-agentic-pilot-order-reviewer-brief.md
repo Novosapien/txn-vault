@@ -1,6 +1,6 @@
 # Reviewer Brief: Agentic Pilot Order (Novosapien & TXN)
 
-**Prepared by:** Novosapien commercial-lawyer skill · **Date:** 22 July 2026 · **Draft version:** v0.1
+**Prepared by:** Novosapien commercial-lawyer skill · **Date:** 22 July 2026 · **Draft version:** v0.2
 **Instrument:** Standalone short-form Order (interim, self-sufficient; not contingent on the MSA)
 **Parties:** Novosapien Global Ltd and TXN Global Limited
 **Governing law:** England and Wales
@@ -24,7 +24,7 @@ Novosapien delivers a six-week agentic pilot (Full Agentic Experience showcase, 
 | Payment (cl. 2.2) | 50% on signature, 50% on completion; each invoice payable on issue; 6% over base late interest; suspend on 5 Business Days' notice for overdue undisputed sums. | Confirmed commercials; interest and suspension mirror MSA §7.4. |
 | Acceptance (cl. 1.2) | Completion on demonstration + documented hand-over; 5 Business Day window for TXN to reject in writing with reasons for a material failure; deemed accepted otherwise. | Light, fair, and fast for a six-week demonstrator; avoids a payment stalling on silence. |
 | AI output (cl. 6.1) | Provided with reasonable skill and care; not warranted error-free; the pilot is a demonstration on simulated tools, not a production system. | Honest about probabilistic/agentic output; consistent with MSA §9.1. |
-| Data protection (cl. 5) | Prefer synthetic/test data; cardholder data out of scope; for any real personal data, Novosapien = processor on TXN's documented instructions and the parties adopt the MSA Schedule 3 (Art 28) terms for the pilot; no training on TXN data. | Covers the pilot either way. See open question Q1. |
+| Data protection (cl. 5) | **Confirmed synthetic/test data only; no real personal data; cardholder data out of scope.** Tight fallback: if the parties later introduce real personal data, they first agree processor terms adopting MSA Schedule 3. No training on TXN data. | Brett confirmed 22 July the pilot uses synthetic data, so clause 5 is simplified and the Schedule 3 dependency no longer blocks signature. |
 
 ## 4. Assumptions made
 
@@ -33,7 +33,8 @@ Novosapien delivers a six-week agentic pilot (Full Agentic Experience showcase, 
 - Both parties are businesses, not consumers.
 - Scope reflects the proposal v1.1 Phase 1 and the vault as at 22 July 2026.
 - The £36,125/month build rate and the 50/50 split are as confirmed by Brett.
-- Start date is a write-in (target week commencing 21 July 2026); "open for acceptance until 1 August 2026" is a placeholder to be aligned to Ian's availability before he leaves.
+- **Start date confirmed as 27 July 2026** (six weeks, ending on or around 7 September 2026). Ian signs before his leave (Friday 24 July COB); the Order is open for acceptance until 1 August 2026 as an outer bound.
+- **Novosapien signatory: Brett StClair, Co-Founder.** TXN signatory: Ian Johnson, CEO. Both parties accept electronic signature (clause 9).
 
 ## 5. Negotiable points (where Novosapien can move)
 
@@ -44,17 +45,16 @@ Novosapien delivers a six-week agentic pilot (Full Agentic Experience showcase, 
 
 ## 6. Risks and things to watch
 
-- **Data-processing (top risk).** The proposal says "synthetic data", but Internal Ops v1 (meeting capture, customer onboarding) can involve real personal data. If it does during the pilot, the Schedule 3 hook in clause 5 must be backed by the actual Schedule 3 text in the form last exchanged; confirm that text is settled enough to incorporate. Cross-border (Cyprus/EU + UK) transfer terms live in that schedule.
-- **Schedule 3 dependency.** Clause 5.2 incorporates the MSA's Schedule 3 "in the form last exchanged". If that schedule is still moving, either freeze the version referenced or append a short interim processor annex to the Order so it is fully self-contained.
+- **Data-processing: resolved.** Brett confirmed (22 July) the pilot uses synthetic/test data only, so clause 5 states no real personal data and cardholder data is out of scope. The Schedule 3 dependency is now only a fallback for a future change, not a blocker to signature. If that "as far as I know" assumption changes before or during the pilot, the fallback in clause 5.2 applies and the parties agree processor terms first.
 - **MSA divergence.** The drafted MSA still recites the 17 June proposal and a £144,500 build over four months. When the pilot is pulled out, the MSA's Schedule 1 (SoW 1) and Schedule 2 (Charges) need updating so SoW 1 = the pilot (delivered under this Order) and the build charge reflects the remaining wire-in (£90,312.50). That is a separate edit, not part of this Order, but flagged so the two documents stay consistent.
 - **Entity number.** TXN Global Limited's Cyprus company number is blank in both this Order and the MSA; fill before signature.
 
 ## 7. Open questions for counsel / Brett
 
-1. **Real personal data in the pilot?** Will Internal Ops v1 process any real personal data (CRM records, meeting attendees, prospect onboarding) in the six weeks, or synthetic/test only? This decides whether clause 5 stays as drafted (processor + Schedule 3) or simplifies to synthetic-only.
-2. **Schedule 3 status.** Is the MSA Schedule 3 text stable enough to incorporate by reference for the pilot, or should we append a short interim processor annex here instead?
-3. **Acceptance / validity dates.** Confirm the start date and the "open for acceptance until" date against Ian's leave (Friday 24 July COB), so he can sign in time.
-4. **Signatory for Novosapien.** Who signs for Novosapien Global Ltd (Brett St Clair / George Westbrook), and is wet-ink or e-signature preferred (e-signature is currently accepted in clause 9)?
+Resolved since v0.1: synthetic-data-only (Q1), start date 27 July 2026 (Q3), Novosapien signatory Brett StClair (Q4), both parties accept e-signature. Remaining:
+
+1. **TXN Cyprus company number.** Left as a fill-in line at Brett's instruction; complete before execution (also blank in the MSA).
+2. **MSA reconciliation (not a blocker for the pilot, but do before the MSA is signed).** Update the MSA's SoW 1 and Schedule 2 so SoW 1 = the pilot delivered under this Order, and the build charge reflects the remaining wire-in (£90,312.50, from £144,500).
 
 ## 8. What is grounded vs assumed on scope
 
