@@ -13,6 +13,8 @@ sources:
 > **Owner:** _TBC_
 > **Sources:** [[01-06-2026-component-1-Agent-Access-Layer]]
 
+> **28-07 update ([[2026-07-28-agentic-pilot-kickoff]]):** Scoping is deliberately deferred in the pilot: v1 MCP is all-access monolith; the access step ("given a user and their access levels, which tools do we turn off") comes after the full agentic experience is working end-to-end.
+
 ---
 
 ## 1. What Does This Sub-Component Do?

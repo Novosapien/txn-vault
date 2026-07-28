@@ -55,3 +55,10 @@ Partner-supplied specs and definitions held in the vault for context (these are 
 - **Go-to-market: September.** **First client onboarded: December.** **DT completes its work: October** — Ian flagged the October DT date complicates end-to-end testing (full UX eval needs the Console + AI finished first).
 - Developer-portal core **end-July**, then **August** iteration via standups → **September** launch (refines the "early October" line above).
 - **Marketing messaging is gated** on finalising the "AI story" scope and the September-GTM vs December-operational deliverables.
+
+**Update (28-07, [[2026-07-28-agentic-pilot-kickoff]]):**
+
+- **The Console is renamed the "Control Center."**
+- **Stackworkz** have handed over the **knowledge hub** (DT code review in progress, some items outstanding) and are now scoping the Control Center: same frame-first approach, waiting on DT APIs before wiring connections.
+- The **Super Ultra prototype is final**: the two-week extension ended and nothing newer is coming; Novosapien's pilot replica is built from it (Michael to confirm it matches the final version).
+- **"Sunpox" access is outstanding** _(name as transcribed; possibly a transcription error)_, blocking knowledge-hub sign-in, so testing is look-and-feel only for now. Target: knowledge hub done for the **September launch**; the Control Center has more breathing room.
