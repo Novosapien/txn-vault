@@ -14,6 +14,8 @@ sources:
 > **Owner:** _TBC_
 > **Sources:** [[ux-ai-guided-product-onboarding]] (behavioural journey), [[04-06-2026-component-3-co-pilot]] (deep-dive: CRM handoff, admin/user provisioning, environment gating, field-collapse)
 
+> **28-07 pilot kickoff ([[2026-07-28-agentic-pilot-kickoff]]):** Confirmed as the **first pilot build slice**: a working onboarding flow inside the agentic chat experience by end of week, with the look and feel, an LLM attached, and one workflow. Runs against the mock API (randomised responses so it never repeats identically); real APIs later via a URL flip.
+
 ---
 
 ## 1. What Does This Sub-Component Do?

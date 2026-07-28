@@ -15,6 +15,8 @@ sources:
 > **Owner:** _TBC_
 > **Sources:** [[29-05-2026-stackworkz-meeting]] (AG-UI design, ~00:16–00:25), [[13-05-2026-txn-vision-meeting]] (trust Concept 3 / A2A), [[05-06-2026-component-4-full-agentic-experience]] (dedicated deep-dive)
 
+> **28-07 pilot kickoff ([[2026-07-28-agentic-pilot-kickoff]]):** The pilot's build base is a **React replica of the Control Center** (the renamed Console), built from the final Super Ultra prototype and deployed on Novosapien infrastructure with the link published to the vault. The agentic experience renders the replica's actual components in-chat (canvas on the right-hand side, components squashed to fit), so skills/SOPs are built knowing the real application flows. Review focus is the **chat/agent space only**; the replica's other pages are scaffolding. If Stackworkz's build diverges, porting the UI is days, not weeks. Entry point still to be decided: a slot in the sidebar navigation with a name and iconography, opening into the Claude-style experience.
+
 ---
 
 ## 1. What Does This Component Do?

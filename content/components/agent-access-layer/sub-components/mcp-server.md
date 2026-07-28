@@ -13,6 +13,8 @@ sources:
 > **Owner:** _TBC_
 > **Sources:** [[01-06-2026-component-1-Agent-Access-Layer]]
 
+> **28-07 update ([[2026-07-28-agentic-pilot-kickoff]]):** Pilot v1 confirmed as the **monolith**: all tools exposed, no per-user gating initially, built over the mock DT API; gating added once the full agentic experience is testable.
+
 ---
 
 ## 1. What Does This Sub-Component Do?
