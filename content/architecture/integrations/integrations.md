@@ -21,7 +21,7 @@ _Surfaced in the [[29-05-2026-stackworkz-meeting]] (ways-of-working call between
 | Service | Purpose | Status | Notes |
 |---------|---------|--------|-------|
 | Umbraco (headless) CMS | Source of Developer Portal docs/content; exposes APIs | Available | Stackworkz can expose docs via API for AI search — feeds [[developer-support]]. Content model defined by SuperUltra — see [[umbraco-guide-content-model]] + [[umbraco-changelog-content-model]] |
-| DT Core API | Card issuing + transaction processing; the tool surface agents act on | In build (DT) | Wrapped by [[agent-access-layer]]. OpenAPI spec: [[txn-api-reference]] (`txn-api-spec.yaml`) |
+| DT Core API | Card issuing + transaction processing; the tool surface agents act on | In build (DT) | Wrapped by [[agent-access-layer]]. OpenAPI specs: [[txn-api-reference]] (`txn-api-spec-external.yaml` + `txn-api-spec-internal.yaml`, July split; latest going forward) |
 | Data Lake (DT) | Analytics/insight source for AI recommendations + alerts | Planned (DT) | Access pattern for AI **open** — see below |
 
 ## Reference artifacts
@@ -30,7 +30,7 @@ Partner-supplied specs and definitions held in the vault for context (these are 
 
 | Artifact | From | What it is | Link |
 |----------|------|-----------|------|
-| TXN Global API (OpenAPI v1) | Direct Transact | The "DT YAML" the portal API reference renders from; grounds the MCP/sandbox. 51 endpoints, ~464 schemas | [[txn-api-reference]] |
+| TXN Global API (OpenAPI v1) | Direct Transact | The "DT YAML" the portal API reference renders from; grounds the MCP/sandbox and the pilot mock API. **Now split** (July specs, latest): **external** (30 paths, 99 ops, ~325 schemas) + **internal** (7 paths, 23 ops, ~71 schemas); paths pluralised. Supersedes the May single spec | [[txn-api-reference]] |
 | Umbraco Guide content model | SuperUltra | Content blocks for Developer Portal guide pages | [[umbraco-guide-content-model]] |
 | Umbraco Changelog content model | SuperUltra | Content types for the Changelog + What's Coming sections | [[umbraco-changelog-content-model]] |
 | Workstream 1 & 2 architecture (draft) | Michael | Proposed Azure multi-region deployment | [[workstream-1-2-architecture]] |
