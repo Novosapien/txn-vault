@@ -3,6 +3,7 @@ component: "[[developer-support]]"
 status: Defined
 sources:
   - "[[09-06-2026-developer-support]]"
+description: "Sub-component spec for the AI layer on the try-it-now sandbox — plain-language explanations of failed requests and optional pre-send validation"
 ---
 
 # TXN — Developer Support: Sandbox Assist

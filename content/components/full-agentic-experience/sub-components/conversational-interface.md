@@ -4,6 +4,7 @@ status: Defined
 sources:
   - "[[05-06-2026-component-4-full-agentic-experience]]"
   - "[[29-05-2026-stackworkz-meeting]]"
+description: "Sub-component spec for the chat front door (TXN's Claude) — text or voice intent, confirm-before-act, bucketed progress, and inline rendered UI"
 ---
 
 # TXN — Full Agentic: Conversational Interface

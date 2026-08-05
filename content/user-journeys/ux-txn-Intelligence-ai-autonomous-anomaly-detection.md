@@ -3,6 +3,7 @@ component: "[[agent-inbox-alerts]]"
 type: user-journey
 author: M.Moores
 status: imported
+description: "UX journey — autonomous AI monitoring of transaction behaviour across programmes, scoring deviations and raising anomaly alerts with contextual insight"
 ---
 
 # TXN Intelligence AI Autonomous Anomaly Detection v1.0

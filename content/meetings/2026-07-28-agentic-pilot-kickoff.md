@@ -15,6 +15,7 @@ extracted-to:
   - "[[guided-onboarding]]"
   - "[[integrations]]"
   - "[[open-questions]]"
+description: "Transcript and analysis of the 2026-07-28 TXN agentic-pilot kickoff — mock-API-first build order, Control Center React replica, onboarding as the first slice"
 ---
 
 # TXN Agentic AI Pilot Kickoff (2026-07-28)

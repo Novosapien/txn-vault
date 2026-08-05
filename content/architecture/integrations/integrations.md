@@ -1,3 +1,7 @@
+---
+description: "Register of TXN's build partners, third-party integrations and reference artifacts, with open infra questions and the shifting delivery timeline"
+---
+
 # TXN — Integrations
 
 > **Architecture:** [[architecture]]

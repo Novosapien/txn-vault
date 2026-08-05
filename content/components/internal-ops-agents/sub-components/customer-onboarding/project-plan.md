@@ -3,6 +3,7 @@ component: "[[customer-onboarding]]"
 status: Defined
 sources:
   - "[[10-06-2026-developer-support-and-internal-ops]]"
+description: "Leaf spec for the onboarding project plan — milestones anchored on real lead times (Visa ~12 weeks), explicit desired-vs-achievable gaps, re-baseline on drift"
 ---
 
 # TXN — Onboarding: Project Plan

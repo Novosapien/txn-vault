@@ -1,5 +1,6 @@
 ---
 status: Living
+description: "Central register of all 49 open questions — type, area, status and evolving answers per row; the source table for the branded HTML gap register"
 ---
 
 # TXN — Open Questions

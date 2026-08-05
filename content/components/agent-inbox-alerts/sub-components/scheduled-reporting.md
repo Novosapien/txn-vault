@@ -5,6 +5,7 @@ sources:
   - "[[02-06-2026-component-2-alerts-agent-inbox]]"
   - "[[ux-ai-user-stories-reporting]]"
   - "[[ux-entity-performance-insights]]"
+description: "Spec for cadence and on-demand NL reporting — driver-first program summaries, permission-scoped custom reports, and reusable templates re-run without AI"
 ---
 
 # TXN — Scheduled & On-Demand Reporting

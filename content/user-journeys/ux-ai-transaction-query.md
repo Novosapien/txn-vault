@@ -3,6 +3,7 @@ component: "[[a2a-endpoint]]"
 type: user-journey
 author: M.Moores
 status: imported
+description: "UX journey — a client-owned AI reads TXN transaction and entity data through MCP governance to answer cardholder questions such as decline reasons"
 ---
 
 # AI Transaction Query v1.0

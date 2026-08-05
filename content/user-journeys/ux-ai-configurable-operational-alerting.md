@@ -3,6 +3,7 @@ component: "[[agent-inbox-alerts]]"
 type: user-journey
 author: M.Moores
 status: imported
+description: "UX journey — users define monitoring conditions in natural language; the platform converts them to rules and raises severity-scored Console alerts"
 ---
 
 # AI Configurable Operational Alerting v1.0

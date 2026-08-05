@@ -1,3 +1,7 @@
+---
+description: "Transcript of the 2026-06-11 TXN hold session — gap-analysis register walkthrough: audit-log storage, AI permissions, DT data lake design, PII in chat logs"
+---
+
 **
 
 Jun 11, 2026

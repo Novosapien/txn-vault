@@ -3,6 +3,7 @@ component: "[[agent-inbox-alerts]]"
 status: Defined
 sources:
   - "[[02-06-2026-component-2-alerts-agent-inbox]]"
+description: "Spec for the alert delivery last mile — routing composed items to the Stackworkz central hub, channel preferences and in-context dashboard-dot surfacing"
 ---
 
 # TXN — Notification Routing

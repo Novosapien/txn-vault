@@ -4,6 +4,7 @@ status: Defined
 sources:
   - "[[02-06-2026-component-2-alerts-agent-inbox]]"
   - "[[01-06-2026-component-1-Agent-Access-Layer]]"
+description: "Sub-component spec for the triggered AI analysis engine — orchestrator plus specialist sub-agents that explain cause, drivers and predictive/diagnostic impact"
 ---
 
 # TXN — AI Analysis & Impact

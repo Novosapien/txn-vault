@@ -1,3 +1,7 @@
+---
+description: "Transcript of the 2026-06-10 TXN call — documentation hosting, AI-driven doc updates, persona simulations, and internal ops from due diligence to the CIQ form"
+---
+
 **
 
 Jun 10, 2026

@@ -3,6 +3,7 @@ component: "[[co-pilot]]"
 type: user-journey
 author: M.Moores
 status: imported
+description: "UX journey — real-time AI validation of programme configuration changes: conflict detection, impact analysis, recommended fixes, blocking critical issues"
 ---
 
 # AI Configuration Validation v1.0

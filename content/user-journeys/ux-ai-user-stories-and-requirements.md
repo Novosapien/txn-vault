@@ -3,6 +3,7 @@ component: "[[developer-support]]"
 type: user-journey
 author: M.Moores
 status: imported
+description: "UX journey — conversational AI assistance across Console, Developer Portal and corporate website, answering questions from authorised TXN documentation"
 ---
 
 # AI User Stories And Requirements

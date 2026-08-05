@@ -1,3 +1,7 @@
+---
+description: "The component map for Novosapien's AI deliverables in TXN — status table for all eight components, parked items, and the out-of-scope partner-built surfaces"
+---
+
 # TXN — Components
 
 > **Vision:** [[vision]]

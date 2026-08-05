@@ -1,3 +1,7 @@
+---
+description: "Reviewer brief for the standalone six-week Pilot Order v0.2 — £54,187.50, IP assigned to TXN on creation, synthetic data only, and pre-signature gaps"
+---
+
 # Reviewer Brief: Agentic Pilot Order (Novosapien & TXN)
 
 **Prepared by:** Novosapien commercial-lawyer skill · **Date:** 22 July 2026 · **Draft version:** v0.2

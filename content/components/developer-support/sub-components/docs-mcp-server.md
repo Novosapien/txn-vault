@@ -4,6 +4,7 @@ status: Defined
 sources:
   - "[[09-06-2026-developer-support]]"
   - "[[ux-txn-intelligence-enhanced-documentation-discovery]]"
+description: "Sub-component spec for the hosted docs MCP server — a developer's own agent queries TXN docs (L1) or tests the sandbox (L2), API-key gated per level"
 ---
 
 # TXN — Developer Support: Docs MCP Server (hosted)

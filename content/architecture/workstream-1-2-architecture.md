@@ -9,6 +9,7 @@ artifact: "workstream-1-2-architecture.png"
 maps-to:
   - "[[architecture]]"
   - "[[integrations]]"
+description: "Michael's 1st-draft Azure architecture for Workstreams 1 & 2 — the confirmed TXN deployment platform — with the diagram transcribed: WAF, Front Door, IAM, AKS"
 ---
 
 # TXN Proposed Workstream 1 & 2 Architecture (1st Draft)

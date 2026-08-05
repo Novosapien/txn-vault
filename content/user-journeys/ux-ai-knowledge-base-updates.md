@@ -3,6 +3,7 @@ component: "[[internal-ops-agents]]"
 type: user-journey
 author: M.Moores
 status: imported
+description: "UX journey — AI detects recurring support patterns and drafts knowledge-base articles; TXN staff review and approve before publication"
 ---
 
 # AI Knowledge Base Updates v1.0

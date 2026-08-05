@@ -3,6 +3,7 @@ component: "[[developer-support]]"
 status: Defined
 sources:
   - "[[09-06-2026-developer-support]]"
+description: "Sub-component spec for the four-level access gate on Developer Support AI surfaces — L1 metered keyless, API keys from L2, lead capture and abuse control"
 ---
 
 # TXN — Developer Support: Access Gating & Lead-Gen

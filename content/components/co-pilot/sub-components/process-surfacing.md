@@ -3,6 +3,7 @@ component: "[[co-pilot]]"
 status: Defined
 sources:
   - "[[04-06-2026-component-3-co-pilot]]"
+description: "Sub-component spec for the Co-pilot trust UI — bucketed status categories at one universal altitude (slider rejected), with risk-tiered verification depth"
 ---
 
 # TXN — Co-pilot: Process Surfacing / Trust UI

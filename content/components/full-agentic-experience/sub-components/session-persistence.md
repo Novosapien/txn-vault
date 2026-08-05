@@ -4,6 +4,7 @@ status: Defined
 sources:
   - "[[05-06-2026-component-4-full-agentic-experience]]"
   - "[[29-05-2026-stackworkz-meeting]]"
+description: "Sub-component spec for saved views and scheduled tasks — persisted dashboards re-render live on re-open, recurring runs retry on failure — store TBC"
 ---
 
 # TXN — Full Agentic: Session Persistence

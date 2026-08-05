@@ -1,3 +1,7 @@
+---
+description: "Full 8-section TXN product vision — issuer-processor primer, three trust concepts, Novosapien scope boundary, constraints, risks and per-section gaps"
+---
+
 # TXN — Vision
 
 > **Client:** TXN

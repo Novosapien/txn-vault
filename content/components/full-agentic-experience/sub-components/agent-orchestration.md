@@ -3,6 +3,7 @@ component: "[[full-agentic-experience]]"
 status: Defined
 sources:
   - "[[05-06-2026-component-4-full-agentic-experience]]"
+description: "Sub-component spec for the multi-agent core — specialised teams merge user journeys via plan, approve, execute, with risk-tiered verification and guard rails"
 ---
 
 # TXN — Full Agentic: Agent Orchestration & Planning

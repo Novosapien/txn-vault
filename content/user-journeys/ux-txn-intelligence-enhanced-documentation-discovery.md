@@ -3,6 +3,7 @@ component: "[[developer-support]]"
 type: user-journey
 author: M.Moores
 status: imported
+description: "UX journey — semantic Developer Portal doc search: intent detection, vector retrieval and contextual ranking, with deterministic fallback if AI is down"
 ---
 
 # TXN Intelligence Enhanced Documentation Discovery v1.0

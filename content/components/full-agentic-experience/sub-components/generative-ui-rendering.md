@@ -4,6 +4,7 @@ status: Defined
 sources:
   - "[[05-06-2026-component-4-full-agentic-experience]]"
   - "[[29-05-2026-stackworkz-meeting]]"
+description: "Sub-component spec for generative UI — real Console React/MUI components rendered from AG-UI tool-call payloads, with deep links and bounded composition"
 ---
 
 # TXN — Full Agentic: Generative UI Rendering

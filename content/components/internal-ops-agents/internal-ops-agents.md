@@ -9,6 +9,7 @@ sources:
   - "[[ux-ai-knowledge-learning]]"
   - "[[18-06-2026-finalised-gap-analysis]]"
   - "[[24-06-2026-final-vault-review]]"
+description: "Component doc for TXN's inward-facing Internal Ops Agents — customer onboarding, knowledge engine, support triage, release notes and cold-start simulation"
 ---
 
 # TXN — Internal Ops Agents

@@ -4,6 +4,7 @@ status: Defined
 sources:
   - "[[ux-ai-knowledge-base-updates]]"
   - "[[10-06-2026-developer-support-and-internal-ops]]"
+description: "Spec for the mining loop — trend detection and per-chat analysis over support chats yield evidenced KB article suggestions, cron-consolidated for human review"
 ---
 
 # TXN — Knowledge Engine: Proactive Mining

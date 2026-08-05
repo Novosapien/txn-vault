@@ -5,6 +5,7 @@ sources:
   - "[[09-06-2026-developer-support]]"
   - "[[ux-txn-intelligence-enhanced-documentation-discovery]]"
   - "[[ux-ai-user-stories-and-requirements]]"
+description: "Sub-component spec for the deliberately-light portal chat — semantic doc discovery and grounded Q&A with source references, plus a deterministic fallback"
 ---
 
 # TXN — Developer Support: Portal Co-pilot

@@ -1,6 +1,7 @@
 ---
 type: index
 status: imported
+description: "Index of the 16 imported M. Moores UX journeys (5-6 Mar 2026), each routed to its primary component, with coverage counts and reconciled mappings"
 ---
 
 # TXN — User Journeys

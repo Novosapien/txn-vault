@@ -1,3 +1,7 @@
+---
+description: "Transcript of the 2026-06-09 TXN dev portal call — documentation co-pilot, hosted MCP server with API-key gating, staged access tiers, and AI support tickets"
+---
+
 **
 
 Jun 9, 2026

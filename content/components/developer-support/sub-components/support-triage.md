@@ -3,6 +3,7 @@ component: "[[developer-support]]"
 status: Defined
 sources:
   - "[[09-06-2026-developer-support]]"
+description: "Sub-component spec for logged-in support triage — diagnoses issues from the user's own API logs, packages well-formed tickets, with swarm pre-investigation"
 ---
 
 # TXN — Developer Support: Support Triage & Ticket Packaging

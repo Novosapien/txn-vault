@@ -8,6 +8,7 @@ sources:
   - "[[18-06-2026-finalised-gap-analysis]]"
   - "[[24-06-2026-final-vault-review]]"
   - "[[2026-07-28-agentic-pilot-kickoff]]"
+description: "Component doc for the Agent Access Layer — the MCP tool surface wrapping TXN's Core API, with permission scoping, approvals, audit, and open questions"
 ---
 
 # Agent Access Layer

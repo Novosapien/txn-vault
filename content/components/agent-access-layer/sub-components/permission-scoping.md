@@ -3,6 +3,7 @@ component: "[[agent-access-layer]]"
 status: Defined
 sources:
   - "[[01-06-2026-component-1-Agent-Access-Layer]]"
+description: "How the layer decides which tools an agent gets per user per turn — Console permissions plus a new AI permission config, narrowed by page and onboarding state"
 ---
 
 # TXN — Permission & Authorization Scoping

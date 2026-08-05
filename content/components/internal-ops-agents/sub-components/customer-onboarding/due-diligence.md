@@ -3,6 +3,7 @@ component: "[[customer-onboarding]]"
 status: Defined
 sources:
   - "[[10-06-2026-developer-support-and-internal-ops]]"
+description: "Leaf spec for the due-diligence gate — ownership (25%), red-flag and DORA checks via plug-in data providers and Companies House; sourced report, human validates"
 ---
 
 # TXN — Onboarding: Due Diligence

@@ -1,3 +1,7 @@
+---
+description: "Transcript of the 2026-06-04 TXN component 3 call — vault walkthrough, co-pilot UX from manual to agentic, approval buttons, and how much agent work to surface"
+---
+
 **
 
 Jun 4, 2026

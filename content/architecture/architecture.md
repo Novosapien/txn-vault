@@ -1,3 +1,7 @@
+---
+description: "Architecture hub — index of sections plus decisions log: CRM as system of record, TXN-controlled Azure platform, two doc stores, containerised AI layer"
+---
+
 # TXN — Architecture
 
 > **Project:** [[index]]
