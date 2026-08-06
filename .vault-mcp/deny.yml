@@ -1,0 +1,79 @@
+# .vault-mcp/deny.yml — visibility policy for the TXN Vault MCP server.
+#
+# This file lives in the VAULT repository. The vault owner controls what the
+# client sees, so the policy lives with the content it governs. The server
+# repository (novosapien/txn-vault-mcp) holds only the seed it was copied from.
+#
+# ---------------------------------------------------------------------------
+# How it works
+# ---------------------------------------------------------------------------
+# Default-ALLOW with a deny list. Everything under <vault-repo>/content/ reaches
+# the client unless a pattern here excludes it. Denied files are removed at BUILD
+# time, so they are not on the container's disk at all — a path-traversal bug in
+# a tool leaks nothing.
+#
+# Patterns are `pathspec` gitwildmatch globs, matched against paths relative to
+# the payload root (<vault-repo>/content/). Directory-subtree semantics apply:
+# `drafts/**` sweeps everything beneath drafts/.
+#
+# NOTE these are a different dialect from the `glob` MCP tool, deliberately.
+# Gitignore semantics are right for exclusion and wrong for search. Do not unify
+# the two.
+#
+# ---------------------------------------------------------------------------
+# The build FAILS CLOSED on all of these
+# ---------------------------------------------------------------------------
+#   - this file missing
+#   - this file empty
+#   - malformed YAML
+#   - no `deny:` key
+#   - `deny: []` without `allow_empty: true`
+#   - any unknown top-level key
+#   - a deny pattern matching ZERO files (evaluated against the tree BEFORE
+#     classification, so a pattern matching only images or junk still counts)
+#
+# The build runs from a GIT CHECKOUT, so only COMMITTED files count. A pattern
+# that matches only untracked or gitignored local files matches zero files in CI
+# and fails the build.
+#
+# ---------------------------------------------------------------------------
+# What needs NO entry
+# ---------------------------------------------------------------------------
+# The payload root is <vault-repo>/content/, so anything at the repository root
+# is already outside it: .agents/, .claude/, .github/, quartz/, scripts/,
+# AGENTS.md, CLAUDE.md, package.json, quartz.config.ts. Do not add entries for
+# them — a pattern matching zero files fails the build.
+#
+# Secret-bearing filenames (.env, *.pem, *.key, id_rsa*, *credentials*.json,
+# *.tfstate and friends) are excluded unconditionally by the classifier, before
+# this list is even consulted. Images and build junk (.png, .jpg, .pyc,
+# .DS_Store, .lock ...) are excluded by the classifier too.
+#
+# ---------------------------------------------------------------------------
+# Keeping this aligned with the client portal
+# ---------------------------------------------------------------------------
+# The client portal defines its OWN visibility through
+# `brandConfig.vault.excludeDirs` in txn-admin-panel/brand.config.ts
+# (currently: private, templates, .obsidian — consumed by
+# scripts/sync-vault.ts). This file is a path glob list instead.
+#
+# THE TWO CAN DRIFT, AND NOTHING DETECTS IT AUTOMATICALLY.
+# Owner: whoever changes either one reconciles both. The panel's exclusions
+# (private/, templates/) match no committed content/ paths today, so they need
+# no entry here; drafts/ is denied here but NOT excluded by the panel — the
+# portal shows drafts to TXN staff, the connector does not.
+
+deny:
+  # Work in progress the client should not see. Agreed 2026-08-06: deny drafts
+  # only; everything else under content/ is served.
+  - drafts/**
+
+# ---------------------------------------------------------------------------
+# Deliberately NOT denied — recorded as decisions, not oversights
+# ---------------------------------------------------------------------------
+# meetings/          — George confirmed the client may see meeting notes.
+# user-journeys/     — served.
+# open-questions.md  — served.
+# Default-allow reaches these outcomes without an entry. These lines are
+# comments so a later reader does not "fix" an apparent omission.
+allow_empty: false
