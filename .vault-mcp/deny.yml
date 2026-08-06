@@ -64,9 +64,14 @@
 # portal shows drafts to TXN staff, the connector does not.
 
 deny:
-  # Work in progress the client should not see. Agreed 2026-08-06: deny drafts
-  # only; everything else under content/ is served.
+  # Work in progress the client should not see.
   - drafts/**
+
+  # Client-facing negotiation material. Agreed 2026-08-06: proposals, MSA
+  # drafts, order forms, and the internal reviewer briefs stay off the
+  # connector.
+  - commercial/**
+  - legal/**
 
 # ---------------------------------------------------------------------------
 # Deliberately NOT denied — recorded as decisions, not oversights
@@ -74,6 +79,7 @@ deny:
 # meetings/          — George confirmed the client may see meeting notes.
 # user-journeys/     — served.
 # open-questions.md  — served.
+# (commercial/ and legal/ ARE denied above — see that entry.)
 # Default-allow reaches these outcomes without an entry. These lines are
 # comments so a later reader does not "fix" an apparent omission.
 allow_empty: false
