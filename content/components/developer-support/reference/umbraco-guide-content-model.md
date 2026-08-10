@@ -10,6 +10,7 @@ maps-to:
   - "[[docs-mcp-server]]"
   - "[[portal-co-pilot]]"
   - "[[architecture]]"
+description: "SuperUltra's May 2026 vendor proposal for the Umbraco content blocks on TXN Developer Portal guide pages — 13 block specs with field tables and open questions"
 ---
 
 # Umbraco Guide Content Model

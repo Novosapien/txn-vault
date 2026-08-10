@@ -3,6 +3,7 @@ component: "[[agent-access-layer]]"
 status: Defined
 sources:
   - "[[01-06-2026-component-1-Agent-Access-Layer]]"
+description: "The single monolith MCP server every TXN agent calls through — per-turn tool gating, server-side validation, and formatted errors agents self-correct from"
 ---
 
 # TXN — MCP Server (validation & execution)

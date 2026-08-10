@@ -8,6 +8,7 @@ extracted-to:
   - "[[agent-access-layer]]"
   - "[[co-pilot]]"
   - "[[a2a-endpoint]]"
+description: "Transcript of the 2026-06-01 Novosapien–TXN Agent Access Layer deep-dive — DT Core API endpoints, permission architecture, approval queue and audit trail"
 ---
 
 # Component 1 — Agent Access Layer (deep-dive)

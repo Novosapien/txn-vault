@@ -3,6 +3,7 @@ component: "[[fraud-risk-assist]]"
 type: user-journey
 author: M.Moores
 status: imported
+description: "UX journey — AI detects emerging fraud patterns, scores merchant risk, and raises Console alerts with recommended controls for risk-team investigation"
 ---
 
 # AI Driven Fraud Alerts v1.0

@@ -3,6 +3,7 @@ component: "[[internal-ops-agents]]"
 type: user-journey
 author: M.Moores
 status: imported
+description: "UX journey — when the AI assistant cannot answer confidently it opens a support case; the verified human resolution feeds back into the AI knowledge base"
 ---
 
 # AI Knowledge Learning v1.0

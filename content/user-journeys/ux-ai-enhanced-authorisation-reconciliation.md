@@ -3,6 +3,7 @@ component: "[[internal-ops-agents]]"
 type: user-journey
 author: M.Moores
 status: imported
+description: "UX journey — AI layer matches authorisation and clearing records that fail rule-based reconciliation, with confidence scoring and audit traceability"
 ---
 
 # AI Enhanced Authorisation Reconciliation v1.0

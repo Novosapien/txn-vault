@@ -17,6 +17,10 @@ This template defines the structure for a **component document** — a detailed 
 
 ---
 
+---
+description: "[One line, at most 160 characters: what this document IS]"
+---
+
 # [Project Name] — [Component Name]
 
 > **Vision:** [[vision]]
@@ -210,11 +214,11 @@ _What product-level controls should be built into this component to mitigate the
 
 ## Sub-Components
 
-_This section is **backfilled** as sub-components are identified and documented. When the component document is first created, this section may be empty or have only rough names from the initial brain dump. List a sub-component as **plain text** until its document exists; once you create `sub-components/[name]/[name].md`, come back and replace the plain text with a shortest-path `[[name]]` link (not a `[[sub-components/name]]` path). This is the routing mechanism — an agent or human reading the component can see all sub-components at a glance and navigate to documented ones._
+_This section is **backfilled** as sub-components are identified and documented. When the component document is first created, this section may be empty or have only rough names from the initial brain dump. As sub-component documents are created in `sub-components/[name]/[name].md`, come back here and add the link and one-line overview. This is the routing mechanism — an agent or human reading the component can see all sub-components at a glance and navigate to any of them._
 
 | Sub-Component | Overview | Status | Link |
 |--------------|----------|--------|------|
-| _Sub-component name_ | _One-line description of what this sub-component does_ | _Collecting / Defined / Ready for build / In build / Complete_ | _[[name]] once it exists — plain text until then_ |
+| _Sub-component name_ | _One-line description of what this sub-component does_ | _Collecting / Defined / Ready for build / In build / Complete_ | _[[sub-components/name]]_ |
 | | | | |
 | | | | |
 
@@ -239,6 +243,10 @@ _Use diagrams inline within the relevant section. Full diagram guide (with all M
 _Below is the expected output structure. Guidance text is removed. Placeholders show where content goes and how much is expected._
 
 ```markdown
+---
+description: "The [Component Name] component of [Project Name]: what it does and how it behaves"
+---
+
 # [Project Name] — [Component Name]
 
 > **Vision:** [[vision]]

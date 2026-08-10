@@ -7,6 +7,7 @@ sources:
   - "[[29-05-2026-stackworkz-meeting]]"
   - "[[04-06-2026-component-3-co-pilot]]"
   - "[[18-06-2026-finalised-gap-analysis]]"
+description: "Component doc for the TXN Co-pilot — Console assistant that answers, previews impact and acts on confirmation, page-scoped for doing, with six sub-components"
 ---
 
 # TXN — Co-pilot

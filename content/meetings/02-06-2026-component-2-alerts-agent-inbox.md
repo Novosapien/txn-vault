@@ -6,6 +6,7 @@ scope:
 status: extracted
 extracted-to:
   - "[[agent-inbox-alerts]]"
+description: "Transcript of the 2026-06-02 Novosapien–TXN Alerts and Agent Inbox deep-dive — three alert mechanisms, notification hub, token costs, alerting vs reporting"
 ---
 
 # Component 2 — Alerts & Agent Inbox (deep-dive)

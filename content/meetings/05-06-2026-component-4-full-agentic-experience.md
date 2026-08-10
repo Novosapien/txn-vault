@@ -1,3 +1,7 @@
+---
+description: "Transcript of the 2026-06-05 TXN component 4 call — the full agentic experience, MCP vs an exposed TXN agent, guardrails, mock APIs and go-to-market sequencing"
+---
+
 **
 
 Jun 5, 2026

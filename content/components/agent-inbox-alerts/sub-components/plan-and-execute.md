@@ -4,6 +4,7 @@ status: Defined
 sources:
   - "[[02-06-2026-component-2-alerts-agent-inbox]]"
   - "[[01-06-2026-component-1-Agent-Access-Layer]]"
+description: "Spec for the C2 alert graduation — the agent proposes a fix with impact, gets confirmation, then executes via the Agent Access Layer with approval and audit"
 ---
 
 # TXN — Plan & Execute (C2)

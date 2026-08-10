@@ -6,6 +6,7 @@ sources:
   - "[[01-06-2026-component-1-Agent-Access-Layer]]"
   - "[[29-05-2026-stackworkz-meeting]]"
   - "[[05-06-2026-component-4-full-agentic-experience]]"
+description: "The inbound A2A edge of the access layer — client agents talk to the TXN agent (never raw tools), with permission parity, approvals and audit intact"
 ---
 
 # TXN — A2A Endpoint (external edge)

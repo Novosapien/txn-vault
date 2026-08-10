@@ -3,6 +3,7 @@ component: "[[agent-inbox-alerts]]"
 type: user-journey
 author: M.Moores
 status: imported
+description: "UX journey — natural-language report generation in the Console with role-based data governance; saved report templates rerun without AI processing"
 ---
 
 # AI User Stories Reporting v1.0

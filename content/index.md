@@ -1,3 +1,7 @@
+---
+description: "Vault home for the TXN engagement — status header, document map with per-doc status, and a dated recent-activity log of every extraction and decision"
+---
+
 # TXN
 
 > **Client:** TXN

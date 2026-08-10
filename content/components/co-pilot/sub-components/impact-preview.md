@@ -4,6 +4,7 @@ status: Defined
 sources:
   - "[[04-06-2026-component-3-co-pilot]]"
   - "[[13-05-2026-txn-vision-meeting]]"
+description: "Sub-component spec for the read-only blast-radius preview — X cards / % transactions affected before a change confirms, from the analytical data-lake set"
 ---
 
 # TXN — Co-pilot: Impact Preview

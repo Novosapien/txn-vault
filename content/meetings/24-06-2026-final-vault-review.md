@@ -13,6 +13,7 @@ participants:
   - Dorte Dye (TXN)
 status: digested
 digested: 2026-07-03
+description: "Digest of the 2026-06-24 TXN final vault and proposal review (Meet AI summary) — proposal as source of truth, JWT auth settled, AI-to-AI testing, Sept GTM"
 ---
 
 # Final Vault Review with Proposal Review (24 Jun 2026)

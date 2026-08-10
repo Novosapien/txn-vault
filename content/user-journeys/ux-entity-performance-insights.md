@@ -3,6 +3,7 @@ component: "[[agent-inbox-alerts]]"
 type: user-journey
 author: M.Moores
 status: imported
+description: "UX journey — AI-generated health and behaviour insights on business, cardholder, card, account and product records, surfaced in the Console entity view"
 ---
 
 # Entity Performance Insights v1.0

@@ -11,6 +11,7 @@ participants:
   - Dorte Dye (TXN)
 status: digested
 digested: 2026-06-18
+description: "Digest and transcript of the 2026-06-18 TXN gap-analysis call — gap register walked: MCP ownership, reconciliation, A2A resolved; DT multi-tenancy opened"
 ---
 
 # AI Scope and Dependency Review (18 Jun 2026)

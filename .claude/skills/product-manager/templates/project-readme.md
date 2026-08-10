@@ -1,3 +1,6 @@
+---
+description: "[One line, at most 160 characters: what this project is]"
+---
 <!-- Template: produces index.md — the project landing page -->
 
 # [Project Name]
@@ -20,6 +23,8 @@ ___
 | [[vision]] | Product vision — what we're building and why | ___ |
 | [[architecture]] | Cross-cutting technical decisions — tech stack, infrastructure, integrations | Not started |
 | [[components]] | Component map — all major parts of the product | ___ |
+
+_Add rows for [[whats-new]] (client-facing update log) and [[open-questions]] (open questions register) once those files exist — never link before the file is created._
 
 ## External Resources
 

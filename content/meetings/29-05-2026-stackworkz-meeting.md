@@ -12,6 +12,7 @@ extracted-to:
   - "[[integrations]]"
   - "[[agent-access-layer]]"
   - "[[index]]"
+description: "Transcript and analysis of the 2026-05-29 call with Stackworkz and TXN — who builds what, the Stackworkz stack, MCP ownership, and the AG-UI console idea"
 ---
 
 # Stackworkz Ways-of-Working Call — 29 May 2026

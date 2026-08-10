@@ -4,6 +4,7 @@ status: Defined
 sources:
   - "[[04-06-2026-component-3-co-pilot]]"
   - "[[01-06-2026-component-1-Agent-Access-Layer]]"
+description: "Sub-component spec for how the Co-pilot executes on a yes — explicit button confirm, no auto-approve, one approval per multi-API plan, direct API calls"
 ---
 
 # TXN — Co-pilot: Action-on-Confirmation

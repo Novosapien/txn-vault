@@ -1,6 +1,7 @@
 ---
 draft: true
 title: "Accuracy / Completeness / Ambiguity Audit — 2026-06-03"
+description: "2026-06-03 draft audit of the vault — 23 accuracy/completeness/ambiguity findings (3 moderate, 20 minor), per-doc fixes and 6 proposed open-question rows"
 ---
 
 # TXN Product Knowledge Vault — Accuracy / Completeness / Ambiguity Audit

@@ -3,6 +3,7 @@ component: "[[co-pilot]]"
 type: user-journey
 author: M.Moores
 status: imported
+description: "UX journey — AI configuration recommendations during card-programme onboarding in the Console: context capture, explainable suggestions, explicit approval"
 ---
 
 # AI Guided Product Onboarding v1.0

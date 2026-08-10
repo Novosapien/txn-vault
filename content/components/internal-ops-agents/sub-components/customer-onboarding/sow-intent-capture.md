@@ -3,6 +3,7 @@ component: "[[customer-onboarding]]"
 status: Defined
 sources:
   - "[[10-06-2026-developer-support-and-internal-ops]]"
+description: "Leaf spec for SoW and intent capture — an interview agent snapshots the client's intended build to the CRM, flags term changes; drift detection guards the SoW"
 ---
 
 # TXN — Onboarding: SoW &amp; Intent Capture

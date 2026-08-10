@@ -1,3 +1,7 @@
+---
+description: "Index of the TXN commercial pack — proposals, Pilot Order, MSA and SLA with status per document, plus reviewer briefs and pilot carve-out notes"
+---
+
 # Commercial
 
 The commercial pack for the Novosapien <> TXN engagement: the proposals that define what we are selling, and pointers to the legal instruments that paper it. Contracts themselves live in [legal/](../legal/) and are linked below so reviewers and agents can reach everything from one place.

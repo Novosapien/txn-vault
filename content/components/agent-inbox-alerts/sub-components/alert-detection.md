@@ -4,6 +4,7 @@ status: Defined
 sources:
   - "[[02-06-2026-component-2-alerts-agent-inbox]]"
   - "[[01-06-2026-component-1-Agent-Access-Layer]]"
+description: "Spec for cheap alert detection — threshold trips, config-change webhooks and scheduled scans that gate the AI, plus Console and /alert creation journeys"
 ---
 
 # TXN — Alert Detection

@@ -6,6 +6,7 @@ sources:
   - "[[10-06-2026-developer-support-and-internal-ops]]"
   - "[[ux-ai-knowledge-base-updates]]"
   - "[[ux-ai-knowledge-learning]]"
+description: "Sub-component spec for the self-improving KB loop — self-healing docs via reviewed PRs, reactive capture and proactive mining via Umbraco drafts; human-approved"
 ---
 
 # TXN — Internal Ops: Knowledge Engine

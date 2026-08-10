@@ -5,6 +5,7 @@ sources:
   - "[[29-05-2026-stackworkz-meeting]]"
   - "[[13-05-2026-txn-vision-meeting]]"
   - "[[05-06-2026-component-4-full-agentic-experience]]"
+description: "Component doc for TXN's Level-4 agent-as-interface — chat that renders live Console UI via AG-UI, merged-journey plans, guard rails, A2A, and 4 sub-components"
 ---
 
 # TXN — Full Agentic Experience

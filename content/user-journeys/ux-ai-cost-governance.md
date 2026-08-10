@@ -3,6 +3,7 @@ component: "[[architecture]]"
 type: user-journey
 author: M.Moores
 status: imported
+description: "UX journey — AI cost governance: usage monitoring, budget thresholds, model-tier routing, response caching and deterministic fallback, with ops alerts"
 ---
 
 # AI Cost Governance v1.0

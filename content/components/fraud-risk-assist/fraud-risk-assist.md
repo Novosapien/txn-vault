@@ -3,6 +3,7 @@ component: "[[components]]"
 status: Collecting
 sources:
   - "[[13-05-2026-txn-vision-meeting]]"
+description: "Collecting-status component doc for Fraud & Risk Assist — advise-don't-decide AI on the payment stream, its journeys, dependencies and later-phase data needs"
 ---
 
 # TXN — Fraud & Risk Assist

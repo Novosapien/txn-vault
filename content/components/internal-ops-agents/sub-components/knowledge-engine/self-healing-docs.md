@@ -3,6 +3,7 @@ component: "[[knowledge-engine]]"
 status: Defined
 sources:
   - "[[13-05-2026-txn-vision-meeting]]"
+description: "Spec for the error-driven input — a Sentry production error leads the agent through the knowledge graph to the failing component and a human-reviewed PR"
 ---
 
 # TXN — Knowledge Engine: Self-Healing Docs

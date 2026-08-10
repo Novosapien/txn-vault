@@ -3,6 +3,7 @@ component: "[[internal-ops-agents]]"
 status: Defined
 sources:
   - "[[10-06-2026-developer-support-and-internal-ops]]"
+description: "Sub-component spec for the CRM-aware meeting notetaker — Freshsales stage lookup routes each transcript to the right analysis team, feeding customer-onboarding"
 ---
 
 # TXN — Internal Ops: Meeting Capture &amp; Analysis

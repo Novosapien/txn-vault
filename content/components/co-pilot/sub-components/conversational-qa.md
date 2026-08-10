@@ -4,6 +4,7 @@ status: Defined
 sources:
   - "[[ux-ai-assisted-customer-service-resolution]]"
   - "[[04-06-2026-component-3-co-pilot]]"
+description: "Co-pilot ask-anything sub-component — plain-language decline explanations for CS resolution, navigation guidance, off-page execution hands off to Full Agentic"
 ---
 
 # TXN — Co-pilot: Conversational Q&A & Navigation

@@ -3,6 +3,7 @@ component: "[[internal-ops-agents]]"
 status: Defined
 sources:
   - "[[10-06-2026-developer-support-and-internal-ops]]"
+description: "Sub-component spec for the agentic onboarding pipeline — due diligence, SoW/intent, scheme/CIQ, project plan and drift watch, with Freshsales CRM as record"
 ---
 
 # TXN — Internal Ops: Customer Onboarding

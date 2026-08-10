@@ -3,6 +3,7 @@ component: "[[agent-access-layer]]"
 status: Defined
 sources:
   - "[[01-06-2026-component-1-Agent-Access-Layer]]"
+description: "The combined audit trail — Console, Core API and chat records linked so TXN can prove it prompted, showed impact and the user confirmed each AI action"
 ---
 
 # TXN — Audit & Attribution

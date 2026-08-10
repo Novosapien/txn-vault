@@ -4,6 +4,7 @@ status: Defined
 sources:
   - "[[ux-ai-knowledge-learning]]"
   - "[[10-06-2026-developer-support-and-internal-ops]]"
+description: "Spec for reactive capture — below-confidence questions escalate as context-rich support cases; validated human answers enter the KB so repeats auto-answer"
 ---
 
 # TXN — Knowledge Engine: Reactive Capture

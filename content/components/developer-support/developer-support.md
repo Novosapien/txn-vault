@@ -7,6 +7,7 @@ sources:
   - "[[09-06-2026-developer-support]]"
   - "[[10-06-2026-developer-support-and-internal-ops]]"
   - "[[18-06-2026-finalised-gap-analysis]]"
+description: "Component doc for Developer Support — the portal's AI surfaces: hosted docs MCP server, co-pilot, sandbox assist, support triage and four-level access gating"
 ---
 
 # TXN — Developer Support

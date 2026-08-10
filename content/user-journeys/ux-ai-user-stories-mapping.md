@@ -3,6 +3,7 @@ component: "[[a2a-endpoint]]"
 type: user-journey
 author: M.Moores
 status: imported
+description: "UX journey — a client-owned AI requests operational API actions through MCP: risk classification, human approval for high-impact changes, full audit trail"
 ---
 
 # AI User Stories Mapping v1.0

@@ -6,6 +6,7 @@ sources:
   - "[[01-06-2026-component-1-Agent-Access-Layer]]"
   - "[[13-05-2026-txn-vision-meeting]]"
   - "[[18-06-2026-finalised-gap-analysis]]"
+description: "Component doc for TXN's Agent Inbox & Alerts — the proactive AI lane: alert detection, impact analysis, C2 plan-and-execute, scheduled reporting and routing"
 ---
 
 # TXN — Agent Inbox & Alerts

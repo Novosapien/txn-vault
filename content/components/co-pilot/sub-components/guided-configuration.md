@@ -4,6 +4,7 @@ status: Defined
 sources:
   - "[[ux-ai-configuration-validation]]"
   - "[[04-06-2026-component-3-co-pilot]]"
+description: "Sub-component spec for validation-before-activation of config changes — deterministic + AI checks, impact analysis, fixes, critical conflicts block apply"
 ---
 
 # TXN — Co-pilot: Guided Configuration & Validation

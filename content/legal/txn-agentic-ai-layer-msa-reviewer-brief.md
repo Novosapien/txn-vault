@@ -1,3 +1,7 @@
+---
+description: "Reviewer brief for the Novosapien–TXN MSA v0.2 — positions taken, IP and liability decisions, EU regulatory addenda, and open points for counsel"
+---
+
 # Reviewer Brief: Master Service Agreement (Novosapien x TXN)
 
 **Prepared by:** Novosapien commercial-lawyer skill (dry run) · **Date:** 2026-07-03, updated 2026-07-22 · **Draft version:** v0.2

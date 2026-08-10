@@ -4,6 +4,7 @@ status: Defined
 sources:
   - "[[ux-ai-guided-product-onboarding]]"
   - "[[04-06-2026-component-3-co-pilot]]"
+description: "Spec for AI-guided programme onboarding — collapses ~200 config fields into a conversation, with admin/user provisioning, UAT/prod gating; first pilot slice"
 ---
 
 # TXN — Co-pilot: Guided Onboarding & Provisioning

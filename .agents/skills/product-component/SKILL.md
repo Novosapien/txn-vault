@@ -1,11 +1,9 @@
 ---
 name: product-component
 description: Extract and structure component documents from client call transcripts. Conversational — proposes extractions, identifies sub-components, debates with user. Produces component-level documentation in the directory-brain pattern.
-allowed-tools: Read, Write, Edit, Bash, Glob, Grep, Agent
-argument-hint: "[transcript file path]"
 ---
 
-> **Invoke with:** `/product-component` | **Keywords:** component, deep-dive, component extraction, functional parts
+> **Invoke with:** `$product-component` | **Keywords:** component, deep-dive, component extraction, functional parts
 
 Extract component-level content from client call transcripts and structure it into component documents. Works conversationally — proposes what was extracted, surfaces sub-components, debates ambiguity.
 
@@ -34,22 +32,18 @@ A vision document must exist for the project. Components are identified by decom
 
 2. **Product components, not technical components.** Think about what the user or agent interacts with — the product experience. Frontend/backend splits are resolved in the development workflow.
 
-3. **Surface sub-components but don't document them.** As detail emerges, propose sub-component bucketing. List them as **plain text** (no wikilinks — their docs don't exist yet), "Collecting" status — detailed documentation happens via `/product-sub-component`.
+3. **Surface sub-components but don't document them.** As detail emerges, propose sub-component bucketing. List them in the backfill table with "Collecting" status — detailed documentation happens via `$product-sub-component`.
 
 4. **Persona mapping from vision doc.** Section 1 requires identifying which personas (from the vision) use this component and how. Always consult the vision document's persona list.
 
-5. **Backfill the parent.** After creating a component document, update `components.md` AND the vision document's Components table.
+5. **Backfill the parent.** After creating a component document, update `components/README.md` AND the vision document's Components table.
 
-6. **Knowledge-graph integrity — never write a dangling wikilink.** Every `[[link]]` must resolve to a file that exists. Reference not-yet-documented items as **plain text** (or create a stub first); add the `[[link]]` only once the file exists. Use shortest-path links (`[[name]]`, not `[[../name]]` or `[[sub-components/name]]`). After writing, run `python3 scripts/check-wikilinks.py` and fix anything it reports.
-
-7. **Open questions go in the register.** Don't bury open questions at the bottom of a doc — add them to the central [[open-questions]] register and leave a short inline marker `_[⚠ open — see [[open-questions]] #N]_` where relevant.
-
-8. **Status reflects real coverage.** Only mark a component/sub-component **Defined** after a dedicated deep-dive. Semi-structured or partial discussion stays **Collecting/Defining** with a "partially scoped" banner — never "Defined" with inferred acceptance criteria.
+6. **Description frontmatter.** Every markdown document this skill creates or updates carries a one-line `description:` in its YAML frontmatter — the canonical rule ("## Description frontmatter") lives in the vault's `CLAUDE.md` and `AGENTS.md`. Write the description in the same edit that creates the file; on a material edit, re-read it and rewrite it if it no longer matches the page. Format: one line, at most 160 characters, double-quoted, a sentence that says what the document IS — never a quote, a table fragment, or dialogue. If you cannot summarise the page faithfully, leave `description:` absent and say so. Exempt: changelog files, template files, empty files.
 
 ## Flow
 
 ```
-User invokes /product-component with a transcript path
+User invokes $product-component with a transcript path
     │
     ▼
 Load component-extraction.md + component template
@@ -57,7 +51,7 @@ Load component-extraction.md + component template
     ▼
 Read existing state:
     - Vision document (context + persona list)
-    - The component map (`components.md`) — what exists already
+    - Components README (what exists already)
     - Any existing component documents
     │
     ▼
@@ -86,12 +80,11 @@ Surface sub-components:
 After extraction:
     │
     1. Write/update component documents
-    2. Backfill `components.md`
+    2. Backfill components/README.md
     3. Backfill vision.md Components table
-    4. List sub-components in the component's backfill table (plain text — no links until their docs exist)
+    4. List sub-components in component's backfill table
     5. Produce gap analysis per component
     6. Generate questions for next call
-    7. Validate the graph — run `python3 scripts/check-wikilinks.py` and fix any broken links
 ```
 
 ## Handling Multiple Components
@@ -118,6 +111,6 @@ When a transcript covers multiple components:
 
 ## Related Skills
 
-- `/product-manager` — General PM thinking partner, project setup
-- `/product-vision` — Vision extraction (prerequisite for this skill)
-- `/product-sub-component` — Sub-component extraction (next step after this)
+- `$product-manager` — General PM thinking partner, project setup
+- `$product-vision` — Vision extraction (prerequisite for this skill)
+- `$product-sub-component` — Sub-component extraction (next step after this)

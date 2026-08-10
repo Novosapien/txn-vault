@@ -3,6 +3,7 @@ component: "[[agent-access-layer]]"
 status: Defined
 sources:
   - "[[01-06-2026-component-1-Agent-Access-Layer]]"
+description: "How AI-initiated changes route through the Console two-person approval queue — product/multi-card needs a second approver; single-card privileged does not"
 ---
 
 # TXN — Approval-Queue Integration

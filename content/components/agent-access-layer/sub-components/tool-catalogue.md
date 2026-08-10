@@ -4,6 +4,7 @@ status: Collecting
 sources:
   - "[[01-06-2026-component-1-Agent-Access-Layer]]"
   - "[[02-06-2026-component-2-alerts-agent-inbox]]"
+description: "The inventory of agent tools mapped from DT's Core API — business-language wrappers per endpoint; the ~200-field product config is the high-value target"
 ---
 
 # TXN — Tool Catalogue

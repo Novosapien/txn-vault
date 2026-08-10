@@ -3,6 +3,7 @@ component: "[[customer-onboarding]]"
 status: Defined
 sources:
   - "[[10-06-2026-developer-support-and-internal-ops]]"
+description: "Leaf spec for scheme registration and CIQ — regulated vs triparty paths, BIN phase, and TXN's processor-side CIQ template with captured-vs-missing tracking"
 ---
 
 # TXN — Onboarding: Scheme &amp; CIQ

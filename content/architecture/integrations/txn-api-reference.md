@@ -13,6 +13,7 @@ maps-to:
   - "[[docs-mcp-server]]"
   - "[[sandbox-assist]]"
   - "[[agent-access-layer]]"
+description: "Index note for the DT-supplied TXN Global API OpenAPI spec (txn-api-spec.yaml) — 51 endpoints by resource group, and why the YAML grounds the portal"
 ---
 
 # TXN Global API - OpenAPI Specs (index)

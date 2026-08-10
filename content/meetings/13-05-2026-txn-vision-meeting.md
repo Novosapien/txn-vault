@@ -15,6 +15,7 @@ participants:
   - Brett StClair (Novosapien — facilitator)
   - George Westbrook (Novosapien)
   - Max Kingaby (Novosapien)
+description: "Transcript of the 2026-05-13 TXN vision workshop with Novosapien — console and developer portal AI, the three trust concepts, plus a post-call extraction table"
 ---
 
 ## Post-Call Analysis

@@ -3,6 +3,7 @@ component: "[[co-pilot]]"
 type: user-journey
 author: M.Moores
 status: imported
+description: "UX journey — Console AI assistant helps customer-service agents interpret decline codes, confirm root cause, and follow advisory resolution steps"
 ---
 
 # AI Assisted Customer Service Resolution v1.0
