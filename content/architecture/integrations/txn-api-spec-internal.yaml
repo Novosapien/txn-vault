@@ -1,0 +1,3831 @@
+openapi: 3.0.4
+info:
+  title: TxnInternalGlobal.API
+  description: This is the internal APIs for the TXN system
+  license:
+    name: Direct Transact
+    url: https://www.directtransact.co.za/
+  version: v1
+paths:
+  /bins:
+    post:
+      tags:
+        - Bin
+      summary: Creates a BIN link tying a BinSponsor + product to issuance.
+      parameters:
+        - name: requestId
+          in: header
+          description: Unique identifier for the request (from header).
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: correlationId
+          in: header
+          description: 'Correlation identifier (from header, optional).'
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        description: Request body.
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateBinRequest'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/CreateBinRequest'
+          application/*+json:
+            schema:
+              $ref: '#/components/schemas/CreateBinRequest'
+        required: true
+      responses:
+        '201':
+          description: Successful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CreateBinResponseBaseResponseModel'
+        '400':
+          description: Unsuccessful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ObjectBaseResponseModel'
+    get:
+      tags:
+        - Bin
+      summary: Paginated list of BINs.
+      parameters:
+        - name: requestId
+          in: header
+          description: Unique identifier for the request (from header).
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: correlationId
+          in: header
+          description: 'Correlation identifier (from header, optional).'
+          schema:
+            type: string
+            format: uuid
+        - name: page
+          in: query
+          description: 1-based page index.
+          schema:
+            type: integer
+            format: int32
+            default: 1
+        - name: limit
+          in: query
+          description: Page size.
+          schema:
+            type: integer
+            format: int32
+            default: 10
+      responses:
+        '200':
+          description: Successful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetAllBinsResponseBaseResponseModel'
+        '400':
+          description: Unsuccessful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ObjectBaseResponseModel'
+  '/bins/{binId}':
+    put:
+      tags:
+        - Bin
+      summary: Update an existing BIN link.
+      parameters:
+        - name: requestId
+          in: header
+          description: Unique identifier for the request (from header).
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: correlationId
+          in: header
+          description: 'Correlation identifier (from header, optional).'
+          schema:
+            type: string
+            format: uuid
+        - name: binId
+          in: path
+          description: Route parameter `binId`.
+          required: true
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        description: Request body.
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateBinRequest'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/UpdateBinRequest'
+          application/*+json:
+            schema:
+              $ref: '#/components/schemas/UpdateBinRequest'
+        required: true
+      responses:
+        '200':
+          description: Successful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UpdateBinResponseBaseResponseModel'
+        '400':
+          description: Unsuccessful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ObjectBaseResponseModel'
+    get:
+      tags:
+        - Bin
+      summary: Retrieve a single BIN by id.
+      parameters:
+        - name: requestId
+          in: header
+          description: Unique identifier for the request (from header).
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: correlationId
+          in: header
+          description: 'Correlation identifier (from header, optional).'
+          schema:
+            type: string
+            format: uuid
+        - name: binId
+          in: path
+          description: Route parameter `binId`.
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Successful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetBinByIdResponseBaseResponseModel'
+        '400':
+          description: Unsuccessful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ObjectBaseResponseModel'
+  /binranges:
+    post:
+      tags:
+        - BinRange
+      summary: Reserves a contiguous range of card numbers under one BIN.
+      parameters:
+        - name: requestId
+          in: header
+          description: Unique identifier for the request (from header).
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: correlationId
+          in: header
+          description: 'Correlation identifier (from header, optional).'
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        description: Request body.
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateBinRangeRequest'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/CreateBinRangeRequest'
+          application/*+json:
+            schema:
+              $ref: '#/components/schemas/CreateBinRangeRequest'
+        required: true
+      responses:
+        '201':
+          description: Successful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CreateBinRangeResponseBaseResponseModel'
+        '400':
+          description: Unsuccessful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ObjectBaseResponseModel'
+    get:
+      tags:
+        - BinRange
+      summary: Paginated list of Bin Ranges.
+      parameters:
+        - name: requestId
+          in: header
+          description: Unique identifier for the request (from header).
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: correlationId
+          in: header
+          description: 'Correlation identifier (from header, optional).'
+          schema:
+            type: string
+            format: uuid
+        - name: page
+          in: query
+          description: 1-based page index.
+          schema:
+            type: integer
+            format: int32
+            default: 1
+        - name: limit
+          in: query
+          description: Page size.
+          schema:
+            type: integer
+            format: int32
+            default: 10
+        - name: sortingParameters
+          in: query
+          description: Optional sort expression.
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetAllBinRangesResponseBaseResponseModel'
+        '400':
+          description: Unsuccessful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ObjectBaseResponseModel'
+  '/binranges/{binRangeId}':
+    put:
+      tags:
+        - BinRange
+      summary: Update an existing Bin Range.
+      parameters:
+        - name: requestId
+          in: header
+          description: Unique identifier for the request (from header).
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: correlationId
+          in: header
+          description: 'Correlation identifier (from header, optional).'
+          schema:
+            type: string
+            format: uuid
+        - name: binRangeId
+          in: path
+          description: Route parameter `binRangeId`.
+          required: true
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        description: Request body.
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateBinRangeRequest'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/UpdateBinRangeRequest'
+          application/*+json:
+            schema:
+              $ref: '#/components/schemas/UpdateBinRangeRequest'
+        required: true
+      responses:
+        '200':
+          description: Successful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UpdateBinRangeResponseBaseResponseModel'
+        '400':
+          description: Unsuccessful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ObjectBaseResponseModel'
+    get:
+      tags:
+        - BinRange
+      summary: Retrieve a single Bin Range by id.
+      parameters:
+        - name: requestId
+          in: header
+          description: Unique identifier for the request (from header).
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: correlationId
+          in: header
+          description: 'Correlation identifier (from header, optional).'
+          schema:
+            type: string
+            format: uuid
+        - name: binRangeId
+          in: path
+          description: Route parameter `binRangeId`.
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Successful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetBinRangeByIdResponseBaseResponseModel'
+        '400':
+          description: Unsuccessful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ObjectBaseResponseModel'
+  /binsponsors:
+    post:
+      tags:
+        - BinSponsor
+      summary: Creates a new BIN sponsor with its sponsor identity and settlement profile.
+      parameters:
+        - name: requestId
+          in: header
+          description: Unique identifier for the request (from header).
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: correlationId
+          in: header
+          description: 'Correlation identifier (from header, optional).'
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        description: Request body.
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateBinSponsorRequest'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/CreateBinSponsorRequest'
+          application/*+json:
+            schema:
+              $ref: '#/components/schemas/CreateBinSponsorRequest'
+        required: true
+      responses:
+        '201':
+          description: Successful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CreateBinSponsorResponseBaseResponseModel'
+        '400':
+          description: Unsuccessful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ObjectBaseResponseModel'
+    get:
+      tags:
+        - BinSponsor
+      summary: "Paginated list of BIN sponsors. Each row exposes sponsor identity\r\n(name, code, status) + settlement profile metadata."
+      parameters:
+        - name: requestId
+          in: header
+          description: Unique identifier for the request (from header).
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: correlationId
+          in: header
+          description: 'Correlation identifier (from header, optional).'
+          schema:
+            type: string
+            format: uuid
+        - name: page
+          in: query
+          description: 1-based page index.
+          schema:
+            type: integer
+            format: int32
+            default: 1
+        - name: limit
+          in: query
+          description: Page size.
+          schema:
+            type: integer
+            format: int32
+            default: 10
+        - name: sortingParameters
+          in: query
+          description: Optional sort expression.
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetAllBinSponsorsResponseBaseResponseModel'
+        '400':
+          description: Unsuccessful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ObjectBaseResponseModel'
+  '/binsponsors/{binSponsorId}':
+    get:
+      tags:
+        - BinSponsor
+      summary: "Retrieve a single BIN sponsor by id, joining the sponsor identity\r\n(mbl) with its settlement profile (bsf)."
+      parameters:
+        - name: requestId
+          in: header
+          description: Unique identifier for the request (from header).
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: correlationId
+          in: header
+          description: 'Correlation identifier (from header, optional).'
+          schema:
+            type: string
+            format: uuid
+        - name: binSponsorId
+          in: path
+          description: Route parameter `binSponsorId`.
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Successful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetBinSponsorByIdResponseBaseResponseModel'
+        '400':
+          description: Unsuccessful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ObjectBaseResponseModel'
+    put:
+      tags:
+        - BinSponsor
+      summary: 'Update a BIN sponsor''s name, status, and settlement profile.'
+      parameters:
+        - name: requestId
+          in: header
+          description: Unique identifier for the request (from header).
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: correlationId
+          in: header
+          description: 'Correlation identifier (from header, optional).'
+          schema:
+            type: string
+            format: uuid
+        - name: binSponsorId
+          in: path
+          description: Route parameter `binSponsorId`.
+          required: true
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        description: Request body.
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateBinSponsorRequest'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/UpdateBinSponsorRequest'
+          application/*+json:
+            schema:
+              $ref: '#/components/schemas/UpdateBinSponsorRequest'
+        required: true
+      responses:
+        '200':
+          description: Successful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UpdateBinSponsorResponseBaseResponseModel'
+        '400':
+          description: Unsuccessful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ObjectBaseResponseModel'
+  /cardprograms:
+    post:
+      tags:
+        - CardProgram
+      summary: Creates a Card Program + linked domains.
+      parameters:
+        - name: requestId
+          in: header
+          description: Unique identifier for the request (from header).
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: correlationId
+          in: header
+          description: 'Correlation identifier (from header, optional).'
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        description: Request body.
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateCardProgramRequest'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/CreateCardProgramRequest'
+          application/*+json:
+            schema:
+              $ref: '#/components/schemas/CreateCardProgramRequest'
+        required: true
+      responses:
+        '201':
+          description: Successful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CreateCardProgramResponseBaseResponseModel'
+        '400':
+          description: Unsuccessful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ObjectBaseResponseModel'
+    get:
+      tags:
+        - CardProgram
+      summary: Paginated list of card programs.
+      parameters:
+        - name: requestId
+          in: header
+          description: Unique identifier for the request (from header).
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: correlationId
+          in: header
+          description: 'Correlation identifier (from header, optional).'
+          schema:
+            type: string
+            format: uuid
+        - name: page
+          in: query
+          description: 1-based page index.
+          schema:
+            type: integer
+            format: int32
+            default: 1
+        - name: limit
+          in: query
+          description: Page size.
+          schema:
+            type: integer
+            format: int32
+            default: 10
+        - name: sortingParameters
+          in: query
+          description: Optional sort expression.
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetAllCardProgramsResponseBaseResponseModel'
+        '400':
+          description: Unsuccessful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ObjectBaseResponseModel'
+  '/cardprograms/{cardProgramId}':
+    put:
+      tags:
+        - CardProgram
+      summary: Update a card program and its associated configuration.
+      parameters:
+        - name: requestId
+          in: header
+          description: Unique identifier for the request (from header).
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: correlationId
+          in: header
+          description: 'Correlation identifier (from header, optional).'
+          schema:
+            type: string
+            format: uuid
+        - name: cardProgramId
+          in: path
+          description: Route parameter `cardProgramId`.
+          required: true
+          schema:
+            type: string
+      requestBody:
+        description: Request body.
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateCardProgramRequest'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/UpdateCardProgramRequest'
+          application/*+json:
+            schema:
+              $ref: '#/components/schemas/UpdateCardProgramRequest'
+        required: true
+      responses:
+        '200':
+          description: Successful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UpdateCardProgramResponseBaseResponseModel'
+        '400':
+          description: Unsuccessful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ObjectBaseResponseModel'
+    get:
+      tags:
+        - CardProgram
+      summary: Retrieve a single card program by id.
+      parameters:
+        - name: requestId
+          in: header
+          description: Unique identifier for the request (from header).
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: correlationId
+          in: header
+          description: 'Correlation identifier (from header, optional).'
+          schema:
+            type: string
+            format: uuid
+        - name: cardProgramId
+          in: path
+          description: Route parameter `cardProgramId`.
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetCardProgramByIdResponseBaseResponseModel'
+        '400':
+          description: Unsuccessful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ObjectBaseResponseModel'
+  '/cardprograms/programmanagers/{programManagerId}':
+    get:
+      tags:
+        - CardProgram
+      summary: Paginated card programs for one Program Manager.
+      parameters:
+        - name: requestId
+          in: header
+          description: Unique identifier for the request (from header).
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: correlationId
+          in: header
+          description: 'Correlation identifier (from header, optional).'
+          schema:
+            type: string
+            format: uuid
+        - name: programManagerId
+          in: path
+          description: Route parameter `programManagerId`.
+          required: true
+          schema:
+            type: string
+        - name: page
+          in: query
+          description: 1-based page index.
+          schema:
+            type: integer
+            format: int32
+            default: 1
+        - name: limit
+          in: query
+          description: Page size.
+          schema:
+            type: integer
+            format: int32
+            default: 10
+        - name: sortingParameters
+          in: query
+          description: Optional sort expression.
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetCardProgramsByProgramManagerResponseBaseResponseModel'
+        '400':
+          description: Unsuccessful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ObjectBaseResponseModel'
+  /healths:
+    get:
+      tags:
+        - Health
+      summary: 'Liveness probe — checks DB + registry, returns status.'
+      parameters:
+        - name: requestId
+          in: header
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: correlationId
+          in: header
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Successful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetHealthResponseBaseResponseModel'
+        '400':
+          description: Unsuccessful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetHealthResponseBaseResponseModel'
+  /programmanagers:
+    post:
+      tags:
+        - ProgramManager
+      summary: Register a new Program Manager.
+      parameters:
+        - name: requestId
+          in: header
+          description: Unique identifier for the request (from header).
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: correlationId
+          in: header
+          description: 'Correlation identifier (from header, optional).'
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        description: Request body.
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateProgramManagerRequest'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/CreateProgramManagerRequest'
+          application/*+json:
+            schema:
+              $ref: '#/components/schemas/CreateProgramManagerRequest'
+        required: true
+      responses:
+        '201':
+          description: Successful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CreateProgramManagerResponseBaseResponseModel'
+        '400':
+          description: Unsuccessful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ObjectBaseResponseModel'
+    get:
+      tags:
+        - ProgramManager
+      summary: List program managers (paginated).
+      parameters:
+        - name: requestId
+          in: header
+          description: Unique identifier for the request (from header).
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: correlationId
+          in: header
+          description: 'Correlation identifier (from header, optional).'
+          schema:
+            type: string
+            format: uuid
+        - name: page
+          in: query
+          description: 1-based page index.
+          schema:
+            type: integer
+            format: int32
+            default: 1
+        - name: limit
+          in: query
+          description: Page size.
+          schema:
+            type: integer
+            format: int32
+            default: 10
+        - name: sortingParameters
+          in: query
+          description: Optional sort expression.
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetAllProgramManagersResponseBaseResponseModel'
+        '400':
+          description: Unsuccessful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ObjectBaseResponseModel'
+  '/programmanagers/{programManagerId}':
+    get:
+      tags:
+        - ProgramManager
+      summary: Get a program manager by id.
+      parameters:
+        - name: requestId
+          in: header
+          description: Unique identifier for the request (from header).
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: correlationId
+          in: header
+          description: 'Correlation identifier (from header, optional).'
+          schema:
+            type: string
+            format: uuid
+        - name: programManagerId
+          in: path
+          description: Route parameter `programManagerId`.
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Successful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetProgramManagerByIdResponseBaseResponseModel'
+        '400':
+          description: Unsuccessful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ObjectBaseResponseModel'
+    put:
+      tags:
+        - ProgramManager
+      summary: Update a program manager.
+      parameters:
+        - name: requestId
+          in: header
+          description: Unique identifier for the request (from header).
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: correlationId
+          in: header
+          description: 'Correlation identifier (from header, optional).'
+          schema:
+            type: string
+            format: uuid
+        - name: programManagerId
+          in: path
+          description: Route parameter `programManagerId`.
+          required: true
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        description: Request body.
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateProgramManagerRequest'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/UpdateProgramManagerRequest'
+          application/*+json:
+            schema:
+              $ref: '#/components/schemas/UpdateProgramManagerRequest'
+        required: true
+      responses:
+        '200':
+          description: Successful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UpdateProgramManagerResponseBaseResponseModel'
+        '400':
+          description: Unsuccessful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ObjectBaseResponseModel'
+  /api-specification.yml:
+    get:
+      tags:
+        - ApiSpecification
+      summary: Retrieve the api specifications yaml file
+      parameters:
+        - name: requestId
+          in: header
+          description: Unique identifier for the request (from header).
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: correlationId
+          in: header
+          description: 'Correlation identifier for tracking the request across systems (from header, optional).'
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Successful response model
+          content:
+            application/yaml:
+              schema:
+                type: string
+        '404':
+          description: Unsuccessful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ObjectBaseResponseModel'
+        '500':
+          description: Unsuccessful response model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ObjectBaseResponseModel'
+components:
+  schemas:
+    ApiError:
+      type: object
+      properties:
+        code:
+          type: string
+          description: Error code generated by the application.
+          nullable: true
+          example: '-1'
+        description:
+          type: string
+          description: Short description of the error.
+          nullable: true
+          example: '[-1] - The action you were performing could not be completed due to an internal error. Please contact TXN for assistance.'
+      additionalProperties: false
+      description: Standard API error payload.
+    BinListItem:
+      type: object
+      properties:
+        id:
+          type: string
+          description: 'Response property: Id.'
+          nullable: true
+          example: 00000000-0000-0000-0000-000000000000
+        bin:
+          type: string
+          description: 'Response property: Bin.'
+          nullable: true
+          example: '123456'
+        network:
+          type: string
+          description: 'Response property: Network.'
+          nullable: true
+          example: VISA
+        type:
+          type: string
+          description: 'Response property: Type.'
+          nullable: true
+          example: DEBIT
+        binSponsor:
+          type: string
+          description: 'Response property: BinSponsor.'
+          nullable: true
+          example: 00000000-0000-0000-0000-000000000000
+        settlementReportingIdentifier:
+          type: string
+          description: 'Response property: SettlementReportingIdentifier.'
+          nullable: true
+          example: SETTLE-001
+        status:
+          type: string
+          description: 'Response property: Status.'
+          nullable: true
+          example: ACTIVE
+        createdAt:
+          type: string
+          description: 'Response property: CreatedAt.'
+          nullable: true
+          example: '2024-01-15T10:30:00'
+        lastModified:
+          type: string
+          description: 'Response property: LastModified.'
+          nullable: true
+          example: '2024-01-15T10:30:00'
+      additionalProperties: false
+      description: List-item view for `GetAllBinsResponse` projected by the proc.
+    CreateBinRequest:
+      type: object
+      properties:
+        id:
+          type: string
+          description: 'Request property: Id.'
+          format: uuid
+          nullable: true
+          example: 00000000-0000-0000-0000-000000000000
+        bin:
+          type: integer
+          description: 'Request property: Bin.'
+          format: int32
+          nullable: true
+          example: 0
+        binName:
+          type: string
+          description: 'Request property: BinName.'
+          nullable: true
+          example: Sample name
+        network:
+          type: string
+          description: 'Request property: Network.'
+          nullable: true
+          example: VISA
+        type:
+          type: string
+          description: 'Request property: Type.'
+          nullable: true
+          example: DEBIT
+        binSponsor:
+          type: string
+          description: 'Request property: BinSponsor.'
+          format: uuid
+          nullable: true
+          example: 00000000-0000-0000-0000-000000000000
+        settlementReportingIdentifier:
+          type: string
+          description: 'Request property: SettlementReportingIdentifier.'
+          nullable: true
+          example: SETTLE-001
+        status:
+          type: string
+          description: 'Request property: Status.'
+          nullable: true
+          example: ACTIVE
+      additionalProperties: false
+      description: Creates a BIN link tying a BinSponsor and product to issuance.
+    CreateBinResponse:
+      type: object
+      properties:
+        id:
+          type: string
+          description: 'Response property: Id.'
+          format: uuid
+          nullable: true
+          example: 00000000-0000-0000-0000-000000000000
+        bin:
+          type: integer
+          description: 'Response property: Bin.'
+          format: int32
+          nullable: true
+          example: 0
+        binName:
+          type: string
+          description: 'Response property: BinName.'
+          nullable: true
+          example: Sample name
+        network:
+          type: string
+          description: 'Response property: Network.'
+          nullable: true
+          example: VISA
+        type:
+          type: string
+          description: 'Response property: Type.'
+          nullable: true
+          example: DEBIT
+        binSponsor:
+          type: string
+          description: 'Response property: BinSponsor.'
+          format: uuid
+          nullable: true
+          example: 00000000-0000-0000-0000-000000000000
+        settlementReportingIdentifier:
+          type: string
+          description: 'Response property: SettlementReportingIdentifier.'
+          nullable: true
+          example: SETTLE-001
+        status:
+          type: string
+          description: 'Response property: Status.'
+          nullable: true
+          example: ACTIVE
+        createdAt:
+          type: string
+          description: 'Response property: CreatedAt.'
+          nullable: true
+          example: '2024-01-15T10:30:00'
+        lastModified:
+          type: string
+          description: 'Response property: LastModified.'
+          nullable: true
+          example: '2024-01-15T10:30:00'
+      additionalProperties: false
+      description: Successful payload after creating a BIN link.
+    CreateBinResponseBaseResponseModel:
+      type: object
+      properties:
+        requestId:
+          type: string
+          description: A GUID generated by the system to indicate the unique request sent to the system.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        correlationId:
+          type: string
+          description: A GUID passed by the originator.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        responseId:
+          type: string
+          description: A GUID generated by the system to indicate the unique response from the system.
+          format: uuid
+          example: 00000000-0000-0000-0000-000000000000
+        dateTime:
+          type: string
+          description: Timestamp when the response was generated.
+          format: date-time
+          example: '2024-01-15T10:30:00'
+        result:
+          $ref: '#/components/schemas/CreateBinResponse'
+        error:
+          $ref: '#/components/schemas/ApiError'
+      additionalProperties: false
+      description: Base response model for all API responses.
+    GetAllBinsPaginationResponse:
+      type: object
+      properties:
+        total:
+          type: integer
+          description: Total rows available.
+          format: int64
+          example: 1
+        page:
+          type: integer
+          description: Current page number.
+          format: int32
+          example: 1
+        limit:
+          type: integer
+          description: Rows requested per page.
+          format: int32
+          example: 10
+        pages:
+          type: integer
+          description: Total number of pages.
+          format: int32
+          example: 1
+        hasNext:
+          type: boolean
+          description: Indicates whether a next page exists.
+          example: false
+        hasPrevious:
+          type: boolean
+          description: Indicates whether a previous page exists.
+          example: false
+        nextPage:
+          type: integer
+          description: Next page number when available.
+          format: int32
+          example: 0
+        previousPage:
+          type: integer
+          description: Previous page number when available.
+          format: int32
+          example: 0
+      additionalProperties: false
+      description: Pagination metadata for `GetAllBinsResponse`.
+    GetAllBinsResponse:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            $ref: '#/components/schemas/BinListItem'
+          description: 'Response property: Data.'
+          nullable: true
+        pagination:
+          $ref: '#/components/schemas/GetAllBinsPaginationResponse'
+      additionalProperties: false
+      description: Paginated list of BINs.
+    GetAllBinsResponseBaseResponseModel:
+      type: object
+      properties:
+        requestId:
+          type: string
+          description: A GUID generated by the system to indicate the unique request sent to the system.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        correlationId:
+          type: string
+          description: A GUID passed by the originator.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        responseId:
+          type: string
+          description: A GUID generated by the system to indicate the unique response from the system.
+          format: uuid
+          example: 00000000-0000-0000-0000-000000000000
+        dateTime:
+          type: string
+          description: Timestamp when the response was generated.
+          format: date-time
+          example: '2024-01-15T10:30:00'
+        result:
+          $ref: '#/components/schemas/GetAllBinsResponse'
+        error:
+          $ref: '#/components/schemas/ApiError'
+      additionalProperties: false
+      description: Base response model for all API responses.
+    GetBinByIdResponse:
+      type: object
+      properties:
+        id:
+          type: string
+          description: 'Response property: Id.'
+          format: uuid
+          nullable: true
+          example: 00000000-0000-0000-0000-000000000000
+        bin:
+          type: integer
+          description: 'Response property: Bin.'
+          format: int32
+          nullable: true
+          example: 0
+        network:
+          type: string
+          description: 'Response property: Network.'
+          nullable: true
+          example: VISA
+        type:
+          type: string
+          description: 'Response property: Type.'
+          nullable: true
+          example: DEBIT
+        binSponsor:
+          type: string
+          description: 'Response property: BinSponsor.'
+          format: uuid
+          nullable: true
+          example: 00000000-0000-0000-0000-000000000000
+        settlementReportingIdentifier:
+          type: string
+          description: 'Response property: SettlementReportingIdentifier.'
+          nullable: true
+          example: '1234567890'
+        status:
+          type: string
+          description: 'Response property: Status.'
+          nullable: true
+          example: ACTIVE
+        createdAt:
+          type: string
+          description: 'Response property: CreatedAt.'
+          nullable: true
+          example: '2024-01-15T10:30:00'
+        lastModified:
+          type: string
+          description: 'Response property: LastModified.'
+          nullable: true
+          example: '2024-01-15T10:30:00'
+      additionalProperties: false
+      description: Retrieve a single BIN by id.
+    GetBinByIdResponseBaseResponseModel:
+      type: object
+      properties:
+        requestId:
+          type: string
+          description: A GUID generated by the system to indicate the unique request sent to the system.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        correlationId:
+          type: string
+          description: A GUID passed by the originator.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        responseId:
+          type: string
+          description: A GUID generated by the system to indicate the unique response from the system.
+          format: uuid
+          example: 00000000-0000-0000-0000-000000000000
+        dateTime:
+          type: string
+          description: Timestamp when the response was generated.
+          format: date-time
+          example: '2024-01-15T10:30:00'
+        result:
+          $ref: '#/components/schemas/GetBinByIdResponse'
+        error:
+          $ref: '#/components/schemas/ApiError'
+      additionalProperties: false
+      description: Base response model for all API responses.
+    ObjectBaseResponseModel:
+      type: object
+      properties:
+        requestId:
+          type: string
+          description: A GUID generated by the system to indicate the unique request sent to the system.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        correlationId:
+          type: string
+          description: A GUID passed by the originator.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        responseId:
+          type: string
+          description: A GUID generated by the system to indicate the unique response from the system.
+          format: uuid
+          example: 00000000-0000-0000-0000-000000000000
+        dateTime:
+          type: string
+          description: Timestamp when the response was generated.
+          format: date-time
+          example: '2024-01-15T10:30:00'
+        result:
+          description: Response payload.
+          nullable: true
+        error:
+          $ref: '#/components/schemas/ApiError'
+      additionalProperties: false
+      description: Base response model for all API responses.
+    UpdateBinRequest:
+      type: object
+      properties:
+        id:
+          type: string
+          description: 'Request property: Id.'
+          format: uuid
+          nullable: true
+          example: 00000000-0000-0000-0000-000000000000
+        bin:
+          type: integer
+          description: 'Request property: Bin.'
+          format: int32
+          nullable: true
+          example: 0
+        binName:
+          type: string
+          description: 'Request property: BinName.'
+          nullable: true
+          example: Sample name
+        network:
+          type: string
+          description: 'Request property: Network.'
+          nullable: true
+          example: VISA
+        type:
+          type: string
+          description: 'Request property: Type.'
+          nullable: true
+          example: DEBIT
+        binSponsor:
+          type: string
+          description: 'Request property: BinSponsor.'
+          format: uuid
+          nullable: true
+          example: 00000000-0000-0000-0000-000000000000
+        settlementReportingIdentifier:
+          type: string
+          description: 'Request property: SettlementReportingIdentifier.'
+          nullable: true
+          example: SETTLE-001
+        status:
+          type: string
+          description: 'Request property: Status.'
+          nullable: true
+          example: ACTIVE
+      additionalProperties: false
+      description: Update an existing BIN link.
+    UpdateBinResponse:
+      type: object
+      properties:
+        id:
+          type: string
+          description: 'Response property: Id.'
+          format: uuid
+          nullable: true
+          example: 00000000-0000-0000-0000-000000000000
+        bin:
+          type: integer
+          description: 'Response property: Bin.'
+          format: int32
+          nullable: true
+          example: 0
+        binName:
+          type: string
+          description: 'Response property: BinName.'
+          nullable: true
+          example: Sample name
+        network:
+          type: string
+          description: 'Response property: Network.'
+          nullable: true
+          example: VISA
+        type:
+          type: string
+          description: 'Response property: Type.'
+          nullable: true
+          example: DEBIT
+        binSponsor:
+          type: string
+          description: 'Response property: BinSponsor.'
+          format: uuid
+          nullable: true
+          example: 00000000-0000-0000-0000-000000000000
+        settlementReportingIdentifier:
+          type: string
+          description: 'Response property: SettlementReportingIdentifier.'
+          nullable: true
+          example: SETTLE-001
+        status:
+          type: string
+          description: 'Response property: Status.'
+          nullable: true
+          example: ACTIVE
+        createdAt:
+          type: string
+          description: 'Response property: CreatedAt.'
+          nullable: true
+          example: '2024-01-15T10:30:00'
+        lastModified:
+          type: string
+          description: 'Response property: LastModified.'
+          nullable: true
+          example: '2024-01-15T10:30:00'
+      additionalProperties: false
+      description: Successful payload after updating a BIN link.
+    UpdateBinResponseBaseResponseModel:
+      type: object
+      properties:
+        requestId:
+          type: string
+          description: A GUID generated by the system to indicate the unique request sent to the system.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        correlationId:
+          type: string
+          description: A GUID passed by the originator.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        responseId:
+          type: string
+          description: A GUID generated by the system to indicate the unique response from the system.
+          format: uuid
+          example: 00000000-0000-0000-0000-000000000000
+        dateTime:
+          type: string
+          description: Timestamp when the response was generated.
+          format: date-time
+          example: '2024-01-15T10:30:00'
+        result:
+          $ref: '#/components/schemas/UpdateBinResponse'
+        error:
+          $ref: '#/components/schemas/ApiError'
+      additionalProperties: false
+      description: Base response model for all API responses.
+    BinRangeListItem:
+      type: object
+      properties:
+        id:
+          type: string
+          description: 'Response property: Id.'
+          nullable: true
+          example: 00000000-0000-0000-0000-000000000000
+        bin:
+          type: string
+          description: 'Response property: Bin.'
+          nullable: true
+          example: '123456'
+        rangeStart:
+          type: string
+          description: 'Response property: RangeStart.'
+          nullable: true
+          example: '1234781201'
+        rangeEnd:
+          type: string
+          description: 'Response property: RangeEnd.'
+          nullable: true
+          example: '1234781250'
+        issuanceCountry:
+          type: string
+          description: ISO 3166-1 alpha-2 country code for card issuance.
+          nullable: true
+          example: ZA
+        cardholderBillingCurrency:
+          type: string
+          description: 'Response property: CardholderBillingCurrency.'
+          nullable: true
+          example: ZAR
+        programManager:
+          type: string
+          description: 'Response property: ProgramManager.'
+          nullable: true
+          example: 00000000-0000-0000-0000-000000000000
+        settlementReportingIdentifier:
+          type: string
+          description: 'Response property: SettlementReportingIdentifier.'
+          nullable: true
+          example: SETTLE-001
+        status:
+          type: string
+          description: 'Response property: Status.'
+          nullable: true
+          example: ACTIVE
+        createdAt:
+          type: string
+          description: 'Response property: CreatedAt.'
+          nullable: true
+          example: '2024-01-15T10:30:00'
+        lastModified:
+          type: string
+          description: 'Response property: LastModified.'
+          nullable: true
+          example: '2024-01-15T10:30:00'
+      additionalProperties: false
+      description: List-item view for `GetAllBinRangesResponse` projected by the proc.
+    CreateBinRangeRequest:
+      type: object
+      properties:
+        id:
+          type: string
+          description: 'Request property: Id.'
+          format: uuid
+          nullable: true
+          example: 00000000-0000-0000-0000-000000000000
+        bin:
+          type: string
+          description: 'Request property: Bin.'
+          format: uuid
+          nullable: true
+          example: 00000000-0000-0000-0000-000000000000
+        rangeStart:
+          type: string
+          description: Starting PAN range (6–11 digits). Must begin with the linked BIN number (6 or 8 digits).
+          nullable: true
+          example: '1234781201'
+        rangeEnd:
+          type: string
+          description: Ending PAN range (6–11 digits). Must begin with the linked BIN number (6 or 8 digits).
+          nullable: true
+          example: '1234781250'
+        issuanceCountry:
+          type: string
+          description: ISO 3166-1 alpha-2 country code for card issuance.
+          nullable: true
+          example: ZA
+        cardholderBillingCurrency:
+          type: string
+          description: 'Request property: CardholderBillingCurrency.'
+          nullable: true
+          example: ZAR
+        programManager:
+          type: string
+          description: 'Request property: ProgramManager.'
+          format: uuid
+          nullable: true
+          example: 00000000-0000-0000-0000-000000000000
+        settlementReportingIdentifier:
+          type: string
+          description: 'Request property: SettlementReportingIdentifier.'
+          nullable: true
+          example: SETTLE-001
+        status:
+          type: string
+          description: 'Request property: Status.'
+          nullable: true
+          example: ACTIVE
+      additionalProperties: false
+      description: Reserves a contiguous range of card numbers under one BIN.
+    CreateBinRangeResponse:
+      type: object
+      properties:
+        id:
+          type: string
+          description: 'Response property: Id.'
+          format: uuid
+          nullable: true
+          example: 00000000-0000-0000-0000-000000000000
+        bin:
+          type: string
+          description: 'Response property: Bin.'
+          format: uuid
+          nullable: true
+          example: 00000000-0000-0000-0000-000000000000
+        rangeStart:
+          type: string
+          description: Starting PAN range value (6–11 digits); must begin with the linked BIN prefix (6 or 8 digits).
+          nullable: true
+          example: '1234781201'
+        rangeEnd:
+          type: string
+          description: Ending PAN range value (6–11 digits); must begin with the linked BIN prefix (6 or 8 digits).
+          nullable: true
+          example: '1234781250'
+        issuanceCountry:
+          type: string
+          description: ISO 3166-1 alpha-2 country code for card issuance.
+          nullable: true
+          example: ZA
+        cardholderBillingCurrency:
+          type: string
+          description: 'Response property: CardholderBillingCurrency.'
+          nullable: true
+          example: ZAR
+        programManager:
+          type: string
+          description: 'Response property: ProgramManager.'
+          format: uuid
+          nullable: true
+          example: 00000000-0000-0000-0000-000000000000
+        settlementReportingIdentifier:
+          type: string
+          description: 'Response property: SettlementReportingIdentifier.'
+          nullable: true
+          example: SETTLE-001
+        status:
+          type: string
+          description: 'Response property: Status.'
+          nullable: true
+          example: ACTIVE
+        createdAt:
+          type: string
+          description: 'Response property: CreatedAt.'
+          nullable: true
+          example: '2024-01-15T10:30:00'
+        lastModified:
+          type: string
+          description: 'Response property: LastModified.'
+          nullable: true
+          example: '2024-01-15T10:30:00'
+      additionalProperties: false
+      description: Successful payload after reserving a Bin Range.
+    CreateBinRangeResponseBaseResponseModel:
+      type: object
+      properties:
+        requestId:
+          type: string
+          description: A GUID generated by the system to indicate the unique request sent to the system.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        correlationId:
+          type: string
+          description: A GUID passed by the originator.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        responseId:
+          type: string
+          description: A GUID generated by the system to indicate the unique response from the system.
+          format: uuid
+          example: 00000000-0000-0000-0000-000000000000
+        dateTime:
+          type: string
+          description: Timestamp when the response was generated.
+          format: date-time
+          example: '2024-01-15T10:30:00'
+        result:
+          $ref: '#/components/schemas/CreateBinRangeResponse'
+        error:
+          $ref: '#/components/schemas/ApiError'
+      additionalProperties: false
+      description: Base response model for all API responses.
+    GetAllBinRangesResponse:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            $ref: '#/components/schemas/BinRangeListItem'
+          description: 'Response property: Data.'
+          nullable: true
+        pagination:
+          $ref: '#/components/schemas/Pagination'
+      additionalProperties: false
+      description: Paginated list of Bin Ranges.
+    GetAllBinRangesResponseBaseResponseModel:
+      type: object
+      properties:
+        requestId:
+          type: string
+          description: A GUID generated by the system to indicate the unique request sent to the system.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        correlationId:
+          type: string
+          description: A GUID passed by the originator.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        responseId:
+          type: string
+          description: A GUID generated by the system to indicate the unique response from the system.
+          format: uuid
+          example: 00000000-0000-0000-0000-000000000000
+        dateTime:
+          type: string
+          description: Timestamp when the response was generated.
+          format: date-time
+          example: '2024-01-15T10:30:00'
+        result:
+          $ref: '#/components/schemas/GetAllBinRangesResponse'
+        error:
+          $ref: '#/components/schemas/ApiError'
+      additionalProperties: false
+      description: Base response model for all API responses.
+    GetBinRangeByIdResponse:
+      type: object
+      properties:
+        id:
+          type: string
+          description: 'Response property: Id.'
+          format: uuid
+          nullable: true
+          example: 00000000-0000-0000-0000-000000000000
+        bin:
+          type: string
+          description: 'Response property: Bin.'
+          format: uuid
+          nullable: true
+          example: 00000000-0000-0000-0000-000000000000
+        rangeStart:
+          type: string
+          description: 'Response property: RangeStart.'
+          nullable: true
+          example: '1234781201'
+        rangeEnd:
+          type: string
+          description: 'Response property: RangeEnd.'
+          nullable: true
+          example: '1234781250'
+        issuanceCountry:
+          type: string
+          description: ISO 3166-1 alpha-2 country code for card issuance.
+          nullable: true
+          example: ZA
+        cardholderBillingCurrency:
+          type: string
+          description: 'Response property: CardholderBillingCurrency.'
+          nullable: true
+          example: ZAR
+        programManager:
+          type: string
+          description: 'Response property: ProgramManager.'
+          format: uuid
+          nullable: true
+          example: 00000000-0000-0000-0000-000000000000
+        settlementReportingIdentifier:
+          type: string
+          description: 'Response property: SettlementReportingIdentifier.'
+          nullable: true
+          example: SETTLE-001
+        status:
+          type: string
+          description: 'Response property: Status.'
+          nullable: true
+          example: ACTIVE
+        createdAt:
+          type: string
+          description: 'Response property: CreatedAt.'
+          nullable: true
+          example: '2024-01-15T10:30:00'
+        lastModified:
+          type: string
+          description: 'Response property: LastModified.'
+          nullable: true
+          example: '2024-01-15T10:30:00'
+      additionalProperties: false
+      description: Retrieve a single Bin Range by id.
+    GetBinRangeByIdResponseBaseResponseModel:
+      type: object
+      properties:
+        requestId:
+          type: string
+          description: A GUID generated by the system to indicate the unique request sent to the system.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        correlationId:
+          type: string
+          description: A GUID passed by the originator.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        responseId:
+          type: string
+          description: A GUID generated by the system to indicate the unique response from the system.
+          format: uuid
+          example: 00000000-0000-0000-0000-000000000000
+        dateTime:
+          type: string
+          description: Timestamp when the response was generated.
+          format: date-time
+          example: '2024-01-15T10:30:00'
+        result:
+          $ref: '#/components/schemas/GetBinRangeByIdResponse'
+        error:
+          $ref: '#/components/schemas/ApiError'
+      additionalProperties: false
+      description: Base response model for all API responses.
+    Pagination:
+      type: object
+      properties:
+        total:
+          type: integer
+          description: Total number of records matching the query across all pages.
+          format: int32
+          example: 1
+        page:
+          type: integer
+          description: Current page number (1-based).
+          format: int32
+          example: 1
+        limit:
+          type: integer
+          description: Maximum number of records returned per page.
+          format: int32
+          example: 10
+        pages:
+          type: integer
+          description: Total number of pages available for the current query.
+          format: int32
+          example: 1
+        hasNext:
+          type: boolean
+          description: Whether a next page exists after the current page.
+          example: false
+        hasPrevious:
+          type: boolean
+          description: Whether a previous page exists before the current page.
+          example: false
+        nextPage:
+          type: integer
+          description: Page number of the next page when a next page exists; otherwise 0.
+          format: int32
+          example: 0
+        previousPage:
+          type: integer
+          description: Page number of the previous page when a previous page exists; otherwise 0.
+          format: int32
+          example: 0
+      additionalProperties: false
+      description: Pagination metadata for paginated API list responses.
+    UpdateBinRangeRequest:
+      type: object
+      properties:
+        id:
+          type: string
+          description: 'Request property: Id.'
+          format: uuid
+          nullable: true
+          example: 00000000-0000-0000-0000-000000000000
+        bin:
+          type: string
+          description: 'Request property: Bin.'
+          format: uuid
+          nullable: true
+          example: 00000000-0000-0000-0000-000000000000
+        rangeStart:
+          type: string
+          description: 'Request property: RangeStart.'
+          nullable: true
+          example: sample
+        rangeEnd:
+          type: string
+          description: 'Request property: RangeEnd.'
+          nullable: true
+          example: sample
+        issuanceCountry:
+          type: string
+          description: ISO 3166-1 alpha-2 country code for card issuance.
+          nullable: true
+          example: ZA
+        cardholderBillingCurrency:
+          type: string
+          description: 'Request property: CardholderBillingCurrency.'
+          nullable: true
+          example: sample
+        programManager:
+          type: string
+          description: 'Request property: ProgramManager.'
+          format: uuid
+          nullable: true
+          example: 00000000-0000-0000-0000-000000000000
+        settlementReportingIdentifier:
+          type: string
+          description: 'Request property: SettlementReportingIdentifier.'
+          nullable: true
+          example: SETTLE-001
+        status:
+          type: string
+          description: 'Request property: Status.'
+          nullable: true
+          example: ACTIVE
+      additionalProperties: false
+      description: Update an existing Bin Range.
+    UpdateBinRangeResponse:
+      type: object
+      properties:
+        id:
+          type: string
+          description: 'Response property: Id.'
+          format: uuid
+          nullable: true
+          example: 00000000-0000-0000-0000-000000000000
+        bin:
+          type: string
+          description: 'Response property: Bin.'
+          format: uuid
+          nullable: true
+          example: 00000000-0000-0000-0000-000000000000
+        rangeStart:
+          type: string
+          description: Starting PAN range value (6–11 digits); must begin with the linked BIN prefix (6 or 8 digits).
+          nullable: true
+          example: '1234781201'
+        rangeEnd:
+          type: string
+          description: Ending PAN range value (6–11 digits); must begin with the linked BIN prefix (6 or 8 digits).
+          nullable: true
+          example: '1234781250'
+        issuanceCountry:
+          type: string
+          description: ISO 3166-1 alpha-2 country code for card issuance.
+          nullable: true
+          example: ZA
+        cardholderBillingCurrency:
+          type: string
+          description: 'Response property: CardholderBillingCurrency.'
+          nullable: true
+          example: ZAR
+        programManager:
+          type: string
+          description: 'Response property: ProgramManager.'
+          format: uuid
+          nullable: true
+          example: 00000000-0000-0000-0000-000000000000
+        settlementReportingIdentifier:
+          type: string
+          description: 'Response property: SettlementReportingIdentifier.'
+          nullable: true
+          example: SETTLE-001
+        status:
+          type: string
+          description: 'Response property: Status.'
+          nullable: true
+          example: ACTIVE
+        createdAt:
+          type: string
+          description: 'Response property: CreatedAt.'
+          nullable: true
+          example: '2024-01-15T10:30:00'
+        lastModified:
+          type: string
+          description: 'Response property: LastModified.'
+          nullable: true
+          example: '2024-01-15T10:30:00'
+      additionalProperties: false
+      description: Successful payload after updating a Bin Range.
+    UpdateBinRangeResponseBaseResponseModel:
+      type: object
+      properties:
+        requestId:
+          type: string
+          description: A GUID generated by the system to indicate the unique request sent to the system.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        correlationId:
+          type: string
+          description: A GUID passed by the originator.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        responseId:
+          type: string
+          description: A GUID generated by the system to indicate the unique response from the system.
+          format: uuid
+          example: 00000000-0000-0000-0000-000000000000
+        dateTime:
+          type: string
+          description: Timestamp when the response was generated.
+          format: date-time
+          example: '2024-01-15T10:30:00'
+        result:
+          $ref: '#/components/schemas/UpdateBinRangeResponse'
+        error:
+          $ref: '#/components/schemas/ApiError'
+      additionalProperties: false
+      description: Base response model for all API responses.
+    BinSponsorListItem:
+      type: object
+      properties:
+        id:
+          type: string
+          description: 'Response property: Id.'
+          nullable: true
+          example: 00000000-0000-0000-0000-000000000000
+        programManagerId:
+          type: string
+          description: 'Response property: ProgramManagerId.'
+          format: uuid
+          nullable: true
+          example: 00000000-0000-0000-0000-000000000000
+        name:
+          type: string
+          description: 'Response property: Name.'
+          nullable: true
+          example: Test BIN Sponsor
+        settlement:
+          $ref: '#/components/schemas/BinSponsorSettlementDetailsResponse'
+        status:
+          type: string
+          description: 'Response property: Status.'
+          nullable: true
+          example: ACTIVE
+        createdAt:
+          type: string
+          description: 'Response property: CreatedAt.'
+          nullable: true
+          example: '2024-01-15T10:30:00'
+        lastModified:
+          type: string
+          description: 'Response property: LastModified.'
+          nullable: true
+          example: '2024-01-15T10:30:00'
+      additionalProperties: false
+      description: List-item view for `GetAllBinSponsorsResponse` projected by the proc.
+    BinSponsorPaginationResponse:
+      type: object
+      properties:
+        total:
+          type: integer
+          description: Total number of items across all pages (same semantics as GET /products pagination.total).
+          format: int64
+          example: 1
+        page:
+          type: integer
+          description: Current page number.
+          format: int32
+          example: 1
+        limit:
+          type: integer
+          description: Maximum number of items per page.
+          format: int32
+          example: 10
+        pages:
+          type: integer
+          description: Total pages.
+          format: int32
+          example: 1
+        hasNext:
+          type: boolean
+          description: If next page is available.
+          example: false
+        hasPrevious:
+          type: boolean
+          description: If previous page available.
+          example: false
+        nextPage:
+          type: integer
+          description: Next page number when available (0 when none).
+          format: int32
+          example: 0
+        previousPage:
+          type: integer
+          description: Previous page number when available (0 when none).
+          format: int32
+          example: 0
+      additionalProperties: false
+      description: Pagination metadata for get-all BIN sponsors responses.
+    BinSponsorSettlementDetailsResponse:
+      type: object
+      properties:
+        host:
+          type: string
+          description: Server hostname or IP address for settlement reporting
+          nullable: true
+          example: sftp.settlement.example.com
+        port:
+          type: integer
+          description: Server port number for connection. Default value = 22.
+          format: int32
+          example: 22
+        username:
+          type: string
+          description: Username for server authentication
+          nullable: true
+          example: settlement_user
+        protocol:
+          type: string
+          description: 'Protocol used for settlement file transfer. Enum: SFTP, FTP, FTPS, HTTP, HTTPS'
+          nullable: true
+          example: SFTP
+        path:
+          type: string
+          description: Base directory path on the server for settlement files
+          nullable: true
+          example: /settlement/reports
+        enabled:
+          type: boolean
+          description: Whether settlement reporting is enabled for this entity. Default value = true.
+          example: true
+        validateHost:
+          type: boolean
+          description: Whether to validate the settlement host before use.
+          nullable: true
+          example: true
+        hostStatus:
+          type: string
+          description: Server-managed host connectivity status.
+          nullable: true
+          example: Pending
+      additionalProperties: false
+      description: Settlement connection details returned for a BIN sponsor.
+    CreateBinSponsorRequest:
+      required:
+        - programManagerId
+      type: object
+      properties:
+        id:
+          type: string
+          description: 'Unique ID for BIN Sponsor entity, randomly generated UUID.'
+          format: uuid
+          nullable: true
+          example: 00000000-0000-0000-0000-000000000000
+        name:
+          type: string
+          description: The BIN Sponsor name.
+          nullable: true
+          example: Test BIN Sponsor
+        programManagerId:
+          type: string
+          description: Unique ID of the Program Manager that owns this BIN Sponsor. Must reference an existing active Program Manager.
+          format: uuid
+          example: 00000000-0000-0000-0000-000000000000
+        settlement:
+          $ref: '#/components/schemas/CreateBinSponsorSettlement'
+        status:
+          type: string
+          description: 'Current status of the BIN Sponsor. Enum: ACTIVE, INACTIVE'
+          nullable: true
+          example: ACTIVE
+      additionalProperties: false
+      description: Creates a new BIN sponsor.
+    CreateBinSponsorResponse:
+      type: object
+      properties:
+        id:
+          type: string
+          description: 'Unique ID for BIN Sponsor entity, randomly generated UUID.'
+          format: uuid
+          nullable: true
+          example: 00000000-0000-0000-0000-000000000000
+        name:
+          type: string
+          description: The BIN Sponsor name.
+          nullable: true
+          example: Test BIN Sponsor
+        programManagerId:
+          type: string
+          description: Unique ID of the associated Program Manager.
+          format: uuid
+          nullable: true
+          example: 00000000-0000-0000-0000-000000000000
+        settlement:
+          $ref: '#/components/schemas/BinSponsorSettlementDetailsResponse'
+        status:
+          type: string
+          description: 'Current status of the BIN Sponsor. Enum: ACTIVE, INACTIVE'
+          nullable: true
+          example: ACTIVE
+        createdAt:
+          type: string
+          description: ISO 8601 timestamp when the BIN Sponsor was created.
+          nullable: true
+          example: '2024-01-15T10:30:00'
+        lastModified:
+          type: string
+          description: ISO 8601 timestamp when the BIN Sponsor was last modified.
+          nullable: true
+          example: '2024-01-15T10:30:00'
+      additionalProperties: false
+      description: Successful payload after creating a BIN sponsor.
+    CreateBinSponsorResponseBaseResponseModel:
+      type: object
+      properties:
+        requestId:
+          type: string
+          description: A GUID generated by the system to indicate the unique request sent to the system.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        correlationId:
+          type: string
+          description: A GUID passed by the originator.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        responseId:
+          type: string
+          description: A GUID generated by the system to indicate the unique response from the system.
+          format: uuid
+          example: 00000000-0000-0000-0000-000000000000
+        dateTime:
+          type: string
+          description: Timestamp when the response was generated.
+          format: date-time
+          example: '2024-01-15T10:30:00'
+        result:
+          $ref: '#/components/schemas/CreateBinSponsorResponse'
+        error:
+          $ref: '#/components/schemas/ApiError'
+      additionalProperties: false
+      description: Base response model for all API responses.
+    CreateBinSponsorSettlement:
+      type: object
+      properties:
+        host:
+          type: string
+          description: Server hostname or IP address for settlement reporting.
+          nullable: true
+          example: sftp.settlement.example.com
+        port:
+          type: integer
+          description: Server port number for connection. Default value = 22.
+          format: int32
+          nullable: true
+          example: 22
+        username:
+          type: string
+          description: Username for server authentication.
+          nullable: true
+          example: settlement_user
+        password:
+          type: string
+          description: 'Password for server authentication (write-only, never returned in responses).'
+          nullable: true
+          example: secure_password123
+        protocol:
+          type: string
+          description: 'Protocol used for settlement file transfer. Enum: SFTP, FTP, FTPS, HTTP, HTTPS'
+          nullable: true
+          example: SFTP
+        path:
+          type: string
+          description: Base directory path on the server for settlement files.
+          nullable: true
+          example: /settlement/reports
+        enabled:
+          type: boolean
+          description: Whether settlement reporting is enabled for this entity.
+          nullable: true
+          example: true
+      additionalProperties: false
+      description: Settlement connection details for create BIN sponsor requests.
+    GetAllBinSponsorsResponse:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            $ref: '#/components/schemas/BinSponsorListItem'
+          description: 'Response property: Data.'
+          nullable: true
+        pagination:
+          $ref: '#/components/schemas/BinSponsorPaginationResponse'
+      additionalProperties: false
+      description: "Paginated list of BIN sponsors. Each row exposes sponsor identity\r\n(name, code, status) + settlement profile metadata."
+    GetAllBinSponsorsResponseBaseResponseModel:
+      type: object
+      properties:
+        requestId:
+          type: string
+          description: A GUID generated by the system to indicate the unique request sent to the system.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        correlationId:
+          type: string
+          description: A GUID passed by the originator.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        responseId:
+          type: string
+          description: A GUID generated by the system to indicate the unique response from the system.
+          format: uuid
+          example: 00000000-0000-0000-0000-000000000000
+        dateTime:
+          type: string
+          description: Timestamp when the response was generated.
+          format: date-time
+          example: '2024-01-15T10:30:00'
+        result:
+          $ref: '#/components/schemas/GetAllBinSponsorsResponse'
+        error:
+          $ref: '#/components/schemas/ApiError'
+      additionalProperties: false
+      description: Base response model for all API responses.
+    GetBinSponsorByIdResponse:
+      required:
+        - id
+      type: object
+      properties:
+        id:
+          type: string
+          description: Unique ID for BIN Sponsor entity
+          format: uuid
+          example: 00000000-0000-0000-0000-000000000000
+        programManagerId:
+          type: string
+          description: Unique ID of the associated Program Manager.
+          format: uuid
+          nullable: true
+          example: 00000000-0000-0000-0000-000000000000
+        name:
+          type: string
+          description: The BIN Sponsor name
+          nullable: true
+          example: Test BIN Sponsor
+        settlement:
+          $ref: '#/components/schemas/BinSponsorSettlementDetailsResponse'
+        status:
+          type: string
+          description: 'Current status of the BIN Sponsor. Enum: ACTIVE, INACTIVE'
+          nullable: true
+          example: ACTIVE
+        createdAt:
+          type: string
+          description: ISO 8601 timestamp when the BIN Sponsor was created
+          nullable: true
+          example: '2024-01-15T10:30:00'
+        lastModified:
+          type: string
+          description: ISO 8601 timestamp when the BIN Sponsor was last modified
+          nullable: true
+          example: '2024-01-15T10:30:00'
+      additionalProperties: false
+      description: Response model for binsponsor get operations.
+    GetBinSponsorByIdResponseBaseResponseModel:
+      type: object
+      properties:
+        requestId:
+          type: string
+          description: A GUID generated by the system to indicate the unique request sent to the system.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        correlationId:
+          type: string
+          description: A GUID passed by the originator.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        responseId:
+          type: string
+          description: A GUID generated by the system to indicate the unique response from the system.
+          format: uuid
+          example: 00000000-0000-0000-0000-000000000000
+        dateTime:
+          type: string
+          description: Timestamp when the response was generated.
+          format: date-time
+          example: '2024-01-15T10:30:00'
+        result:
+          $ref: '#/components/schemas/GetBinSponsorByIdResponse'
+        error:
+          $ref: '#/components/schemas/ApiError'
+      additionalProperties: false
+      description: Base response model for all API responses.
+    UpdateBinSponsorRequest:
+      required:
+        - programManagerId
+      type: object
+      properties:
+        name:
+          type: string
+          description: The BIN Sponsor name
+          nullable: true
+          example: Test BIN Sponsor
+        programManagerId:
+          type: string
+          description: Unique ID of the associated Program Manager. This BIN Sponsor will be linked to the specified Program Manager.
+          format: uuid
+          example: 00000000-0000-0000-0000-000000000000
+        settlement:
+          $ref: '#/components/schemas/UpdateBinSponsorSettlement'
+        status:
+          type: string
+          description: 'Current status of the BIN Sponsor. Enum: ACTIVE, INACTIVE'
+          nullable: true
+          example: ACTIVE
+      additionalProperties: false
+      description: Request model for updating BIN sponsor details.
+    UpdateBinSponsorResponse:
+      type: object
+      properties:
+        id:
+          type: string
+          description: 'Unique ID for BIN Sponsor entity, randomly generated UUID'
+          format: uuid
+          nullable: true
+          example: 00000000-0000-0000-0000-000000000000
+        name:
+          type: string
+          description: The BIN Sponsor name
+          nullable: true
+          example: Test BIN Sponsor
+        settlement:
+          $ref: '#/components/schemas/UpdateBinSponsorSettlementResponse'
+        status:
+          type: string
+          description: 'Current status of the BIN Sponsor. Enum: ACTIVE, INACTIVE'
+          nullable: true
+          example: ACTIVE
+        createdAt:
+          type: string
+          description: ISO 8601 timestamp when the BIN Sponsor was created
+          nullable: true
+          example: '2024-01-15T10:30:00'
+        lastModified:
+          type: string
+          description: ISO 8601 timestamp when the BIN Sponsor was last modified
+          nullable: true
+          example: '2024-01-15T10:30:00'
+      additionalProperties: false
+      description: Response model for updating a BIN sponsor.
+    UpdateBinSponsorResponseBaseResponseModel:
+      type: object
+      properties:
+        requestId:
+          type: string
+          description: A GUID generated by the system to indicate the unique request sent to the system.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        correlationId:
+          type: string
+          description: A GUID passed by the originator.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        responseId:
+          type: string
+          description: A GUID generated by the system to indicate the unique response from the system.
+          format: uuid
+          example: 00000000-0000-0000-0000-000000000000
+        dateTime:
+          type: string
+          description: Timestamp when the response was generated.
+          format: date-time
+          example: '2024-01-15T10:30:00'
+        result:
+          $ref: '#/components/schemas/UpdateBinSponsorResponse'
+        error:
+          $ref: '#/components/schemas/ApiError'
+      additionalProperties: false
+      description: Base response model for all API responses.
+    UpdateBinSponsorSettlement:
+      type: object
+      properties:
+        host:
+          type: string
+          description: Server hostname or IP address for settlement reporting
+          nullable: true
+          example: sftp.settlement.example.com
+        port:
+          type: integer
+          description: Server port number for connection. Default value = 22.
+          format: int32
+          nullable: true
+          example: 22
+        username:
+          type: string
+          description: Username for server authentication
+          nullable: true
+          example: settlement_user
+        password:
+          type: string
+          description: 'Password for server authentication (write-only, never returned in responses)'
+          nullable: true
+          example: secure_password123
+        protocol:
+          type: string
+          description: 'Protocol used for settlement file transfer. Enum: SFTP, FTP, FTPS, HTTP, HTTPS'
+          nullable: true
+          example: SFTP
+        path:
+          type: string
+          description: Base directory path on the server for settlement files
+          nullable: true
+          example: /settlement/reports
+        enabled:
+          type: boolean
+          description: Whether settlement reporting is enabled for this entity.
+          nullable: true
+          example: true
+      additionalProperties: false
+      description: Settlement connection details for update BIN sponsor requests.
+    UpdateBinSponsorSettlementResponse:
+      type: object
+      properties:
+        host:
+          type: string
+          description: Server hostname or IP address for settlement reporting
+          nullable: true
+          example: sftp.settlement.example.com
+        port:
+          type: integer
+          description: Server port number for connection. Default value = 22.
+          format: int32
+          example: 22
+        username:
+          type: string
+          description: Username for server authentication
+          nullable: true
+          example: settlement_user
+        protocol:
+          type: string
+          description: 'Protocol used for settlement file transfer. Enum: SFTP, FTP, FTPS, HTTP, HTTPS'
+          nullable: true
+          example: SFTP
+        path:
+          type: string
+          description: Base directory path on the server for settlement files
+          nullable: true
+          example: /settlement/reports
+        enabled:
+          type: boolean
+          description: Whether settlement reporting is enabled for this entity. Default value = true.
+          example: true
+        validateHost:
+          type: boolean
+          description: Whether to validate the settlement host before use.
+          nullable: true
+          example: true
+        hostStatus:
+          type: string
+          description: Server-managed host connectivity status.
+          nullable: true
+          example: Pending
+      additionalProperties: false
+      description: Settlement connection details returned after updating a BIN sponsor.
+    CreateCardProgramRequest:
+      type: object
+      properties:
+        id:
+          type: string
+          description: 'Request property: CardProgramId.'
+          format: uuid
+          nullable: true
+          example: 123e4567-e89b-12d3-a456-426614174000
+        name:
+          type: string
+          description: 'Request property: Name.'
+          nullable: true
+          example: Sample name
+        description:
+          type: string
+          description: 'Request property: Description.'
+          nullable: true
+          example: Sample description
+        status:
+          type: string
+          description: 'Request property: Status.'
+          nullable: true
+          example: ACTIVE
+        region:
+          type: string
+          description: 'Request property: Region.'
+          nullable: true
+          example: ZA
+        baseUrl:
+          type: string
+          description: 'Request property: BaseUrl.'
+          nullable: true
+          example: https://api.example.com
+        domain:
+          description: 'Request property: Domain.'
+          nullable: true
+        programManagerId:
+          type: string
+          description: 'Request property: ProgramManagerId.'
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+      additionalProperties: false
+      description: Creates a Card Program + linked domains.
+    CreateCardProgramResponse:
+      type: object
+      properties:
+        id:
+          type: string
+          description: Unique identifier of the card program.
+          format: uuid
+          nullable: true
+          example: 123e4567-e89b-12d3-a456-426614174000
+        name:
+          type: string
+          description: The card program name.
+          nullable: true
+          example: Sample name
+        description:
+          type: string
+          description: Description of the card program.
+          nullable: true
+          example: Sample description
+        status:
+          type: string
+          description: 'Current status of the card program. Enum: ACTIVE, INACTIVE'
+          nullable: true
+          example: ACTIVE
+        region:
+          type: string
+          description: Region code for the card program.
+          nullable: true
+          example: ZA
+        baseUrl:
+          type: string
+          description: Base URL for the card program API.
+          nullable: true
+          example: https://api.example.com
+        domain:
+          type: array
+          items:
+            type: string
+          description: Domain names linked to the card program.
+          nullable: true
+        programManagerId:
+          type: string
+          description: Unique ID of the Program Manager that owns this card program.
+          format: uuid
+          nullable: true
+          example: 123e4567-e89b-12d3-a456-426614174000
+        createdAt:
+          type: string
+          description: ISO 8601 timestamp when the card program was created.
+          nullable: true
+          example: '2024-01-15T10:30:00'
+        lastModified:
+          type: string
+          description: ISO 8601 timestamp when the card program was last modified.
+          nullable: true
+          example: '2024-01-15T10:30:00'
+      additionalProperties: false
+      description: Response returned after successfully creating a card program.
+    CreateCardProgramResponseBaseResponseModel:
+      type: object
+      properties:
+        requestId:
+          type: string
+          description: A GUID generated by the system to indicate the unique request sent to the system.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        correlationId:
+          type: string
+          description: A GUID passed by the originator.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        responseId:
+          type: string
+          description: A GUID generated by the system to indicate the unique response from the system.
+          format: uuid
+          example: 00000000-0000-0000-0000-000000000000
+        dateTime:
+          type: string
+          description: Timestamp when the response was generated.
+          format: date-time
+          example: '2024-01-15T10:30:00'
+        result:
+          $ref: '#/components/schemas/CreateCardProgramResponse'
+        error:
+          $ref: '#/components/schemas/ApiError'
+      additionalProperties: false
+      description: Base response model for all API responses.
+    GetAllCardProgramsResponse:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            $ref: '#/components/schemas/GetCardProgramByIdResponse'
+          description: 'Response property: Data.'
+          nullable: true
+        pagination:
+          $ref: '#/components/schemas/Pagination'
+      additionalProperties: false
+      description: Paginated list of card programs.
+    GetAllCardProgramsResponseBaseResponseModel:
+      type: object
+      properties:
+        requestId:
+          type: string
+          description: A GUID generated by the system to indicate the unique request sent to the system.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        correlationId:
+          type: string
+          description: A GUID passed by the originator.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        responseId:
+          type: string
+          description: A GUID generated by the system to indicate the unique response from the system.
+          format: uuid
+          example: 00000000-0000-0000-0000-000000000000
+        dateTime:
+          type: string
+          description: Timestamp when the response was generated.
+          format: date-time
+          example: '2024-01-15T10:30:00'
+        result:
+          $ref: '#/components/schemas/GetAllCardProgramsResponse'
+        error:
+          $ref: '#/components/schemas/ApiError'
+      additionalProperties: false
+      description: Base response model for all API responses.
+    GetCardProgramByIdResponse:
+      type: object
+      properties:
+        cardProgramId:
+          type: string
+          description: Unique identifier of the card program.
+          format: uuid
+          nullable: true
+          example: 00000000-0000-0000-0000-000000000000
+        id:
+          type: string
+          description: Unique identifier of the card program (alias of TxnInternalGlobal.CardPrograms.CardPrograms.Application.Dtos.GetCardProgramByIdResponse.CardProgramId).
+          format: uuid
+          nullable: true
+          example: 00000000-0000-0000-0000-000000000000
+        name:
+          type: string
+          description: The card program name.
+          nullable: true
+          example: Sample name
+        description:
+          type: string
+          description: Description of the card program.
+          nullable: true
+          example: Sample description
+        status:
+          type: string
+          description: 'Current status of the card program. Enum: ACTIVE, INACTIVE'
+          nullable: true
+          example: ACTIVE
+        region:
+          type: string
+          description: Region code for the card program.
+          nullable: true
+          example: ZA
+        baseUrl:
+          type: string
+          description: Base URL for the card program API.
+          nullable: true
+          example: https://api.example.com
+        domain:
+          type: array
+          items:
+            type: string
+          description: Domain names linked to the card program.
+          nullable: true
+        programManagerId:
+          type: string
+          description: Unique ID of the Program Manager that owns this card program.
+          format: uuid
+          nullable: true
+          example: 00000000-0000-0000-0000-000000000000
+        createdAt:
+          type: string
+          description: ISO 8601 timestamp when the card program was created.
+          nullable: true
+          example: '2024-01-15T10:30:00'
+        lastModified:
+          type: string
+          description: ISO 8601 timestamp when the card program was last modified.
+          nullable: true
+          example: '2024-01-15T10:30:00'
+      additionalProperties: false
+      description: Response returned when retrieving a single card program by id.
+    GetCardProgramByIdResponseBaseResponseModel:
+      type: object
+      properties:
+        requestId:
+          type: string
+          description: A GUID generated by the system to indicate the unique request sent to the system.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        correlationId:
+          type: string
+          description: A GUID passed by the originator.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        responseId:
+          type: string
+          description: A GUID generated by the system to indicate the unique response from the system.
+          format: uuid
+          example: 00000000-0000-0000-0000-000000000000
+        dateTime:
+          type: string
+          description: Timestamp when the response was generated.
+          format: date-time
+          example: '2024-01-15T10:30:00'
+        result:
+          $ref: '#/components/schemas/GetCardProgramByIdResponse'
+        error:
+          $ref: '#/components/schemas/ApiError'
+      additionalProperties: false
+      description: Base response model for all API responses.
+    GetCardProgramsByProgramManagerResponse:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            $ref: '#/components/schemas/GetCardProgramByIdResponse'
+          description: Card program rows for the current page.
+          nullable: true
+        pagination:
+          $ref: '#/components/schemas/Pagination'
+      additionalProperties: false
+      description: Paginated list of card programs for a single program manager.
+    GetCardProgramsByProgramManagerResponseBaseResponseModel:
+      type: object
+      properties:
+        requestId:
+          type: string
+          description: A GUID generated by the system to indicate the unique request sent to the system.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        correlationId:
+          type: string
+          description: A GUID passed by the originator.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        responseId:
+          type: string
+          description: A GUID generated by the system to indicate the unique response from the system.
+          format: uuid
+          example: 00000000-0000-0000-0000-000000000000
+        dateTime:
+          type: string
+          description: Timestamp when the response was generated.
+          format: date-time
+          example: '2024-01-15T10:30:00'
+        result:
+          $ref: '#/components/schemas/GetCardProgramsByProgramManagerResponse'
+        error:
+          $ref: '#/components/schemas/ApiError'
+      additionalProperties: false
+      description: Base response model for all API responses.
+    UpdateCardProgramRequest:
+      type: object
+      properties:
+        name:
+          type: string
+          description: 'Request property: Name.'
+          nullable: true
+          example: Sample name
+        description:
+          type: string
+          description: 'Request property: Description.'
+          nullable: true
+          example: Sample description
+        status:
+          type: string
+          description: 'Request property: Status.'
+          nullable: true
+          example: ACTIVE
+        region:
+          type: string
+          description: 'Request property: Region.'
+          nullable: true
+          example: ZA
+        baseUrl:
+          type: string
+          description: 'Request property: BaseUrl.'
+          nullable: true
+          example: https://api.example.com
+        domain:
+          description: 'Request property: Domain.'
+          nullable: true
+      additionalProperties: false
+      description: Request body for updating a card program and its associated configuration.
+    UpdateCardProgramResponse:
+      type: object
+      properties:
+        id:
+          type: string
+          description: Unique identifier of the card program.
+          format: uuid
+          nullable: true
+          example: 123e4567-e89b-12d3-a456-426614174000
+        name:
+          type: string
+          description: The card program name.
+          nullable: true
+          example: Sample name
+        description:
+          type: string
+          description: Description of the card program.
+          nullable: true
+          example: Sample description
+        status:
+          type: string
+          description: 'Current status of the card program. Enum: ACTIVE, INACTIVE'
+          nullable: true
+          example: ACTIVE
+        region:
+          type: string
+          description: Region code for the card program.
+          nullable: true
+          example: ZA
+        baseUrl:
+          type: string
+          description: Base URL for the card program API.
+          nullable: true
+          example: https://api.example.com
+        domain:
+          type: array
+          items:
+            type: string
+          description: Domain names linked to the card program.
+          nullable: true
+        programManagerId:
+          type: string
+          description: Unique ID of the Program Manager that owns this card program.
+          format: uuid
+          nullable: true
+          example: 123e4567-e89b-12d3-a456-426614174000
+        createdAt:
+          type: string
+          description: ISO 8601 timestamp when the card program was created.
+          nullable: true
+          example: '2024-01-15T10:30:00'
+        lastModified:
+          type: string
+          description: ISO 8601 timestamp when the card program was last modified.
+          nullable: true
+          example: '2024-01-15T10:30:00'
+      additionalProperties: false
+      description: Response returned after successfully updating a card program.
+    UpdateCardProgramResponseBaseResponseModel:
+      type: object
+      properties:
+        requestId:
+          type: string
+          description: A GUID generated by the system to indicate the unique request sent to the system.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        correlationId:
+          type: string
+          description: A GUID passed by the originator.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        responseId:
+          type: string
+          description: A GUID generated by the system to indicate the unique response from the system.
+          format: uuid
+          example: 00000000-0000-0000-0000-000000000000
+        dateTime:
+          type: string
+          description: Timestamp when the response was generated.
+          format: date-time
+          example: '2024-01-15T10:30:00'
+        result:
+          $ref: '#/components/schemas/UpdateCardProgramResponse'
+        error:
+          $ref: '#/components/schemas/ApiError'
+      additionalProperties: false
+      description: Base response model for all API responses.
+    GetHealthResponse:
+      type: object
+      properties:
+        status:
+          type: string
+          description: 'Response property: Status.'
+          nullable: true
+          example: healthy
+        environment:
+          type: string
+          description: 'Response property: Environment.'
+          nullable: true
+          example: sandbox
+      additionalProperties: false
+      description: 'API health probe ΓÇö checks DB + registry, returns status.'
+    GetHealthResponseBaseResponseModel:
+      type: object
+      properties:
+        requestId:
+          type: string
+          description: A GUID generated by the system to indicate the unique request sent to the system.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        correlationId:
+          type: string
+          description: A GUID passed by the originator.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        responseId:
+          type: string
+          description: A GUID generated by the system to indicate the unique response from the system.
+          format: uuid
+          example: 00000000-0000-0000-0000-000000000000
+        dateTime:
+          type: string
+          description: Timestamp when the response was generated.
+          format: date-time
+          example: '2024-01-15T10:30:00'
+        result:
+          $ref: '#/components/schemas/GetHealthResponse'
+        error:
+          $ref: '#/components/schemas/ApiError'
+      additionalProperties: false
+      description: Base response model for all API responses.
+    CreateProgramManagerRequest:
+      type: object
+      properties:
+        id:
+          type: string
+          description: 'Request property: Id.'
+          format: uuid
+          nullable: true
+          example: 00000000-0000-0000-0000-000000000000
+        name:
+          type: string
+          description: 'Request property: Name.'
+          nullable: true
+          example: Sample name
+        description:
+          type: string
+          description: 'Request property: Description.'
+          nullable: true
+          example: Sample description
+        domain:
+          description: 'Request property: Domain.'
+          nullable: true
+          example:
+            attributeName: attributeValue
+        region:
+          type: string
+          description: 'Request property: Region.'
+          nullable: true
+          example: ZA-GP
+        baseUrl:
+          type: string
+          description: 'Request property: BaseUrl.'
+          nullable: true
+          example: https://api.example.com
+        host:
+          type: string
+          description: 'Request property: Host.'
+          nullable: true
+          example: sftp.example.com
+        port:
+          type: integer
+          description: 'Request property: Port.'
+          format: int32
+          nullable: true
+          example: 0
+        username:
+          type: string
+          description: 'Request property: Username.'
+          nullable: true
+          example: Sample name
+        password:
+          type: string
+          description: 'Request property: Password.'
+          nullable: true
+          example: secret
+        protocol:
+          type: string
+          description: 'Request property: Protocol.'
+          nullable: true
+          example: SFTP
+        path:
+          type: string
+          description: 'Request property: Path.'
+          nullable: true
+          example: /inbox
+        enabled:
+          type: boolean
+          description: 'Request property: Enabled.'
+          nullable: true
+          example: true
+        status:
+          type: string
+          description: 'Request property: Status.'
+          nullable: true
+          example: ACTIVE
+      additionalProperties: false
+      description: Register a new Program Manager.
+    CreateProgramManagerResponse:
+      type: object
+      properties:
+        id:
+          type: string
+          description: 'Response property: Id.'
+          format: uuid
+          nullable: true
+          example: 00000000-0000-0000-0000-000000000000
+        binSponsorIds:
+          type: array
+          items:
+            type: string
+            format: uuid
+          description: BIN sponsor identifiers linked to this program manager via pml/bspl lookup tables.
+          nullable: true
+        name:
+          type: string
+          description: 'Response property: Name.'
+          nullable: true
+          example: Sample name
+        description:
+          type: string
+          description: 'Response property: Description.'
+          nullable: true
+          example: Sample description
+        domain:
+          type: array
+          items:
+            type: string
+          description: 'Response property: Domain.'
+          nullable: true
+        region:
+          type: string
+          description: 'Response property: Region.'
+          nullable: true
+          example: ZA-GP
+        baseUrl:
+          type: string
+          description: 'Response property: BaseUrl.'
+          nullable: true
+          example: https://api.example.com
+        settlement:
+          $ref: '#/components/schemas/CreateProgramManagerSettlementResponse'
+        status:
+          type: string
+          description: 'Response property: Status.'
+          nullable: true
+          example: ACTIVE
+        createdAt:
+          type: string
+          description: 'Response property: CreatedAt.'
+          nullable: true
+          example: '2024-01-15T10:30:00'
+        lastModified:
+          type: string
+          description: 'Response property: LastModified.'
+          nullable: true
+          example: '2024-01-15T10:30:00'
+      additionalProperties: false
+      description: Register a new Program Manager.
+    CreateProgramManagerResponseBaseResponseModel:
+      type: object
+      properties:
+        requestId:
+          type: string
+          description: A GUID generated by the system to indicate the unique request sent to the system.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        correlationId:
+          type: string
+          description: A GUID passed by the originator.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        responseId:
+          type: string
+          description: A GUID generated by the system to indicate the unique response from the system.
+          format: uuid
+          example: 00000000-0000-0000-0000-000000000000
+        dateTime:
+          type: string
+          description: Timestamp when the response was generated.
+          format: date-time
+          example: '2024-01-15T10:30:00'
+        result:
+          $ref: '#/components/schemas/CreateProgramManagerResponse'
+        error:
+          $ref: '#/components/schemas/ApiError'
+      additionalProperties: false
+      description: Base response model for all API responses.
+    CreateProgramManagerSettlementResponse:
+      type: object
+      properties:
+        host:
+          type: string
+          description: Server hostname or IP address for settlement reporting.
+          nullable: true
+          example: sftp.settlement.example.com
+        port:
+          type: integer
+          description: Server port number for connection.
+          format: int32
+          nullable: true
+          example: 22
+        username:
+          type: string
+          description: Username for server authentication.
+          nullable: true
+          example: settlement_user
+        password:
+          type: string
+          description: Password for server authentication.
+          nullable: true
+          example: secure_password123
+        protocol:
+          type: string
+          description: 'Protocol used for settlement file transfer. Enum: SFTP, FTP, FTPS, HTTP, HTTPS.'
+          nullable: true
+          example: SFTP
+        path:
+          type: string
+          description: Base directory path on the server for settlement files.
+          nullable: true
+          example: /settlement/reports
+        enabled:
+          type: boolean
+          description: Whether settlement reporting is enabled for this Program Manager.
+          nullable: true
+          example: true
+        validateHost:
+          type: boolean
+          description: Whether to validate the settlement host before use.
+          nullable: true
+          example: true
+        hostStatus:
+          type: string
+          description: Server-managed host connectivity status.
+          nullable: true
+          example: Pending
+      additionalProperties: false
+      description: Settlement configuration in create program manager response.
+    GetAllProgramManagersResponse:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            $ref: '#/components/schemas/ProgramManagerListItem'
+          description: 'Response property: Data.'
+          nullable: true
+        pagination:
+          $ref: '#/components/schemas/Pagination'
+      additionalProperties: false
+      description: Paginated list of program managers.
+    GetAllProgramManagersResponseBaseResponseModel:
+      type: object
+      properties:
+        requestId:
+          type: string
+          description: A GUID generated by the system to indicate the unique request sent to the system.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        correlationId:
+          type: string
+          description: A GUID passed by the originator.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        responseId:
+          type: string
+          description: A GUID generated by the system to indicate the unique response from the system.
+          format: uuid
+          example: 00000000-0000-0000-0000-000000000000
+        dateTime:
+          type: string
+          description: Timestamp when the response was generated.
+          format: date-time
+          example: '2024-01-15T10:30:00'
+        result:
+          $ref: '#/components/schemas/GetAllProgramManagersResponse'
+        error:
+          $ref: '#/components/schemas/ApiError'
+      additionalProperties: false
+      description: Base response model for all API responses.
+    GetAllProgramManagersSettlementResponse:
+      type: object
+      properties:
+        host:
+          type: string
+          description: Server hostname or IP address for settlement reporting.
+          nullable: true
+          example: sftp.settlement.example.com
+        port:
+          type: integer
+          description: Server port number for connection.
+          format: int32
+          nullable: true
+          example: 22
+        username:
+          type: string
+          description: Username for server authentication.
+          nullable: true
+          example: settlement_user
+        password:
+          type: string
+          description: Password for server authentication.
+          nullable: true
+          example: secure_password123
+        protocol:
+          type: string
+          description: 'Protocol used for settlement file transfer. Enum: SFTP, FTP, FTPS, HTTP, HTTPS.'
+          nullable: true
+          example: SFTP
+        path:
+          type: string
+          description: Base directory path on the server for settlement files.
+          nullable: true
+          example: /settlement/reports
+        enabled:
+          type: boolean
+          description: Whether settlement reporting is enabled for this Program Manager.
+          nullable: true
+          example: true
+        validateHost:
+          type: boolean
+          description: Whether to validate the settlement host before use.
+          nullable: true
+          example: true
+        hostStatus:
+          type: string
+          description: Server-managed host connectivity status.
+          nullable: true
+          example: Pending
+      additionalProperties: false
+      description: Settlement configuration in get all program managers response.
+    GetProgramManagerByIdResponse:
+      type: object
+      properties:
+        id:
+          type: string
+          description: 'Response property: Id.'
+          format: uuid
+          nullable: true
+          example: 00000000-0000-0000-0000-000000000000
+        binSponsorIds:
+          type: array
+          items:
+            type: string
+            format: uuid
+          description: BIN sponsor identifiers linked to this program manager via pml/bspl lookup tables.
+          nullable: true
+        name:
+          type: string
+          description: 'Response property: Name.'
+          nullable: true
+          example: Sample name
+        description:
+          type: string
+          description: 'Response property: Description.'
+          nullable: true
+          example: Sample description
+        domain:
+          type: array
+          items:
+            type: string
+          description: 'Response property: Domain.'
+          nullable: true
+        region:
+          type: string
+          description: 'Response property: Region.'
+          nullable: true
+          example: ZA-GP
+        baseUrl:
+          type: string
+          description: 'Response property: BaseUrl.'
+          nullable: true
+          example: https://api.example.com
+        settlement:
+          $ref: '#/components/schemas/GetProgramManagerByIdSettlementResponse'
+        status:
+          type: string
+          description: 'Response property: Status.'
+          nullable: true
+          example: ACTIVE
+        createdAt:
+          type: string
+          description: 'Response property: CreatedAt.'
+          nullable: true
+          example: '2024-01-15T10:30:00'
+        lastModified:
+          type: string
+          description: 'Response property: LastModified.'
+          nullable: true
+          example: '2024-01-15T10:30:00'
+      additionalProperties: false
+      description: Retrieve a Program Manager by identifier.
+    GetProgramManagerByIdResponseBaseResponseModel:
+      type: object
+      properties:
+        requestId:
+          type: string
+          description: A GUID generated by the system to indicate the unique request sent to the system.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        correlationId:
+          type: string
+          description: A GUID passed by the originator.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        responseId:
+          type: string
+          description: A GUID generated by the system to indicate the unique response from the system.
+          format: uuid
+          example: 00000000-0000-0000-0000-000000000000
+        dateTime:
+          type: string
+          description: Timestamp when the response was generated.
+          format: date-time
+          example: '2024-01-15T10:30:00'
+        result:
+          $ref: '#/components/schemas/GetProgramManagerByIdResponse'
+        error:
+          $ref: '#/components/schemas/ApiError'
+      additionalProperties: false
+      description: Base response model for all API responses.
+    GetProgramManagerByIdSettlementResponse:
+      type: object
+      properties:
+        host:
+          type: string
+          description: Server hostname or IP address for settlement reporting.
+          nullable: true
+          example: sftp.settlement.example.com
+        port:
+          type: integer
+          description: Server port number for connection.
+          format: int32
+          nullable: true
+          example: 22
+        username:
+          type: string
+          description: Username for server authentication.
+          nullable: true
+          example: settlement_user
+        password:
+          type: string
+          description: Password for server authentication.
+          nullable: true
+          example: secure_password123
+        protocol:
+          type: string
+          description: 'Protocol used for settlement file transfer. Enum: SFTP, FTP, FTPS, HTTP, HTTPS.'
+          nullable: true
+          example: SFTP
+        path:
+          type: string
+          description: Base directory path on the server for settlement files.
+          nullable: true
+          example: /settlement/reports
+        enabled:
+          type: boolean
+          description: Whether settlement reporting is enabled for this Program Manager.
+          nullable: true
+          example: true
+        validateHost:
+          type: boolean
+          description: Whether to validate the settlement host before use.
+          nullable: true
+          example: true
+        hostStatus:
+          type: string
+          description: Server-managed host connectivity status.
+          nullable: true
+          example: Pending
+      additionalProperties: false
+      description: Settlement configuration in get program manager by id response.
+    ProgramManagerListItem:
+      type: object
+      properties:
+        id:
+          type: string
+          description: 'Response property: Id.'
+          format: uuid
+          nullable: true
+          example: 00000000-0000-0000-0000-000000000000
+        binSponsorIds:
+          type: array
+          items:
+            type: string
+            format: uuid
+          description: BIN sponsor identifiers linked to this program manager via pml/bspl lookup tables.
+          nullable: true
+        name:
+          type: string
+          description: 'Response property: Name.'
+          nullable: true
+          example: Sample name
+        description:
+          type: string
+          description: 'Response property: Description.'
+          nullable: true
+          example: Sample description
+        domain:
+          type: array
+          items:
+            type: string
+          description: 'Response property: Domain.'
+          nullable: true
+        region:
+          type: string
+          description: 'Response property: Region.'
+          nullable: true
+          example: ZA-GP
+        baseUrl:
+          type: string
+          description: 'Response property: BaseUrl.'
+          nullable: true
+          example: https://api.example.com
+        settlement:
+          $ref: '#/components/schemas/GetAllProgramManagersSettlementResponse'
+        status:
+          type: string
+          description: 'Response property: Status.'
+          nullable: true
+          example: ACTIVE
+        createdAt:
+          type: string
+          description: 'Response property: CreatedAt.'
+          nullable: true
+          example: '2024-01-15T10:30:00'
+        lastModified:
+          type: string
+          description: 'Response property: LastModified.'
+          nullable: true
+          example: '2024-01-15T10:30:00'
+      additionalProperties: false
+      description: Single row in GET /programmanagers list responses.
+    UpdateProgramManagerRequest:
+      type: object
+      properties:
+        name:
+          type: string
+          description: 'Request property: Name.'
+          nullable: true
+          example: Sample name
+        description:
+          type: string
+          description: 'Request property: Description.'
+          nullable: true
+          example: Sample description
+        domain:
+          description: 'Request property: Domain.'
+          nullable: true
+          example:
+            - example.com
+        region:
+          type: string
+          description: 'Request property: Region.'
+          nullable: true
+          example: ZA-GP
+        baseUrl:
+          type: string
+          description: 'Request property: BaseUrl.'
+          nullable: true
+          example: https://api.example.com
+        status:
+          type: string
+          description: 'Request property: Status.'
+          nullable: true
+          example: ACTIVE
+        settlement:
+          description: 'Request property: Settlement.'
+          nullable: true
+          example:
+            host: sftp.settlement.example.com
+            port: 22
+            username: settlement_user
+            password: secure_password123
+            protocol: SFTP
+            path: /settlement/reports
+            enabled: true
+      additionalProperties: false
+      description: Update an existing Program Manager.
+    UpdateProgramManagerResponse:
+      type: object
+      properties:
+        id:
+          type: string
+          description: 'Response property: Id.'
+          format: uuid
+          nullable: true
+          example: 00000000-0000-0000-0000-000000000000
+        binSponsorIds:
+          type: array
+          items:
+            type: string
+            format: uuid
+          description: BIN sponsor identifiers linked to this program manager via pml/bspl lookup tables.
+          nullable: true
+        name:
+          type: string
+          description: 'Response property: Name.'
+          nullable: true
+          example: Sample name
+        description:
+          type: string
+          description: 'Response property: Description.'
+          nullable: true
+          example: Sample description
+        domain:
+          type: array
+          items:
+            type: string
+          description: 'Response property: Domain.'
+          nullable: true
+        region:
+          type: string
+          description: 'Response property: Region.'
+          nullable: true
+          example: ZA-GP
+        baseUrl:
+          type: string
+          description: 'Response property: BaseUrl.'
+          nullable: true
+          example: https://api.example.com
+        settlement:
+          $ref: '#/components/schemas/UpdateProgramManagerSettlementResponse'
+        status:
+          type: string
+          description: 'Response property: Status.'
+          nullable: true
+          example: ACTIVE
+        createdAt:
+          type: string
+          description: 'Response property: CreatedAt.'
+          nullable: true
+          example: '2024-01-15T10:30:00'
+        lastModified:
+          type: string
+          description: 'Response property: LastModified.'
+          nullable: true
+          example: '2024-01-15T10:30:00'
+      additionalProperties: false
+      description: Update an existing Program Manager.
+    UpdateProgramManagerResponseBaseResponseModel:
+      type: object
+      properties:
+        requestId:
+          type: string
+          description: A GUID generated by the system to indicate the unique request sent to the system.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        correlationId:
+          type: string
+          description: A GUID passed by the originator.
+          format: uuid
+          example: 123e4567-e89b-12d3-a456-426614174000
+        responseId:
+          type: string
+          description: A GUID generated by the system to indicate the unique response from the system.
+          format: uuid
+          example: 00000000-0000-0000-0000-000000000000
+        dateTime:
+          type: string
+          description: Timestamp when the response was generated.
+          format: date-time
+          example: '2024-01-15T10:30:00'
+        result:
+          $ref: '#/components/schemas/UpdateProgramManagerResponse'
+        error:
+          $ref: '#/components/schemas/ApiError'
+      additionalProperties: false
+      description: Base response model for all API responses.
+    UpdateProgramManagerSettlementResponse:
+      type: object
+      properties:
+        host:
+          type: string
+          description: Server hostname or IP address for settlement reporting.
+          nullable: true
+          example: sftp.settlement.example.com
+        port:
+          type: integer
+          description: Server port number for connection.
+          format: int32
+          nullable: true
+          example: 22
+        username:
+          type: string
+          description: Username for server authentication.
+          nullable: true
+          example: settlement_user
+        password:
+          type: string
+          description: Password for server authentication.
+          nullable: true
+          example: secure_password123
+        protocol:
+          type: string
+          description: 'Protocol used for settlement file transfer. Enum: SFTP, FTP, FTPS, HTTP, HTTPS.'
+          nullable: true
+          example: SFTP
+        path:
+          type: string
+          description: Base directory path on the server for settlement files.
+          nullable: true
+          example: /settlement/reports
+        enabled:
+          type: boolean
+          description: Whether settlement reporting is enabled for this Program Manager.
+          nullable: true
+          example: true
+        validateHost:
+          type: boolean
+          description: Whether to validate the settlement host before use.
+          nullable: true
+          example: true
+        hostStatus:
+          type: string
+          description: Server-managed host connectivity status.
+          nullable: true
+          example: Pending
+      additionalProperties: false
+      description: Settlement configuration in update program manager response.

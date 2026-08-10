@@ -16,6 +16,8 @@ description: "The single monolith MCP server every TXN agent calls through — p
 
 > **28-07 update ([[2026-07-28-agentic-pilot-kickoff]]):** Pilot v1 confirmed as the **monolith**: all tools exposed, no per-user gating initially, built over the mock DT API; gating added once the full agentic experience is testable.
 
+> **03-08 update ([[2026-08-03-first-standup-pilot-demo]]):** MCP v1 is running, and its **deployment shape is now explicit: a separate service sitting on top of the API, not inside it.** Novosapien's usual pattern puts the MCP server *within* the deployed API; that option is not available here because **DT owns the Core API**, so the server mirrors the API from outside. It is built against the mock API service (see [[integrations]]) so the interaction shape matches what the real API will be. (Source: standup 2026-08-03)
+
 ---
 
 ## 1. What Does This Sub-Component Do?

@@ -14,6 +14,14 @@ description: "How AI-initiated changes route through the Console two-person appr
 > **Owner:** _TBC_
 > **Sources:** [[01-06-2026-component-1-Agent-Access-Layer]]
 
+> **03-08 update ([[2026-08-03-first-standup-pilot-demo]]):** Michael's steer after watching card suspension gated in the demo — **start pretty tight and see what we can loosen**.
+>
+> - **Irreversibility is the priority signal.** Suspend is recoverable, so the Console and API are deliberately relaxed about it; **terminate is not**. In the API *"pretty much everything has a termination state or a transition endpoint"*, so the **terminal transitions are where the additional governance belongs** — *"the most important one is the final actions, terminate, that can't be undone."*
+> - **Blast radius through volume.** The human-facing surfaces are relaxed because a person undoes their own mistake one at a time; the agent *"could be doing 100, 200 at once"*, so bulk operations need a gate of their own regardless of whether the individual action is reversible.
+> - **Lifecycle rules are the bulk of the conditional logic** — active → suspended → active or terminated; suspended → terminated is final; you cannot suspend an already-suspended card. Michael: *"it's those sort of life cycle events that are going to be most of the conditional stuff in there."*
+>
+> This **sharpens rather than replaces** the June rule that a single-card terminate is *privileged but needs no second approver* — irreversibility now argues for more friction on exactly that action. Left unresolved deliberately; tracked at [[open-questions]] #26. (Source: standup 2026-08-03)
+
 ---
 
 ## 1. What Does This Sub-Component Do?

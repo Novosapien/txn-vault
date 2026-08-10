@@ -16,6 +16,12 @@ description: "How the layer decides which tools an agent gets per user per turn 
 
 > **28-07 update ([[2026-07-28-agentic-pilot-kickoff]]):** Scoping is deliberately deferred in the pilot: v1 MCP is all-access monolith; the access step ("given a user and their access levels, which tools do we turn off") comes after the full agentic experience is working end-to-end.
 
+> **03-08 update ([[2026-08-03-first-standup-pilot-demo]]):** Two things landed in the demo.
+>
+> **1. Approval thresholds vary by role.** The permission set does not only decide *which* tools a user gets, but *how much friction* each carries: a **super-admin** can take certain actions outright, while **more junior users** send the same actions for approval, with degrees in between. See [[approval-queue-integration]].
+>
+> **2. TXN has no field-level permissions today.** Michael confirmed the Console model is **page-level**: *"you can see this entire page or you can't"*, and *"we've sort of just given everyone everything so far."* So the first cut for the AI mirrors that — access by **product or page**, not by field — and field-level hiding is a later refinement rather than a launch requirement. Michael is reviewing which fields are suitable for everyone and will confirm the UI-side controls, which are still under internal discussion. Note the interaction with [[generative-ui-rendering]]: some field hiding is a *permission* question (you may not see this) and some is *user preference* (you would rather not) — the two need separating. (Source: standup 2026-08-03)
+
 ---
 
 ## 1. What Does This Sub-Component Do?
