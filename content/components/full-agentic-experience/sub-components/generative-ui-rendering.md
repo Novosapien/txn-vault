@@ -14,6 +14,14 @@ sources:
 > **Owner:** _TBC_
 > **Sources:** [[29-05-2026-stackworkz-meeting]] (AG-UI design ~00:16–00:25), [[05-06-2026-component-4-full-agentic-experience]] (generative UI, render-to-select)
 
+> **03-08 update ([[2026-08-03-first-standup-pilot-demo]]):** Rendering now splits two ways in the working build. **Inline** components sit in the chat for small results; a right-hand **canvas** carries anything list-like, because a long transaction list inline *"interrupts the flow of the chat"* — the chat gets a summary card ("you have N transactions") that opens the canvas. Canvas views **expand to full screen** like the real application and are **filterable client-side** (the data is already in the front end, so it can be manipulated like a normal table). Deep-links from a rendered component into the corresponding Console page are designed but **not yet wired**, as are the inline action buttons.
+>
+> A **component gallery** now exists as the review harness — every component the agent can render, in one place, to judge whether each shows too much or too little before it reaches a user.
+>
+> **Detail is baselined on the customer-service persona** (Michael): target the lowest-tier user first, then layer extras for technical users. Technical fields such as the **network reference ID** (needed to query Visa and Mastercard) should be demoted to **caption-level** — findable if you are looking for it, easy to gloss over if you are not. Michael to review the full field list and confirm what is suitable for everyone; this ties to the page-level-only access model noted in [[permission-scoping]].
+>
+> **Flip planned (04-08, [[2026-08-04-content-workforce-demo-paycorp]]):** the **canvas becomes the primary surface** with the **chat alongside** walking the user through it, rather than a chat-primary surface that opens a canvas. (Source: standup 2026-08-03; Content Workforce demo 2026-08-04)
+
 ---
 
 ## 1. What Does This Sub-Component Do?

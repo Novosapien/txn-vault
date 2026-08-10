@@ -62,3 +62,10 @@ Partner-supplied specs and definitions held in the vault for context (these are 
 - **Stackworkz** have handed over the **knowledge hub** (DT code review in progress, some items outstanding) and are now scoping the Control Center: same frame-first approach, waiting on DT APIs before wiring connections.
 - The **Super Ultra prototype is final**: the two-week extension ended and nothing newer is coming; Novosapien's pilot replica is built from it (Michael to confirm it matches the final version).
 - **"Sunpox" access is outstanding** _(name as transcribed; possibly a transcription error)_, blocking knowledge-hub sign-in, so testing is look-and-feel only for now. Target: knowledge hub done for the **September launch**; the Control Center has more breathing room.
+
+**Update (03-08, [[2026-08-03-first-standup-pilot-demo]]):**
+
+- **The pilot mock API is still built on the old May YAML.** George: *"it's currently on the old YAML file, but very easy to port it over."* The July external/internal split ([[txn-api-reference]]) is the spec of record, so the **port is outstanding** — see [[open-questions]] #32.
+- **Three services now stand up the pilot**, all Novosapien-side: the **Control Center replica** (real look and behaviour, hardcoded mock data, not connected to live APIs), a **dedicated mock API service** with a data store behind it and randomised payloads, and the **MCP server** as a **separate service on top of** that API rather than inside it — because DT owns the Core API, the usual embedded pattern is unavailable ([[mcp-server]]).
+- **Deployment for TXN review:** the build is being deployed with **basic authentication** so Michael and Dorte can use it in their own sessions and try to break it, alongside the screenshot **feedback tool**. Estimated a day or two from the 3 August standup.
+- **Delivery shape confirmed:** everything bedded down by **end of August**, then the **final two weeks are formal UAT** — environments stitched up, deployments and CI/CD proper. Brett flagged **review turnaround as the binding constraint**, since each round of use surfaces more change.
