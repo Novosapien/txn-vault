@@ -24,6 +24,7 @@ ___
 | [[user-journeys]] | Behavioural UX journeys (M. Moores, Mar 2026) routed to the components they exercise | 16 journeys imported + cross-linked; provisional mappings to reconcile |
 | [[open-questions]] | Central register of unresolved questions across the vault, each linked to where it gets answered | Living |
 | [[commercial]] | Commercial pack: both proposals (Agentic Layer + GTM Workforces) with links to the MSA, SLA, and review material in `legal/` | Living; **Content Workforce verbally agreed 04-08**, papering waits on Ian's return |
+| [[delivery]] | Delivery status: flight plans reconciling the repos, the proposals and this vault into what is actually delivered | Living; first flight plan 13-08, pilot **68% complete** at 43% of the window |
 
 ## External Resources
 
