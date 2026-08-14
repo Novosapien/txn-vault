@@ -316,10 +316,9 @@
   </table>
 
   <h3>The workflow backlog, sized against the current tool surface</h3>
-  <p>Coverage counts how many of each candidate's listed endpoints already exist as MCP tools. It is the cost signal: a candidate at 6 of 6 is days of work, a candidate at 0 of 6 requires a tool-building round first. The customer-onboarding agent sits at the top as the one contracted item in this list, carried here from Internal Ops v1.</p>
+  <p>Coverage counts how many of each candidate's listed endpoints already exist as MCP tools. It is the cost signal: a candidate at 6 of 6 is days of work, a candidate at 0 of 6 requires a tool-building round first.</p>
   <table>
     <tr><th>#</th><th>Candidate</th><th>Tool coverage</th><th>What is missing</th><th>Verdict</th></tr>
-    <tr style="background:rgba(161,188,209,.07)"><td>IO</td><td><strong>Customer-onboarding agent</strong><br><span class="small">From Internal Ops v1, reclassified as a workflow</span></td><td>n/a <div class="bar"><i class="pri" style="width:0%"></i></div></td><td>Runs on the CRM rather than the Core API, so it needs no MCP tool coverage. Requirements defined to build depth: due diligence, SoW intent capture, scheme and CIQ, project plan</td><td><span class="chip committed">committed</span> contracted</td></tr>
     <tr><td>8</td><td><strong>Alert, investigation, proposed plan</strong></td><td><strong>6 of 6</strong> <div class="bar"><i style="width:100%"></i></div></td><td>Nothing. Every endpoint it needs is already a tool</td><td><span class="chip committed">committed</span> build first</td></tr>
     <tr><td>1</td><td>Cardholder offboarding</td><td>5 of 6 <div class="bar"><i style="width:83%"></i></div></td><td>Digital wallet token read</td><td><span class="chip committed">committed</span> cheap</td></tr>
     <tr><td>3</td><td>Decline investigation with the fix attached</td><td>5 of 6 <div class="bar"><i style="width:83%"></i></div></td><td>Merchant controls read. Half of it already runs as <code>investigate-declines</code></td><td><span class="chip committed">committed</span> cheap</td></tr>
@@ -330,6 +329,7 @@
     <tr><td>2</td><td>Card service actions</td><td><strong>0 of 6</strong> <div class="bar"><i class="warn" style="width:3%"></i></div></td><td>Every endpoint: PIN unblock, authenticate, set, wallet re-provision, cardholder update, group membership. Nothing exists</td><td><span class="chip attempting">attempting</span> needs a tool round</td></tr>
     <tr><td>7</td><td>Create a monitoring alert by conversation</td><td>2 of 3 <div class="bar"><i class="warn" style="width:66%"></i></div></td><td>Alert creation. The platform exposes alerts read-only, so this needs Direct Transact to agree a write</td><td><span class="chip risk">partner-blocked</span></td></tr>
     <tr><td>9</td><td>Scheduled performance report with drivers</td><td>3 of 4 <div class="bar"><i class="warn" style="width:60%"></i></div></td><td>The data lake, which Direct Transact has not delivered</td><td><span class="chip risk">partner-blocked</span></td></tr>
+    <tr><td>11</td><td><strong>Customer-onboarding agent</strong><br><span class="small">From Internal Ops v1, reclassified as a workflow</span></td><td>n/a</td><td>Runs on the CRM rather than the Core API, so it needs no MCP tool coverage. Requirements are defined to build depth: due diligence, SoW intent capture, scheme and CIQ, project plan</td><td><span class="chip committed">committed</span></td></tr>
   </table>
 
   <div class="card">
