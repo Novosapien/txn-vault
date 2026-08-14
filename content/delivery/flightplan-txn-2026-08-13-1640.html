@@ -111,7 +111,7 @@
   </div>
 
   <div class="flag good">
-    <strong>The headline.</strong> The pilot is ahead of its window: 67% of scope complete against 43% of the time elapsed. All three contracted deliverables are in scope and progressing. The Full Agentic Experience and the Agent Access Layer are operational on simulation with six workflow SOPs running end to end, and <strong>two of the three Internal Ops v1 parts are delivered</strong>: the knowledge engine through the vault MCP, and meeting capture, which is running on this project now. The third part, the customer-onboarding agent, sits in the workflow backlog and is not yet built.
+    <strong>The headline.</strong> The pilot is ahead of its window: 67% of scope complete against 43% of the time elapsed. All three contracted deliverables are in scope and progressing. The Full Agentic Experience and the Agent Access Layer are operational on simulation with six workflow SOPs running end to end, and <strong>two of the three Internal Ops v1 parts are delivered</strong>: the knowledge engine through the vault MCP, and meeting capture, which is running on this project now. The third part, the <strong>TXN customer onboarding agent</strong>, the process TXN runs when a client commits, is specified to build depth but not started.
   </div>
 
   <h3>The critical dates</h3>
@@ -248,6 +248,7 @@
     <tr><td>Approval gating on every write, with read-back verification</td><td><span class="chip inflight">stood up</span></td><td>Present in all write SOPs</td></tr>
     <tr><td><strong>Internal Ops v1, knowledge engine</strong>: vault search for TXN staff through a remote MCP connector, plus the docs portal</td><td><span class="chip delivered">delivered</span></td><td><code>txn-vault-mcp</code> + <code>txn-admin-panel</code> + <code>txn-admin-api</code>, deployed 6 to 7 Aug</td></tr>
     <tr><td><strong>Internal Ops v1, meeting capture</strong>: TXN sessions captured, digested and routed into the vault against the component graph</td><td><span class="chip delivered">delivered</span></td><td>Running on this project: 13 meeting records in the vault, most recent 4 Aug</td></tr>
+    <tr><td><strong>Internal Ops v1, TXN customer onboarding agent</strong>: onboarding a new customer onto TXN, from due diligence to go-live</td><td><span class="chip dropped">not started</span></td><td>Requirements defined to build depth; no code in any repository</td></tr>
   </table>
 
   <h3>Explicitly not in this build</h3>
@@ -276,7 +277,7 @@
   <h3>Risk register</h3>
   <table>
     <tr><th>Family</th><th>Likelihood</th><th>Impact</th><th>Mitigation</th><th>Trend</th></tr>
-    <tr><td><strong>Scope definition at acceptance</strong> (specific to this engagement)</td><td>low</td><td>The Pilot Order names Internal Ops v1 as a deliverable. Two of its three parts are delivered; the customer-onboarding agent is carried as a workflow and is not built</td><td>Agree at the acceptance review that the onboarding agent lands through the workflow backlog rather than as a separate internal-ops build</td><td>reduced by restructure</td></tr>
+    <tr><td><strong>Scope definition at acceptance</strong> (specific to this engagement)</td><td>low</td><td>The Pilot Order names Internal Ops v1 as a deliverable. Two of its three parts are delivered; the TXN customer onboarding agent is specified but not built</td><td>Agree the landing point for the TXN customer onboarding agent at the acceptance review: a slice inside the six weeks, or scheduled with its Freshsales dependency</td><td>reduced by restructure</td></tr>
     <tr><td><strong>1. Broken code shipped</strong></td><td>medium</td><td>A late change regresses working SOPs during a client demonstration</td><td>Scope frozen from today; regression pass on the exact release build; AI test workforce already running</td><td>improving</td></tr>
     <tr><td><strong>2. Cloud environment breakage</strong></td><td>low</td><td>Demo environment down at acceptance</td><td>Six services deploying cleanly via GitHub Actions and Terraform; freeze infra changes in the window</td><td>stable</td></tr>
     <tr><td><strong>3. Whole-codebase breakage</strong></td><td>medium</td><td>The mock moved to the 10 August spec on 10 Aug, a structural change inside the window</td><td>Already landed and deployed cleanly. No further contract swaps before 7 September</td><td>worsened then recovered</td></tr>
@@ -329,7 +330,6 @@
     <tr><td>2</td><td>Card service actions</td><td><strong>0 of 6</strong> <div class="bar"><i class="warn" style="width:3%"></i></div></td><td>Every endpoint: PIN unblock, authenticate, set, wallet re-provision, cardholder update, group membership. Nothing exists</td><td><span class="chip attempting">attempting</span> needs a tool round</td></tr>
     <tr><td>7</td><td>Create a monitoring alert by conversation</td><td>2 of 3 <div class="bar"><i class="warn" style="width:66%"></i></div></td><td>Alert creation. The platform exposes alerts read-only, so this needs Direct Transact to agree a write</td><td><span class="chip risk">partner-blocked</span></td></tr>
     <tr><td>9</td><td>Scheduled performance report with drivers</td><td>3 of 4 <div class="bar"><i class="warn" style="width:60%"></i></div></td><td>The data lake, which Direct Transact has not delivered</td><td><span class="chip risk">partner-blocked</span></td></tr>
-    <tr><td>11</td><td><strong>Customer-onboarding agent</strong><br><span class="small">From Internal Ops v1, reclassified as a workflow</span></td><td>n/a</td><td>Runs on the CRM rather than the Core API, so it needs no MCP tool coverage. Requirements are defined to build depth (due diligence, SoW intent capture, scheme and CIQ, project plan) but <strong>no code exists in any repository</strong>. Blocking dependencies: Freshsales CRM, and the meeting-capture sibling wired to it</td><td><span class="chip committed">committed</span></td></tr>
   </table>
 
   <div class="card">
@@ -433,12 +433,13 @@
 
   <div class="card">
     <h4>Internal Ops v1 <span class="chip inflight">2 of 3 parts delivered</span></h4>
-    <p class="small" style="margin-top:-4px">Named as a deliverable in the Pilot Order. Structured as three parts, each with a different home.</p>
+    <p class="small" style="margin-top:-4px">Named as a deliverable in the Pilot Order. Three line items, tracked individually below.</p>
+    <div class="flag" style="margin:10px 0"><strong>To avoid a recurring confusion:</strong> part 3 is <strong>onboarding a customer onto TXN</strong>, the commercial process TXN runs when a client commits. It is a different thing from <em>cardholder onboarding</em> on the workflow slate (creating a person, account, card and PIN on the platform) and from <em>guided onboarding</em> in the co-pilot (walking a user through in-product configuration). All three are called onboarding and only this one is Internal Ops.</div>
     <table>
       <tr><td style="width:150px"><strong>Repos</strong></td><td><code>txn-vault-mcp</code>, <code>txn-admin-panel</code>, <code>txn-admin-api</code>, <code>txn-vault</code></td></tr>
       <tr><td><strong>1. Knowledge engine</strong></td><td><span class="chip delivered">delivered</span> Delivered as a remote MCP connector over the vault, so TXN staff get glob, grep, read and wikilink traversal from claude.ai with no local clone, plus the docs portal and its API. Deployed 6 to 7 August</td></tr>
       <tr><td><strong>2. Meeting capture</strong></td><td><span class="chip delivered">delivered</span> Delivered as a running capability on this project: sessions are captured, digested against the component graph, and routed into the vault with a post-call analysis and traceability links. 13 meeting records in the vault, most recent 4 August</td></tr>
-      <tr><td><strong>3. Customer-onboarding agent</strong></td><td><span class="chip committed">carried as a workflow</span> Reclassified: it belongs with the workflow set rather than as a separate internal-ops build. Requirements are defined to build depth (due diligence, SoW intent capture, scheme and CIQ, project plan). <strong>Not started, and not tracked anywhere outside the requirements.</strong> Searched all eight repositories: no code, no repo, no branch. All eight have zero GitHub issues, open or closed, so there is no tracker entry either. The only hits are two mock copy strings in the console replica. Now carried as item 11 on the workflow status page</td></tr>
+      <tr><td><strong>3. TXN customer onboarding agent</strong></td><td><span class="chip dropped">not started</span> <strong>Onboarding a new customer onto TXN</strong>: the process TXN runs when a client commits, from due diligence through SoW and intent capture, scheme and CIQ, to a project plan with real lead times. Requirements are defined to build depth across four stages. <strong>No code exists.</strong> Searched all eight repositories: no repo, no branch, no module, and zero GitHub issues across all eight, so no tracker entry either. The only hits are two mock copy strings in the console replica</td></tr>
       <tr><td><strong>Priority tension</strong></td><td>The requirements mark it <strong>must-have at launch</strong> and record that Ian named it the <strong>first internal-ops build target</strong>, the first thing that happens after a client commits. It is the highest-priority unstarted item in the engagement</td></tr>
       <tr><td><strong>Evidence</strong></td><td><code>txn-vault-mcp</code> 2 commits 6 Aug and deployed; <code>txn-admin-panel</code> 25 commits deployed 7 Aug; the vault's own meetings directory; <code>customer-onboarding</code> Defined with four leaf stages</td></tr>
       <tr><td><strong>Confidence</strong></td><td>High on parts 1 and 2. High that part 3 is unbuilt</td></tr>
@@ -450,7 +451,7 @@
     <tr><th>Disagreement</th><th>Which source is right</th><th>Action</th></tr>
     <tr><td>Vault says the mock runs on the May YAML; code moved to the 10 Aug External contract</td><td>Code</td><td>Update register #32 and the integrations timeline</td></tr>
     <tr><td>The slate describes three operational workflows; the implemented set is six SOPs and differs from those three</td><td>Code</td><td>Align the slate before it is reissued</td></tr>
-    <tr><td>Internal Ops v1 was tracked as one undifferentiated deliverable, which read as unstarted</td><td>All three sources, once the deliverable is split into its three named parts</td><td>Restructured 14 August: knowledge engine and meeting capture delivered, onboarding agent carried as a workflow</td></tr>
+    <tr><td>Internal Ops v1 was tracked as one undifferentiated deliverable, which read as unstarted</td><td>All three sources, once the deliverable is split into its three named parts</td><td>Split 14 August into three tracked line items: knowledge engine and meeting capture delivered, TXN customer onboarding agent specified but not started</td></tr>
     <tr><td>Proposal promises a permission model; code deliberately defers it</td><td>Both, in tension</td><td>Confirm with Michael that deferral is understood and accepted</td></tr>
   </table>
 

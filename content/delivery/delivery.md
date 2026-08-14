@@ -20,7 +20,11 @@ New timestamped file every run. Previous versions stay in place: they are the au
 
 - **Pilot completion: 67%** of scope against **43%** of the window elapsed, so the pilot is ahead of its window. 25 days remained at generation.
 - **All three Pilot Order deliverables are in scope.** The Full Agentic Experience and the Agent Access Layer are operational on simulation, with **six workflow SOPs** running end to end.
-- **[[internal-ops-agents|Internal Ops v1]] restructured into its three named parts** (14 August). The **knowledge engine** is delivered as a remote MCP connector over this vault plus the docs portal; **meeting capture** is delivered and running on this project; the **customer-onboarding agent** is reclassified into the workflow backlog, specified to build depth but not started.
+- **[[internal-ops-agents|Internal Ops v1]] is tracked as three line items** (14 August), all inside Internal Ops:
+  1. **Knowledge engine** — delivered, as a remote MCP connector over this vault plus the docs portal.
+  2. **Meeting capture** — delivered, and running on this project now.
+  3. **[[customer-onboarding|TXN customer onboarding agent]]** — specified to build depth across four stages, **not started, no code in any repository**.
+- **Note on the word onboarding.** Three different things carry the name. Internal Ops part 3 is **onboarding a customer onto TXN**, the commercial process run when a client commits. It is not [[guided-onboarding]] (the in-product co-pilot journey), and not cardholder onboarding on the workflow slate (creating a person, account, card and PIN).
 - **Two pieces of work are routinely confused.** Sprint Zero (£17,500, delivered) is the requirements effort for the whole project and produced this vault. The **Control Center React build** is separate: a full React build of the GUI environments, done for the agentic experiment, appearing in **no priced stage of any proposal**.
 - **Workflow slate alignment needed.** The Novosapien candidate slate describes three workflows as operational. The implemented set is six SOPs and differs: spend-control change matches, lost or stolen card is partially implemented, cardholder onboarding is not implemented.
 
