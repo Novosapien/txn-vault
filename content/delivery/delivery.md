@@ -18,9 +18,9 @@ New timestamped file every run. Previous versions stay in place: they are the au
 
 ## What the current plan says
 
-- **Pilot completion: 68%** of scope against **43%** of the window elapsed, so the pilot is ahead of its window. 25 days remained at generation.
-- **Two deliverables in pilot scope**, both operational on simulation: the Full Agentic Experience and the Agent Access Layer. **Six workflow SOPs** run end to end.
-- **[[internal-ops-agents|Internal Ops v1]] moved out of pilot scope** by decision on 13 August and scheduled into the final solution. The Pilot Proposal text still lists it as a pilot deliverable, so the change needs recording before the acceptance review.
+- **Pilot completion: 67%** of scope against **43%** of the window elapsed, so the pilot is ahead of its window. 25 days remained at generation.
+- **All three Pilot Order deliverables are in scope.** The Full Agentic Experience and the Agent Access Layer are operational on simulation, with **six workflow SOPs** running end to end.
+- **[[internal-ops-agents|Internal Ops v1]] restructured into its three named parts** (14 August). The **knowledge engine** is delivered as a remote MCP connector over this vault plus the docs portal; **meeting capture** is delivered and running on this project; the **customer-onboarding agent** is reclassified into the workflow backlog, specified to build depth but not started.
 - **Two pieces of work are routinely confused.** Sprint Zero (£17,500, delivered) is the requirements effort for the whole project and produced this vault. The **Control Center React build** is separate: a full React build of the GUI environments, done for the agentic experiment, appearing in **no priced stage of any proposal**.
 - **Workflow slate alignment needed.** The Novosapien candidate slate describes three workflows as operational. The implemented set is six SOPs and differs: spend-control change matches, lost or stolen card is partially implemented, cardholder onboarding is not implemented.
 
