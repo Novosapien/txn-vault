@@ -261,22 +261,21 @@
   <h3>Must still land, committed, in order</h3>
   <table>
     <tr><th>#</th><th>Item</th><th>What done means</th><th>Owner or dependency</th></tr>
-    <tr><td>1</td><td>Align the workflow slate with the implemented SOPs</td><td>The slate describes the operational set accurately before it is reissued to TXN</td><td>George</td></tr>
-    <tr><td>2</td><td>Deploy behind authentication with the feedback tool</td><td>Michael and Dorte can use it in their own sessions and log issues in-product</td><td>George, was 1 to 2 days as of 3 Aug</td></tr>
+    <tr><td>1</td><td>Align the workflow slate with the implemented SOPs</td><td>The slate describes the operational set accurately before it is reissued to TXN</td><td>Novosapien team</td></tr>
+    <tr><td>2</td><td>Deploy behind authentication with the feedback tool</td><td>Michael and Dorte can use it in their own sessions and log issues in-product</td><td>Novosapien team, estimated 1 to 2 days as of 3 Aug</td></tr>
     <tr><td>3</td><td>Decide the irreversible-action policy</td><td>Terminal transitions and bulk operations have an agreed gate; register #26 closed</td><td>Michael, open since 3 Aug</td></tr>
     <tr><td>4</td><td>Settle tool-call visibility</td><td>One agreed altitude for what the operator sees the agent doing; register #37 closed</td><td>TXN, from using the deployed build</td></tr>
     <tr><td>5</td><td>Formal UAT pass</td><td>Defined journeys run end to end against the frozen build, defects triaged</td><td>Both sides, final two weeks</td></tr>
-    <tr><td>6</td><td>Documented handover</td><td>Source, prompts, configurations and the simulation harness handed over, per the proposal</td><td>George</td></tr>
+    <tr><td>6</td><td>Documented handover</td><td>Source, prompts, configurations and the simulation harness handed over, per the proposal</td><td>Novosapien team</td></tr>
   </table>
 
   <h3>Risk register</h3>
   <table>
     <tr><th>Family</th><th>Likelihood</th><th>Impact</th><th>Mitigation</th><th>Trend</th></tr>
     <tr><td><strong>Scope definition at acceptance</strong> (specific to this engagement)</td><td>low</td><td>The Pilot Proposal lists Internal Ops v1 among three pilot deliverables; it is now scheduled into the final solution</td><td>Record the scope decision in writing before the acceptance review</td><td>reduced by decision</td></tr>
-    <tr><td><strong>1. Broken code shipped</strong></td><td>medium</td><td>A late change regresses working SOPs in front of Michael</td><td>Scope frozen from today; regression pass on the exact release build; AI test workforce already running</td><td>improving</td></tr>
+    <tr><td><strong>1. Broken code shipped</strong></td><td>medium</td><td>A late change regresses working SOPs during a client demonstration</td><td>Scope frozen from today; regression pass on the exact release build; AI test workforce already running</td><td>improving</td></tr>
     <tr><td><strong>2. Cloud environment breakage</strong></td><td>low</td><td>Demo environment down at acceptance</td><td>Six services deploying cleanly via GitHub Actions and Terraform; freeze infra changes in the window</td><td>stable</td></tr>
-    <tr><td><strong>3. App store rejection</strong></td><td><span class="chip dropped">not applicable</span></td><td>No mobile submission in this pilot</td><td>n/a</td><td>n/a</td></tr>
-    <tr><td><strong>4. Whole-codebase breakage</strong></td><td>medium</td><td>The mock moved to the 10 August spec on 10 Aug, a structural change inside the window</td><td>Already landed and deployed cleanly. No further contract swaps before 7 September</td><td>worsened then recovered</td></tr>
+    <tr><td><strong>3. Whole-codebase breakage</strong></td><td>medium</td><td>The mock moved to the 10 August spec on 10 Aug, a structural change inside the window</td><td>Already landed and deployed cleanly. No further contract swaps before 7 September</td><td>worsened then recovered</td></tr>
   </table>
 
   <div class="flag">
@@ -289,7 +288,7 @@
 <!-- ============================================ WORKFLOWS -->
 <section id="workflows" class="page">
   <h2>Workflow status</h2>
-  <p class="lede">George's slate, <em>Ten new workflows, you choose what earns a build</em>, set against the implemented code. This page states what is operational against each workflow, and what each remaining candidate costs to build.</p>
+  <p class="lede">The Novosapien candidate slate, <em>Ten new workflows, you choose what earns a build</em>, set against the implemented code. This page states what is operational against each workflow, and what each remaining candidate costs to build.</p>
 
   <div class="flag">
     <strong>Alignment required before the slate is reissued.</strong> The slate describes three workflows as operational in the pilot. The implemented set is six SOPs, and it differs from the three described. Spend-control change matches its description. Lost or stolen card is partially implemented: the suspend and reactivate chain is operational, the block, replace and re-provision chain is not. Cardholder onboarding is not implemented, and the current tool surface does not support it, since there is no create operation for a cardholder, account, card or PIN. Four further SOPs are operational and are not described in the slate.

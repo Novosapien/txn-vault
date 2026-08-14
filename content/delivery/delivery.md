@@ -22,7 +22,7 @@ New timestamped file every run. Previous versions stay in place: they are the au
 - **Two deliverables in pilot scope**, both operational on simulation: the Full Agentic Experience and the Agent Access Layer. **Six workflow SOPs** run end to end.
 - **[[internal-ops-agents|Internal Ops v1]] moved out of pilot scope** by decision on 13 August and scheduled into the final solution. The Pilot Proposal text still lists it as a pilot deliverable, so the change needs recording before the acceptance review.
 - **Two pieces of work are routinely confused.** Sprint Zero (£17,500, delivered) is the requirements effort for the whole project and produced this vault. The **Control Center React build** is separate: a full React build of the GUI environments, done for the agentic experiment, appearing in **no priced stage of any proposal**.
-- **Workflow slate alignment needed.** George's candidate slate describes three workflows as operational. The implemented set is six SOPs and differs: spend-control change matches, lost or stolen card is partially implemented, cardholder onboarding is not implemented.
+- **Workflow slate alignment needed.** The Novosapien candidate slate describes three workflows as operational. The implemented set is six SOPs and differs: spend-control change matches, lost or stolen card is partially implemented, cardholder onboarding is not implemented.
 
 ## Corrections this plan makes to the vault
 
