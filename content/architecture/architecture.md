@@ -32,3 +32,6 @@ _Cross-cutting calls made in client sessions._
 ## Open Questions
 
 Tracked centrally in the [[open-questions]] register. Architecture-level items currently **open**: the **client-stack-isolation / multi-tenancy** call (#48 — ring-fenced vs central), **TXN ↔ DT infrastructure separation + AI-component spec** (#49), the AI-ready downloadable doc file (#20), and the **AI data-access** pattern (data-lake plug-in vs Core-API pull — see [[integrations]]). _Recently resolved: site-wide LLM owner (#3), MCP-ownership split (#8), CRM ↔ Console split (#19), dev-environment = TXN Azure._
+
+
+**Update (13-08, [[2026-08-13-agentic-standup]]):** **TXN runs its own vault alongside this one, deliberately.** Michael's holds everything TXN-wide: a **nightly sync from SharePoint**, meetings, decisions, and his **full release testing and UAT logs**. This vault holds the architectural, foundational and vision material. Michael describes them as working hand in hand and, usefully, says this one **finds contradictions and gaps in TXN's own documentation**. Access runs through the vault MCP connector, deployed company-wide at TXN. No consolidation is planned or needed; the split is the working arrangement.

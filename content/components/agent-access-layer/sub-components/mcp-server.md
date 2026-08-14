@@ -18,6 +18,8 @@ description: "The single monolith MCP server every TXN agent calls through — p
 
 > **03-08 update ([[2026-08-03-first-standup-pilot-demo]]):** MCP v1 is running, and its **deployment shape is now explicit: a separate service sitting on top of the API, not inside it.** Novosapien's usual pattern puts the MCP server *within* the deployed API; that option is not available here because **DT owns the Core API**, so the server mirrors the API from outside. It is built against the mock API service (see [[integrations]]) so the interaction shape matches what the real API will be. (Source: standup 2026-08-03)
 
+> **13-08 update ([[2026-08-13-agentic-standup]]):** **Server-side validation confirmed working in the live demo.** George deliberately entered invented values and the call was rejected rather than accepted into the flow, which is the behaviour [[tool-catalogue]] and this document assume. The catalogue now stands at **25 tools, 17 read and 8 write**, generated from the 10 August External contract. (Source: standup 2026-08-13)
+
 ---
 
 ## 1. What Does This Sub-Component Do?

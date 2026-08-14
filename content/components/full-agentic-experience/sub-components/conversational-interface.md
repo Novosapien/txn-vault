@@ -17,6 +17,8 @@ description: "Sub-component spec for the chat front door (TXN's Claude) — text
 
 > **03-08 update ([[2026-08-03-first-standup-pilot-demo]]):** First working build demoed to Michael and Dorte. The surface now carries a **conversations list with status colours** — **green = finished, not yet read**; **orange, flashing = paused, waiting on your approval**. This is what makes background work usable: ask for research, leave for another tab, and the colour tells you it is done; clicking the conversation resumes where it left off. Live in the build: **skills**, **slash commands**, streamed tool calls, **plan-first then confirm**, a generated task list, message **queue and stop** mid-run, and **voice input**. **Sub-agents are not yet wired.** The agent panel's **placement is still movable and undecided** — tab, header, or side; it sits in the side position for now purely for ease of use. (Source: standup 2026-08-03)
 
+> **13-08 update ([[2026-08-13-agentic-standup]]):** The **task list has moved out of the conversation flow into a persistent panel in the top-left corner**, replacing the inline treatment, so progress stays visible while the conversation scrolls. Message queueing during a run is confirmed working. (Source: standup 2026-08-13)
+
 ---
 
 ## 1. What Does This Sub-Component Do?

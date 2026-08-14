@@ -14,11 +14,14 @@ New timestamped file every run. Previous versions stay in place: they are the au
 
 | Flight plan | Scope | Generated |
 |-------------|-------|-----------|
-| [flightplan-txn-2026-08-13-1640.html](flightplan-txn-2026-08-13-1640.html) | The six-week agentic pilot, 27 July to 7 September 2026 | 13 Aug 2026 |
+| [flightplan-txn-2026-08-14-1220.html](flightplan-txn-2026-08-14-1220.html) | The six-week agentic pilot, 27 July to 7 September 2026 | **14 Aug 2026, current** |
+| [flightplan-txn-2026-08-13-1640.html](flightplan-txn-2026-08-13-1640.html) | First issue | 13 Aug 2026 |
 
 ## What the current plan says
 
-- **Pilot completion: 67%** of scope against **43%** of the window elapsed, so the pilot is ahead of its window. 25 days remained at generation.
+- **Pilot completion: 68%** of scope against **45%** of the window elapsed, so the pilot is ahead of its window. 24 days remained at generation.
+- **Two new risks, both on TXN's side of the review** (14 Aug): **Michael is on holiday 10 days from early September**, landing on the UAT fortnight and the acceptance review, and he is TXN's only technical reviewer ([[open-questions]] #50). **Neither Michael nor Dorte has used the deployed build**, which is how three open items were meant to be settled ([[open-questions]] #51).
+- **Five items were added to the build on 13 August**, the day the definition froze: per-run tool and endpoint audit, Sentry linked to feedback, collapsible approval cards, approval regrouping, and a UI rebuild against the final wireframes. Each carries a risk statement in the plan; the recommendation is to hold the UI rebuild until after acceptance.
 - **All three Pilot Order deliverables are in scope.** The Full Agentic Experience and the Agent Access Layer are operational on simulation, with **six workflow SOPs** running end to end.
 - **[[internal-ops-agents|Internal Ops v1]] is tracked as three line items** (14 August), all inside Internal Ops:
   1. **Knowledge engine** — delivered, as a remote MCP connector over this vault plus the docs portal.
