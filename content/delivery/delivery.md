@@ -39,6 +39,10 @@ New timestamped file every run. Previous versions stay in place: they are the au
 |--------------|--------------------|--------|
 | [[open-questions]] #32 says the pilot mock API runs on the 29 May YAML | The mock moved to the **External contract on 10 August** and now carries `api-specification_10Aug2026.yaml`, 67 paths and 98 operations, with a spec-pull pipeline | Register row and [[integrations]] timeline to be updated |
 
+## Reporting cadence
+
+Agreed with Dorte on 18 August: **the flight plan goes to TXN at the end of each week**, not every couple of days, since little changes across two days. Novosapien runs it daily internally to watch percentage completion against duration and catch stuck line items.
+
 ## Sources
 
 Reconciled at generation from: eight GitHub repositories (`txn-vault`, `txn-console-react`, `txn-agentic-agent`, `txn-mcp-server`, `txn-mock-api`, `txn-admin-panel`, `txn-admin-api`, `txn-vault-mcp`), the proposals in [[commercial]], and this vault. The workflow candidate slate lives in the shared folder as `txn-workflow-candidates.pdf`.

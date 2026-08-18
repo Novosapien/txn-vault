@@ -20,6 +20,8 @@ description: "The single monolith MCP server every TXN agent calls through — p
 
 > **13-08 update ([[2026-08-13-agentic-standup]]):** **Server-side validation confirmed working in the live demo.** George deliberately entered invented values and the call was rejected rather than accepted into the flow, which is the behaviour [[tool-catalogue]] and this document assume. The catalogue now stands at **25 tools, 17 read and 8 write**, generated from the 10 August External contract. (Source: standup 2026-08-13)
 
+> **18-08 update ([[2026-08-18-agentic-standup]]):** George's assessment is that **the build is ready to start calling real APIs**, though it deliberately will not yet: *"the core infrastructure is there... it's just a matter of refining some of the components."* The stated order from here is fix bugs and UI, add more workflows, **then harden the MCP server**, then user access and security. Note the sequencing consequence: hardening and access control both sit **after** the workflow work, inside the last stretch of the pilot. (Source: standup 2026-08-18)
+
 ---
 
 ## 1. What Does This Sub-Component Do?

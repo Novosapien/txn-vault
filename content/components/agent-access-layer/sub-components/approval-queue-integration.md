@@ -28,6 +28,8 @@ description: "How AI-initiated changes route through the Console two-person appr
 >
 > **2. Approval cards become collapsible.** A smaller card carrying approve and reject, expandable for the detail. George's open question, worth settling with the grouping: how much detail does a user actually need in order to validate a change, given they are being asked to take responsibility for it. (Source: standup 2026-08-13)
 
+> **18-08 update ([[2026-08-18-agentic-standup]]):** **Still unresolved, and now the main open item on this sub-component.** George: *"we're still working out a way to make sure that it's not click approve then click approve again then click approve again."* The approach being explored is having the **agent queue the approvals** rather than presenting them one at a time, which leaves the design question as **how to render a queue** the operator can act on without losing sight of what each item commits them to. Michael's grouping (see the 13 August update) is the input this needs. (Source: standup 2026-08-18)
+
 ---
 
 ## 1. What Does This Sub-Component Do?
