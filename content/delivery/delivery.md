@@ -14,7 +14,8 @@ New timestamped file every run. Previous versions stay in place: they are the au
 
 | Flight plan | Scope | Generated |
 |-------------|-------|-----------|
-| [flightplan-txn-2026-08-19-1305.html](flightplan-txn-2026-08-19-1305.html) | The six-week agentic pilot, 27 July to 7 September 2026 | **19 Aug 2026, current** |
+| [flightplan-txn-2026-08-19-1540.html](flightplan-txn-2026-08-19-1540.html) | The six-week agentic pilot, 27 July to 7 September 2026 | **19 Aug 2026 15:40, current** |
+| [flightplan-txn-2026-08-19-1305.html](flightplan-txn-2026-08-19-1305.html) | Superseded the same day | 19 Aug 2026 13:05 |
 | [flightplan-txn-2026-08-18-1935.html](flightplan-txn-2026-08-18-1935.html) | Superseded | 18 Aug 2026 |
 | [flightplan-txn-2026-08-14-1615.html](flightplan-txn-2026-08-14-1615.html) | Superseded | 14 Aug 2026 16:15 |
 | [flightplan-txn-2026-08-14-1220.html](flightplan-txn-2026-08-14-1220.html) | Superseded the same day | 14 Aug 2026 12:20 |
@@ -33,7 +34,7 @@ New timestamped file every run. Previous versions stay in place: they are the au
   3. **[[customer-onboarding|TXN customer onboarding agent]]** — specified to build depth across four stages, **not started, no code in any repository**.
 - **Note on the word onboarding.** Three different things carry the name. Internal Ops part 3 is **onboarding a customer onto TXN**, the commercial process run when a client commits. It is not [[guided-onboarding]] (the in-product co-pilot journey), and not cardholder onboarding on the workflow slate (creating a person, account, card and PIN).
 - **Two pieces of work are routinely confused.** Sprint Zero (£17,500, delivered) is the requirements effort for the whole project and produced this vault. The **Control Center React build** is separate: a full React build of the GUI environments, done for the agentic experiment, appearing in **no priced stage of any proposal**.
-- **The pilot's workflow scope was never confirmed, and it is now the gating decision** ([[open-questions]] #55). The three operational workflows were Novosapien's choice to prove the pattern, not TXN's selection. Novosapien is close to complete on everything achievable without the answer; the remaining workflows are ready to start the moment TXN picks. **The gap in the plan is a decision, not delivery.**
+- **The pilot's workflow scope was never confirmed, and it is now the gating decision** ([[open-questions]] #55). The three operational workflows were Novosapien's choice to prove the pattern, not TXN's selection. Novosapien is close to complete on everything achievable without the answer; the remaining workflows are ready to start the moment TXN picks. **The gap in the plan is a decision, not delivery.** Narrowed on 19 August from ten candidates to seven: #9 and #7 are not proceeding, #10 is leaning out. All three are **parked and shown**, not dropped, since they were Novosapien's own suggestions.
 - **Nothing on the candidate slate is agreed.** It was sent to TXN for a decision on every card (build next, park, not this) and **that confirmation has not come back**. Every candidate is a Novosapien proposal, not a commitment, and none of it is pilot scope. **Candidates 8 (alert, investigation, proposed plan), 9 (scheduled performance report) and 10 (guided product launch) are Novosapien concepts TXN did not ask for** and are marked as such.
 - **Workflow slate alignment needed.** The Novosapien candidate slate describes three workflows as operational. The implemented set is six SOPs and differs: spend-control change matches, lost or stolen card is partially implemented, cardholder onboarding is not implemented.
 
