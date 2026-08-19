@@ -4,6 +4,9 @@ status: Defined
 sources:
   - "[[05-06-2026-component-4-full-agentic-experience]]"
 description: "Sub-component spec for the multi-agent core — specialised teams merge user journeys via plan, approve, execute, with risk-tiered verification and guard rails"
+
+> **13-08 update ([[2026-08-13-agentic-standup]]):** Observed in the working build: **a workflow is structured at the start and malleable afterwards.** Once the scripted path completes, the agent retains awareness of what else it can do and **proactively suggests next steps** (running a simulation, funding the account, setting limits), and the user can continue conversationally from there rather than starting a new run. George's open design question: **do we curate a specific set of suggested next steps per workflow, or leave it to the agent and the user to decide what happens next?** An agent-design decision, undecided. (Source: standup 2026-08-13)
+
 ---
 
 # TXN — Full Agentic: Agent Orchestration & Planning

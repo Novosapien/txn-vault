@@ -11,6 +11,8 @@ description: "Component doc for TXN's Agent Inbox & Alerts — the proactive AI 
 
 # TXN — Agent Inbox & Alerts
 
+> **18-08 update ([[2026-08-18-agentic-standup]]):** **George proposes starting this component inside the pilot**, using the Control Center replica and **mocked alerts**, specifically so no external dependency gates the work. His view is that the earlier concern about being blocked here was overstated: the backend is plug-and-play, and the front end can be exchanged with Stackworkz in either direction once they have something. Not yet agreed with TXN, and it is not pilot scope. Note the standing constraint: **alert detection is still unowned** (see [[open-questions]] #13), so anything built here runs from a staged trigger. (Source: standup 2026-08-18)
+
 > **Component map:** [[components]] · **Vision:** [[vision]]
 > **User journeys:** [[ux-ai-configurable-operational-alerting|Operational Alerting]], [[ux-entity-performance-insights|Entity Performance Insights]], [[ux-txn-Intelligence-ai-autonomous-anomaly-detection|Anomaly Detection]], [[ux-ai-user-stories-reporting|NL Reporting]] — see [[user-journeys]]
 > **Date:** 2026-06-02

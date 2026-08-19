@@ -10,6 +10,9 @@ sources:
   - "[[18-06-2026-finalised-gap-analysis]]"
   - "[[24-06-2026-final-vault-review]]"
 description: "Component doc for TXN's inward-facing Internal Ops Agents — customer onboarding, knowledge engine, support triage, release notes and cold-start simulation"
+
+> **13-08 update ([[2026-08-13-agentic-standup]], [[2026-08-13-content-workforce-initiate]]):** **The knowledge engine is in active client use.** Michael on the vault MCP connector: *"It's been used several times... it's been perfect."* Access is deployed **company-wide at TXN**; Dorte and Michael both have it configured, **Ian is the only one still without it**. Michael also runs **TXN's own vault** (nightly SharePoint sync, meetings, decisions, release testing and UAT logs) and describes the two as working hand in hand: Novosapien's holds the architectural, foundational and vision material, and **surfaces contradictions and gaps in TXN's own documentation**. (Source: standup 2026-08-13)
+
 ---
 
 # TXN — Internal Ops Agents

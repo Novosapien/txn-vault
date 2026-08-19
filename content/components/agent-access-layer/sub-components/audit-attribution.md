@@ -4,6 +4,9 @@ status: Defined
 sources:
   - "[[01-06-2026-component-1-Agent-Access-Layer]]"
 description: "The combined audit trail — Console, Core API and chat records linked so TXN can prove it prompted, showed impact and the user confirmed each AI action"
+
+> **13-08 update ([[2026-08-13-agentic-standup]]):** **New requirement from the build side.** George proposed a **per-run audit of the tools called and, through them, the API endpoints hit**, surfaced for review rather than buried in logs: *"an audit of the tools that were called and in turn the API endpoints that were called in order to take those actions."* Aimed primarily at Michael, who needs to verify that a workflow asked the right questions, collected the right information and touched the right endpoints. This is narrower than the full audit trail described below (which is about attributing production actions to a user) and sits closer to a per-run trace for review. Worth confirming whether it is one mechanism or two. (Source: standup 2026-08-13)
+
 ---
 
 # TXN — Audit & Attribution

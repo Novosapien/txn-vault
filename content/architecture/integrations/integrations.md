@@ -73,3 +73,17 @@ Partner-supplied specs and definitions held in the vault for context (these are 
 - **Three services now stand up the pilot**, all Novosapien-side: the **Control Center replica** (real look and behaviour, hardcoded mock data, not connected to live APIs), a **dedicated mock API service** with a data store behind it and randomised payloads, and the **MCP server** as a **separate service on top of** that API rather than inside it — because DT owns the Core API, the usual embedded pattern is unavailable ([[mcp-server]]).
 - **Deployment for TXN review:** the build is being deployed with **basic authentication** so Michael and Dorte can use it in their own sessions and try to break it, alongside the screenshot **feedback tool**. Estimated a day or two from the 3 August standup.
 - **Delivery shape confirmed:** everything bedded down by **end of August**, then the **final two weeks are formal UAT** — environments stitched up, deployments and CI/CD proper. Brett flagged **review turnaround as the binding constraint**, since each round of use surfaces more change.
+
+
+**Update (13-08, [[2026-08-13-agentic-standup]]):**
+
+- **Sentry error tracking to be added** on the Novosapien side, with errors **linked to the feedback records** so a UI drawing, an in-chat agent-feedback note and the underlying stack error resolve to one view rather than three. George: *"then we're getting a holistic overview of not just the feedback... but also any errors as well."*
+- **Final wireframes exist and supersede the prototype.** Michael has them and will share; they are wireframes rather than a clickable prototype. Design alignment still to settle: **where the agent lives**, the **AI button in the header**, and how both translate into the **knowledge hub**. Michael is bundling this into his feedback. A UI rebuild against final designs is **two to three days** of work, because the functionality behind the agent is portable and only the surface changes ([[open-questions]] #35).
+- **Stackworkz sync call targeted for Friday next week.** Dorte is arranging it; TXN's own weekly Stackworkz call is Wednesdays, and Stackworkz have a **new project manager** (the previous one is on maternity leave). The plan is to give Stackworkz **access to the console build** so they can click through the agent and check design alignment, fonts and payload rendering, ahead of any hand-over or collection points between the two teams.
+
+
+**Update (18-08, [[2026-08-18-agentic-standup]]):**
+
+- **Stackworkz have no deployment scheduled.** Dorte hopes for one within the next couple of weeks, at which point the two builds can be aligned properly. Items also remain outstanding from DT.
+- **The Stackworkz call is confirmed for Friday**, with their new project manager in place. Agenda from the Novosapien side: confirm whether the prototype Novosapien rebuilt from is the one Stackworkz are working to, and agree how work moves between the two teams in either direction.
+- **DT is the binding constraint on the wider timeline.** Dorte, asked whether finishing the pilot early would help: it would help "tremendously", but DT has to finish first and "everyone else is finishing before they finish".

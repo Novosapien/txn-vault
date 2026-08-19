@@ -23,6 +23,10 @@ description: "Sub-component spec for generative UI — real Console React/MUI co
 >
 > **Flip planned (04-08, [[2026-08-04-content-workforce-demo-paycorp]]):** the **canvas becomes the primary surface** with the **chat alongside** walking the user through it, rather than a chat-primary surface that opens a canvas. (Source: standup 2026-08-03; Content Workforce demo 2026-08-04)
 
+> **13-08 update ([[2026-08-13-agentic-standup]]):** The three workflows now render end to end. The remaining defects are **all front-end**, not backend: components **render and then jump position**, and there is a **one-to-two second delay before rendering** which reads to the user as the message having disappeared. George: *"from a backend perspective it's fine, it's just the way in which we're rendering it on the front end."* Both are on the fix list before the acceptance run-in. (Source: standup 2026-08-13)
+
+> **18-08 update ([[2026-08-18-agentic-standup]]):** **The 13 August defects are fixed.** Components no longer jump position, there are fewer errors, and the build is *"a lot cleaner"*. The version shown on 13 August was never deployed; **a deployment goes out the evening of 18 August** and reaches TXN's environment. **Canvas now carries long lists as standard**: suspending a card had been rendering 50 transaction rows inline (*"a horrible user experience"*) and now returns a canvas card the operator opens and clicks into, which is the inline-versus-canvas rule from 3 August applied consistently. (Source: standup 2026-08-18)
+
 ---
 
 ## 1. What Does This Sub-Component Do?

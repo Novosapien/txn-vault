@@ -22,6 +22,14 @@ description: "How AI-initiated changes route through the Console two-person appr
 >
 > This **sharpens rather than replaces** the June rule that a single-card terminate is *privileged but needs no second approver* — irreversibility now argues for more friction on exactly that action. Left unresolved deliberately; tracked at [[open-questions]] #26. (Source: standup 2026-08-03)
 
+> **13-08 update ([[2026-08-13-agentic-standup]]):** Approval fatigue is now the live problem, seen in the working build. George: *"It just seems like approval after approval."* Two things changed.
+>
+> **1. Approval granularity has a direction.** The choice is between **one approval covering a bundle of tool calls** (*"I'm going to call these four tools, do you approve?"*) and **one approval per call**. Michael's steer is to **group by common action**: creating a cardholder and their card is one routine action and should carry a single approval; **the PIN stays separate** because it is set separately; **sensitive payment actions stay separate**. He is documenting the groupings and will come back with them. This is the practical follow-on to the irreversibility principle above.
+>
+> **2. Approval cards become collapsible.** A smaller card carrying approve and reject, expandable for the detail. George's open question, worth settling with the grouping: how much detail does a user actually need in order to validate a change, given they are being asked to take responsibility for it. (Source: standup 2026-08-13)
+
+> **18-08 update ([[2026-08-18-agentic-standup]]):** **Still unresolved, and now the main open item on this sub-component.** George: *"we're still working out a way to make sure that it's not click approve then click approve again then click approve again."* The approach being explored is having the **agent queue the approvals** rather than presenting them one at a time, which leaves the design question as **how to render a queue** the operator can act on without losing sight of what each item commits them to. Michael's grouping (see the 13 August update) is the input this needs. (Source: standup 2026-08-18)
+
 ---
 
 ## 1. What Does This Sub-Component Do?
