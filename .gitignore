@@ -5,3 +5,7 @@ public/
 *.log
 .DS_Store
 prof/
+
+# Internal negotiation material: never publish (this repo is public)
+content/legal/reviews/
+content/legal/txn-counterparty-review.md
