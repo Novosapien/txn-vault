@@ -27,6 +27,8 @@ description: "Sub-component spec for generative UI — real Console React/MUI co
 
 > **18-08 update ([[2026-08-18-agentic-standup]]):** **The 13 August defects are fixed.** Components no longer jump position, there are fewer errors, and the build is *"a lot cleaner"*. The version shown on 13 August was never deployed; **a deployment goes out the evening of 18 August** and reaches TXN's environment. **Canvas now carries long lists as standard**: suspending a card had been rendering 50 transaction rows inline (*"a horrible user experience"*) and now returns a canvas card the operator opens and clicks into, which is the inline-versus-canvas rule from 3 August applied consistently. (Source: standup 2026-08-18)
 
+> **20-08 update ([[2026-08-20-agentic-standup]]):** Deployment confirmed out. Approval cards render slightly differently, and the transaction-list behaviour is live: a **summary card in the chat that opens into the canvas**, where the operator clicks through to individual transactions. (Source: standup 2026-08-20)
+
 ---
 
 ## 1. What Does This Sub-Component Do?

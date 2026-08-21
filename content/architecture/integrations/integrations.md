@@ -87,3 +87,10 @@ Partner-supplied specs and definitions held in the vault for context (these are 
 - **Stackworkz have no deployment scheduled.** Dorte hopes for one within the next couple of weeks, at which point the two builds can be aligned properly. Items also remain outstanding from DT.
 - **The Stackworkz call is confirmed for Friday**, with their new project manager in place. Agenda from the Novosapien side: confirm whether the prototype Novosapien rebuilt from is the one Stackworkz are working to, and agree how work moves between the two teams in either direction.
 - **DT is the binding constraint on the wider timeline.** Dorte, asked whether finishing the pilot early would help: it would help "tremendously", but DT has to finish first and "everyone else is finishing before they finish".
+
+
+**Update (20-08, [[2026-08-20-agentic-standup]]):**
+
+- **Stackworkz have the console foundation in place**: login, menus, screens and access. Michael's read is that this makes it a good moment for the two teams to talk, and that pulling their work in *"shouldn't be too much difficult"*.
+- **Direct Transact's JWT process is settled and they are building the SDK**, so authentication for the agent's requests will be available. Michael suggests a conversation with DT specifically about authentication: how the agent obtains access to the various endpoints and works out which to call. Much of that context comes from the console, which already knows which programmes a given user can reach.
+- **A PIN-layer change has landed on the platform**: PINs previously sat behind a separate authentication endpoint, and that layer has been scrapped in favour of central JWT. It does not change the shape of the card-service workflow, but it removes the authenticate step from it.

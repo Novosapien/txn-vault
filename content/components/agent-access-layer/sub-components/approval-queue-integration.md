@@ -30,6 +30,10 @@ description: "How AI-initiated changes route through the Console two-person appr
 
 > **18-08 update ([[2026-08-18-agentic-standup]]):** **Still unresolved, and now the main open item on this sub-component.** George: *"we're still working out a way to make sure that it's not click approve then click approve again then click approve again."* The approach being explored is having the **agent queue the approvals** rather than presenting them one at a time, which leaves the design question as **how to render a queue** the operator can act on without losing sight of what each item commits them to. Michael's grouping (see the 13 August update) is the input this needs. (Source: standup 2026-08-18)
 
+> **20-08 update ([[2026-08-20-agentic-standup]]):** **A design is now proposed.** The agent **writes all the tool calls up front**, renders them together and caches them, instead of serving one approval card after another. If a single item is rejected, it goes back and reworks from that point. George's assessment: more finicky to build than sequential calls, but a materially better experience. Suspending a card, which currently produces five separate cards in sequence, is the worked example.
+>
+> **The grouping input is coming.** Michael committed to going through the workflows and marking **where an approval is expected and where it is not**, alongside validating the endpoints each one calls. That closes the input this has been waiting on since 13 August. (Source: standup 2026-08-20)
+
 ---
 
 ## 1. What Does This Sub-Component Do?

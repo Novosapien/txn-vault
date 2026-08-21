@@ -22,6 +22,8 @@ description: "The single monolith MCP server every TXN agent calls through — p
 
 > **18-08 update ([[2026-08-18-agentic-standup]]):** George's assessment is that **the build is ready to start calling real APIs**, though it deliberately will not yet: *"the core infrastructure is there... it's just a matter of refining some of the components."* The stated order from here is fix bugs and UI, add more workflows, **then harden the MCP server**, then user access and security. Note the sequencing consequence: hardening and access control both sit **after** the workflow work, inside the last stretch of the pilot. (Source: standup 2026-08-18)
 
+> **20-08 update ([[2026-08-20-agentic-standup]]):** **The security posture has a structural argument behind it**, given in response to Michael's feedback. Because **the MCP tools sit outside the agent**, not within it, the blast radius of anything the agent generates is bounded: the worst case is code that calls an MCP tool, and that tool already carries its own validation and limits. Sub-agents are the piece that will need hardening, and they are not yet wired. Some tools appear exposed that are not; most of what is visible is read-only. (Source: standup 2026-08-20)
+
 ---
 
 ## 1. What Does This Sub-Component Do?
