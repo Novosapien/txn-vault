@@ -5,7 +5,12 @@ description: "Transcript and analysis of the 2026-08-24 Outbound Workforce inter
 scope:
   - "[[commercial]]"
   - "[[vision]]"
-status: raw
+status: partially-extracted
+extracted-to:
+  - "[[commercial]]"
+  - "[[delivery]]"
+  - "[[open-questions]]"
+  - "[[index]]"
 ---
 
 # TXN: Outbound Workforce, Interview 1, The Offer (2026-08-24)
@@ -16,8 +21,10 @@ status: raw
 >
 > Filed here because the second half is the single clearest statement of TXN's own positioning, pricing model and go-to-market sequence on record, and because it surfaces a **direct contradiction with a load-bearing assumption in [[vision]]** (see the flagged finding below).
 
-> [!warning] Digest deferred by decision
-> **Status is `raw` on purpose.** The findings below are identified and mapped, but no destination document has been updated. The interview series runs to at least Thu 27 Aug (ICPs Tue 25 Aug, personas Thu 27 Aug), and the positioning material is better written into [[vision]] and [[commercial]] once the full picture is settled rather than in fragments. Revisit when the series closes.
+> [!warning] Partially extracted, by decision
+> **Updated 25 August.** The commercial, delivery and contradiction findings below have now been written into [[commercial]], [[delivery]] and the [[open-questions]] register as part of the 25 August flight plan run. Register rows **#55** (balance holding), **#56** (multi-tenancy) and **#57** (single committer) come from this call.
+>
+> **The positioning material is still deliberately held.** The tagline and the value proposition are not written into [[vision]] yet. The interview series runs to at least Thu 27 Aug (ICPs Tue 25 Aug, personas Thu 27 Aug), and the positioning material is better written into [[vision]] and [[commercial]] once the full picture is settled rather than in fragments. Revisit when the series closes.
 >
 > **One item should not wait for that.** The balance-holding contradiction is a factual correction to [[vision]], not positioning material, and it shapes how [[fraud-risk-assist]] is scoped. Raise it with Ian for confirmation ahead of the digest.
 
