@@ -10,12 +10,11 @@ Delivery status for the engagement. Where [[commercial]] records what was sold a
 
 ## Flight plans
 
-New timestamped file every run. Previous versions stay in place: they are the audit trail and the diff baseline for the weekly review.
+**One file per date**, named `flightplan-txn-YYYY-MM-DD.html`. Revisions on the same day update that day's file in place. Previous **dates** stay in place: they are the audit trail and the diff baseline for the weekly review. _(Convention set 25-08. Files dated before then carry a time suffix and are left as they are, since renaming would collide on 14 August and rewrite the audit trail.)_
 
 | Flight plan | Scope | Generated |
 |-------------|-------|-----------|
-| [flightplan-txn-2026-08-25-1030.html](flightplan-txn-2026-08-25-1030.html) | The six-week pilot to 7 September. Four pages: Home, Pilot Release, **Workflow Status** (now carrying TXN's ranked slate decision), Module Ledger | **25 Aug 2026 10:30, current** |
-| [flightplan-txn-2026-08-25-1007.html](flightplan-txn-2026-08-25-1007.html) | Superseded the same day. Carried four quarter pages and dropped Workflow Status; **reverted at TXN-facing request** to the established four-page structure | 25 Aug 2026 10:07 |
+| [flightplan-txn-2026-08-25.html](flightplan-txn-2026-08-25.html) | The six-week pilot to 7 September. Four pages: Home, Pilot Release, **Workflow Status** (now carrying TXN's ranked slate decision), Module Ledger | **25 Aug 2026, current** |
 | [flightplan-txn-2026-08-18-1935.html](flightplan-txn-2026-08-18-1935.html) | Superseded. The six-week agentic pilot only | 18 Aug 2026 |
 | [flightplan-txn-2026-08-14-1615.html](flightplan-txn-2026-08-14-1615.html) | Superseded | 14 Aug 2026 16:15 |
 | [flightplan-txn-2026-08-14-1220.html](flightplan-txn-2026-08-14-1220.html) | Superseded the same day | 14 Aug 2026 12:20 |
