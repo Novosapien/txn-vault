@@ -15,6 +15,7 @@ The distinguishing fact of this engagement: **TXN arrived with GTM material alre
 | [[icp-definition]] | TXN's ICP v0.4: firmographics, triggers, anti-profile, ten-parameter scoring, tiering, Named Account List method | Client-authored, 13-07-2026. The fit authority, but **now behind the workbook** |
 | [[prospecting-process]] | TXN's seven-stage prospecting process, four discovery sub-scans, the early-stage watch list, Freshsales model, phased rollout | Client-authored, **v0.6**, 19-08-2026 |
 | [[qualification-matrix]] | Analysis of the scored register v0.7: 126 accounts, tier and route distribution, and the maturity bias in the scoring | Novosapien analysis, 25-08-2026 |
+| [[discovery-sources]] | Validated discovery sources for the greenfield segment: what survived adversarial checking, coverage by market, build requirements | Novosapien research, 25-08-2026 |
 | [[persona-champion]] | CPO. Contributor, no veto. Owns Product Enablement | Client-authored scaffold, v0.1 |
 | [[persona-primary-user]] | CTO. Approver with technical veto. Owns Technical Control | Client-authored scaffold, v0.1 |
 | [[persona-economic-buyer]] | CFO primary, CEO or Founder secondary. Owns Commercial Model | Client-authored scaffold, v0.1 |
