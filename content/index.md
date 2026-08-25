@@ -26,6 +26,7 @@ ___
 | [[commercial]] | Commercial pack: both proposals (Agentic Layer + GTM Workforces) with links to the MSA, SLA, and review material in `legal/` | Living; **Content Workforce verbally agreed 04-08**, papering waits on Ian's return |
 | [[content-workforce]] | Content Workforce engagement: the four entities, workshop schedule, and the manifesto, pillars and entity outputs as they are built | Living; interview 1 held 19-08, manifesto in refinement |
 | [[delivery]] | Delivery status: flight plans reconciling the repos, the proposals and this vault into what is actually delivered | Living; first flight plan 13-08, pilot **76% of confirmed scope** at 62% of the window |
+| [[outbound]] | Outbound Workforce engagement: TXN's own GTM corpus (ICP, prospecting process, persona scaffolds), the three routes to a client, and the reconciliation | Living; interview 2 held 25-08, corpus loaded, personas awaiting greenfield variants |
 
 ## External Resources
 
@@ -39,6 +40,7 @@ _Client-provided materials, design artifacts, research, and data that live outsi
 
 _Updated as work progresses. Most recent first._
 
+| 2026-08-25 | **Outbound Workforce interview 2, the ICPs.** New [[outbound]] section opened and TXN's own GTM corpus loaded: [[icp-definition]] v0.4, [[prospecting-process]] v0.4, and the three persona scaffolds ([[persona-champion]], [[persona-primary-user]], [[persona-economic-buyer]]), all authored by Ian between April and July and delivered 24-08. **Three routes to a client established** (no incumbent / next product elsewhere / full switch), with **route 1 leading on track record**: a company changing or adding a processor will not pick a platform with no market history. Ian drew the distinction that governs the work: an ICP is who the ideal customer is, targeting order is who you chase first, and they are not the same question. Trade Republic is ideal on fit and not a first-wave target. Open: the scored account workbook is still outstanding, and every persona scaffold assumes an incumbent exists, which route 1 does not have. |
 | Date | What happened |
 |------|--------------|
 | 2026-08-25 | **Flight plan reissued** ([flightplan-txn-2026-08-25.html](delivery/flightplan-txn-2026-08-25.html)) after review. Returned to the established four-page structure (Home, Pilot Release, **Workflow Status**, Module Ledger); the four quarter pages introduced at 10:07 are dropped and the forward frame is planned in [[delivery]] instead. **Workflow Status now carries TXN's ranked slate decision.** Two risks removed from the register at request, commit velocity and capacity concentration; both retained in [[delivery]] and [[open-questions]] #57 as internal notes. |
