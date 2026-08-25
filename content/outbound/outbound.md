@@ -12,8 +12,9 @@ The distinguishing fact of this engagement: **TXN arrived with GTM material alre
 
 | Document | Description | Status |
 |----------|------------|--------|
-| [[icp-definition]] | TXN's ICP v0.4: firmographics, triggers, anti-profile, ten-parameter scoring, tiering, Named Account List method | Client-authored, 13-07-2026. The fit authority |
-| [[prospecting-process]] | TXN's seven-stage prospecting process, three discovery sub-scans, Freshsales model, phased rollout | Client-authored, v0.4 |
+| [[icp-definition]] | TXN's ICP v0.4: firmographics, triggers, anti-profile, ten-parameter scoring, tiering, Named Account List method | Client-authored, 13-07-2026. The fit authority, but **now behind the workbook** |
+| [[prospecting-process]] | TXN's seven-stage prospecting process, four discovery sub-scans, the early-stage watch list, Freshsales model, phased rollout | Client-authored, **v0.6**, 19-08-2026 |
+| [[qualification-matrix]] | Analysis of the scored register v0.7: 126 accounts, tier and route distribution, and the maturity bias in the scoring | Novosapien analysis, 25-08-2026 |
 | [[persona-champion]] | CPO. Contributor, no veto. Owns Product Enablement | Client-authored scaffold, v0.1 |
 | [[persona-primary-user]] | CTO. Approver with technical veto. Owns Technical Control | Client-authored scaffold, v0.1 |
 | [[persona-economic-buyer]] | CFO primary, CEO or Founder secondary. Owns Commercial Model | Client-authored scaffold, v0.1 |
@@ -56,11 +57,15 @@ Two models are in play and they use the same words for different objects.
 
 ### The gap that needs closing
 
-Discovery separates the routes: [[prospecting-process]] §4.1.3 runs three sub-scans, where sub-scan 2 (use-case-primary) surfaces greenfield companies and sub-scan 3 (incumbent-customer) surfaces migration candidates. v0.4 added the use-case lens precisely for this, citing **Trade Republic pre-Marqeta** as the canonical case of a fit company invisible to a card-signal filter.
+Discovery separates the routes: [[prospecting-process]] §4.1.3 runs four sub-scans, where sub-scan 2 (use-case-primary) surfaces greenfield companies and sub-scan 3 (incumbent-customer) surfaces migration candidates. The use-case lens was added precisely for this, citing **Trade Republic pre-Marqeta** as the canonical case of a fit company invisible to a card-signal filter.
 
 Scoring then merges the routes back together, and tier actions cannot distinguish them. So a Tier 1 greenfield launch and a Tier 1 Trade Republic receive the same ABM treatment, and the sequencing decision has nowhere to live.
 
-**Proposed fix:** a Route attribute on the account record (launch / new product / full switch), set at discovery from the sub-scan that surfaced it, carried into the Qualification Matrix and Freshsales, used to order outreach *within* tier. The score is untouched and fit is untouched.
+**The register quantifies the effect.** Greenfield accounts average 61.7 points against 74.4 for migration accounts, and migration takes 17 of the 22 Tier 1 places. Full working at [[qualification-matrix]]. The gap is not one parameter: P7 accounts for at most 4 points of the 12.7, with the rest spread across licence status, BIN sponsor signal and program scale. The framework measures **card program maturity**, which is right for fit and a poor proxy for near-term winnability, because maturity implies an incumbent and an incumbent implies the track record objection.
+
+**Proposed fix:** surface Route as a derived attribute (launch / new product / full switch). It already exists implicitly in the Incumbent Processor input, so this is derivation and exposure rather than new data capture. Carry it into Freshsales and use it to order outreach *within* tier. The score is untouched and fit is untouched.
+
+Ian named this bias himself in [[prospecting-process]] §4.1.5, dated 19 August, when adding the early-stage watch list for companies *"that would otherwise be missed by discovery weighted toward existing card programs."* The watch list catches pre-product companies before they reach the register; it does not reach the 32 greenfield accounts already scored into Tier 2 and Tier 3.
 
 ## Persona scaffolds: what carries and what is missing
 
@@ -94,8 +99,10 @@ Positioning material from interview 1 (tagline, value proposition) is deliberate
 
 | Item | Needs | Who |
 |------|-------|-----|
-| `TXN_GTM_Qualification_Matrix_v0.2.xlsx`, the scored register of the ~126 accounts | The workbook. Named in [[icp-definition]] §9.5, not in the delivered folder | Ian |
-| Route attribute decision: is sequencing carried as a field | A decision | Ian |
+| ~~The scored register of the 126 accounts~~ | **Delivered 25-08 as v0.7.** Analysis at [[qualification-matrix]] | Closed |
+| Reissue [[icp-definition]] to match the workbook: the P7 "Planning to Launch" band, Timing Fit, Card Program Category, Card Program Target Date are all live in v0.7 and undocumented in v0.4 | A version bump | Ian |
+| Route attribute decision: is sequencing carried as a derived field | A decision | Ian |
+| Whether the 18 "no card program, no plan" accounts belong on the register at all | A decision. [[icp-definition]] §8.1.8 scores them DQ but P7 is not a gating parameter, so 12 survive as Priority 2 and 3 | Ian |
 | Greenfield variants of the three persona scaffolds | Interview 3 | Both |
 | Head of Payments and Risk & Compliance personas | Decision on whether they get standalone documents | Ian |
 | Route 2 worked examples: who moved a next product, and what the incumbent could not do | Ian's recall or records | Ian |
