@@ -20,6 +20,14 @@ New timestamped file every run. Previous versions stay in place: they are the au
 | [flightplan-txn-2026-08-14-1220.html](flightplan-txn-2026-08-14-1220.html) | Superseded the same day | 14 Aug 2026 12:20 |
 | [flightplan-txn-2026-08-13-1640.html](flightplan-txn-2026-08-13-1640.html) | First issue | 13 Aug 2026 |
 
+## Decisions
+
+Decision records that sit outside the meeting series, kept here so the flight plan and the vault agree.
+
+| Decision | Date | Record |
+|----------|------|--------|
+| **Workflow slate: TXN's ranked order and flagship pick.** Depth before breadth; decline investigation with the fix attached is the flagship. Clears the item that blocked forward workflow planning | 25 Aug 2026 | [[2026-08-25-workflow-slate-decision]] |
+
 ## What the current plan says
 
 ### The headline, 25 August
@@ -50,8 +58,8 @@ Quarters are **launch anchored**: Q1 opens 8 September 2026, the day after pilot
 - **[[internal-ops-agents|Internal Ops v1]] is three line items**: knowledge engine **delivered** and in active client use, meeting capture **delivered** and running on this project (**18 meeting records**, most recent 24 August), and the **[[customer-onboarding|TXN customer onboarding agent]] not started**.
 - **Note on the word onboarding.** Three different things carry the name. Internal Ops part 3 is **onboarding a customer onto TXN**, the commercial process run when a client commits. It is not [[guided-onboarding]] (the in-product co-pilot journey), and not cardholder onboarding on the workflow slate.
 - **Two pieces of work are routinely confused.** Sprint Zero (£17,500, delivered) is the requirements effort for the whole project and produced this vault. The **Control Center React build** is separate, and appears in **no priced stage of any proposal**.
-- **Nothing on the candidate slate is agreed.** It was sent to TXN for a decision on every card and **that confirmation has still not come back**. Michael said on 13 August he would review it against TXN's own vault; that has not happened.
-- **Workflow slate alignment still needed.** The slate describes three workflows as operational; the implemented set is six SOPs and differs.
+- **The candidate slate decision has come back (25-08).** Recorded in full at [[2026-08-25-workflow-slate-decision]]. Michael has ranked all ten with the principle **depth before breadth**, and named **decline investigation with the fix attached** as the flagship build: highest daily volume, half of it already runs as `investigate-declines`, no external dependency, and the fix half reuses the spend-control workflow. TXN has written **journey documents for all thirteen workflows** and will confirm endpoints and approval gates through the following week. **Candidates 8, 9 and 10, previously Novosapien concepts TXN had not asked for, are now TXN-ranked work.** Two things remain open: TXN ranked all ten and parked none, so there is no cut line, and Michael frames the work as being *"in the pilot"*, which needs the landing point confirming since the pilot definition is frozen and completes 7 September.
+- **Workflow slate alignment is now more pressing.** The slate describes three workflows as operational; the implemented set is six SOPs and differs (cardholder onboarding is not implemented at all, lost or stolen is partial). **TXN is writing journey documents against those descriptions**, so the alignment action has moved from tidy-up to something that should happen before their documents are finished.
 - **Permission model still deferred.** Named in Pilot Order deliverable 2, no commit on `txn-mcp-server` since 11 August. Moved to Q1 P1 position 4.
 
 ### Scope added inside the launch window
