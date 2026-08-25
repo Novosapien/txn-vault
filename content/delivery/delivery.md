@@ -14,7 +14,8 @@ New timestamped file every run. Previous versions stay in place: they are the au
 
 | Flight plan | Scope | Generated |
 |-------------|-------|-----------|
-| [flightplan-txn-2026-08-25-1007.html](flightplan-txn-2026-08-25-1007.html) | The pilot to 7 September, **plus four quarters of forward pipeline** (first issue to carry the quarter frame) | **25 Aug 2026, current** |
+| [flightplan-txn-2026-08-25-1030.html](flightplan-txn-2026-08-25-1030.html) | The six-week pilot to 7 September. Four pages: Home, Pilot Release, **Workflow Status** (now carrying TXN's ranked slate decision), Module Ledger | **25 Aug 2026 10:30, current** |
+| [flightplan-txn-2026-08-25-1007.html](flightplan-txn-2026-08-25-1007.html) | Superseded the same day. Carried four quarter pages and dropped Workflow Status; **reverted at TXN-facing request** to the established four-page structure | 25 Aug 2026 10:07 |
 | [flightplan-txn-2026-08-18-1935.html](flightplan-txn-2026-08-18-1935.html) | Superseded. The six-week agentic pilot only | 18 Aug 2026 |
 | [flightplan-txn-2026-08-14-1615.html](flightplan-txn-2026-08-14-1615.html) | Superseded | 14 Aug 2026 16:15 |
 | [flightplan-txn-2026-08-14-1220.html](flightplan-txn-2026-08-14-1220.html) | Superseded the same day | 14 Aug 2026 12:20 |
@@ -33,24 +34,26 @@ Decision records that sit outside the meeting series, kept here so the flight pl
 ### The headline, 25 August
 
 - **The pilot has run out of buffer.** **74%** of scope complete (range 70 to 78) against **71%** of the window elapsed, day 30 of 42, 13 days to completion. The margin was **+23 points on 14 August, +16 on 18 August, +3 today**. The pilot is not late and nothing contracted has been missed, but the comfort has gone, and it went in one week. This is the asymmetry behaving exactly as the last two issues predicted.
-- **Build velocity has dropped sharply.** Across the four build repositories there have been **two substantive commits in seven days**. `txn-agentic-agent` has had no commit since 17 August, `txn-mcp-server` none since 11 August, `txn-mock-api` one lint fix. Against a mid-August week producing fifteen or more. Needs confirming as deliberate consolidation before UAT rather than capacity drawn elsewhere.
+- **Commit activity has consolidated.** _Internal note, not carried on the client-facing flight plan by decision (25-08)._ Across the four build repositories there were **two substantive commits in the seven days to 25 August**: `txn-agentic-agent` last moved 17 August, `txn-mcp-server` 11 August, `txn-mock-api` one lint fix. Recorded here as evidence for the completion estimate rather than as a reported risk.
 - **Approval stacking has landed**, and it was the main open item in the last issue. Two commits did it: 20 August *"HITL hand-off: the next gate arrives, answered cards stay answered"* and 24 August *"Acknowledge the click, hold the answer, and a browser harness that watches"*. The second also adds a browser test harness, which is the right instinct this close to UAT.
-- **New risk: one engineer, now split across two engagements.** Every commit on all four build repositories since kickoff is George's. The 24 August outbound session additionally assigned him email configuration and domain warming for the Outbound Workforce ([[open-questions]] #57).
-- **The TXN customer onboarding agent still has no code**, re-verified 25 August across all eight repositories: no repo, no branch, no module, zero open GitHub issues anywhere in the estate. It has been unstarted for the full six weeks. **This issue moves it into Q1 P1 position 2** and recommends agreeing its landing point with TXN rather than discovering the gap at acceptance.
+- **Capacity concentration.** _Internal note, not carried on the client-facing flight plan by decision (25-08)._ Every commit on all four build repositories since kickoff is George's, and the 24 August outbound session additionally assigned him email configuration and domain warming. Tracked at [[open-questions]] #57 so it stays visible internally.
+- **The TXN customer onboarding agent still has no code**, re-verified 25 August across all eight repositories: no repo, no branch, no module, zero open GitHub issues anywhere in the estate. It has been unstarted for the full six weeks. **This issue moves it into the post-pilot plan as the first build after acceptance** and recommends agreeing its landing point with TXN rather than discovering the gap at acceptance.
 - **The acceptance date is still not fixed in writing.** Carried from 18 August, now the single most overdue item ([[open-questions]] #54).
 
-### The quarter frame, set this issue
+### The forward frame
 
-Quarters are **launch anchored**: Q1 opens 8 September 2026, the day after pilot completion, and each runs three months. Set on 25 August, to hold stable, and not to move without TXN agreeing it in a weekly review.
+The frame is **launch anchored**: it opens 8 September 2026, the day after pilot completion, and runs in three-month blocks. Set on 25 August, to hold stable, and not to move without TXN agreeing it in a weekly review.
+
+**It is planned here rather than on the flight plan.** The 10:07 issue carried four quarter pages; the client-facing report has been returned to its established four-page structure (Home, Pilot Release, Workflow Status, Module Ledger). The forward pipeline below remains the working plan.
 
 | Quarter | Window | Character |
 |---------|--------|-----------|
-| Q1 | 8 Sep to 7 Dec 2026 | Delivery quarter: acceptance closeout, the customer onboarding agent, the wire-in build, the permission model |
-| Q2 | 8 Dec 2026 to 7 Mar 2027 | Scale quarter: Phase 3 team, first client onboarding, hardening from real use |
-| Q3 | 8 Mar to 7 Jun 2027 | Planning surface, no P1s by design |
-| Q4 | 8 Jun to 7 Sep 2027 | Planning surface, a horizon rather than a plan |
+| Block 1 | 8 Sep to 7 Dec 2026 | Delivery: acceptance closeout, the customer onboarding agent, the wire-in build, the permission model |
+| Block 2 | 8 Dec 2026 to 7 Mar 2027 | Scale: Phase 3 team, first client onboarding, hardening from real use |
+| Block 3 | 8 Mar to 7 Jun 2027 | Planning surface, no commitments by design |
+| Block 4 | 8 Jun to 7 Sep 2027 | Planning surface, a horizon rather than a plan |
 
-**A commercial precondition on every Q1 commitment.** Only the pilot is papered, under a standalone Pilot Order. Everything in Q1 and beyond sits under the MSA, which [[commercial]] records as **drafted and under persona review, not signed**. If signature slips, the quarter slips with it, and that is a TXN-side action rather than a delivery risk.
+**A commercial precondition on every commitment beyond the pilot.** Only the pilot is papered, under a standalone Pilot Order. Everything beyond the pilot sits under the MSA, which [[commercial]] records as **drafted and under persona review, not signed**. If signature slips, the forward plan slips with it, and that is a TXN-side action rather than a delivery risk.
 
 ### Carried forward, still true
 
@@ -60,7 +63,7 @@ Quarters are **launch anchored**: Q1 opens 8 September 2026, the day after pilot
 - **Two pieces of work are routinely confused.** Sprint Zero (£17,500, delivered) is the requirements effort for the whole project and produced this vault. The **Control Center React build** is separate, and appears in **no priced stage of any proposal**.
 - **The candidate slate decision has come back (25-08).** Recorded in full at [[2026-08-25-workflow-slate-decision]]. Michael has ranked all ten with the principle **depth before breadth**, and named **decline investigation with the fix attached** as the flagship build: highest daily volume, half of it already runs as `investigate-declines`, no external dependency, and the fix half reuses the spend-control workflow. TXN has written **journey documents for all thirteen workflows** and will confirm endpoints and approval gates through the following week. **Candidates 8, 9 and 10, previously Novosapien concepts TXN had not asked for, are now TXN-ranked work.** Two things remain open: TXN ranked all ten and parked none, so there is no cut line, and Michael frames the work as being *"in the pilot"*, which needs the landing point confirming since the pilot definition is frozen and completes 7 September.
 - **Workflow slate alignment is now more pressing.** The slate describes three workflows as operational; the implemented set is six SOPs and differs (cardholder onboarding is not implemented at all, lost or stolen is partial). **TXN is writing journey documents against those descriptions**, so the alignment action has moved from tidy-up to something that should happen before their documents are finished.
-- **Permission model still deferred.** Named in Pilot Order deliverable 2, no commit on `txn-mcp-server` since 11 August. Moved to Q1 P1 position 4.
+- **Permission model still deferred.** Named in Pilot Order deliverable 2, no commit on `txn-mcp-server` since 11 August. Moved into the post-pilot plan.
 
 ### Scope added inside the launch window
 
