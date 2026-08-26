@@ -14,7 +14,8 @@ Delivery status for the engagement. Where [[commercial]] records what was sold a
 
 | Flight plan | Scope | Generated |
 |-------------|-------|-----------|
-| [flightplan-txn-2026-08-25.html](flightplan-txn-2026-08-25.html) | The six-week pilot to 7 September. Four pages: Home, Pilot Release, **Workflow Status** (now carrying TXN's ranked slate decision), Module Ledger | **25 Aug 2026, current** |
+| [flightplan-txn-2026-08-26.html](flightplan-txn-2026-08-26.html) | **Six pages.** The four pilot pages, plus **Content Workforce** and **Outbound Workforce**, each tracking work done, work left and the four-week delivery schedule from its proposal | **26 Aug 2026, current** |
+| [flightplan-txn-2026-08-25.html](flightplan-txn-2026-08-25.html) | Superseded. The six-week pilot to 7 September. Four pages: Home, Pilot Release, **Workflow Status** (carrying TXN's ranked slate decision), Module Ledger | 25 Aug 2026 |
 | [flightplan-txn-2026-08-21-1110.html](flightplan-txn-2026-08-21-1110.html) | Superseded. Issued before TXN's slate decision arrived | 21 Aug 2026 |
 | [flightplan-txn-2026-08-19-1540.html](flightplan-txn-2026-08-19-1540.html) | Superseded. Added the parked-candidates section | 19 Aug 2026 15:40 |
 | [flightplan-txn-2026-08-19-1305.html](flightplan-txn-2026-08-19-1305.html) | Superseded the same day | 19 Aug 2026 13:05 |
@@ -22,6 +23,17 @@ Delivery status for the engagement. Where [[commercial]] records what was sold a
 | [flightplan-txn-2026-08-14-1615.html](flightplan-txn-2026-08-14-1615.html) | Superseded | 14 Aug 2026 16:15 |
 | [flightplan-txn-2026-08-14-1220.html](flightplan-txn-2026-08-14-1220.html) | Superseded the same day | 14 Aug 2026 12:20 |
 | [flightplan-txn-2026-08-13-1640.html](flightplan-txn-2026-08-13-1640.html) | First issue | 13 Aug 2026 |
+
+## Scope of the flight plan
+
+From 26 August the plan covers **three engagements**, not one. The four pilot pages remain the agentic layer only. Two further pages track the GTM workforces, which are contracted separately and run in parallel:
+
+| Page | Engagement | How progress is measured |
+|------|-----------|-------------------------|
+| Content Workforce | GTM Workforces proposal | Interview sets closed, against the four-week plan in the proposal. Week one is the gate: everything downstream waits on the workshops |
+| Outbound Workforce | GTM Workforces proposal | Same shape. Week one is the ICP workshop and the deliverability build |
+
+**How "what is left" is tracked**, since it had no method before: each page carries the delivery schedule drawn up in its own proposal, and progress is measured as **interview sets closed** rather than days elapsed. The workshops became a series of refinement sessions rather than a single day, so calendar weeks stopped being a useful measure while the sessions run long.
 
 ## Decisions
 
