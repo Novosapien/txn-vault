@@ -5,7 +5,7 @@ description: "TXN's content pillars: the topic areas each piece of content sits 
 # TXN — Content Pillars
 
 > **Section:** [[content-workforce]]
-> **Status:** **Drafted, still unreviewed.** Deferred by session 1 and again by session 2. Booked for 27 August alongside the brand entity.
+> **Status:** **Drafted, still unreviewed.** Deferred three times: by session 1, by session 2, and by the 27 August decision to give the slot to Outbound. Booked for **1 September** alongside the brand entity.
 > **Last worked:** Drafted before Interview 1, 19 August 2026. Not opened since.
 
 Pillars narrow the [[content-manifesto]] to what actually gets written. The manifesto says the business wants to talk about a broad topic; a pillar says which part of it is the focus right now.

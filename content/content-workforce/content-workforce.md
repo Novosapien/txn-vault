@@ -17,8 +17,8 @@ The Content Workforce needs three configured inputs before it can generate on TX
 | Output | What it is | Status |
 |--------|-----------|--------|
 | [[content-manifesto]] | What the business stands for, what it writes about, and who the audience is | **Complete through every section**, closed in session 2 on 21 August. Loaded into the platform. Wording passes remain, and they are Tyler's |
-| [[content-pillars]] | The specific topics each piece of content sits under, narrowing the manifesto to what gets written now | **Drafted, still unreviewed.** Deferred by session 1 and again by session 2. Booked for 27 August |
-| [[content-entities]] | The four entities and their tone: the TXN business plus Ian, Michael and Dorte individually | **Drafted for the four definitions; the brand entity itself is not started.** Session 2 was booked for it and did not reach it. Booked for 27 August |
+| [[content-pillars]] | The specific topics each piece of content sits under, narrowing the manifesto to what gets written now | **Drafted, still unreviewed.** Deferred three times: by session 1, by session 2, and by the 27 August decision to give the slot to Outbound. Booked for **1 September** |
+| [[content-entities]] | The four entities and their tone: the TXN business plus Ian, Michael and Dorte individually | **Drafted for the four definitions; the brand entity itself is not started.** Booked for **1 September**, with the three individual entities in two 90-minute blocks across the following fortnight |
 
 ## Method
 
@@ -26,17 +26,43 @@ Max pre-loads everything known about the business, including TXN's own supplied 
 
 Validated in session 1 and continuing on that basis. **The trade-off has now shown itself twice.** Sessions over-run, so booked slots are consumed in sequence rather than each output finishing in the slot named for it. Session 1 was booked for the manifesto and pillars and closed neither; session 2 was booked for the brand entity and spent its hour finishing the manifesto. The method is producing a better result and it is not producing it on the booked dates. Progress is therefore measured as **outputs closed**, not sessions held.
 
+**A third slip on 27 August, and this one is a choice rather than an over-run.** The pillars and brand entity session was moved to 1 September and its slot given to a second Outbound session. That is the right call and the reasoning is worth keeping: **domain warming is the only clock in either engagement that cannot be recovered by working harder.** It takes two weeks of elapsed time whatever anyone does, so every day it is not started is a day added to the end. The Content Workforce outputs have no equivalent constraint. Three working days of content slip buys a fortnight of warming that would otherwise start after the Novosapien retreat.
+
 ## Workshop schedule
+
+Content Workforce only. The Outbound schedule lives at [[outbound-workforce]]; the two run in parallel and compete for the same TXN diaries, which is why the September squeeze below matters.
 
 | Date | Session | State |
 |------|---------|-------|
 | Wed 19 Aug | Interview 1: content manifesto and pillars | **Held.** North Star refined, segmentation agreed, over-ran its slot. Pillars not reached |
-| Thu 21 Aug | Interview 2: booked as the brand entity | **Held, and it did not do what it was booked for.** The hour completed the **manifesto**; the brand entity was not started. See [[2026-08-21-content-workforce-interview-2]] |
-| Thu 27 Aug | Content pillars **and** the brand entity | **Booked.** Both outputs in one session. The Bronwyn pack has to be loaded before the entity half |
-| Mon 24 Aug | Outbound interview 1: the offer | Held |
-| Tue 25 Aug | Outbound: ICPs | Booked |
-| Thu 27 Aug | Outbound: personas | Booked |
-| From w/c 24 Aug | Individual entity interviews, led by Tyler | To schedule |
+| Fri 21 Aug | Interview 2: booked as the brand entity | **Held, and it did not do what it was booked for.** The hour completed the **manifesto**; the brand entity was not started. See [[2026-08-21-content-workforce-interview-2]] |
+| ~~Thu 27 Aug~~ | ~~Content pillars and the brand entity~~ | **Moved to Tue 1 September** (decision, 27-08). The slot was given to a second Outbound session |
+| **Tue 1 Sep** | **Content pillars and the brand entity** | **Booked.** Both outputs in one session. The Bronwyn pack has to be loaded before the entity half |
+| **w/c 1 Sep, block 1** | **Individual entities, 90 minutes**, led by Tyler | **To book.** Take **Michael first**, see the note below |
+| **w/c 8 Sep, block 2** | **Individual entities, 90 minutes**, led by Tyler | **To book.** Must land before **Thu 10 Sep** |
+
+### The individual entity sessions
+
+Three entities, Ian, Michael and Dorte, to be covered in **two blocks of ninety minutes** across the fortnight to 10 September, led by Tyler. That is roughly an hour per person, which matches the method's observed pace and Brett's own estimate of about half an hour per entity plus discussion.
+
+> **Reading recorded so it can be corrected cheaply:** two 90-minute blocks covering the three people between them, not two blocks each. If the intent was two sessions per person, this is six blocks and it does not fit the fortnight.
+
+**Take Michael first, and take him in block 1.** He is TXN's only technical reviewer for the pilot, he is **away for ten days from early September** ([[open-questions]] #50), and the pilot's acceptance review sits on **7 September**. If his entity session is not held in the first week of September it does not slip by days, it slips past the Novosapien retreat into October. Ian and Dorte have materially more room.
+
+## The September squeeze
+
+Everything now lands in the same seven working days, **Tue 1 to Wed 9 September**, and the pilot's acceptance sits in the middle of it.
+
+| Working day | Content Workforce | Outbound | Pilot |
+|---|---|---|---|
+| Tue 1 Sep | Pillars and brand entity | Domain session, or Wed | Final week |
+| Wed 2 Sep | Individual block 1 | Domain session; team login and setup | Final week |
+| Thu 3 to Fri 4 Sep | | Warming runs | Regression pass, UAT |
+| **Mon 7 Sep** | | Warming runs | **Pilot completion and acceptance** |
+| Tue 8 to Wed 9 Sep | Individual block 2 | Warming runs | Shortfall window |
+| **Thu 10 Sep** | | | **Novosapien team flies, 3 weeks** |
+
+**Two constraints make this tighter than the grid looks.** Michael is away ten days from early September, and he is needed for both the pilot acceptance and his own entity session. The Novosapien team flies on the evening of 10 September, so nothing in this table can be recovered by pushing it a few days right.
 
 ## Platform state
 
