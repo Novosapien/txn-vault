@@ -97,6 +97,14 @@ The frame is **launch anchored**: it opens 8 September 2026, the day after pilot
 - **Workflow slate alignment is now more pressing, and it has reversed direction (27-08).** The slate describes three workflows as operational. The implemented set is **thirteen SOPs**, and it now includes both of the workflows the slate was said to over-claim: cardholder onboarding and lost or stolen card are both implemented as of 26 August. **TXN is writing journey documents against the slate's descriptions**, so the correction still has to reach them before their documents are finished; it is simply a different correction from the one that was planned. See [[2026-08-26-workflow-slate-build]].
 - **Permission model still deferred.** Named in Pilot Order deliverable 2. The 26 August build hardened the **gate**, 19 record-changing tools with a boot-time reachability assertion, but did not add a **permission model**: nothing yet decides who may call what. The distinction matters at acceptance and is worth putting to Michael in those words.
 
+### Removed from the client-facing plan
+
+**The Outbound capacity conflict is now internal only (27-08).** _Not carried on the client-facing flight plan by decision._ The Outbound page previously led with a flag saying that assigning George the email configuration and domain warming put outbound setup on the one person building the pilot, inside its final fortnight, and that an explicit decision was needed on which gives way. That has been taken off the client-facing page.
+
+The concern itself is unchanged and stays live at [[open-questions]] #57. It is now handled the same way as the commit-velocity and single-committer notes: **tracked internally, raised with TXN as a booking constraint rather than published as a risk on their delivery report.** The mitigation already agreed does most of the work anyway: Jacob owns the DNS records, George specifies and verifies, and the session is bounded.
+
+**One related passage is still on the client-facing plan**, in the Pilot Release page's scope-added section, which notes that the domain session costs attention in the week attention is scarcest. Left in place because that section exists to state scope-add costs honestly, and removing it would leave a scope-add with no stated cost. Flag it if it should come out too.
+
 ### Scope removed, quietly
 
 **Voice is out of the Outbound Workforce (27-08).** _Internal note, not carried on the client-facing flight plan by decision._ TXN is not doing outbound calls. Ian ruled out AI outbound voice on regulatory grounds on 24 August and declined the inbound voice capability in the same session, so this confirms a position rather than changing one. Voice has been removed from the schedule diagram, the agent configuration step and the go-live definition on the flight plan **without a change note**, because flagging the removal of something TXN never asked for would manufacture a scope conversation instead of recording one.
