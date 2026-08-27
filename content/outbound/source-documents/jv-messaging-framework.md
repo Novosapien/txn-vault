@@ -1,15 +1,17 @@
 ---
-description: "TXN JV Ownership Messaging Framework v2.2: how the Direct Transact and Paycorp co-founding ownership may and may not be described"
+description: "TXN JV Ownership Messaging Framework v2.3: how the Direct Transact and Paycorp co-founding ownership may and may not be described"
 ---
 
-# JV Ownership Messaging Framework v2.2
+# JV Ownership Messaging Framework v2.3
 
 > **Section:** [[source-documents]]
-> **Author:** Ian Johnson, TXN Global. Delivered 24 August 2026.
-> **Original:** `originals/TXN_JV_Messaging_Framework_v2.2.docx`
+> **Author:** Ian Johnson, TXN Global. v2.3 dated 26 August 2026, delivered 27 August 2026. The v2.2 original that preceded it is kept alongside.
+> **Original:** `originals/TXN_JV_Messaging_Framework_v2.3.docx` (superseded: `originals/TXN_JV_Messaging_Framework_v2.2.docx`)
 > **Status:** verbatim conversion of the file as delivered. Not edited, not summarised. Where the conversion and the original disagree, the original governs.
 
 Establishes "co-founding owner" as the canonical external designation for both owners and retires "partner", "parent group", "built on", "powered by" and "bank-grade". Carries an eleven-entry list of phrases to eliminate.
+
+**v2.3 changes one thing, in Section 7.4.** The "do not volunteer" restriction now applies only to the *mechanical detail* of the joint venture, meaning the 50/50 equity split, the governance arrangement, and any language implying operational control by an owner. It no longer applies to the **"co-founding owner" designation itself**, which is used proactively from Day 1 of launch, including in earliest-stage pitch material and the DT/Paycorp joint launch press release. Nothing else in the document changed.
 
 ---
 
@@ -17,6 +19,7 @@ Establishes "co-founding owner" as the canonical external designation for both o
 
 | Version | Date | Author | Description |
 |---|---|---|---|
+| 2.3 | 26/08/2026 | I. Johnson | Section 7.4 redline, confirmed by Ian Johnson: narrows the 'do not volunteer' restriction so it applies only to the mechanical detail of the JV structure (the 50/50 equity split and governance arrangement), not to the 'co-founding owner' designation itself, which is the standard external framing and is used proactively from Day 1 of launch, including in earliest-stage pitch material and the DT/Paycorp joint launch press release. Effective from launch. See also: TXN_Data_Residency_Messaging_Framework_v1.0 (07_GTM/03_Positioning_&_Messaging/), which extends this framework's Day-1 disclosure principle into the data-residency and shared-infrastructure context. |
 | 2.2 | 22/05/2026 | I. Johnson | Five changes: (1) Spelling — 'programmes/programme' replaced with 'programs/program' throughout (Sections 3, 5.1, 9.4) to align with Core Messaging v2.5 standing rule. (2) Core Messaging reference updated from v2.3 to v2.5 in Section 2. (3) Section 3 positioning statement quote updated to match Core Messaging v2.5 ('intelligent developer and operator experience that removes the complexity of managing card programs' replacing 'AI-first developer experience'). (4) Section 7.1 Paycorp column header corrected from 'Parent group — 50%' to 'Co-founding owner — 50%' — consistent with the document's own retirement of the 'parent group' designation. (5) Section 9.4 self-note resolved; website subhead updated to reflect Core Messaging v2.5 Section 11. |
 | 2.1 | 21/05/2026 | I. Johnson | Ownership framing update: establishes 'co-founding owner' as the canonical external designation for both Direct Transact and Paycorp. Retires 'partner', 'parent group', 'built on', 'powered by', 'bank-grade', and 'inherit' language. Adds four messaging tests, approved/banned use tables for DT, Paycorp, and combined messaging, website copy revision guidance across six pages, sales talking points, phrases to eliminate list (11 entries), and internal summary rules. |
 | 1.0 | 20/05/2026 | I. Johnson | Initial version. |
@@ -236,7 +239,7 @@ In a sales or due diligence conversation, if a prospect asks who owns TXN, give 
 
 Then redirect: 'What that means for you is that TXN is backed by two established, regulated payments businesses — not a start-up with no operational history behind it. The platform itself is purpose-built and independent.'
 
-What not to do: Do not volunteer the full JV structure in unsolicited pitch material. The standard external framing — 'co-founding owner' for both DT and Paycorp — is sufficient in most contexts. When a prospect asks directly, answer accurately and fully, then return to contribution framing.
+What this restricts, and what it does not: do not volunteer the mechanical detail of the JV structure (the 50/50 equity split, governance arrangement, or language implying operational control by either owner) in unsolicited pitch material. This does not apply to the 'co-founding owner' designation itself, that is the standard external framing and should be used proactively from Day 1, including in early-stage and general pitch material, not held in reserve until a prospect asks. It costs nothing to volunteer and pre-empts confusion, particularly given the planned DT/Paycorp joint launch press release, which will make the ownership structure public knowledge from launch regardless. When a prospect asks directly for the full structure, answer accurately and completely as above, then return to contribution framing.
 
 ## 8. Phrases to Eliminate from All Materials
 

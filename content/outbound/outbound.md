@@ -24,7 +24,7 @@ The distinguishing fact of this engagement: **TXN arrived with GTM material alre
 
 | Section | Contents |
 |---------|----------|
-| [[source-documents]] | TXN's own GTM corpus as Ian delivered it on 24 August 2026. Every original file, plus verbatim markdown mirrors of the eight documents that had no other home in the vault: Core Messaging v2.5, JV Messaging Framework v2.2, Competitive Landscape v0.2, Objection Handling v1.1, Product Overview v1.0, Outbound Content Playbook v1.0, AI Target Outcomes Framework v1.0, and the Role-Based Messaging deck |
+| [[source-documents]] | TXN's own GTM corpus as Ian delivered it on 24 August 2026. Every original file, plus verbatim markdown mirrors of the eight documents that had no other home in the vault: Core Messaging v2.5, JV Messaging Framework v2.3, Competitive Landscape v0.2, Objection Handling v1.1, Product Overview v1.0, Outbound Content Playbook v1.0, AI Target Outcomes Framework v1.0, and the Role-Based Messaging deck |
 | [[delivery-schedule]] | The session series and its dates, the technical deliverability build, domain warming, and the channel decision that outbound is **email and LinkedIn only** |
 | [[research]] | The working corpus behind [[discovery-sources]]: eight research streams holding 299 source entries, seven independent adversarial validation reports, and the client-facing register |
 
@@ -123,7 +123,8 @@ Positioning material from interview 1 (tagline, value proposition) is deliberate
 | Competitor naming in outbound: named, or categories only | A permission, explicitly. TXN's own documents name all six freely | Ian |
 | Whether the banned-word list is complete | Confirmation, or the bans that never made it into a document | Ian |
 | The signature-to-first-live-transaction mechanism | Written up offline after the 27-08 session. The largest remaining gap in the offer fact base | Dorte |
-| JV Messaging Framework v2.3 | The updated file, built off 26-08 work on ownership and hosting messaging | Ian |
+| ~~JV Messaging Framework v2.3~~ | **Delivered 27-08.** Mirrored at [[jv-messaging-framework]]. One change, the Section 7.4 redline | Closed |
+| **TXN_Data_Residency_Messaging_Framework_v1.0** | The document itself. v2.3 names it as extending the Day-1 disclosure principle into the data-residency and shared-infrastructure context, which is exactly the ground [[open-questions]] #56 covers and the ground Ian described on 27-08 when separating the platform from the environment it is operated in. Referenced, not supplied | Ian |
 | Owner proof points shortlist | Novosapien sources what is public on Direct Transact and Paycorp and ranks it for a European fintech buyer; the two shareholders then confirm what may be used | Both |
 | Head of Payments and Risk & Compliance personas | Decision on whether they get standalone documents | Ian |
 | Route 2 worked examples: who moved a next product, and what the incumbent could not do | Ian's recall or records | Ian |

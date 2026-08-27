@@ -1,5 +1,5 @@
 ---
-description: "TXN's own GTM corpus as Ian Johnson delivered it on 24 August 2026: the original files, plus markdown mirrors of the documents not otherwise in the vault"
+description: "TXN's own GTM corpus as Ian Johnson delivered it from 24 August 2026 onwards: the original files, plus markdown mirrors of the documents not otherwise in the vault"
 ---
 
 # Source Documents
@@ -19,7 +19,7 @@ Five of Ian's documents already had a home in the vault before this: [[icp-defin
 | Document | Title as delivered |
 |----------|--------------------|
 | [[core-messaging]] | Core Messaging v2.5 |
-| [[jv-messaging-framework]] | JV Ownership Messaging Framework v2.2 |
+| [[jv-messaging-framework]] | JV Ownership Messaging Framework v2.3 |
 | [[competitive-landscape]] | Competitive Landscape v0.2 |
 | [[objection-handling]] | Objection Handling v1.1 |
 | [[product-overview]] | Product Overview v1.0 |
@@ -32,7 +32,8 @@ Five of Ian's documents already had a home in the vault before this: [[icp-defin
 | File | Document | Mirrored in the vault as |
 |------|----------|--------------------------|
 | `TXN_Core_Messaging_v2.5.docx` | Core Messaging v2.5 | [[core-messaging]] |
-| `TXN_JV_Messaging_Framework_v2.2.docx` | JV Ownership Messaging Framework v2.2 | [[jv-messaging-framework]] |
+| `TXN_JV_Messaging_Framework_v2.3.docx` | JV Ownership Messaging Framework v2.3 | [[jv-messaging-framework]] |
+| `TXN_JV_Messaging_Framework_v2.2.docx` | JV Ownership Messaging Framework v2.2, superseded 27-08 | Superseded by v2.3 |
 | `TXN_GTM_Competitive_Landscape_v0.2.docx` | Competitive Landscape v0.2 | [[competitive-landscape]] |
 | `TXN_GTM_Objection_Handling_v1.1.docx` | Objection Handling v1.1 | [[objection-handling]] |
 | `TXN_GTM_Product_Overview_v1.0.docx` | Product Overview v1.0 | [[product-overview]] |
