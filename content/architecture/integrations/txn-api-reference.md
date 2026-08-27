@@ -77,6 +77,34 @@ The specs are kept as raw `.yaml` artifacts rather than inlined here: they are a
 
 > For the full request/response schemas, parameters, and examples, open the YAML files directly.
 
+## Where the specs are served from (UAT)
+
+**Updated 27 August 2026.** Source: email from **Michael Moores** to Brett and George.
+
+Direct Transact **launched a new OpenAPI service** to deliver better documentation, and had to move the specs to a new URL in UAT as a result. Michael's assurance: *"no further changes have been made and everything you were running before should work with the new URL."*
+
+| Spec | URL |
+|------|-----|
+| **External** | `https://development.txn.global/api/stg/Txn/feApiTxnOpenSpecification/api-specification.yml` |
+| **Internal** | `https://development.txn.global/api/stg/Txn/feApiTxnOpenSpecification/internal-api-specification.yml` |
+
+Both are served with the subscription key in the header; the key never appears in the URL.
+
+### The shape of the URLs changed, not just their location
+
+This is the part that matters operationally and it is easy to miss. Under the old scheme the two specs sat at **different base paths under the same filename**, `api-specification.yml`. Under the new scheme they sit at the **same base path and differ by filename**:
+
+- external → `.../feApiTxnOpenSpecification/**api-specification.yml**`
+- internal → `.../feApiTxnOpenSpecification/**internal-api-specification.yml**`
+
+`txn-mock-api/scripts/fetch_spec.py` assumes the old shape. It holds a single constant, `SPEC_ENDPOINT = "api-specification.yml"`, and builds the request as `{base_url}/{SPEC_ENDPOINT}`, choosing between `TXN_EXTERNAL_BASE_URL` and `TXN_INTERNAL_BASE_URL` on the `--internal` flag.
+
+**Consequence: pointing both base URLs at the new path makes `--internal` fetch the external spec, and it fails silently.** The request succeeds, the YAML parses, and the file is written under whatever name was asked for. Nothing errors. Michael's *"everything should work"* is true for the external spec and not true for the internal one, through no fault of his: it is our assumption that broke, not his service.
+
+The fix is a one-line change, making the filename depend on the flag rather than being a constant. Tracked at [[open-questions]] #67.
+
+**Nothing is broken right now.** The pilot builds from the committed `spec/api-specification_10Aug2026.yaml`, pinned by sha, so no live fetch sits on the critical path. This bites the next time someone regenerates from the internal spec.
+
 ## Why it matters to the vault
 
 - **API Reference** in the Developer Portal is auto-rendered from the external YAML (see [[developer-support]] §1, §4).
