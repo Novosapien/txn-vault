@@ -18,7 +18,7 @@ The Content Workforce needs three configured inputs before it can generate on TX
 |--------|-----------|--------|
 | [[content-manifesto]] | What the business stands for, what it writes about, and who the audience is | **Complete through every section**, closed in session 2 on 21 August. Loaded into the platform. Wording passes remain, and they are Tyler's |
 | [[content-pillars]] | The specific topics each piece of content sits under, narrowing the manifesto to what gets written now | **Drafted, still unreviewed.** Deferred three times: by session 1, by session 2, and by the 27 August decision to give the slot to Outbound. Booked for **1 September** |
-| [[content-entities]] | The four entities and their tone: the TXN business plus Ian, Michael and Dorte individually | **Drafted for the four definitions; the brand entity itself is not started.** Booked for **1 September**, with the three individual entities in two 90-minute blocks across the following fortnight |
+| [[content-entities]] | The four entities and their tone: the TXN business plus Ian, Michael and Dorte individually | **Drafted for the four definitions; the brand entity itself is not started.** Booked for **1 September**, with **two personal interviews each** for Ian, Michael and Dorte across the following fortnight |
 
 ## Method
 
@@ -38,29 +38,46 @@ Content Workforce only. The Outbound schedule lives at [[outbound-workforce]]; t
 | Fri 21 Aug | Interview 2: booked as the brand entity | **Held, and it did not do what it was booked for.** The hour completed the **manifesto**; the brand entity was not started. See [[2026-08-21-content-workforce-interview-2]] |
 | ~~Thu 27 Aug~~ | ~~Content pillars and the brand entity~~ | **Moved to Tue 1 September** (decision, 27-08). The slot was given to a second Outbound session |
 | **Tue 1 Sep** | **Content pillars and the brand entity** | **Booked.** Both outputs in one session. The Bronwyn pack has to be loaded before the entity half |
-| **w/c 1 Sep, block 1** | **Individual entities, 90 minutes**, led by Tyler | **To book.** Take **Michael first**, see the note below |
-| **w/c 8 Sep, block 2** | **Individual entities, 90 minutes**, led by Tyler | **To book.** Must land before **Thu 10 Sep** |
+| **Tue 1, Wed 2, Thu 3 Sep** | **Personal voice captures**: Michael, Ian, Dorte, one per day, led by Tyler | **To book.** Nothing in a diary yet |
+| **Tue 8, Wed 9, Thu 10 Sep** | **Personal refinements**: Michael, Ian, Dorte, one per day, led by Tyler | **To book.** The 10 Sep slot is a morning; the team flies that evening |
 
-### The individual entity sessions
+### The personal content workforces
 
-Three entities, Ian, Michael and Dorte, to be covered in **two blocks of ninety minutes** across the fortnight to 10 September, led by Tyler. That is roughly an hour per person, which matches the method's observed pace and Brett's own estimate of about half an hour per entity plus discussion.
+**Two interviews each** for Ian, Michael and Dorte, six sessions in total across the fortnight to 10 September, led by Tyler. Roughly an hour each, matching the pace the company sessions have settled into.
 
-> **Reading recorded so it can be corrected cheaply:** two 90-minute blocks covering the three people between them, not two blocks each. If the intent was two sessions per person, this is six blocks and it does not fit the fortnight.
+The shape mirrors the company work, pre-load then refine:
 
-**Take Michael first, and take him in block 1.** He is TXN's only technical reviewer for the pilot, he is **away for ten days from early September** ([[open-questions]] #50), and the pilot's acceptance review sits on **7 September**. If his entity session is not held in the first week of September it does not slip by days, it slips past the Novosapien retreat into October. Ian and Dorte have materially more room.
+| Interview | What it does |
+|---|---|
+| **1. Voice capture** | Their tone and style, the writers and articles whose style landed, what they care about, and their agenda inside the shared TXN pillar |
+| **2. Refinement** | They review the entity the engine built from the capture, and correct the tone against it |
+
+| Person | Capture | Refinement |
+|--------|---------|-----------|
+| **Michael Moores** | Tue 1 Sep | Tue 8 Sep |
+| **Ian Johnson** | Wed 2 Sep | Wed 9 Sep |
+| **Dorte Dye** | Thu 3 Sep | Thu 10 Sep, morning |
+
+All three captures land in week one, all three refinements in week two, which leaves a clear gap for the engine to generate each entity from its capture. **Monday 7 September is left clear** for the pilot acceptance review.
+
+> **Corrected 27-08.** An earlier reading of this had it as two 90-minute blocks covering all three people. It is **two interviews per person**, so six sessions rather than two.
+
+**Michael's capture on 1 September is the booking that matters.** He is away for ten days from early September and is also TXN's technical reviewer for the pilot acceptance on 7 September ([[open-questions]] #50). The 1 September date is the one his leave is least likely to cover. If his refinement on 8 September has to move, that is workable: the capture carries the content and the refinement can go asynchronous or wait until October. Agree that fallback when the sessions are booked, not in the second week of September.
 
 ## The September squeeze
 
-Everything now lands in the same seven working days, **Tue 1 to Wed 9 September**, and the pilot's acceptance sits in the middle of it.
+Everything now lands in the same eight working days, **Tue 1 to Thu 10 September**, and the pilot's acceptance sits in the middle of it. Monday 31 August is the UK summer bank holiday, so nothing can start earlier.
 
 | Working day | Content Workforce | Outbound | Pilot |
 |---|---|---|---|
-| Tue 1 Sep | Pillars and brand entity | Domain session, or later in the week | Final week |
-| Wed 2 Sep | Individual block 1 | Domain session; team login and setup; warming begins | Final week |
-| Thu 3 to Fri 4 Sep | | Warming runs | Regression pass, UAT |
-| **Mon 7 Sep** | | Warming runs | **Pilot completion and acceptance** |
-| Tue 8 to Wed 9 Sep | Individual block 2 | Warming runs | Shortfall window |
-| **Thu 10 Sep** | | | **Novosapien team flies, 3 weeks** |
+| Tue 1 Sep | Pillars and brand entity; **Michael capture** | Domain session, or later in the week | Final week |
+| Wed 2 Sep | **Ian capture** | Domain session; team login and setup; warming begins | Final week |
+| Thu 3 Sep | **Dorte capture** | Warming runs | Regression pass, UAT |
+| Fri 4 Sep | | Warming runs | Regression pass, UAT |
+| **Mon 7 Sep** | kept clear | Warming runs | **Pilot completion and acceptance** |
+| Tue 8 Sep | **Michael refinement** | Warming runs | Shortfall window |
+| Wed 9 Sep | **Ian refinement** | Warming runs | Shortfall window |
+| **Thu 10 Sep** | **Dorte refinement**, morning | | **Novosapien team flies that evening, 3 weeks** |
 
 **Two constraints make this tighter than the grid looks.** Michael is away ten days from early September, and he is needed for both the pilot acceptance and his own entity session. The Novosapien team flies on the evening of 10 September, so nothing in this table can be recovered by pushing it a few days right.
 

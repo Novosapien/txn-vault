@@ -5,7 +5,7 @@ description: "The four TXN Content Workforce entities: the company plus Ian, Mic
 # TXN — Content Entities
 
 > **Section:** [[content-workforce]]
-> **Status:** The four entity **definitions** are drafted. The **brand entity itself is not started**: session 2 was booked for it on 21 August and did not reach it. Booked for **1 September**, with the three individual entities in two 90-minute blocks across the following fortnight.
+> **Status:** The four entity **definitions** are drafted. The **brand entity itself is not started**: session 2 was booked for it on 21 August and did not reach it. Booked for **1 September**, with **two personal interviews each** for Ian, Michael and Dorte across the following fortnight.
 > **Last worked:** Interview 1, 19 August 2026. Deferred by session 2 ([[2026-08-21-content-workforce-interview-2]]) and again on 27 August when the slot went to Outbound.
 
 An entity is a configured voice: what it sounds like, what it cares about, and who it is speaking to. TXN has four.
@@ -42,21 +42,24 @@ The company entity is the hard one and it is the one still outstanding. Brett se
 
 **Bronwyn's tone-of-voice pack is a gating input, not a nice-to-have.** Ian, 21 August: *"just to make sure that PowerPoint I sent through that Bronwyn had pulled together with the tone of voice and all of that stuff is fed in in advance of those interviews."* It has been sent. It has to be loaded before the session, not after it.
 
-## The three individual entities
+## The three personal content workforces
 
-**Two blocks of ninety minutes across the fortnight to 10 September**, led by Tyler, covering Ian, Michael and Dorte between them. Roughly an hour each, which matches the observed pace of the company sessions.
+**Two interviews each** for Ian, Michael and Dorte, six sessions across the fortnight to 10 September, led by Tyler. Roughly an hour each. The shape mirrors the company work: capture, then refine against what the engine produced.
 
-| Block | Window | Who | Note |
-|-------|--------|-----|------|
-| 1 | w/c 1 Sep | **Michael first**, then one of Ian or Dorte | Michael is away ten days from early September and is TXN's only technical reviewer for the pilot acceptance on 7 September |
-| 2 | w/c 8 Sep, before Thu 10 Sep | The remaining individual | The Novosapien team flies on the evening of 10 September for three weeks |
+| Person | Interview 1: voice capture | Interview 2: refinement |
+|--------|---------------------------|------------------------|
+| **Michael Moores** | Tue 1 Sep | Tue 8 Sep |
+| **Ian Johnson** | Wed 2 Sep | Wed 9 Sep |
+| **Dorte Dye** | Thu 3 Sep | Thu 10 Sep, morning |
 
-**Why the order matters more than the dates.** If Michael's session is not held in the first block it does not slip by a few days, it slips past the retreat into October, because his holiday and the team's travel overlap almost completely. Ian and Dorte have materially more room and can absorb a move; Michael cannot.
+Captures in week one, refinements in week two, leaving a gap for the engine to build each entity from its capture. **Monday 7 September is kept clear** for the pilot acceptance review, and the 10 September slot is a morning because the Novosapien team flies that evening.
 
-**What each person brings** is the same as for the brand entity: articles, journalists, authors or books whose **style** landed, several rather than one. The individual sessions are easier than the company one, because a person's own tone is easier to name than a business's.
+**Michael's capture on 1 September is the booking that matters most.** He is away ten days from early September and is TXN's technical reviewer for the pilot acceptance. If his refinement on 8 September has to move, that is a workable outcome rather than a failure: the capture carries the content.
+
+**What each person brings to the capture** is the same as for the brand entity: articles, journalists, authors or books whose **style** landed, several rather than one. The individual sessions are the easier half of this work, because a person's own tone is far simpler to name than a business's.
 
 ## Open
 
 - **The brand entity itself**, booked for 1 September with the pillars.
-- **Both individual blocks are unbooked.** Nothing is in a diary yet, and the window is a fortnight wide with a hard end.
+- **All six personal interviews are unbooked.** Nothing is in a diary yet, and the window is a fortnight wide with a hard end on 10 September.
 - Each individual's own tone, and how bold it is, follows the disruptor-or-evolution decision still open on the [[content-manifesto]].
