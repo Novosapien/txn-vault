@@ -18,7 +18,7 @@ This section tracks the configuration work and the technical build behind it.
 | **The ICPs** | Tiered, signal-based company targets, doubling as the grading rubric for the lead database | **Held 25 August**, no record in the vault yet |
 | **Buyer personas** | Who the agents speak to and how, per ICP | **In progress**, two sessions on 27 August |
 | **Deliverability** | DKIM, DMARC and SPF on TXN's sending domains, then warming | **Not started.** Next week, w/c 1 September. Blocked on Jacob's contact details |
-| **Five agents** | Configured on TXN's ICP and messaging, custom voice trained | Not started. The proposal calls week 2 the heavy week |
+| **Five agents** | Configured on TXN's ICP and messaging | Not started. The proposal calls week 2 the heavy week |
 
 ## Session schedule
 
