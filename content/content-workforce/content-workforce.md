@@ -55,8 +55,8 @@ Everything now lands in the same seven working days, **Tue 1 to Wed 9 September*
 
 | Working day | Content Workforce | Outbound | Pilot |
 |---|---|---|---|
-| Tue 1 Sep | Pillars and brand entity | Domain session, or Wed | Final week |
-| Wed 2 Sep | Individual block 1 | Domain session; team login and setup | Final week |
+| Tue 1 Sep | Pillars and brand entity | Domain session, or later in the week | Final week |
+| Wed 2 Sep | Individual block 1 | Domain session; team login and setup; warming begins | Final week |
 | Thu 3 to Fri 4 Sep | | Warming runs | Regression pass, UAT |
 | **Mon 7 Sep** | | Warming runs | **Pilot completion and acceptance** |
 | Tue 8 to Wed 9 Sep | Individual block 2 | Warming runs | Shortfall window |
@@ -74,7 +74,7 @@ A **TXN account and business account exist on the Content Workforce platform, an
 
 **Received.**
 
-- **Brand and tone-of-voice pack** from Bronwyn Watt. Ian confirmed on 21 August that he has sent the PowerPoint through, and asked that it be **fed in before the entity interviews** rather than after. That moves it from an owed input to a **gating input on the 27 August session**. It predates the current messaging, which Ian has led since, so it is a starting point rather than the current position.
+- **Brand and tone-of-voice pack** from Bronwyn Watt. Ian confirmed on 21 August that he has sent the PowerPoint through, and asked that it be **fed in before the entity interviews** rather than after. That moves it from an owed input to a **gating input on the 1 September session**. It predates the current messaging, which Ian has led since, so it is a starting point rather than the current position.
 
 **Still owed by TXN.**
 
