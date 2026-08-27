@@ -97,6 +97,12 @@ The frame is **launch anchored**: it opens 8 September 2026, the day after pilot
 - **Workflow slate alignment is now more pressing, and it has reversed direction (27-08).** The slate describes three workflows as operational. The implemented set is **thirteen SOPs**, and it now includes both of the workflows the slate was said to over-claim: cardholder onboarding and lost or stolen card are both implemented as of 26 August. **TXN is writing journey documents against the slate's descriptions**, so the correction still has to reach them before their documents are finished; it is simply a different correction from the one that was planned. See [[2026-08-26-workflow-slate-build]].
 - **Permission model still deferred.** Named in Pilot Order deliverable 2. The 26 August build hardened the **gate**, 19 record-changing tools with a boot-time reachability assertion, but did not add a **permission model**: nothing yet decides who may call what. The distinction matters at acceptance and is worth putting to Michael in those words.
 
+### Scope removed, quietly
+
+**Voice is out of the Outbound Workforce (27-08).** _Internal note, not carried on the client-facing flight plan by decision._ TXN is not doing outbound calls. Ian ruled out AI outbound voice on regulatory grounds on 24 August and declined the inbound voice capability in the same session, so this confirms a position rather than changing one. Voice has been removed from the schedule diagram, the agent configuration step and the go-live definition on the flight plan **without a change note**, because flagging the removal of something TXN never asked for would manufacture a scope conversation instead of recording one.
+
+Two paperwork consequences are tracked at [[outbound-workforce]]: the unsigned **GTM Workforces Order still carries voice-calling obligations** at clause 8.2 (TPS and CTPS screening, AI disclosure at the start of each call, call recording by jurisdiction), and **[[commercial]] still lists ElevenLabs voice** as a usage pass-through. Both should be closed before signature.
+
 ### Scope added inside the launch window
 
 **The workflow-slate build, 25 to 26 August.** Five of the seven new SOPs are TXN's ranked post-pilot build, written and merged inside the frozen window. Assessed under the scope-add protocol:

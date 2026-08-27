@@ -18,7 +18,7 @@ This section tracks the configuration work and the technical build behind it.
 | **The ICPs** | Tiered, signal-based company targets, doubling as the grading rubric for the lead database | **Held 25 August**, no record in the vault yet |
 | **Buyer personas** | Who the agents speak to and how, per ICP | **In progress**, two sessions on 27 August |
 | **Deliverability** | DKIM, DMARC and SPF on TXN's sending domains, then warming | **Not started.** Next week, w/c 1 September. Blocked on Jacob's contact details |
-| **Five agents** | Configured on TXN's ICP and messaging | Not started. The proposal calls week 2 the heavy week |
+| **Five agents** | Configured on TXN's ICP and messaging. **Email and LinkedIn only**, no voice | Not started. The proposal calls week 2 the heavy week |
 
 ## Session schedule
 
@@ -40,6 +40,21 @@ Starting **next week** puts the domain live around **mid September**. That matte
 > **This supersedes the recommendation in the 25 and 26 August flight plans**, which was to hold domain setup and warming until after 7 September on capacity grounds. That recommendation was right about the capacity cost and wrong about the ordering, because it treated warming as work rather than as an unattended clock. **Decision taken 27 August: start it next week.**
 
 **The one condition that keeps it safe.** The session lands five or six days before pilot completion, and it draws on George, who is the only person committing to any of the four pilot build repositories ([[open-questions]] #57). Scope it tightly: **Jacob owns the DNS records**, George specifies and verifies. It is a bounded session, not an open task that runs through acceptance week.
+
+## Channels: email and LinkedIn only, no voice
+
+**TXN is not doing outbound calls.** Confirmed 27 August, and consistent with what Ian said on 24 August: he ruled out **AI outbound voice** on regulatory grounds, and Novosapien's **inbound** voice capability was declined in the same conversation, *"that inbound lead needs to be picked up by a human at TXN rather than any kind of voice call from AI"*. Recorded in [[commercial]] since 25 August; this section makes it the settled channel position rather than a note in a list.
+
+The Workforce runs on **email and LinkedIn**. Emails send from **named individuals on a secondary domain** rather than a generic TXN address, initially all from Ian and later split by territory. LinkedIn is capped at **200 outreaches per week**.
+
+> **Handled quietly on the client-facing flight plan, by decision (27-08).** Voice has been taken out of the schedule, the agent configuration step and the go-live definition without a change note. It was never something TXN asked for, so flagging its removal would invent a scope conversation rather than record one.
+
+**Two loose ends this leaves in the paperwork**, neither urgent, both worth closing before signature:
+
+| Where | What it says | Why it matters now |
+|-------|-------------|--------------------|
+| GTM Workforces Order, clause 8.2 | Novosapien is responsible for screening **UK voice calls against TPS and CTPS**, for the **voice agent disclosing at the start of each call** that it is an AI calling on behalf of TXN under Regulation (EU) 2024/1689, and for call recording rules by jurisdiction | The Order is not signed. These are obligations for a channel that will not run. Leaving them in creates a compliance surface with nothing behind it, and invites a reviewer question that has no good answer |
+| [[commercial]], Outbound pricing | Usage pass-through is listed as Claude compute, Apollo lead data and **ElevenLabs voice**, at billed cost plus an administration fee | The ElevenLabs line is now obsolete. Small, but it is a stated cost component in a priced structure |
 
 ## Nothing sends before the market announcement
 
