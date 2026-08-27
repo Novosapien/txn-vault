@@ -30,7 +30,7 @@ Validated in session 1 and continuing on that basis. **The trade-off has now sho
 
 ## Workshop schedule
 
-Content Workforce only. The Outbound schedule lives at [[outbound-workforce]]; the two run in parallel and compete for the same TXN diaries, which is why the September squeeze below matters.
+Content Workforce only. The Outbound schedule lives at [[delivery-schedule]]; the two run in parallel and compete for the same TXN diaries, which is why the September squeeze below matters.
 
 | Date | Session | State |
 |------|---------|-------|

@@ -1,21 +1,21 @@
 ---
-description: "Hub for the TXN Outbound Workforce engagement: the interview schedule, the technical deliverability build, domain warming and the platform setup sessions"
+description: "The Outbound Workforce delivery schedule: the session series, the technical deliverability build, domain warming and the platform setup sessions"
 ---
 
-# TXN — Outbound Workforce
+# Outbound Workforce — Delivery Schedule
 
-> **Index:** [[index]] · **Commercial:** [[commercial]] · **Sibling engagement:** [[content-workforce]] · **Delivery:** [[delivery]]
+> **Section:** [[outbound]] · **Index:** [[index]] · **Sibling engagement:** [[content-workforce]] · **Delivery:** [[delivery]]
+
+Where [[outbound]] holds TXN's GTM corpus and the ICP and persona reconciliation, this page holds **the schedule**: what session happens when, the technical build behind the sending domains, and the channel decisions.
 
 The Outbound Workforce is a **separate engagement** from the agentic AI layer, contracted under the GTM Workforces proposal and running in parallel with [[content-workforce]]. Brett was explicit at the first session that the two are not to be merged: *"I'm not going to use this as the content workforce session, we can do this in parallel."*
-
-This section tracks the configuration work and the technical build behind it.
 
 ## What is being built
 
 | Output | What it is | Status |
 |--------|-----------|--------|
 | **The offer** | Tagline, value proposition, pricing model, positioning guardrails. The factual-claims universe everything else draws on | **Closed** in session 1, 24 August. See [[2026-08-24-outbound-workforce-interview-1-offer]] |
-| **The ICPs** | Tiered, signal-based company targets, doubling as the grading rubric for the lead database | **Held 25 August**, no record in the vault yet |
+| **The ICPs** | Tiered, signal-based company targets, doubling as the grading rubric for the lead database | **Held 25 August** and extracted in full: [[icp-definition]], [[prospecting-process]], [[qualification-matrix]], [[discovery-sources]] and the three persona scaffolds |
 | **Buyer personas** | Who the agents speak to and how, per ICP | **In progress**, two sessions on 27 August |
 | **Deliverability** | DKIM, DMARC and SPF on TXN's sending domains, then warming | **Not started.** Next week, w/c 1 September. Blocked on Jacob's contact details |
 | **Five agents** | Configured on TXN's ICP and messaging. **Email and LinkedIn only**, no voice | Not started. The proposal calls week 2 the heavy week |
@@ -25,7 +25,7 @@ This section tracks the configuration work and the technical build behind it.
 | Date | Session | State |
 |------|---------|-------|
 | Mon 24 Aug | Interview 1: the offer | **Held.** George attended as it was the foundational session |
-| Tue 25 Aug | Interview 2: ICPs | **Held.** No transcript in the vault yet |
+| Tue 25 Aug | Interview 2: ICPs | **Held and extracted.** TXN's own GTM corpus loaded, the 126-account scored register analysed at [[qualification-matrix]], and a discovery source research pass recorded at [[discovery-sources]] |
 | Thu 27 Aug | Interview 3: buyer personas | **Booked** |
 | **Thu 27 Aug** | **Interview 4: second block, same day** | **Booked.** Takes the slot vacated by the Content Workforce session that moved to 1 September. Most likely a continuation of the persona set, since every session in this series has over-run; **confirm the subject before the session** |
 | **Next week, w/c 1 Sep** | **Technical: email domains and warming** | **To book.** With **Jacob**, who runs TXN's domains. Sets up the sending domains, DKIM, DMARC and SPF, and **starts the warming clock the same week**. Monday 31 August is the UK summer bank holiday, so the week runs Tuesday to Friday |
@@ -74,6 +74,5 @@ The agreed launch sequence puts Direct Transact and Pay Corp channels first, the
 
 - **When does the 30-day go-live clock start?** Both GTM proposals carry a 30-day go-live guarantee and neither engagement has a stated start date on the record. The interviews have been running ahead of one.
 - **Who is Jacob?** He is named once, in the 24 August session, when Brett asked *"who runs your domains?"* and Dorte answered *"Jacob."* That is the entire record. **No surname, no email, and no confirmation of whether he sits inside TXN, at Pay Corp, or with an outsourced IT provider.** The domain session cannot be booked without it, and it is the gating step on a two-week clock that is meant to start next week. Ask Dorte.
-- **The ICP session has no vault record.** Held 25 August, nothing captured.
 - **The AI layer is bundled into TXN's own licence fee**, per Ian on 24 August. Commercially material to Novosapien.
 - Register rows: [[open-questions]] #57 on the single committer, #63 on the September calendar.
