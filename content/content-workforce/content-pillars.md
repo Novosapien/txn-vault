@@ -5,16 +5,20 @@ description: "TXN's content pillars: the topic areas each piece of content sits 
 # TXN — Content Pillars
 
 > **Section:** [[content-workforce]]
-> **Status:** Drafted, issued for async review after Interview 1
-> **Last worked:** Interview 1, 19 August 2026
+> **Status:** **Drafted, still unreviewed.** Deferred by session 1 and again by session 2. Booked for 27 August alongside the brand entity.
+> **Last worked:** Drafted before Interview 1, 19 August 2026. Not opened since.
 
 Pillars narrow the [[content-manifesto]] to what actually gets written. The manifesto says the business wants to talk about a broad topic; a pillar says which part of it is the focus right now.
 
 ## State
 
-A first draft exists, generated from TXN's own supplied documents plus everything Max could assemble about the business. It was **not reviewed in session 1**, which ran out of time on the manifesto.
+A first draft exists, generated from TXN's own supplied documents plus everything Max could assemble about the business. It has now been **deferred twice**: session 1 ran out of time on the manifesto, and session 2, booked for the brand entity, spent its hour finishing the manifesto instead.
 
-The draft was sent to TXN for async review, with the agreement that feedback comes back either as a written list or at the start of the next session.
+The draft was sent to TXN for async review, with the agreement that feedback comes back either as a written list or at the start of the next session. **No written feedback has come back.** In practice the review will happen live on 27 August.
+
+**How the session runs**, per Brett on 21 August: pillars are not walked line by line like the manifesto. The engine generates pillars from the closed manifesto and TXN reacts at the concept level, *"I like the concept of that"* or *"I don't like the concept, give me two or three additional options."* That should make it a faster session than the manifesto passes were.
+
+**It is on the critical path for platform access.** TXN gets into the Content Workforce platform only once the manifesto, the pillars and the entities are all uploaded. The manifesto is loaded; the pillars and the entity are what stand between TXN and their own queue.
 
 ## Structure being used
 

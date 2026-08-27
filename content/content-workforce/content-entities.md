@@ -5,8 +5,8 @@ description: "The four TXN Content Workforce entities: the company plus Ian, Mic
 # TXN — Content Entities
 
 > **Section:** [[content-workforce]]
-> **Status:** Drafted, issued for async review after Interview 1
-> **Last worked:** Interview 1, 19 August 2026
+> **Status:** The four entity **definitions** are drafted. The **brand entity itself is not started**: session 2 was booked for it on 21 August and did not reach it. Booked for 27 August.
+> **Last worked:** Interview 1, 19 August 2026. Deferred by session 2 ([[2026-08-21-content-workforce-interview-2]]).
 
 An entity is a configured voice: what it sounds like, what it cares about, and who it is speaking to. TXN has four.
 
@@ -28,7 +28,22 @@ Individual profiles are included at no additional charge. Each connects back to 
 - **Credibility is not the opening line.** The founding story and the shareholder background are a reason to believe, reached once someone is already interested. The lead has to be the problem being solved and the value delivered.
 - **Personal and company voices must not contradict.** If an individual's positioning pulls against the company's, the audience is left asking which one is real.
 
+## The brand entity session, and how it runs
+
+The company entity is the hard one and it is the one still outstanding. Brett set the shape on 21 August:
+
+> "The brand entity, it's more about the subjective part about the tone and style that you want the business to come across in written format, which is hard."
+
+**Preparation asked of Ian, Michael and Dorte.** Bring articles, journalists, authors or books whose **style** landed, from business wires, journals or papers. Not the subject, the way it reads. Brett's caution from experience: naming one person as the model makes everything sound like that person, so bring several.
+
+**The tip given:** start with what you like. The TXN tone is then dialled in over time by the Nova agents sitting over the rails, and it settles as a mixture of all three voices.
+
+**The distinction to hold in the session.** Writing a public post as the business is not the same as an individual writing about the business. The company writes about, say, the impact of automation on businesses with third-party card products as a product push; the individual writes the same territory as thought leadership.
+
+**Bronwyn's tone-of-voice pack is a gating input, not a nice-to-have.** Ian, 21 August: *"just to make sure that PowerPoint I sent through that Bronwyn had pulled together with the tone of voice and all of that stuff is fed in in advance of those interviews."* It has been sent. It has to be loaded before the session, not after it.
+
 ## Open
 
-- Individual entity interviews are still to be scheduled, from the week commencing 24 August, led by Tyler.
+- **The brand entity itself**, booked for 27 August with the pillars.
+- Individual entity interviews are still to be scheduled, from the week commencing 24 August, led by Tyler. None has been held.
 - Each individual's own tone, and how bold it is, follows the disruptor-or-evolution decision still open on the [[content-manifesto]].
