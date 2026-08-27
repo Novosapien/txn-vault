@@ -4,7 +4,9 @@ description: "Validated discovery sources for the greenfield segment: what survi
 
 # Discovery Sources
 
-Findings from the source research commissioned in the 25 August 2026 ICP interview, after adversarial validation. Working repository at `programming/txn/outbound-research/`. Routed from [[outbound]].
+Findings from the source research commissioned in the 25 August 2026 ICP interview, after adversarial validation. Routed from [[outbound]].
+
+The working corpus this synthesises is held at [[research]]: all eight streams, all 299 source entries with the URL fetched and the evidence returned, and the seven independent validation reports that produced the corrections below. The client-facing version is the register at `research/txn-discovery-source-register.html`.
 
 ## The problem this addresses
 

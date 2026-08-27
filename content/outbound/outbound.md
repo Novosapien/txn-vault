@@ -20,9 +20,16 @@ The distinguishing fact of this engagement: **TXN arrived with GTM material alre
 | [[persona-primary-user]] | CTO. Approver with technical veto. Owns Technical Control | Client-authored scaffold, v0.1 |
 | [[persona-economic-buyer]] | CFO primary, CEO or Founder secondary. Owns Commercial Model | Client-authored scaffold, v0.1 |
 
-Seven further documents sit in the source folder and are not yet mirrored: Core Messaging v2.5, JV Messaging Framework v2.2, Competitive Landscape v0.2, Objection Handling v1.1, Product Overview v1.0, Outbound Content Playbook v1.0, AI Target Outcomes Framework v1.0, plus Role-Based Messaging (V1) as a deck.
+## Sub-sections
 
-**Source folder:** `programming/txn/outbound`, mirrored at `shared/clients/txn/outbound`. Delivered by Ian 24 August 2026.
+| Section | Contents |
+|---------|----------|
+| [[source-documents]] | TXN's own GTM corpus as Ian delivered it on 24 August 2026. Every original file, plus verbatim markdown mirrors of the eight documents that had no other home in the vault: Core Messaging v2.5, JV Messaging Framework v2.2, Competitive Landscape v0.2, Objection Handling v1.1, Product Overview v1.0, Outbound Content Playbook v1.0, AI Target Outcomes Framework v1.0, and the Role-Based Messaging deck |
+| [[research]] | The working corpus behind [[discovery-sources]]: eight research streams holding 299 source entries, seven independent adversarial validation reports, and the client-facing register |
+
+The seven documents previously recorded here as unmirrored are now mirrored, and every original Ian sent is held under [[source-documents]]. That directory is the source of truth for what the client actually delivered; the documents in the table above are the vault's working versions.
+
+**Original source folder:** `programming/txn/outbound`, mirrored at `shared/clients/txn/outbound`. Delivered by Ian 24 August 2026.
 
 ## The three routes to a client
 
