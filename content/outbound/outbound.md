@@ -86,6 +86,8 @@ All three documents describe themselves as *"Initial scaffold"* in their own Doc
 
 **Not yet documented:** Head of Payments (operational viability) and Risk & Compliance. Both are profiled in Role-Based Messaging and all three scaffolds lean on them, so they are load-bearing absences.
 
+**Card operations is a third absence, and Ian named the reason it is easy to miss** (27-08). Two distinct populations sit at a client: **card operations run the card program**, and they are not in engineering; **engineering own the relationship with TXN's platform**, because TXN is a technology product. That is why [[persona-primary-user]] is the CTO rather than the operator, and the escalation path proves it, since card ops takes a processing problem to their own tech team rather than to TXN. Whether card operations earns a standalone persona, or is covered by the Head of Payments profile, is now an open shape rather than an oversight. The split is also strong pain-point material, because it is observable and shows one problem landing differently on two roles.
+
 ### The incumbent assumption
 
 Every persona scaffold is written assuming an incumbent exists. [[persona-champion]] §3.3: *"They have the most to gain from moving off an incumbent processor."* [[persona-economic-buyer]] §4 seeks *"a competitive total cost of ownership versus the incumbent"* and §6 asks for margin impact *"compared like-for-like to the incumbent."* [[persona-primary-user]] §2 frames the outcome as *"a long-term partner or a migration target."*
@@ -100,9 +102,12 @@ Related: [[persona-champion]] §7 lists the objection *"What is your track recor
 |------|---------|--------|--------|
 | 24-08-2026 | Interview 1, the Offer | [[2026-08-24-outbound-workforce-interview-1-offer]] | Partially extracted; positioning held |
 | 25-08-2026 | Interview 2, the ICPs | This page | In progress |
-| 27-08-2026 | Interview 3, the Personas | Not yet held | Scheduled |
+| 27-08-2026 | Offer session 2 | [[2026-08-27-outbound-workforce-offer-session-2]] | Eight decisions taken. Mechanism block moved offline to Dorte |
+| TBC | Interview 3, the Personas | Not yet held | Displaced by the 27-08 offer session |
 
 Positioning material from interview 1 (tagline, value proposition) is deliberately held until the series closes, so it lands as one piece rather than in fragments.
+
+**What the 27-08 session settled.** Migration is a step rather than its own component track. The platform provenance ruling: the external claim is *the platform is TXN's*, with no statement of code lineage in either direction, and the confidence line is that it is hosted and managed by Direct Transact within their existing data governance and security frameworks. Positioning is **evolution, not disruptor**. The buying group compresses to **CTO, CPO, CFO**, with the product function sitting under CPO rather than becoming a fourth label; Head of Payments remains a targeting persona in [[prospecting-process]] but is not one of the three the offer writes pains against. Ian also ruled that questions digging into the platform's origins are **not automation territory**, which opens the wider boundary question at [[open-questions]] #65.
 
 ## Open items
 
@@ -113,6 +118,13 @@ Positioning material from interview 1 (tagline, value proposition) is deliberate
 | Route attribute decision: is sequencing carried as a derived field | A decision | Ian |
 | Whether the 18 "no card program, no plan" accounts belong on the register at all | A decision. [[icp-definition]] §8.1.8 scores them DQ but P7 is not a gating parameter, so 12 survive as Priority 2 and 3 | Ian |
 | Greenfield variants of the three persona scaffolds | Interview 3 | Both |
+| What TXN sells that this offer does not cover | One line. "Nothing" is a complete answer | Ian |
+| The employee band ruling: 10 to 5,000, or 20 to 2,000 | A decision. [[icp-definition]] v0.4 and Core Messaging v2.5 disagree, and the older figure filters out the seed-stage fintechs v0.4 deliberately brought into scope | Ian |
+| Competitor naming in outbound: named, or categories only | A permission, explicitly. TXN's own documents name all six freely | Ian |
+| Whether the banned-word list is complete | Confirmation, or the bans that never made it into a document | Ian |
+| The signature-to-first-live-transaction mechanism | Written up offline after the 27-08 session. The largest remaining gap in the offer fact base | Dorte |
+| JV Messaging Framework v2.3 | The updated file, built off 26-08 work on ownership and hosting messaging | Ian |
+| Owner proof points shortlist | Novosapien sources what is public on Direct Transact and Paycorp and ranks it for a European fintech buyer; the two shareholders then confirm what may be used | Both |
 | Head of Payments and Risk & Compliance personas | Decision on whether they get standalone documents | Ian |
 | Route 2 worked examples: who moved a next product, and what the incumbent could not do | Ian's recall or records | Ian |
 | Whether BIN lookup resolves reliably across Europe as a research signal | Research | Novosapien |
