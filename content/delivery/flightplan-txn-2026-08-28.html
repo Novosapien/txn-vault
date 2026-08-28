@@ -114,7 +114,7 @@
   <div class="kpi bad"><div class="n">10 days</div><div class="l">to pilot completion, 7 September 2026</div></div>
   <div class="kpi pri"><div class="n">81%</div><div class="l">of pilot scope complete (range 77 to 85)</div></div>
   <div class="kpi warn"><div class="n">79%</div><div class="l">of the pilot window elapsed (day 33 of 42)</div></div>
-  <div class="kpi bad"><div class="n">+2 pts</div><div class="l">of buffer, unchanged. Scope and clock both moved 3</div></div>
+  <div class="kpi warn"><div class="n">2</div><div class="l">components delivered outside the Pilot Order: inbox and alerts, scheduled reporting</div></div>
 </div>
 
 <div class="flag bad">
@@ -350,19 +350,29 @@
 <table>
 <thead><tr><th>Item</th><th>Level</th><th>Evidence</th></tr></thead>
 <tbody>
-<tr><td>Conversational agent surface: plan, approve, execute, verify by re-read</td><td><span class="chip inflight">stood up</span></td><td><code>txn-agentic-agent</code>, 43 commits, deployed 5 Aug</td></tr>
-<tr><td><strong>Thirteen workflow SOPs driven in conversation</strong>, up from six</td><td><span class="chip inflight">stood up</span></td><td><strong>New since the last issue.</strong> Six landed 4 Aug; <code>onboard-cardholder</code> and <code>lost-stolen-card</code> merged 26 Aug; five slate SOPs written 25 Aug and merged 26 Aug</td></tr>
+<tr><td>Conversational agent surface: plan, approve, execute, verify by re-read</td><td><span class="chip delivered">stood up</span></td><td><code>txn-agentic-agent</code>, 43 commits, deployed 5 Aug</td></tr>
+<tr><td><strong>Thirteen workflow SOPs driven in conversation</strong>, up from six</td><td><span class="chip delivered">stood up</span></td><td><strong>New since the last issue.</strong> Six landed 4 Aug; <code>onboard-cardholder</code> and <code>lost-stolen-card</code> merged 26 Aug; five slate SOPs written 25 Aug and merged 26 Aug</td></tr>
 <tr><td><strong>MCP tool surface: 43 tools</strong>, each 1:1 with a declared API operation</td><td><span class="chip delivered">delivered</span></td><td><strong>New since the last issue.</strong> <code>txn-mcp-server</code>, 33 to 43 on 26 Aug. 245 tests plus 105 live oracle checks</td></tr>
-<tr><td><strong>Approval gate over every write</strong>: 19 record-changing tools gated, 24 reads left open, checked at boot</td><td><span class="chip inflight">stood up</span></td><td><strong>New since the last issue.</strong> A renamed tool becomes a boot failure rather than an ungated destructive tool</td></tr>
+<tr><td><strong>Approval gate over every write</strong>: 19 record-changing tools gated, 24 reads left open, checked at boot</td><td><span class="chip delivered">stood up</span></td><td><strong>New since the last issue.</strong> A renamed tool becomes a boot failure rather than an ungated destructive tool</td></tr>
 <tr><td>Mock API generated from the real contract, 98 operations</td><td><span class="chip delivered">delivered</span></td><td><code>txn-mock-api</code>, spec 10 Aug 2026, deployed 11 Aug. Coverage pin now follows the 43-tool catalogue</td></tr>
 <tr><td>Control Center: full React build, five persona consoles</td><td><span class="chip delivered">delivered</span></td><td><code>txn-console-react</code>, 277 commits, deployed 7 Aug</td></tr>
-<tr><td>Generative UI: components in conversation, canvas on the right, long lists always to canvas</td><td><span class="chip inflight">stood up</span></td><td>Rendering defects fixed 17 to 18 Aug. A render batched into a gated turn now shows a <strong>named held placeholder</strong> instead of a bare box, from 26 Aug</td></tr>
-<tr><td><strong>Approval gating with sequential hand-off and chain collapse</strong>: the next gate arrives cleanly, answered cards settle into one row</td><td><span class="chip inflight">stood up</span></td><td>20 Aug HITL hand-off, 24 Aug click acknowledgement, <strong>25 to 26 Aug collapse ladder plus a Playwright harness that measures the geometry in a real browser</strong></td></tr>
+<tr><td>Generative UI: components in conversation, canvas on the right, long lists always to canvas</td><td><span class="chip delivered">stood up</span></td><td>Rendering defects fixed 17 to 18 Aug. A render batched into a gated turn now shows a <strong>named held placeholder</strong> instead of a bare box, from 26 Aug</td></tr>
+<tr><td><strong>Approval gating with sequential hand-off and chain collapse</strong>: the next gate arrives cleanly, answered cards settle into one row</td><td><span class="chip delivered">stood up</span></td><td>20 Aug HITL hand-off, 24 Aug click acknowledgement, <strong>25 to 26 Aug collapse ladder plus a Playwright harness that measures the geometry in a real browser</strong></td></tr>
+<tr><td><strong>Agent inbox: alerts, AI analysis and approvable plans</strong><br><span class="small">front end built, pilot version due Tuesday</span></td><td><span class="chip attempting">outside the Pilot Order</span></td><td><strong>Additional work.</strong> Demonstrated 27 Aug and endorsed by Michael: <em>"exactly what we had in mind."</em> Not one of the three contracted pilot deliverables. See the note below the table</td></tr>
+<tr><td><strong>Scheduled reporting, created conversationally</strong></td><td><span class="chip attempting">outside the Pilot Order</span></td><td><strong>Additional work.</strong> Demonstrated 27 Aug. Same component as the inbox, same position</td></tr>
 <tr><td>Internal Ops v1, knowledge engine: vault search for TXN staff over a remote MCP connector, plus the docs portal</td><td><span class="chip delivered">delivered</span></td><td><code>txn-vault-mcp</code> + <code>txn-admin-panel</code> + <code>txn-admin-api</code>, deployed 6 to 7 Aug. In active use, confirmed 13 Aug</td></tr>
 <tr><td>Internal Ops v1, meeting capture: TXN sessions captured, digested and routed into the vault</td><td><span class="chip delivered">delivered</span></td><td>Running on this project: <strong>18 meeting records</strong>, most recent 24 August</td></tr>
 <tr><td>Internal Ops v1, TXN customer onboarding agent</td><td><span class="chip risk">not started</span></td><td>Requirements defined to build depth. <strong>No code in any repository, no branch, no issue</strong>. Re-verified 25 Aug</td></tr>
 </tbody>
 </table>
+
+<div class="flag bad">
+<h4 style="margin-top:0">The agent inbox and alerts are additional work, and this plan should have said so sooner</h4>
+<p><strong>The Pilot Order names three deliverables and this is not one of them.</strong> In the proposal's own words: a working <em>Full Agentic Experience showcase</em>; the <em>Agent Access Layer foundations</em>; and <em>Internal Ops v1: the customer-onboarding agent, meeting capture, and the knowledge engine</em>. <strong>Agent Inbox and Alerts is a separate component</strong> in the wider Agentic Layer proposal, sized M, and scheduled for a later phase. A front-end prototype has been delivered and the pilot version is due Tuesday.</p>
+<p><strong>What this does not mean.</strong> It is not a change order and it does not carry an extra fee. The pilot is priced as <em>"buying the team for six weeks, not a fixed scope"</em>, so what the team builds inside the window is a question of judgement rather than of contract. Nobody owes anybody money over this.</p>
+<p><strong>What it does mean, and it is the part that matters.</strong> Acceptance on 7 September is <em>"on demonstration of the deliverables and handover"</em>. The inbox is not one of the deliverables, so demonstrating it <strong>does not discharge anything</strong>. Meanwhile the <strong>TXN customer onboarding agent, which is explicitly named inside deliverable 3, still has no code</strong> after six weeks. That is the trade this plan has to state plainly: a strong piece of unasked-for work exists, and a contracted one does not.</p>
+<p style="margin-bottom:0"><strong>And it is about to get larger.</strong> Michael confirmed on 25 August that <strong>Direct Transact has no alerting system</strong> and that he wants the AI to be the central one: <em>"they weren't going to build anything very good basically."</em> That converts a partner dependency into Novosapien scope, makes the component bigger than the component map records, and <strong>nobody has priced it</strong>. It belongs in the next-phase planning session, not in a standup.</p>
+</div>
 
 <h3>Explicitly not in this build</h3>
 <div class="card">
@@ -471,27 +481,9 @@
 </tbody>
 </table>
 
-<div class="flag bad">
-<h4 style="margin-top:0">Stood up is not delivered, and that distinction matters more here than anywhere else in this report</h4>
-<p style="margin-bottom:6px">Six workflows going from a ranking to running code in one day is the asymmetry at its most flattering. Four things stop it being a finished answer, and they should be read alongside the table above rather than after it:</p>
-<ul style="margin-bottom:0">
-<li><strong>Nobody at TXN has driven any of them.</strong> They run against the simulation. TXN has still not been into the build at all.</li>
-<li><strong>They were built before TXN confirmed the endpoints and the approval gates.</strong> Michael's note said TXN would confirm those <em>"through next week"</em>, alongside thirteen journey documents. Where TXN's documents disagree with what was implemented, <strong>the implementation moves, not the documents</strong>. That rework is expected and it is not in any estimate yet.</li>
-<li><strong>Where this lands is undecided.</strong> If these are inside the pilot, the acceptance bar has quietly gone from six workflows to thirteen. If they are after it, they are delivered work banked early and the bar is unchanged. Nobody has said which, and it is the first question on the next call.</li>
-<li><strong>Bulk change is designed against an unsettled policy.</strong> The irreversible-action question has been open since May. The SOP makes a reasonable choice; it is a choice, not an agreement.</li>
-</ul>
-</div>
-
 <h3>Three of the ten were Novosapien concepts. They are not any more</h3>
 <div class="card">
 <p style="margin-bottom:0">Candidates <strong>8 (alert to investigation to plan)</strong>, <strong>9 (scheduled performance report)</strong> and <strong>10 (guided product launch)</strong> were Novosapien ideas TXN had never asked for, and every previous issue of this plan marked them as such. <strong>TXN has now ranked all three</strong>, so they are TXN-wanted work rather than supplier suggestions. Candidate 8 in particular is the cheapest build on the entire slate.</p>
-</div>
-
-<h3>The alignment job has reversed direction, and it is still urgent</h3>
-<div class="flag bad">
-<p>The slate describes <strong>three workflows as operational</strong>. Previous issues of this plan said the slate <strong>over</strong>-claimed, because cardholder onboarding was not implemented and lost or stolen was partial.</p>
-<p><strong>That is no longer true. The slate now under-claims.</strong> Both of those workflows were built on 12 August, sat on an unmerged branch, and reached the main line on 26 August. The implemented set is <strong>thirteen SOPs</strong>, not three and not six.</p>
-<p style="margin-bottom:0"><strong>The urgency is unchanged.</strong> TXN has written <strong>journey documents for all thirteen workflows</strong> and will confirm endpoints and approval gates through this week. Either way round, they are documenting against a description that does not match the product. The corrected set should reach them before those documents are finished.</p>
 </div>
 
 <h3>The three the slate describes as operational</h3>
@@ -563,6 +555,19 @@
 <p class="small">Scope complete, 81%</p>
 <div class="bar"><i class="warn" style="width:79%"></i></div>
 <p class="small">Window elapsed, 79%. <strong>The gap is 2 points, unchanged. Scope moved 3 and the clock moved 3.</strong></p>
+<h4 style="margin-top:14px;margin-bottom:6px">Delivered outside the Pilot Order</h4>
+<p class="small">Counted separately, on purpose. Folding this into the percentage above would flatter the pilot and confuse the acceptance conversation, because none of it discharges a contracted deliverable.</p>
+<table>
+<thead><tr><th>Work</th><th>Where it sits</th><th>State</th></tr></thead>
+<tbody>
+<tr><td><strong>Agent inbox</strong>: alerts, AI analysis, approvable plans</td><td>Agent Inbox and Alerts, a separate component in the Agentic Layer proposal, sized M</td><td><span class="chip inflight">front end delivered</span> pilot version due Tuesday</td></tr>
+<tr><td><strong>Scheduled reporting</strong>, created conversationally</td><td>Same component</td><td><span class="chip inflight">stood up</span> mocked, nothing executing</td></tr>
+<tr><td><strong>Five workflow SOPs</strong> from TXN's ranked slate</td><td>Post-pilot work, brought forward</td><td><span class="chip inflight">stood up</span></td></tr>
+<tr><td><strong>Control Center React build</strong></td><td>In no priced stage of any proposal</td><td><span class="chip delivered">delivered</span></td></tr>
+</tbody>
+</table>
+<p class="small"><strong>The honest summary of that table.</strong> Four substantial pieces of work exist that nobody contracted, and one contracted piece, the TXN customer onboarding agent, does not exist at all. That is not a criticism of the choices; each was defensible on the day. It is the thing to settle before 7 September rather than at it.</p>
+
 <p class="small"><strong>Read this as a floor.</strong> The figure is built from committed code, which is the only measure of progress that cannot be argued upward. It therefore misses anything written and not yet committed, and on 28 August the delivery lead put hardening at 85% and the second half of the agentic experience at 90%, both ahead of what the repositories show. The method stays as it is; the correction is to commit more often.</p>
 <p class="small" style="margin-bottom:0"><strong>What this number deliberately does not count.</strong> Five of the seven SOPs that merged on 26 August are TXN's ranked <em>post-pilot</em> build. They are real, tested, delivered work and they are not pilot scope, so they are excluded. Counting them would push this figure into the high eighties and it would be a lie by arithmetic. What is counted is the two SOPs that closed genuine pilot gaps, the tool surface going to 43, and the gate hardening.</p>
 </div>
