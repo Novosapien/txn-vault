@@ -14,7 +14,8 @@ Delivery status for the engagement. Where [[commercial]] records what was sold a
 
 | Flight plan | Scope | Generated |
 |-------------|-------|-----------|
-| [flightplan-txn-2026-08-27.html](flightplan-txn-2026-08-27.html) | **Six pages.** Carries the **workflow-slate build** (13 SOPs, 43 tools, 19 gated writes), the corrected Content Workforce schedule, and the **Stackworkz code-sharing** session | **27 Aug 2026, current** |
+| [flightplan-txn-2026-08-28.html](flightplan-txn-2026-08-28.html) | **Six pages.** The pilot functionally complete, TXN into the build on 1 September, the UAT split, and the acceptance date with nowhere to sit | **28 Aug 2026, current** |
+| [flightplan-txn-2026-08-27.html](flightplan-txn-2026-08-27.html) | Superseded. | **Six pages.** Carries the **workflow-slate build** (13 SOPs, 43 tools, 19 gated writes), the corrected Content Workforce schedule, and the **Stackworkz code-sharing** session | **27 Aug 2026, current** |
 | [flightplan-txn-2026-08-26.html](flightplan-txn-2026-08-26.html) | Superseded. First six-page issue: the four pilot pages plus **Content Workforce** and **Outbound Workforce**. Its commit cut-off was 21 August, so it predates the slate build | 26 Aug 2026 |
 | [flightplan-txn-2026-08-25.html](flightplan-txn-2026-08-25.html) | Superseded. The six-week pilot to 7 September. Four pages: Home, Pilot Release, **Workflow Status** (carrying TXN's ranked slate decision), Module Ledger | 25 Aug 2026 |
 | [flightplan-txn-2026-08-21-1110.html](flightplan-txn-2026-08-21-1110.html) | Superseded. Issued before TXN's slate decision arrived | 21 Aug 2026 |
@@ -48,7 +49,21 @@ Decision records that sit outside the meeting series, kept here so the flight pl
 
 ## What the current plan says
 
+### The headline, 28 August
+
+- **The pilot is functionally complete, and the acceptance date still has nowhere to sit.** That is the whole issue in one line. George, 27 August: *"from our point of view it's done in terms of a pilot."* **81%** of scope complete (range 77 to 85) against **79%** of the window elapsed, day 33 of 42. Buffer **+2**, unchanged, because scope and clock both moved three points.
+- **TXN gets into the build on Tuesday afternoon, 1 September.** The AI agent interface, notifications and components are committed as ready, and **Dorte and Ian start user-side UAT** from that point. This is the single most overdue item on the engagement finally closing: TXN has never been inside the build, and three design questions have stayed open by default because of it.
+- **The UAT split is agreed (27-08).** **Dorte and Ian take the user side** as the closest users to the product. **Michael takes the technical and tool-call side before he goes on 3 September**, pointing his own Playwright agent at it against PCI and GDPR rules.
+- **Michael's absence now has exact dates: away 3 September, back the 15th**, contactable while away. Earlier issues said "ten days from early September". This is tighter than that: he leaves **two working days** after TXN first gets into the build.
+- **Nine of thirteen workflows are built and tested.** The four outstanding are held back deliberately. **82 defects were fixed** in the release that followed DT's spec change.
+- **The permission model question is answered and it was never a shortfall.** Stackworkz build TXN's user and permission framework; the agent scopes against it ([[open-questions]] #71). Novosapien's own deferred deliverable is a different thing and unchanged. This removes a risk that three issues of this plan carried as a probable acceptance dispute.
+- **Stackworkz raised the sharpest architectural point of the engagement (26-08).** If the MCP server talks straight to Direct Transact it bypasses the Console, which is the only place approvals will exist in production. Ruan Sunkel: *"good luck with the approvals."* It does not touch the pilot, which runs in-chat against the mock, and **it gates the wire-in** ([[open-questions]] #74).
+- **The retreat is a three-day gap, not a wall.** Earlier issues overstated it. The team flies the evening of 10 September and **works from 14 September**; only 11 to 13 September is genuinely unavailable.
+- **The next phase needs a planning session, and there is no plan for it.** Three to four months remain to the end of the year, the wire-in and Phase 3 are both contracted, and neither has a dated plan. Raised as a booking action this week.
+
 ### The headline, 27 August
+
+_Superseded by the entry above._
 
 - **The biggest code drop of the pilot landed, and the buffer still narrowed.** **78%** of scope complete (range 74 to 82) against **76%** of the window elapsed, day 32 of 42, 11 days to completion. Scope moved 4 points in two days, which is fast; the clock moved 5. The margin was **+23 on 14 August, +16 on 18 August, +3 on 25 August, +2 today**. This is the asymmetry stated as plainly as it can be stated: a very large, well-tested build, and it bought back one day of comfort out of five.
 - **The workflow-slate build landed on 26 August.** Full record at [[2026-08-26-workflow-slate-build]]. The SOP library went from **6 to 13**, the MCP catalogue from **33 to 43 tools**, and the HITL gate now covers **19 record-changing tools** with a boot-time assertion that every gate is reachable. **Ranks 1 to 6 of TXN's slate all have running SOPs**, including card service actions, which was 0 of 6 on tool coverage two days earlier.

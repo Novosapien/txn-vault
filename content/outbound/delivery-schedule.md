@@ -25,21 +25,14 @@ The Outbound Workforce is a **separate engagement** from the agentic AI layer, c
 | Date | Session | State |
 |------|---------|-------|
 | Mon 24 Aug | Interview 1: the offer | **Held.** George attended as it was the foundational session |
-| Tue 25 Aug | Interview 2: ICPs | **Held and extracted.** TXN's own GTM corpus loaded, the 126-account scored register analysed at [[qualification-matrix]], and a discovery source research pass recorded at [[discovery-sources]] |
-| Thu 27 Aug | Interview 3: buyer personas | **Booked** |
-| **Thu 27 Aug** | **Interview 4: second block, same day** | **Booked.** Takes the slot vacated by the Content Workforce session that moved to 1 September. Most likely a continuation of the persona set, since every session in this series has over-run; **confirm the subject before the session** |
-| **Next week, w/c 1 Sep** | **Technical: email domains and warming** | **To book.** With **Jacob**, who runs TXN's domains. Sets up the sending domains, DKIM, DMARC and SPF, and **starts the warming clock the same week**. Monday 31 August is the UK summer bank holiday, so the week runs Tuesday to Friday |
-| **Next week, w/c 1 Sep** | **Team login and platform setup** | **To book.** Gets the TXN team into the Outbound Workforce platform and set up |
+| Tue 25 Aug | Interview 2: ICPs | **Held and extracted.** Corpus loaded, 126-account register analysed at [[qualification-matrix]] |
+| Thu 27 Aug | Interview 3: the offer, session 2 | **Held.** [[2026-08-27-outbound-workforce-offer-session-2]] |
+| **Wed 2 Sep** | **Session 4** | **Booked** |
+| **Fri 4 Sep** | **Session 5** | **To book.** Brett has asked Dorte to try for Friday |
+| **w/c 1 Sep** | **Technical: email domains and warming**, with Jacob | **To book.** Starts the two-week clock |
+| **w/c 1 Sep** | **Team login and platform setup** | **To book** |
 
-## Domain warming is the binding clock
-
-**Warming takes roughly two weeks of elapsed time and cannot be compressed.** Sending too much too early damages deliverability on the domain permanently, so the only lever is when it starts.
-
-Starting **next week** puts the domain live around **mid September**. That matters more than it looks: the Novosapien team flies on the evening of **10 September** for a three-week retreat, so warming started now runs its clock **during** the travel rather than after it. Held until after pilot acceptance closes, realistically it would not start until around 10 September and would finish around 24 September, roughly a week and a half later for no gain.
-
-> **This supersedes the recommendation in the 25 and 26 August flight plans**, which was to hold domain setup and warming until after 7 September on capacity grounds. That recommendation was right about the capacity cost and wrong about the ordering, because it treated warming as work rather than as an unattended clock. **Decision taken 27 August: start it next week.**
-
-**The one condition that keeps it safe.** The session lands five or six days before pilot completion, and it draws on George, who is the only person committing to any of the four pilot build repositories ([[open-questions]] #57). Scope it tightly: **Jacob owns the DNS records**, George specifies and verifies. It is a bounded session, not an open task that runs through acceptance week.
+**Two more sessions are needed and one is booked.** Per Brett, 28 August: the Wednesday session is in the diary, and Friday would be the ideal slot for the second. That closes the interview series before the personal Content Workforce sessions start the following week.
 
 ## Channels: email and LinkedIn only, no voice
 
