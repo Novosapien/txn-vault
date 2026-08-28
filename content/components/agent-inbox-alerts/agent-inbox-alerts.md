@@ -6,12 +6,17 @@ sources:
   - "[[01-06-2026-component-1-Agent-Access-Layer]]"
   - "[[13-05-2026-txn-vision-meeting]]"
   - "[[18-06-2026-finalised-gap-analysis]]"
+  - "[[2026-08-25-agentic-standup]]"
 description: "Component doc for TXN's Agent Inbox & Alerts — the proactive AI lane: alert detection, impact analysis, C2 plan-and-execute, scheduled reporting and routing"
 ---
 
 # TXN — Agent Inbox & Alerts
 
 > **18-08 update ([[2026-08-18-agentic-standup]]):** **George proposes starting this component inside the pilot**, using the Control Center replica and **mocked alerts**, specifically so no external dependency gates the work. His view is that the earlier concern about being blocked here was overstated: the backend is plug-and-play, and the front end can be exchanged with Stackworkz in either direction once they have something. Not yet agreed with TXN, and it is not pilot scope. Note the standing constraint: **alert detection is still unowned** (see [[open-questions]] #13), so anything built here runs from a staged trigger. (Source: standup 2026-08-18)
+
+> **25-08 update ([[2026-08-25-agentic-standup]]): Direct Transact has no alerting system, and Michael wants the AI to be the central one.** In his words: *"DT don't have an alerting system per se... the endpoint we had DT was sort of just a post get type situation. There was no clever technology behind it... they weren't going to build anything very good basically."* His direction: *"the one thing we do want is sort of central place for alerts... whether we build the AI first and then tack on other things afterwards then obviously that's the source"*, with any blocking system feeding in.
+>
+> **This resolves the long-standing "alert detection is unowned" constraint (#13) in the least convenient direction**: not by DT taking it, but by there being nobody else. It makes this component larger and more strategic than the component map records, and it converts the standing partner dependency into a Novosapien build decision. Tracked at [[open-questions]] #68. George is scoping the surfaces now, mocking what DT cannot provide: *"if some of the stuff's not ready we'll just mock it... it's going to be a payload. So if it changes, that's fine."* (Source: standup 2026-08-25)
 
 > **Component map:** [[components]] · **Vision:** [[vision]]
 > **User journeys:** [[ux-ai-configurable-operational-alerting|Operational Alerting]], [[ux-entity-performance-insights|Entity Performance Insights]], [[ux-txn-Intelligence-ai-autonomous-anomaly-detection|Anomaly Detection]], [[ux-ai-user-stories-reporting|NL Reporting]] — see [[user-journeys]]
