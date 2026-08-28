@@ -8,6 +8,11 @@ sources:
 description: "Spec for cadence and on-demand NL reporting — driver-first program summaries, permission-scoped custom reports, and reusable templates re-run without AI"
 ---
 
+> [!note] Update 27-08-2026: demonstrated as a working concept
+> Shown mocked on the [[2026-08-27-agentic-standup|27 August standup]]. **Reports are created conversationally**: the operator describes what they want in natural language, and the agent turns unstructured description into a structured definition, renders an example to correct, then takes a cadence. Delivery is to the agent inbox, with email notification linking back to it as a later addition.
+>
+> **Rate limiting was raised unprompted** by George, so no client runs twenty reports every hour. Also open: whether the inbox segments alerts from reports or shows both with a filter.
+
 # TXN — Scheduled & On-Demand Reporting
 
 > **Component:** [[agent-inbox-alerts]] · **Journey sources:** [[ux-ai-user-stories-reporting|NL Reporting]], [[ux-entity-performance-insights|Entity Performance Insights]]
