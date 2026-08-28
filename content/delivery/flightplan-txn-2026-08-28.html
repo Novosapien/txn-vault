@@ -114,7 +114,7 @@
   <div class="kpi bad"><div class="n">10 days</div><div class="l">to pilot completion, 7 September 2026</div></div>
   <div class="kpi pri"><div class="n">81%</div><div class="l">of pilot scope complete (range 77 to 85)</div></div>
   <div class="kpi warn"><div class="n">79%</div><div class="l">of the pilot window elapsed (day 33 of 42)</div></div>
-  <div class="kpi warn"><div class="n">2</div><div class="l">components delivered outside the Pilot Order: inbox and alerts, scheduled reporting</div></div>
+  <div class="kpi pri"><div class="n">+45%</div><div class="l">additional work delivered, outside the Pilot Order and unbilled</div></div>
 </div>
 
 <div class="flag bad">
@@ -131,6 +131,21 @@
 <p><strong>The build is done and the paperwork is not.</strong> 81% of scope against 79% of the window. The buffer is unchanged at two points, because scope and clock each moved three.</p>
 <p>For six weeks this report has been about whether the code would land. It has. Nine of thirteen workflows are built and tested, the agent inbox and scheduled reporting were demonstrated and endorsed, and 82 defects were cleared in the last release. <strong>Every remaining risk on this engagement now belongs to TXN's calendar rather than to Novosapien's backlog.</strong></p>
 <p>That is a better problem than the one we had, and it is not a smaller one. An unaccepted pilot is not a delivered pilot.</p>
+
+<h3>What TXN has received beyond what it bought</h3>
+<div class="flag good">
+  <p><strong>On top of the contracted pilot, close to half as much again has been built and handed over.</strong> None of it was asked for, none of it is billed, and it is worth stating once rather than leaving it to be noticed.</p>
+  <table style="margin-top:4px">
+    <thead><tr><th>Work</th><th>Share of pilot scope</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Control Center React build</strong>, five persona consoles and a docs site, in no priced stage of any proposal</td><td>25%</td></tr>
+      <tr><td><strong>Workflow slate ranks 1 to 6</strong>, five new SOPs plus the fix half of decline investigation and ten new tools</td><td>12%</td></tr>
+      <tr><td><strong>Agent inbox and scheduled reporting</strong>, a separate component brought forward</td><td>10%</td></tr>
+      <tr><td><strong>Total additional</strong></td><td><strong>45%</strong> <span class="small">(range 38 to 52)</span></td></tr>
+    </tbody>
+  </table>
+  <p style="margin-bottom:0"><strong>It is counted separately from the 81%, deliberately.</strong> None of it discharges a contracted deliverable, so folding it in would make the pilot look finished while the acceptance conversation still has an unstarted deliverable in it. The full working is on the module ledger page.</p>
+</div>
 
 <h3>Tuesday afternoon is the date that matters this week</h3>
 <div class="flag good">
@@ -555,6 +570,8 @@
 <p class="small">Scope complete, 81%</p>
 <div class="bar"><i class="warn" style="width:79%"></i></div>
 <p class="small">Window elapsed, 79%. <strong>The gap is 2 points, unchanged. Scope moved 3 and the clock moved 3.</strong></p>
+<div class="bar"><i class="pri" style="width:45%"></i></div>
+<p class="small" style="margin-bottom:0"><strong>Additional work delivered outside the Pilot Order, 45%</strong> <span class="small">(range 38 to 52)</span>. Read against the same scale as the two bars above: on top of the contracted pilot, close to half as much again has been built and handed over. Nobody asked for any of it and nobody is being charged for it.</p>
 <h4 style="margin-top:14px;margin-bottom:6px">Delivered outside the Pilot Order</h4>
 <p class="small">Counted separately, on purpose. Folding this into the percentage above would flatter the pilot and confuse the acceptance conversation, because none of it discharges a contracted deliverable.</p>
 <table>
@@ -566,6 +583,18 @@
 <tr><td><strong>Control Center React build</strong></td><td>In no priced stage of any proposal</td><td><span class="chip delivered">delivered</span></td></tr>
 </tbody>
 </table>
+<h4 style="margin-top:14px;margin-bottom:6px">How the 45% is arrived at</h4>
+<p class="small">Product owner judgement on the same basis as the 81%, expressed as a percentage of the contracted pilot scope. An estimate with a range, not a measurement.</p>
+<table>
+<thead><tr><th>Work</th><th>Share of pilot scope</th><th>Basis</th></tr></thead>
+<tbody>
+<tr><td><strong>Control Center React build</strong></td><td>25%</td><td>A full React build of five persona consoles plus a docs site, 277 commits, deployed 7 August. Real engineering in no priced stage. Part of it predates the pilot window and is not visible in git, so this is the least precise of the three</td></tr>
+<tr><td><strong>Workflow slate, ranks 1 to 6</strong></td><td>12%</td><td>Five new SOPs, the fix half of decline investigation, and ten new MCP tools. Roughly 5,000 lines across four repositories, with the test discipline to match</td></tr>
+<tr><td><strong>Agent inbox and scheduled reporting</strong></td><td>10%</td><td>Front end delivered, pilot version due Tuesday. A separate M-sized component in the Agentic Layer proposal, brought forward</td></tr>
+<tr><td><strong>Total</strong></td><td><strong>45%</strong> <span class="small">(range 38 to 52)</span></td><td></td></tr>
+</tbody>
+</table>
+<p class="small"><strong>Why it is shown separately rather than added to the 81%.</strong> None of it discharges a contracted deliverable, so adding it would make the pilot look finished when the acceptance conversation still has an unstarted deliverable in it. Shown apart, it does the job it should: it says what TXN has received beyond what it bought, without pretending the contracted work is further along than it is.</p>
 <p class="small"><strong>The honest summary of that table.</strong> Four substantial pieces of work exist that nobody contracted, and one contracted piece, the TXN customer onboarding agent, does not exist at all. That is not a criticism of the choices; each was defensible on the day. It is the thing to settle before 7 September rather than at it.</p>
 
 <p class="small"><strong>Read this as a floor.</strong> The figure is built from committed code, which is the only measure of progress that cannot be argued upward. It therefore misses anything written and not yet committed, and on 28 August the delivery lead put hardening at 85% and the second half of the agentic experience at 90%, both ahead of what the repositories show. The method stays as it is; the correction is to commit more often.</p>
