@@ -266,6 +266,8 @@
 <line x1="250" y1="242" x2="1055" y2="242" class="lanerule" stroke-width="1"/>
 <rect x="375" y="231" width="221" height="22" rx="5" fill="#22C55E" opacity="0.9"/>
 <rect x="596" y="231" width="236" height="22" rx="5" fill="#A1BCD1" opacity="0.9"/>
+<rect x="596" y="231" width="212" height="22" rx="5" fill="#22C55E" opacity="0.9"/>
+<text x="842" y="242" fill="#22C55E" font-size="11" font-weight="700">90%</text>
 <text x="238" y="280" class="lane" font-size="12" text-anchor="end">Workflow SOP library (6 to 13)</text>
 <line x1="250" y1="280" x2="1055" y2="280" class="lanerule" stroke-width="1"/>
 <rect x="444" y="269" width="333" height="22" rx="5" fill="#22C55E" opacity="0.9"/>
@@ -277,6 +279,8 @@
 <text x="238" y="356" class="lane" font-size="12" text-anchor="end">Hardening and refinement</text>
 <line x1="250" y1="356" x2="1055" y2="356" class="lanerule" stroke-width="1"/>
 <rect x="596" y="345" width="333" height="22" rx="5" fill="#A1BCD1" opacity="0.9"/>
+<rect x="596" y="345" width="283" height="22" rx="5" fill="#22C55E" opacity="0.9"/>
+<text x="940" y="356" fill="#22C55E" font-size="11" font-weight="700">85%</text>
 <text x="238" y="394" class="lane" font-size="12" text-anchor="end">Formal UAT and handover</text>
 <line x1="250" y1="394" x2="1055" y2="394" class="lanerule" stroke-width="1"/>
 <rect x="749" y="383" width="180" height="22" rx="5" fill="none" stroke="#A1BCD1" stroke-width="1.6"/>
@@ -284,8 +288,13 @@
 <text x="777" y="440" fill="#EE5D50" font-size="11" font-weight="700" text-anchor="middle">27 Aug, you are here</text>
 <rect x="250" y="457" width="26" height="14" rx="4" fill="#22C55E"/><text x="282" y="468" fill="#8FA3B7" font-size="11">delivered</text>
 <rect x="367" y="457" width="26" height="14" rx="4" fill="#A1BCD1"/><text x="399" y="468" fill="#8FA3B7" font-size="11">in flight</text>
-<rect x="485" y="457" width="26" height="14" rx="4" fill="none" stroke="#A1BCD1" stroke-width="1.6"/><text x="517" y="468" fill="#8FA3B7" font-size="11">committed</text>
+<rect x="485" y="457" width="26" height="14" rx="4" fill="none" stroke="#A1BCD1" stroke-width="1.6"/><text x="517" y="468" fill="#8FA3B7" font-size="11">committed</text><rect x="612" y="457" width="26" height="14" rx="4" fill="#A1BCD1"/><rect x="612" y="457" width="17" height="14" rx="4" fill="#22C55E"/><text x="644" y="468" fill="#8FA3B7" font-size="11">green inside blue is progress through an in-flight lane</text>
 </svg>
+</div>
+
+<div class="flag">
+  <p><strong>Two lanes were reading low, and the cause is worth naming.</strong> Hardening and refinement was drawing as a single unfilled bar, and the second half of the Full Agentic Experience lane showed nothing of the progress inside it. They are now shown at <strong>85%</strong> and <strong>90%</strong> respectively, on the delivery lead's assessment.</p>
+  <p style="margin-bottom:0"><strong>This plan measures committed code.</strong> That is deliberate, because it is the only version of progress that cannot be talked up. The cost is that <strong>work which exists but has not been committed is invisible to it</strong>, and that is what happened here. The same thing bit on 27 August, when roughly five thousand lines sat on unmerged branches and this report concluded that activity had slowed. <strong>Read the headline percentage as a floor rather than a midpoint.</strong> The fix is not to change the method, it is to commit and push more often, and that is on our side.</p>
 </div>
 
 <h3>The thing to keep saying out loud</h3>
@@ -554,6 +563,7 @@
 <p class="small">Scope complete, 81%</p>
 <div class="bar"><i class="warn" style="width:79%"></i></div>
 <p class="small">Window elapsed, 79%. <strong>The gap is 2 points, unchanged. Scope moved 3 and the clock moved 3.</strong></p>
+<p class="small"><strong>Read this as a floor.</strong> The figure is built from committed code, which is the only measure of progress that cannot be argued upward. It therefore misses anything written and not yet committed, and on 28 August the delivery lead put hardening at 85% and the second half of the agentic experience at 90%, both ahead of what the repositories show. The method stays as it is; the correction is to commit more often.</p>
 <p class="small" style="margin-bottom:0"><strong>What this number deliberately does not count.</strong> Five of the seven SOPs that merged on 26 August are TXN's ranked <em>post-pilot</em> build. They are real, tested, delivered work and they are not pilot scope, so they are excluded. Counting them would push this figure into the high eighties and it would be a lie by arithmetic. What is counted is the two SOPs that closed genuine pilot gaps, the tool surface going to 43, and the gate hardening.</p>
 </div>
 
