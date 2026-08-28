@@ -4,6 +4,7 @@ status: Defined
 sources:
   - "[[02-06-2026-component-2-alerts-agent-inbox]]"
   - "[[01-06-2026-component-1-Agent-Access-Layer]]"
+  - "[[2026-08-25-agentic-standup]]"
 description: "Spec for cheap alert detection — threshold trips, config-change webhooks and scheduled scans that gate the AI, plus Console and /alert creation journeys"
 ---
 
@@ -14,6 +15,17 @@ description: "Spec for cheap alert detection — threshold trips, config-change 
 > **Status:** Defined
 > **Owner:** _TBC_
 > **Sources:** [[02-06-2026-component-2-alerts-agent-inbox]], [[01-06-2026-component-1-Agent-Access-Layer]]
+
+---
+
+> [!warning] Update 25-08-2026: Direct Transact has no alerting system
+> Michael Moores, on the [[2026-08-25-agentic-standup|25 August standup]]: *"DT don't have an alerting system per se... the endpoint we had DT was sort of just a post get type situation. There was no clever technology behind it. It was just a system would push that up and they were basically the system of record. So they weren't going to build anything very good basically."*
+>
+> **This inverts the assumption underneath this document.** The spec below is written around detection being cheap and partly platform-provided, with a DT product webhook supplying config-change events and DT owning the alerting endpoint. If DT has no alerting system and is not going to build one worth having, **either Novosapien owns detection or nothing raises alerts at all**.
+>
+> Michael's stated direction is that the AI becomes the central place: *"the one thing we do want is sort of central place for alerts... whether we build the AI first and then tack on other things afterwards then obviously that's the source"*, with any blocking system feeding in so an operator sees *"here's the errors, here's the actual thing going on"*.
+>
+> **Consequence for scope.** This makes [[agent-inbox-alerts]] larger and more strategic than the component map records, and it converts a partner dependency into a build decision. Tracked at [[open-questions]] #68; needs scoping before the component is built. The dependency table in section 6 is left as written so the change is visible rather than quietly rewritten.
 
 ---
 
@@ -39,7 +51,7 @@ The load-bearing constraint is cost: analysing every transaction with AI explode
 
 - Support **user-defined** monitors ("alert me if Amazon transactions drop 20% over 7 days") and a **system-defined** baseline of critical alerts. _[⚠ open — see [[open-questions]] #4]_
 - **Cheap detection** — threshold maths in middleware/observability, not per-transaction AI; only a trip invokes the AI.
-- React to **config changes** via the product webhook (DT to add) so any change (Console/API/AI) produces an event.
+- React to **config changes** via the product webhook (DT to add) so any change (Console/API/AI) produces an event. _[⚠ 25-08: DT has no alerting system and may not build this, see the banner above and [[open-questions]] #68]_
 - Run **scheduled scans** on a cadence (e.g. twice daily) for anomalies not surfaced by events.
 - Two **creation paths**: Console UI, or an agent `/alert` skill that captures enough to fill the tool calls (server-side validated — incomplete definitions bounce with a descriptive error).
 
@@ -177,7 +189,7 @@ graph TD
 | Depends on | What we need | Blocking? |
 |-----------|-------------|----------|
 | Observability tool / middleware | Cheap threshold/anomaly detection | No — can build lightweight middleware |
-| DT product webhook | Config-change events from any channel | No — can poll/scan as interim |
+| DT product webhook | Config-change events from any channel | No, can poll/scan as interim. **⚠ 25-08: DT has no alerting system; treat this as unlikely to arrive rather than pending** |
 | [[agent-access-layer]] | Tool calls to create alerts (validation) | **Yes** for the create journey |
 
 **What siblings/other components need from this one:**

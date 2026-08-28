@@ -9,3 +9,6 @@ prof/
 # Internal negotiation material: never publish (this repo is public)
 content/legal/reviews/
 content/legal/txn-counterparty-review.md
+
+# Local inbox for unprocessed meeting transcripts
+process-meetings/

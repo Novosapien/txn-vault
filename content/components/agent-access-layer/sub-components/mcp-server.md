@@ -3,10 +3,20 @@ component: "[[agent-access-layer]]"
 status: Defined
 sources:
   - "[[01-06-2026-component-1-Agent-Access-Layer]]"
+  - "[[2026-08-26-stackworkz-agent-demo]]"
 description: "The single monolith MCP server every TXN agent calls through — per-turn tool gating, server-side validation, and formatted errors agents self-correct from"
 ---
 
 # TXN — MCP Server (validation & execution)
+
+> [!warning] Update 26-08-2026: where this server sits is now an open architectural fork
+> Raised by **Ruan Sunkel of Stackworkz** on the [[2026-08-26-stackworkz-agent-demo|26 August session]]. The Control Center *"is effectively just a proxy to the server. So we add authorization, extra user authorization which can include agent authorization as well."* Therefore *"if the MCP server talks directly to DT, then yeah, good luck with the approvals."*
+>
+> **Michael confirmed the constraint: *"this approval part is console specific. DT aren't building any approval layer or anything like that."*** So routing straight to DT bypasses the only approval layer that will exist in production.
+>
+> The emerging shape is a **split by traffic type**: system-to-system (agent to agent) can hit DT endpoints directly; **user-to-system must route through the Console**. The pilot's approval gating is in-chat against the mock, so nothing has tested this. Tracked at [[open-questions]] #74, and it gates the wire-in.
+>
+> Separately, Michael raised that the MCP surface may need **its own permission model**, distinct from the Console user framework Stackworkz is building ([[open-questions]] #73). Two servers are confirmed as the shape: one the agent uses from inside the app holding the user's tokens, and one developers connect to directly with OAuth or an API key.
 
 > **Component:** [[agent-access-layer]]
 > **Date:** 2026-06-02
