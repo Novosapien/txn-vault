@@ -1,5 +1,5 @@
 ---
-description: "Outbound Workforce engagement: TXN's own GTM corpus, the three routes to a client, the ICP and persona reconciliation, and the interview series"
+description: "Outbound Workforce engagement: TXN's GTM corpus, the three routes, the qualification rulings and targeting model, the two-stage sale, and the interview series"
 ---
 
 # Outbound Workforce
@@ -52,6 +52,132 @@ Note the wording covers *changing or adding*, so route 2 takes the same hit as r
 
 Ian, 25-08, correcting an earlier framing in this engagement: an ICP is who the ideal customer is; targeting order is who you go after first. They are different questions. Trade Republic, currently with Marqeta, is an ideal customer on fit and Ian would want to win it. It is not a first-wave target. ICP v0.4 weights launching and migrating equally, and that is **correct as a fit statement**. It does not conflict with route 1 leading.
 
+## Qualification: what disqualifies, and what only reschedules
+
+Settled by Ian on 2 September 2026 ([[2026-09-02-outbound-workforce-icp-qualification]]). This is the most consequential change to the GTM corpus since it arrived, and it moves three rules that [[icp-definition]] v0.4 currently states as gates.
+
+### The governing principle
+
+**Absence of signal is not absence of opportunity.** A company that has never issued a card emits no card signals, so a framework that qualifies on card signals filters out precisely the population TXN wins first.
+
+> Ian, 02-09: *"it can't be a disqualifier that there's no signal that somebody is planning to launch a car[d] program. If we give a set of verticals or sectors that we think we should target, it's because there are use cases within those verticals or sectors that are there today already."*
+
+His worked example: in the trading platform vertical, **Trading 212** and **Trade Republic** have both launched programs with Marqeta. A whole raft of companies in that same sector have not, and they are not out of scope for lacking a signal.
+
+> *"where they are right now in that decision making process is not where they might be in six or 12 months time. So when they do decide or if they decide to launch a car[d] program, we want to be right there front and center."*
+
+### The three rules that changed
+
+| [[icp-definition]] v0.4 | As written | Ian's ruling, 02-09 |
+|---|---|---|
+| **§8.1.8 P7** | DQ: *"No card program and no stated plan to launch one"* | **Withdrawn.** Not a disqualifier in any form |
+| **§8.1.5 P4** | One of four critical parameters; DQ gates the account | **No longer gates.** Asked directly, Ian answered *"No"* |
+| **§8.1.7 P6** | DQ: *"Recently signed a multi-year incumbent contract within the last 12 months"*, and Triggers is a gating parameter | **A scheduling rule.** *"don't disqualify them but move them down the list so that they're scheduled at a more appropriate time"* |
+
+§8.1.10, the scheme and BIN sponsor DQ, drew the same objection on the same grounds, *"it's not necessary that we would know that's the case."* It is not a gating parameter, so it costs points rather than the account.
+
+**What survives as a genuine exclusion is very short.** Ian: *"there's a very small exclusion list that should be within those verticals and it really is they've just signed a deal or they've got years left of a deal to go with the incumbent."* And even that is a deprioritisation.
+
+### Why this matters beyond the document
+
+[[qualification-matrix]] recorded on 25 August that the framework is structurally a measure of card program maturity, right for fit and a poor proxy for winnability. Ian reached the same conclusion from his own side a week later, without reference to that analysis. The finding is no longer Novosapien's reading of a client document; it is the author saying his document does not do what he wants.
+
+**It does not fix itself, though.** P7 is worth at most 4 of the 12.7-point gap between greenfield and migration accounts, and Ian withdrew the licence-status *gate* rather than its points. The register will still rank migration above greenfield after his rulings are applied, so the sequencing overlay proposed below is still the mechanism that closes it.
+
+## The targeting model
+
+Ian's own funnel, stated in full at the end of the 2 September session.
+
+| Step | Filter | In his words |
+|------|--------|--------------|
+| **1** | **Region.** TXN operates in Europe | *"you can discount all of those bunch gone"* |
+| **2** | **Verticals with card use cases that exist today** | *"if you're... petrochemical or or whatever it might be out"* |
+| **3** | **State.** Where the company sits in the cycle | This is where the three routes apply |
+
+Company size does not filter at any step: *"if you're a startup thinking of launching the card program then we we work with you."*
+
+**Everything past step 2 is a target.** The live question is order, not membership.
+
+> *"Everybody in those verticals is a target. It's the prioritization of those targets and the scheduleuling [scheduling] of them that's the most important thing."*
+
+### Verticals do not vary by route
+
+Ian said this three times on 2 September and it is the point the working session kept losing. The three routes are **states a company is in**, not kinds of company, so the vertical list beneath each one is identical.
+
+> *"proposed verticals will be the same irrespective of whether or not it's one, two or three on the ICP."*
+
+> *"What separates your three is not who the company is, it's what the what state it's in."*
+
+### In-market and has-a-program are two axes
+
+Not one scale with four points on it. Both can be true at once, and they produce different sales processes.
+
+| | **In market** | **Not in market** |
+|---|---|---|
+| **Has a program** | Deciding to move off an incumbent. Arrives *"with a bunch of knowns and experiences they've had that they're going to want to make sure they're not going to have with you again"* | Contract position decides the timing. Schedule, do not disqualify |
+| **No program** | Has *"likely made up their mind that they should launch"*, and brings *"none of the baggage of a bad previous experience with one of our competitors"* | The largest population and the one no signal will find. Reach it through vertical and use case |
+
+**Ian's ranking correction:** *"in a target vertical no evidence of a program no evidence in market is higher than has a program contract position open or or unknown."*
+
+### The artefact Ian asked for
+
+> *"it just needs a simple matrix that can be followed so that everybody understands exactly what the difference is between a legitimate target... priority target right now. And somebody that should be disqualified."*
+
+Three states, one page. **Novosapien's to produce.**
+
+## The two-stage sale
+
+Follows directly from the greenfield ruling, and it is the messaging structure the offer has been missing.
+
+Where the card is a **value-add** rather than the core product, the prospect has not necessarily decided to launch at all. So the sale runs in two stages, in order:
+
+1. **Why launch a card program at all.** *"act as the person almost put yourself in the shoes of being someone as the internal champion as why somebody should launch that program. You're the person that's bringing the idea to them."*
+2. **Why do it with TXN.** *"If they think it's a good idea, then your second part is to sell why they should do it with you."*
+
+Stage one is not optional where a buying signal exists:
+
+> *"Even if you've got a signal that you know that they're in the market, you shouldn't assume that they've made a decision that they're definitely going to launch a car[d] program. So to demonstrate expertise and knowledge in their industry, you should talk about why they should launch a program."*
+
+Ian has already run this himself in Claude for the investment trading platform vertical.
+
+### Which makes the unit a vertical and use case pair
+
+Ian's own conclusion once he had followed it through:
+
+> *"If that's right, then step two isn't the list of 12 verticals. It's a list of vertical and use case pairs."*
+
+Whether the card is core or value-add is a property of the **vertical plus the use case**, not of the company, and it decides whether stage one is needed. That is the pairing the ICP records and the persona messaging both need to carry.
+
+**Open shape:** stage one is a thought-leadership sale, not a product pitch, and the Cold Outreach Workforce has never been configured to run one. Raised at [[open-questions]] #76.
+
+## Exclusions and channel
+
+### Tier 1 banks: bureaucracy, not size
+
+The anti-profile reason, given on 02-09: small companies cannot carry the documentation and compliance load a tier 1 imposes. *"you get landed with the most ridiculous amount of documentation and and bureaucracy that small companies are not built for and we're not."* Same reason for governments and local governments.
+
+**A tier 1's wholly owned digital subsidiary cannot be excluded in advance.** It depends on how tightly bound it is to the parent's compliance machinery, and *"I'm not sure you can do that without conversation."* So it is a human qualification question, not a discovery filter. Recorded against [[icp-definition]] §7.
+
+Ian's rule for the category is about internal behaviour rather than prospects: *"your job really is to kill the excitement in your organization and focus on things you can actually win until you can win."*
+
+### Geography is a phasing order, not a boundary
+
+> *"That does not mean that we are limiting our efforts even in the early outreach to just Eastern Europe... we're not restricting ourselves to that by any stretch of imagination."*
+
+This matches [[icp-definition]] §4.4, which already says phasing governs prioritisation only. It needed saying because the working document was reading the MVP list as a filter.
+
+A Polish subsidiary of a non-EEA parent turns on **who you contract with**, since contracting outside the EEA changes which rules the contract must satisfy. Ian: *"I would probably recommend not excluding people... because the only way you're going to find out is by getting into a conversation."*
+
+### There is no marketplace, and BIN sponsors are out of scope
+
+Asked whether anything exists like G-Cloud, a public place to post card issuing RFPs: *"There's no equivalent. There's no equivalent in the industry."*
+
+Two channels instead, the **scheme** and the **BIN sponsor**. The two things a launch needs are a licensed entity, which is the BIN sponsor, and a technology platform, which is the processor. Order does not matter, which is why TXN wants to appear on as many BIN sponsors' vendor lists as possible.
+
+**The Marqeta precedent supports platform-first positioning.** Because Marqeta was well known with the leading platform, fintech startups came to the **processor** first: *"the most important thing to them was we need to know that the platform we're going to work with can drive our product not just now but in the future."*
+
+**BIN sponsor outreach sits outside this workforce.** Ian and Dorte run it directly: *"nothing to do on an outreach perspective um through this process."* The population is small and shrinking, from regulatory tightening in Europe and from acquisitions by processors, and TXN is onboarding its first with a view to publicising it.
+
 ## The reconciliation
 
 Two models are in play and they use the same words for different objects.
@@ -103,9 +229,14 @@ Related: [[persona-champion]] §7 lists the objection *"What is your track recor
 | 24-08-2026 | Interview 1, the Offer | [[2026-08-24-outbound-workforce-interview-1-offer]] | Partially extracted; positioning held |
 | 25-08-2026 | Interview 2, the ICPs | This page | In progress |
 | 27-08-2026 | Offer session 2 | [[2026-08-27-outbound-workforce-offer-session-2]] | Eight decisions taken. Mechanism block moved offline to Dorte |
-| TBC | Interview 3, the Personas | Not yet held | Displaced by the 27-08 offer session |
+| 02-09-2026 | Additional interview: qualification and the ICPs | [[2026-09-02-outbound-workforce-icp-qualification]] | **Did not finish.** Three ICP gating rules overturned, targeting model and two-stage sale settled |
+| TBC | Interview 3, the Personas | Not yet held | **Moved offline.** Brett runs the persona build as a heavy lift, roughly half an hour each, delivered as one HTML artifact for async review |
 
 Positioning material from interview 1 (tagline, value proposition) is deliberately held until the series closes, so it lands as one piece rather than in fragments.
+
+**What the 02-09 session settled, and what it did not.** The qualification rulings above are firm and Ian volunteered them. The ICP structure itself was not closed: the working session degraded in its last twenty minutes, re-asking answered questions and contradicting its own output, and Brett ended it to restart in a fresh context window. Two open threads came out of that. Dorte read a progress line of **14 items settled out of 85** and Brett rejected the count on the spot, so she has asked for a table listing what is actually settled. And a decision is due on whether the next booked slot finishes the offer or moves to content.
+
+**Ian will feed the output back into TXN's own documents.** Said early on 02-09 and easy to miss: *"whatever the output is, I'm going to feed it back in to make sure that all of the other go to market documents are correct."* That is the route by which the overturned gating rules reach a reissued [[icp-definition]], and it makes the reissue Ian's action rather than an ask sitting unowned.
 
 **What the 27-08 session settled.** Migration is a step rather than its own component track. The platform provenance ruling: the external claim is *the platform is TXN's*, with no statement of code lineage in either direction, and the confidence line is that it is hosted and managed by Direct Transact within their existing data governance and security frameworks. Positioning is **evolution, not disruptor**. The buying group compresses to **CTO, CPO, CFO**, with the product function sitting under CPO rather than becoming a fourth label; Head of Payments remains a targeting persona in [[prospecting-process]] but is not one of the three the offer writes pains against. Ian also ruled that questions digging into the platform's origins are **not automation territory**, which opens the wider boundary question at [[open-questions]] #65.
 
@@ -114,9 +245,9 @@ Positioning material from interview 1 (tagline, value proposition) is deliberate
 | Item | Needs | Who |
 |------|-------|-----|
 | ~~The scored register of the 126 accounts~~ | **Delivered 25-08 as v0.7.** Analysis at [[qualification-matrix]] | Closed |
-| Reissue [[icp-definition]] to match the workbook: the P7 "Planning to Launch" band, Timing Fit, Card Program Category, Card Program Target Date are all live in v0.7 and undocumented in v0.4 | A version bump | Ian |
-| Route attribute decision: is sequencing carried as a derived field | A decision | Ian |
-| Whether the 18 "no card program, no plan" accounts belong on the register at all | A decision. [[icp-definition]] §8.1.8 scores them DQ but P7 is not a gating parameter, so 12 survive as Priority 2 and 3 | Ian |
+| Reissue [[icp-definition]]: **now overdue on two counts.** The P7 "Planning to Launch" band, Timing Fit, Card Program Category and Card Program Target Date are live in v0.7 and undocumented in v0.4; and as of 02-09 three of v0.4's gating rules are withdrawn | A version bump. Ian has stated the route: he feeds the session output back into the GTM documents. [[open-questions]] #75 | Ian |
+| Route attribute decision: is sequencing carried as a derived field | A decision. **Sharper after 02-09**, since Ian has now ruled that everything in a target vertical is a target and only the order differs, which leaves sequencing with nowhere to live unless it is a field | Ian |
+| ~~Whether the 18 "no card program, no plan" accounts belong on the register at all~~ | **Answered 02-09: they stay, and none of them should have scored DQ.** Ian withdrew the §8.1.8 band outright, so the 6 currently disqualified return to the working list | Closed |
 | Greenfield variants of the three persona scaffolds | Interview 3 | Both |
 | What TXN sells that this offer does not cover | One line. "Nothing" is a complete answer | Ian |
 | The employee band ruling: 10 to 5,000, or 20 to 2,000 | A decision. [[icp-definition]] v0.4 and Core Messaging v2.5 disagree, and the older figure filters out the seed-stage fintechs v0.4 deliberately brought into scope | Ian |
@@ -129,4 +260,10 @@ Positioning material from interview 1 (tagline, value proposition) is deliberate
 | Head of Payments and Risk & Compliance personas | Decision on whether they get standalone documents | Ian |
 | Route 2 worked examples: who moved a next product, and what the incumbent could not do | Ian's recall or records | Ian |
 | Whether BIN lookup resolves reliably across Europe as a research signal | Research | Novosapien |
+| The three-state target matrix: legitimate target, priority target now, disqualified | Ian's explicit ask on 02-09. One page | Novosapien |
+| A table of which offer items are actually settled | Dorte's ask on 02-09. The 14-of-85 count Brett disputed needs replacing with a list she can check | Novosapien |
+| Whether the next session finishes the offer or moves to content | A decision, due 03-09 | Both |
+| Vertical and use case pairs, with card-as-core or card-as-value-add marked on each | Ian's conclusion on 02-09. It decides whether the two-stage sale applies | Both |
+| Whether the workforce can run stage one of the two-stage sale | A configuration decision, not an offer question. [[open-questions]] #76 | Novosapien |
+| Something Dorte believes she still owes from the previous session | Neither side can name it. Raised twice on 02-09, unresolved | Dorte |
 | Reconciling this corpus's sequencing rules with [[commercial]], which records outbound as sequenced behind the launch | Both, once the series closes | Both |

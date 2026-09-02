@@ -1,5 +1,5 @@
 ---
-description: "TXN's own Ideal Customer Profile: firmographics, triggers, anti-profile, the ten-parameter scoring framework, tiering, and the Named Account List method"
+description: "TXN's ICP v0.4 in full: firmographics, anti-profile, ten-parameter scoring, tiering and Named Account List method, plus the gating rules Ian overturned on 02-09"
 ---
 
 # TXN ICP Definition (v0.4)
@@ -7,6 +7,15 @@ description: "TXN's own Ideal Customer Profile: firmographics, triggers, anti-pr
 > **Source of truth:** `TXN_GTM_ICP_Definition_v0.4.docx` in the outbound folder (`programming/txn/outbound`, mirrored at `shared/clients/txn/outbound`), delivered by Ian Johnson on 24 August 2026. This page is a readable mirror. Edit the source document, then re-mirror. Routed from [[outbound]].
 
 ---
+
+> [!warning] Three gating rules were overturned on 2 September 2026 and v0.4 has not been reissued
+> In [[2026-09-02-outbound-workforce-icp-qualification]] Ian read back his own disqualification bands and rejected three of them. **This page still shows v0.4 as written**, because it mirrors the source document and the source document has not changed. Treat the gating rules below as superseded, not current.
+>
+> 1. **§8.1.8 P7, "no card program and no stated plan to launch one", must not disqualify.** Greenfield companies emit no public signals, so absence of signal cannot be read as absence of opportunity.
+> 2. **§8.1.5 Regulatory Licence Status no longer gates.** Asked directly whether it still gates, Ian answered *"No."* §8.2 below still names it as one of four critical parameters.
+> 3. **§8.1.7's incumbent-contract DQ band is a scheduling rule, not a disqualification.** *"So don't disqualify them but move them down the list so that they're scheduled at a more appropriate time."*
+>
+> Ian has said he will feed the session output back into TXN's own GTM documents, which is the route by which this gets reissued. Tracked at [[open-questions]] #75.
 
 TXN Global
 Ideal Customer Profile
@@ -78,6 +87,11 @@ Companies looking for on-premises hosting of an issuer processor solution.
 Companies reported in the press as having difficulties with any local regulator, or under sanctions exposure.
 Companies with limited capital available for investment and operational expenses.
 Companies in active administration, insolvency, or pending wind-down.
+
+
+> **The tier 1 exclusion is about bureaucracy load, not size (02-09-2026).** Ian: *"the reason that that tier one banks are an exclusion is my experience is small companies are just not ready to do the the heavy lifting... you get landed with the most ridiculous amount of documentation and and bureaucracy that small companies are not built for."* The same reason covers governments and local governments.
+>
+> **Consequence: a tier 1 bank's wholly owned digital subsidiary cannot be excluded in advance.** It turns on how tightly the subsidiary is bound to the parent's compliance machinery, and Ian is explicit that *"I'm not sure you can do that without conversation."* So this is a qualification question for a human on a call, not a filter that discovery can apply. See [[2026-09-02-outbound-workforce-icp-qualification]].
 
 ## 8. Tiering
 Tiering governs how an account is treated across Marketing and Sales. Each account is assigned a tier based on a scoring framework (Section 8.1), subject to gating rules (Section 8.2), with the resulting tier defined in Section 8.3 and the associated actions in Section 8.4.
@@ -175,6 +189,8 @@ Aggregate scoring determines tier, but the following gating rules override the t
 Any match against the Anti-Profile (Section 7) disqualifies the account.
 A DQ band on any of the four critical parameters disqualifies the account: Sub-sector (8.1.2), Geography (8.1.4), Regulatory Licence Status (8.1.5), or Triggers (8.1.7).
 DQ bands on the remaining parameters contribute zero points but do not on their own disqualify the account. In particular, a DQ band on parameter P2 Company Size (fewer than 10 or more than 5,000 employees) is not a gating disqualifier: the account can still qualify as Priority 3 or higher if other parameters score sufficiently.
+
+> **Superseded in part, 02-09-2026.** Two of the four critical parameters named above no longer gate. **Regulatory Licence Status (8.1.5)** was withdrawn by Ian in one word when asked whether it still gates. **Triggers (8.1.7)** keeps its gate in principle, but its DQ band as written, a recently signed multi-year incumbent contract, is a **scheduling** rule and must not disqualify. Separately, the **8.1.8 P7** band ("no card program and no stated plan to launch one") is rejected outright, though it was never a gating parameter and so only ever cost points. Full reasoning and quotes at [[2026-09-02-outbound-workforce-icp-qualification]]; effect on the scored register at [[qualification-matrix]].
 
 ### 8.3 Tier Definitions
 | Tier | Total Score | Additional Rules |

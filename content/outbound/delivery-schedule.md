@@ -2,7 +2,7 @@
 description: "The Outbound Workforce delivery schedule: the session series, the technical deliverability build, domain warming and the platform setup sessions"
 ---
 
-# Outbound Workforce — Delivery Schedule
+# Outbound Workforce: Delivery Schedule
 
 > **Section:** [[outbound]] · **Index:** [[index]] · **Sibling engagement:** [[content-workforce]] · **Delivery:** [[delivery]]
 
@@ -16,8 +16,8 @@ The Outbound Workforce is a **separate engagement** from the agentic AI layer, c
 |--------|-----------|--------|
 | **The offer** | Tagline, value proposition, pricing model, positioning guardrails. The factual-claims universe everything else draws on | **Closed** in session 1, 24 August. See [[2026-08-24-outbound-workforce-interview-1-offer]] |
 | **The ICPs** | Tiered, signal-based company targets, doubling as the grading rubric for the lead database | **Held 25 August** and extracted in full: [[icp-definition]], [[prospecting-process]], [[qualification-matrix]], [[discovery-sources]] and the three persona scaffolds |
-| **Buyer personas** | Who the agents speak to and how, per ICP | **In progress**, two sessions on 27 August |
-| **Deliverability** | DKIM, DMARC and SPF on TXN's sending domains, then warming | **Not started.** Next week, w/c 1 September. Blocked on Jacob's contact details |
+| **Buyer personas** | Who the agents speak to and how, per ICP | **Moved offline 2 September.** No longer a workshop: Brett runs the build as a heavy lift, roughly half an hour of processing per persona, delivered as one HTML artifact for asynchronous review |
+| **Deliverability** | DKIM, DMARC and SPF on TXN's sending domains, then warming | **Still not started as of 2 September**, against a w/c 1 September plan. Sizing is now settled at **four or five domains**; the blocker moved from Jacob's contact details to **George owing Brett the domain hierarchy list** |
 | **Five agents** | Configured on TXN's ICP and messaging. **Email and LinkedIn only**, no voice | Not started. The proposal calls week 2 the heavy week |
 
 ## Session schedule
@@ -28,8 +28,25 @@ The Outbound Workforce is a **separate engagement** from the agentic AI layer, c
 | Tue 25 Aug | Interview 2: ICPs | **Held and extracted.** TXN's own GTM corpus loaded, the 126-account scored register analysed at [[qualification-matrix]], and a discovery source research pass recorded at [[discovery-sources]] |
 | Thu 27 Aug | Interview 3: buyer personas | **Booked** |
 | **Thu 27 Aug** | **Interview 4: second block, same day** | **Booked.** Takes the slot vacated by the Content Workforce session that moved to 1 September. Most likely a continuation of the persona set, since every session in this series has over-run; **confirm the subject before the session** |
-| **Next week, w/c 1 Sep** | **Technical: email domains and warming** | **To book.** With **Jacob**, who runs TXN's domains. Sets up the sending domains, DKIM, DMARC and SPF, and **starts the warming clock the same week**. Monday 31 August is the UK summer bank holiday, so the week runs Tuesday to Friday |
+| Tue 2 Sep | Additional interview: qualification and the ICPs | **Held, did not finish.** Three ICP gating rules overturned. See [[2026-09-02-outbound-workforce-icp-qualification]] |
+| **w/c 1 Sep** | **Technical: email domains and warming** | **Slipped.** Still unbooked on 2 September. With **Jacob**, who runs TXN's domains. Sets up the sending domains, DKIM, DMARC and SPF, and **starts the warming clock the same week**. Monday 31 August was the UK summer bank holiday, so the week runs Tuesday to Friday and half of it is already gone |
 | **Next week, w/c 1 Sep** | **Team login and platform setup** | **To book.** Gets the TXN team into the Outbound Workforce platform and set up |
+
+## The sending domains
+
+Sizing settled on 2 September ([[2026-09-02-outbound-workforce-icp-qualification]]). Ownership did not.
+
+| Item | Position |
+|------|----------|
+| Email addresses | **15 to 16**, carried forward from the earlier plan |
+| Addresses per domain | **Three** |
+| Domains needed | **Four or five** |
+| Shape | Variations on the primary, *"things like um this is txn.com, those kind of domains"* |
+| Who buys them | **Open.** Novosapien can create them, or TXN purchases directly |
+
+**The blocker is internal to Novosapien.** Brett: *"I need to just chase George. He needs to send that to me."* Dorte has now asked for the domain hierarchy twice, on 1 and 2 September, and she cannot make the buy-or-be-supplied decision without it: *"I just need to have the full picture till we can say we go either way and then we can talk to the other guys."*
+
+So a two-week clock that the vault has argued since 27 August should start immediately is waiting on a list one person owes another inside our own team. That is the cheapest item on the critical path and the one holding it up.
 
 ## Domain warming is the binding clock
 
@@ -75,4 +92,5 @@ The agreed launch sequence puts Direct Transact and Pay Corp channels first, the
 - **When does the 30-day go-live clock start?** Both GTM proposals carry a 30-day go-live guarantee and neither engagement has a stated start date on the record. The interviews have been running ahead of one.
 - **Who is Jacob?** He is named once, in the 24 August session, when Brett asked *"who runs your domains?"* and Dorte answered *"Jacob."* That is the entire record. **No surname, no email, and no confirmation of whether he sits inside TXN, at Pay Corp, or with an outsourced IT provider.** The domain session cannot be booked without it, and it is the gating step on a two-week clock that is meant to start next week. Ask Dorte.
 - **The AI layer is bundled into TXN's own licence fee**, per Ian on 24 August. Commercially material to Novosapien.
-- Register rows: [[open-questions]] #57 on the single committer, #63 on the September calendar.
+- **Warming has slipped and nothing has replaced the plan.** [[open-questions]] #64 counts eight working days to carry three engagements and an acceptance, and the domain session was the one item in it that runs unattended once started. It is now 2 September, the session is unbooked, and the clock has not begun.
+- Register rows: [[open-questions]] #57 on the single committer, #63 on the September calendar, #64 on the September window.

@@ -1,5 +1,5 @@
 ---
-description: "Analysis of TXN's scored account register v0.7: 126 accounts, tier and route distribution, and the maturity bias that puts effort on the routes TXN wins last"
+description: "Analysis of TXN's scored register v0.7: 126 accounts, tier and route distribution, and the maturity bias its own author confirmed and part-corrected on 02-09"
 ---
 
 # Qualification Matrix (v0.7)
@@ -62,11 +62,31 @@ Prospecting v0.6 §4.1.5, dated 19 August, adds an early-stage watch list for pr
 
 That is the same bias, named by its author six days before this session. The watch list is a partial answer: it catches pre-product companies before they reach the register at all (21 candidates, no auto-scoring, promoted on a defined trigger). It does not address the 32 greenfield companies already scored and sitting in Tier 2 and Tier 3.
 
+## Confirmed by its author, 2 September 2026
+
+The finding above was Novosapien's reading of a client document. It is not any more. On [[2026-09-02-outbound-workforce-icp-qualification]] Ian read back his own disqualification bands, without reference to this analysis, and rejected the one that produces the bias:
+
+> *"it can't be a disqualifier that there's no signal that somebody is planning to launch a car[d] program."*
+
+> *"green field companies often there are no public signals... How would we know? There's a could be a bunch of people planning to launch a car[d] program. We have absolutely no idea they're going to do it, but they fit squarely in verticals that we believe are use cases that are applicable."*
+
+He also named the behaviour the framework produces, in the same terms this page used a week earlier:
+
+> *"if the assumption is everybody that could ever launch a... card program or is considering launching a car[d] program has already... has a processor, that's obviously not correct."*
+
+**And he inverted the ranking this register produces.** His one correction to the target matrix on that call:
+
+> *"in a target vertical no evidence of a program no evidence in market is higher than has a program contract position open or or unknown."*
+
+Against the v0.7 distribution above, that is a straight reversal. Greenfield averages 61.7 and holds 2 of 22 Priority 1 places; migration averages 74.4 and holds 17. Ian is asking for the first group to rank above at least part of the second.
+
+**What this does not settle.** The gap is not one parameter, so withdrawing the P7 band does not close it: P7 is worth at most 4 points of the 12.7-point spread, and the remainder sits in licence status, scheme and BIN sponsor signal, and program scale, all of which still reward maturity. Ian withdrew the licence-status **gate**, not its points. So the register will still rank migration above greenfield after a straight application of his rulings, and the sequencing overlay this page proposed is still the thing that actually fixes it.
+
 ## Open questions this raises
 
 | Question | Note |
 |----------|------|
 | Does sequencing get expressed as a Route field, or stay a judgement when working the list? | Route is derivable from Incumbent Processor today. It is not surfaced, and tier actions cannot see it |
-| Should the 18 "no card program, no plan" accounts be on the register? | [[icp-definition]] §8.1.8 scores them DQ, but P7 is not a gating parameter, so 12 survive as Priority 2 and 3 |
+| ~~Should the 18 "no card program, no plan" accounts be on the register?~~ | **Answered 02-09: yes, and none of them should have been scored DQ.** Ian rejected the §8.1.8 band outright. All 18 stay, and the 6 currently disqualified return to the working list |
 | Does Timing Fit already carry the sequencing role? | 102 OK, 22 Watch, 2 Deferred. It sequences by *when* a program is due, not by which route the account arrives on |
-| Should ICP v0.4 be reissued to match the workbook? | The P7 band, Timing Fit, Card Program Category and Card Program Target Date are all live in v0.7 and undocumented in v0.4 |
+| Should ICP v0.4 be reissued to match the workbook? | **Now overdue on two counts.** The P7 band, Timing Fit, Card Program Category and Card Program Target Date are live in v0.7 and undocumented in v0.4; and as of 02-09 three of v0.4's gating rules are withdrawn. Ian has said he will feed the session output back into the GTM documents. Tracked at [[open-questions]] #75 |
