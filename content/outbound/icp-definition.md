@@ -37,6 +37,8 @@ FinTech, Banking, Financial Services, Retail.
 ### 4.2 Sub-sectors
 Digital Banking, Expense Management, Lending (SMB), Lending (Consumer), FX Payments, Investment Management, Disbursement, Payments, BaaS, Retail, Ecommerce, Crypto.
 
+> **This list mixes two kinds of thing, and Ian said so on 3 September.** *"When I use the expression industry verticals, it's a bit of a mishmash of a true industry vertical and really a use case. So when you say digital banking or expense management, they're not really verticals, they're use cases."* Investment Management is an industry; Expense Management is a use case whose only providers are companies built around it. The point was raised and deliberately banked rather than acted on, so the list below is unchanged and the tagging at 4.2.1 is applied across the mixture. Tracked at [[open-questions]] #79, source at [[2026-09-03-outbound-workforce-icp-statuses]].
+
 #### 4.2.1 Card-essential or card-adjacent
 
 Tagged by Ian, 3 September 2026. **This tagging is what separates status S3 from status S4** (see 8.1.12), so it is load-bearing rather than descriptive. The operational test is Ian's own: **if you went without a card, would the product look odd?**
@@ -111,7 +113,7 @@ Any match on the anti-profile is an automatic disqualification regardless of agg
 Tiering governs how an account is treated across Marketing and Sales. Each account is assigned a tier based on a scoring framework (Section 8.1), subject to gating rules (Section 8.2), with the resulting tier defined in Section 8.3 and the associated actions in Section 8.4.
 
 ### 8.1 Scoring Framework
-Each account is scored across ten parameters to a total of 100 points. **Card Program Status carries the largest single weight**, because Ian ruled on 3 September 2026 that where a company sits relative to having a card program is the top-level determinant, though not a single determining factor on its own. Geography is weighted above the standard firmographic fields because the GTM phasing governs outbound effort.
+Each account is scored across ten parameters to a total of 100 points. **Card Program Status carries the largest single weight**, because Ian ruled on 3 September 2026 ([[2026-09-03-outbound-workforce-icp-statuses]]) that where a company sits relative to having a card program is the top-level determinant, though not a single determining factor on its own. Geography is weighted above the standard firmographic fields because the GTM phasing governs outbound effort.
 
 > **Rebalance provisional, Ian to confirm.** Card Program Status replaces the retired Incumbent Processor Signal, which freed 8 points and needed 20. The remaining 12 were taken from Triggers, on the reasoning that Status now encodes most of what Triggers was measuring, so leaving Triggers at 20 paid an account twice for the same fact. The total still reaches 100. Any other split of the 12 is Ian's to make.
 

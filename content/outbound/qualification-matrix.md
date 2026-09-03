@@ -82,6 +82,8 @@ Against the v0.7 distribution above, that is a straight reversal. Greenfield ave
 
 > **Resolved at the framework level on 3 September.** Ian retired the Incumbent Processor Signal outright and made **Card Program Status** the top-level parameter, with first-program-where-card-is-core ranking first. That removes the mechanical cause measured on this page and inverts the ordering. **The numbers above are not restated by it**, because they describe the v0.7 register as scored, and the register has not been rescored against the new framework. Until it is, the tiers driving the ABM motion are the old ones. [[open-questions]] #77.
 
+> **And it has already shown itself, 03-09.** A cohort test run across the four MVP markets was shown to the client and **Dorte spotted a bank at Priority 1**, which the anti-profile forbids outright ([[2026-09-03-outbound-workforce-icp-statuses]]). Brett confirmed the cause and committed to a rerun. The run took roughly **12 hours** for four markets, which is the planning figure for a full rescore.
+
 **What this does not settle.** The gap is not one parameter, so withdrawing the P7 band does not close it: P7 is worth at most 4 points of the 12.7-point spread, and the remainder sits in licence status, scheme and BIN sponsor signal, and program scale, all of which still reward maturity. Ian withdrew the licence-status **gate**, not its points. So the register will still rank migration above greenfield after a straight application of his rulings, and the sequencing overlay this page proposed is still the thing that actually fixes it.
 
 ## Open questions this raises

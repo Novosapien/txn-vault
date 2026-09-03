@@ -28,11 +28,11 @@ The Outbound Workforce is a **separate engagement** from the agentic AI layer, c
 | Tue 25 Aug | Interview 2: ICPs | **Held and extracted.** Corpus loaded, 126-account register analysed at [[qualification-matrix]] |
 | Thu 27 Aug | Interview 3: the offer, session 2 | **Held.** [[2026-08-27-outbound-workforce-offer-session-2]] |
 | **Wed 2 Sep** | **Session 4: qualification and the ICPs** | **Held, did not finish.** [[2026-09-02-outbound-workforce-icp-qualification]]. Three ICP gating rules overturned; the session then degraded and Brett ended it to restart in a fresh context window |
-| **Fri 4 Sep** | **Session 5** | **To book.** Brett has asked Dorte to try for Friday |
+| Thu 3 Sep | Session 5: the four statuses | **Held.** Took the Content Workforce slot. [[2026-09-03-outbound-workforce-icp-statuses]]. The ICPs are closed; personas run offline from here |
 | **w/c 1 Sep** | **Technical: email domains and warming**, with Jacob | **Slipped.** Still unbooked on 3 September. Starts the two-week clock, so every day of delay is a day of elapsed time that cannot be recovered |
 | **w/c 1 Sep** | **Team login and platform setup** | **To book** |
 
-**Two more sessions are needed and one is booked.** Per Brett, 28 August: the Wednesday session is in the diary, and Friday would be the ideal slot for the second. That closes the interview series before the personal Content Workforce sessions start the following week.
+**The interview series is effectively closed.** Both sessions happened, on 2 and 3 September, and the second took the Content Workforce slot rather than a Friday one. What remains is offline: Brett builds the ICPs and personas as one artifact for asynchronous review. **The cost sits on the other engagement**, where the pillars and brand entity have now moved four times ([[content-workforce]]).
 
 ## The sending domains
 
@@ -46,7 +46,7 @@ Sizing settled on 2 September ([[2026-09-02-outbound-workforce-icp-qualification
 | Shape | Variations on the primary, *"things like um this is txn.com, those kind of domains"* |
 | Who buys them | **Open.** Novosapien can create them, or TXN purchases directly |
 
-**The blocker is inside Novosapien, not at TXN.** Brett, 2 September: *"I need to just chase George. He needs to send that to me."* Dorte has asked for the domain hierarchy twice and cannot make the buy-or-be-supplied decision without it: *"I just need to have the full picture till we can say we go either way and then we can talk to the other guys."*
+**The blocker is inside Novosapien, not at TXN.** Brett, 2 September: *"I need to just chase George. He needs to send that to me."* **Still outstanding on 3 September**, and now explicitly late: *"George was meant to write it up last night for me, were all the various instructions around the domains"* ([[2026-09-03-outbound-workforce-icp-statuses]]). Three days lost on a two-week clock. Dorte has asked for the domain hierarchy twice and cannot make the buy-or-be-supplied decision without it: *"I just need to have the full picture till we can say we go either way and then we can talk to the other guys."*
 
 So a two-week clock the vault has argued since 27 August should start immediately is waiting on a list one person owes another inside our own team. It is the cheapest item on the critical path and the one holding it up.
 

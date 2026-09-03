@@ -38,11 +38,16 @@ Content Workforce only. The Outbound schedule lives at [[delivery-schedule]]; th
 | Fri 21 Aug | Interview 2: booked as the brand entity | **Held, and it did not do what it was booked for.** The hour completed the **manifesto**. See [[2026-08-21-content-workforce-interview-2]] |
 | ~~Thu 27 Aug~~ | ~~Pillars and brand entity~~ | Moved. The slot went to a second Outbound session |
 | ~~Tue 1 Sep~~ | ~~Pillars and brand entity~~ | Moved again (27-08 plan) |
-| **Thu 3 Sep** | **Content Workforce session, one hour** | **Booked.** Subject to confirm, see the note below |
+| ~~Thu 3 Sep~~ | ~~Content Pillars Workshop~~ | **Held as an Outbound session.** Booked and recorded as the pillars workshop; Brett switched it at the start. Fourth displacement. See [[2026-09-03-outbound-workforce-icp-statuses]] |
+| **TBC** | **Pillars and brand entity** | **To rebook**, a fourth time. Brett, 03-09: *"I'll find another gap with Dorte on your diary to finish off the last section of the content workforce"* |
 | **w/c 7 Sep** | **Dorte and Ian personal workforces**, two one-hour sessions each | **To book.** Dorte to give times for both |
 | **From 15 Sep** | **Michael's personal workforce**, two one-hour sessions | **After his return.** He is away 3 to 15 Sep. Documents already sent to Brett, review next week |
 
-> **One item to confirm before Thursday.** The 28 August instruction named a one-hour Content Workforce session on Thursday but the subject came through garbled. It is most likely the outstanding **pillars and brand entity** work, which has now moved twice and is the only Content Workforce item still open at company level. **Confirm before the session** rather than assume; an hour is enough for the pillars alone and tight for both.
+> **Resolved, and not well.** The Thursday session was the pillars and brand entity work. Ian asked mid-session which engagement he was in: *"is this a content workforce session or an outbound session?"* Brett: *"This is outbound... I've switched it to outbound because yesterday's one just didn't land and we need these ICPs."*
+>
+> **That is a fourth displacement, and the trade has changed shape since 27 August.** The 27 August swap was justified on a clear argument: domain warming is the only clock that cannot be recovered by working harder, so three days of content slip bought a fortnight of warming. **The warming has still not started**, the domain instructions are three days late ([[delivery-schedule]]), and the pillars have now been moved four times. The reason given for the first swap has not been realised, and the same reason cannot justify the later ones.
+>
+> **What it costs is specific.** TXN gets no access to the Content Workforce platform until all three outputs are uploaded, and the pillars and brand entity are the only two outstanding. So each displacement extends the period in which TXN has paid for a platform it cannot see. And on 3 September Ian and Brett agreed that **the team's own networks are the most likely source of the first client**, ahead of cold outbound ([[outbound]]), which is the engagement that keeps taking the slot.
 
 ### The personal content workforces
 

@@ -1,5 +1,5 @@
 ---
-description: "Outbound Workforce engagement: TXN's GTM corpus, the three routes, the qualification rulings and targeting model, the two-stage sale, and the interview series"
+description: "Outbound Workforce engagement: TXN's GTM corpus, the four card program statuses, the qualification rulings, the two-stage sale, and the interview series"
 ---
 
 # Outbound Workforce
@@ -32,29 +32,103 @@ The seven documents previously recorded here as unmirrored are now mirrored, and
 
 **Original source folder:** `programming/txn/outbound`, mirrored at `shared/clients/txn/outbound`. Delivered by Ian 24 August 2026.
 
-## The three routes to a client
+## The four statuses
 
-Established by Ian in the ICP interview on 25 August 2026. Every prospect arrives by one of three routes, and they are not variations of one motion.
+Settled by Ian on 3 September 2026 ([[2026-09-03-outbound-workforce-icp-statuses]]) and carried straight into [[icp-definition]] as **Card Program Status**, the top-weighted parameter. This supersedes the three-route model below, which it grew out of.
 
-| Route | Description | Dominant pain |
-|-------|-------------|---------------|
-| **1. No incumbent** | Has never issued a card program. Splits underneath into card-as-core-product and card-as-value-add | **Exposure.** Never done this, does not know what it does not know |
-| **2. Next product elsewhere** | Already live with an incumbent, deliberately placing its *next* product with someone else. Drivers: regional coverage, product capability | **Constraint.** Not unhappy, specifically unable |
-| **3. Full switch** | Moving every product across to a new processor | **Entrapment.** Cumulative dissatisfaction, blocked by migration risk |
+Every prospect is in one of four states relative to having a card program. They are **statuses, not company types**: what separates them is where a company is, not who it is, so the vertical list beneath each is identical.
 
-### Route 1 leads, and the reason is track record
+| Rank | Status | Description | Why it ranks here |
+|------|--------|-------------|-------------------|
+| **1** | **S3, first program, card is core** | No card program yet, needs one as part of the core product | **Certainty.** *"you're 100% sure that they're going to do it. The only way they don't do it is if the company just doesn't exist."* It is also the case TXN's proposition is built for, launching without card expertise |
+| **2** | **S2, new program, incumbent stays** | Already live with an incumbent, placing its *next* product elsewhere | **Reversible.** *"they might change their mind about launching a new program and it makes no difference because they've already got one."* Discounted for reversibility, not for fit |
+| **3** | **S4, industry inference** | No card program and no stated plan, in a vertical where a named peer runs a program against a use case that would work here | **A different sale.** *"there's a period of convincing in the value of the card program before you get into [why] TXN."* Stage one of the two-stage sale applies here |
+| **4** | **S1, full switch** | Moving every product across to a new processor | **Reputation, pursuit cost and missing tooling.** See below |
 
-Ian, 25-08: *"Changing or adding a processor is not a small undertaking. So if you're going to do that, it's highly unlikely that you're going to do that with somebody that has no market track record. You're much more likely to do that if you are launching a card programme for the very first time."* Asked which route TXN wins first: *"undoubtedly number 1."*
+### How three became four
 
-Note the wording covers *changing or adding*, so route 2 takes the same hit as route 3, only softer. Routes 2 and 3 become winnable as a function of reference customers, not product capability. That is a sequencing rule, not a preference.
+Ian broke the old model in one sentence: *"no incumbent, next product elsewhere, full switch. I don't see how that can be true. How can you have a full switch or the next product elsewhere without an incumbent?"*
+
+Two corrections followed. **Route 1 splits in two**, because a company whose card is core to its product and a company inferred into scope from its industry are different sales. **Routes 2 and 3 belong together at the top level**, both presupposing an incumbent, and then split again because the migration question makes them different motions:
+
+> *"there's a whole different set of key questions that they will have in qualifying TXN which are very heavily focused on the risk of migrating card holder data from one provider to another, which they don't have if they're just launching a new card program and keeping the incumbent in place."*
+
+Ian was explicit that these are not necessarily ICPs and that he does not mind the label: *"I just think it's four statuses almost of where a company is in launching a card program, where we might find them."* And on placement: *"I consider this to be the very top level of one of the ICP parameters... I don't think it's the single determining factor, but I think it's at the top level."* That is why Card Program Status carries the largest weight and **gates nothing**.
+
+### Full switch is last for three separate reasons
+
+**Reputation.** Dorte: *"we need to build up the reputation before anyone would switch their full [book]."* This is the same track record constraint established on 25 August.
+
+**Pursuit cost, and it is the tier 1 rule applied to a status.** Ian: *"full switch falls into the same category as going after a tier one bank for me. The resource effort it takes up in trying to win it means that you take your eye off the ball on the other ones that are more greenfield that you've got a higher percentage likelihood of being able to (a) win and (b) service."* The anti-profile excludes tier 1 banks because a small company cannot carry the pursuit; the same arithmetic deprioritises the full switch.
+
+**Missing product.** Ian: *"we also have to build some tools to make it easier. People will expect that. They won't expect the old 15 year old approach to migration."* **TXN has no migration tooling.** That is a product gap sitting underneath a GTM ranking, and it means S1 cannot be reprioritised by decision alone. [[open-questions]] #78.
 
 ### Sequencing is not fit
 
-Ian, 25-08, correcting an earlier framing in this engagement: an ICP is who the ideal customer is; targeting order is who you go after first. They are different questions. Trade Republic, currently with Marqeta, is an ideal customer on fit and Ian would want to win it. It is not a first-wave target. ICP v0.4 weights launching and migrating equally, and that is **correct as a fit statement**. It does not conflict with route 1 leading.
+Ian, 25-08, and it still holds: an ICP is who the ideal customer is; targeting order is who you go after first. Trade Republic, currently with Marqeta, is an ideal customer on fit and Ian would want to win it. It is not a first-wave target.
+
+### The model this replaced
+
+Kept because the reasoning behind it is still the reasoning, and because [[qualification-matrix]] and the scored register both use it.
+
+| Route (25-08) | Maps to |
+|---------------|---------|
+| **1. No incumbent.** Never issued a card. *"Exposure."* | Splits into **S3** and **S4** |
+| **2. Next product elsewhere.** Live with an incumbent, placing the next product elsewhere. *"Constraint."* | **S2** |
+| **3. Full switch.** Moving everything. *"Entrapment."* | **S1** |
+
+Ian on 25-08, on why route 1 led: *"Changing or adding a processor is not a small undertaking. So if you're going to do that, it's highly unlikely that you're going to do that with somebody that has no market track record."* Asked which route TXN wins first: *"undoubtedly number 1."* The four-status order keeps that answer and sharpens it, since the top two ranks are the two halves of what was route 1 and what was route 2.
+
+## What is a vertical, and what is a use case
+
+**Raised by Ian on 3 September and deliberately not acted on.** It is recorded here because it was banked on the call rather than written into the ICP, and banked things go missing.
+
+> *"when I use the expression industry verticals, it's a bit of a mishmash of a true industry vertical and really a use case. So when you say digital banking or expense management, they're not really verticals, they're use cases."*
+
+The contrast that shows the problem:
+
+- **Investment and wealth management** is a real industry vertical. The card inside it is *"just a bog standard payment card, there's nothing special about it."*
+- **Expense management** is not a vertical at all. *"The only people who offer expense management are people who that's their core business."* The use case is the company.
+
+So a card from a trading platform *"looks very similar to one that's offered as part of a digital banking offering, or a travel card type thing."* Each status has a **one-to-many** relationship with these, so the confusion propagates down the whole framework.
+
+> *"We are going to need to get clarity on what constitutes being an industry vertical and what is a use case."*
+
+[[icp-definition]] §4.2 still lists both kinds of thing in one Sub-sector list, and §4.2.1's card-essential tagging is applied across that mixed list. Tracked at [[open-questions]] #79.
+
+### The scope line Ian drew while explaining it
+
+Useful, and it bounds both S4 and the discovery research:
+
+> *"it's not that we're going to look at different industry verticals and say, 'do you know what, they could be a good bet for having a card program.' Because that's really right at the start of the thing and we don't have the capacity to do it... That's trying to create your own proposition for an industry that you're not actually in and then go and test it. That's not what we're here to do."*
+
+**TXN is not inventing card use cases in untouched verticals.** The verticals on the list are there because programs are known to exist in them, so S4 is bounded to verticals with observed precedent.
+
+## Where the first client comes from
+
+Settled on 3 September, and it reorders the two engagements by expected value.
+
+| Rank | Route | Note |
+|------|-------|------|
+| **1** | **The team's own networks** | Brett: *"your LinkedIn profiles know of you... you've already established that trust within that network rather than completely cold."* Ian: *"I tend to agree that seems to feel like it's probably the most likely"* |
+| **2** | **Schemes and BIN sponsors** | Run directly by Ian and Dorte, outside this workforce |
+| **3** | **Cold outbound** | This engagement |
+
+Ian was candid about why Novosapien is engaged at all: *"Neither none of us are prolific posters of content on LinkedIn. Frankly, it's very low on the list of things that I have time to do. Hence the engagement with you guys."*
+
+**The consequence is worth stating.** The [[content-workforce]] amplifies a network that already exists and is ranked first; the Outbound Workforce builds one from cold and is ranked third. Both are running in parallel, and the Content Workforce outputs have now slipped four times. Consistent with [[commercial]], which already sequences outbound behind the launch.
+
+### Ian's parallel research, and a warm route
+
+Ian has been running his own work in Claude on the **investment and wealth management** vertical, structured exactly as the two-stage sale: why businesses in that sector launched card programs and what was in it for them, then why choose TXN.
+
+He will send it, with a caution: *"I think you need to read it before you decide whether to feed it in... What I don't want to do is interfere with any of this."* The plan is to compare it against the generated ICPs rather than merge it in.
+
+**The reason he is doing it is commercially material:** *"we've got some potential referrals or introductions within the investment and wealth management vertical."* First warm route recorded on this engagement.
 
 ## Qualification: what disqualifies, and what only reschedules
 
-Settled by Ian on 2 September 2026 ([[2026-09-02-outbound-workforce-icp-qualification]]). This is the most consequential change to the GTM corpus since it arrived.
+Settled by Ian on 2 September 2026 ([[2026-09-02-outbound-workforce-icp-qualification]]), and the groundwork for the four statuses above.
 
 > **Carried into [[icp-definition]] on 3 September**, along with a wider rewrite that made **Card Program Status** the top-level parameter and **retired the Incumbent Processor Signal**. The rulings below are therefore settled rather than pending. They are kept here because the reasoning is the reasoning behind the rewrite, and because the **126-account register has not been rescored** against it ([[open-questions]] #77).
 
@@ -94,7 +168,7 @@ Ian's own funnel, stated in full at the end of the 2 September session.
 |------|--------|--------------|
 | **1** | **Region.** TXN operates in Europe | *"you can discount all of those bunch gone"* |
 | **2** | **Verticals with card use cases that exist today** | *"if you're... petrochemical or or whatever it might be out"* |
-| **3** | **State.** Where the company sits in the cycle | This is where the three routes apply |
+| **3** | **State.** Where the company sits in the cycle | This is where the four statuses apply |
 
 Company size does not filter at any step: *"if you're a startup thinking of launching the card program then we we work with you."*
 
@@ -102,9 +176,9 @@ Company size does not filter at any step: *"if you're a startup thinking of laun
 
 > *"Everybody in those verticals is a target. It's the prioritization of those targets and the scheduleuling [scheduling] of them that's the most important thing."*
 
-### Verticals do not vary by route
+### Verticals do not vary by status
 
-Ian said this three times on 2 September and it is the point the working session kept losing. The three routes are **states a company is in**, not kinds of company, so the vertical list beneath each one is identical.
+Ian said this three times on 2 September and it is the point the working session kept losing. The statuses are **states a company is in**, not kinds of company, so the vertical list beneath each one is identical. The 3 September session turned three into four without changing this: it still holds across all four.
 
 > *"proposed verticals will be the same irrespective of whether or not it's one, two or three on the ICP."*
 
@@ -232,6 +306,7 @@ Related: [[persona-champion]] §7 lists the objection *"What is your track recor
 | 25-08-2026 | Interview 2, the ICPs | This page | In progress |
 | 27-08-2026 | Offer session 2 | [[2026-08-27-outbound-workforce-offer-session-2]] | Eight decisions taken. Mechanism block moved offline to Dorte |
 | 02-09-2026 | Additional interview: qualification and the ICPs | [[2026-09-02-outbound-workforce-icp-qualification]] | **Did not finish.** Three ICP gating rules overturned, targeting model and two-stage sale settled |
+| 03-09-2026 | The four statuses (held in the Content Workforce slot) | [[2026-09-03-outbound-workforce-icp-statuses]] | **Closed the ICPs.** Card Program Status settled and carried into [[icp-definition]] the same day |
 | TBC | Interview 3, the Personas | Not yet held | **Moved offline.** Brett runs the persona build as a heavy lift, roughly half an hour each, delivered as one HTML artifact for async review |
 
 Positioning material from interview 1 (tagline, value proposition) is deliberately held until the series closes, so it lands as one piece rather than in fragments.
@@ -268,4 +343,8 @@ Positioning material from interview 1 (tagline, value proposition) is deliberate
 | Vertical and use case pairs, with card-as-core or card-as-value-add marked on each | Ian's conclusion on 02-09. It decides whether the two-stage sale applies | Both |
 | Whether the workforce can run stage one of the two-stage sale | A configuration decision, not an offer question. [[open-questions]] #76 | Novosapien |
 | Something Dorte believes she still owes from the previous session | Neither side can name it. Raised twice on 02-09, unresolved | Dorte |
+| Define what is a vertical and what is a use case | Ian raised it 03-09 and it was banked, not written into the ICP. [[open-questions]] #79 | Both |
+| SOC 2 and ISO status for Direct Transact, and TXN's own position | A factual check. PCI is confirmed as DT's, and TXN holds nothing itself. [[open-questions]] #80 | Ian |
+| Ian's parallel investment and wealth management research | To be sent, read, then compared rather than merged in | Ian |
+| Rerun the scored register against the new ICP | A test run put a bank at Priority 1, which the anti-profile forbids. [[open-questions]] #77 | Novosapien |
 | Reconciling this corpus's sequencing rules with [[commercial]], which records outbound as sequenced behind the launch | Both, once the series closes | Both |
