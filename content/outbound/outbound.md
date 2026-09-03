@@ -54,7 +54,9 @@ Ian, 25-08, correcting an earlier framing in this engagement: an ICP is who the 
 
 ## Qualification: what disqualifies, and what only reschedules
 
-Settled by Ian on 2 September 2026 ([[2026-09-02-outbound-workforce-icp-qualification]]). This is the most consequential change to the GTM corpus since it arrived, and it moves three rules that [[icp-definition]] v0.4 currently states as gates.
+Settled by Ian on 2 September 2026 ([[2026-09-02-outbound-workforce-icp-qualification]]). This is the most consequential change to the GTM corpus since it arrived.
+
+> **Carried into [[icp-definition]] on 3 September**, along with a wider rewrite that made **Card Program Status** the top-level parameter and **retired the Incumbent Processor Signal**. The rulings below are therefore settled rather than pending. They are kept here because the reasoning is the reasoning behind the rewrite, and because the **126-account register has not been rescored** against it ([[open-questions]] #77).
 
 ### The governing principle
 
@@ -82,7 +84,7 @@ His worked example: in the trading platform vertical, **Trading 212** and **Trad
 
 [[qualification-matrix]] recorded on 25 August that the framework is structurally a measure of card program maturity, right for fit and a poor proxy for winnability. Ian reached the same conclusion from his own side a week later, without reference to that analysis. The finding is no longer Novosapien's reading of a client document; it is the author saying his document does not do what he wants.
 
-**It does not fix itself, though.** P7 is worth at most 4 of the 12.7-point gap between greenfield and migration accounts, and Ian withdrew the licence-status *gate* rather than its points. The register will still rank migration above greenfield after his rulings are applied, so the sequencing overlay proposed below is still the mechanism that closes it.
+**These three rulings would not have fixed it on their own.** P7 is worth at most 4 of the 12.7-point gap between greenfield and migration accounts, and Ian withdrew the licence-status *gate* rather than its points. What actually closes it is the 3 September rewrite, which retired the parameter entirely and put Card Program Status at the top. **On paper.** The register is still scored on the old weights, so nothing has moved in the list anyone is working from.
 
 ## The targeting model
 
@@ -245,7 +247,7 @@ Positioning material from interview 1 (tagline, value proposition) is deliberate
 | Item | Needs | Who |
 |------|-------|-----|
 | ~~The scored register of the 126 accounts~~ | **Delivered 25-08 as v0.7.** Analysis at [[qualification-matrix]] | Closed |
-| Reissue [[icp-definition]]: **now overdue on two counts.** The P7 "Planning to Launch" band, Timing Fit, Card Program Category and Card Program Target Date are live in v0.7 and undocumented in v0.4; and as of 02-09 three of v0.4's gating rules are withdrawn | A version bump. Ian has stated the route: he feeds the session output back into the GTM documents. [[open-questions]] #75 | Ian |
+| ~~Reissue [[icp-definition]]~~ | **Done 03-09**, and further than asked: Card Program Status becomes the top-level parameter and the Incumbent Processor Signal is retired. **What replaces it: the 126-account register has not been rescored** against the new weights, and the 12 points moved off Triggers are provisional. [[open-questions]] #77 | Closed |
 | Route attribute decision: is sequencing carried as a derived field | A decision. **Sharper after 02-09**, since Ian has now ruled that everything in a target vertical is a target and only the order differs, which leaves sequencing with nowhere to live unless it is a field | Ian |
 | ~~Whether the 18 "no card program, no plan" accounts belong on the register at all~~ | **Answered 02-09: they stay, and none of them should have scored DQ.** Ian withdrew the §8.1.8 band outright, so the 6 currently disqualified return to the working list | Closed |
 | Greenfield variants of the three persona scaffolds | Interview 3 | Both |

@@ -80,6 +80,8 @@ He also named the behaviour the framework produces, in the same terms this page 
 
 Against the v0.7 distribution above, that is a straight reversal. Greenfield averages 61.7 and holds 2 of 22 Priority 1 places; migration averages 74.4 and holds 17. Ian is asking for the first group to rank above at least part of the second.
 
+> **Resolved at the framework level on 3 September.** Ian retired the Incumbent Processor Signal outright and made **Card Program Status** the top-level parameter, with first-program-where-card-is-core ranking first. That removes the mechanical cause measured on this page and inverts the ordering. **The numbers above are not restated by it**, because they describe the v0.7 register as scored, and the register has not been rescored against the new framework. Until it is, the tiers driving the ABM motion are the old ones. [[open-questions]] #77.
+
 **What this does not settle.** The gap is not one parameter, so withdrawing the P7 band does not close it: P7 is worth at most 4 points of the 12.7-point spread, and the remainder sits in licence status, scheme and BIN sponsor signal, and program scale, all of which still reward maturity. Ian withdrew the licence-status **gate**, not its points. So the register will still rank migration above greenfield after a straight application of his rulings, and the sequencing overlay this page proposed is still the thing that actually fixes it.
 
 ## Open questions this raises
@@ -89,4 +91,4 @@ Against the v0.7 distribution above, that is a straight reversal. Greenfield ave
 | Does sequencing get expressed as a Route field, or stay a judgement when working the list? | Route is derivable from Incumbent Processor today. It is not surfaced, and tier actions cannot see it |
 | ~~Should the 18 "no card program, no plan" accounts be on the register?~~ | **Answered 02-09: yes, and none of them should have been scored DQ.** Ian rejected the §8.1.8 band outright. All 18 stay, and the 6 currently disqualified return to the working list |
 | Does Timing Fit already carry the sequencing role? | 102 OK, 22 Watch, 2 Deferred. It sequences by *when* a program is due, not by which route the account arrives on |
-| Should ICP v0.4 be reissued to match the workbook? | **Now overdue on two counts.** The P7 band, Timing Fit, Card Program Category and Card Program Target Date are live in v0.7 and undocumented in v0.4; and as of 02-09 three of v0.4's gating rules are withdrawn. Ian has said he will feed the session output back into the GTM documents. Tracked at [[open-questions]] #75 |
+| ~~Should ICP v0.4 be reissued to match the workbook?~~ | **Done 03-09, and it went further than a reissue.** [[icp-definition]] now leads on Card Program Status and **retires the Incumbent Processor Signal**, the parameter identified above as the mechanical cause of the bias. **The register has not been rescored**, so every tier in it still reflects the retired weights. [[open-questions]] #77 |

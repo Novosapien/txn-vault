@@ -249,6 +249,12 @@ Dorte's position on the ownership decision: *"at the moment either way I just ne
 
 ## Findings and where they landed
 
+> [!note] What happened next, 3 September
+> Ian reissued the ICP the following day, and went considerably further than these rulings. **Card Program Status becomes the top-level parameter**, with four statuses in priority order, and the **Incumbent Processor Signal is retired**: that was the parameter [[qualification-matrix]] identified as the mechanical cause of the greenfield bias, and its removal inverts it. **Company Size drops from 10 points to 3**, sub-scale companies come into scope, and the freed points go to Sub-sector, now carrying new **card-essential versus card-adjacent** tagging. The anti-profile becomes the only disqualification, with carve-outs for bank subsidiaries and non-EEA parents exactly as ruled here.
+>
+> So the three rulings recorded on this page are no longer pending. What they left behind is: the **126-account register is still scored on the retired weights** ([[open-questions]] #77), the 12 points moved off Triggers are **provisional and Ian's to reallocate**, and §8.3's tier bands were not brought forward with §8.2 and still refer to gates that no longer exist.
+
+
 ### Qualification rules
 
 | Finding | Destination | Action |
@@ -258,7 +264,7 @@ Dorte's position on the ownership decision: *"at the moment either way I just ne
 | Incumbent-contract DQ is a scheduling rule | [[icp-definition]], [[outbound]] | Superseding note; sequencing rule recorded |
 | The 18 "no card program, no plan" accounts stay on the register | [[qualification-matrix]], [[outbound]] | Open item closed |
 | Novosapien's 25-08 maturity-bias finding confirmed by its author | [[qualification-matrix]] | Recorded as client confirmation |
-| ICP v0.4's gating section is now substantially superseded and has no reissue date | [[open-questions]] | New row **#75** |
+| ICP v0.4's gating section is substantially superseded | [[icp-definition]] | **Actioned the next day.** Ian rewrote the ICP on 3 September, carrying all three rulings and going further. See below |
 
 ### Targeting model
 
@@ -289,7 +295,7 @@ Dorte's position on the ownership decision: *"at the moment either way I just ne
 | Domain sizing: 4 to 5 domains, 15 to 16 addresses, ownership open | [[delivery-schedule]] | Recorded, with George's list as the blocker |
 | Warming has not started, against a w/c 1 September plan | [[delivery-schedule]], [[open-questions]] | Slip recorded on **#64** |
 | Session did not complete; offer progress count disputed | [[outbound]] | Recorded; Dorte's ask for a settled-items table carried as an open action |
-| Ian will feed the output back to correct TXN's other GTM documents | [[outbound]], [[open-questions]] | The reissue route for **#75** |
+| Ian will feed the output back to correct TXN's other GTM documents | [[icp-definition]] | **He did, on 3 September**, within a day of saying it |
 
 ### Context, no action
 
