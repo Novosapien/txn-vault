@@ -1,5 +1,5 @@
 ---
-description: "TXN's own Ideal Customer Profile: firmographics, triggers, anti-profile, the ten-parameter scoring framework, tiering, and the Named Account List method"
+description: "TXN's Ideal Customer Profile: Card Program Status as the top parameter, the four statuses and their pains, firmographics, anti-profile and tiering"
 ---
 
 # TXN ICP Definition (v0.4)
@@ -83,20 +83,88 @@ Companies in active administration, insolvency, or pending wind-down.
 Tiering governs how an account is treated across Marketing and Sales. Each account is assigned a tier based on a scoring framework (Section 8.1), subject to gating rules (Section 8.2), with the resulting tier defined in Section 8.3 and the associated actions in Section 8.4.
 
 ### 8.1 Scoring Framework
-Each account is scored across ten parameters to a total of 100 points. Triggers carry the largest single weight because they are the strongest indicator of why now. Geography is weighted above the standard firmographic fields because the GTM phasing governs outbound effort.
+Each account is scored across ten parameters to a total of 100 points. **Card Program Status carries the largest single weight**, because Ian ruled on 3 September 2026 that where a company sits relative to having a card program is the top-level determinant, though not a single determining factor on its own. Geography is weighted above the standard firmographic fields because the GTM phasing governs outbound effort.
+
+> **Rebalance provisional, Ian to confirm.** Card Program Status replaces the retired Incumbent Processor Signal, which freed 8 points and needed 20. The remaining 12 were taken from Triggers, on the reasoning that Status now encodes most of what Triggers was measuring, so leaving Triggers at 20 paid an account twice for the same fact. The total still reaches 100. Any other split of the 12 is Ian's to make.
 
 ### 8.1.1 Weight Summary
 | # | Parameter | Source Section | Max |
-| 1 | Sub-sector / Use Case Fit | Section 4.2 | 10 |
-| 2 | Company Size (employees) | Section 4.3 | 10 |
-| 3 | Geography / Region Phase | Section 4.4 | 12 |
-| 4 | Regulatory Licence Status | Section 4.5 | 8 |
-| 5 | Ownership and Funding Stage | Section 4.6 | 8 |
-| 6 | Behavioural / Situational Triggers | Section 5 | 20 |
-| 7 | Incumbent Processor Signal | Section 6 | 8 |
+| **1** | **Card Program Status** | **Section 8.1.12** | **20** |
+| 2 | Sub-sector / Use Case Fit | Section 4.2 | 10 |
+| 3 | Company Size (employees) | Section 4.3 | 10 |
+| 4 | Geography / Region Phase | Section 4.4 | 12 |
+| 5 | Regulatory Licence Status | Section 4.5 | 8 |
+| 6 | Ownership and Funding Stage | Section 4.6 | 8 |
+| 7 | Behavioural / Situational Triggers | Section 5 | 8 |
 | 8 | Tech Stack and Engineering | Section 6 | 6 |
 | 9 | Scheme / BIN Sponsor Signal | Section 6 | 8 |
 | 10 | Card Program Scale and Ambition | Sections 3 and 4 | 10 |
+
+*Retired 3 September 2026: **Incumbent Processor Signal**, formerly parameter 7 at 8 points. It scored 8 for a confirmed named incumbent and 0 for "no card program and no stated plan", which ranked the four statuses in exactly the reverse of Ian's stated priority. It is replaced by Card Program Status rather than sitting alongside it.*
+
+### 8.1.12 Card Program Status (max 20)
+
+> **The number is deliberately out of sequence.** This is parameter 1 by weight and sits first for reading, but it takes the next free number rather than 8.1.2, because [[offer]], [[qualification-matrix]] and the cohort research all cite the existing 8.1.x numbers and renumbering would silently break every one of them.
+
+The top-level parameter. Ruled by Ian on 3 September 2026: where a company sits relative to having a card program is the highest-order determinant, though **not a single determining factor**, so it scores heavily and gates nothing.
+
+**There is no DQ band.** Every company in a target vertical lands in one of the five, consistent with the 2 September ruling that qualification inside a chosen vertical is near-universal and that timing, not exclusion, is what the framework should express.
+
+| Band | Status | Points | Definition |
+| A | **S3, first program, card is core** | 20 | No card program today, and a card is core to the product they are building or selling. |
+| B | **S2, new program, incumbent stays** | 16 | Has a program with an incumbent, and is launching an additional program, product or region. Nothing migrates. |
+| C | **S4, industry inference** | 10 | No card program and no stated plan, in a vertical where a named peer runs a program against a use case that would work here. |
+| D | **S1, full switch** | 5 | Has a program and is moving all of it. Cardholders and data migrate. |
+| E | **Static incumbent** | 3 | Has a program and shows no evidence of any change in motion. |
+
+**Why this order**, recorded because a ranking without its reasoning gets re-litigated:
+
+- **S3 leads on certainty.** Ian: *"you're 100 per cent sure they're going to do it. The only way they don't do it is if the company just doesn't exist."* It is also the exact proposition, which is running a card program without employing card experts.
+- **S2 is second** because the decision is made and it is a vendor selection, discounted only because they can change their mind at no cost: they already have a working program and nothing breaks if the new one never launches.
+- **S4 is third** because it is a different sale rather than a different message. There is a period of convincing on the value of a card program at all before the conversation reaches why TXN.
+- **S1 is last** because nobody moves a full suite to a company with no track record. Ian added a second gate that is not about reputation: buyers now expect migration tooling, and *"they don't expect a 15 year old approach"*. S1 therefore depends on something being built, not only on reference customers being won. Tracked in [[delivery]], not here.
+
+**This inverts the retired parameter 7**, which paid 8 points for a named incumbent and nothing for greenfield. That was scoring card program maturity, which is a reasonable proxy for fit and a poor one for near-term winnability, because maturity implies an incumbent and an incumbent implies the track-record objection.
+
+#### Observable signals
+
+Every signal below must be verifiable from a website, a job post, a named tool or press, or a research agent cannot apply the band.
+
+**Band A.** Product pages describe a card, wallet or spend feature as part of the proposition with nothing live. Waitlist or coming-soon language against a card. Hiring for card, payments or issuing roles with no live program. An EMI or payment institution authorisation in progress. A funding announcement naming a card or payments product. Or the company is structurally a type that requires one: a neobank, an expense platform, a lending product.
+
+**Band B.** A live card evidenced by a BIN, card art, cardholder terms or app store screenshots, **plus** a separate announcement of a new market, segment or product. Hiring for a second program or a new region.
+
+**Band C.** No card evidence anywhere, but the company sits in a vertical where a named peer runs a relevant program, and holds both a customer relationship and a payment flow a card could attach to. **The evidence is about the vertical, not the company**, which is a deliberate departure from the observability rule and is recorded as one below.
+
+**Band D.** A live program plus a change signal: a public service incident with the incumbent, a procurement notice, a contract at renewal age, or a payments hire whose remit reads as migration.
+
+**Band E.** A live program and none of the above.
+
+#### Three limits, recorded rather than hidden
+
+**Band D is the least observable of the five.** Contract position, incumbent identity and card base size are precisely what cannot be seen from outside, and the cohort research confirmed it. S1 will carry the largest gaps list. That is tolerable only because S1 is also last in priority.
+
+**Band C's evidence is an absence plus an inference**, not a signal. The ICP guideline requires every signal to be publicly observable and this one is not, strictly. It is kept because excluding these companies would remove the population Ian ruled on 2 September must never be disqualified for lack of signal, and because a company that has never issued a card emits no card signals by definition.
+
+**Band A, B and D overlap Triggers.** Being in market is itself a trigger. The 12-point reduction to parameter 7 at 8.1.7 is the correction; without it an account is paid twice for one fact.
+
+#### Dominant pain and messaging by status
+
+| Status | Dominant pain | What the message has to do |
+| S3 | **Exposure.** Never done this, no incumbent to compare against, no internal experience to sense-check a vendor | Why TXN. They have decided; the job is to de-risk the not-knowing |
+| S2 | **Constraint.** Not unhappy, specifically unable | Why TXN. Name the capability, never the incumbent's gap |
+| S4 | **Falling behind**, and they may not have registered it | Two jobs. Why a card program at all, carried by the named peer in their vertical, then why TXN |
+| S1 | **Entrapment.** Wants out, blocked by migration rather than by the contract | Why TXN, and why the migration will not hurt |
+
+#### Binding rule: never criticise the competition
+
+Ruled by Ian, 3 September 2026, and it applies **in every status, not only where an incumbent stays in place.** His position: *"I just don't believe in criticising the competition, it's more important to emphasise your differentiators as you understand them."*
+
+- **Never go after the incumbent or a competitor.** Not named, not implied, not by category. This is stricter than the 2 September ruling that competitors are never named, which governs naming only.
+- **Position on what TXN does, as capability rather than comparison.** State what TXN does. Never state what the other cannot. No "unlike your current processor", no "if your provider can't", no implied deficiency.
+- **The gap does the work.** Where a capability is genuinely absent on the incumbent, the buyer draws the comparison themselves, and a comparison the buyer makes is worth more than one an agent makes for them.
+- **Consequence for the offer.** The `where_it_falls_short` material in [[offer]] Section 5 stays as internal grounding and becomes **context-not-quotable**, the same treatment Section 7 already carries. Agents ground on it; they never voice it.
+- **It binds hardest in S2**, where the incumbent stays and the buyer is standing behind a live decision they are not reversing. It binds in S1 too, where the buyer will raise the incumbent themselves and the restraint is what keeps the conversation about TXN.
 
 ### 8.1.2 Sub-sector / Use Case Fit (max 10)
 | Band | Points | Definition |
@@ -135,19 +203,21 @@ Section 4.3 defines the firmographic range as 10 to 5,000 employees. The scoring
 | P3 | 3 | Seed stage with strong investors; established private with flat growth. |
 | DQ | 0 | In administration, insolvency, or pending wind-down; sanctions exposure. |
 
-### 8.1.7 Behavioural / Situational Triggers (max 20)
+### 8.1.7 Behavioural / Situational Triggers (max 8)
+
+> **Reduced from 20 to 8 on 3 September 2026**, provisional, Ian to confirm. Card Program Status now encodes most of what this was measuring, so leaving it at 20 paid an account twice for being in market. The band points below still read to the old maximum and are rescaled on Ian's confirmation.
 | Band | Points | Definition |
 | P1 | 20 | Two or more active triggers within 12 months (for example new funding round plus incumbent contract expiry window, or announced product launch plus hiring signals). |
 | P2 | 14 | One strong active trigger (announced product launch, funding round within 12 months, public incumbent service issue, executive change in product or tech). |
 | P3 | 7 | Weak or historical trigger (incumbent contract signed 2 to 3 years ago, early roadmap hints, low-signal hiring). |
-| DQ | 0 | Recently signed a multi-year incumbent contract within the last 12 months with no offsetting trigger. |
+| DQ | 0 | Recently signed a multi-year incumbent contract within the last 12 months with no offsetting trigger. **Scores zero. Does not disqualify** (8.2, ruled 2 September 2026). |
+| NE | 0 | **No trigger evidenced.** Added 3 September 2026. Research found nothing either way. Distinct from DQ, which is an adverse fact rather than an absence. Scores zero, never disqualifies, and must not be recorded as DQ: three passes resolved this hole three different ways and each time it removed greenfield accounts on absence of evidence. |
 
-### 8.1.8 Incumbent Processor Signal (max 8)
-| Band | Points | Definition |
-| P1 | 8 | Confirmed incumbent is Marqeta, Paymentology, Thredd, Enfuce, Episode Six, Pismo, or a legacy processor with known gaps. |
-| P2 | 6 | Using a smaller or less-known processor, or a hybrid in-house solution. |
-| P3 | 3 | Running a card program but incumbent unknown. |
-| DQ | 0 | No card program and no stated plan to launch one. |
+### 8.1.8 Incumbent Processor Signal (retired 3 September 2026)
+
+Replaced by **Card Program Status** at 8.1.12. Kept as a stub rather than deleted, because the register and the scored workbook still carry columns that reference it, and a parameter that vanishes without trace gets re-added by the next person who notices the gap.
+
+The retired bands scored 8 for a confirmed named incumbent and 0 for "no card program and no stated plan". That is the reverse of the priority Ian set on 3 September, and it is the mechanical cause of the bias the register analysis measured: greenfield accounts averaged 61.7 points against 74.4 for migration accounts, and migration took 17 of the 22 Priority 1 places. Incumbent identity is still worth capturing as an attribute; it is no longer worth scoring.
 
 ### 8.1.9 Tech Stack and Engineering (max 6)
 | Band | Points | Definition |
@@ -162,6 +232,7 @@ Section 4.3 defines the firmographic range as 10 to 5,000 employees. The scoring
 | P2 | 6 | Scheme participation visible (Apple Pay and Google Pay live, named 3DS partner). |
 | P3 | 3 | No visible BIN sponsor but licensing signals suggest one is imminent. |
 | DQ | 0 | No scheme participation path. |
+| UD | 3 | **Live scheme issuer, sponsor undisclosed.** Added 3 September 2026. The company is visibly issuing, so a sponsor exists and is simply not published. This is not "no path". It was every Hungarian issuer in the cohort research without exception. |
 
 ### 8.1.11 Card Program Scale and Ambition (max 10)
 | Band | Points | Definition |
@@ -171,10 +242,26 @@ Section 4.3 defines the firmographic range as 10 to 5,000 employees. The scoring
 | DQ | 0 | Fewer than 10,000 cards projected; single staff-card use case only. |
 
 ### 8.2 Gating Rules
-Aggregate scoring determines tier, but the following gating rules override the total score. Any gating hit disqualifies the account regardless of how it scores on other parameters.
-Any match against the Anti-Profile (Section 7) disqualifies the account.
-A DQ band on any of the four critical parameters disqualifies the account: Sub-sector (8.1.2), Geography (8.1.4), Regulatory Licence Status (8.1.5), or Triggers (8.1.7).
-DQ bands on the remaining parameters contribute zero points but do not on their own disqualify the account. In particular, a DQ band on parameter P2 Company Size (fewer than 10 or more than 5,000 employees) is not a gating disqualifier: the account can still qualify as Priority 3 or higher if other parameters score sufficiently.
+
+**Rewritten 3 September 2026 to carry Ian's rulings of 2 September.** The previous version gated on four parameters. Three of those gates are withdrawn.
+
+**The anti-profile at Section 7 is now the only disqualification.** Everything else scores zero and stays on the register.
+
+The governing principle, in Ian's words: qualification inside a chosen vertical is near-universal, the exclusion list is very small, and *"everything else shouldn't be treated with anything different than a priority. That is your target market."* A company that scores badly is scheduled later; it is not removed.
+
+| Former gate | Ruling, 2 September 2026 |
+|---|---|
+| **Triggers (8.1.7)** | **Withdrawn.** Absence of an evidenced trigger must never disqualify. Greenfield companies rarely emit a public trigger, so gating on it silently removed the population that ranks first in priority. |
+| **Regulatory Licence Status (8.1.5)** | **Withdrawn.** Ruled directly by Ian: it no longer gates. |
+| **Incumbent Processor (8.1.8)** | **Moot.** The parameter is retired. Its DQ band was "no card program and no stated plan", which described exactly the highest-priority status. |
+| **Sub-sector (8.1.2)** | **Retained.** The one genuine fit exclusion. Outside the listed sub-sectors there is no use case to sell against. |
+
+A DQ band on any other parameter contributes zero points and does not disqualify. In particular, a DQ on Company Size (fewer than 10 or more than 5,000 employees) is not a disqualifier: the account can still reach Priority 3 or higher.
+
+**Two anti-profile carve-outs**, both ruled 2 September:
+
+- **A Tier 1 bank's digital subsidiary is not automatically excluded.** It turns on how operationally independent the subsidiary really is. Ian's reason for the exclusion is not the parent's size but that a small company cannot absorb a large bank's documentation and process load. A subsidiary given capital and loose oversight is in scope; one carrying the parent's full due diligence and process expectations is not. **No early observable proxy for this exists yet, and finding one is open work.**
+- **A subsidiary of a non-EEA parent is not excluded on geography.** It depends on which entity the contract is with, and that only surfaces in conversation. Include and find out.
 
 ### 8.3 Tier Definitions
 | Tier | Total Score | Additional Rules |
