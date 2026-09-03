@@ -37,7 +37,32 @@ FinTech, Banking, Financial Services, Retail.
 ### 4.2 Sub-sectors
 Digital Banking, Expense Management, Lending (SMB), Lending (Consumer), FX Payments, Investment Management, Disbursement, Payments, BaaS, Retail, Ecommerce, Crypto.
 
+#### 4.2.1 Card-essential or card-adjacent
+
+Tagged by Ian, 3 September 2026. **This tagging is what separates status S3 from status S4** (see 8.1.12), so it is load-bearing rather than descriptive. The operational test is Ian's own: **if you went without a card, would the product look odd?**
+
+| Sub-sector | Card is | Note |
+| Digital Banking | **Essential** | The account without the card is an incomplete product |
+| Expense Management | **Essential** | The card is the instrument the control and reporting act on |
+| Crypto | **Essential, conditionally** | Essential where the proposition is converting crypto to spendable fiat. Crypto-only with no fiat rails remains DQ under 8.1.3, so the same line is drawn from both directions |
+| Lending, SMB | Adjacent | Demonstrable use case, optional to the product |
+| Lending, Consumer | Adjacent | As above |
+| FX Payments | Adjacent | As above |
+| Investment Management | Adjacent | As above |
+| Disbursement | Adjacent | As above |
+| Payments | Adjacent | As above |
+| BaaS | Adjacent | **Flagged as the likeliest misclassification.** A BaaS platform bundling issuer functions sits close to card-essential. A researcher in doubt should record the ambiguity rather than pick |
+| Retail | Adjacent | As above |
+| Ecommerce | Adjacent | As above |
+
+**Note that only three sub-sectors are card-essential.** S3 is the highest-priority status and has the narrowest vertical base of the four. That is a real property of the target market, not a gap in the research.
+
 ### 4.3 Company Size
+
+> **Ruled 3 September 2026: do not use employee count as a core ranking.** Ian's reasoning, which is the part that matters: in S3 a company where the card is essential may have scaled elsewhere first and have ten people, or may be a startup building cards from day one with fewer than ten. Both are exactly who TXN wants, and ranking on headcount penalises both. *"There are too many different sized businesses that could capitalise on this. Don't use this as a core ranking."*
+>
+> **Consequences.** The parameter weight drops from 10 to 3 at 8.1.3, enough to register that a 4,000-person company is a different sale without letting size drive the order. **Sub-10 is now explicitly in scope**, which is wider than either ICP v0.4 or Core Messaging v2.5 allowed, so the 10-to-5,000 versus 20-to-2,000 disagreement is not resolved in favour of either: the scope widens and the weight falls. Gap G9 in [[offer]] closes on this basis.
+
 10 to 5,000 employees. The ideal band is 20 to 2,000 employees, where the account scores Priority 1 (50 to 1,000 employees) or Priority 2 (20 to 49 or 1,001 to 2,000 employees) on the Section 8.1.3 sizing framework.
 Sub-20 employees remains in scope as Priority 3, particularly for seed and Series A fintechs planning card launches where sub-sector fit and triggers are strong. Above 2,000 up to 5,000 remains in scope as Priority 3, subject to the Tier 1 bank anti-profile exclusion at Section 7. Fewer than 10 or more than 5,000 receives zero points on parameter P2 but does not, on that basis alone, disqualify the account per Section 8.2.
 
@@ -68,16 +93,19 @@ Engineering capability: in almost all instances the company will have its own in
 Scheme and BIN sponsor signals: existing BIN sponsor relationship (for example Paynetics, DiPocket, Modulr, Transact Payments, Enfuce as sponsor, or Railsr), direct scheme principal membership, Apple Pay and Google Pay integration, named 3DS partner.
 
 ## 7. Anti-Profile
-Any match on the anti-profile is an automatic disqualification regardless of aggregate score.
-Sub-scale operators, defined by a specific pattern rather than a headcount threshold: a card program with limited scale ambition (fewer than 10,000 cards projected within 18 months), confined to a small single-market audience, with no engineering or product capacity to grow. Early-stage companies with clear scale ambition (Series A or later, or seed-stage with a defined product roadmap and hiring plan) do not match this pattern regardless of current headcount.
-Governments and local governments.
-Tier 1 banks (for example Barclays, BNP Paribas).
-Petrol retail companies.
-Companies looking for bespoke, non-platform-based solutions where the IP developed rests with the company.
-Companies looking for on-premises hosting of an issuer processor solution.
-Companies reported in the press as having difficulties with any local regulator, or under sanctions exposure.
-Companies with limited capital available for investment and operational expenses.
-Companies in active administration, insolvency, or pending wind-down.
+Any match on the anti-profile is an automatic disqualification regardless of aggregate score. **The anti-profile is the only disqualification in the framework** (see 8.2), and it applies identically to all four card program statuses. Ruled 3 September 2026.
+
+> **Removed 3 September 2026: "companies with limited capital available for investment and operational expenses".** Deleted rather than relocated. Ian's reasoning is an observability test and it is worth keeping: raises are frequently undisclosed, and even when announced you cannot know how much is directed at this, what the next raise depends on, or what triggers send them back for it. Keeping it would mean *"an endless loop analysing data that we really still won't know the story on"*. A criterion that can never be resolved should not be written down, because someone will try to resolve it anyway.
+
+> **Not every item below applies at research time.** Five can be verified from public sources and a research agent applies them. Three cannot be seen from outside and surface only in conversation: bespoke build with client-held IP, on-premises hosting, and the sub-scale operator pattern. They are real reasons to walk away, and they are marked so an agent does not guess. **They must be carried explicitly into the qualification conversation**, or they get missed precisely because they are no longer scored.
+**[Conversation only]** Sub-scale operators, defined by a specific pattern rather than a headcount threshold: a card program with limited scale ambition (fewer than 10,000 cards projected within 18 months), confined to a small single-market audience, with no engineering or product capacity to grow. Early-stage companies with clear scale ambition (Series A or later, or seed-stage with a defined product roadmap and hiring plan) do not match this pattern regardless of current headcount.
+**[Observable]** Governments and local governments.
+**[Observable]** Tier 1 banks (for example Barclays, BNP Paribas).
+**[Observable]** Petrol retail companies.
+**[Conversation only]** Companies looking for bespoke, non-platform-based solutions where the IP developed rests with the company.
+**[Conversation only]** Companies looking for on-premises hosting of an issuer processor solution.
+**[Observable]** Companies reported in the press as having difficulties with any local regulator, or under sanctions exposure.
+**[Observable]** Companies in active administration, insolvency, or pending wind-down.
 
 ## 8. Tiering
 Tiering governs how an account is treated across Marketing and Sales. Each account is assigned a tier based on a scoring framework (Section 8.1), subject to gating rules (Section 8.2), with the resulting tier defined in Section 8.3 and the associated actions in Section 8.4.
@@ -90,8 +118,8 @@ Each account is scored across ten parameters to a total of 100 points. **Card Pr
 ### 8.1.1 Weight Summary
 | # | Parameter | Source Section | Max |
 | **1** | **Card Program Status** | **Section 8.1.12** | **20** |
-| 2 | Sub-sector / Use Case Fit | Section 4.2 | 10 |
-| 3 | Company Size (employees) | Section 4.3 | 10 |
+| 2 | Sub-sector / Use Case Fit | Section 4.2 | 17 |
+| 3 | Company Size (employees) | Section 4.3 | 3 |
 | 4 | Geography / Region Phase | Section 4.4 | 12 |
 | 5 | Regulatory Licence Status | Section 4.5 | 8 |
 | 6 | Ownership and Funding Stage | Section 4.6 | 8 |
@@ -166,14 +194,18 @@ Ruled by Ian, 3 September 2026, and it applies **in every status, not only where
 - **Consequence for the offer.** The `where_it_falls_short` material in [[offer]] Section 5 stays as internal grounding and becomes **context-not-quotable**, the same treatment Section 7 already carries. Agents ground on it; they never voice it.
 - **It binds hardest in S2**, where the incumbent stays and the buyer is standing behind a live decision they are not reversing. It binds in S1 too, where the buyer will raise the incumbent themselves and the restraint is what keeps the conversation about TXN.
 
-### 8.1.2 Sub-sector / Use Case Fit (max 10)
+### 8.1.2 Sub-sector / Use Case Fit (max 17)
+
+> **Raised from 10 to 17 on 3 September 2026**, provisional, Ian to confirm. The seven points come from Company Size. Sub-sector now carries the card-essential versus card-adjacent tagging at 4.2.1, which is what places a company into S3 or S4, so it tells you materially more than it did. Band points below still read to the old maximum and are rescaled on confirmation.
 | Band | Points | Definition |
 | P1 | 10 | Digital Banking, Neobank. |
 | P2 | 7 | Expense Management, Lending (SMB or Consumer), BaaS, FX Payments. |
 | P3 | 4 | Investment Management, Disbursement, Payments, Ecommerce, Retail, Gift Card. |
 | DQ | 0 | Outside the listed sub-sectors; crypto-only with no fiat rails; staff-card-only use. |
 
-### 8.1.3 Company Size, Employees (max 10)
+### 8.1.3 Company Size, Employees (max 3)
+
+> **Reduced from 10 to 3 on 3 September 2026.** Ruled by Ian: headcount must not drive the ranking, and sub-10 is in scope. See 4.3. Band points below still read to the old maximum and are rescaled on confirmation.
 | Band | Points | Definition |
 | P1 | 10 | 50 to 1,000 employees. |
 | P2 | 7 | 20 to 49, or 1,001 to 2,000 employees. |
@@ -353,3 +385,97 @@ Twelve months pass with no engagement and no new triggers of any kind.
 A re-scoring pass puts the account below the 40-point threshold.
 An anti-profile match is newly discovered that was not visible at the time of original scoring.
 Archived accounts remain in the workbook for audit and for re-qualification if circumstances materially change. A Dormant account is re-activated by a new scoring pass and owner approval.
+
+---
+
+## 10. Status Records
+
+One record per card program status, in the priority order set at 8.1.12. These are what the workforce grades and messages against; Sections 1 to 9 define who is in the market at all, and these define what conversation to have with them.
+
+**The anti-profile at Section 7 applies identically to all four.** Ruled 3 September 2026. Only the observable items are applied at research time; the three marked conversation-only are carried into qualification instead.
+
+### 10.1 S3, first program, card is essential
+
+**Priority 1 of 4.** Highest weight in the framework at 20 points.
+
+**Archetype name:** `First-Program Card-Essential, the Committed Newcomer`
+
+**Core thesis.** A company building a product that does not work without a card, which has not yet issued one. They are not weighing up whether to have a card program; that decision was made when they chose what to build. What they lack is an incumbent to compare against, current spend to model, internal card expertise, and any way to sense-check a vendor's answers. They will launch, and the only real question is with whom, which is why this status carries the heaviest weight. Ian: *"you're 100 per cent sure they're going to do it. The only way they don't do it is if the company just doesn't exist."* Their dominant pain is **exposure**.
+
+**The card is essential to the product, not the product itself.** Ian's correction, 3 September, and it governs the messaging. A neobank's product is the account and the app; expense management's product is control and reporting. The card is how each of them works. Telling either that the card is their product is wrong and they will know it. Telling them their product does not work without one is right.
+
+#### Tier 1: business type
+
+**Primary industry.** FinTech and Financial Services.
+
+**Ideal verticals.** Only three, because only three sub-sectors are card-essential at 4.2.1:
+Digital banking and neobanks.
+Expense management and spend control, including corporate card and travel-and-expense programs.
+Crypto platforms with fiat rails, where the proposition is converting crypto to spendable money.
+
+**Not padded to a minimum.** The guideline asks for four to five verticals. There are three. S3 is the highest-priority status and has the narrowest vertical base of the four, and that is a property of the market rather than a gap in the research.
+
+**Core identity, what a researcher must confirm.** The product proposition requires a card to function, and no card is live.
+
+**Website evidence.** A card, wallet or spend feature described in the product pages with nothing issued. Waitlist, coming-soon or beta language attached to the card specifically. A pricing page that assumes a card. Cardholder terms drafted with no BIN. App store screenshots showing a card that cannot yet be ordered.
+
+**State modifiers.**
+**Go to market:** hiring for card, payments, issuing or scheme roles with no live program. A first payments hire at a company that has never processed.
+**Marketing:** launch-sequence content, waitlist campaigns, a founder writing publicly about why they are building it.
+**Growth:** an EMI or payment institution authorisation in progress. A funding announcement naming a card or payments product. Incubator or accelerator cohort membership, which is where these companies exist before they announce themselves.
+
+#### Tier 2: business model
+
+**Primary model.** Product-led or sales-assisted, selling a financial product directly.
+
+**Target customer.** Consumers, SMBs or corporates by vertical. A descriptor, not a qualifier.
+
+**Tech stack signal.** The strongest single signal in this record: **a core banking or ledger platform in place with no issuer processor named.** Thought Machine, Mambu, 10x, Tuum. That is a company building a bank that has not chosen how the cards work. Supporting signals: cloud-native on AWS, GCP or Azure; a named KYC vendor such as Onfido, Sumsub or Veriff; an acquirer handling payments in, with nothing handling payments out.
+
+#### Tier 3: firmographics
+
+**Employee count.** No band and no meaningful score, per the 3 September ruling at 4.3. Sub-10 is in scope.
+
+**Geography.** The EEA plus the United Kingdom, phased per 4.4. Phasing orders effort; it excludes nobody.
+
+#### Disqualifiers
+
+Research-time only. Everything here is verifiable from outside.
+
+**A card is already live.** Then the company is S2, S1 or a static incumbent. This is the single most important separation in the record.
+**Crypto-only with no fiat rails.** Already DQ at 8.1.3, and the mirror of why crypto is card-essential when the fiat conversion is the offer.
+**Government or local government.** Anti-profile.
+**Tier 1 bank**, subject to the subsidiary carve-out at 8.2. Anti-profile.
+**In administration, insolvency or pending wind-down**, or reported regulator difficulty or sanctions exposure. Anti-profile.
+
+**Deliberately not listed:** on-premises hosting, bespoke build with client-held IP, and the sub-scale operator pattern. All three are real reasons to walk away and none is observable from outside, so they are qualification questions rather than research disqualifiers. This matters most for S3, where the companies are earliest and a researcher is most tempted to infer.
+
+#### Buying group
+
+Re-derived for this status rather than inherited from [[offer]].
+
+**CPO leads.** The card is essential to the product they are building, so it is a product decision before it is a technical one.
+**CTO validates feasibility**, and holds the technical veto. In this status they are validating something nobody in the building has done before, which is the exposure pain in its most concrete form.
+**CFO** funds it as part of the product build rather than as a separate platform decision.
+
+#### Signal to pain mapping
+
+| Observable signal | Primary inferred pain | Relevance to the offer |
+| Core banking or ledger platform live, no issuer processor named | **They have built the account and cannot yet build the card.** The product is visibly incomplete and the missing piece is the one nobody in the building has done before | Section 2 steps 1 and 2 configure and certify the program. Step 10 wraps the mechanics in business language, so the decision does not require a card expert on staff |
+| Card described in the product, waitlist or coming-soon, nothing issued | **They have committed publicly to a date they cannot yet defend.** The launch is announced and the mechanism is not chosen | Step 2 is the launch path. The under-ten-days figure is TXN's target for exactly this position, and is stated as a target and never as a result |
+| First payments or card hire at a company that has never processed | **They are buying the expertise they lack one person at a time**, and that person becomes a single point of dependency before they have written anything | The primary job at Section 1: run a card program without employing card experts |
+| EMI or payment institution authorisation in progress, no processor named | **The licence will arrive before the platform does.** A regulatory clock is running against a decision nobody has made | Steps 6 and 10 carry scheme and regulatory obligations as delivered outcomes rather than research the client begins from nothing |
+| Incubator or accelerator cohort membership, card named in the proposition | **Nobody has told them what this costs in time, money or risk.** Pre-decision on the vendor and pre-informed on the domain | The whole of Section 2. This population is also the target of the incubator monitoring instruction at 4.3 |
+
+### 10.2 S2, new program, incumbent stays
+
+**Priority 2 of 4.** Not yet drafted.
+
+### 10.3 S4, industry inference
+
+**Priority 3 of 4.** Not yet drafted.
+
+### 10.4 S1, full switch
+
+**Priority 4 of 4.** Not yet drafted.
+
