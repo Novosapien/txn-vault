@@ -1,5 +1,5 @@
 ---
-description: "TXN's Ideal Customer Profile: Card Program Status as the top parameter, the four statuses and their pains, firmographics, anti-profile and tiering"
+description: "TXN's Ideal Customer Profile: one fit definition and four ICPs, with Card Program Status as the top parameter, firmographics, anti-profile and tiering"
 ---
 
 # TXN ICP Definition (v0.4)
@@ -41,7 +41,7 @@ Digital Banking, Expense Management, Lending (SMB), Lending (Consumer), FX Payme
 
 #### 4.2.1 Card-essential or card-adjacent
 
-Tagged by Ian, 3 September 2026. **This tagging is what separates status S3 from status S4** (see 8.1.12), so it is load-bearing rather than descriptive. The operational test is Ian's own: **if you went without a card, would the product look odd?**
+Tagged by Ian, 3 September 2026. **This tagging is what separates ICP 1 from ICP 3** (see 8.1.12), so it is load-bearing rather than descriptive. The operational test is Ian's own: **if you went without a card, would the product look odd?**
 
 | Sub-sector | Card is | Note |
 | Digital Banking | **Essential** | The account without the card is an incomplete product |
@@ -57,13 +57,13 @@ Tagged by Ian, 3 September 2026. **This tagging is what separates status S3 from
 | Retail | Adjacent | As above |
 | Ecommerce | Adjacent | As above |
 
-**Note that only three sub-sectors are card-essential.** S3 is the highest-priority status and has the narrowest vertical base of the four. That is a real property of the target market, not a gap in the research.
+**Note that only three sub-sectors are card-essential.** ICP 1 is the highest-priority ICP and has the narrowest vertical base of the four. That is a real property of the target market, not a gap in the research.
 
 ### 4.3 Company Size
 
-> **Ruled 3 September 2026: do not use employee count as a core ranking.** Ian's reasoning, which is the part that matters: in S3 a company where the card is essential may have scaled elsewhere first and have ten people, or may be a startup building cards from day one with fewer than ten. Both are exactly who TXN wants, and ranking on headcount penalises both. *"There are too many different sized businesses that could capitalise on this. Don't use this as a core ranking."*
+> **Ruled 3 September 2026: do not use employee count as a core ranking.** Ian's reasoning, which is the part that matters: in ICP 1 a company where the card is essential may have scaled elsewhere first and have ten people, or may be a startup building cards from day one with fewer than ten. Both are exactly who TXN wants, and ranking on headcount penalises both. *"There are too many different sized businesses that could capitalise on this. Don't use this as a core ranking."*
 >
-> **Consequences.** The parameter weight drops from 10 to 3 at 8.1.3, enough to register that a 4,000-person company is a different sale without letting size drive the order. **Sub-10 is now explicitly in scope**, which is wider than either ICP v0.4 or Core Messaging v2.5 allowed, so the 10-to-5,000 versus 20-to-2,000 disagreement is not resolved in favour of either: the scope widens and the weight falls. Gap G9 in [[offer-draft]] closes on this basis.
+> **Consequences.** The parameter weight drops from 10 to 3 at 8.1.3, enough to register that a 4,000-person company is a different sale without letting size drive the order. **Sub-10 is now explicitly in scope**, which is wider than either ICP v0.4 or Core Messaging v2.5 allowed, so the 10-to-5,000 versus 20-to-2,000 disagreement is not resolved in favour of either: the scope widens and the weight falls. Gap G9 in [[offer]] closes on this basis.
 
 10 to 5,000 employees. The ideal band is 20 to 2,000 employees, where the account scores Priority 1 (50 to 1,000 employees) or Priority 2 (20 to 49 or 1,001 to 2,000 employees) on the Section 8.1.3 sizing framework.
 Sub-20 employees remains in scope as Priority 3, particularly for seed and Series A fintechs planning card launches where sub-sector fit and triggers are strong. Above 2,000 up to 5,000 remains in scope as Priority 3, subject to the Tier 1 bank anti-profile exclusion at Section 7. Fewer than 10 or more than 5,000 receives zero points on parameter P2 but does not, on that basis alone, disqualify the account per Section 8.2.
@@ -95,7 +95,7 @@ Engineering capability: in almost all instances the company will have its own in
 Scheme and BIN sponsor signals: existing BIN sponsor relationship (for example Paynetics, DiPocket, Modulr, Transact Payments, Enfuce as sponsor, or Railsr), direct scheme principal membership, Apple Pay and Google Pay integration, named 3DS partner.
 
 ## 7. Anti-Profile
-Any match on the anti-profile is an automatic disqualification regardless of aggregate score. **The anti-profile is the only disqualification in the framework** (see 8.2), and it applies identically to all four card program statuses. Ruled 3 September 2026.
+Any match on the anti-profile is an automatic disqualification regardless of aggregate score. **The anti-profile is the only disqualification in the framework** (see 8.2), and it applies identically to all four ICPs. Ruled 3 September 2026.
 
 > **Removed 3 September 2026: "companies with limited capital available for investment and operational expenses".** Deleted rather than relocated. Ian's reasoning is an observability test and it is worth keeping: raises are frequently undisclosed, and even when announced you cannot know how much is directed at this, what the next raise depends on, or what triggers send them back for it. Keeping it would mean *"an endless loop analysing data that we really still won't know the story on"*. A criterion that can never be resolved should not be written down, because someone will try to resolve it anyway.
 
@@ -130,29 +130,29 @@ Each account is scored across ten parameters to a total of 100 points. **Card Pr
 | 9 | Scheme / BIN Sponsor Signal | Section 6 | 8 |
 | 10 | Card Program Scale and Ambition | Sections 3 and 4 | 10 |
 
-*Retired 3 September 2026: **Incumbent Processor Signal**, formerly parameter 7 at 8 points. It scored 8 for a confirmed named incumbent and 0 for "no card program and no stated plan", which ranked the four statuses in exactly the reverse of Ian's stated priority. It is replaced by Card Program Status rather than sitting alongside it.*
+*Retired 3 September 2026: **Incumbent Processor Signal**, formerly parameter 7 at 8 points. It scored 8 for a confirmed named incumbent and 0 for "no card program and no stated plan", which ranked the four ICPs in exactly the reverse of Ian's stated priority. It is replaced by Card Program Status rather than sitting alongside it.*
 
 ### 8.1.12 Card Program Status (max 20)
 
-> **The number is deliberately out of sequence.** This is parameter 1 by weight and sits first for reading, but it takes the next free number rather than 8.1.2, because [[offer-draft]], [[qualification-matrix]] and the cohort research all cite the existing 8.1.x numbers and renumbering would silently break every one of them.
+> **The number is deliberately out of sequence.** This is parameter 1 by weight and sits first for reading, but it takes the next free number rather than 8.1.2, because [[offer]], [[qualification-matrix]] and the cohort research all cite the existing 8.1.x numbers and renumbering would silently break every one of them.
 
 The top-level parameter. Ruled by Ian on 3 September 2026: where a company sits relative to having a card program is the highest-order determinant, though **not a single determining factor**, so it scores heavily and gates nothing.
 
 **There is no DQ band.** Every company in a target vertical lands in one of the five, consistent with the 2 September ruling that qualification inside a chosen vertical is near-universal and that timing, not exclusion, is what the framework should express.
 
 | Band | Status | Points | Definition |
-| A | **S3, first program, card is core** | 20 | No card program today, and a card is core to the product they are building or selling. |
-| B | **S2, new program, incumbent stays** | 16 | Has a program with an incumbent, and is launching an additional program, product or region. Nothing migrates. |
-| C | **S4, industry inference** | 10 | No card program and no stated plan, in a vertical where a named peer runs a program against a use case that would work here. |
-| D | **S1, full switch** | 5 | Has a program and is moving all of it. Cardholders and data migrate. |
-| E | **Static incumbent** | 3 | Has a program and shows no evidence of any change in motion. |
+| A | **ICP 1, first program, card is essential** | 20 | No card program today, and a card is essential to the product they are building or selling. |
+| B | **ICP 2, new program, incumbent stays** | 16 | Has a program with an incumbent, and is launching an additional program, product or region. Nothing migrates. |
+| C | **ICP 3, industry inference** | 10 | No card program and no stated plan, in a vertical where a named peer runs a program against a use case that would work here. |
+| D | **ICP 4, full switch** | 5 | Has a program and is moving all of it. Cardholders and data migrate. |
+| E | **Not an ICP: static incumbent** | 3 | Has a program and shows no evidence of any change in motion. |
 
 **Why this order**, recorded because a ranking without its reasoning gets re-litigated:
 
-- **S3 leads on certainty.** Ian: *"you're 100 per cent sure they're going to do it. The only way they don't do it is if the company just doesn't exist."* It is also the exact proposition, which is running a card program without employing card experts.
-- **S2 is second** because the decision is made and it is a vendor selection, discounted only because they can change their mind at no cost: they already have a working program and nothing breaks if the new one never launches.
-- **S4 is third** because it is a different sale rather than a different message. There is a period of convincing on the value of a card program at all before the conversation reaches why TXN.
-- **S1 is last** because nobody moves a full suite to a company with no track record. Ian added a second gate that is not about reputation: buyers now expect migration tooling, and *"they don't expect a 15 year old approach"*. S1 therefore depends on something being built, not only on reference customers being won. Tracked in [[delivery]], not here.
+- **ICP 1 leads on certainty.** Ian: *"you're 100 per cent sure they're going to do it. The only way they don't do it is if the company just doesn't exist."* It is also the exact proposition, which is running a card program without employing card experts.
+- **ICP 2 is second** because the decision is made and it is a vendor selection, discounted only because they can change their mind at no cost: they already have a working program and nothing breaks if the new one never launches.
+- **ICP 3 is third** because it is a different sale rather than a different message. There is a period of convincing on the value of a card program at all before the conversation reaches why TXN.
+- **ICP 4 is last** because nobody moves a full suite to a company with no track record. Ian added a second gate that is not about reputation: buyers now expect migration tooling, and *"they don't expect a 15 year old approach"*. ICP 4 therefore depends on something being built, not only on reference customers being won. Tracked in [[delivery]], not here.
 
 **This inverts the retired parameter 7**, which paid 8 points for a named incumbent and nothing for greenfield. That was scoring card program maturity, which is a reasonable proxy for fit and a poor one for near-term winnability, because maturity implies an incumbent and an incumbent implies the track-record objection.
 
@@ -172,33 +172,33 @@ Every signal below must be verifiable from a website, a job post, a named tool o
 
 #### Three limits, recorded rather than hidden
 
-**Band D is the least observable of the five.** Contract position, incumbent identity and card base size are precisely what cannot be seen from outside, and the cohort research confirmed it. S1 will carry the largest gaps list. That is tolerable only because S1 is also last in priority.
+**Band D is the least observable of the five.** Contract position, incumbent identity and card base size are precisely what cannot be seen from outside, and the cohort research confirmed it. ICP 4 will carry the largest gaps list. That is tolerable only because ICP 4 is also last in priority.
 
 **Band C's evidence is an absence plus an inference**, not a signal. The ICP guideline requires every signal to be publicly observable and this one is not, strictly. It is kept because excluding these companies would remove the population Ian ruled on 2 September must never be disqualified for lack of signal, and because a company that has never issued a card emits no card signals by definition.
 
 **Band A, B and D overlap Triggers.** Being in market is itself a trigger. The 12-point reduction to parameter 7 at 8.1.7 is the correction; without it an account is paid twice for one fact.
 
-#### Dominant pain and messaging by status
+#### Dominant pain and messaging by ICP
 
-| Status | Dominant pain | What the message has to do |
-| S3 | **Exposure.** Never done this, no incumbent to compare against, no internal experience to sense-check a vendor | Why TXN. They have decided; the job is to de-risk the not-knowing |
-| S2 | **Constraint.** Not unhappy, specifically unable | Why TXN. Name the capability, never the incumbent's gap |
-| S4 | **Falling behind**, and they may not have registered it | Two jobs. Why a card program at all, carried by the named peer in their vertical, then why TXN |
-| S1 | **Entrapment.** Wants out, blocked by migration rather than by the contract | Why TXN, and why the migration will not hurt |
+| ICP | Dominant pain | What the message has to do |
+| ICP 1 | **Exposure.** Never done this, no incumbent to compare against, no internal experience to sense-check a vendor | Why TXN. They have decided; the job is to de-risk the not-knowing |
+| ICP 2 | **Constraint.** Not unhappy, specifically unable | Why TXN. Name the capability, never the incumbent's gap |
+| ICP 3 | **Falling behind**, and they may not have registered it | Two jobs. Why a card program at all, carried by the named peer in their vertical, then why TXN |
+| ICP 4 | **Entrapment.** Wants out, blocked by migration rather than by the contract | Why TXN, and why the migration will not hurt |
 
 #### Binding rule: never criticise the competition
 
-Ruled by Ian, 3 September 2026, and it applies **in every status, not only where an incumbent stays in place.** His position: *"I just don't believe in criticising the competition, it's more important to emphasise your differentiators as you understand them."*
+Ruled by Ian, 3 September 2026, and it applies **in every ICP, not only where an incumbent stays in place.** His position: *"I just don't believe in criticising the competition, it's more important to emphasise your differentiators as you understand them."*
 
 - **Never go after the incumbent or a competitor.** Not named, not implied, not by category. This is stricter than the 2 September ruling that competitors are never named, which governs naming only.
 - **Position on what TXN does, as capability rather than comparison.** State what TXN does. Never state what the other cannot. No "unlike your current processor", no "if your provider can't", no implied deficiency.
 - **The gap does the work.** Where a capability is genuinely absent on the incumbent, the buyer draws the comparison themselves, and a comparison the buyer makes is worth more than one an agent makes for them.
-- **Consequence for the offer.** The `where_it_falls_short` material in [[offer-draft]] Section 5 stays as internal grounding and becomes **context-not-quotable**, the same treatment Section 7 already carries. Agents ground on it; they never voice it.
-- **It binds hardest in S2**, where the incumbent stays and the buyer is standing behind a live decision they are not reversing. It binds in S1 too, where the buyer will raise the incumbent themselves and the restraint is what keeps the conversation about TXN.
+- **Consequence for the offer.** The `where_it_falls_short` material in [[offer]] Section 5 stays as internal grounding and becomes **context-not-quotable**, the same treatment Section 7 already carries. Agents ground on it; they never voice it.
+- **It binds hardest in ICP 2**, where the incumbent stays and the buyer is standing behind a live decision they are not reversing. It binds in ICP 4 too, where the buyer will raise the incumbent themselves and the restraint is what keeps the conversation about TXN.
 
 ### 8.1.2 Sub-sector / Use Case Fit (max 17)
 
-> **Raised from 10 to 17 on 3 September 2026**, provisional, Ian to confirm. The seven points come from Company Size. Sub-sector now carries the card-essential versus card-adjacent tagging at 4.2.1, which is what places a company into S3 or S4, so it tells you materially more than it did. Band points below still read to the old maximum and are rescaled on confirmation.
+> **Raised from 10 to 17 on 3 September 2026**, provisional, Ian to confirm. The seven points come from Company Size. Sub-sector now carries the card-essential versus card-adjacent tagging at 4.2.1, which is what places a company into ICP 1 or ICP 3, so it tells you materially more than it did. Band points below still read to the old maximum and are rescaled on confirmation.
 | Band | Points | Definition |
 | P1 | 10 | Digital Banking, Neobank. |
 | P2 | 7 | Expense Management, Lending (SMB or Consumer), BaaS, FX Payments. |
@@ -287,7 +287,7 @@ The governing principle, in Ian's words: qualification inside a chosen vertical 
 |---|---|
 | **Triggers (8.1.7)** | **Withdrawn.** Absence of an evidenced trigger must never disqualify. Greenfield companies rarely emit a public trigger, so gating on it silently removed the population that ranks first in priority. |
 | **Regulatory Licence Status (8.1.5)** | **Withdrawn.** Ruled directly by Ian: it no longer gates. |
-| **Incumbent Processor (8.1.8)** | **Moot.** The parameter is retired. Its DQ band was "no card program and no stated plan", which described exactly the highest-priority status. |
+| **Incumbent Processor (8.1.8)** | **Moot.** The parameter is retired. Its DQ band was "no card program and no stated plan", which described exactly the highest-priority ICP. |
 | **Sub-sector (8.1.2)** | **Retained.** The one genuine fit exclusion. Outside the listed sub-sectors there is no use case to sell against. |
 
 A DQ band on any other parameter contributes zero points and does not disqualify. In particular, a DQ on Company Size (fewer than 10 or more than 5,000 employees) is not a disqualifier: the account can still reach Priority 3 or higher.
@@ -392,19 +392,21 @@ Archived accounts remain in the workbook for audit and for re-qualification if c
 
 ---
 
-## 10. Status Records
+## 10. The Four ICPs
 
-One record per card program status, in the priority order set at 8.1.12. These are what the workforce grades and messages against; Sections 1 to 9 define who is in the market at all, and these define what conversation to have with them.
+**One fit definition, four buying situations within it.** Sections 3 to 7 define who is in the market at all, and every ICP below inherits that definition unchanged: the same verticals, the same geography, the same firmographics, the same anti-profile. What separates them is **where a company sits relative to having a card program**, which is parameter 1 at 8.1.12.
 
-**The anti-profile at Section 7 applies identically to all four.** Ruled 3 September 2026. Only the observable items are applied at research time; the three marked conversation-only are carried into qualification instead.
+So a company cannot fail one ICP's criteria and pass another's. It qualifies once, then falls into exactly one of these four, and that placement decides the dominant pain, the message, the buying group and when to call.
 
-### 10.1 S3, first program, card is essential
+Numbered in priority order, ICP 1 highest. **The anti-profile at Section 7 applies identically to all four**, ruled 3 September 2026. Only the observable items are applied at research time; the three marked conversation-only are carried into the qualification conversation instead.
 
-**Priority 1 of 4.** Highest weight in the framework at 20 points.
+### ICP 1. First program, card is essential
+
+**Priority 1 of 4.** Band A at 8.1.12, 20 points, the heaviest in the framework.
 
 **Archetype name:** `First-Program Card-Essential, the Committed Newcomer`
 
-**Core thesis.** A company building a product that does not work without a card, which has not yet issued one. They are not weighing up whether to have a card program; that decision was made when they chose what to build. What they lack is an incumbent to compare against, current spend to model, internal card expertise, and any way to sense-check a vendor's answers. They will launch, and the only real question is with whom, which is why this status carries the heaviest weight. Ian: *"you're 100 per cent sure they're going to do it. The only way they don't do it is if the company just doesn't exist."* Their dominant pain is **exposure**.
+**Core thesis.** A company building a product that does not work without a card, which has not yet issued one. They are not weighing up whether to have a card program; that decision was made when they chose what to build. What they lack is an incumbent to compare against, current spend to model, internal card expertise, and any way to sense-check a vendor's answers. They will launch, and the only real question is with whom, which is why this ICP carries the heaviest weight. Ian: *"you're 100 per cent sure they're going to do it. The only way they don't do it is if the company just doesn't exist."* Their dominant pain is **exposure**.
 
 **The card is essential to the product, not the product itself.** Ian's correction, 3 September, and it governs the messaging. A neobank's product is the account and the app; expense management's product is control and reporting. The card is how each of them works. Telling either that the card is their product is wrong and they will know it. Telling them their product does not work without one is right.
 
@@ -417,7 +419,7 @@ Digital banking and neobanks.
 Expense management and spend control, including corporate card and travel-and-expense programs.
 Crypto platforms with fiat rails, where the proposition is converting crypto to spendable money.
 
-**Not padded to a minimum.** The guideline asks for four to five verticals. There are three. S3 is the highest-priority status and has the narrowest vertical base of the four, and that is a property of the market rather than a gap in the research.
+**Not padded to a minimum.** The guideline asks for four to five verticals. There are three. ICP 1 is the highest-priority ICP and has the narrowest vertical base of the four, and that is a property of the market rather than a gap in the research.
 
 **Core identity, what a researcher must confirm.** The product proposition requires a card to function, and no card is live.
 
@@ -446,20 +448,20 @@ Crypto platforms with fiat rails, where the proposition is converting crypto to 
 
 Research-time only. Everything here is verifiable from outside.
 
-**A card is already live.** Then the company is S2, S1 or a static incumbent. This is the single most important separation in the record.
+**A card is already live.** Then the company is ICP 2, ICP 4 or a static incumbent. This is the single most important separation in the record.
 **Crypto-only with no fiat rails.** Already DQ at 8.1.3, and the mirror of why crypto is card-essential when the fiat conversion is the offer.
 **Government or local government.** Anti-profile.
 **Tier 1 bank**, subject to the subsidiary carve-out at 8.2. Anti-profile.
 **In administration, insolvency or pending wind-down**, or reported regulator difficulty or sanctions exposure. Anti-profile.
 
-**Deliberately not listed:** on-premises hosting, bespoke build with client-held IP, and the sub-scale operator pattern. All three are real reasons to walk away and none is observable from outside, so they are qualification questions rather than research disqualifiers. This matters most for S3, where the companies are earliest and a researcher is most tempted to infer.
+**Deliberately not listed:** on-premises hosting, bespoke build with client-held IP, and the sub-scale operator pattern. All three are real reasons to walk away and none is observable from outside, so they are qualification questions rather than research disqualifiers. This matters most for ICP 1, where the companies are earliest and a researcher is most tempted to infer.
 
 #### Buying group
 
-Re-derived for this status rather than inherited from [[offer-draft]].
+Re-derived for this ICP rather than carried over from [[offer]].
 
 **CPO leads.** The card is essential to the product they are building, so it is a product decision before it is a technical one.
-**CTO validates feasibility**, and holds the technical veto. In this status they are validating something nobody in the building has done before, which is the exposure pain in its most concrete form.
+**CTO validates feasibility**, and holds the technical veto. In this ICP they are validating something nobody in the building has done before, which is the exposure pain in its most concrete form.
 **CFO** funds it as part of the product build rather than as a separate platform decision.
 
 #### Signal to pain mapping
@@ -471,15 +473,202 @@ Re-derived for this status rather than inherited from [[offer-draft]].
 | EMI or payment institution authorisation in progress, no processor named | **The licence will arrive before the platform does.** A regulatory clock is running against a decision nobody has made | Steps 6 and 10 carry scheme and regulatory obligations as delivered outcomes rather than research the client begins from nothing |
 | Incubator or accelerator cohort membership, card named in the proposition | **Nobody has told them what this costs in time, money or risk.** Pre-decision on the vendor and pre-informed on the domain | The whole of Section 2. This population is also the target of the incubator monitoring instruction at 4.3 |
 
-### 10.2 S2, new program, incumbent stays
+### ICP 2. New program, incumbent stays
 
-**Priority 2 of 4.** Not yet drafted.
+**Priority 2 of 4.** Band B at 8.1.12, 16 points.
 
-### 10.3 S4, industry inference
+**Archetype name:** `Second-Program Builder, the Constrained Operator`
 
-**Priority 3 of 4.** Not yet drafted.
+**Core thesis.** A company already running a card program with an incumbent, launching an additional program, product or region somewhere else. Nothing migrates and nobody is leaving; the incumbent stays in place and keeps the original book. These buyers know the domain, have integrated a processor before, and can tell you precisely what their current one cannot do, because they have already asked and been told no. The discount against ICP 1 is that they can walk away at no cost: they have a working program and nothing breaks if the new one never launches. Their dominant pain is **constraint**, which is not unhappiness but specific inability.
 
-### 10.4 S1, full switch
+**The binding rule applies hardest here.** Never go after the incumbent, named, implied or by category (7 and 8.1.12). The incumbent stays, so the buyer is standing behind a live decision they are not reversing, and criticising it criticises them. State what TXN does, never what the other cannot, and let the buyer draw the comparison.
 
-**Priority 4 of 4.** Not yet drafted.
+#### Tier 1: business type
+
+**Primary industry.** FinTech, Banking, Financial Services and Retail.
+
+**Ideal verticals.** All twelve at 4.2 are eligible, because a live program already proves the use case works for them. Weighted towards those with multi-product roadmaps or multi-region ambitions: digital banking and neobanks, BaaS, FX payments, lending, expense management.
+
+**Core identity, what a researcher must confirm.** A live card program **and** a separate, dated commitment to a new product, segment or geography.
+
+**Website evidence.** A live card evidenced by a BIN, card art, cardholder terms or app store screenshots. Then, separately, a new market landing page, a second product line, a regional domain or a localised pricing page that the existing program does not cover.
+
+**State modifiers.**
+**Go to market:** hiring for a named new market or product line. A second payments or program manager rather than a first.
+**Marketing:** launch messaging for a new segment. Regulatory or licence announcements in a market they do not yet serve.
+**Growth:** a funding round earmarked for expansion. A partnership or distribution agreement that implies a card the current program does not issue.
+
+#### Tier 2: business model
+
+**Primary model.** Sales-led or sales-assisted, usually further along than ICP 1.
+
+**Target customer.** Whoever the new product serves, which is frequently not who the existing program serves. That gap is the opportunity.
+
+**Tech stack signal.** An identifiable incumbent processor, captured as an attribute and no longer scored since 8.1.8 was retired. Multi-region infrastructure. A second core banking or ledger instance. Localisation tooling.
+
+#### Tier 3: firmographics
+
+**Employee count.** Not ranked, per 4.3. In practice larger than ICP 1, because running one program and launching another takes capacity.
+
+**Geography.** EEA plus the United Kingdom, phased per 4.4. Note the new market may sit outside the phase order while the company sits inside it, and the company's location governs.
+
+#### Disqualifiers
+
+**No card program at all.** Then it is ICP 1 or ICP 3.
+**Moving the existing program too.** Then it is ICP 4, and the migration conversation dominates.
+**No evidence of a second program, product or region.** Then it is a static incumbent at band E.
+Plus the five observable anti-profile items at 7.
+
+#### Buying group
+
+**CPO leads.** Ruled by Ian, 3 September: a new product or a new region is a product decision.
+**CTO weighting is open**, and it is a genuine question rather than a detail. This is the only ICP where the client ends up **running two processors in parallel**: two integrations, two reconciliations, two sets of scheme reporting, one team. That either makes the CTO more central than in any other ICP, because the ongoing cost is theirs, or barely registers because the programs never touch. Ian's experience decides it, and it also decides whether TXN raises the cost of running two or answers it before being asked.
+**CFO** approves on commercial grounds, comparing against a price they already pay.
+
+#### Signal to pain mapping
+
+| Observable signal | Primary inferred pain | Relevance to the offer |
+| Live card program plus a new market landing page or localised pricing | **The existing platform does not reach where they are going.** They have chosen the market and discovered the constraint afterwards | Section 2 steps 1, 6 and 11 configure a program and its BIN and routing per market, so a new geography is configuration rather than a second vendor relationship |
+| Live program plus a second product line the current card cannot support | **The platform decides what they are allowed to build.** The roadmap is being shaped by a vendor's limits | Steps 5 and 9 carry programmable controls and the extension surface, which is where a product that the incumbent cannot express becomes buildable |
+| Hiring a second program manager or a market-specific payments lead | **They are adding people to work around a platform**, which is the cost of the constraint made visible on a payroll | The primary job: run a card program without employing card experts. Step 10 removes the headcount the workaround needs |
+| Partnership or distribution deal implying a card the current program does not issue | **A commercial commitment is running ahead of the platform.** There is a date attached and the current vendor is not the answer | Step 2 is the launch path, and the ten-day figure is TXN's target, stated as a target |
+| Multi-region infrastructure with a single-region card program | **The company is multi-market and the card is not.** The asymmetry is visible from outside and is felt internally as a ceiling | Steps 6 and 11 handle multi-jurisdiction obligation and BIN structure, so the card catches up with the rest of the business |
+
+
+### ICP 3. Industry inference
+
+**Priority 3 of 4.** Band C at 8.1.12, 10 points.
+
+**Archetype name:** `Card-Adjacent Unaware, the Peer-Shadowed Operator`
+
+**Core thesis.** A company with no card program and no stated plan for one, operating in a vertical where a named peer already runs a card program against a use case that would work here. They may never have considered it. The qualification is an inference drawn from the vertical rather than a signal emitted by the company, which makes this the only ICP where the evidence is about somebody else. It is also a different sale rather than a different message: there is a period of convincing on the value of a card program at all before the conversation reaches which vendor. Their dominant pain is **falling behind**, and they may not have registered it yet.
+
+**This is the population that must never be disqualified for lack of signal.** Ruled 2 September. A company that has never issued a card emits no card signals by definition, and the old framework scored exactly that condition at zero and gated on it.
+
+#### Tier 1: business type
+
+**Primary industry.** Retail, Ecommerce, Financial Services and the adjacent operating verticals.
+
+**Ideal verticals.** The nine card-adjacent sub-sectors at 4.2.1: lending SMB and consumer, FX payments, investment management, disbursement, payments, BaaS, retail, ecommerce. Not the three card-essential ones, because a card-essential company with no card is ICP 1.
+
+**Core identity, what a researcher must confirm.** Three things together. No card evidence anywhere. A **named peer** in the same vertical running a card program against a use case that transfers. And the two preconditions that make a card possible at all: they hold a **direct customer relationship** and they already move **money to or from** those customers.
+
+**Website evidence.** This is the inverse of every other ICP, because the company-level evidence is an absence. What is present instead: a customer account or login, a stored balance, wallet, store credit or loyalty scheme, a payout or disbursement flow, a subscription or recurring billing relationship. Any of those is a card waiting to happen.
+
+**State modifiers.**
+**Go to market:** none card-related, by definition. Look instead for a company investing in its own customer relationship, which is where a card becomes rational.
+**Marketing:** loyalty, rewards, membership or wallet propositions.
+**Growth:** funding or expansion that increases the customer base a card would serve.
+
+**The peer map is a prerequisite, not a nicety.** ICP 3 cannot be operated without a maintained list of named companies per vertical who have launched a relevant program, because the peer is both the qualification evidence and the opening of the message. That list does not exist yet and building it is the largest outstanding piece of work on this ICP.
+
+#### Tier 2: business model
+
+**Primary model.** Any model with a recurring or account-based customer relationship. Marketplaces, subscription businesses, platforms with a payout side.
+
+**Target customer.** Consumers or SMBs held as accounts rather than as transactions.
+
+**Tech stack signal.** A payments-in acquirer with no payments-out capability. A loyalty or rewards platform. A customer identity or account system. Notably absent: anything issuing-related.
+
+#### Tier 3: firmographics
+
+**Employee count.** Not ranked, per 4.3.
+
+**Geography.** EEA plus the United Kingdom, phased per 4.4.
+
+#### Disqualifiers
+
+**Any card evidence at all.** Then it is ICP 4, ICP 2 or a static incumbent.
+**A card-essential vertical.** Then it is ICP 1, which outranks this.
+**No direct customer relationship**, for example pure wholesale or B2B2B with no end user.
+**No money movement to or from customers**, which removes the use case entirely.
+**No named peer in the vertical.** Without one there is no evidence, and inventing a peer is fabrication.
+Plus the five observable anti-profile items at 7.
+
+#### Buying group
+
+**CPO and CFO together**, confirmed by Ian on 3 September. Somebody has to fund a thing the business has lived without, so the product case and the business case are made in the same conversation rather than in sequence.
+**CTO is not in the buying group at this stage.** They arrive once the decision to have a card program has been taken, which is after the sale this ICP is running.
+
+#### Signal to pain mapping
+
+| Observable signal | Primary inferred pain | Relevance to the offer |
+| A named peer in the same vertical launched a card program in the last 24 months | **A competitor has built a revenue and engagement line they have not.** The gap is visible to their market before it is visible to them | The whole of Section 2, framed as what the peer did rather than what TXN sells. This is the only ICP where a competitor's success is the opening |
+| Stored balance, wallet, store credit or loyalty scheme, no card | **Money is already sitting with them and cannot be spent anywhere else.** The customer relationship is being under-monetised in a way the balance sheet shows | Steps 3, 4 and 5 turn a held balance into a spendable instrument with controls, which is the shortest path from what they have to what the peer built |
+| Payout or disbursement flow to customers or suppliers, paid by transfer | **Every payout is a cost and a delay rather than a product.** They are moving money without owning the moment it is spent | Steps 3 and 4 make the payout an issued card, which changes a cost line into a retained relationship |
+| Subscription or account-based relationship with no payment instrument of their own | **They own the customer and rent the payment.** The most valuable part of the relationship belongs to someone else | The primary job at Section 1, and step 10, because this buyer has nobody who could run a card program today |
+| Investment in loyalty, rewards or membership without a card | **They are buying engagement the hard way.** They have already decided the customer relationship is worth spending on, and reached for the weaker instrument | Step 5's programmable controls and step 9's extension surface, where rewards and offers attach to spend rather than to a points ledger |
+
+
+### ICP 4. Full switch
+
+**Priority 4 of 4.** Band D at 8.1.12, 5 points.
+
+**Archetype name:** `Full-Switch Migrator, the Blocked Escapee`
+
+**Core thesis.** A company running a live card program that intends to move all of it to another processor. Cardholders and data migrate, and that single fact governs everything: the qualification questions, the risk conversation, the commercial shape and the timeline. They have usually decided the incumbent has failed them, so the sale is not about whether to move but about whether moving is survivable. Their dominant pain is **entrapment**: cumulative dissatisfaction blocked by migration risk, where the blocker is rarely the contract but the cardholder base, the reissue question, and the absence of a route that does not disrupt live customers.
+
+**Last in priority, and gated on two things rather than one.** Nobody moves a full suite to a company with no track record, so reference customers are the first gate. The second is a product dependency: Ian, 3 September, on buyers now expecting migration tooling, *"they don't expect a 15 year old approach"*. ICP 4 therefore waits on something being built as well as something being won. Tracked in [[delivery]], not here.
+
+#### Tier 1: business type
+
+**Primary industry.** FinTech, Banking and Financial Services.
+
+**Ideal verticals.** All twelve at 4.2 are eligible; a live program proves the use case. Weighted towards those where the incumbent set is known to underperform.
+
+**Core identity, what a researcher must confirm.** A live card program **and** evidence of intent to replace the processor entirely, as opposed to adding one.
+
+**Website evidence.** Weakest of the four ICPs. A live card is easy to confirm; the intent to move is rarely published. Occasionally visible through a status page history of incidents, a public procurement notice, or a careers page describing a migration.
+
+**State modifiers.**
+**Go to market:** a payments or platform hire whose remit reads as migration or vendor consolidation.
+**Marketing:** unusually quiet on the card while the rest of the business is loud, which sometimes precedes a replatform.
+**Growth:** a funding round or acquisition that triggers a platform review. A contract at renewal age, where known.
+
+**Observability is the structural weakness of this record.** Contract position, incumbent identity and card base size are exactly what cannot be seen from outside, and the cohort research confirmed it. ICP 4 will carry the largest gaps list of the four. That is tolerable only because it is also last in priority.
+
+#### Tier 2: business model
+
+**Primary model.** Established, revenue-generating, usually sales-led.
+
+**Target customer.** Whoever the existing program already serves, which is knowable from the live product.
+
+**Tech stack signal.** An identifiable incumbent processor, held as an attribute rather than scored. Public incident history. Integration surfaces that suggest a stitched vendor set.
+
+#### Tier 3: firmographics
+
+**Employee count.** Not ranked, per 4.3. In practice the largest of the four, because a migratable book implies scale.
+
+**Geography.** EEA plus the United Kingdom, phased per 4.4.
+
+#### Disqualifiers
+
+**No live card program.** Then it is ICP 1 or ICP 3.
+**Keeping the incumbent for the existing book.** Then it is ICP 2, and the migration conversation does not apply.
+Plus the five observable anti-profile items at 7.
+
+#### The qualification set that exists in no other ICP
+
+Not scored, because none of it is observable. It is the first conversation, and it is written here so it is not improvised.
+
+**Who owns the cardholder data today**, and what the incumbent contract says about extracting it.
+**Reissue or run to expiry.** Reissuing is cleanest, and Ian's caution applies: running to expiry leaves recently renewed cards stranded outside the window for another three to five years, so those get mopped up separately.
+**What the reissue costs at their card count.** Ian's estimate is roughly two pounds or two euros per card, all in, covering plastic, branding, personalisation, production including the chip, and postage. At 100,000 cards that is material, and it is recorded as his industry estimate rather than a TXN price.
+**Why they are moving**, because it changes the reissue appetite. Service-level dissatisfaction means they want the path of least resistance and will resist reissuing. Moving to launch something new usually brings new branding anyway, so reissue matters less.
+**Whether TXN shares any of the reissue cost.** Ian has described this as something TXN could consider for a program already at scale, and it is **not an existing lever**. It must not be offered.
+
+#### Buying group
+
+**CTO leads**, proposed and **not yet confirmed by Ian**. The reasoning is that migration risk is technical risk, engineering owns the existing integration, and the decision that stops this deal is whether the move is survivable.
+**CPO** carries the cardholder disruption question, since reissue is a customer-experience event before it is a technical one.
+**CFO** carries the reissue cost, which in this ICP is a real number on a real card base rather than a modelling exercise.
+
+#### Signal to pain mapping
+
+| Observable signal | Primary inferred pain | Relevance to the offer |
+| Live program with a public incident history on the incumbent | **They are carrying someone else's reliability as their own reputation.** Every outage is theirs to explain to cardholders | Section 2 step 12 is the migration path, and step 7 the clearing and settlement chain they would be moving onto |
+| A payments or platform hire whose remit reads as migration or consolidation | **They have already decided and are staffing the escape.** The decision is made and the route is not | Step 12, and the qualification set above. This is the one ICP where the first conversation is about risk rather than capability |
+| Live program at a contract renewal age, where knowable | **A window is opening that closes again for years.** If they miss it they are held for another term | Step 12, plus the commercial shape at Section 7, since term and notice are the whole conversation at this moment |
+| Stitched vendor set visible around a live program | **Nobody owns the failure.** Moving means untangling several relationships at once, which is why they have not | Steps 4 to 7 and 11 consolidate processing, controls, authentication and settlement, so the migration reduces the vendor count rather than moving it |
+
 
