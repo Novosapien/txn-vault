@@ -39,8 +39,10 @@ Content Workforce only. The Outbound schedule lives at [[delivery-schedule]]; th
 | ~~Thu 27 Aug~~ | ~~Pillars and brand entity~~ | Moved. The slot went to a second Outbound session |
 | ~~Tue 1 Sep~~ | ~~Pillars and brand entity~~ | Moved again (27-08 plan) |
 | ~~Thu 3 Sep~~ | ~~Content Pillars Workshop~~ | **Held as an Outbound session.** Booked and recorded as the pillars workshop; Brett switched it at the start. Fourth displacement. See [[2026-09-03-outbound-workforce-icp-statuses]] |
-| **TBC** | **Pillars and brand entity** | **To rebook**, a fourth time. Brett, 03-09: *"I'll find another gap with Dorte on your diary to finish off the last section of the content workforce"* |
-| **w/c 7 Sep** | **Dorte and Ian personal workforces**, two one-hour sessions each | **To book.** Dorte to give times for both |
+| ~~Fri 4 Sep~~ | ~~Content Workshop 3~~ | **Did not happen.** Ian had a power cut at his house. Fifth displacement, and the only one nobody chose. The hour became domains and diary: [[2026-09-04-domains-and-september-schedule]] |
+| **Thu 10 Sep, 10:00** | **The final company content workshop** | **Booked.** Dorte: *"that will be the final company content workshop."* **This is the session that unlocks TXN's platform access**, and it sits on the morning the Novosapien team flies. [[open-questions]] #81 |
+| **Mon 7 Sep, 15:00** | **Dorte's personal content workforce** | **Booked** on 4 September |
+| **w/c 7 Sep** | **Ian's personal workforce**, two one-hour sessions | **Partly booked.** Ian has a session on Monday at 14:00; he is in London Tuesday and Wednesday and Dorte is deliberately protecting that time |
 | **From 15 Sep** | **Michael's personal workforce**, two one-hour sessions | **After his return.** He is away 3 to 15 Sep. Documents already sent to Brett, review next week |
 
 > **Resolved, and not well.** The Thursday session was the pillars and brand entity work. Ian asked mid-session which engagement he was in: *"is this a content workforce session or an outbound session?"* Brett: *"This is outbound... I've switched it to outbound because yesterday's one just didn't land and we need these ICPs."*
@@ -48,8 +50,12 @@ Content Workforce only. The Outbound schedule lives at [[delivery-schedule]]; th
 > **That is a fourth displacement, and the trade has changed shape since 27 August.** The 27 August swap was justified on a clear argument: domain warming is the only clock that cannot be recovered by working harder, so three days of content slip bought a fortnight of warming. **The warming has still not started**, the domain instructions are three days late ([[delivery-schedule]]), and the pillars have now been moved four times. The reason given for the first swap has not been realised, and the same reason cannot justify the later ones.
 >
 > **What it costs is specific.** TXN gets no access to the Content Workforce platform until all three outputs are uploaded, and the pillars and brand entity are the only two outstanding. So each displacement extends the period in which TXN has paid for a platform it cannot see. And on 3 September Ian and Brett agreed that **the team's own networks are the most likely source of the first client**, ahead of cold outbound ([[outbound]]), which is the engagement that keeps taking the slot.
+>
+> **A fifth displacement on 4 September, and the first client friction with it.** Content Workshop 3 was lost to a power cut at Ian's house, which nobody chose. But when Dorte asked on that call when TXN gets platform access, the exchange was uncomfortable: Brett said *"we can probably do it now"*, Max corrected him with *"there's nothing to give access to, we've not finished the interview"*, and Dorte replied *"why? what have we done the whole time?... this is where it's getting exciting and you're stalling."* **That is the first recorded friction on this engagement**, and it landed on access rather than on quality or price. She has been the most patient party throughout and she is right that the elapsed time is hard to account for from her side. The offsetting fact is the one above: the gate is one session, not three, and it is booked.
 
 ### The personal content workforces
+
+> **The elicitation may not be stable, and Dorte found it (04-09).** She began her profile and stopped: *"Claude asked me so many questions. What I wanted to do is a little bit of a decision tree to see what different outcomes are, because half of them it is more like you're doing a horoscope. You feel today in that mood and tomorrow I'm taking something completely different."* **Her own fix is the useful part**: complete it, but record exactly what was selected, so it can be rerun against different parameters. Six of these interviews are planned, two each for Ian, Michael and Dorte, and if the instrument is mood-dependent then running it twice per person produces two snapshots rather than a stable profile. [[open-questions]] #82. Dorte's is due Monday.
 
 **Two one-hour sessions each**, per Brett on 28 August. Six sessions across three people, but they no longer run in one block.
 
@@ -97,7 +103,11 @@ The calendar has loosened at one end and tightened at the other since the 27 Aug
 
 A **TXN account and business account exist on the Content Workforce platform, and the manifesto is loaded** (Max, 21 August). Documents for the following session were emailed on 20 August.
 
-**TXN access is deliberately withheld until all three outputs are uploaded.** Max: *"there's nothing to access yet. Once all three are uploaded, then it's all yours."* Closing the pillars and the entity is therefore what unlocks TXN's own view of the platform, not a separate step after it.
+**TXN access is gated on the company-level workshop, and on nothing else.** The position recorded here since 21 August was that **all three** outputs must be uploaded, on Max's words *"there's nothing to access yet. Once all three are uploaded, then it's all yours."*
+
+**Corrected 4 September, and it came from Dorte checking rather than from anyone volunteering it** ([[2026-09-04-domains-and-september-schedule]]). She asked: *"do you want all of the personal interviews finished as well to be able to give us access?"* Brett: *"No, we just need to get [the company one] up and running."*
+
+So **the six personal interviews do not gate access.** One session does, and it is the 10 September workshop. That makes the problem smaller than this page has been describing it, and it makes that single booking load-bearing.
 
 ## Inputs
 
