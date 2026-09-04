@@ -12,13 +12,16 @@ The distinguishing fact of this engagement: **TXN arrived with GTM material alre
 
 | Document | Description | Status |
 |----------|------------|--------|
+| [[offer]] | **The offer.** TXN's factual-claims universe under Offer Structure v2: seven sections, twelve mechanism steps, ten pains against CTO / CPO / CFO, eight outcomes, eight differentiators, an honestly empty proof section, and the two standing message rules (never name a competitor, never lead with the owners) | Novosapien, rebuilt clean 02-09-2026 and revised the same day against five rulings. **Nothing blocking.** Awaiting Ian's read-through |
+| [[offer-draft]] | The derived first pass, kept as the audit trail for what the rebuild dropped | Superseded 02-09-2026 |
+| [[buyer-personas]] | **The buyer personas.** Eleven across the four ICPs, twelve sections each, first person. Router carries the selection rationale, the depth gate and an eight-item gaps list | Novosapien, 04-09-2026. **Not yet reviewed by Ian or Dorte** |
 | [[icp-definition]] | TXN's ICP v0.4: firmographics, triggers, anti-profile, ten-parameter scoring, tiering, Named Account List method | Client-authored, 13-07-2026. The fit authority, but **now behind the workbook** |
 | [[prospecting-process]] | TXN's seven-stage prospecting process, four discovery sub-scans, the early-stage watch list, Freshsales model, phased rollout | Client-authored, **v0.6**, 19-08-2026 |
 | [[qualification-matrix]] | Analysis of the scored register v0.7: 126 accounts, tier and route distribution, and the maturity bias in the scoring | Novosapien analysis, 25-08-2026 |
 | [[discovery-sources]] | Validated discovery sources for the greenfield segment: what survived adversarial checking, coverage by market, build requirements | Novosapien research, 25-08-2026 |
-| [[persona-champion]] | CPO. Contributor, no veto. Owns Product Enablement | Client-authored scaffold, v0.1 |
-| [[persona-primary-user]] | CTO. Approver with technical veto. Owns Technical Control | Client-authored scaffold, v0.1 |
-| [[persona-economic-buyer]] | CFO primary, CEO or Founder secondary. Owns Commercial Model | Client-authored scaffold, v0.1 |
+| [[persona-champion]] | CPO. Contributor, no veto. Owns Product Enablement | Client-authored scaffold, v0.1. Source material; superseded as the workforce artefact by [[buyer-personas]] |
+| [[persona-primary-user]] | CTO. Approver with technical veto. Owns Technical Control | Client-authored scaffold, v0.1. Source material; superseded as the workforce artefact by [[buyer-personas]] |
+| [[persona-economic-buyer]] | CFO primary, CEO or Founder secondary. Owns Commercial Model | Client-authored scaffold, v0.1. Source material; superseded as the workforce artefact by [[buyer-personas]] |
 
 ## Sub-sections
 
@@ -94,7 +97,7 @@ So a card from a trading platform *"looks very similar to one that's offered as 
 
 > *"We are going to need to get clarity on what constitutes being an industry vertical and what is a use case."*
 
-[[icp-definition]] §4.2 still lists both kinds of thing in one Sub-sector list, and §4.2.1's card-essential tagging is applied across that mixed list. Tracked at [[open-questions]] #79.
+[[icp-definition]] Section 4.2 still lists both kinds of thing in one Sub-sector list, and Section 4.2.1's card-essential tagging is applied across that mixed list. Tracked at [[open-questions]] #79.
 
 ### The scope line Ian drew while explaining it
 
@@ -146,11 +149,11 @@ His worked example: in the trading platform vertical, **Trading 212** and **Trad
 
 | [[icp-definition]] v0.4 | As written | Ian's ruling, 02-09 |
 |---|---|---|
-| **§8.1.8 P7** | DQ: *"No card program and no stated plan to launch one"* | **Withdrawn.** Not a disqualifier in any form |
-| **§8.1.5 P4** | One of four critical parameters; DQ gates the account | **No longer gates.** Asked directly, Ian answered *"No"* |
-| **§8.1.7 P6** | DQ: *"Recently signed a multi-year incumbent contract within the last 12 months"*, and Triggers is a gating parameter | **A scheduling rule.** *"don't disqualify them but move them down the list so that they're scheduled at a more appropriate time"* |
+| **Section 8.1.8 P7** | DQ: *"No card program and no stated plan to launch one"* | **Withdrawn.** Not a disqualifier in any form |
+| **Section 8.1.5 P4** | One of four critical parameters; DQ gates the account | **No longer gates.** Asked directly, Ian answered *"No"* |
+| **Section 8.1.7 P6** | DQ: *"Recently signed a multi-year incumbent contract within the last 12 months"*, and Triggers is a gating parameter | **A scheduling rule.** *"don't disqualify them but move them down the list so that they're scheduled at a more appropriate time"* |
 
-§8.1.10, the scheme and BIN sponsor DQ, drew the same objection on the same grounds, *"it's not necessary that we would know that's the case."* It is not a gating parameter, so it costs points rather than the account.
+Section 8.1.10, the scheme and BIN sponsor DQ, drew the same objection on the same grounds, *"it's not necessary that we would know that's the case."* It is not a gating parameter, so it costs points rather than the account.
 
 **What survives as a genuine exclusion is very short.** Ian: *"there's a very small exclusion list that should be within those verticals and it really is they've just signed a deal or they've got years left of a deal to go with the incumbent."* And even that is a deprioritisation.
 
@@ -232,7 +235,7 @@ Whether the card is core or value-add is a property of the **vertical plus the u
 
 The anti-profile reason, given on 02-09: small companies cannot carry the documentation and compliance load a tier 1 imposes. *"you get landed with the most ridiculous amount of documentation and and bureaucracy that small companies are not built for and we're not."* Same reason for governments and local governments.
 
-**A tier 1's wholly owned digital subsidiary cannot be excluded in advance.** It depends on how tightly bound it is to the parent's compliance machinery, and *"I'm not sure you can do that without conversation."* So it is a human qualification question, not a discovery filter. Recorded against [[icp-definition]] §7.
+**A tier 1's wholly owned digital subsidiary cannot be excluded in advance.** It depends on how tightly bound it is to the parent's compliance machinery, and *"I'm not sure you can do that without conversation."* So it is a human qualification question, not a discovery filter. Recorded against [[icp-definition]] Section 7.
 
 Ian's rule for the category is about internal behaviour rather than prospects: *"your job really is to kill the excitement in your organization and focus on things you can actually win until you can win."*
 
@@ -240,7 +243,7 @@ Ian's rule for the category is about internal behaviour rather than prospects: *
 
 > *"That does not mean that we are limiting our efforts even in the early outreach to just Eastern Europe... we're not restricting ourselves to that by any stretch of imagination."*
 
-This matches [[icp-definition]] §4.4, which already says phasing governs prioritisation only. It needed saying because the working document was reading the MVP list as a filter.
+This matches [[icp-definition]] Section 4.4, which already says phasing governs prioritisation only. It needed saying because the working document was reading the MVP list as a filter.
 
 A Polish subsidiary of a non-EEA parent turns on **who you contract with**, since contracting outside the EEA changes which rules the contract must satisfy. Ian: *"I would probably recommend not excluding people... because the only way you're going to find out is by getting into a conversation."*
 
@@ -264,11 +267,13 @@ Two models are in play and they use the same words for different objects.
 | **Personas** | A DACI buying group spanning the whole ICP | Children of exactly one ICP, 1 to 5 each, weighted to the economic buyer |
 | **Grading** | Ten parameters, 100 points, Tier 1 at 80+ | Tier 1 business type 50%, Tier 2 business model 30%, Tier 3 firmographics 20%, grade A at 70%+ |
 
-**Proposed resolution.** [[icp-definition]] stays the single fit authority and scoring engine, untouched. Two workforce ICP records sit beneath it, one greenfield and one migration, both inheriting v0.4's firmographics, anti-profile and scoring, differing only in dominant pain, messaging and which persona leads. Sequencing is expressed as an overlay rather than a score.
+**Resolved across 2 and 3 September 2026.** An **ICP is a card program status**, not a vertical and not a fit score. So the four statuses above are the four ICPs directly, each carrying one dominant pain: exposure, constraint, falling behind, entrapment. Vertical and use case are a separate and broader filter underneath. [[icp-definition]] stays the single fit authority and scoring engine, untouched, with Card Program Status as its top-level parameter. Sources at [[2026-09-02-outbound-workforce-icp-qualification]] and [[2026-09-03-outbound-workforce-icp-statuses]].
+
+*Superseded proposal, kept for the record:* two workforce ICP records beneath the fit definition, one greenfield and one migration, with sequencing expressed as an overlay rather than a score. Four statuses replaced it. The analysis of the maturity bias below still stands and still needs acting on.
 
 ### The gap that needs closing
 
-Discovery separates the routes: [[prospecting-process]] §4.1.3 runs four sub-scans, where sub-scan 2 (use-case-primary) surfaces greenfield companies and sub-scan 3 (incumbent-customer) surfaces migration candidates. The use-case lens was added precisely for this, citing **Trade Republic pre-Marqeta** as the canonical case of a fit company invisible to a card-signal filter.
+Discovery separates the routes: [[prospecting-process]] Section 4.1.3 runs four sub-scans, where sub-scan 2 (use-case-primary) surfaces greenfield companies and sub-scan 3 (incumbent-customer) surfaces migration candidates. The use-case lens was added precisely for this, citing **Trade Republic pre-Marqeta** as the canonical case of a fit company invisible to a card-signal filter.
 
 Scoring then merges the routes back together, and tier actions cannot distinguish them. So a Tier 1 greenfield launch and a Tier 1 Trade Republic receive the same ABM treatment, and the sequencing decision has nowhere to live.
 
@@ -276,7 +281,7 @@ Scoring then merges the routes back together, and tier actions cannot distinguis
 
 **Proposed fix:** surface Route as a derived attribute (launch / new product / full switch). It already exists implicitly in the Incumbent Processor input, so this is derivation and exposure rather than new data capture. Carry it into Freshsales and use it to order outreach *within* tier. The score is untouched and fit is untouched.
 
-Ian named this bias himself in [[prospecting-process]] §4.1.5, dated 19 August, when adding the early-stage watch list for companies *"that would otherwise be missed by discovery weighted toward existing card programs."* The watch list catches pre-product companies before they reach the register; it does not reach the 32 greenfield accounts already scored into Tier 2 and Tier 3.
+Ian named this bias himself in [[prospecting-process]] Section 4.1.5, dated 19 August, when adding the early-stage watch list for companies *"that would otherwise be missed by discovery weighted toward existing card programs."* The watch list catches pre-product companies before they reach the register; it does not reach the 32 greenfield accounts already scored into Tier 2 and Tier 3.
 
 ## Persona scaffolds: what carries and what is missing
 
@@ -292,11 +297,11 @@ All three documents describe themselves as *"Initial scaffold"* in their own Doc
 
 ### The incumbent assumption
 
-Every persona scaffold is written assuming an incumbent exists. [[persona-champion]] §3.3: *"They have the most to gain from moving off an incumbent processor."* [[persona-economic-buyer]] §4 seeks *"a competitive total cost of ownership versus the incumbent"* and §6 asks for margin impact *"compared like-for-like to the incumbent."* [[persona-primary-user]] §2 frames the outcome as *"a long-term partner or a migration target."*
+Every persona scaffold is written assuming an incumbent exists. [[persona-champion]] Section 3.3: *"They have the most to gain from moving off an incumbent processor."* [[persona-economic-buyer]] Section 4 seeks *"a competitive total cost of ownership versus the incumbent"* and Section 6 asks for margin impact *"compared like-for-like to the incumbent."* [[persona-primary-user]] Section 2 frames the outcome as *"a long-term partner or a migration target."*
 
 For route 1 there is no incumbent, no current spend, and no like-for-like comparison, so the Economic Buyer's evaluation frame has nothing to sit on. The scaffolds need a greenfield variant before route 1 outbound can run.
 
-Related: [[persona-champion]] §7 lists the objection *"What is your track record with similar products and use cases? Show me three references in our vertical."* That is the objection TXN cannot currently answer, and it is the same constraint that puts route 1 first.
+Related: [[persona-champion]] Section 7 lists the objection *"What is your track record with similar products and use cases? Show me three references in our vertical."* That is the objection TXN cannot currently answer, and it is the same constraint that puts route 1 first.
 
 ## Interview series
 
@@ -307,7 +312,7 @@ Related: [[persona-champion]] §7 lists the objection *"What is your track recor
 | 27-08-2026 | Offer session 2 | [[2026-08-27-outbound-workforce-offer-session-2]] | Eight decisions taken. Mechanism block moved offline to Dorte |
 | 02-09-2026 | Additional interview: qualification and the ICPs | [[2026-09-02-outbound-workforce-icp-qualification]] | **Did not finish.** Three ICP gating rules overturned, targeting model and two-stage sale settled |
 | 03-09-2026 | The four statuses (held in the Content Workforce slot) | [[2026-09-03-outbound-workforce-icp-statuses]] | **Closed the ICPs.** Card Program Status settled and carried into [[icp-definition]] the same day |
-| TBC | Interview 3, the Personas | Not yet held | **Moved offline.** Brett runs the persona build as a heavy lift, roughly half an hour each, delivered as one HTML artifact for async review |
+| 04-09-2026 | Interview 3, the Personas | [[buyer-personas]] | **Delivered 04-09 as a build, not a session.** Eleven personas across the four ICPs, gated and published as one HTML artifact for async review by Ian and Dorte |
 
 Positioning material from interview 1 (tagline, value proposition) is deliberately held until the series closes, so it lands as one piece rather than in fragments.
 
@@ -324,17 +329,17 @@ Positioning material from interview 1 (tagline, value proposition) is deliberate
 | ~~The scored register of the 126 accounts~~ | **Delivered 25-08 as v0.7.** Analysis at [[qualification-matrix]] | Closed |
 | ~~Reissue [[icp-definition]]~~ | **Done 03-09**, and further than asked: Card Program Status becomes the top-level parameter and the Incumbent Processor Signal is retired. **What replaces it: the 126-account register has not been rescored** against the new weights, and the 12 points moved off Triggers are provisional. [[open-questions]] #77 | Closed |
 | Route attribute decision: is sequencing carried as a derived field | A decision. **Sharper after 02-09**, since Ian has now ruled that everything in a target vertical is a target and only the order differs, which leaves sequencing with nowhere to live unless it is a field | Ian |
-| ~~Whether the 18 "no card program, no plan" accounts belong on the register at all~~ | **Answered 02-09: they stay, and none of them should have scored DQ.** Ian withdrew the §8.1.8 band outright, so the 6 currently disqualified return to the working list | Closed |
-| Greenfield variants of the three persona scaffolds | Interview 3 | Both |
-| What TXN sells that this offer does not cover | One line. "Nothing" is a complete answer | Ian |
+| ~~Whether the 18 "no card program, no plan" accounts belong on the register at all~~ | **Answered 02-09: they stay, and none of them should have scored DQ.** Ian withdrew the Section 8.1.8 band outright, so the 6 currently disqualified return to the working list | Closed |
+| ~~Greenfield variants of the three persona scaffolds~~ | **Overtaken 04-09.** The scaffolds are not varied; [[buyer-personas]] replaces them with eleven personas built per ICP, and ICP 1 and ICP 3 are greenfield by construction | Closed |
+| ~~What TXN sells that this offer does not cover~~ | **Closed 02-09. Nothing.** The offer covers everything TXN sells. Written to [[offer]] Section 1 | Closed |
 | The employee band ruling: 10 to 5,000, or 20 to 2,000 | A decision. [[icp-definition]] v0.4 and Core Messaging v2.5 disagree, and the older figure filters out the seed-stage fintechs v0.4 deliberately brought into scope | Ian |
-| Competitor naming in outbound: named, or categories only | A permission, explicitly. TXN's own documents name all six freely | Ian |
+| ~~Competitor naming in outbound~~ | **Closed 02-09. Never name a competitor**, including when a prospect names one first. Categories only. The per-competitor counters stay with the humans | Closed |
 | Whether the banned-word list is complete | Confirmation, or the bans that never made it into a document | Ian |
-| The signature-to-first-live-transaction mechanism | Written up offline after the 27-08 session. The largest remaining gap in the offer fact base | Dorte |
+| ~~The signature-to-first-live-transaction mechanism~~ | **Parked 02-09.** No longer waiting on Dorte's write-up. The ten-day figure stays quotable as a stated target and may never be described as a process. See [[offer]] Section 2 step 2 | Parked |
 | ~~JV Messaging Framework v2.3~~ | **Delivered 27-08.** Mirrored at [[jv-messaging-framework]]. One change, the Section 7.4 redline | Closed |
 | **TXN_Data_Residency_Messaging_Framework_v1.0** | The document itself. v2.3 names it as extending the Day-1 disclosure principle into the data-residency and shared-infrastructure context, which is exactly the ground [[open-questions]] #56 covers and the ground Ian described on 27-08 when separating the platform from the environment it is operated in. Referenced, not supplied | Ian |
-| Owner proof points shortlist | Novosapien sources what is public on Direct Transact and Paycorp and ranks it for a European fintech buyer; the two shareholders then confirm what may be used | Both |
-| Head of Payments and Risk & Compliance personas | Decision on whether they get standalone documents | Ian |
+| Owner proof points shortlist | **No longer gating, 02-09.** Direct Transact and Paycorp are credibility placed late: not in first touch, not in the follow-up sequence, further down the sales process by a person. The clearance exercise still runs for the press release and the later-stage conversation | Both, in parallel |
+| Head of Payments and Risk & Compliance personas | Decision on whether they get standalone documents. [[buyer-personas]] follows each ICP's own buying group and neither role appears in any of the four | Ian |
 | Route 2 worked examples: who moved a next product, and what the incumbent could not do | Ian's recall or records | Ian |
 | Whether BIN lookup resolves reliably across Europe as a research signal | Research | Novosapien |
 | The three-state target matrix: legitimate target, priority target now, disqualified | Ian's explicit ask on 02-09. One page | Novosapien |
