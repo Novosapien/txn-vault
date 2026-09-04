@@ -452,7 +452,7 @@ Research-time only. Everything here is verifiable from outside.
 
 #### Buying group
 
-Re-derived for this status rather than inherited from [[offer]].
+Re-derived for this status rather than carried over from [[offer]].
 
 **CPO leads.** The card is essential to the product they are building, so it is a product decision before it is a technical one.
 **CTO validates feasibility**, and holds the technical veto. In this status they are validating something nobody in the building has done before, which is the exposure pain in its most concrete form.
@@ -469,13 +469,200 @@ Re-derived for this status rather than inherited from [[offer]].
 
 ### 10.2 S2, new program, incumbent stays
 
-**Priority 2 of 4.** Not yet drafted.
+**Priority 2 of 4.** 16 points at 8.1.12.
+
+**Archetype name:** `Second-Program Builder, the Constrained Operator`
+
+**Core thesis.** A company already running a card program with an incumbent, launching an additional program, product or region somewhere else. Nothing migrates and nobody is leaving; the incumbent stays in place and keeps the original book. These buyers know the domain, have integrated a processor before, and can tell you precisely what their current one cannot do, because they have already asked and been told no. The discount against S3 is that they can walk away at no cost: they have a working program and nothing breaks if the new one never launches. Their dominant pain is **constraint**, which is not unhappiness but specific inability.
+
+**The binding rule applies hardest here.** Never go after the incumbent, named, implied or by category (7 and 8.1.12). The incumbent stays, so the buyer is standing behind a live decision they are not reversing, and criticising it criticises them. State what TXN does, never what the other cannot, and let the buyer draw the comparison.
+
+#### Tier 1: business type
+
+**Primary industry.** FinTech, Banking, Financial Services and Retail.
+
+**Ideal verticals.** All twelve at 4.2 are eligible, because a live program already proves the use case works for them. Weighted towards those with multi-product roadmaps or multi-region ambitions: digital banking and neobanks, BaaS, FX payments, lending, expense management.
+
+**Core identity, what a researcher must confirm.** A live card program **and** a separate, dated commitment to a new product, segment or geography.
+
+**Website evidence.** A live card evidenced by a BIN, card art, cardholder terms or app store screenshots. Then, separately, a new market landing page, a second product line, a regional domain or a localised pricing page that the existing program does not cover.
+
+**State modifiers.**
+**Go to market:** hiring for a named new market or product line. A second payments or program manager rather than a first.
+**Marketing:** launch messaging for a new segment. Regulatory or licence announcements in a market they do not yet serve.
+**Growth:** a funding round earmarked for expansion. A partnership or distribution agreement that implies a card the current program does not issue.
+
+#### Tier 2: business model
+
+**Primary model.** Sales-led or sales-assisted, usually further along than S3.
+
+**Target customer.** Whoever the new product serves, which is frequently not who the existing program serves. That gap is the opportunity.
+
+**Tech stack signal.** An identifiable incumbent processor, captured as an attribute and no longer scored since 8.1.8 was retired. Multi-region infrastructure. A second core banking or ledger instance. Localisation tooling.
+
+#### Tier 3: firmographics
+
+**Employee count.** Not ranked, per 4.3. In practice larger than S3, because running one program and launching another takes capacity.
+
+**Geography.** EEA plus the United Kingdom, phased per 4.4. Note the new market may sit outside the phase order while the company sits inside it, and the company's location governs.
+
+#### Disqualifiers
+
+**No card program at all.** Then it is S3 or S4.
+**Moving the existing program too.** Then it is S1, and the migration conversation dominates.
+**No evidence of a second program, product or region.** Then it is a static incumbent at band E.
+Plus the five observable anti-profile items at 7.
+
+#### Buying group
+
+**CPO leads.** Ruled by Ian, 3 September: a new product or a new region is a product decision.
+**CTO weighting is open**, and it is a genuine question rather than a detail. This is the only status where the client ends up **running two processors in parallel**: two integrations, two reconciliations, two sets of scheme reporting, one team. That either makes the CTO more central than in any other status, because the ongoing cost is theirs, or barely registers because the programs never touch. Ian's experience decides it, and it also decides whether TXN raises the cost of running two or answers it before being asked.
+**CFO** approves on commercial grounds, comparing against a price they already pay.
+
+#### Signal to pain mapping
+
+| Observable signal | Primary inferred pain | Relevance to the offer |
+| Live card program plus a new market landing page or localised pricing | **The existing platform does not reach where they are going.** They have chosen the market and discovered the constraint afterwards | Section 2 steps 1, 6 and 11 configure a program and its BIN and routing per market, so a new geography is configuration rather than a second vendor relationship |
+| Live program plus a second product line the current card cannot support | **The platform decides what they are allowed to build.** The roadmap is being shaped by a vendor's limits | Steps 5 and 9 carry programmable controls and the extension surface, which is where a product that the incumbent cannot express becomes buildable |
+| Hiring a second program manager or a market-specific payments lead | **They are adding people to work around a platform**, which is the cost of the constraint made visible on a payroll | The primary job: run a card program without employing card experts. Step 10 removes the headcount the workaround needs |
+| Partnership or distribution deal implying a card the current program does not issue | **A commercial commitment is running ahead of the platform.** There is a date attached and the current vendor is not the answer | Step 2 is the launch path, and the ten-day figure is TXN's target, stated as a target |
+| Multi-region infrastructure with a single-region card program | **The company is multi-market and the card is not.** The asymmetry is visible from outside and is felt internally as a ceiling | Steps 6 and 11 handle multi-jurisdiction obligation and BIN structure, so the card catches up with the rest of the business |
+
 
 ### 10.3 S4, industry inference
 
-**Priority 3 of 4.** Not yet drafted.
+**Priority 3 of 4.** 10 points at 8.1.12.
+
+**Archetype name:** `Card-Adjacent Unaware, the Peer-Shadowed Operator`
+
+**Core thesis.** A company with no card program and no stated plan for one, operating in a vertical where a named peer already runs a card program against a use case that would work here. They may never have considered it. The qualification is an inference drawn from the vertical rather than a signal emitted by the company, which makes this the only status where the evidence is about somebody else. It is also a different sale rather than a different message: there is a period of convincing on the value of a card program at all before the conversation reaches which vendor. Their dominant pain is **falling behind**, and they may not have registered it yet.
+
+**This is the population that must never be disqualified for lack of signal.** Ruled 2 September. A company that has never issued a card emits no card signals by definition, and the old framework scored exactly that condition at zero and gated on it.
+
+#### Tier 1: business type
+
+**Primary industry.** Retail, Ecommerce, Financial Services and the adjacent operating verticals.
+
+**Ideal verticals.** The nine card-adjacent sub-sectors at 4.2.1: lending SMB and consumer, FX payments, investment management, disbursement, payments, BaaS, retail, ecommerce. Not the three card-essential ones, because a card-essential company with no card is S3.
+
+**Core identity, what a researcher must confirm.** Three things together. No card evidence anywhere. A **named peer** in the same vertical running a card program against a use case that transfers. And the two preconditions that make a card possible at all: they hold a **direct customer relationship** and they already move **money to or from** those customers.
+
+**Website evidence.** This is the inverse of every other status, because the company-level evidence is an absence. What is present instead: a customer account or login, a stored balance, wallet, store credit or loyalty scheme, a payout or disbursement flow, a subscription or recurring billing relationship. Any of those is a card waiting to happen.
+
+**State modifiers.**
+**Go to market:** none card-related, by definition. Look instead for a company investing in its own customer relationship, which is where a card becomes rational.
+**Marketing:** loyalty, rewards, membership or wallet propositions.
+**Growth:** funding or expansion that increases the customer base a card would serve.
+
+**The peer map is a prerequisite, not a nicety.** S4 cannot be operated without a maintained list of named companies per vertical who have launched a relevant program, because the peer is both the qualification evidence and the opening of the message. That list does not exist yet and building it is the largest outstanding piece of work on this status.
+
+#### Tier 2: business model
+
+**Primary model.** Any model with a recurring or account-based customer relationship. Marketplaces, subscription businesses, platforms with a payout side.
+
+**Target customer.** Consumers or SMBs held as accounts rather than as transactions.
+
+**Tech stack signal.** A payments-in acquirer with no payments-out capability. A loyalty or rewards platform. A customer identity or account system. Notably absent: anything issuing-related.
+
+#### Tier 3: firmographics
+
+**Employee count.** Not ranked, per 4.3.
+
+**Geography.** EEA plus the United Kingdom, phased per 4.4.
+
+#### Disqualifiers
+
+**Any card evidence at all.** Then it is S1, S2 or a static incumbent.
+**A card-essential vertical.** Then it is S3, which outranks this.
+**No direct customer relationship**, for example pure wholesale or B2B2B with no end user.
+**No money movement to or from customers**, which removes the use case entirely.
+**No named peer in the vertical.** Without one there is no evidence, and inventing a peer is fabrication.
+Plus the five observable anti-profile items at 7.
+
+#### Buying group
+
+**CPO and CFO together**, confirmed by Ian on 3 September. Somebody has to fund a thing the business has lived without, so the product case and the business case are made in the same conversation rather than in sequence.
+**CTO is not in the buying group at this stage.** They arrive once the decision to have a card program has been taken, which is after the sale this status is running.
+
+#### Signal to pain mapping
+
+| Observable signal | Primary inferred pain | Relevance to the offer |
+| A named peer in the same vertical launched a card program in the last 24 months | **A competitor has built a revenue and engagement line they have not.** The gap is visible to their market before it is visible to them | The whole of Section 2, framed as what the peer did rather than what TXN sells. This is the only status where a competitor's success is the opening |
+| Stored balance, wallet, store credit or loyalty scheme, no card | **Money is already sitting with them and cannot be spent anywhere else.** The customer relationship is being under-monetised in a way the balance sheet shows | Steps 3, 4 and 5 turn a held balance into a spendable instrument with controls, which is the shortest path from what they have to what the peer built |
+| Payout or disbursement flow to customers or suppliers, paid by transfer | **Every payout is a cost and a delay rather than a product.** They are moving money without owning the moment it is spent | Steps 3 and 4 make the payout an issued card, which changes a cost line into a retained relationship |
+| Subscription or account-based relationship with no payment instrument of their own | **They own the customer and rent the payment.** The most valuable part of the relationship belongs to someone else | The primary job at Section 1, and step 10, because this buyer has nobody who could run a card program today |
+| Investment in loyalty, rewards or membership without a card | **They are buying engagement the hard way.** They have already decided the customer relationship is worth spending on, and reached for the weaker instrument | Step 5's programmable controls and step 9's extension surface, where rewards and offers attach to spend rather than to a points ledger |
+
 
 ### 10.4 S1, full switch
 
-**Priority 4 of 4.** Not yet drafted.
+**Priority 4 of 4.** 5 points at 8.1.12.
+
+**Archetype name:** `Full-Switch Migrator, the Blocked Escapee`
+
+**Core thesis.** A company running a live card program that intends to move all of it to another processor. Cardholders and data migrate, and that single fact governs everything: the qualification questions, the risk conversation, the commercial shape and the timeline. They have usually decided the incumbent has failed them, so the sale is not about whether to move but about whether moving is survivable. Their dominant pain is **entrapment**: cumulative dissatisfaction blocked by migration risk, where the blocker is rarely the contract but the cardholder base, the reissue question, and the absence of a route that does not disrupt live customers.
+
+**Last in priority, and gated on two things rather than one.** Nobody moves a full suite to a company with no track record, so reference customers are the first gate. The second is a product dependency: Ian, 3 September, on buyers now expecting migration tooling, *"they don't expect a 15 year old approach"*. S1 therefore waits on something being built as well as something being won. Tracked in [[delivery]], not here.
+
+#### Tier 1: business type
+
+**Primary industry.** FinTech, Banking and Financial Services.
+
+**Ideal verticals.** All twelve at 4.2 are eligible; a live program proves the use case. Weighted towards those where the incumbent set is known to underperform.
+
+**Core identity, what a researcher must confirm.** A live card program **and** evidence of intent to replace the processor entirely, as opposed to adding one.
+
+**Website evidence.** Weakest of the four statuses. A live card is easy to confirm; the intent to move is rarely published. Occasionally visible through a status page history of incidents, a public procurement notice, or a careers page describing a migration.
+
+**State modifiers.**
+**Go to market:** a payments or platform hire whose remit reads as migration or vendor consolidation.
+**Marketing:** unusually quiet on the card while the rest of the business is loud, which sometimes precedes a replatform.
+**Growth:** a funding round or acquisition that triggers a platform review. A contract at renewal age, where known.
+
+**Observability is the structural weakness of this record.** Contract position, incumbent identity and card base size are exactly what cannot be seen from outside, and the cohort research confirmed it. S1 will carry the largest gaps list of the four. That is tolerable only because it is also last in priority.
+
+#### Tier 2: business model
+
+**Primary model.** Established, revenue-generating, usually sales-led.
+
+**Target customer.** Whoever the existing program already serves, which is knowable from the live product.
+
+**Tech stack signal.** An identifiable incumbent processor, held as an attribute rather than scored. Public incident history. Integration surfaces that suggest a stitched vendor set.
+
+#### Tier 3: firmographics
+
+**Employee count.** Not ranked, per 4.3. In practice the largest of the four, because a migratable book implies scale.
+
+**Geography.** EEA plus the United Kingdom, phased per 4.4.
+
+#### Disqualifiers
+
+**No live card program.** Then it is S3 or S4.
+**Keeping the incumbent for the existing book.** Then it is S2, and the migration conversation does not apply.
+Plus the five observable anti-profile items at 7.
+
+#### The qualification set that exists in no other status
+
+Not scored, because none of it is observable. It is the first conversation, and it is written here so it is not improvised.
+
+**Who owns the cardholder data today**, and what the incumbent contract says about extracting it.
+**Reissue or run to expiry.** Reissuing is cleanest, and Ian's caution applies: running to expiry leaves recently renewed cards stranded outside the window for another three to five years, so those get mopped up separately.
+**What the reissue costs at their card count.** Ian's estimate is roughly two pounds or two euros per card, all in, covering plastic, branding, personalisation, production including the chip, and postage. At 100,000 cards that is material, and it is recorded as his industry estimate rather than a TXN price.
+**Why they are moving**, because it changes the reissue appetite. Service-level dissatisfaction means they want the path of least resistance and will resist reissuing. Moving to launch something new usually brings new branding anyway, so reissue matters less.
+**Whether TXN shares any of the reissue cost.** Ian has described this as something TXN could consider for a program already at scale, and it is **not an existing lever**. It must not be offered.
+
+#### Buying group
+
+**CTO leads**, proposed and **not yet confirmed by Ian**. The reasoning is that migration risk is technical risk, engineering owns the existing integration, and the decision that stops this deal is whether the move is survivable.
+**CPO** carries the cardholder disruption question, since reissue is a customer-experience event before it is a technical one.
+**CFO** carries the reissue cost, which in this status is a real number on a real card base rather than a modelling exercise.
+
+#### Signal to pain mapping
+
+| Observable signal | Primary inferred pain | Relevance to the offer |
+| Live program with a public incident history on the incumbent | **They are carrying someone else's reliability as their own reputation.** Every outage is theirs to explain to cardholders | Section 2 step 12 is the migration path, and step 7 the clearing and settlement chain they would be moving onto |
+| A payments or platform hire whose remit reads as migration or consolidation | **They have already decided and are staffing the escape.** The decision is made and the route is not | Step 12, and the qualification set above. This is the one status where the first conversation is about risk rather than capability |
+| Live program at a contract renewal age, where knowable | **A window is opening that closes again for years.** If they miss it they are held for another term | Step 12, plus the commercial shape at Section 7, since term and notice are the whole conversation at this moment |
+| Stitched vendor set visible around a live program | **Nobody owns the failure.** Moving means untangling several relationships at once, which is why they have not | Steps 4 to 7 and 11 consolidate processing, controls, authentication and settlement, so the migration reduces the vendor count rather than moving it |
+
 
