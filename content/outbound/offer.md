@@ -5,7 +5,7 @@ description: "TXN's offer under Offer Structure v2: the factual-claims universe 
 # TXN Offer
 
 > **Up:** [[outbound]]
-> **Status:** Rebuilt clean, 2 September 2026, then revised the same day against five rulings (`R1`). Supersedes [[offer-draft]]. **Nothing blocks the offer.** Thirteen gaps remain, none of them load-bearing, and one item is carried to the next meeting with Ian and Dorte. Still to be read end to end and signed off by Ian.
+> **Status:** Rebuilt clean, 2 September 2026, then revised the same day against five rulings (`R1`). Supersedes [[offer-draft]]. **Nothing blocks the offer.** Fourteen gaps remain, none of them load-bearing, and one factual check sits with Ian. Reconciled against the 3 September session on 5 September, which closed the credentials and employee-band gaps. Still to be read end to end and signed off by Ian.
 > **What this is:** the factual-claims universe. Everything written here is permitted truth that the outbound agents may state and the critic will pass. **No prospect ever reads this document.** It is not marketing copy and it is not a brochure. Judge it only on whether every line is true and defensible.
 > **The markdown is the source of truth.** A generated JSON appendix is added once the gaps list below is closed and Ian has signed the document off. It is not written by hand.
 > **Readable HTML version:** `~/shared/clients/txn/outbound/txn-offer-<timestamp>.html`, generated from this file by `python3 scripts/render-html.py offer`. It is a rendering, not a second copy. Edit this document, then regenerate; never edit the HTML.
@@ -20,7 +20,7 @@ This is a rebuild from source, not an edit of the previous draft. Two kinds of m
 
 **Every derived line that Ian has never said out loud is marked.** Those are the lines most likely to be wrong, and they are the ones to put in front of him first. Fields nobody has answered are written `unknown` and collected in the gaps list at the foot. A visible gap is a correct gap.
 
-**Source key.** `S1` offer session 24-08-2026 · `S2` offer session 27-08-2026 · `ICP2` ICP session 25-08-2026 · `R1` rulings taken 02-09-2026 · `PO` Product Overview v1.0 · `CM` Core Messaging v2.5 · `AITO` AI Target Outcomes Framework v1.0 · `OH` Objection Handling v1.1 · `CL` Competitive Landscape v0.2 · `JV` JV Messaging Framework v2.3
+**Source key.** `S1` offer session 24-08-2026 · `S2` offer session 27-08-2026 · `ICP2` ICP session 25-08-2026 · `S3` ICP statuses session 03-09-2026 · `R1` rulings taken 02-09-2026 · `PO` Product Overview v1.0 · `CM` Core Messaging v2.5 · `AITO` AI Target Outcomes Framework v1.0 · `OH` Objection Handling v1.1 · `CL` Competitive Landscape v0.2 · `JV` JV Messaging Framework v2.3
 
 ---
 
@@ -41,6 +41,10 @@ A word TXN bans externally must not appear in this fact base, because this fact 
 **Two bans are sense-specific, and a literal string match will over-fire on them.** *Partner* is banned only when applied to Direct Transact in a vendor or service-provider sense; "BIN sponsor relationships" and "pre-integrated partners" are fine. *Disrupt* is banned as a positioning register, the disruptor claim; "disruption to the cardholder base" is TXN's own operational language and appears in their documents. Anything else on the list is banned outright.
 
 **Never name a competitor.** (`R1`.) Not Marqeta, Paymentology, Thredd, Enfuce, Episode Six or Pismo, and not any other. Contrast against the categories in Section 5, including when a prospect names a competitor first. TXN's per-competitor counters exist and stay with the humans.
+
+**Never criticise the competition, and this is stricter than the naming ban.** (`S3`.) Ian, asked whether the restraint applies even where a buyer is actively leaving somebody: *"The answer to that question is yes. I just don't believe in criticizing the competition. It's more important to emphasize all differentiators as you understand them."* **Binding in all four ICPs**, not only where an incumbent stays. State what TXN does, never what the other cannot. No "unlike your current processor", no "if your provider cannot", no implied deficiency. Where a capability is genuinely absent on the alternative, the buyer draws the comparison themselves, and a comparison the buyer makes is worth more than one an agent makes for them.
+
+**Consequence, and it changes how Section 5 is read.** The **Where it falls short** material under each alternative in Section 5 is **context-not-quotable**: agents ground on it, and never voice it. It is internal grounding for choosing which TXN capability to lead with, the same treatment Section 7 already carries.
 
 **Never lead with the owners.** (`R1`.) Direct Transact and Paycorp do not appear in first touch or in the follow-up sequence. They carry real credibility and it is deployed further down the sales process, by a person, once the prospect is engaged and asking who is behind this. Full placement rule in Section 6.
 
@@ -128,6 +132,7 @@ Meet scheme and regulatory requirements as a delivered outcome rather than a bur
 
 **Geographies served**
 The EEA plus the United Kingdom. Outbound priority is phased: MVP markets are Poland, the Czech Republic, Romania and Hungary; Phase 1a is Southern Europe; Phase 1b is Western Europe; the rest of the EEA and the UK are opportunistic. (`CM` 3.1.)
+**The phasing orders effort. It excludes nobody.** Ruled by Ian on 2 September, because the phase list was being read as a filter: *"we are not limiting our efforts even in the early outreach to just Eastern Europe... we're not restricting ourselves to that by any stretch of imagination."* A company outside the MVP markets is a target that is scheduled later, never a company that is out of scope.
 
 **Team size**
 `unknown`
@@ -137,7 +142,7 @@ The EEA plus the United Kingdom. Outbound priority is phased: MVP markets are Po
 
 **Built for**
 European fintechs, digital banks, embedded finance companies, and other card program owners that are either launching a new card program or migrating one from an incumbent processor. Three segment clusters carry most of the addressable market: digital banking and neobanks; commercial card and expense management; lending, FX and embedded finance. (`CM` 3.1.) The full fit definition lives in [[icp-definition]].
-**Employee band unresolved.** ICP v0.4 says 10 to 5,000; `CM` 2.5 says 20 to 2,000. The older figure filters out the seed-stage fintechs v0.4 deliberately brought into scope. Ian to rule.
+**Employee band: ruled 3 September, and the ruling is that there is no band.** (`S3`.) Ian: *"the number of employees to a certain degree it's relevant but it doesn't warrant a significant score."* Headcount and card-readiness are uncorrelated in both directions: a scaled business may have built everything except the card and have ten people, and a startup may build cards from day one with fewer than ten. **Sub-10 is explicitly in scope**, which is wider than either ICP v0.4 or `CM` 2.5 allowed, so the 10-to-5,000 versus 20-to-2,000 disagreement is not resolved in favour of either. The scope widens and the weight falls, to 3 points at [[icp-definition]] 8.1.3. Closes G9.
 
 **Covers**
 The TXN issuer-processing platform in full: the API, the Console, the Developer Portal and the intelligence layer, for both greenfield launches and migrations from an incumbent.
@@ -149,8 +154,18 @@ The TXN issuer-processing platform in full: the API, the Console, the Developer 
 **TXN has none. TXN is pre-launch and has no clients, no case studies, no testimonials and no track record in its own name.** That is the correct entry and it is written here deliberately, so that no agent invents one. The only citeable figures belong to the co-founding owners and must be attributed to them (see Section 6).
 
 **Credentials**
-These are the standards the platform is built to, per `PO` 5.3. **Which of them are certified today, as against engineered for, is `unknown` and must be established before any of them is used as a claim.**
-Card data security: PCI DSS Level 1, TLS 1.2 minimum, no regulated card data in standard responses.
+**Two different things live here and conflating them is the single most dangerous error in this document.** What TXN holds, and what the platform is engineered to. Settled on 3 September (`S3`).
+
+*What is held, and by whom.*
+**TXN holds no accreditation of its own.** Ian, unprompted and for the record: *"we definitely don't have it just for that record."*
+**PCI is held by Direct Transact, our co-founding owner, not by TXN.** Ian: *"DT hold the PCI accreditation because essentially they're the ones that are managing our card infrastructure."*
+**SOC 2: `unknown`.** Ian was not sure; Dorte believes Direct Transact holds it. Ian owns the check.
+**ISO 27001: `unknown`.** Ian: *"I'm pretty sure they do. We'll just have to double check that."* Ian owns the check.
+
+**The only permitted form of the claim.** The platform is operated within Direct Transact's accredited environment, and Direct Transact is a co-founding owner rather than a supplier. **Never "TXN is PCI compliant", never "TXN is certified", never "our certifications".** This is the same distinction Ian drew on 27 August between the platform and the environment it is operated in, and getting it wrong in a regulated procurement is unrecoverable.
+
+*What the platform is engineered to*, per `PO` 5.3. These are design standards, not held accreditations, and they are stated as such or not at all.
+Card data security: PCI DSS Level 1 as the design standard, TLS 1.2 minimum, no regulated card data in standard responses.
 Access: OAuth 2.0 with scoped tokens, mutual TLS for high-assurance integrations, SSO for console users with mandatory two-factor where password sign-in is used.
 Regulatory: PSD2 and SCA, 3DS 2.x step-up authentication.
 Auditability: immutable audit logging with a minimum seven-year retention, carrying actor, action, timestamp and outcome on every event.
@@ -437,7 +452,11 @@ Before: the program is something the business owns commercially and does not con
 
 A business that needs a card program today has four realistic moves, and three of them are chosen for good reasons. The legacy processors are chosen because they work and everybody knows they work. The first-wave modern platforms are chosen because they made integration possible for a normal engineering team. Building is chosen because it looks like control. And staying put is chosen more often than any of them, because moving is genuinely hard. TXN's argument is not that these are bad choices. It is that each of them makes the buyer accept a specific compromise, and that the compromise is structural rather than a matter of vendor quality.
 
-**Competitors are never named in outbound. Settled, not pending.** (`R1`. Closes G4.) TXN's own documents name Marqeta, Paymentology, Thredd, Enfuce, Episode Six and Pismo freely and carry a specific counter for each, and that material stays where it is: `CL` and `OH` 4.1, for a human in a live conversation. **Agents contrast against the categories below and never against a company name**, including when a prospect names one first. A prospect naming a competitor is a conversation for a person, not a line for an agent to answer.
+**Two rules govern this section, and they are different rules.**
+
+**One: competitors are never named in outbound. Settled, not pending.** (`R1`. Closes G4.) TXN's own documents name Marqeta, Paymentology, Thredd, Enfuce, Episode Six and Pismo freely and carry a specific counter for each, and that material stays where it is: `CL` and `OH` 4.1, for a human in a live conversation. **Agents contrast against the categories below and never against a company name**, including when a prospect names one first. A prospect naming a competitor is a conversation for a person, not a line for an agent to answer.
+
+**Two: the Where it falls short lines below are context-not-quotable.** (`S3`.) They exist so an agent knows which TXN capability to lead with against a buyer in that situation. **They are never voiced, in any form.** An agent that states what the alternative cannot do has broken the rule even if it named nobody. What may be voiced is the differentiator claim and its substance, which are statements about TXN.
 
 ### The alternatives
 
@@ -578,7 +597,7 @@ Every field this document could not answer, as an explicit collection list. This
 |---|-------------|--------|-----------------|
 | G1 | The signature-to-first-live-transaction mechanism | **Parked.** No longer waiting on Dorte's write-up | Section 2 step 2, with the cost of parking it stated: the ten-day figure stays quotable as a target and may never be described as a process |
 | G2 | What TXN sells that this offer does not cover | **Nothing.** The offer covers everything TXN sells | Section 1, `not_covered` |
-| G3 | Which credentials are certified today as against engineered for | **Keep the current framing** and raise it with Ian and Dorte at the next meeting. Nothing changes in the document meanwhile | Section 1 credentials, unchanged. Carried to the agenda below |
+| G3 | Which credentials are certified today as against engineered for | **Answered on 3 September, and it had already been answered when this gap was written.** TXN holds nothing of its own; PCI sits with Direct Transact; SOC 2 and ISO remain unknown and Ian owns the check | Section 1 credentials, rewritten 5 September. The residual unknowns are carried below |
 | G4 | Competitor naming permission | **Never name a competitor in outbound.** Categories only, including when a prospect names one first | Section 5, settled rather than pending |
 | G5 | Owner proof point shortlist | **The owners are credibility, placed late.** Not in first touch, not in the follow-up sequence; they belong further down the sales process | Section 6 placement rule, and the D4 placement rule |
 
@@ -586,7 +605,7 @@ Every field this document could not answer, as an explicit collection list. This
 
 | Item | What is needed |
 |------|----------------|
-| **G3, the credential status** | Which of PCI DSS Level 1, SOC 2, ISO 27001 and the scheme certifications are held today, and which are engineered for. The document currently says the honest thing, that these are the standards the platform is built to and the certification status is unknown, and that framing stays until they answer. These are the first claims a regulated procurement tests, and stating an engineered target as a certification is the fastest way to lose both a deal and a reputation |
+| **Direct Transact's SOC 2 and ISO 27001 status** | The only part of the credentials question still open. Ian owns the check and said so on 3 September: *"We'll just have to double check that."* Everything else is settled and written into Section 1: TXN holds no accreditation of its own, PCI sits with Direct Transact, and the only permitted claim form is that the platform is operated within Direct Transact's accredited environment |
 | **The owner proof clearance** | Still worth doing, no longer a gate. Novosapien sources and ranks what is public on Direct Transact and Paycorp for a European fintech buyer; the shareholders confirm what may go to market. It feeds the joint press release and the later-stage sales conversation, not the outbound messages |
 
 ### Company facts, cheap to answer, currently blank
@@ -596,7 +615,7 @@ Every field this document could not answer, as an explicit collection list. This
 | G6 | Founded date | Ian |
 | G7 | Headquarters, and whether TXN Global Limited in Cyprus is the answer the fact base should give | Ian |
 | G8 | Team size | Ian |
-| G9 | The employee band ruling for `built_for`: 10 to 5,000, or 20 to 2,000. ICP v0.4 and `CM` 2.5 disagree | Ian |
+| ~~G9~~ | ~~The employee band ruling for `built_for`~~ | **Closed 3 September.** There is no band. Headcount is not a core ranking, sub-10 is explicitly in scope, and the parameter weight falls to 3 |
 | G10 | Commitment terms: term, minimums, notice | Ian |
 
 ### Rulings needed on things this document had to guess
@@ -632,11 +651,18 @@ Run mechanically, 2 September 2026. Recorded so the next reader knows what was a
 | 5 | **Depth contract.** Section 2 longest; steps ≥2 sentences; 6 to 10 pains; 5 to 8 outcomes; 4 to 8 differentiators; 2 to 4 alternatives | **Pass on count** (12 steps, 10 pains, 8 outcomes, 8 differentiators, 4 alternatives). **Fails on one step by decision:** step 2 carries no mechanism, parked on 2 September, with the consequence written into the step rather than left implicit. Section 2 is the longest section |
 | 6 | **Boundary sweep.** No steps in Section 1; no outcomes in Section 2 `contributes`; no comparisons in Section 4; no campaign objectives; no voice or audience profiles | **Pass.** Conversion rates, channel caps, domain warming and the 126-account list were all present in the source sessions and are deliberately excluded: they are campaign-layer configuration, and they live in [[commercial]] and [[delivery-schedule]] |
 | 7 | **Own-words check.** Does Section 7 sound like the client? | **Pass.** The pricing description and the disclosure rule are Ian's wording |
-| 8 | **Gaps list.** | **Pass.** Thirteen open, five resolved on 2 September, one carried to the next meeting. All above |
+| 8 | **Gaps list.** | **Pass, and the count is now auditable.** Fourteen open: 2 carried to the next meeting, 4 company facts, 5 rulings this document had to guess, 3 tracked elsewhere. Seven resolved: the five that were blocking, plus G3 and G9. Earlier versions of this row said thirteen and then eleven; both were wrong, because closed rows were subtracted twice. Counted row by row on 5 September |
 | 9 | **Vocabulary check.** No banned word anywhere | **Pass.** Swept for all 24 banned terms, the em dash, and "programme". One deliberate retention: "partner" appears only as "BIN sponsor relationships", never applied to Direct Transact |
 | 10 | **Presentation check.** Bold human labels, one field per line, JSON appendix | **Partial.** Labels and line discipline pass. **The JSON appendix is deliberately not generated**, because generating it before Ian has gated the document would create a stale machine artefact that the workforce would then read as truth |
 | 11 | **Compound offers, track wiring** | **Not applicable.** No component tracks. Migration is a step, per the `S2` ruling |
 
 **Two failures carried, both by choice rather than by omission.** Step 2 has no mechanism, parked on 2 September, and the offer states what that costs instead of pretending otherwise. Check 10 is deliberately incomplete: the machine-readable appendix is generated once Ian signs the document off, because generating it earlier would create a stale artefact the workforce would read as truth.
+
+**Reconciled 5 September 2026 against the 3 September session**, which had already answered two gaps this document was still carrying as open. Two findings, both corrections rather than additions:
+
+- **The credentials block was wrong, not merely incomplete.** It listed PCI DSS Level 1 among TXN's credentials with the status marked unknown. TXN holds no accreditation of its own; PCI is held by Direct Transact. A regulated procurement would have tested that claim first and it would not have survived. Rewritten to separate what is held, and by whom, from what the platform is engineered to.
+- **The competition rule was under-stated.** The document banned naming a competitor. Ian's ruling is wider: never criticise the competition at all, in any of the four ICPs, and the Where it falls short material in Section 5 is grounding that agents must never voice.
+
+Two gaps closed on the same reconciliation, G3 and G9, both of which had been answered in the room before this document recorded them as open.
 
 **Revised 2 September 2026** against five rulings. Section 1 `not_covered`, Section 2 step 2, Section 5 competitor naming, Section 6 owner placement, D4 placement, the vocabulary doctrine, and the gaps list all changed. Checks 2, 3, 4, 6 and 9 were re-run over the changed passages and still pass.

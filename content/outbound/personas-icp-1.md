@@ -25,7 +25,7 @@ description: "Three buyer personas for ICP 1, first program and card is essentia
 - **2.2 Core Responsibilities:**
   - Defining what the card actually does for the customer: who holds it, what it can be spent on, what it is limited to, and how that differs from every other card in the customer's wallet.
   - Sequencing the launch so that the card, the account, the app and the onboarding all arrive together, because none of them is a product on its own.
-  - Holding the roadmap against a founder and a board who read a card as a feature rather than as an infrastructure programme.
+  - Holding the roadmap against a founder and a board who read a card as a feature rather than as an infrastructure program.
   - Choosing the platform, in practice, because the decision is a product decision before it is a technical one.
   - Fronting the waitlist, the beta list and the early customers who were told a date.
 - **2.3 Scope, Seniority & Authority:** Scope: business. Seniority: Executive or senior leadership, often a founding team member. Decision Authority: shapes and effectively selects the vendor, holds the roadmap, does not usually hold the final budget signature and cannot override the CTO's technical veto.
@@ -79,7 +79,7 @@ My morning is spent on things that are not the card, and my afternoon is spent d
 - An EMI or payment institution authorisation progressing, which starts a regulatory clock against a decision nobody has made.
 
 **9.0 Information Diet & Trusted Voices**
-- Other founders and product leads who have already launched a card programme, reached directly rather than through content. One honest conversation outweighs everything published.
+- Other founders and product leads who have already launched a card program, reached directly rather than through content. One honest conversation outweighs everything published.
 - The accelerator or investor network they sit inside, which is where this population exists before it announces itself and where vendor recommendations actually travel.
 - Fintech-specific newsletters and the operator communities around them, read for pattern rather than for vendors.
 - Their own engineers' verdict on a developer portal, which they treat as a proxy for whether the company is serious.
@@ -88,11 +88,11 @@ My morning is spent on things that are not the card, and my afternoon is spent d
 **10.0 Success Metrics (What "Good" Looks Like)**
 - From a date they defend nervously, to a date they state flatly, because they can describe what sits behind it.
 - From a product with a hole where the card is, to a customer completing the whole journey in one session.
-- From needing to hire card expertise before launching, to running the programme with the team they already have.
+- From needing to hire card expertise before launching, to running the program with the team they already have.
 - From a first version they are stuck with, to changing the card product in configuration after launch when the first version turns out to be wrong.
 
 **11.0 The Message That Lands**
-Lead on the thing they have publicly committed to and cannot yet defend: they have built the account and cannot yet build the card, and the missing piece is the one nobody in the building has done before. The claim that cuts through is the primary job, that they can run this programme without employing card experts, because it answers their real fear, which is a permanent dependency on a hire they have not made. Say plainly that TXN targets under ten business days from signature to first live transaction, name it as a target rather than a result, and do not describe the process behind it. Do not compare TXN to any other vendor, and do not open with who owns TXN. This buyer has been given three identical pitches already, and the differentiator is being the only one who says which parts are proven and which are not.
+Lead on the thing they have publicly committed to and cannot yet defend: they have built the account and cannot yet build the card, and the missing piece is the one nobody in the building has done before. The claim that cuts through is the primary job, that they can run this program without employing card experts, because it answers their real fear, which is a permanent dependency on a hire they have not made. Say plainly that TXN targets under ten business days from signature to first live transaction, name it as a target rather than a result, and do not describe the process behind it. Do not compare TXN to any other vendor, and do not open with who owns TXN. This buyer has been given three identical pitches already, and the differentiator is being the only one who says which parts are proven and which are not.
 
 **12.0 Example Titles**
 Chief Product Officer · Head of Product · VP Product · Founder and CPO · Head of Card Products · Product Lead, Payments
@@ -152,7 +152,8 @@ I am being asked to sign off an architecture in a domain where I cannot yet tell
   - "Where exactly does the intelligence layer sit? If it is anywhere near authorisation, we are done."
   - "You are pre-launch. Nobody has ever run this in anger."
   - "Show me what happens when you are unavailable, not what happens when you are up."
-  - "Which of these certifications do you hold today, and which are ones you are building towards? Answer those separately."
+  - "Which of these do you hold today, and which are ones you are building towards? Answer those separately."
+  - "Who actually holds the PCI accreditation? You, or the people running your infrastructure?"
 
 **8.0 Trigger Events (Why Now)**
 - The core banking or ledger platform going live, which turns the card from a future problem into the only remaining unknown in the architecture.
@@ -163,7 +164,7 @@ I am being asked to sign off an architecture in a domain where I cannot yet tell
 
 **9.0 Information Diet & Trusted Voices**
 - The vendor's own developer portal and sandbox, used as evidence about the company rather than about the product. Gated sandboxes are read as a bad sign.
-- Engineering peers at companies that already run a programme, approached privately for the operational story rather than the architectural one.
+- Engineering peers at companies that already run a program, approached privately for the operational story rather than the architectural one.
 - Scheme and regulatory primary sources, read reluctantly and only when a vendor's answer feels thin.
 - Status pages and public incident histories, theirs and everyone else's.
 - Reachable through technical substance rather than through outreach. A message that names a real architectural decision gets read; a message about transformation does not.
@@ -175,7 +176,7 @@ I am being asked to sign off an architecture in a domain where I cannot yet tell
 - From needing a card specialist on the team, to an integration their existing engineers own and understand.
 
 **11.0 The Message That Lands**
-Speak to them about mechanism, not outcome. The two facts that earn a reply are that everything is available through the API before it appears in any screen and behaviour is deterministic, and that the intelligence layer runs alongside the platform rather than inside the real-time transaction path, with a person in the decision loop. Both are structural claims they can test rather than promises they have to trust. Acknowledge the pre-launch position before they raise it, because they will, and because pretending otherwise ends the conversation. On certifications, be exact about what is held today and what the platform is engineered to, and never blur them; this buyer is the one who will check. Do not lead with who owns TXN and do not compare TXN with any named competitor.
+Speak to them about mechanism, not outcome. The two facts that earn a reply are that everything is available through the API before it appears in any screen and behaviour is deterministic, and that the intelligence layer runs alongside the platform rather than inside the real-time transaction path, with a person in the decision loop. Both are structural claims they can test rather than promises they have to trust. Acknowledge the pre-launch position before they raise it, because they will, and because pretending otherwise ends the conversation. On accreditation, give them the real answer before they dig for it: TXN holds none of its own, PCI is held by Direct Transact, our co-founding owner, and the platform is operated within that accredited environment. Separate that cleanly from the standards the platform is engineered to. This buyer is the one who will check, and volunteering the distinction is worth more here than any capability claim. Do not lead with who owns TXN and do not compare TXN with any named competitor.
 
 **12.0 Example Titles**
 Chief Technology Officer · VP Engineering · Head of Engineering · Head of Platform · Technical Co-Founder · Director of Payments Engineering
@@ -189,7 +190,7 @@ Chief Technology Officer · VP Engineering · Head of Engineering · Head of Pla
 **2.0 Role & Functional Identity**
 - **2.1 Primary Function:** Holds the money and the runway, and is being asked to commit to a platform cost that has no comparable line anywhere in the company's history.
 - **2.2 Core Responsibilities:**
-  - Modelling what the card programme costs to run at the volumes the plan assumes, and at the volumes the plan will actually deliver.
+  - Modelling what the card program costs to run at the volumes the plan assumes, and at the volumes the plan will actually deliver.
   - Deciding what gets funded this quarter against a runway that is finite and, at this stage, usually investor-set.
   - Answering to a board or an investor for a vendor commitment in a category none of them will interrogate well.
   - Judging whether the company is buying a platform or acquiring a permanent dependency.
@@ -203,7 +204,7 @@ Chief Technology Officer · VP Engineering · Head of Engineering · Head of Pla
 - **Worldview & Biases Toward This Category:** Assumes infrastructure pricing is designed to be hard to model, and that the headline number is not the number. Has been surprised by a usage-based bill before, in another category, and has not forgotten it.
 
 **4.0 A Day in the Life**
-I am putting a number in a model for something I have never bought. Everything else on this sheet has a comparable: I know what engineers cost, I know what cloud costs, I know roughly what compliance costs because I have paid for it. This line I am building from a vendor's own description of their own pricing, which is not a source. Someone told me the fees step down as volume rises, which sounds good and is impossible to model without knowing the steps, and I have been told the steps are not discussed at this stage. I have a board meeting in three weeks where somebody will ask what the card programme costs at ten times our plan, and my honest answer is a range so wide it is not an answer. Meanwhile my product lead is telling me the date matters more than the price, and my CTO is telling me not to rush, and both of them are right, and I am the one who has to choose which kind of wrong we are going to be.
+I am putting a number in a model for something I have never bought. Everything else on this sheet has a comparable: I know what engineers cost, I know what cloud costs, I know roughly what compliance costs because I have paid for it. This line I am building from a vendor's own description of their own pricing, which is not a source. Someone told me the fees step down as volume rises, which sounds good and is impossible to model without knowing the steps, and I have been told the steps are not discussed at this stage. I have a board meeting in three weeks where somebody will ask what the card program costs at ten times our plan, and my honest answer is a range so wide it is not an answer. Meanwhile my product lead is telling me the date matters more than the price, and my CTO is telling me not to rush, and both of them are right, and I am the one who has to choose which kind of wrong we are going to be.
 
 **5.0 Pains & Fears (Expanded Dossier)**
 
@@ -222,7 +223,7 @@ I am putting a number in a model for something I have never bought. Everything e
 **6.0 What They've Already Tried (and Why It Disappointed)**
 - **Asked three vendors for pricing.** Got a structure from each and figures from none, which is standard in the category and no less useless for it.
 - **Built a model on assumed unit costs.** The output range was so wide that the model could not distinguish between vendors, which was the only thing it was built to do.
-- **Asked an investor to introduce them to a portfolio company already running a programme.** The introduction happened, the numbers did not, because the other company treats theirs as commercial in confidence.
+- **Asked an investor to introduce them to a portfolio company already running a program.** The introduction happened, the numbers did not, because the other company treats theirs as commercial in confidence.
 - **Considered deferring the whole decision by a quarter.** Killed by the fact that the product does not exist without the card, so deferring the platform defers the company.
 
 **7.0 Decision Criteria & Objections**
@@ -240,7 +241,7 @@ I am putting a number in a model for something I have never bought. Everything e
 **8.0 Trigger Events (Why Now)**
 - A funding round closing, which converts a plan into a spending mandate with a clock on it.
 - A board meeting where the launch date and its cost are both on the agenda.
-- The runway model being rebuilt and the card programme appearing as the largest unpriced line in it.
+- The runway model being rebuilt and the card program appearing as the largest unpriced line in it.
 - The product lead committing publicly to a date, which removes deferral as an option.
 - A failed senior hire in payments, which reframes the decision from cost to capability.
 
@@ -253,12 +254,12 @@ I am putting a number in a model for something I have never bought. Everything e
 
 **10.0 Success Metrics (What "Good" Looks Like)**
 - From an unpriced line in the model, to a forecast they will defend in a board meeting without hedging.
-- From unit costs that stay flat as the programme grows, to a cost per active card that falls as volume rises.
-- From needing to hire card expertise to operate the programme, to running it with the team they have already funded.
+- From unit costs that stay flat as the program grows, to a cost per active card that falls as volume rises.
+- From needing to hire card expertise to operate the program, to running it with the team they have already funded.
 - From a dependency with an unknown exit cost, to a commitment whose term, notice and exit they have read and accepted.
 
 **11.0 The Message That Lands**
-Do not open with the technology and do not open with pricing, because there are no numbers to give and a pricing conversation that produces no number damages trust. Open on the headcount question, which is the only large avoidable cost in this decision: the programme is designed to be run without employing card experts, and that is the claim with money attached. Then the shape, in TXN's own words rather than a taxonomy: a fixed monthly licence fee plus volume-tiered fees that step down as monthly volume rises, so the cost per active card falls as the programme grows. State plainly that figures come in a conversation rather than in a message. Do not raise the owners here, and never claim a total cost advantage over a named competitor.
+Do not open with the technology and do not open with pricing, because there are no numbers to give and a pricing conversation that produces no number damages trust. Open on the headcount question, which is the only large avoidable cost in this decision: the program is designed to be run without employing card experts, and that is the claim with money attached. Then the shape, in TXN's own words rather than a taxonomy: a fixed monthly licence fee plus volume-tiered fees that step down as monthly volume rises, so the cost per active card falls as the program grows. State plainly that figures come in a conversation rather than in a message. Do not raise the owners here, and never claim a total cost advantage over a named competitor.
 
 **12.0 Example Titles**
 Chief Financial Officer · Founder and CEO · Co-Founder · VP Finance · Head of Finance · Finance Director
