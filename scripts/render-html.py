@@ -25,6 +25,16 @@ DOCS = {
                 "not marketing copy. Judge it only on whether every line is true and defensible."),
         "meta": [("Structure", "Offer Structure v2"), ("Blocking gaps", "0")],
     },
+    "icp": {
+        "slug": "txn-icp-definition",
+        "sources": [f"{VAULT}/icp-definition.md"],
+        "eyebrow": "TXN &middot; Cold Outreach Workforce &middot; ICP Definition",
+        "title": "The ICP definition",
+        "sub": ("Who TXN sells to, and the scoring framework that becomes the workforce's lead-grading rubric. "
+                "One fit definition with four buying situations inside it, separated by where a company sits "
+                "relative to having a card program. No prospect ever reads it."),
+        "meta": [("ICPs", "4, in priority order"), ("Scoring", "10 parameters, 100 points")],
+    },
     "personas": {
         "slug": "txn-buyer-personas",
         "sources": [f"{VAULT}/buyer-personas.md", f"{VAULT}/personas-icp-1.md",
@@ -132,8 +142,10 @@ def convert(md, multi):
             while i < n and lines[i].startswith("|"):
                 rows.append([c.strip() for c in lines[i].strip().strip("|").split("|")])
                 i += 1
-            head, data = (rows[0], rows[2:]) if len(rows) >= 2 and all(
-                re.fullmatch(r":?-{2,}:?", c) for c in rows[1]) else (None, rows)
+            has_sep = len(rows) >= 2 and all(re.fullmatch(r":?-{2,}:?", c) for c in rows[1])
+            # Some vault tables omit the separator row. Their first row is still a
+            # header, so treat it as one rather than rendering it as data.
+            head, data = (rows[0], rows[2:] if has_sep else rows[1:]) if len(rows) > 1 else (None, rows)
             t = "<table>"
             if head:
                 t += "<thead><tr>" + "".join(f"<th>{inline(c)}</th>" for c in head) + "</tr></thead>"
