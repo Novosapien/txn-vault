@@ -2,6 +2,9 @@
 description: "TXN's Economic Buyer persona scaffold: the CFO who owns budget and the Commercial Model pillar, with CEO or Founder secondary on strategic deals"
 ---
 
+> [!info] Source scaffold, superseded as the workforce artefact
+> Retained as Ian's original input and still cited for its objections. The workforce personas are now children of a single ICP and live at [[buyer-personas]]. This scaffold assumes an incumbent exists, so it does not cover ICP 1 or ICP 3.
+
 # Persona: Economic Buyer (CFO)
 
 > **Source of truth:** `TXN_GTM_Persona_Economic_Buyer_v0.1.docx` in the outbound folder (`programming/txn/outbound`, mirrored at `shared/clients/txn/outbound`), delivered by Ian Johnson on 24 August 2026. This page is a readable mirror. Edit the source document, then re-mirror. Routed from [[outbound]].

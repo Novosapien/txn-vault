@@ -1,8 +1,12 @@
 ---
-description: "Draft TXN offer: pains, outcomes and differentiation derived from TXN's own GTM corpus and the vault, for Ian to redline rather than answer from scratch"
+description: "Superseded first draft of the TXN offer, kept as the audit trail for the 2 September clean rebuild at [[offer]]"
 ---
 
-# TXN Offer, draft for redline
+> [!warning] Superseded, 2 September 2026
+> This draft is **no longer the offer**. It was rebuilt from source as [[offer]] after the 2 September session, on Brett's instruction to start clean because accumulated context had degraded accuracy. Nothing here should be quoted, extracted or fed to an agent.
+> It is kept in place as the audit trail: it records what was derived before the rebuild, and a claim that appears here but not in [[offer]] was dropped deliberately rather than forgotten.
+
+# TXN Offer, draft for redline (superseded)
 
 > **Section:** [[outbound]]
 > **Status:** **Draft. Derived, not elicited.** Every claim below traces to a document TXN wrote or to a decision recorded in a session. Nothing here has been confirmed by Ian in this shape.
