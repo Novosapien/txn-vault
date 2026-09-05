@@ -6,7 +6,7 @@ description: "Three buyer personas for ICP 2, new program with the incumbent sta
 
 > **Up:** [[buyer-personas]]
 > **Parent ICP:** [[icp-definition]] Section 10, ICP 2. Archetype `Second-Program Builder, the Constrained Operator`.
-> **Dominant pain inherited by all three:** **constraint.** Not unhappiness, specific inability. They already run a programme, they already know the domain, and they have already asked their current platform for the thing they need and been told no.
+> **Dominant pain inherited by all three:** **constraint.** Not unhappiness, specific inability. They already run a program, they already know the domain, and they have already asked their current platform for the thing they need and been told no.
 > **Buying group as the ICP defines it:** CPO leads, CTO weighting is an open question, CFO approves against a price they already pay.
 > **Grounded on:** [[offer]] Section 2 for mechanism, Section 3 for per-role pain impact, Section 4 for what may be promised.
 
@@ -21,14 +21,14 @@ description: "Three buyer personas for ICP 2, new program with the incumbent sta
 **1.0 Archetype Name** The Boxed-In Roadmap Owner
 
 **2.0 Role & Functional Identity**
-- **2.1 Primary Function:** Owns a product roadmap in which the next material thing, a new segment, a new region or a second card product, cannot be built on the platform the company already runs.
+- **2.1 Primary Function:** Owns a product roadmap in which the next material thing, a new segment, a new region or a second card product, cannot be delivered on the platform the company already runs.
 - **2.2 Core Responsibilities:**
-  - Defining the second programme: who it serves, what the card does differently, and why it could not simply be a variant of the first.
+  - Defining the second program: who it serves, what the card does differently, and why it could not simply be a variant of the first.
   - Deciding whether the new thing waits for the existing platform to support it, or goes somewhere else, which is the entire decision.
   - Holding a roadmap where the constraint is external and the accountability is not.
   - Managing an organisation that is used to one processor and will feel a second as complexity before it feels it as capability.
   - Selecting the platform, because a new product or a new region is a product decision.
-- **2.3 Scope, Seniority & Authority:** Scope: business. Seniority: Executive. Decision Authority: owns the roadmap, effectively selects the vendor for the new programme, does not hold final commercial signature, cannot force the technical decision.
+- **2.3 Scope, Seniority & Authority:** Scope: business. Seniority: Executive. Decision Authority: owns the roadmap, effectively selects the vendor for the new program, does not hold final commercial signature, cannot force the technical decision.
 
 **3.0 Psychographic Profile**
 - **Identity & Self-Image:** An operator who has done this once and intends to do it better. They are past the phase of being impressed by infrastructure and into the phase of resenting it.
@@ -49,9 +49,9 @@ I know exactly what I want to build and I know exactly why I cannot build it her
 **5.2 Strategic & Political Pains**
 - **"Arguing for a second platform makes me look like I am creating complexity."** Internally it reads as my problem rather than as a constraint, and I have to keep explaining that difference.
 - **"I chose the current one and now I am the person saying it is not enough."** That is a hard sentence to say without it sounding like an admission.
-- **"We can also just not do this, and everyone knows it."** Nothing breaks if the second programme never launches, which means my case has to be made on upside rather than on necessity, and upside is always beatable.
+- **"We can also just not do this, and everyone knows it."** Nothing breaks if the second program never launches, which means my case has to be made on upside rather than on necessity, and upside is always beatable.
 
-**5.3 The Deepest Fear:** That the second programme launches, the organisation experiences it as duplicated effort and split attention rather than as new capability, and the conclusion drawn is that the ambition was wrong rather than that the original platform was the constraint. Not that it fails. That it succeeds and is remembered as an unnecessary complication.
+**5.3 The Deepest Fear:** That the second program launches, the organisation experiences it as duplicated effort and split attention rather than as new capability, and the conclusion drawn is that the ambition was wrong rather than that the original platform was the constraint. Not that it fails. That it succeeds and is remembered as an unnecessary complication.
 
 **6.0 What They've Already Tried (and Why It Disappointed)**
 - **Asked the current platform directly, more than once.** Got genuine engagement and a roadmap position, which is a no with a longer timeline and no accountability attached.
@@ -62,7 +62,7 @@ I know exactly what I want to build and I know exactly why I cannot build it her
 **7.0 Decision Criteria & Objections**
 - **What they weigh evaluating this category:**
   - Whether the specific thing they cannot do today is configuration or a build, and how they can verify that answer before signing.
-  - How much of the new programme can change after launch without another vendor conversation.
+  - How much of the new program can change after launch without another vendor conversation.
   - Whether a new market is a configuration exercise or a second vendor relationship all over again.
   - Whether the organisation can absorb a second platform without it becoming a permanent tax.
 - **Objections / sources of resistance:**
@@ -72,14 +72,14 @@ I know exactly what I want to build and I know exactly why I cannot build it her
   - "We can do nothing at all and be fine. Why now?"
 
 **8.0 Trigger Events (Why Now)**
-- A partnership or distribution agreement implying a card the current programme does not issue, with a date attached and a counterparty watching.
+- A partnership or distribution agreement implying a card the current program does not issue, with a date attached and a counterparty watching.
 - A new market landing page, regional domain or localised pricing page going live ahead of the payment capability behind it.
 - A funding round earmarked for expansion, which converts an ambition into a mandate.
 - A second product line reaching the point where the card design cannot be finalised on the existing platform.
-- A licence or regulatory approval in a market the existing programme does not cover.
+- A licence or regulatory approval in a market the existing program does not cover.
 
 **9.0 Information Diet & Trusted Voices**
-- Peers at companies running more than one programme, sought out specifically because that experience is rare and hard-won.
+- Peers at companies running more than one program, sought out specifically because that experience is rare and hard-won.
 - Industry events and the corridor conversations at them, which is where this population compares notes honestly.
 - Payments trade press and analyst commentary, read for market movement rather than for vendor selection.
 - Their own commercial team's account of what partners are asking for, which is often where the constraint first surfaces.
@@ -92,7 +92,7 @@ I know exactly what I want to build and I know exactly why I cannot build it her
 - From a launch date that depends on a third party's backlog, to a date the team sets and holds.
 
 **11.0 The Message That Lands**
-Open on the signal, never on the incumbent: they have chosen a market or a product and discovered the constraint afterwards. The claims that land are that programme behaviour is configuration rather than bespoke code, and that a new geography is handled through programme configuration and BIN and routing structure rather than through a second vendor relationship. Both are statements about TXN and neither requires a word about their current platform. Say nothing about the incumbent, in any register: not named, not implied, not by category, not even sympathetically. This buyer is standing behind a live decision they are not reversing, and the fastest way to lose them is to make them defend it. They can walk away at no cost, so the message earns its reply by being specific about the thing they have already been told no about.
+Open on the signal, never on the incumbent: they have chosen a market or a product and discovered the constraint afterwards. The claims that land are that program behaviour is configuration rather than bespoke code, and that a new geography is handled through program configuration and BIN and routing structure rather than through a second vendor relationship. Both are statements about TXN and neither requires a word about their current platform. Say nothing about the incumbent, in any register: not named, not implied, not by category, not even sympathetically. This buyer is standing behind a live decision they are not reversing, and the fastest way to lose them is to make them defend it. They can walk away at no cost, so the message earns its reply by being specific about the thing they have already been told no about.
 
 **12.0 Example Titles**
 Chief Product Officer · Head of Product · VP Product, Payments · Head of Cards · Director of Product, New Markets · General Manager, New Segment
@@ -109,7 +109,7 @@ Chief Product Officer · Head of Product · VP Product, Payments · Head of Card
   - Integrating a second platform without destabilising the first, which is live and carrying real cardholders.
   - Deciding how much of the existing internal abstraction can be reused, and how much has to be rebuilt because it was written against one vendor's shape.
   - Owning two sets of reconciliation, two sets of scheme reporting and two escalation paths, permanently.
-  - Judging whether the programmes ever touch, because if they never do the cost is duplication and if they do the cost is much larger.
+  - Judging whether the programs ever touch, because if they never do the cost is duplication and if they do the cost is much larger.
   - Protecting a team that is being asked to learn a second platform while operating the first.
 - **2.3 Scope, Seniority & Authority:** Scope: department to business. Seniority: Executive. Decision Authority: technical veto, owns the integration estimate that shapes the business case, does not own the vendor selection.
 
@@ -131,10 +131,10 @@ Everyone is discussing which platform and I am the only one costing what happens
 
 **5.2 Strategic & Political Pains**
 - **"The people making this call do not carry it."** Product wins a capability, engineering owns a permanent second estate, and those are not weighed against each other anywhere.
-- **"If either programme has a bad month, it lands on me and the first question will be whether the second platform caused it."** The new thing gets blamed for everything for a year.
+- **"If either program has a bad month, it lands on me and the first question will be whether the second platform caused it."** The new thing gets blamed for everything for a year.
 - **"I cannot argue against this without sounding like I am protecting the status quo."** Raising the cost of two reads as resistance rather than as accounting.
 
-**5.3 The Deepest Fear:** That the second programme is integrated competently, and eighteen months later the team is spending a third of its time on platform reconciliation across two vendors, the velocity everyone was promised has quietly disappeared into that, and nobody connects the two facts. Not a failed integration. A slow, unattributable tax.
+**5.3 The Deepest Fear:** That the second program is integrated competently, and eighteen months later the team is spending a third of its time on platform reconciliation across two vendors, the velocity everyone was promised has quietly disappeared into that, and nobody connects the two facts. Not a failed integration. A slow, unattributable tax.
 
 **6.0 What They've Already Tried (and Why It Disappointed)**
 - **Built an internal abstraction layer over the first processor.** It works, and it encoded that vendor's model deeply enough that it is now an obstacle rather than an asset.
@@ -151,12 +151,12 @@ Everyone is discussing which platform and I am the only one costing what happens
 - **Objections / sources of resistance:**
   - "The integration is not my concern. The next three years of running two is. Talk to me about that."
   - "Where does your intelligence layer sit relative to the transaction path?"
-  - "You are pre-launch, and I am putting a live second programme on you."
-  - "Which certifications do you hold today, as opposed to are building towards?"
+  - "You are pre-launch, and I am putting a live second program on you."
+  - "Which of these do you hold today, as opposed to are building towards, and who holds them?"
 
 **8.0 Trigger Events (Why Now)**
 - A product decision landing as a schedule request, which is usually the first they hear of it.
-- Multi-region infrastructure going live around a single-region card programme, which makes the asymmetry structural rather than temporary.
+- Multi-region infrastructure going live around a single-region card program, which makes the asymmetry structural rather than temporary.
 - A second core banking or ledger instance being stood up, which is the moment the two-estate question becomes real.
 - A partnership with a date, which removes the option of doing this slowly.
 - Losing or failing to replace a payments engineer, which changes the capacity arithmetic entirely.
@@ -170,12 +170,12 @@ Everyone is discussing which platform and I am the only one costing what happens
 
 **10.0 Success Metrics (What "Good" Looks Like)**
 - From an internal abstraction that encodes one vendor, to one that holds two without leaking.
-- From every configuration change needing engineering, to operations changing programme settings themselves on both estates.
+- From every configuration change needing engineering, to operations changing program settings themselves on both estates.
 - From reconciliation as a recurring investigation, to reconciliation with mismatches flagged and a place to look.
 - From an unquantified second-estate tax, to a running cost they measured, predicted and can defend.
 
 **11.0 The Message That Lands**
-This buyer's question is not the integration, it is the three years after it, so lead there. The claims that matter are that all core functionality is available through the API before it appears in any screen, which is what determines whether the second estate can be automated or has to be clicked, and that operators can change programme configuration, card controls and scheme parameters themselves, which is what decides whether a second platform doubles the engineering load or does not. Reconciliation with mismatch flagging is worth naming explicitly, because it is where the duplicated cost actually lives. Say nothing at all about their existing processor. Be exact about certifications held versus engineered for, and about the pre-launch position, before they ask.
+This buyer's question is not the integration, it is the three years after it, so lead there. The claims that matter are that all core functionality is available through the API before it appears in any screen, which is what determines whether the second estate can be automated or has to be clicked, and that operators can change program configuration, card controls and scheme parameters themselves, which is what decides whether a second platform doubles the engineering load or does not. Reconciliation with mismatch flagging is worth naming explicitly, because it is where the duplicated cost actually lives. Say nothing at all about their existing processor. Be exact about accreditation before they ask: TXN holds none of its own, PCI sits with Direct Transact, our co-founding owner, and the platform is operated within that accredited environment. Separate that from the standards the platform is engineered to, and be equally direct about the pre-launch position.
 
 **12.0 Example Titles**
 Chief Technology Officer · VP Engineering · Head of Payments Engineering · Head of Platform Engineering · Director of Engineering, Cards · Principal Engineer, Payments
@@ -190,9 +190,9 @@ Chief Technology Officer · VP Engineering · Head of Payments Engineering · He
 - **2.1 Primary Function:** Approves a second processing contract at a company that already pays for one, and owns the question of whether the combined position is defensible.
 - **2.2 Core Responsibilities:**
   - Comparing the new arrangement against a price they already pay and already understand, which is the only benchmark in this decision and a very hard one.
-  - Modelling the incremental cost of the second programme against its incremental revenue, on a business case that is optional rather than necessary.
+  - Modelling the incremental cost of the second program against its incremental revenue, on a business case that is optional rather than necessary.
   - Owning the total vendor position: two contracts, two renewal cycles, two sets of minimums.
-  - Judging whether the second programme's economics stand alone or depend on volume moving across from the first.
+  - Judging whether the second program's economics stand alone or depend on volume moving across from the first.
   - Answering to a board that will ask, reasonably, why the existing supplier cannot do this.
 - **2.3 Scope, Seniority & Authority:** Scope: business. Seniority: Executive. Decision Authority: final commercial signature, owns vendor consolidation policy, holds the veto that most often stops this deal.
 
@@ -215,32 +215,32 @@ I am being asked to approve a second supplier in a category where we already hav
 **5.2 Strategic & Political Pains**
 - **"My board will ask why the current supplier cannot do this, and 'they cannot' is not enough."** I have to be able to explain the constraint in a sentence that does not sound like poor vendor management.
 - **"Adding a supplier is against how I run this function."** I spend my time consolidating, and I am being asked to do the opposite for a good reason, which does not make it comfortable.
-- **"If the second programme underperforms, the cost line stays and the revenue line does not."** Minimums do not care whether the launch worked.
+- **"If the second program underperforms, the cost line stays and the revenue line does not."** Minimums do not care whether the launch worked.
 
-**5.3 The Deepest Fear:** That they approve a second processing relationship, the new programme grows more slowly than the plan assumed, and they spend two years explaining a fixed cost against a revenue line that never arrived, in a decision that was visibly theirs. Not overspending. Being personally attached to an optional commitment that did not pay.
+**5.3 The Deepest Fear:** That they approve a second processing relationship, the new program grows more slowly than the plan assumed, and they spend two years explaining a fixed cost against a revenue line that never arrived, in a decision that was visibly theirs. Not overspending. Being personally attached to an optional commitment that did not pay.
 
 **6.0 What They've Already Tried (and Why It Disappointed)**
 - **Renegotiated with the current supplier at renewal, using the new requirement as leverage.** Got a better rate on the existing book and no movement on the capability, which proved the constraint was not commercial.
 - **Asked for the new capability to be priced as an extension of the existing contract.** It could not be, because it did not exist, which is when the second-vendor conversation became unavoidable.
-- **Modelled the second programme on the first programme's unit economics.** Wrong, because the customer, the volumes and the ramp are different, and the model flattered the case.
+- **Modelled the second program on the first program's unit economics.** Wrong, because the customer, the volumes and the ramp are different, and the model flattered the case.
 - **Deferred the decision by a quarter to see whether the commercial pressure was real.** It was, and the deferral cost them negotiating time rather than saving anything.
 
 **7.0 Decision Criteria & Objections**
 - **What they weigh evaluating this category:**
-  - Whether unit costs improve with volume, and at what volumes, because that determines whether the second programme ever stands alone.
+  - Whether unit costs improve with volume, and at what volumes, because that determines whether the second program ever stands alone.
   - Term, minimums and notice, which set the cost of the decision being wrong.
-  - Whether the arrangement removes headcount the second programme would otherwise require.
+  - Whether the arrangement removes headcount the second program would otherwise require.
   - Whether they can forecast the cost month by month before signing, rather than discovering it in arrears.
 - **Objections / sources of resistance:**
   - "We already pay for this capability. Justify the second line."
   - "You will not give me numbers, and I am comparing you against an invoice."
-  - "What are the minimums, and what happens if the new programme ramps slower than planned?"
+  - "What are the minimums, and what happens if the new program ramps slower than planned?"
   - "You are pre-launch. What is my position if you are not here in three years?"
 
 **8.0 Trigger Events (Why Now)**
-- The annual planning cycle, when the second programme either gets a budget line or does not exist.
+- The annual planning cycle, when the second program either gets a budget line or does not exist.
 - A renewal date on the existing contract, which is the only moment the whole vendor position is genuinely open.
-- A funding round earmarked for expansion, which changes the second programme from optional to expected.
+- A funding round earmarked for expansion, which changes the second program from optional to expected.
 - A partnership or distribution agreement with committed volumes, which converts upside into a contractual number.
 - A board question about why a signalled new market has not launched, which puts the cost of not deciding on the table.
 
@@ -254,11 +254,11 @@ I am being asked to approve a second supplier in a category where we already hav
 **10.0 Success Metrics (What "Good" Looks Like)**
 - From a cost line they cannot forecast, to one they can predict month by month before it is committed.
 - From unit economics that stay flat as volume grows, to a cost per active card that falls with volume.
-- From a second programme that only works if volume moves across, to one whose economics stand on their own.
+- From a second program that only works if volume moves across, to one whose economics stand on their own.
 - From an optional business case, to a signed commercial commitment with volumes attached to it.
 
 **11.0 The Message That Lands**
-This buyer's benchmark is an invoice, so a message that avoids commercial structure will not be read. Open on the shape in TXN's own words: a fixed monthly licence fee plus volume-tiered fees that step down as monthly volume rises, so the cost per active card falls as the programme grows. Then the point that actually moves them, which is that the programme is designed to be run without employing card experts, because the largest avoidable cost in a second programme is the people it would otherwise need. Say directly that figures come in a conversation. Never claim to be cheaper than their existing supplier, never mention that supplier at all, and do not introduce the owners here. Their first question will be why the incumbent cannot do this, and the correct answer is silence on the incumbent and precision about TXN.
+This buyer's benchmark is an invoice, so a message that avoids commercial structure will not be read. Open on the shape in TXN's own words: a fixed monthly licence fee plus volume-tiered fees that step down as monthly volume rises, so the cost per active card falls as the program grows. Then the point that actually moves them, which is that the program is designed to be run without employing card experts, because the largest avoidable cost in a second program is the people it would otherwise need. Say directly that figures come in a conversation. Never claim to be cheaper than their existing supplier, never mention that supplier at all, and do not introduce the owners here. Their first question will be why the incumbent cannot do this, and the correct answer is silence on the incumbent and precision about TXN.
 
 **12.0 Example Titles**
 Chief Financial Officer · Finance Director · VP Finance · Head of Commercial Finance · Group Financial Controller · Director of Procurement and Vendor Management

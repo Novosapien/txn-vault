@@ -1,20 +1,22 @@
 ---
-description: "Two buyer personas for ICP 3, card-adjacent companies with no programme and no plan: the product lead watching a peer, and the CFO asked to fund a line the business has lived without"
+description: "Two buyer personas for ICP 3, card-adjacent companies with no program and no plan: the product lead watching a peer, and the CFO asked to fund a line the business has lived without"
 ---
 
 # Buyer Personas: ICP 3, industry inference
 
 > **Up:** [[buyer-personas]]
 > **Parent ICP:** [[icp-definition]] Section 10, ICP 3. Archetype `Card-Adjacent Unaware, the Peer-Shadowed Operator`.
-> **Dominant pain inherited by both:** **falling behind**, and they may not have registered it yet. A named peer in their vertical runs a card programme against a use case that transfers. They hold the direct customer relationship and they already move money to or from those customers. They have never considered a card.
-> **Buying group as the ICP defines it:** CPO and CFO together, confirmed by Ian on 3 September. **The CTO is not in the buying group at this stage** and arrives only after the decision to have a card programme has been taken, which is after the sale this ICP is running.
+> **Dominant pain inherited by both:** **falling behind**, and they may not have registered it yet. A named peer in their vertical runs a card program against a use case that transfers. They hold the direct customer relationship and they already move money to or from those customers. They have never considered a card.
+> **Buying group as the ICP defines it:** CPO and CFO together, confirmed by Ian on 3 September. **The CTO is not in the buying group at this stage** and arrives only after the decision to have a card program has been taken, which is after the sale this ICP is running.
 > **Grounded on:** [[offer]] Section 2 for mechanism, Section 4 for what may be promised.
 
 **Two personas, and two is the complete answer.** The ICP names two roles and excludes the third explicitly. Adding a technical persona here would be padding, and worse, it would aim messages at somebody who is not in the room.
 
-**This is a different sale, not a different message.** There is a period of convincing on the value of a card programme at all before the conversation reaches which vendor. Both personas below are being sold the category first and TXN second, and every section reflects that.
+**This is a different sale, not a different message.** There is a period of convincing on the value of a card program at all before the conversation reaches which vendor. Both personas below are being sold the category first and TXN second, and every section reflects that.
 
-**One naming clarification, because the two rules collide here.** [[offer]] forbids naming a competitor: that means a competitor of TXN's, another issuer processor. It does not forbid naming the prospect's own peer, which is a company in their vertical that launched a card programme. In this ICP the peer is both the qualification evidence and the opening of the message, so naming them is required rather than permitted. What may never be said is which processor that peer used.
+**One naming clarification, because the two rules collide here.** [[offer]] forbids naming a competitor: that means a competitor of TXN's, another issuer processor. It does not forbid naming the prospect's own peer, which is a company in their vertical that launched a card program. In this ICP the peer is both the qualification evidence and the opening of the message, so naming them is required rather than permitted. What may never be said is which processor that peer used.
+
+**The scope line that bounds this ICP, ruled 3 September.** TXN is not inventing card use cases in verticals nobody has entered. Ian: *"that's trying to create your own proposition for an industry that you're not actually in and then go and test it... that's not what we're here to do."* So ICP 3 reaches only verticals with an observed precedent, which is the same fact as the peer requirement below rather than a second constraint.
 
 **The prerequisite that does not exist yet.** ICP 3 cannot be operated without a maintained list of named peers per vertical. That list has not been built, and it is the largest outstanding piece of work on this ICP. Both personas below assume it exists; until it does, neither can be messaged.
 
@@ -58,7 +60,7 @@ Someone sent me a screenshot last week of a competitor's new card and my first r
 **5.3 The Deepest Fear:** That in two years the peer's card is a normal expectation in this vertical, the company is explaining why it does not have one, and the honest answer is that nobody could tell them whether it was possible so it never got a meeting. Not being beaten. Being late for an unglamorous reason.
 
 **6.0 What They've Already Tried (and Why It Disappointed)**
-- **Built or bought a loyalty and rewards programme.** It costs real money, delivers a modest lift, and does not touch the moment the customer actually spends.
+- **Built or bought a loyalty and rewards program.** It costs real money, delivers a modest lift, and does not touch the moment the customer actually spends.
 - **Improved the payout experience: faster transfers, better notifications, a nicer screen.** Made a cost line slightly less annoying, changed nothing about the relationship.
 - **Raised the card idea informally after seeing the peer.** It stalled on the first regulatory question because nobody in the building could answer it, and there was no obvious person to ask.
 - **Looked at partnering with a bank.** The conversation was slow, the economics were poor, and the proposition on offer was somebody else's card with their logo on it.
@@ -76,8 +78,8 @@ Someone sent me a screenshot last week of a competitor's new card and my first r
   - "This is not on the roadmap and I do not have a budget line to put it in."
 
 **8.0 Trigger Events (Why Now)**
-- A named peer in the same vertical launching a card programme in the last twenty-four months, which is the qualifying event and the opening.
-- A loyalty, rewards or membership programme going through a renewal or a review, which is when its cost is visible and its performance is being questioned.
+- A named peer in the same vertical launching a card program in the last twenty-four months, which is the qualifying event and the opening.
+- A loyalty, rewards or membership program going through a renewal or a review, which is when its cost is visible and its performance is being questioned.
 - A payout or disbursement volume crossing a threshold that makes its cost a line somebody notices.
 - Annual planning, which is the only moment a genuinely new line can be proposed.
 - Funding or expansion that grows the customer base a card would serve, and with it the size of the prize.
@@ -96,7 +98,7 @@ Someone sent me a screenshot last week of a competitor's new card and my first r
 - From a proposition they can only improve, to one they have genuinely extended.
 
 **11.0 The Message That Lands**
-Open with the peer, by name, and with what the peer built rather than with what TXN sells. This is the only ICP where a competitor's success is the opening, and the peer's programme is what makes the idea legitimate inside a company that has never considered it. Then answer the question that actually blocks this, which is whether they are allowed: TXN is the platform for any company launching and operating a card programme, and the buyer does not have to be a bank. Ian's own framing carries it, that it can be a trade platform, a marketplace, whatever. Then the promise that makes it survivable, which is that the programme can be run without employing card experts. Never name the processor the peer used. Do not open with who owns TXN. Use no payments vocabulary that a non-payments product lead would have to look up.
+Open with the peer, by name, and with what the peer built rather than with what TXN sells. This is the only ICP where a competitor's success is the opening, and the peer's program is what makes the idea legitimate inside a company that has never considered it. Then answer the question that actually blocks this, which is whether they are allowed: TXN is the platform for any company launching and operating a card program, and the buyer does not have to be a bank. Ian's own framing carries it, that it can be a trade platform, a marketplace, whatever. Then the promise that makes it survivable, which is that the program can be run without employing card experts. Never name the processor the peer used. Do not open with who owns TXN. Use no payments vocabulary that a non-payments product lead would have to look up.
 
 **12.0 Example Titles**
 Chief Product Officer · Head of Product · Head of Customer Experience · Director of Loyalty and Membership · Head of Digital · General Manager, Consumer
@@ -124,7 +126,7 @@ Chief Product Officer · Head of Product · Head of Customer Experience · Direc
 - **Worldview & Biases Toward This Category:** Assumes anything touching payments brings regulation, capital requirements and audit obligations. Has never had reason to test that assumption, and it is the single largest barrier in this ICP.
 
 **4.0 A Day in the Life**
-The card idea reached me as a forwarded screenshot with a question mark, and I have not dismissed it, but I have not moved on it either. What I know is what it currently costs us to move money to customers, because that is a line I look at every month and it is not small. What I do not know is anything else: what a card programme costs to stand up, what it costs to run, whether it generates anything or simply moves a cost around, and above all what it does to our regulatory position, because right now we have almost none and that is a feature. I asked whether we would need a licence and got three different answers internally, all of them hedged. So the honest position is that I am not resisting this, I am unable to evaluate it, and in the absence of an evaluation the default is no. Meanwhile the loyalty budget comes up for renewal in the spring and I already know I am going to ask harder questions about it than last year.
+The card idea reached me as a forwarded screenshot with a question mark, and I have not dismissed it, but I have not moved on it either. What I know is what it currently costs us to move money to customers, because that is a line I look at every month and it is not small. What I do not know is anything else: what a card program costs to stand up, what it costs to run, whether it generates anything or simply moves a cost around, and above all what it does to our regulatory position, because right now we have almost none and that is a feature. I asked whether we would need a licence and got three different answers internally, all of them hedged. So the honest position is that I am not resisting this, I am unable to evaluate it, and in the absence of an evaluation the default is no. Meanwhile the loyalty budget comes up for renewal in the spring and I already know I am going to ask harder questions about it than last year.
 
 **5.0 Pains & Fears (Expanded Dossier)**
 
@@ -142,7 +144,7 @@ The card idea reached me as a forwarded screenshot with a question mark, and I h
 
 **6.0 What They've Already Tried (and Why It Disappointed)**
 - **Negotiated down transfer and disbursement fees.** Delivered a real saving once, and left the underlying structure exactly as it was.
-- **Reviewed the loyalty programme's return.** The analysis was inconclusive in a way that made continuing easier than stopping, which is the outcome they least respect.
+- **Reviewed the loyalty program's return.** The analysis was inconclusive in a way that made continuing easier than stopping, which is the outcome they least respect.
 - **Asked their bank whether a card was possible.** Got a slow conversation and a proposition with poor economics, and concluded, wrongly, that this was the only route.
 - **Asked internally about the regulatory position.** Received three hedged and different answers, which is why the idea has not had a meeting.
 
@@ -151,7 +153,7 @@ The card idea reached me as a forwarded screenshot with a question mark, and I h
   - What it does to the regulatory and audit position, which is the first question and the one that decides.
   - What it costs to stand up and to run, against the payout and loyalty costs already being carried.
   - Whether it needs a team, because a new permanent function changes the answer entirely.
-  - Whether the peer's programme is actually working, and how that could be established.
+  - Whether the peer's program is actually working, and how that could be established.
 - **Objections / sources of resistance:**
   - "What does this do to our regulatory obligations? We do not have any today and I would like to keep it that way."
   - "We have run without one for years. What has changed?"
@@ -162,7 +164,7 @@ The card idea reached me as a forwarded screenshot with a question mark, and I h
 - The loyalty or rewards budget reaching renewal, which is the moment its cost and its return are both on the table.
 - Annual planning, which is when a new line can be proposed and outside which it cannot.
 - Disbursement or transfer costs crossing a threshold that makes them visible at board level.
-- A named peer's programme being discussed publicly enough that not having considered it becomes the question.
+- A named peer's program being discussed publicly enough that not having considered it becomes the question.
 - Funding, an acquisition or expansion that increases the customer base and with it the size of the prize.
 
 **9.0 Information Diet & Trusted Voices**
@@ -179,7 +181,7 @@ The card idea reached me as a forwarded screenshot with a question mark, and I h
 - From a regulatory position nobody could explain, to obligations that are known, bounded and largely carried by the platform.
 
 **11.0 The Message That Lands**
-This buyer is not resisting, they are unable to evaluate, and the message has to close that gap rather than sell past it. Lead with the two costs they already carry and already look at: what it costs to pay customers out, and what the loyalty programme costs against what it returns. Then answer the regulatory question directly, because it is the actual blocker and no amount of product value gets past it: TXN carries scheme and regulatory obligations as a delivered outcome, surfacing what applies and applying it, and this is compliance confidence rather than compliance replacement, because TXN does not accept regulatory liability on their behalf. That boundary must be stated, not blurred. Close on the headcount point, that the programme is designed to be run without employing card experts, because their fear is a new department. Name the peer. Never name the peer's processor, never name a TXN competitor, and do not raise the owners at this stage.
+This buyer is not resisting, they are unable to evaluate, and the message has to close that gap rather than sell past it. Lead with the two costs they already carry and already look at: what it costs to pay customers out, and what the loyalty program costs against what it returns. Then answer the regulatory question directly, because it is the actual blocker and no amount of product value gets past it: TXN carries scheme and regulatory obligations as a delivered outcome, surfacing what applies and applying it, and this is compliance confidence rather than compliance replacement, because TXN does not accept regulatory liability on their behalf. That boundary must be stated, not blurred. Close on the headcount point, that the program is designed to be run without employing card experts, because their fear is a new department. Name the peer. Never name the peer's processor, never name a TXN competitor, and do not raise the owners at this stage.
 
 **12.0 Example Titles**
 Chief Financial Officer · Finance Director · Commercial Director · VP Finance · Head of Finance and Operations · Managing Director, Owner-Operator

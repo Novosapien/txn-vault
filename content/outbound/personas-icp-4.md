@@ -26,7 +26,7 @@ description: "Three buyer personas for ICP 4, the full switch: the engineer who 
   - Scoping a migration of live cardholders and live data off a platform they do not control and cannot fully inspect.
   - Establishing what the incumbent contract permits regarding data extraction, and what the extraction actually looks like in practice.
   - Owning the cutover: the sequencing, the rollback, the window, and what happens to a transaction in flight.
-  - Running the existing programme at full reliability throughout, because the customers do not know a migration is happening and must not find out.
+  - Running the existing program at full reliability throughout, because the customers do not know a migration is happening and must not find out.
   - Carrying the integration debt of a stitched vendor set that has accumulated around the incumbent over years.
 - **2.3 Scope, Seniority & Authority:** Scope: business. Seniority: Executive. Decision Authority: leads the evaluation in this ICP, holds the veto that most often stops it, does not hold the commercial signature.
 
@@ -71,6 +71,7 @@ I have wanted to move for two years and now that it is real I am the person list
   - "What does your migration tooling actually do today? Not the approach. The tooling."
   - "Where does the intelligence layer sit relative to the transaction path?"
   - "What happens to a transaction in flight during cutover?"
+  - "Who holds the accreditations on the environment I am about to move my entire card base onto?"
 
 **8.0 Trigger Events (Why Now)**
 - A significant incident on the incumbent, particularly one visible on a public status page or to their own customers.
@@ -93,7 +94,7 @@ I have wanted to move for two years and now that it is real I am the person list
 - From a migration scoped on assumption, to one scoped on a verified extract and a measured cutover window.
 
 **11.0 The Message That Lands**
-This buyer has already decided; the message has to reduce risk, not create desire. Be exact about the line of ownership, because that is what earns their attention: migration is a work stream inside the launch mechanism, the configure-and-capture work is identical to a greenfield launch, and **the data extraction from the incumbent sits on their side of the line**. Saying that plainly is more persuasive than claiming to handle it, because they already know it is true and every vendor who implies otherwise loses them. Then the consolidation point, that processing, controls, authentication and settlement sit in one platform, so the migration reduces the vendor count rather than moving it. Say nothing about their incumbent. Acknowledge the pre-launch position before they raise it. Never offer to share the reissue cost.
+This buyer has already decided; the message has to reduce risk, not create desire. Be exact about the line of ownership, because that is what earns their attention: migration is a work stream inside the launch mechanism, the configure-and-capture work is identical to a greenfield launch, and **the data extraction from the incumbent sits on their side of the line**. Saying that plainly is more persuasive than claiming to handle it, because they already know it is true and every vendor who implies otherwise loses them. Then the consolidation point, that processing, controls, authentication and settlement sit in one platform, so the migration reduces the vendor count rather than moving it. Say nothing about their incumbent, in any register: this buyer has decided the incumbent failed them and may say so freely, and TXN still does not. Acknowledge the pre-launch position before they raise it, and give the accreditation position straight: TXN holds none of its own, PCI sits with Direct Transact, our co-founding owner, and the platform is operated within that accredited environment. Never offer to share the reissue cost.
 
 **12.0 Example Titles**
 Chief Technology Officer · VP Engineering · Head of Payments Engineering · Director of Platform · Head of Card Operations Technology · Principal Architect, Payments
@@ -176,7 +177,7 @@ Everyone else is discussing platforms and I am discussing a letter. If we reissu
 - From a card product that changes because the platform changed, to one where the customer experience is identical either side.
 
 **11.0 The Message That Lands**
-Almost nobody talks to this persona at all, so speaking to them directly is itself the differentiator. Lead on the choice rather than on the platform: the reissue-or-run-to-expiry decision is theirs, it depends on why the company is moving, and there is no single right answer. Name the trap they already know about, that running to expiry strands recently renewed cards outside the window for another three to five years and produces a second exercise later. Then the claim that matters to them, which is that programme behaviour is configuration, so the card product can be reproduced as it stands and the customer experience does not have to change because the platform did. Do not describe the migration as painless, because they have done this before and will stop reading. Never offer to share the reissue cost, and say nothing about the incumbent.
+Almost nobody talks to this persona at all, so speaking to them directly is itself the differentiator. Lead on the choice rather than on the platform: the reissue-or-run-to-expiry decision is theirs, it depends on why the company is moving, and there is no single right answer. Name the trap they already know about, that running to expiry strands recently renewed cards outside the window for another three to five years and produces a second exercise later. Then the claim that matters to them, which is that program behaviour is configuration, so the card product can be reproduced as it stands and the customer experience does not have to change because the platform did. Do not describe the migration as painless, because they have done this before and will stop reading. Never offer to share the reissue cost, and say nothing about the incumbent.
 
 **12.0 Example Titles**
 Chief Product Officer · Head of Product, Cards · Director of Customer Experience · Head of Card Portfolio · VP Product, Consumer · Head of Lifecycle Marketing
@@ -201,7 +202,7 @@ Chief Product Officer · Head of Product, Cards · Director of Customer Experien
 - **Identity & Self-Image:** The person who insists the full cost is on the table before anyone commits, and who has been proved right often enough to be unembarrassed about it.
 - **Core Values / What They Optimise For:** Completeness of the number. A cheap decision with a missing line is worse than an expensive one that is fully stated.
 - **How They Measure Their Own Worth:** By whether the actual cost matched the approved cost. Payback discipline is the professional standard they hold themselves to.
-- **Worldview & Biases Toward This Category:** Knows the ongoing saving is real and knows the one-off is what kills these projects. Has seen a migration business case built on the run rate with the transition cost added late, and does not intend to approve another.
+- **Worldview & Biases Toward This Category:** Knows the ongoing saving is real and knows the one-off is what kills these projects. Has seen a migration business case resting on the run rate with the transition cost added late, and does not intend to approve another.
 
 **4.0 A Day in the Life**
 The saving is not the hard part. I believe the run rate improves, I can see the argument, and I could defend it. The hard part is a one-off number that buys nothing new: two pounds a card, near enough, all in, and we have a lot of cards. That is a line that produces no revenue, delivers no feature, and exists solely to arrive at a position we could describe as the same place with a different supplier. Then there is a period where we pay both, which is certain and which nobody has put in the model. Then there is the exit: notice, term, whatever is still owed, and a negotiation with a company that has no reason to help us. I asked for a payback period this morning and got a range, and I sent it back. If I approve this, I am approving a number that will be discussed at every board meeting for four quarters, so it needs to be complete before it is presented, not after.
@@ -259,7 +260,7 @@ The saving is not the hard part. I believe the run rate improves, I can see the 
 - From unit costs that stay flat, to a cost per active card that falls as volume rises.
 
 **11.0 The Message That Lands**
-Open where every other vendor closes, which is the transition cost. Acknowledge that the reissue is the dominant line, that it is roughly two pounds or two euros a card all in covering plastic, branding, personalisation, production and postage, and that at their card count it is material. Presenting that number before being asked establishes more credibility with this persona than any capability claim, and it is honest, because it is an industry estimate rather than a TXN price and must be stated as such. Then the ongoing side, in TXN's own words: a fixed monthly licence fee plus volume-tiered fees that step down as monthly volume rises, so cost per active card falls as the programme grows, with figures in a conversation rather than in a message. **Never offer to share or subsidise the reissue cost.** It is not an existing lever, and offering it would be a commitment TXN has not made. Say nothing about the incumbent.
+Open where every other vendor closes, which is the transition cost. Acknowledge that the reissue is the dominant line, that it is roughly two pounds or two euros a card all in covering plastic, branding, personalisation, production and postage, and that at their card count it is material. Presenting that number before being asked establishes more credibility with this persona than any capability claim, and it is honest, because it is an industry estimate rather than a TXN price and must be stated as such. Then the ongoing side, in TXN's own words: a fixed monthly licence fee plus volume-tiered fees that step down as monthly volume rises, so cost per active card falls as the program grows, with figures in a conversation rather than in a message. **Never offer to share or subsidise the reissue cost.** It is not an existing lever, and offering it would be a commitment TXN has not made. Say nothing about the incumbent.
 
 **12.0 Example Titles**
 Chief Financial Officer · Finance Director · VP Finance · Head of Commercial Finance · Group Financial Controller · Chief Operating Officer, finance-owning
