@@ -3,6 +3,7 @@ component: "[[full-agentic-experience]]"
 status: Defined
 sources:
   - "[[05-06-2026-component-4-full-agentic-experience]]"
+  - "[[2026-09-03-agentic-standup]]"
 description: "Sub-component spec for the multi-agent core — specialised teams merge user journeys via plan, approve, execute, with risk-tiered verification and guard rails"
 
 > **13-08 update ([[2026-08-13-agentic-standup]]):** Observed in the working build: **a workflow is structured at the start and malleable afterwards.** Once the scripted path completes, the agent retains awareness of what else it can do and **proactively suggests next steps** (running a simulation, funding the account, setting limits), and the user can continue conversationally from there rather than starting a new run. George's open design question: **do we curate a specific set of suggested next steps per workflow, or leave it to the agent and the user to decide what happens next?** An agent-design decision, undecided. (Source: standup 2026-08-13)
@@ -36,6 +37,22 @@ It runs on the **same machinery as [[agent-inbox-alerts]]**, acts only through [
 - **User** — states the goal, approves the plan.
 
 ---
+
+> [!important] Two classes of task, ruled by Ian on 3 September 2026
+> Orchestration is not one shape. Ian, watching a live demo ([[2026-09-03-agentic-standup]]), rejected the conversational build-up for routine work: **"Nobody will ever use this. They'll do it once, they'll never do it again."**
+>
+> | Class | Behaviour | Ian / George |
+> |---|---|---|
+> | **Quick action** | Confirm the target, then execute. No step narration, no chain of approvals, no plan presented | *"From the minute that you click approve, I expect that that's done"* |
+> | **Work with me** | Plan, discuss, refine, then act. The full conversational surface | *"let's investigate declines given this, let's analyse, let's create a plan... where you go and spend about half an hour speaking to it before you make an action"* |
+>
+> **The confirmation step survives even in a quick action**, and for a precise reason Ian gave himself: a person's name is not an identifier. *"James Thornton in an API call doesn't mean anything, it won't identify."* The approval resolves a person to a card; it is not a gate on the action.
+>
+> **Speed is an abandonment risk here, not a performance metric.** Ian: *"by now, in the console, they would have found James Thornton's card and suspended it... probably about five minutes ago."* George: *"if it took 20 seconds to get a response back to me, I'd just click in the console and not use it again."* And the compounding version, *"the minute they start distrusting, either through speed or because something gets lost in the ether... people won't go back to actually using it."*
+>
+> **What is not yet built:** self-recovery. When an action fails, the agent should investigate with its own tools rather than handing the user a failure. George: *"rather than a human going 'oh wait, let me go check health, let me speak to John'... the agent's going to do all of that."*
+>
+> Classifying every user journey into one class or the other is tracked at [[open-questions]] #83. See also [[process-surfacing]], where this changes the June trust-UI position.
 
 ## 2. What Needs to Happen?
 

@@ -8,6 +8,7 @@ sources:
   - "[[18-06-2026-finalised-gap-analysis]]"
   - "[[2026-08-25-agentic-standup]]"
   - "[[2026-08-27-agentic-standup]]"
+  - "[[2026-09-03-agentic-standup]]"
 description: "Component doc for TXN's Agent Inbox & Alerts — the proactive AI lane: alert detection, impact analysis, C2 plan-and-execute, scheduled reporting and routing"
 ---
 
@@ -64,6 +65,21 @@ Agent Inbox & Alerts
 | **The expert operator** | May prefer their own tooling on the webhook data; uses TXN alerts selectively | Not to be over-served; TXN must add *material value over what they can already do themselves* |
 
 ---
+
+> [!note] Demonstrated to TXN, 3 September 2026
+> First full walkthrough of the alert flow ([[2026-09-03-agentic-standup]]), from a conceptual work tree with the agents mocked.
+>
+> **The sequence:** alert arrives, an **agent team** investigates, and produces what happened, a graph of why, what it means, and **what has been ruled out**. It then proposes a plan, a human approves, and it executes and **runs tests**.
+>
+> **The approval is editable, not binary.** George demonstrated changing a proposed transaction limit before approving, with the UI showing the consequence of the change. That is a materially different interaction from the accept-or-reject approval cards elsewhere in the build.
+>
+> **Audit trail on the panel:** alert detected, analysis started, analysis finished, plan proposed.
+>
+> **Staleness re-analysis.** A plan approved a day after it was proposed is re-analysed before execution, to catch a larger impact or an outdated plan. George named the failure mode himself, that it could keep raising changes and become tiresome, and took the position **"it's better to be safe and annoying than easy and destructive."** That pulls against Ian's feedback on ceremony in the same session, and both are right: the reconciliation is that a low-risk quick action needs no staleness check and an alert remediation plan does.
+>
+> **In build that week:** real agents executing real tools against the **mocked API**, so *"from the agent's perspective and our perspective when testing, it's going to look exactly like the real thing, just not touching any real endpoints."*
+>
+> **Ian's question is unanswered and it is the same one as [[open-questions]] #68, arriving from the other end:** *"What defines the need for an alert? How are we going to identify that something requires an alert?"* He set out the poles himself, either resource-heavy configuration or agentic determination, and noted the historical alternative of configuring alerts on a platform and letting them run. George's answer was partial: it depends on **what Direct Transact expose**. #68 records that DT has no alerting system at all, so if nothing on the platform side raises alerts, **the detection logic is ours to define as well as to build**.
 
 ## 2. What Needs to Happen?
 

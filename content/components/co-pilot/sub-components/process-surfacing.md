@@ -3,7 +3,8 @@ component: "[[co-pilot]]"
 status: Defined
 sources:
   - "[[04-06-2026-component-3-co-pilot]]"
-description: "Sub-component spec for the Co-pilot trust UI — bucketed status categories at one universal altitude (slider rejected), with risk-tiered verification depth"
+  - "[[2026-09-03-agentic-standup]]"
+description: "Sub-component spec for the Co-pilot trust UI: bucketed categories, risk-tiered verification, and the two task classes that replaced the universal altitude"
 ---
 
 # TXN — Co-pilot: Process Surfacing / Trust UI
@@ -28,6 +29,42 @@ Process Surfacing is the Co-pilot's **trust UI** — how it shows the user that 
 - Suitable for the **full range of Console users** at once — from a developer who'd like the detail to a CS agent who just needs to know it's being checked.
 
 Reference: Claude's parallel sub-agent "block-out" UI (clickable blocks per agent team) is the live experiment for *how much* of the workforce to surface.
+
+---
+
+> [!warning] The universal altitude does not survive contact with the client (03-09-2026)
+> **Ian Johnson rejected step surfacing outright for low-risk actions**, watching a live demo ([[2026-09-03-agentic-standup]]):
+>
+> *"I don't care when Claude tells me what agents it's running or tools it's running. I literally do not care."*
+>
+> *"The only interaction should be: I need you to confirm something before I go and do something."*
+>
+> *"Showing all the steps, either that you're going to take or you are taking... it's just too much for something that has a low risk."*
+>
+> **This does not reopen the AI slider, and the distinction matters.** The slider varied detail **per user** and was rejected as needless complexity. Ian is varying it **per task**: nothing for a card suspension, the full conversational build-up for a declines investigation. Different axis, so the 09-06 rejection stands.
+>
+> **What does not survive is "one universal altitude."** That position assumed a single level serves everything. Ian's evidence is that the level which works for analytical work actively drives users away from routine work: *"Nobody will ever use this. They'll do it once, they'll never do it again."*
+>
+> **The replacement is two classes**, agreed with George on the call: **quick actions** surface nothing beyond a single confirmation of the target, and **work-with-me** sessions keep the surfacing in full. Classifying every user journey into one or the other is tracked at [[open-questions]] #83.
+
+### The value test that should govern this
+
+Ian's own, and it is the most useful thing to come out of the session. **Judge the ceremony a task carries by the value the agent adds over doing it by hand.**
+
+| | Low value, so no surfacing | High value, so surface freely |
+|---|---|---|
+| Example | Suspend a card | Investigate declines, analyse a programme |
+| Ian | *"minimal speed or ease value... it wouldn't have been the end of the world if I had to go to the control center"* | *"I probably wouldn't have even done that. I might not have even known that was happening in my card program because I wouldn't have known necessarily where to start"* |
+
+The bucketed-category principle above is still right for the second column. It is the first column that had no exception written for it.
+
+### The boundary: silence is only for work, never for waiting
+
+**Dorte's constraint, set on the same call**, and it bounds how far the silent path can go:
+
+> *"I'm happy when the agent needs a request and it takes longer, but I get really impatient if nothing explains why [I'm] waiting."*
+
+So a quick action may run silently while it is **working**, but any pause for approval, input or an external dependency must carry its reason on the surface. The two TXN users are not in conflict here: Ian is objecting to narration of progress, Dorte is requiring explanation of blockage.
 
 **Entities that interact with it:**
 
