@@ -5,6 +5,7 @@ sources:
   - "[[02-06-2026-component-2-alerts-agent-inbox]]"
   - "[[ux-ai-user-stories-reporting]]"
   - "[[ux-entity-performance-insights]]"
+  - "[[2026-09-03-agentic-standup]]"
 description: "Spec for cadence and on-demand NL reporting — driver-first program summaries, permission-scoped custom reports, and reusable templates re-run without AI"
 ---
 
@@ -40,6 +41,15 @@ It reuses the [[ai-analysis-impact]] engine (orchestrator + specialist sub-agent
 - **Downstream:** [[notification-routing]] for delivery; optionally [[plan-and-execute]] for an attached action
 
 ---
+
+> [!note] Speak it into existence, demonstrated 3 September 2026
+> The creation mechanism shown to TXN ([[2026-09-03-agentic-standup]]) is natural language, not a form. George: *"rather than it being you click, click around... you just put in a sentence. I want to see a report every two weeks on this, this, this. You just speak it into existence and then the agent's going to understand what you've put in. It's going to turn that unstructured data into structured outputs."*
+>
+> **The second half is the part not yet built, and it is the more interesting half.** The same natural-language spec also generates **the prompts or guidance for the agents that will perform the analysis**, not only the query parameters. George's worked example: a weekly decline-rate pull for a card programme, plus a standing instruction to *"analyse these transactions to see what the merchants are and if there's any similarities between XYZ. Which is more like AI-focused rather than just a database query."*
+>
+> So a scheduled report is **two artefacts**: a recurring data pull, and a standing analytical instruction. [[alert-detection]] is created the same way, *"alert me when [x] is over a certain amount."*
+>
+> Manual creation stays available for anyone who prefers to click, and George raised creating reports **from inside the agent** as a third route.
 
 ## 2. What Needs to Happen?
 

@@ -5,6 +5,7 @@ sources:
   - "[[02-06-2026-component-2-alerts-agent-inbox]]"
   - "[[01-06-2026-component-1-Agent-Access-Layer]]"
   - "[[2026-08-25-agentic-standup]]"
+  - "[[2026-09-03-agentic-standup]]"
 description: "Spec for cheap alert detection — threshold trips, config-change webhooks and scheduled scans that gate the AI, plus Console and /alert creation journeys"
 ---
 
@@ -28,6 +29,13 @@ description: "Spec for cheap alert detection — threshold trips, config-change 
 > **Consequence for scope.** This makes [[agent-inbox-alerts]] larger and more strategic than the component map records, and it converts a partner dependency into a build decision. Tracked at [[open-questions]] #68; needs scoping before the component is built. The dependency table in section 6 is left as written so the change is visible rather than quietly rewritten.
 
 ---
+
+> [!question] What defines the need for an alert? Asked by Ian on 3 September 2026, unanswered
+> *"What defines the need for an alert? How are we going to identify that something requires an alert?"* ([[2026-09-03-agentic-standup]]) He set out the two poles: either it is *"really resource-heavy"* configuration, or it is *"driven by the agentic"*, with the historical alternative being that you configure alerts on a platform and they run.
+>
+> George's answer was partial and honest, that it depends on **what Direct Transact expose**. Read alongside [[open-questions]] #68, which records that **DT has no alerting system at all** and that Michael wants the AI to be the central one, the two questions meet: **if nothing on the platform side raises alerts, the detection logic is ours to define as well as to build.** That is a larger scope than this page currently assumes.
+>
+> **Creation is by natural language**, the same mechanism as [[scheduled-reporting]]: *"alert me when [x] is over a certain amount."*
 
 ## 1. What Does This Sub-Component Do?
 
