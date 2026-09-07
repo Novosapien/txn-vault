@@ -44,9 +44,18 @@ Sizing settled on 2 September ([[2026-09-02-outbound-workforce-icp-qualification
 | Addresses per domain | **Three** |
 | Domains needed | **Four or five** |
 | Shape | Variations on the primary, *"things like um this is txn.com, those kind of domains"* |
-| Who buys them | **Open.** Novosapien can create them, or TXN purchases directly |
+| Who buys them | **Settled 04-09: Novosapien buys.** Registered on a new account created for the purpose, login details handed to TXN, then invoiced |
+| Uplift | **Costs passed through at a 10% markup** (Brett, 04-09) |
+| Constraint | Built **in a transferable state** from the start. The handover route is still open: Brett proposed a Gmail account, Dorte queried it, George took it away |
+| TXN's existing domains | **One.** Dorte: *"we only have secured txnglobal.com."* Every other TXN name is held by a third party and redirects to Pay Corp, so the sending domains cannot be variants of a family TXN controls |
 
-**The blocker is inside Novosapien, not at TXN.** Brett, 2 September: *"I need to just chase George. He needs to send that to me."* **Still outstanding on 3 September**, and now explicitly late: *"George was meant to write it up last night for me, were all the various instructions around the domains"* ([[2026-09-03-outbound-workforce-icp-statuses]]). Three days lost on a two-week clock. Dorte has asked for the domain hierarchy twice and cannot make the buy-or-be-supplied decision without it: *"I just need to have the full picture till we can say we go either way and then we can talk to the other guys."*
+**The blocker is inside Novosapien, not at TXN.** Brett, 2 September: *"I need to just chase George. He needs to send that to me."* **Still outstanding on 3 September**, and now explicitly late: *"George was meant to write it up last night for me, were all the various instructions around the domains"* ([[2026-09-03-outbound-workforce-icp-statuses]]). Three days lost on a two-week clock.
+
+**Third deadline set on 4 September, and this one is external** ([[2026-09-04-domains-and-september-schedule]]). George joined the call, took the brief and left to write it: *"I'll literally get on to that now... it'll be there by the end of today."* What is owed is the steps, **checked** indicative costs per domain, quantities, a quoted price for the email accounts, the one-domain-to-three-addresses ratio, and the warming urgency stated on top.
+
+**It serves Dorte's 08:00 meeting with Ian on Monday 7 September**, where the budget is signed off: *"if you have that ready by then, then I will have hopefully the thumbs up by that time."* Dorte was explicit that this is housekeeping rather than doubt, since Pay Corp does everything else and it makes sense for Novosapien to own this, but Ian holds the budget and needs the ask in writing.
+
+**Warming is targeted for mid next week**, which with a two-week clock puts the domains live around the end of September, **inside the retreat**. That is the outcome the 27 August decision was taken to avoid. Dorte has asked for the domain hierarchy twice and cannot make the buy-or-be-supplied decision without it: *"I just need to have the full picture till we can say we go either way and then we can talk to the other guys."*
 
 So a two-week clock the vault has argued since 27 August should start immediately is waiting on a list one person owes another inside our own team. It is the cheapest item on the critical path and the one holding it up.
 
