@@ -56,6 +56,12 @@ Content Workforce only. The Outbound schedule lives at [[delivery-schedule]]; th
 ### The personal content workforces
 
 > **The elicitation may not be stable, and Dorte found it (04-09).** She began her profile and stopped: *"Claude asked me so many questions. What I wanted to do is a little bit of a decision tree to see what different outcomes are, because half of them it is more like you're doing a horoscope. You feel today in that mood and tomorrow I'm taking something completely different."* **Her own fix is the useful part**: complete it, but record exactly what was selected, so it can be rerun against different parameters. Six of these interviews are planned, two each for Ian, Michael and Dorte, and if the instrument is mood-dependent then running it twice per person produces two snapshots rather than a stable profile. [[open-questions]] #82. Dorte's is due Monday.
+>
+> **And on 08-09 it did something worse than drift in tone: it drifted in subject** ([[2026-09-08-agentic-standup]]). Dorte ran her session on 7 September and reported: *"it felt for me like I'm doing the TXN manifesto again. The wording was wrong. So I was always referring back to my and Ian's and I was like, hold a minute, this is about me, it's nothing to do with the company."* And: *"somewhere it went off script without knowing why it went off script."* She tried to diagnose it against the earlier sessions and could not. George's hypothesis is **cross context pollution**, and Novosapien will investigate.
+>
+> **These are two different failures and the second is the serious one.** Mood dependence is a stability problem; a personal interview producing company material is a correctness problem, and only that one makes an entity write in the wrong voice entirely. Tracked separately at [[open-questions]] #86.
+>
+> **Two supporting facts from the same session**, both consistent with drift rather than a slow interview: it took **two hours against an expected thirty minutes**, and she could not tell how far through she was. Status and break reminders are scheduled for the week of 14 September. **Five more sessions are planned**, so this needs fixing before they run.
 
 **Two one-hour sessions each**, per Brett on 28 August. Six sessions across three people, but they no longer run in one block.
 

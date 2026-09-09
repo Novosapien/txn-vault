@@ -1,5 +1,5 @@
 ---
-description: "TXN's content pillars: the topic areas each piece of content sits under, drafted from the pre-loaded material and issued for async review"
+description: "TXN's content pillars: the topic areas each piece of content sits under, the personal pillars alongside them, and their state awaiting review"
 ---
 
 # TXN — Content Pillars
@@ -23,6 +23,18 @@ The draft was sent to TXN for async review, with the agreement that feedback com
 ## Structure being used
 
 Each entity draws on the pillars, and one pillar is shared: **the TXN pillar**. When an individual writes under it, the output carries the company's register rather than their personal one, which is how a personal post stays connected to the business voice without the individual having to switch tone manually.
+
+## Personal pillars sit alongside company pillars
+
+Established 8 September 2026 ([[2026-09-08-agentic-standup]]). Max is building **an additional pillar for Dorte as an individual**, separate from her pillar as a TXN employee.
+
+**The reason is a distribution finding, not a preference.** Dorte: *"my posts, I'm posting as a person rather than as an employee, get far more feedback and engagement than when they're company posts."*
+
+That points the same way as the 3 September ruling on [[outbound]], where Ian and Brett agreed the **team's own networks are the most likely source of the first client**, ahead of both schemes and cold outbound. Two independent observations, from different people in different sessions, both saying the personal channel outperforms the company one.
+
+**Worth treating as a general principle rather than an exception for Dorte.** If personal reach beats company reach, every personal entity needs its own pillar set and the company pillars are the smaller half of the work, which is the reverse of how this engagement has been sequenced.
+
+Max is teaching **Tyler** to do the pillar work: *"it will be Tyler, but Tyler doesn't know how to do it yet."*
 
 ## Awaiting
 

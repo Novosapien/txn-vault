@@ -3,6 +3,7 @@ component: "[[agent-inbox-alerts]]"
 status: Defined
 sources:
   - "[[02-06-2026-component-2-alerts-agent-inbox]]"
+  - "[[2026-09-08-agentic-standup]]"
 description: "Spec for the alert delivery last mile — routing composed items to the Stackworkz central hub, channel preferences and in-context dashboard-dot surfacing"
 ---
 
@@ -32,6 +33,21 @@ The ownership split: **Stackworkz owns notification preferences and the actual s
 - **Other sources** — DT and the Console can also feed the hub
 
 ---
+
+> [!important] The true agent inbox, proposed 8 September 2026
+> The answer to *"how does a silent agent tell you anything?"* ([[open-questions]] #84), proposed by George and refined by Dorte on the same call ([[2026-09-08-agentic-standup]]).
+>
+> **Two surfaces, not one.** The existing **alerts inbox** carries things the system noticed. A new **true agent inbox** carries work the user asked for: *"I've done this piece of work for you, this is what I've done"*, or *"I need this help here."*
+>
+> The framing is a positioning statement as much as a design one: *"rather than everything being like what everyone else is doing, where here's this chat interface and this is the only way you can interface with the agents, is having that kind of **true digital worker experience**... it's just a bit easier to see rather than having to click into a chat and read it."*
+>
+> **That is the direct answer to Ian's objection** ([[process-surfacing]]): the alternative to narrating every step is not silence, it is reporting on completion.
+>
+> **Dorte's addition, and her own guard on it.** She proposed a popup while the user is already in the console, flashing done or needs help with a link through to detail. George extended it to separate system and agent notification streams with an unread count. She then constrained it immediately: *"we just need to be mindful that we're not over complicating it, because it might be a number of different things coming in. It's like you lose the plot where you actually are. What is really important?"*
+>
+> **So the requirement is not "notify me", it is "tell me what matters."** Read with her 03-09 rule, *"I get really impatient if nothing explains why I'm waiting"*, her position is consistent across both sessions: **explain a block, report a completion, narrate nothing else.**
+>
+> **Sequencing.** The notification is one event and its placement is a separate decision: *"all it needs to do is emit a message when it's done. It's just a matter of where we're going to put it. If it's in the chat, it's just sending the chat message back. In the agent inbox, same thing."* So the backend can be built before the routing is settled.
 
 ## 2. What Needs to Happen?
 
