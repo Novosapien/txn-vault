@@ -40,10 +40,10 @@ Content Workforce only. The Outbound schedule lives at [[delivery-schedule]]; th
 | ~~Tue 1 Sep~~ | ~~Pillars and brand entity~~ | Moved again (27-08 plan) |
 | ~~Thu 3 Sep~~ | ~~Content Pillars Workshop~~ | **Held as an Outbound session.** Booked and recorded as the pillars workshop; Brett switched it at the start. Fourth displacement. See [[2026-09-03-outbound-workforce-icp-statuses]] |
 | ~~Fri 4 Sep~~ | ~~Content Workshop 3~~ | **Did not happen.** Ian had a power cut at his house. Fifth displacement, and the only one nobody chose. The hour became domains and diary: [[2026-09-04-domains-and-september-schedule]] |
-| **Thu 10 Sep, 10:00** | **The final company content workshop** | **Booked.** Dorte: *"that will be the final company content workshop."* **This is the session that unlocks TXN's platform access**, and it sits on the morning the Novosapien team flies. [[open-questions]] #81 |
-| **Mon 7 Sep, 15:00** | **Dorte's personal content workforce** | **Booked** on 4 September |
-| **w/c 7 Sep** | **Ian's personal workforce**, two one-hour sessions | **Partly booked.** Ian has a session on Monday at 14:00; he is in London Tuesday and Wednesday and Dorte is deliberately protecting that time |
-| **From 15 Sep** | **Michael's personal workforce**, two one-hour sessions | **After his return.** He is away 3 to 15 Sep. Documents already sent to Brett, review next week |
+| ~~Thu 10 Sep, 10:00~~ | ~~The final company content workshop~~ | **Held, and not needed.** Ian's personal onboarding already held the company content, fed from TXN's own brand and tone work, so it becomes the TXN business page. The gate at [[open-questions]] #81 clears on Max's upload. [[2026-09-10-content-workforce-company-closed]] |
+| Tue 9 Sep | **Dorte's personal onboarding** | **Complete.** Produced company material instead of personal, and she and Max rebuilt it as a business pillar plus a private one ([[open-questions]] #86) |
+| Tue 9 Sep | **Ian's personal onboarding** | **Complete**, and adopted as the company entity. Optional ten-minute personal pillar to follow, at lower priority |
+| **From 15 Sep** | **Michael's personal onboarding** | **The only one outstanding.** One self-onboarding, not two interviews. Worth fixing the design flaw at [[open-questions]] #86 before he runs it |
 
 > **Resolved, and not well.** The Thursday session was the pillars and brand entity work. Ian asked mid-session which engagement he was in: *"is this a content workforce session or an outbound session?"* Brett: *"This is outbound... I've switched it to outbound because yesterday's one just didn't land and we need these ICPs."*
 >
@@ -54,6 +54,21 @@ Content Workforce only. The Outbound schedule lives at [[delivery-schedule]]; th
 > **A fifth displacement on 4 September, and the first client friction with it.** Content Workshop 3 was lost to a power cut at Ian's house, which nobody chose. But when Dorte asked on that call when TXN gets platform access, the exchange was uncomfortable: Brett said *"we can probably do it now"*, Max corrected him with *"there's nothing to give access to, we've not finished the interview"*, and Dorte replied *"why? what have we done the whole time?... this is where it's getting exciting and you're stalling."* **That is the first recorded friction on this engagement**, and it landed on access rather than on quality or price. She has been the most patient party throughout and she is right that the elapsed time is hard to account for from her side. The offsetting fact is the one above: the gate is one session, not three, and it is booked.
 
 ### The personal content workforces
+
+> [!important] Closed on 10 September, and the shape was different from the plan
+> **The personal workforces are one self-onboarding each, not two interviews.** Ian and Dorte both completed theirs on 9 September; Michael's is the only one left ([[2026-09-10-content-workforce-company-closed]]).
+>
+> **The company content was closed by adopting Ian's output.** He fed TXN's own brand and tone-of-voice work into his onboarding, and his posting has no subject outside TXN, so his manifesto, entity and three pillars become the business page. Ian had reviewed it himself: *"I went through it thoroughly and checked and I was happy with it."*
+>
+> **Both onboardings asked company questions, which makes it a design flaw rather than drift.** Ian: *"there was no way of distinguishing between the two."* Dorte: *"I had the same, that's why I stopped."* It suited Ian and did not suit Dorte. Tracked at [[open-questions]] #86.
+>
+> **Resulting structure.** Ian: company entity plus an optional ten-minute personal pillar. Dorte: a business pillar, to be cross-checked against Ian's company pillars so nothing contradicts, plus a private pillar covering operations outside TXN. Max's reasoning for letting Dorte keep her own business view: *"it's more authentic to your audience, as long as it doesn't misalign with the business itself."*
+>
+> **Outputs already shared outside TXN.** Ian took the first draft for Pay Corp's head of marketing and a PR consultant, overruling Max's caution that Tyler's refinement would make it materially better in a fortnight, because TXN is planning back from a launch date. Lily converted the files to Word and emailed them during the call.
+>
+> **The ongoing model.** A platform walkthrough with Max and Tyler, including connecting LinkedIn and X; then **Tyler fortnightly on the business page** and **monthly on personal pages**. The onboarding currently ends on an unexplained dashboard, and Max has proposed a how-it-works video.
+>
+> **Dorte asked for one plan across both workforces, working back from launch.** No owner or date was set.
 
 > **The elicitation may not be stable, and Dorte found it (04-09).** She began her profile and stopped: *"Claude asked me so many questions. What I wanted to do is a little bit of a decision tree to see what different outcomes are, because half of them it is more like you're doing a horoscope. You feel today in that mood and tomorrow I'm taking something completely different."* **Her own fix is the useful part**: complete it, but record exactly what was selected, so it can be rerun against different parameters. Six of these interviews are planned, two each for Ian, Michael and Dorte, and if the instrument is mood-dependent then running it twice per person produces two snapshots rather than a stable profile. [[open-questions]] #82. Dorte's is due Monday.
 >
@@ -67,9 +82,9 @@ Content Workforce only. The Outbound schedule lives at [[delivery-schedule]]; th
 
 | Person | Sessions | Window | State |
 |--------|----------|--------|-------|
-| **Dorte Dye** | 2 x 1 hour | **w/c 7 Sep** | To book. Dorte gives the times |
-| **Ian Johnson** | 2 x 1 hour | **w/c 7 Sep** | To book. Dorte gives the times |
-| **Michael Moores** | 2 x 1 hour | **From 15 Sep**, after his return | Deferred by his leave. **Documents already sent to Brett**, review next week |
+| **Dorte Dye** | One self-onboarding | **Done 9 Sep** | Rebuilt by hand after the interview asked company questions |
+| **Ian Johnson** | One self-onboarding | **Done 9 Sep** | Adopted as the company entity |
+| **Michael Moores** | One self-onboarding | **From 15 Sep**, after his return | Outstanding. **Documents already sent to Brett** |
 
 **Michael's is document-led, and he said why.** On 27 August: *"I don't really post on LinkedIn. It's all Marqeta gave me to post, so that's not really my voice."* He has plenty of written material and little published voice, so his entity is built from documents first and the sessions angle at the technical side of TXN. That is the right order for him and it is why his slipping past the retreat costs less than it would for Ian or Dorte.
 
