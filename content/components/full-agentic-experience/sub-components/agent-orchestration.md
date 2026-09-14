@@ -4,6 +4,7 @@ status: Defined
 sources:
   - "[[05-06-2026-component-4-full-agentic-experience]]"
   - "[[2026-09-03-agentic-standup]]"
+  - "[[2026-09-08-agentic-standup]]"
 description: "Sub-component spec for the multi-agent core — specialised teams merge user journeys via plan, approve, execute, with risk-tiered verification and guard rails"
 
 > **13-08 update ([[2026-08-13-agentic-standup]]):** Observed in the working build: **a workflow is structured at the start and malleable afterwards.** Once the scripted path completes, the agent retains awareness of what else it can do and **proactively suggests next steps** (running a simulation, funding the account, setting limits), and the user can continue conversationally from there rather than starting a new run. George's open design question: **do we curate a specific set of suggested next steps per workflow, or leave it to the agent and the user to decide what happens next?** An agent-design decision, undecided. (Source: standup 2026-08-13)
@@ -53,6 +54,19 @@ It runs on the **same machinery as [[agent-inbox-alerts]]**, acts only through [
 > **What is not yet built:** self-recovery. When an action fails, the agent should investigate with its own tools rather than handing the user a failure. George: *"rather than a human going 'oh wait, let me go check health, let me speak to John'... the agent's going to do all of that."*
 >
 > Classifying every user journey into one class or the other is tracked at [[open-questions]] #83. See also [[process-surfacing]], where this changes the June trust-UI position.
+
+> [!note] Acted on within five days, 8 September 2026
+> Three changes landed against the ruling above ([[2026-09-08-agentic-standup]]).
+>
+> **The model changed** to another Gemini model, purely for latency: *"the one we were using was good, it just wasn't quick."*
+>
+> **The approvals were stripped out wholesale**, and the method inverts the default. George: *"if we strip most of them out and then work backwards so that we go, right, this is a sensitive action where we're going to need the approval. And then based on different user access roles as well."* His assessment of the cost is that the machinery already exists: *"it's just a matter of turning it on and turning it off for different aspects."* **What is still open is which actions are sensitive**; Michael's 13-08 approval grouping predates this inversion and should be checked against it ([[open-questions]] #83).
+>
+> **The SOPs are being rewritten so investigation is frontloaded.** Previously the agent presented a plan, did investigation work inside it, then sought approval to act. Now everything happens up front and a single approval sits at the end. Newly stated and recorded nowhere else: that approval may be a **conversational turn rather than a card**, *"not even click, just say to the agent yes."*
+>
+> **Reasoning depth becomes a dial rather than a setting.** Latency is dominated by the model reasoning between tool calls, so the plan is to run **high reasoning while investigating and planning, then flip by flag to a fast setting for execution**. Dorte asked the right question, whether cutting reasoning costs quality; the answer is that the switch happens only after the plan exists, and *"from the user's perspective they're not going to notice any of this."* It also gives a per-workflow tuning lever. Both model changes compound the list owed to Direct Transact at [[open-questions]] #85 and #70.
+>
+> **None of it is measured yet.** Two changes landed together and a third is proposed, so nothing separates their effects. Dorte asked for figures rather than feel, and George committed to running each workflow 100 times per configuration ([[open-questions]] #87).
 
 ## 2. What Needs to Happen?
 
