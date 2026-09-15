@@ -105,6 +105,23 @@ The fix is a one-line change, making the filename depend on the flag rather than
 
 **Nothing is broken right now.** The pilot builds from the committed `spec/api-specification_10Aug2026.yaml`, pinned by sha, so no live fetch sits on the critical path. This bites the next time someone regenerates from the internal spec.
 
+## Spend controls: the hierarchy, and a live gap
+
+Described by Michael on 15 September 2026 ([[2026-09-15-agentic-standup]]), after the agent gave a false answer about them ([[open-questions]] #89).
+
+| Rule | Detail |
+|------|--------|
+| **Depth** | A **nine-level hierarchy**, from BIN sponsor (strictly, BIN range) down to card |
+| **Ownership by URL** | Separate endpoints per level with the same request schema, *"to make that ownership clear"* |
+| **Access** | A program manager cannot act at BIN sponsor level; the agent should offer only reachable levels |
+| **Ceilings** | A lower level cannot exceed its parent: *"you couldn't go and say put £1,000 on this card if the program was set to 500"* |
+| **Guidance before refusal** | *"The API will just tell you to go away anyway, but if we can frontload that ahead, so we're guiding them properly"* |
+| **Merchant controls** | Same hierarchy, **yes or no** rather than an amount |
+
+**The endpoints are not built.** Michael: *"we haven't approved the user stories of spend controls yet. That's what they've automatically built"*, and DT's API is *"pretty broke right now for that."* **The agent is also on an out-of-date version of this spec** because of the URL change at [[open-questions]] #67, which is why it reasoned from what it had and reported the gap as architecture.
+
+**Incoming:** Michael holds around **twenty DT specification documents** on the hierarchy and will send them once his DT questions are answered. He expects spend controls to be *"one of the most used"* areas, with analytical questions like *"if I did a transaction of £500 at this merchant, would it go through?"* checked across every level.
+
 ## Why it matters to the vault
 
 - **API Reference** in the Developer Portal is auto-rendered from the external YAML (see [[developer-support]] §1, §4).

@@ -4,6 +4,7 @@ status: Defined
 sources:
   - "[[04-06-2026-component-3-co-pilot]]"
   - "[[2026-09-03-agentic-standup]]"
+  - "[[2026-09-15-agentic-standup]]"
 description: "Sub-component spec for the Co-pilot trust UI: bucketed categories, risk-tiered verification, and the two task classes that replaced the universal altitude"
 ---
 
@@ -57,6 +58,16 @@ Ian's own, and it is the most useful thing to come out of the session. **Judge t
 | Ian | *"minimal speed or ease value... it wouldn't have been the end of the world if I had to go to the control center"* | *"I probably wouldn't have even done that. I might not have even known that was happening in my card program because I wouldn't have known necessarily where to start"* |
 
 The bucketed-category principle above is still right for the second column. It is the first column that had no exception written for it.
+
+### Language follows the same rule as progress (15-09-2026)
+
+Ian, after testing ([[2026-09-15-agentic-standup]]): *"it talks in a very much AI way, that I'm going to give you all of this detail and context that I've got."* His examples were unrequested references to storage, named endpoints and API references: *"I don't care where it is."*
+
+George floated **per-user verbosity settings**, since some users prefer full explanations. **Michael gave the better answer: detail depends on intent and surface, not on the person.**
+
+> *"If you're saying 'how do I do this in terms of the API', then I'd expect that detail, rather than saying 'I want to do this' and getting the whole workings and background behind it... If it's on the knowledge hub, that would have been a great answer, versus 'I'm trying to do this quickly'."*
+
+That is the same axis as the two classes above: **a question earns explanation, an action earns a result.** Dorte's version, from her own testing: orientation first, detail on request, *"where do I sit, where I am in the flow... rather than having it really wordy, and you always can click or ask for more."*
 
 ### The boundary: silence is only for work, never for waiting
 

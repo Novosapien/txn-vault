@@ -5,6 +5,7 @@ sources:
   - "[[05-06-2026-component-4-full-agentic-experience]]"
   - "[[2026-09-03-agentic-standup]]"
   - "[[2026-09-08-agentic-standup]]"
+  - "[[2026-09-15-agentic-standup]]"
 description: "Sub-component spec for the multi-agent core — specialised teams merge user journeys via plan, approve, execute, with risk-tiered verification and guard rails"
 
 > **13-08 update ([[2026-08-13-agentic-standup]]):** Observed in the working build: **a workflow is structured at the start and malleable afterwards.** Once the scripted path completes, the agent retains awareness of what else it can do and **proactively suggests next steps** (running a simulation, funding the account, setting limits), and the user can continue conversationally from there rather than starting a new run. George's open design question: **do we curate a specific set of suggested next steps per workflow, or leave it to the agent and the user to decide what happens next?** An agent-design decision, undecided. (Source: standup 2026-08-13)
@@ -67,6 +68,23 @@ It runs on the **same machinery as [[agent-inbox-alerts]]**, acts only through [
 > **Reasoning depth becomes a dial rather than a setting.** Latency is dominated by the model reasoning between tool calls, so the plan is to run **high reasoning while investigating and planning, then flip by flag to a fast setting for execution**. Dorte asked the right question, whether cutting reasoning costs quality; the answer is that the switch happens only after the plan exists, and *"from the user's perspective they're not going to notice any of this."* It also gives a per-workflow tuning lever. Both model changes compound the list owed to Direct Transact at [[open-questions]] #85 and #70.
 >
 > **None of it is measured yet.** Two changes landed together and a third is proposed, so nothing separates their effects. Dorte asked for figures rather than feel, and George committed to running each workflow 100 times per configuration ([[open-questions]] #87).
+
+> [!warning] The hands-on verdict, 15 September 2026
+> Ian tested it himself ([[2026-09-15-agentic-standup]]): *"it is so slow, and it's not remotely intuitive... I just don't think people would use it."* No bugs were found, and that did not help: *"to me, it taking so long, it might as well be the same thing."* **The client's bar is speed, not correctness.** This came after the 8 September fixes above.
+>
+> **His three failures, each a design rule:**
+>
+> 1. **Ask for the identifier before fetching.** Asked to suspend a named cardholder's card, the agent retrieved every card and account first. Ask for the last four digits, *"it happens in Claude all the time, that it asks for a recommendation before it goes off."*
+> 2. **Use the filter the user gave.** Asked to onboard a cardholder on the consumer program, it returned every program including corporate ones.
+> 3. **Collect structured input in a form, not a numbered chat list.** It listed eight required cardholder fields as chat text.
+>
+> **Ian's sequencing rule:** fix speed before deciding which tasks stay in the agent, and do not push simple actions out, because that breaks *"meeting clients where they are"* ([[open-questions]] #83).
+>
+> **Speed fixes committed.** Bundle multi-call workflows into **specialist tools**, so the agent writes all arguments up front and makes one call instead of five or six turns; frontload questions; send and forget. **Split-screen chat panes were proposed and dropped** as *"putting a plaster on the problem."*
+>
+> **Michael's hybrid, the strongest design idea on the call:** when scope and action are clear, render a **simplified cardholder view with action buttons in the chat**, *"a mix of agent versus click."* He framed it by who asks: a technical user supplies everything and needs only *"are you sure"*; a customer service user supplies less. He added **LLM cost** as a factor in where simple tasks break off, and warned the agent must still understand the action for [[a2a-endpoint]], where there is no UI.
+>
+> **And a false answer.** The agent told Ian that spend controls are set at BIN sponsor level with no program filter, which is wrong, and explained it convincingly. Causes are a stale API version and unbuilt endpoints; the behaviour is the risk. [[open-questions]] #89.
 
 ## 2. What Needs to Happen?
 
