@@ -28,6 +28,35 @@ Validated in session 1 and continuing on that basis. **The trade-off has now sho
 
 **A third slip on 27 August, and this one is a choice rather than an over-run.** The pillars and brand entity session was moved to 1 September and its slot given to a second Outbound session. That is the right call and the reasoning is worth keeping: **domain warming is the only clock in either engagement that cannot be recovered by working harder.** It takes two weeks of elapsed time whatever anyone does, so every day it is not started is a day added to the end. The Content Workforce outputs have no equivalent constraint. Three working days of content slip buys a fortnight of warming that would otherwise start after the Novosapien retreat.
 
+## Configuration is closed. The engagement moves to generation
+
+**Declared complete 15 September 2026.** The company entity closed on 10 September by adopting Ian's own output ([[2026-09-10-content-workforce-company-closed]]), and **Ian and Dorte have both completed their personal configuration**. The configuration phase of this engagement is over.
+
+| Entity | Configuration | Note |
+|--------|--------------|------|
+| **TXN, the company** | **Closed** 10 Sep | Closed by adopting Ian's personal output as the company voice |
+| **Ian Johnson** | **Closed** | Self-onboarding |
+| **Dorte Dye** | **Closed** | Self-onboarding. Carries an additional personal pillar alongside her employee pillar |
+| **Michael Moores** | **Outstanding** | The only configuration still open. He returned 15 September and his first fortnight is committed to launch ([[open-questions]] #54) |
+
+**What changes now.** Progress stops being measured in interview sets closed and starts being measured in **content produced, reviewed and approved**. That is a different kind of work and it fails in different ways: the first batch is where subjective tone gets corrected, and it always takes a pass or two.
+
+### What starts this week
+
+| Step | What done looks like |
+|------|---------------------|
+| **Content generation on the TXN brand** | A first batch generated against the closed manifesto, pillars and entities |
+| **Testing on the TXN brand** | The tone-optimisation loop: generate, review, correct, regenerate. Tyler leads the written pass |
+| **Cadence** | Tyler fortnightly on the business page, monthly on the personal pages, agreed 10 September |
+
+**The honest caveat, and it is the same one this plan has made every week.** Configuration closing does not mean content is ready to publish. The first batch is a draft that exists, not copy that ships. Expect two or three correction rounds before the tone is right, and expect them to be the slow part.
+
+### Still open
+
+- **Michael's personal configuration**, the only one outstanding.
+- **LinkedIn logins and profile branding**, still owed, and they gate publishing rather than generation.
+- **Dorte's ask for one plan across both workforces**, worked back from the launch date, raised 10 September and not yet produced.
+
 ## Workshop schedule
 
 Content Workforce only. The Outbound schedule lives at [[delivery-schedule]]; the two run in parallel and compete for the same TXN diaries, which is why the September squeeze below matters.

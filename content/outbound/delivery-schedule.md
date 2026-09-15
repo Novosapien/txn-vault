@@ -20,6 +20,23 @@ The Outbound Workforce is a **separate engagement** from the agentic AI layer, c
 | **Deliverability** | DKIM, DMARC and SPF on TXN's sending domains, then warming | **Still not started on 3 September**, against a w/c 1 September plan. Sizing settled at **four or five domains**; the blocker has moved from Jacob's contact details to **the domain hierarchy list George owes Brett** |
 | **Five agents** | Configured on TXN's ICP and messaging. **Email and LinkedIn only**, no voice | Not started. The proposal calls week 2 the heavy week |
 
+## Configuration is closed. The build starts
+
+**Declared complete 15 September 2026.** The offer, the ICPs and the personas are done. The interview series closed on 3 September and the persona work ran offline from there.
+
+**The email configuration and domain warming start this week**, and that is the whole of the near-term plan for this engagement.
+
+> **Said plainly: warming has lost a fortnight and it cannot be recovered.** The 28 August plan had the domain session in the week of 1 September, and it was still unbooked on 3 September. Warming takes roughly two weeks of elapsed time whatever anyone does, because sending too much too early damages the sending domain permanently. Starting **now** puts the domains live around **29 September** rather than the **16 September** the 28 August plan carried. **Every day this slips is a day added to the end**, and no amount of effort buys it back. This is the one item on either GTM engagement with that property, which is exactly why the 27 August decision gave it priority over the Content Workforce slot.
+
+### What starts this week
+
+| Step | Owner | Note |
+|------|-------|------|
+| **Buy the sending domains** | Novosapien buys, hands over, invoices at a **10% markup** | **TXN owns only `txnglobal.com`**; every other TXN name redirects to Pay Corp, which constrains the choice |
+| **DKIM, DMARC and SPF** | Novosapien, with TXN's domain administrator | The technical session that has slipped since 1 September |
+| **Warming** | Automated, unattended | Roughly two weeks of elapsed time. Live around 29 September |
+| **Team login and platform setup** | Novosapien with Dorte | Still to book |
+
 ## Session schedule
 
 | Date | Session | State |
