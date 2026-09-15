@@ -3,6 +3,7 @@ component: "[[agent-access-layer]]"
 status: Defined
 sources:
   - "[[01-06-2026-component-1-Agent-Access-Layer]]"
+  - "[[2026-09-15-agentic-standup]]"
 description: "How AI-initiated changes route through the Console two-person approval queue — product/multi-card needs a second approver; single-card privileged does not"
 ---
 
@@ -51,6 +52,20 @@ Before any change — approval-required or not — the agent applies **prompted 
 - **The Console approval queue** (built by Stackworkz) — the existing system this integrates with
 
 ---
+
+> [!important] Approvals follow the Console permission model, 15 September 2026
+> Michael, on his return ([[2026-09-15-agentic-standup]]): *"for now, if we stick with the user permissions, **each permission has an approval field on it or not.** And then what we need to do is say, okay, this action attributes to this permission, and that permission needs approval."* Agreed before his leave to *"align that with the console."*
+>
+> **So Novosapien does not decide which actions are sensitive.** The Stackworkz permission framework does ([[open-questions]] #71). The work is to map every agent tool to a permission and honour that permission's approval flag. Detail is largely in the Console backend API document Michael has sent.
+>
+> | Kind | When | How |
+> |---|---|---|
+> | **Permission approval** | The user lacks access, *"even if I was doing it in the console, I need approval"* | Submitted to the **approval queue**; approved in the Console or on **mobile** |
+> | **Agent confirmation** | The user has access, but the agent acts on their behalf | A confirmation in the conversation, *"are you sure you want to delete a card?"* |
+>
+> Michael's description of the flow: *"the agent will be more confirmation. Are you sure you want to do this? Yes. Then it'll be, okay, I need approval for this, I've submitted it to the approval queue, wait for someone to do that."*
+>
+> **Deferred, by Michael:** an agent carrying higher privileges than its user, *"this user's unskilled, but with the agent they can do higher skilled things with guard rails."* Held at [[open-questions]] #74.
 
 ## 2. What Needs to Happen?
 
