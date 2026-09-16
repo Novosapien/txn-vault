@@ -54,6 +54,20 @@ Decision records that sit outside the meeting series, kept here so the flight pl
 
 ## What the current plan says
 
+### Removed from the client-facing plan, 16 September
+
+**The Home risk register and the configurations-closed banner are off the flight plan.** _Not carried on the client-facing report by decision._ The Home page opened with a three-item risk block (no recorded pilot acceptance, the lost warming fortnight, no forward-planning date) and a banner announcing both GTM configurations closed. Both are removed.
+
+**The three risks themselves are unchanged and still visible to TXN**, in the places they belong rather than stacked at the top of page one:
+
+| Item | Where it still appears |
+|------|----------------------|
+| Pilot acceptance has no written outcome | Critical dates table, Home, marked "no written outcome" |
+| Warming live around 29 September, a fortnight late | Outbound Workforce page, in full, with the reason it cannot be recovered |
+| No forward-planning date | Critical dates table, Home, marked "unbooked" |
+
+So this is a change of prominence, not of disclosure. Everything TXN could read yesterday they can still read today.
+
 ### The headline, 15 September
 
 - **Both GTM configurations are closed, and both engagements move from talking to producing.** The Content Workforce company entity closed on 10 September and **Ian and Dorte have finished their personal configuration**; the Outbound offer, ICPs and personas are done. Progress stops being counted in interview sets and starts being counted in **content produced and emails warming**. Different work, different failure modes.
