@@ -41,13 +41,17 @@ Validated in session 1 and continuing on that basis. **The trade-off has now sho
 
 **What changes now.** Progress stops being measured in interview sets closed and starts being measured in **content produced, reviewed and approved**. That is a different kind of work and it fails in different ways: the first batch is where subjective tone gets corrected, and it always takes a pass or two.
 
-### What starts this week
+### The plan from here
 
-| Step | What done looks like |
-|------|---------------------|
-| **Content generation on the TXN brand** | A first batch generated against the closed manifesto, pillars and entities |
-| **Testing on the TXN brand** | The tone-optimisation loop: generate, review, correct, regenerate. Tyler leads the written pass |
-| **Cadence** | Tyler fortnightly on the business page, monthly on the personal pages, agreed 10 September |
+Configuration is the input, not the outcome. Three stages follow it.
+
+| Week | What happens | What done looks like |
+|------|-------------|---------------------|
+| **w/c 14 Sep** | **Build the content plan.** What gets written, for which entity, under which pillar, in what order | An agreed plan across the company entity and the two personal entities |
+| **w/c 21 and 28 Sep** | **Two weeks of trial content.** Generate, review, correct, regenerate. Where subjective tone gets settled | Drafted content TXN has reviewed, tone corrected to recognisably TXN's voice |
+| **From w/c 5 Oct** | Review the trial, agree changes, move to **publishing on the agreed cadence** | Tyler fortnightly on the business page, monthly on personal |
+
+Feedback in the trial is applied to the **entity configuration** rather than to individual pieces, so a correction made once holds for everything generated afterwards. Expect two or three passes; the first batch is reliably furthest from the mark, which is the reason for a trial period rather than going straight to publishing.
 
 **The honest caveat, and it is the same one this plan has made every week.** Configuration closing does not mean content is ready to publish. The first batch is a draft that exists, not copy that ships. Expect two or three correction rounds before the tone is right, and expect them to be the slow part.
 

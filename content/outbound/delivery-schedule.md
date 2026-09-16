@@ -20,35 +20,37 @@ The Outbound Workforce is a **separate engagement** from the agentic AI layer, c
 | **Deliverability** | DKIM, DMARC and SPF on TXN's sending domains, then warming | **Still not started on 3 September**, against a w/c 1 September plan. Sizing settled at **four or five domains**; the blocker has moved from Jacob's contact details to **the domain hierarchy list George owes Brett** |
 | **Five agents** | Configured on TXN's ICP and messaging. **Email and LinkedIn only**, no voice | Not started. The proposal calls week 2 the heavy week |
 
-## The plan to first outreach, by 30 September
+## Configuration is completed. The next phase begins
 
-Configuration is completed: the offer, the ICPs and the buyer personas are all done. The engagement now runs to a single target, **first outreach by the end of September**.
+The offer, the four Card Program Status ICPs and the eleven buyer personas are all done. **That is the input to the work, not the work itself.** The next phase builds the machine that uses it, across four workstreams running in parallel.
 
-| Week | What happens | What done looks like |
-|------|-------------|---------------------|
-| **w/c 14 Sep** | Buy the sending domains, configure DKIM, DMARC and SPF, **start warming**, get the TXN team logged into the platform | Domains live and authenticated, warming underway, TXN able to see their own queue |
-| **w/c 21 Sep** | Warming continues unattended. In parallel: configure the five agents on TXN's ICP and messaging, build the sequences, finalise the target list from the scored register | Agents configured, sequences drafted and reviewed, first tranche of accounts selected |
-| **w/c 28 Sep** | Domains reach full warmth around 29 September. Test sequences end to end, then **begin first outreach** | **First sends by 30 September**, replies routing correctly, meetings booking |
+| # | Workstream | What it involves | What done looks like |
+|---|-----------|------------------|---------------------|
+| 1 | **Warming the sending emails** | Buy the secondary domains, configure DKIM, DMARC and SPF, then warm the mailboxes. Roughly two weeks of elapsed time, largely unattended once started | Domains authenticated and warm, safe to send at volume |
+| 2 | **Configuring LinkedIn** | Connect the profiles, set sending limits and connection cadence. Capped at 200 outreaches per week | LinkedIn sending within limits, alongside email |
+| 3 | **Configuring the engine** | Five agents on TXN's ICP and messaging, grounded in the offer and personas. Sequences built, calendar integrated, replies routed | Sequences run end to end in test, meetings book, replies reach the right person |
+| 4 | **Sourcing leads against the ICPs** | Build and grade the target list from the four ICPs, then **put it to TXN for review** before anything is contacted | A graded list TXN has seen and approved |
+
+**Workstream 4 is the one that needs TXN.** The list goes to them for review before any account is contacted. That review is the control point: removing an account from a list is cheaper than retracting an approach. The 126-account register is the starting point, not the final list.
+
+### Week by week
+
+| Week | What happens |
+|------|-------------|
+| **w/c 14 Sep** | Buy the domains and start warming. Begin LinkedIn configuration. Get the TXN team onto the platform |
+| **w/c 21 Sep** | Warming continues unattended. Configure the engine. Source and grade the lead list, then put it to TXN for review |
+| **w/c 28 Sep** | Domains warm around 29 September. Sequences tested end to end against the approved list, then first outreach |
+| **From w/c 5 Oct** | Outreach running. Replies and meetings reported against the list so the ICP grading is corrected by what converts |
 
 ### What decides whether 30 September holds
 
-1. **Warming has to start this week.** It is roughly two weeks of elapsed time and cannot be shortened, so the end date moves day for day with the start date. Everything else runs in parallel with it.
-2. **The launch sequence needs confirming.** The agreed order is Direct Transact and Pay Corp channels, then the personal networks of Ian, Michael and Dorte, then TXN's own outbound. **Recommendation: personal networks run first from 30 September**, with cold outreach behind them. Both sides have independently observed that personal reach outperforms the company channel: Ian and Brett on 3 September, ranking the team's networks as the likeliest source of the first client, and Dorte on 8 September on her own post engagement.
-
-### How outreach is delivered
-
-| Element | Approach |
-|---------|----------|
-| **Channels** | Email and LinkedIn. Email from named individuals on a secondary domain, initially Ian, later split by territory. LinkedIn capped at 200 per week |
-| **Targets** | The scored register of **126 accounts**, tiered against the four Card Program Status ICPs agreed 3 September. 22 Priority 1, 76 in the MVP markets |
-| **Agents** | Five, configured on TXN's ICP and messaging, grounded in the completed offer and the eleven buyer personas |
-| **Deliverability** | Warmed domains, suppression lists applied before every run, working unsubscribe honoured across channels |
-| **Measurement** | Replies and meetings booked, reported against the target list so the ICP scoring is corrected by what converts |
+1. **Warming starts this week.** Two weeks of elapsed time that cannot be shortened, so the end date moves day for day with the start date. The other three workstreams run in parallel and are not the constraint.
+2. **The launch sequence needs confirming.** Direct Transact and Pay Corp channels, then the personal networks of Ian, Michael and Dorte, then TXN's own outbound. **Recommendation: personal networks first from 30 September**, cold outreach behind them, since both sides have independently observed personal reach outperforming the company channel.
 
 ### Still to confirm
 
-- **The domain names.** TXN owns `txnglobal.com` and every other TXN name redirects to Pay Corp. Novosapien buys, hands over and invoices at a 10% administration fee, agreed 4 September.
-- **The 30-day go-live clock**, which has no start date on the record for either engagement.
+- **The domain names.** TXN owns `txnglobal.com`; every other TXN name redirects to Pay Corp. Novosapien buys, hands over and invoices at a 10% administration fee, agreed 4 September.
+- **The 30-day go-live clock**, with no start date on the record for either engagement.
 - **One plan across both workforces**, worked back from launch, which Dorte asked for on 10 September.
 
 ## Session schedule
