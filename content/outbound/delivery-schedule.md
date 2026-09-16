@@ -26,7 +26,7 @@ The offer, the four Card Program Status ICPs and the eleven buyer personas are a
 
 | # | Workstream | What it involves | What done looks like |
 |---|-----------|------------------|---------------------|
-| 1 | **Warming the sending emails** | Buy the secondary domains, configure DKIM, DMARC and SPF, then warm the mailboxes. Roughly two weeks of elapsed time, largely unattended once started | Domains authenticated and warm, safe to send at volume |
+| 1 | **Warming the sending emails** | **Started 16 September, around 20% through.** Domains bought, DKIM, DMARC and SPF configured, mailboxes warming. Roughly two weeks of elapsed time, largely unattended | Domains authenticated and warm, safe to send at volume |
 | 2 | **Configuring LinkedIn** | Connect the profiles, set sending limits and connection cadence. Capped at 200 outreaches per week | LinkedIn sending within limits, alongside email |
 | 3 | **Configuring the engine** | Five agents on TXN's ICP and messaging, grounded in the offer and personas. Sequences built, calendar integrated, replies routed | Sequences run end to end in test, meetings book, replies reach the right person |
 | 4 | **Sourcing leads against the ICPs** | Build and grade the target list from the four ICPs, then **put it to TXN for review** before anything is contacted | A graded list TXN has seen and approved |
@@ -37,14 +37,14 @@ The offer, the four Card Program Status ICPs and the eleven buyer personas are a
 
 | Week | What happens |
 |------|-------------|
-| **w/c 14 Sep** | Buy the domains and start warming. Begin LinkedIn configuration. Get the TXN team onto the platform |
+| **w/c 14 Sep** | **Warming started 16 September.** Domains bought and authenticated, mailboxes warming. LinkedIn configuration begun. TXN team onto the platform |
 | **w/c 21 Sep** | Warming continues unattended. Configure the engine. Source and grade the lead list, then put it to TXN for review |
 | **w/c 28 Sep** | Domains warm around 29 September. Sequences tested end to end against the approved list, then first outreach |
 | **From w/c 5 Oct** | Outreach running. Replies and meetings reported against the list so the ICP grading is corrected by what converts |
 
 ### What decides whether 30 September holds
 
-1. **Warming starts this week.** Two weeks of elapsed time that cannot be shortened, so the end date moves day for day with the start date. The other three workstreams run in parallel and are not the constraint.
+1. **Warming started on 16 September** and runs roughly two weeks of elapsed time. It cannot be shortened, so the completion date follows from the start date. The other three workstreams run in parallel and are not the constraint.
 2. **The launch sequence needs confirming.** Direct Transact and Pay Corp channels, then the personal networks of Ian, Michael and Dorte, then TXN's own outbound. **Recommendation: personal networks first from 30 September**, cold outreach behind them, since both sides have independently observed personal reach outperforming the company channel.
 
 ### Still to confirm
