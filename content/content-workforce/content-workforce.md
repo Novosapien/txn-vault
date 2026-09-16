@@ -28,26 +28,30 @@ Validated in session 1 and continuing on that basis. **The trade-off has now sho
 
 **A third slip on 27 August, and this one is a choice rather than an over-run.** The pillars and brand entity session was moved to 1 September and its slot given to a second Outbound session. That is the right call and the reasoning is worth keeping: **domain warming is the only clock in either engagement that cannot be recovered by working harder.** It takes two weeks of elapsed time whatever anyone does, so every day it is not started is a day added to the end. The Content Workforce outputs have no equivalent constraint. Three working days of content slip buys a fortnight of warming that would otherwise start after the Novosapien retreat.
 
-## Configuration is closed. The engagement moves to generation
+## Configuration is completed. The engagement moves to generation
 
-**Declared complete 15 September 2026.** The company entity closed on 10 September by adopting Ian's own output ([[2026-09-10-content-workforce-company-closed]]), and **Ian and Dorte have both completed their personal configuration**. The configuration phase of this engagement is over.
+**Declared complete 15 September 2026.** The company entity was completed on 10 September by adopting Ian's own output ([[2026-09-10-content-workforce-company-closed]]), and **Ian and Dorte have both completed their personal configuration**. The configuration phase of this engagement is over.
 
 | Entity | Configuration | Note |
 |--------|--------------|------|
-| **TXN, the company** | **Closed** 10 Sep | Closed by adopting Ian's personal output as the company voice |
-| **Ian Johnson** | **Closed** | Self-onboarding |
-| **Dorte Dye** | **Closed** | Self-onboarding. Carries an additional personal pillar alongside her employee pillar |
+| **TXN, the company** | **Completed** 10 Sep | Closed by adopting Ian's personal output as the company voice |
+| **Ian Johnson** | **Completed** | Self-onboarding |
+| **Dorte Dye** | **Completed** | Self-onboarding. Carries an additional personal pillar alongside her employee pillar |
 | **Michael Moores** | **Outstanding** | The only configuration still open. He returned 15 September and his first fortnight is committed to launch ([[open-questions]] #54) |
 
 **What changes now.** Progress stops being measured in interview sets closed and starts being measured in **content produced, reviewed and approved**. That is a different kind of work and it fails in different ways: the first batch is where subjective tone gets corrected, and it always takes a pass or two.
 
-### What starts this week
+### The plan from here
 
-| Step | What done looks like |
-|------|---------------------|
-| **Content generation on the TXN brand** | A first batch generated against the closed manifesto, pillars and entities |
-| **Testing on the TXN brand** | The tone-optimisation loop: generate, review, correct, regenerate. Tyler leads the written pass |
-| **Cadence** | Tyler fortnightly on the business page, monthly on the personal pages, agreed 10 September |
+Configuration is the input, not the outcome. Three stages follow it.
+
+| Week | What happens | What done looks like |
+|------|-------------|---------------------|
+| **w/c 14 Sep** | **Build the content plan**, underway and around 12% through. What gets written, for which entity, under which pillar, in what order | An agreed plan across the company entity and the two personal entities |
+| **w/c 21 and 28 Sep** | **Two weeks of trial content.** Generate, review, correct, regenerate. Where subjective tone gets settled | Drafted content TXN has reviewed, tone corrected to recognisably TXN's voice |
+| **From w/c 5 Oct** | Review the trial, agree changes, move to **publishing on the agreed cadence** | Tyler fortnightly on the business page, monthly on personal |
+
+Feedback in the trial is applied to the **entity configuration** rather than to individual pieces, so a correction made once holds for everything generated afterwards. Expect two or three passes; the first batch is reliably furthest from the mark, which is the reason for a trial period rather than going straight to publishing.
 
 **The honest caveat, and it is the same one this plan has made every week.** Configuration closing does not mean content is ready to publish. The first batch is a draft that exists, not copy that ships. Expect two or three correction rounds before the tone is right, and expect them to be the slow part.
 

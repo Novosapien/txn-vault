@@ -55,6 +55,25 @@ Decision records that sit outside the meeting series, kept here so the flight pl
 
 ## What the current plan says
 
+### Scope and presentation changes, 16 September
+
+- **Remaining Internal Ops v1 scope moves into phase 1.** The TXN customer onboarding agent is specified to build depth and was not built inside the pilot. It is carried into phase 1 with the rest of the next phase of delivery, rather than sitting as an open item against a pilot that has been accepted. Register rows and the flight plan both updated.
+- **Completion is measured against the accepted definition, and now reads 95%.** Work carried into phase 1 is not counted against it, and the permission model is Stackworkz's rather than a Novosapien deliverable. The residual 5% is the continuing speed and usability refinement, which is not a condition of acceptance. Previous figure was 81% on a basis that counted the carried-over work as an unstarted deliverable.
+- **Speed remediation shows 10% complete** on the flight plan. The SOP runtime landed 15 September and fixes started on the morning of 16 September.
+- **Both GTM charts rebuilt on a shared frame**, w/c 17 August to w/c 5 October, so completed work is visible rather than starting the view at the current week. The Content Workforce chart also had bars overlapping the lane labels, which is corrected.
+- **The Home chart is reframed to July to December 2026, thirteen lanes.** Removing Sprint Zero left May and June empty, so the frame now opens at the Control Center build on 20 July and the columns carry the year. Six months across the full width rather than eight with two blank.
+- **Sprint Zero removed from the Home chart.** Shortened first to 17 May to 24 June, then taken off entirely. It is a delivered and invoiced stage that predates the build work the chart is there to show, and it remains recorded on the module ledger and in the commercial table. The chart now carries thirteen lanes.
+- **The Home chart is the full plan to date, May to December 2026, across fourteen lanes.** An earlier version of this issue replaced it with a September-to-December forward view, which stripped the delivered history out of the client's first page. That was wrong: the engagement's record is the most persuasive thing on the report. It now carries Sprint Zero, the Control Center build, the simulation harness, the Agent Access Layer, the SOP library, the Full Agentic Experience, the delivered Internal Ops parts, the pilot build and its acceptance, alongside the three in-flight workstreams and the contracted work still to be dated.
+- **Third person throughout the client report.** No "we", "us" or "our" in Novosapien's own narration; quotations keep their original wording.
+
+### Pilot acceptance confirmed, 16 September
+
+**Acceptance is confirmed in writing and the pilot will be deemed complete by the end of the week commencing 14 September.** Novosapien invoices the second instalment of **£27,093.75** on that basis. This closes the item that led the 15 September issue and that this hub had been carrying since the completion date passed on 7 September.
+
+**Novosapien has committed that any further errors identified will be corrected.** Recorded because it is a continuing obligation taken on voluntarily rather than one the Pilot Order imposes: acceptance closes the contracted milestone, and it does not end responsibility for the quality of what was delivered.
+
+**The distinction to hold when this is reported.** Acceptance is against the three deliverables named in the Pilot Order. The speed and usability programme following Ian's 15 September verdict is **separate and continuing**, and it is not a condition of acceptance. Both progress in parallel. Stating that clearly protects both sides: TXN is not signing away the speed work, and Novosapien is not holding the invoice behind an open-ended improvement cycle.
+
 ### The headline, 16 September
 
 - **Ian tested the agent hands-on on 15 September and found it too slow to use.** *"So slow"*, *"not remotely intuitive"*, *"I just don't think people would use it."* **No defects found.** His framing is the important part: correctness is not the bar, elapsed time is, and *"it taking so long, it might as well be the same thing"* as doing the job by hand. This is the first time the product has been judged by its intended user, which is what six weeks of this record has been asking for.
@@ -88,7 +107,7 @@ So this is a change of prominence, not of disclosure. Everything TXN could read 
 
 ### The headline, 15 September
 
-- **Both GTM configurations are closed, and both engagements move from talking to producing.** The Content Workforce company entity closed on 10 September and **Ian and Dorte have finished their personal configuration**; the Outbound offer, ICPs and personas are done. Progress stops being counted in interview sets and starts being counted in **content produced and emails warming**. Different work, different failure modes.
+- **Both GTM configurations are completed, and both engagements move from talking to producing.** The Content Workforce company entity closed on 10 September and **Ian and Dorte have completed their personal configuration**; the Outbound offer, ICPs and personas are done. Progress stops being counted in interview sets and starts being counted in **content produced and emails warming**. Different work, different failure modes.
 - **Domain warming starts this week, a fortnight later than planned, and the fortnight is gone.** The 28 August plan had the technical session in the week of 1 September; it was still unbooked on 3 September. Warming is two weeks of elapsed time whatever anyone does, so the domains go live around **29 September** rather than the **16 September** that plan carried. This was the one item flagged as unrecoverable, and it is the one that slipped.
 - **The pilot completion date passed on 7 September and this vault holds no record of acceptance.** Eight days on, there is no acceptance record, no shortfall notice, no written extension. The build has carried on and improved, which is good, and **nobody has written down whether the contracted thing was accepted**. That triggers the second 50% invoice of £27,093.75. It is the single most important item on the engagement and it is a paperwork item, not a build item.
 - **Ian's feedback was acted on inside five days (8 Sep).** A faster model for latency, approvals stripped back wholesale to be reinstated by sensitivity and role, and the SOPs rewritten so investigation is frontloaded and approval sits once at the end. Approval may become a conversational turn rather than a card.
