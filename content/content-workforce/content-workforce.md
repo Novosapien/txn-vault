@@ -47,7 +47,7 @@ Configuration is the input, not the outcome. Three stages follow it.
 
 | Week | What happens | What done looks like |
 |------|-------------|---------------------|
-| **w/c 14 Sep** | **Build the content plan.** What gets written, for which entity, under which pillar, in what order | An agreed plan across the company entity and the two personal entities |
+| **w/c 14 Sep** | **Build the content plan**, underway and around 12% through. What gets written, for which entity, under which pillar, in what order | An agreed plan across the company entity and the two personal entities |
 | **w/c 21 and 28 Sep** | **Two weeks of trial content.** Generate, review, correct, regenerate. Where subjective tone gets settled | Drafted content TXN has reviewed, tone corrected to recognisably TXN's voice |
 | **From w/c 5 Oct** | Review the trial, agree changes, move to **publishing on the agreed cadence** | Tyler fortnightly on the business page, monthly on personal |
 
