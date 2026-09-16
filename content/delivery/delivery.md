@@ -14,7 +14,8 @@ Delivery status for the engagement. Where [[commercial]] records what was sold a
 
 | Flight plan | Scope | Generated |
 |-------------|-------|-----------|
-| [flightplan-txn-2026-09-15.html](flightplan-txn-2026-09-15.html) | **Six pages.** Both GTM configurations closed, content generation and warming starting, and the pilot completion date passed with no recorded acceptance | **15 Sep 2026, current** |
+| [flightplan-txn-2026-09-16.html](flightplan-txn-2026-09-16.html) | **Six pages.** Ian's hands-on verdict and the speed remediation, the flight plan diagram moved to the top of page one, the Control Center reframed as included in the delivery | **16 Sep 2026, current** |
+| [flightplan-txn-2026-09-15.html](flightplan-txn-2026-09-15.html) | Superseded. | **Six pages.** Both GTM configurations closed, content generation and warming starting, and the pilot completion date passed with no recorded acceptance | **15 Sep 2026, current** |
 | [flightplan-txn-2026-08-28.html](flightplan-txn-2026-08-28.html) | Superseded. | **Six pages.** The pilot functionally complete, TXN into the build on 1 September, the UAT split, and the acceptance date with nowhere to sit | **28 Aug 2026, current** |
 | [flightplan-txn-2026-08-27.html](flightplan-txn-2026-08-27.html) | Superseded. | **Six pages.** Carries the **workflow-slate build** (13 SOPs, 43 tools, 19 gated writes), the corrected Content Workforce schedule, and the **Stackworkz code-sharing** session | **27 Aug 2026, current** |
 | [flightplan-txn-2026-08-26.html](flightplan-txn-2026-08-26.html) | Superseded. First six-page issue: the four pilot pages plus **Content Workforce** and **Outbound Workforce**. Its commit cut-off was 21 August, so it predates the slate build | 26 Aug 2026 |
@@ -53,6 +54,15 @@ Decision records that sit outside the meeting series, kept here so the flight pl
 > **There is no forward-planning date.** On 4 September Dorte raised next-phase planning, both agreed to wait for Michael's return, and Brett booked **25 September**. Max said within two minutes that *"no one's going to be able to do 25th of September"* and Brett agreed. The booking stands in the diary and is understood by both sides to be dead. **Dorte's own read makes late September unrealistic in any case:** Michael is back on 14 September but *"I expect them at least for two weeks to be completely snowed under... he just tries to get everything over the line for the launch. And that includes our testing as well and everything what you deliver for phase one."* So the realistic window for phase-two planning is **October**, after Novosapien returns on the 4th. See [[2026-09-04-domains-and-september-schedule]] and [[open-questions]] #54.
 
 ## What the current plan says
+
+### The headline, 16 September
+
+- **Ian tested the agent hands-on on 15 September and found it too slow to use.** *"So slow"*, *"not remotely intuitive"*, *"I just don't think people would use it."* **No defects found.** His framing is the important part: correctness is not the bar, elapsed time is, and *"it taking so long, it might as well be the same thing"* as doing the job by hand. This is the first time the product has been judged by its intended user, which is what six weeks of this record has been asking for.
+- **The speed remediation is already landing.** `feat/sop-runtime`, SOPs plan once then execute, merged **15 September**, the same day as the verdict. 37 commits on the agent and 26 on the console since 8 September. Infrastructure fixes deployed: session affinity on the MCP service and a held-connection-slot fix. Next: bundling multi-call workflows into specialist tools, which is the concrete fix for elapsed time.
+- **[[open-questions]] #67 has bitten, and it produced a client-visible wrong answer.** The agent gave a fluent, false answer on spend controls. Cause one is that it runs against an out-of-date API specification, because the retrieval script cannot fetch the internal spec from DT's new URL. **That defect was recorded on 27 August and left unfixed for three weeks.** Cause two is that the spend control endpoints are unbuilt and the user stories unapproved. Michael is sending around twenty DT documents on the nine-level hierarchy.
+- **Nothing measures the effect of the 8 September fixes.** Improvements shipped, Ian's verdict followed, and no before-and-after was recorded. TXN has asked for benchmarks in figures ([[open-questions]] #87). Response times are to be measured and reported from the next issue.
+- **The flight plan diagram now opens page one**, per Brett on 16 September, and has been redrawn for September to December rather than the historic six-week pilot window.
+- **The Control Center React build is described as included in the delivery**, per Brett on 16 September, replacing the previous "in no priced stage of any proposal" phrasing throughout.
 
 ### Register of the client-facing report, 16 September
 
