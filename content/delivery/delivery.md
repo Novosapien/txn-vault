@@ -14,7 +14,9 @@ Delivery status for the engagement. Where [[commercial]] records what was sold a
 
 | Flight plan | Scope | Generated |
 |-------------|-------|-----------|
-| [flightplan-txn-2026-08-28.html](flightplan-txn-2026-08-28.html) | **Six pages.** The pilot functionally complete, TXN into the build on 1 September, the UAT split, and the acceptance date with nowhere to sit | **28 Aug 2026, current** |
+| [flightplan-txn-2026-09-16.html](flightplan-txn-2026-09-16.html) | **Six pages.** Ian's hands-on verdict and the speed remediation, the flight plan diagram moved to the top of page one, the Control Center reframed as included in the delivery | **16 Sep 2026, current** |
+| [flightplan-txn-2026-09-15.html](flightplan-txn-2026-09-15.html) | Superseded. | **Six pages.** Both GTM configurations closed, content generation and warming starting, and the pilot completion date passed with no recorded acceptance | **15 Sep 2026, current** |
+| [flightplan-txn-2026-08-28.html](flightplan-txn-2026-08-28.html) | Superseded. | **Six pages.** The pilot functionally complete, TXN into the build on 1 September, the UAT split, and the acceptance date with nowhere to sit | **28 Aug 2026, current** |
 | [flightplan-txn-2026-08-27.html](flightplan-txn-2026-08-27.html) | Superseded. | **Six pages.** Carries the **workflow-slate build** (13 SOPs, 43 tools, 19 gated writes), the corrected Content Workforce schedule, and the **Stackworkz code-sharing** session | **27 Aug 2026, current** |
 | [flightplan-txn-2026-08-26.html](flightplan-txn-2026-08-26.html) | Superseded. First six-page issue: the four pilot pages plus **Content Workforce** and **Outbound Workforce**. Its commit cut-off was 21 August, so it predates the slate build | 26 Aug 2026 |
 | [flightplan-txn-2026-08-25.html](flightplan-txn-2026-08-25.html) | Superseded. The six-week pilot to 7 September. Four pages: Home, Pilot Release, **Workflow Status** (carrying TXN's ranked slate decision), Module Ledger | 25 Aug 2026 |
@@ -53,7 +55,50 @@ Decision records that sit outside the meeting series, kept here so the flight pl
 
 ## What the current plan says
 
+### The headline, 16 September
+
+- **Ian tested the agent hands-on on 15 September and found it too slow to use.** *"So slow"*, *"not remotely intuitive"*, *"I just don't think people would use it."* **No defects found.** His framing is the important part: correctness is not the bar, elapsed time is, and *"it taking so long, it might as well be the same thing"* as doing the job by hand. This is the first time the product has been judged by its intended user, which is what six weeks of this record has been asking for.
+- **The speed remediation is already landing.** `feat/sop-runtime`, SOPs plan once then execute, merged **15 September**, the same day as the verdict. 37 commits on the agent and 26 on the console since 8 September. Infrastructure fixes deployed: session affinity on the MCP service and a held-connection-slot fix. Next: bundling multi-call workflows into specialist tools, which is the concrete fix for elapsed time.
+- **[[open-questions]] #67 has bitten, and it produced a client-visible wrong answer.** The agent gave a fluent, false answer on spend controls. Cause one is that it runs against an out-of-date API specification, because the retrieval script cannot fetch the internal spec from DT's new URL. **That defect was recorded on 27 August and left unfixed for three weeks.** Cause two is that the spend control endpoints are unbuilt and the user stories unapproved. Michael is sending around twenty DT documents on the nine-level hierarchy.
+- **Nothing measures the effect of the 8 September fixes.** Improvements shipped, Ian's verdict followed, and no before-and-after was recorded. TXN has asked for benchmarks in figures ([[open-questions]] #87). Response times are to be measured and reported from the next issue.
+- **The flight plan diagram now opens page one**, per Brett on 16 September, and has been redrawn for September to December rather than the historic six-week pilot window.
+- **The Control Center React build is described as included in the delivery**, per Brett on 16 September, replacing the previous "in no priced stage of any proposal" phrasing throughout.
+
+### Register of the client-facing report, 16 September
+
+**The flight plan is written for TXN, in professional business register.** Brett, 16 September, on a heading that read "Ian has asked us to mark our own homework": *"these flightplans are for TXN not novosapien, so the report is to them about novosapien work, so has to be professional."*
+
+Ten passages were rewritten across the 15 September issue. The pattern removed: idioms ("mark our own homework", "cannot be bought back"), internal-team asides ("said plainly", "worth saying out loud", "this report does not pretend"), and commentary on the customer's motives.
+
+**What did not change is the candour.** No finding was softened, removed or hedged. The pilot acceptance position, the lost warming fortnight and the additional-work figure all read exactly as before, in neutral language. The distinction to hold: **register is client-facing, reasoning can stay blunt here.** This hub and [[open-questions]] remain the internal record and do not need the same treatment.
+
+### Removed from the client-facing plan, 16 September
+
+**The Home risk register and the configurations-closed banner are off the flight plan.** _Not carried on the client-facing report by decision._ The Home page opened with a three-item risk block (no recorded pilot acceptance, the lost warming fortnight, no forward-planning date) and a banner announcing both GTM configurations closed. Both are removed.
+
+**The three risks themselves are unchanged and still visible to TXN**, in the places they belong rather than stacked at the top of page one:
+
+| Item | Where it still appears |
+|------|----------------------|
+| Pilot acceptance has no written outcome | Critical dates table, Home, marked "no written outcome" |
+| Warming live around 29 September, a fortnight late | Outbound Workforce page, in full, with the reason it cannot be recovered |
+| No forward-planning date | Critical dates table, Home, marked "unbooked" |
+
+So this is a change of prominence, not of disclosure. Everything TXN could read yesterday they can still read today.
+
+### The headline, 15 September
+
+- **Both GTM configurations are closed, and both engagements move from talking to producing.** The Content Workforce company entity closed on 10 September and **Ian and Dorte have finished their personal configuration**; the Outbound offer, ICPs and personas are done. Progress stops being counted in interview sets and starts being counted in **content produced and emails warming**. Different work, different failure modes.
+- **Domain warming starts this week, a fortnight later than planned, and the fortnight is gone.** The 28 August plan had the technical session in the week of 1 September; it was still unbooked on 3 September. Warming is two weeks of elapsed time whatever anyone does, so the domains go live around **29 September** rather than the **16 September** that plan carried. This was the one item flagged as unrecoverable, and it is the one that slipped.
+- **The pilot completion date passed on 7 September and this vault holds no record of acceptance.** Eight days on, there is no acceptance record, no shortfall notice, no written extension. The build has carried on and improved, which is good, and **nobody has written down whether the contracted thing was accepted**. That triggers the second 50% invoice of £27,093.75. It is the single most important item on the engagement and it is a paperwork item, not a build item.
+- **Ian's feedback was acted on inside five days (8 Sep).** A faster model for latency, approvals stripped back wholesale to be reinstated by sensitivity and role, and the SOPs rewritten so investigation is frontloaded and approval sits once at the end. Approval may become a conversational turn rather than a card.
+- **TXN has asked for an honest external assessment of our own AI delivery, and tied the next phase of spend to it ([[open-questions]] #88).** Ian, 9 and 10 September: not messaging, *"a real external expert's view on what we're building with you and where that puts us."* This is the most commercially consequential request of the engagement and it is owed a considered answer, not a deck.
+- **Michael's personal content configuration is the only one outstanding.** He returned on 15 September and his first fortnight back is committed to launch, so it is unlikely to move before October.
+- **There is still no forward-planning date.** The 25 September session was booked and invalidated in the same conversation on 4 September. Three and a half months remain to the end of the year with the wire-in and Phase 3 both contracted and neither dated.
+
 ### The headline, 28 August
+
+_Superseded by the entry above._
 
 - **The acceptance and UAT period opens Tuesday 1 September (decision, 28-08).** This answers the problem the last issue led with. Rather than hunting for a single acceptance date in a fortnight where all three windows were closed, **the window opens the moment TXN can get into the build** and runs from there. Michael takes the technical pass on 1 and 2 September before he leaves on the 3rd; Dorte and Ian run the user side from the 1st and keep going while he is away. The 7 September completion date is unchanged.
 - **Two timeline lanes were under-reporting, and the cause is the measurement rather than the build (28-08).** Hardening and refinement was drawing as a single unfilled bar and the second half of the Full Agentic Experience showed none of its internal progress. On the delivery lead's assessment they are at **85%** and **90%**, and the flight plan now shows both. This plan measures committed code on purpose, because it is the only progress measure that cannot be talked up, and the price is that uncommitted work is invisible. **Read the headline percentage as a floor.** Every build repository is clean and pushed as seen from the reporting machine, so the uncommitted work is local to the delivery lead. Tracked at [[open-questions]] #75; the fix is to commit and push more often.
