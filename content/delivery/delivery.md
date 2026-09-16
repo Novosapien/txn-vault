@@ -54,6 +54,14 @@ Decision records that sit outside the meeting series, kept here so the flight pl
 
 ## What the current plan says
 
+### Register of the client-facing report, 16 September
+
+**The flight plan is written for TXN, in professional business register.** Brett, 16 September, on a heading that read "Ian has asked us to mark our own homework": *"these flightplans are for TXN not novosapien, so the report is to them about novosapien work, so has to be professional."*
+
+Ten passages were rewritten across the 15 September issue. The pattern removed: idioms ("mark our own homework", "cannot be bought back"), internal-team asides ("said plainly", "worth saying out loud", "this report does not pretend"), and commentary on the customer's motives.
+
+**What did not change is the candour.** No finding was softened, removed or hedged. The pilot acceptance position, the lost warming fortnight and the additional-work figure all read exactly as before, in neutral language. The distinction to hold: **register is client-facing, reasoning can stay blunt here.** This hub and [[open-questions]] remain the internal record and do not need the same treatment.
+
 ### Removed from the client-facing plan, 16 September
 
 **The Home risk register and the configurations-closed banner are off the flight plan.** _Not carried on the client-facing report by decision._ The Home page opened with a three-item risk block (no recorded pilot acceptance, the lost warming fortnight, no forward-planning date) and a banner announcing both GTM configurations closed. Both are removed.
