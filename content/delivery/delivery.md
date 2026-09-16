@@ -55,6 +55,14 @@ Decision records that sit outside the meeting series, kept here so the flight pl
 
 ## What the current plan says
 
+### Pilot acceptance confirmed, 16 September
+
+**Acceptance is confirmed in writing and the pilot will be deemed complete by the end of the week commencing 14 September.** Novosapien invoices the second instalment of **£27,093.75** on that basis. This closes the item that led the 15 September issue and that this hub had been carrying since the completion date passed on 7 September.
+
+**Novosapien has committed that any further errors identified will be corrected.** Recorded because it is a continuing obligation taken on voluntarily rather than one the Pilot Order imposes: acceptance closes the contracted milestone, and it does not end responsibility for the quality of what was delivered.
+
+**The distinction to hold when this is reported.** Acceptance is against the three deliverables named in the Pilot Order. The speed and usability programme following Ian's 15 September verdict is **separate and continuing**, and it is not a condition of acceptance. Both progress in parallel. Stating that clearly protects both sides: TXN is not signing away the speed work, and Novosapien is not holding the invoice behind an open-ended improvement cycle.
+
 ### The headline, 16 September
 
 - **Ian tested the agent hands-on on 15 September and found it too slow to use.** *"So slow"*, *"not remotely intuitive"*, *"I just don't think people would use it."* **No defects found.** His framing is the important part: correctness is not the bar, elapsed time is, and *"it taking so long, it might as well be the same thing"* as doing the job by hand. This is the first time the product has been judged by its intended user, which is what six weeks of this record has been asking for.
