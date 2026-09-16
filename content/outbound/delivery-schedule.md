@@ -20,9 +20,9 @@ The Outbound Workforce is a **separate engagement** from the agentic AI layer, c
 | **Deliverability** | DKIM, DMARC and SPF on TXN's sending domains, then warming | **Still not started on 3 September**, against a w/c 1 September plan. Sizing settled at **four or five domains**; the blocker has moved from Jacob's contact details to **the domain hierarchy list George owes Brett** |
 | **Five agents** | Configured on TXN's ICP and messaging. **Email and LinkedIn only**, no voice | Not started. The proposal calls week 2 the heavy week |
 
-## Configuration is closed. The build starts
+## Configuration is completed. The build starts
 
-**Declared complete 15 September 2026.** The offer, the ICPs and the personas are done. The interview series closed on 3 September and the persona work ran offline from there.
+**Declared complete 15 September 2026.** The offer, the ICPs and the personas are done. The interview series completed on 3 September and the persona work ran offline from there.
 
 **The email configuration and domain warming start this week**, and that is the whole of the near-term plan for this engagement.
 
