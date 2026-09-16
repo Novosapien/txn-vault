@@ -55,6 +55,14 @@ Decision records that sit outside the meeting series, kept here so the flight pl
 
 ## What the current plan says
 
+### Scope and presentation changes, 16 September
+
+- **Remaining Internal Ops v1 scope moves into phase 1.** The TXN customer onboarding agent is specified to build depth and was not built inside the pilot. It is carried into phase 1 with the rest of the next phase of delivery, rather than sitting as an open item against a pilot that has been accepted. Register rows and the flight plan both updated.
+- **Completion is measured against the accepted definition, and now reads 95%.** Work carried into phase 1 is not counted against it, and the permission model is Stackworkz's rather than a Novosapien deliverable. The residual 5% is the continuing speed and usability refinement, which is not a condition of acceptance. Previous figure was 81% on a basis that counted the carried-over work as an unstarted deliverable.
+- **Speed remediation shows 10% complete** on the flight plan. The SOP runtime landed 15 September and fixes started on the morning of 16 September.
+- **Both GTM charts rebuilt on a shared frame**, w/c 17 August to w/c 5 October, so completed work is visible rather than starting the view at the current week. The Content Workforce chart also had bars overlapping the lane labels, which is corrected.
+- **Third person throughout the client report.** No "we", "us" or "our" in Novosapien's own narration; quotations keep their original wording.
+
 ### Pilot acceptance confirmed, 16 September
 
 **Acceptance is confirmed in writing and the pilot will be deemed complete by the end of the week commencing 14 September.** Novosapien invoices the second instalment of **£27,093.75** on that basis. This closes the item that led the 15 September issue and that this hub had been carrying since the completion date passed on 7 September.

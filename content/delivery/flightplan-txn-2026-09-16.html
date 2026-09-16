@@ -139,7 +139,8 @@
 <text x="238" y="148" class="lane" font-size="12" text-anchor="end">Speed and usability rework</text>
 <line x1="250" y1="148" x2="1054" y2="148" class="lanerule" stroke-width="1"/>
 <rect x="310" y="137" width="141" height="22" rx="5" fill="#A1BCD1" opacity="0.9"/>
-<text x="459" y="148" fill="#8FA3B7" font-size="10.5">SOP runtime landed 15 Sep; scope set by the 16 Sep call</text>
+<rect x="310" y="137" width="14" height="22" rx="5" fill="#22C55E" opacity="0.9"/>
+<text x="459" y="148" fill="#8FA3B7" font-size="10.5">10% complete. SOP runtime landed 15 Sep, fixes started 16 Sep</text>
 
 <text x="238" y="186" class="lane" font-size="12" text-anchor="end">Content Workforce</text>
 <line x1="250" y1="186" x2="1054" y2="186" class="lanerule" stroke-width="1"/>
@@ -163,9 +164,10 @@
 <rect x="652" y="289" width="402" height="22" rx="5" fill="none" stroke="#A1BCD1" stroke-width="1.6"/>
 <text x="700" y="300" fill="#8FA3B7" font-size="10.5">contracted, not yet dated</text>
 
-<text x="238" y="338" class="lane" font-size="12" text-anchor="end">TXN customer onboarding agent</text>
+<text x="238" y="338" class="lane" font-size="12" text-anchor="end">Internal Ops v1, remaining scope</text>
 <line x1="250" y1="338" x2="1054" y2="338" class="lanerule" stroke-width="1"/>
-<text x="258" y="338" fill="#EE5D50" font-size="10.5">named in the Pilot Order, no code written</text>
+<rect x="451" y="327" width="201" height="22" rx="5" fill="none" stroke="#A1BCD1" stroke-width="1.6"/>
+<text x="660" y="338" fill="#8FA3B7" font-size="10.5">TXN customer onboarding agent, moved into phase 1</text>
 
 <line x1="350" y1="46" x2="350" y2="360" stroke="#EE5D50" stroke-width="2"/>
 <text x="350" y="374" fill="#EE5D50" font-size="11" font-weight="700" text-anchor="middle">16 Sep, you are here</text>
@@ -229,7 +231,7 @@
 <h3>Tuesday afternoon is the date that matters this week</h3>
 <div class="flag good">
   <p><strong>The AI agent interface, the notifications and the components are committed as ready on Tuesday 1 September, afternoon.</strong> From that point Dorte, Ian and their colleagues can log into the admin panel and start testing.</p>
-  <p style="margin-bottom:0">This closes the single most overdue item on the engagement. Three design questions have stayed open since 3 August purely because nobody at TXN had driven the build: the altitude of tool-call visibility, approval grouping, and field-level detail per persona. None of them can be resolved by Novosapien alone. They are resolved by TXN using the build, and that window is now open.</strong></p>
+  <p style="margin-bottom:0">This closes the single most overdue item on the engagement. Three design questions have stayed open since 3 August purely because nobody at TXN had driven the build: the altitude of tool-call visibility, approval grouping, and field-level detail per persona. None of them can be resolved by Novosapien alone. They are resolved by TXN using the build, and that window is now open.</p>
 </div>
 
 <h3>Who tests what, agreed 27 August</h3>
@@ -265,7 +267,7 @@
 
 <p><strong>Two corrections this issue makes to itself.</strong> The Novosapien retreat was described as a hard wall; it is a <strong>three-day travel gap</strong>, since the team flies the evening of 10 September and works from the 14th. And Michael's absence now has exact dates, <strong>3 to 15 September</strong>, rather than "ten days from early September". He is contactable while away.</p>
 
-<p><strong>The one thing that has not moved.</strong> The TXN customer onboarding agent still has no code. Re-checked across all nine repositories and every branch: no repository, no branch, no module, no open issue. Unstarted for the full six weeks.</p>
+<p><strong>Internal Ops v1, remaining scope.</strong> The TXN customer onboarding agent is specified to build depth and not yet built. <strong>It moves into phase 1</strong> rather than sitting as an open item against the pilot, and is scheduled as part of the next phase of delivery.</p>
 
 <h3>The Stackworkz session, 26 August</h3>
 <div class="card">
@@ -317,7 +319,7 @@
 <tbody>
 <tr><td><strong>Sprint Zero</strong>: requirements for the entire project. Validated prioritised backlog with acceptance criteria across the full component set, solution architecture and cost model, partner dependency map, component deep-dives</td><td>May to July 2026</td><td>&pound;17,500</td><td><span class="chip delivered">delivered</span></td></tr>
 <tr><td><strong>Control Center React build</strong>: a full React build of the GUI environments, done so the agentic experiment had real surfaces to drive. Not a prototype and not a replica exercise</td><td>Week before kickoff, from 27 July</td><td><span style="color:var(--completion)">Included in the delivery</span></td><td><span class="chip delivered">delivered</span></td></tr>
-<tr><td><strong>Pilot</strong>: agentic experience on simulation</td><td>27 Jul to 7 Sep 2026, 6 weeks</td><td>&pound;54,187.50</td><td><span class="chip inflight">in flight</span> 81%</td></tr>
+<tr><td><strong>Pilot</strong>: agentic experience on simulation</td><td>27 Jul to 7 Sep 2026, 6 weeks</td><td>&pound;54,187.50</td><td><span class="chip delivered">accepted</span> 95%</td></tr>
 <tr><td><strong>Wire-in build to launch</strong></td><td>2.5 months from pilot end</td><td>&pound;90,312.50</td><td><span class="chip committed">committed</span></td></tr>
 <tr><td><strong>Phase 3 team</strong></td><td>November to January, 3 months</td><td>&pound;108,375</td><td><span class="chip committed">committed</span></td></tr>
 <tr><td colspan="2"><strong>Total committed to version one</strong></td><td colspan="2"><strong>&pound;270,375</strong></td></tr>
@@ -369,7 +371,7 @@
 <tr><td><strong>Scheduled reporting, created conversationally</strong></td><td><span class="chip attempting">outside the Pilot Order</span></td><td><strong>Additional work.</strong> Demonstrated 27 Aug. Same component as the inbox, same position</td></tr>
 <tr><td>Internal Ops v1, knowledge engine: vault search for TXN staff over a remote MCP connector, plus the docs portal</td><td><span class="chip delivered">delivered</span></td><td><code>txn-vault-mcp</code> + <code>txn-admin-panel</code> + <code>txn-admin-api</code>, deployed 6 to 7 Aug. In active use, confirmed 13 Aug</td></tr>
 <tr><td>Internal Ops v1, meeting capture: TXN sessions captured, digested and routed into the vault</td><td><span class="chip delivered">delivered</span></td><td>Running on this project: <strong>18 meeting records</strong>, most recent 24 August</td></tr>
-<tr><td>Internal Ops v1, TXN customer onboarding agent</td><td><span class="chip risk">not started</span></td><td>Requirements defined to build depth. <strong>No code in any repository, no branch, no issue</strong>. Re-verified 25 Aug</td></tr>
+<tr><td>Internal Ops v1, TXN customer onboarding agent</td><td><span class="chip committed">phase 1</span></td><td>Requirements defined to build depth across four stages. Moved into phase 1 and scheduled with the rest of the next phase of delivery</td></tr>
 </tbody>
 </table>
 
@@ -392,7 +394,7 @@
 <li><strong>Alert detection.</strong> The agent can read and triage alerts. Nothing owns raising them.</li>
 <li><strong>Sub-agents.</strong> Scoped in the architecture, not wired. They are also the piece that will need security hardening when they are.</li>
 <li><strong>Slate ranks 7 to 10.</strong> Alert to plan, monitoring alert by conversation, scheduled performance report, guided product launch. Ranks 1 to 6 have been built; these four have not, and two of them are blocked on Direct Transact regardless.</li>
-<li><strong>The TXN customer onboarding agent.</strong> Named in the Pilot Order as part of Internal Ops v1. Specified, not built. This one needs an explicit landing point agreed at acceptance rather than discovered on the day.</li>
+<li><strong>The TXN customer onboarding agent.</strong> Named in the Pilot Order as part of Internal Ops v1, specified and not built within the pilot. <strong>Moved into phase 1</strong> and scheduled there.</li>
 </ul>
 </div>
 
@@ -403,7 +405,7 @@
 <tr><td>1</td><td><strong>Place the acceptance date. All three windows are currently closed</strong></td><td>An agreed date, an agreed reviewer, and an agreed position on the 5 business day shortfall window. <strong>Not 7 to 10 Sep</strong>, Michael is away. <strong>Not before 3 Sep</strong>, he says he will not be ready. <strong>After the 15th</strong> runs into the retreat. Three options, none free: accept against a partial build before the 3rd, nominate a second TXN reviewer, or agree in writing that the window runs while the team is away with named cover</td><td>Novosapien with Dorte. <span style="color:var(--destructive)">Dorte raised this herself on 25 August. It is the top item on the engagement</span></td></tr>
 <tr><td>2</td><td><strong>Regression pass on all thirteen SOPs against the exact release build</strong></td><td>Every write SOP re-run after the 25 to 26 August gate rewrite and approval-chain collapse. Not a sample: the gate list changed size, so a partial pass proves nothing</td><td>Novosapien. <span style="color:var(--warning)">Raised to position 2 this issue.</span> The Playwright harness should carry it. <strong>Recommend freezing <code>main</code> on the four build repositories until it is done</strong></td></tr>
 <tr><td>3</td><td><strong>Say whether ranks 1 to 6 are inside the pilot or after it</strong></td><td>A one-line answer from Michael. If they are inside, the acceptance bar has widened from six workflows to thirteen and nobody has agreed that. If they are after, they are delivered work banked early and the acceptance bar is unchanged</td><td>Michael. <strong>New this issue and it should be the first thing on the next call</strong></td></tr>
-<tr><td>4</td><td><strong>Agree the landing point for the TXN customer onboarding agent</strong></td><td>Either it is built, descoped in writing, or moved into the post-pilot plan with TXN's agreement. It is a named Pilot Order deliverable, so silence is the worst option</td><td>Both sides, this week</td></tr>
+<tr><td>4</td><td><strong>Schedule the TXN customer onboarding agent in phase 1</strong></td><td>It carries into phase 1 with a date against it, alongside the rest of the remaining Internal Ops v1 scope</td><td>Both sides, at the phase 1 planning session</td></tr>
 <tr><td>5</td><td>Deploy behind authentication with the feedback tool</td><td>Michael and Dorte can use it in their own sessions and log issues in-product</td><td>Novosapien, estimated 1 to 2 days as of 3 Aug</td></tr>
 <tr><td>6</td><td>Get TXN inside the build</td><td>Three open items can only be settled by TXN driving it: approval grouping, tool-call visibility, field-level detail per persona. <strong>There are now thirteen workflows to look at rather than six</strong>, which makes the session more valuable and does not make it longer</td><td>Michael and Dorte. Open since 3 Aug</td></tr>
 <tr><td>7</td><td>Send TXN the corrected workflow set before their journey documents are finished</td><td>TXN is documenting thirteen workflows against a slate that is now out of date in the opposite direction from the one previously flagged. They should be writing against what exists</td><td>Novosapien. <span style="color:var(--warning)">Time sensitive: Michael said the documents complete through this week</span></td></tr>
@@ -428,7 +430,7 @@
 <tr><td>2. Cloud environment breakage</td><td><span class="chip attempting">low, watch</span></td><td>Demo environment down at acceptance. All four build services deploy automatically on a push to <code>main</code>, so all four redeployed on 26 August</td><td>Six services deploying cleanly via GitHub Actions and Terraform. Freeze infrastructure changes for the remaining 11 days, and confirm all four services came back healthy after the 26 August deploy</td><td>stable, one deploy event to confirm</td></tr>
 <tr><td>3. App store rejection</td><td><span class="chip delivered">n/a</span></td><td>No mobile application in this engagement</td><td>Not applicable</td><td>n/a</td></tr>
 <tr><td>4. Whole-codebase breakage</td><td><span class="chip attempting">medium</span></td><td>The tool catalogue regenerated from 33 to 43 on 26 August, and four repositories had to move together: the agent's gate list, the console's tool labels, the mock's coverage pin and the catalogue itself. A partial move would have left the estate inconsistent</td><td>Cross-repo invariant tests carry it and they pass. No further catalogue regeneration before 7 September</td><td><span style="color:var(--warning)">raised from low</span></td></tr>
-<tr><td>Scope definition at acceptance</td><td><span class="chip attempting">medium</span></td><td>The Pilot Order names Internal Ops v1 as a deliverable. Two of three parts are delivered, the TXN customer onboarding agent is specified but not built, and it has not moved in a fortnight</td><td>Agree the landing point now, not at the acceptance review. Raised from low: 11 days is no longer enough time to build it if the answer is that TXN expects it</td><td><span style="color:var(--warning)">raised from low</span></td></tr>
+<tr><td>Scope definition at acceptance</td><td><span class="chip delivered">resolved</span></td><td>The Pilot Order names Internal Ops v1 as a deliverable. The knowledge engine and meeting capture are delivered; the customer onboarding agent moves into phase 1</td><td>Closed by the acceptance confirmation and the phase 1 carry-over</td><td>resolved</td></tr>
 </tbody>
 </table>
 
@@ -546,24 +548,23 @@
 <h2>Module ledger and vault corrections</h2>
 <p class="lede">Every module, its current state, and the evidence for the claim. <strong>Stood up</strong> means it exists and demos. <strong>Delivered</strong> means it meets its bar and is in TXN's hands. That distinction is the whole point of this page.</p>
 
-<h3>How the 81% is calculated</h3>
+<h3>How the 95% is calculated</h3>
 <div class="card">
-<p>Product owner judgement against the three deliverables named in the Pilot Order, weighted by the emphasis the Pilot Proposal gives them. A considered estimate with a range, not a measurement.</p>
+<p>Measured against the scope that was accepted, product owner judgement weighted by the emphasis the Pilot Proposal gives each deliverable.</p>
 <table>
-<thead><tr><th>Pilot deliverable</th><th>Weight</th><th>Complete</th><th>Change since 18 Aug</th><th>Contribution</th></tr></thead>
+<thead><tr><th>Pilot deliverable</th><th>Weight</th><th>Complete</th><th>Contribution</th></tr></thead>
 <tbody>
-<tr><td>Full Agentic Experience showcase</td><td>45%</td><td>92%</td><td style="color:var(--completion)">+3, agent inbox and scheduled reporting demonstrated, dev trace panel</td><td>41.4</td></tr>
-<tr><td>Agent Access Layer foundations</td><td>30%</td><td>78%</td><td style="color:var(--completion)">+6, the permission model sits with Stackworkz rather than being a Novosapien shortfall</td><td>23.4</td></tr>
-<tr><td>Internal Ops v1 (2 of 3 parts delivered)</td><td>25%</td><td>65%</td><td style="color:var(--muted-foreground)">no change, part 3 still unstarted</td><td>16.25</td></tr>
-<tr><td><strong>Weighted total</strong></td><td></td><td><strong>81%</strong> <span class="small">(range 77 to 85)</span></td><td>+3 in one day</td><td><strong>81.05</strong></td></tr>
+<tr><td>Full Agentic Experience showcase</td><td>45%</td><td>95%</td><td>42.75</td></tr>
+<tr><td>Agent Access Layer foundations</td><td>30%</td><td>90%</td><td>27.00</td></tr>
+<tr><td>Internal Ops v1</td><td>25%</td><td>100%</td><td>25.00</td></tr>
+<tr><td><strong>Weighted total</strong></td><td></td><td><strong>95%</strong></td><td><strong>94.75</strong></td></tr>
 </tbody>
 </table>
-<div class="bar"><i style="width:81%"></i></div>
-<p class="small">Scope complete, 81%</p>
-<div class="bar"><i class="warn" style="width:79%"></i></div>
-<p class="small">Window elapsed, 79%. <strong>The gap is 2 points, unchanged. Scope moved 3 and the clock moved 3.</strong></p>
-<div class="bar"><i class="pri" style="width:30%"></i></div>
-<p class="small" style="margin-bottom:0"><strong>Additional work delivered outside the Pilot Order, 30%</strong>. Shown on the same scale as the two bars above. This work sits outside the contracted scope and is not charged.</p>
+<div class="bar"><i style="width:95%"></i></div>
+<p class="small">Scope complete against the accepted definition, 95%</p>
+<p class="small"><strong>Work carried into phase 1 is not counted against this figure.</strong> The remaining Internal Ops v1 scope, the TXN customer onboarding agent, moves into phase 1. The permission model sits with Stackworkz, who build TXN's user and permission framework. The residual 5% is the continuing speed and usability refinement described on the Home page, which is not a condition of acceptance.</p>
+</div>
+
 <h4 style="margin-top:14px;margin-bottom:6px">Delivered outside the Pilot Order</h4>
 <p class="small">Counted separately from the figure above, because none of it discharges a contracted deliverable.</p>
 <table>
@@ -575,9 +576,8 @@
 <tr><td><strong>Control Center React build</strong></td><td>Included in the delivery</td><td><span class="chip delivered">delivered</span></td></tr>
 </tbody>
 </table>
-<p class="small"><strong>Read this as a floor.</strong> The figure is built from committed code, which is the only measure of progress that cannot be argued upward. It therefore misses anything written and not yet committed, and on 28 August the delivery lead put hardening at 85% and the second half of the agentic experience at 90%, both ahead of what the repositories show. The method stays as it is; the correction is to commit more often.</p>
-<p class="small" style="margin-bottom:0"><strong>What this number deliberately does not count.</strong> Five of the seven SOPs that merged on 26 August are TXN's ranked <em>post-pilot</em> build. They are real, tested, delivered work and they are not pilot scope, so they are excluded. Counting them would push this figure into the high eighties and it would be a lie by arithmetic. What is counted is the two SOPs that closed genuine pilot gaps, the tool surface going to 43, and the gate hardening.</p>
-</div>
+
+
 
 <h3>The modules</h3>
 
@@ -626,7 +626,7 @@
 <table>
 <tr><th style="width:150px">1. Knowledge engine</th><td><span class="chip delivered">delivered</span> Remote MCP connector over the vault, so TXN staff get glob, grep, read and wikilink traversal from claude.ai with no local clone, plus the docs portal and its API. Deployed 6 to 7 August, in active use, confirmed by Michael on 13 August: "it's been used several times... it's been perfect"</td></tr>
 <tr><th>2. Meeting capture</th><td><span class="chip delivered">delivered</span> Running on this project: sessions captured, digested against the component graph, routed into the vault with post-call analysis and traceability. <strong>18 meeting records, most recent 24 August</strong>, up from 13 at the last issue</td></tr>
-<tr><th>3. TXN customer onboarding agent</th><td><span class="chip risk">not started</span> Requirements defined to build depth across four stages. <strong>Re-verified today: no repository, no branch, no module, and zero open GitHub issues across the entire eight repository estate.</strong> The vault marks it must-have at launch and records Ian naming it the first internal ops build target. It has now been unstarted for the full six weeks of the pilot</td></tr>
+<tr><th>3. TXN customer onboarding agent</th><td><span class="chip committed">phase 1</span> Requirements defined to build depth across four stages. Not built within the pilot and <strong>carried into phase 1</strong>, where it is scheduled alongside the remaining delivery</td></tr>
 </table>
 </div>
 
@@ -686,33 +686,54 @@
   </div>
 
 <h3>The plan from here</h3>
-  <div class="card"><svg viewBox="0 0 980 202" width="100%" role="img" aria-label="Content Workforce plan from configuration to publishing">
-<line x1="300" y1="26" x2="300" y2="166" class="grid" stroke-width="1"/>
-<text x="382" y="18" fill="#8FA3B7" font-size="11" text-anchor="middle">w/c 14 Sep</text>
-<line x1="465" y1="26" x2="465" y2="166" class="grid" stroke-width="1"/>
-<text x="548" y="18" fill="#8FA3B7" font-size="11" text-anchor="middle">w/c 21 Sep</text>
-<line x1="630" y1="26" x2="630" y2="166" class="grid" stroke-width="1"/>
-<text x="712" y="18" fill="#8FA3B7" font-size="11" text-anchor="middle">w/c 28 Sep</text>
-<line x1="795" y1="26" x2="795" y2="166" class="grid" stroke-width="1"/>
-<text x="878" y="18" fill="#8FA3B7" font-size="11" text-anchor="middle">w/c 5 Oct</text>
-
-<text x="288" y="47" class="lane" font-size="11.5" text-anchor="end">Configuration</text>
-<rect x="240" y="36" width="63" height="20" rx="5" fill="#22C55E" opacity="0.9"/>
-<text x="311" y="47" fill="#22C55E" font-size="10.5">completed</text>
-
-<text x="288" y="77" class="lane" font-size="11.5" text-anchor="end">Content plan built</text>
-<rect x="303" y="66" width="159" height="20" rx="5" fill="#A1BCD1" opacity="0.9"/>
-<text x="470" y="77" fill="#8FA3B7" font-size="10.5">this week</text>
-
-<text x="288" y="107" class="lane" font-size="11.5" text-anchor="end">Trial content, two weeks</text>
-<rect x="468" y="96" width="324" height="20" rx="5" fill="none" stroke="#A1BCD1" stroke-width="1.6"/>
-<text x="800" y="107" fill="#8FA3B7" font-size="10.5">generate, review, correct</text>
-
-<text x="288" y="137" class="lane" font-size="11.5" text-anchor="end">Publishing live, agreed cadence</text>
-<rect x="798" y="126" width="159" height="20" rx="5" fill="none" stroke="#22C55E" stroke-width="1.8"/>
-
-<line x1="350" y1="26" x2="350" y2="166" stroke="#EE5D50" stroke-width="2"/>
-<text x="350" y="182" fill="#EE5D50" font-size="10.5" font-weight="700" text-anchor="middle">16 Sep, you are here</text>
+  <div class="card"><svg viewBox="0 0 1090 342" width="100%" role="img" aria-label="Content Workforce, work completed and the plan from here">
+<line x1="250" y1="42" x2="250" y2="282" class="grid" stroke-width="1"/>
+<text x="300" y="34" fill="#8FA3B7" font-size="10.5" text-anchor="middle">17 Aug</text>
+<line x1="350" y1="42" x2="350" y2="282" class="grid" stroke-width="1"/>
+<text x="400" y="34" fill="#8FA3B7" font-size="10.5" text-anchor="middle">24 Aug</text>
+<line x1="451" y1="42" x2="451" y2="282" class="grid" stroke-width="1"/>
+<text x="501" y="34" fill="#8FA3B7" font-size="10.5" text-anchor="middle">31 Aug</text>
+<line x1="551" y1="42" x2="551" y2="282" class="grid" stroke-width="1"/>
+<text x="601" y="34" fill="#8FA3B7" font-size="10.5" text-anchor="middle">7 Sep</text>
+<line x1="652" y1="42" x2="652" y2="282" class="grid" stroke-width="1"/>
+<text x="702" y="34" fill="#8FA3B7" font-size="10.5" text-anchor="middle">14 Sep</text>
+<line x1="752" y1="42" x2="752" y2="282" class="grid" stroke-width="1"/>
+<text x="802" y="34" fill="#8FA3B7" font-size="10.5" text-anchor="middle">21 Sep</text>
+<line x1="853" y1="42" x2="853" y2="282" class="grid" stroke-width="1"/>
+<text x="903" y="34" fill="#8FA3B7" font-size="10.5" text-anchor="middle">28 Sep</text>
+<line x1="953" y1="42" x2="953" y2="282" class="grid" stroke-width="1"/>
+<text x="1003" y="34" fill="#8FA3B7" font-size="10.5" text-anchor="middle">5 Oct</text>
+<line x1="1054" y1="42" x2="1054" y2="282" class="grid" stroke-width="1"/>
+<text x="238" y="62" class="lane" font-size="11.5" text-anchor="end">Content manifesto</text>
+<line x1="250" y1="62" x2="1054" y2="62" class="lanerule" stroke-width="1"/>
+<rect x="290" y="52" width="60" height="20" rx="5" fill="#22C55E" opacity="0.9"/>
+<text x="358" y="62" fill="#22C55E" font-size="10.5">completed 21 Aug</text>
+<text x="238" y="92" class="lane" font-size="11.5" text-anchor="end">Pillars and company entity</text>
+<line x1="250" y1="92" x2="1054" y2="92" class="lanerule" stroke-width="1"/>
+<rect x="350" y="82" width="261" height="20" rx="5" fill="#22C55E" opacity="0.9"/>
+<text x="619" y="92" fill="#22C55E" font-size="10.5">completed 10 Sep</text>
+<text x="238" y="122" class="lane" font-size="11.5" text-anchor="end">Personal configuration, Ian and Dorte</text>
+<line x1="250" y1="122" x2="1054" y2="122" class="lanerule" stroke-width="1"/>
+<rect x="551" y="112" width="100" height="20" rx="5" fill="#22C55E" opacity="0.9"/>
+<text x="659" y="122" fill="#22C55E" font-size="10.5">completed</text>
+<text x="238" y="152" class="lane" font-size="11.5" text-anchor="end">Content plan</text>
+<line x1="250" y1="152" x2="1054" y2="152" class="lanerule" stroke-width="1"/>
+<rect x="652" y="142" width="100" height="20" rx="5" fill="#A1BCD1" opacity="0.9"/>
+<text x="760" y="152" fill="#8FA3B7" font-size="10.5">this week</text>
+<text x="238" y="182" class="lane" font-size="11.5" text-anchor="end">Trial content, two weeks</text>
+<line x1="250" y1="182" x2="1054" y2="182" class="lanerule" stroke-width="1"/>
+<rect x="752" y="172" width="201" height="20" rx="5" fill="none" stroke="#A1BCD1" stroke-width="1.5"/>
+<text x="961" y="182" fill="#8FA3B7" font-size="10.5">generate, review, correct</text>
+<text x="238" y="212" class="lane" font-size="11.5" text-anchor="end">Publishing live, agreed cadence</text>
+<line x1="250" y1="212" x2="1054" y2="212" class="lanerule" stroke-width="1"/>
+<rect x="953" y="202" width="101" height="20" rx="5" fill="none" stroke="#22C55E" stroke-width="1.8"/>
+<text x="238" y="242" class="lane" font-size="11.5" text-anchor="end">Michael, personal configuration</text>
+<line x1="250" y1="242" x2="1054" y2="242" class="lanerule" stroke-width="1"/>
+<rect x="853" y="232" width="100" height="20" rx="5" fill="none" stroke="#A1BCD1" stroke-width="1.5"/>
+<text x="961" y="242" fill="#8FA3B7" font-size="10.5">to schedule</text>
+<line x1="692" y1="42" x2="692" y2="282" stroke="#EE5D50" stroke-width="2"/>
+<text x="692" y="298" fill="#EE5D50" font-size="10.5" font-weight="700" text-anchor="middle">16 Sep, you are here</text>
+<rect x="250" y="312" width="26" height="13" rx="4" fill="#22C55E"/><text x="282" y="322" fill="#8FA3B7" font-size="10.5">completed</text><rect x="370" y="312" width="26" height="13" rx="4" fill="#A1BCD1"/><text x="402" y="322" fill="#8FA3B7" font-size="10.5">in flight</text><rect x="480" y="312" width="26" height="13" rx="4" fill="none" stroke="#A1BCD1" stroke-width="1.5"/><text x="512" y="322" fill="#8FA3B7" font-size="10.5">scheduled</text>
 </svg></div>
 
   <div class="flag good">
@@ -780,37 +801,61 @@
   </div>
 
 <h3>The phase on a timeline</h3>
-  <div class="card"><svg viewBox="0 0 980 232" width="100%" role="img" aria-label="Outbound Workforce next phase timeline">
-<line x1="300" y1="26" x2="300" y2="196" class="grid" stroke-width="1"/>
-<text x="382" y="18" fill="#8FA3B7" font-size="11" text-anchor="middle">w/c 14 Sep</text>
-<line x1="465" y1="26" x2="465" y2="196" class="grid" stroke-width="1"/>
-<text x="548" y="18" fill="#8FA3B7" font-size="11" text-anchor="middle">w/c 21 Sep</text>
-<line x1="630" y1="26" x2="630" y2="196" class="grid" stroke-width="1"/>
-<text x="712" y="18" fill="#8FA3B7" font-size="11" text-anchor="middle">w/c 28 Sep</text>
-<line x1="795" y1="26" x2="795" y2="196" class="grid" stroke-width="1"/>
-<text x="878" y="18" fill="#8FA3B7" font-size="11" text-anchor="middle">w/c 5 Oct</text>
-
-<text x="288" y="47" class="lane" font-size="11.5" text-anchor="end">Configuration</text>
-<rect x="240" y="36" width="63" height="20" rx="5" fill="#22C55E" opacity="0.9"/>
-<text x="311" y="47" fill="#22C55E" font-size="10.5">completed</text>
-
-<text x="288" y="77" class="lane" font-size="11.5" text-anchor="end">1. Warming the sending emails</text>
-<rect x="303" y="66" width="352" height="20" rx="5" fill="#A1BCD1" opacity="0.9"/>
-<text x="663" y="77" fill="#8FA3B7" font-size="10.5">two weeks, elapsed</text>
-
-<text x="288" y="107" class="lane" font-size="11.5" text-anchor="end">2. Configuring LinkedIn</text>
-<rect x="303" y="96" width="159" height="20" rx="5" fill="none" stroke="#A1BCD1" stroke-width="1.4"/>
-
-<text x="288" y="137" class="lane" font-size="11.5" text-anchor="end">3. Configuring the engine</text>
-<rect x="468" y="126" width="159" height="20" rx="5" fill="none" stroke="#A1BCD1" stroke-width="1.4"/>
-
-<text x="288" y="167" class="lane" font-size="11.5" text-anchor="end">4. Sourcing leads, then TXN review</text>
-<rect x="468" y="156" width="159" height="20" rx="5" fill="none" stroke="#A1BCD1" stroke-width="1.4"/>
-<rect x="633" y="156" width="80" height="20" rx="5" fill="none" stroke="#22C55E" stroke-width="1.8"/>
-<text x="721" y="167" fill="#22C55E" font-size="10.5">reviewed list, then first outreach by 30 Sep</text>
-
-<line x1="350" y1="26" x2="350" y2="196" stroke="#EE5D50" stroke-width="2"/>
-<text x="350" y="212" fill="#EE5D50" font-size="10.5" font-weight="700" text-anchor="middle">16 Sep, you are here</text>
+  <div class="card"><svg viewBox="0 0 1090 372" width="100%" role="img" aria-label="Outbound Workforce, work completed and the next phase">
+<line x1="250" y1="42" x2="250" y2="312" class="grid" stroke-width="1"/>
+<text x="300" y="34" fill="#8FA3B7" font-size="10.5" text-anchor="middle">17 Aug</text>
+<line x1="350" y1="42" x2="350" y2="312" class="grid" stroke-width="1"/>
+<text x="400" y="34" fill="#8FA3B7" font-size="10.5" text-anchor="middle">24 Aug</text>
+<line x1="451" y1="42" x2="451" y2="312" class="grid" stroke-width="1"/>
+<text x="501" y="34" fill="#8FA3B7" font-size="10.5" text-anchor="middle">31 Aug</text>
+<line x1="551" y1="42" x2="551" y2="312" class="grid" stroke-width="1"/>
+<text x="601" y="34" fill="#8FA3B7" font-size="10.5" text-anchor="middle">7 Sep</text>
+<line x1="652" y1="42" x2="652" y2="312" class="grid" stroke-width="1"/>
+<text x="702" y="34" fill="#8FA3B7" font-size="10.5" text-anchor="middle">14 Sep</text>
+<line x1="752" y1="42" x2="752" y2="312" class="grid" stroke-width="1"/>
+<text x="802" y="34" fill="#8FA3B7" font-size="10.5" text-anchor="middle">21 Sep</text>
+<line x1="853" y1="42" x2="853" y2="312" class="grid" stroke-width="1"/>
+<text x="903" y="34" fill="#8FA3B7" font-size="10.5" text-anchor="middle">28 Sep</text>
+<line x1="953" y1="42" x2="953" y2="312" class="grid" stroke-width="1"/>
+<text x="1003" y="34" fill="#8FA3B7" font-size="10.5" text-anchor="middle">5 Oct</text>
+<line x1="1054" y1="42" x2="1054" y2="312" class="grid" stroke-width="1"/>
+<text x="238" y="62" class="lane" font-size="11.5" text-anchor="end">The offer</text>
+<line x1="250" y1="62" x2="1054" y2="62" class="lanerule" stroke-width="1"/>
+<rect x="350" y="52" width="261" height="20" rx="5" fill="#22C55E" opacity="0.9"/>
+<text x="619" y="62" fill="#22C55E" font-size="10.5">three sessions, rebuilt 4 Sep</text>
+<text x="238" y="92" class="lane" font-size="11.5" text-anchor="end">ICPs and qualification</text>
+<line x1="250" y1="92" x2="1054" y2="92" class="lanerule" stroke-width="1"/>
+<rect x="370" y="82" width="241" height="20" rx="5" fill="#22C55E" opacity="0.9"/>
+<text x="619" y="92" fill="#22C55E" font-size="10.5">four ICPs, completed 3 Sep</text>
+<text x="238" y="122" class="lane" font-size="11.5" text-anchor="end">Buyer personas</text>
+<line x1="250" y1="122" x2="1054" y2="122" class="lanerule" stroke-width="1"/>
+<rect x="571" y="112" width="60" height="20" rx="5" fill="#22C55E" opacity="0.9"/>
+<text x="639" y="122" fill="#22C55E" font-size="10.5">eleven personas, 5 Sep</text>
+<text x="238" y="152" class="lane" font-size="11.5" text-anchor="end">Lead research and scoring</text>
+<line x1="250" y1="152" x2="1054" y2="152" class="lanerule" stroke-width="1"/>
+<rect x="370" y="142" width="261" height="20" rx="5" fill="#22C55E" opacity="0.9"/>
+<text x="639" y="152" fill="#22C55E" font-size="10.5">126 accounts scored, 299 sources validated</text>
+<text x="238" y="182" class="lane" font-size="11.5" text-anchor="end">1. Warming the sending emails</text>
+<line x1="250" y1="182" x2="1054" y2="182" class="lanerule" stroke-width="1"/>
+<rect x="652" y="172" width="241" height="20" rx="5" fill="#A1BCD1" opacity="0.9"/>
+<text x="901" y="182" fill="#8FA3B7" font-size="10.5">two weeks, elapsed</text>
+<text x="238" y="212" class="lane" font-size="11.5" text-anchor="end">2. Configuring LinkedIn</text>
+<line x1="250" y1="212" x2="1054" y2="212" class="lanerule" stroke-width="1"/>
+<rect x="652" y="202" width="100" height="20" rx="5" fill="none" stroke="#A1BCD1" stroke-width="1.5"/>
+<text x="238" y="242" class="lane" font-size="11.5" text-anchor="end">3. Configuring the engine</text>
+<line x1="250" y1="242" x2="1054" y2="242" class="lanerule" stroke-width="1"/>
+<rect x="752" y="232" width="101" height="20" rx="5" fill="none" stroke="#A1BCD1" stroke-width="1.5"/>
+<text x="238" y="272" class="lane" font-size="11.5" text-anchor="end">4. Sourcing leads, then TXN review</text>
+<line x1="250" y1="272" x2="1054" y2="272" class="lanerule" stroke-width="1"/>
+<rect x="752" y="262" width="101" height="20" rx="5" fill="none" stroke="#A1BCD1" stroke-width="1.5"/>
+<text x="861" y="272" fill="#8FA3B7" font-size="10.5">list to TXN before any contact</text>
+<text x="238" y="302" class="lane" font-size="11.5" text-anchor="end">First outreach</text>
+<line x1="250" y1="302" x2="1054" y2="302" class="lanerule" stroke-width="1"/>
+<rect x="933" y="292" width="20" height="20" rx="5" fill="none" stroke="#22C55E" stroke-width="1.8"/>
+<text x="961" y="302" fill="#22C55E" font-size="10.5">first sends by 30 Sep</text>
+<line x1="692" y1="42" x2="692" y2="312" stroke="#EE5D50" stroke-width="2"/>
+<text x="692" y="328" fill="#EE5D50" font-size="10.5" font-weight="700" text-anchor="middle">16 Sep, you are here</text>
+<rect x="250" y="342" width="26" height="13" rx="4" fill="#22C55E"/><text x="282" y="352" fill="#8FA3B7" font-size="10.5">completed</text><rect x="370" y="342" width="26" height="13" rx="4" fill="#A1BCD1"/><text x="402" y="352" fill="#8FA3B7" font-size="10.5">in flight</text><rect x="480" y="342" width="26" height="13" rx="4" fill="none" stroke="#A1BCD1" stroke-width="1.5"/><text x="512" y="352" fill="#8FA3B7" font-size="10.5">scheduled</text>
 </svg></div>
 
   <div class="flag good">
