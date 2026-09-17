@@ -20,6 +20,21 @@ The Content Workforce needs three configured inputs before it can generate on TX
 | [[content-pillars]] | The specific topics each piece of content sits under, narrowing the manifesto to what gets written now | **Drafted, still unreviewed.** Deferred three times: by session 1, by session 2, and by the 27 August decision to give the slot to Outbound. Booked for **1 September** |
 | [[content-entities]] | The four entities and their tone: the TXN business plus Ian, Michael and Dorte individually | **Drafted for the four definitions; the brand entity itself is not started.** Booked for **1 September**, with **two personal interviews each** for Ian, Michael and Dorte across the following fortnight |
 
+> [!important] Nothing publishes until the messaging is aligned (16-09-2026)
+> Ian's blocker, stated twice and unambiguously ([[2026-09-16-next-phase-discussion]]): *"we need to get the output of the various interviews and where you've arrived at for the positioning and messaging of the company. **That's the number one thing, because everything essentially needs to flow from there.**"*
+>
+> *"Before we start producing and exposing content, we need to make sure that the manifesto and the core messaging, positioning and brand and tone of voice document is there, and that's the basis of everything that gets used."*
+>
+> It goes to **Bronwyn** and TXN's **independent PR consultant** for alignment first. Ian expects it to be close: *"I don't think we're a million miles off, because I haven't said anything any different since I joined the company."*
+>
+> **Format: PDF.** Brett offered branded HTML; Ian declined, *"it's just easier for sharing, people reading on various devices."* His framing of the ask is worth keeping: **"I know you're working in an AI world, but I need this in a human world that can be shared."**
+>
+> **Tyler has already drafted:** one article each for Ian and Dorte, plus a corresponding TXN article for each, sent during the call for feedback so he can *"refine the model."* Reviewing them is not blocked; publishing is.
+>
+> **LinkedIn:** the TXN page exists but is **unbranded**. Bronwyn has taken the action to set up the imagery and Ian needs a completion date. Tyler gets access once he follows the page and Dorte sends the details.
+>
+> **Ian wants a separate strategy session**, and gave a fair criticism: *"the proposal is pretty high level, Brett. It's not a criticism, but it's pretty high level about a number of pieces of content that get produced. So we just need a bit more detail."* He also wants to know how readership is maximised for a company nobody knows yet. **Booked for 17 September, 11:00 to 12:00.**
+
 ## Method
 
 Max pre-loads everything known about the business, including TXN's own supplied documents, and generates a first draft of each output. The session is then a **refinement workshop** against that draft rather than a day-long interview from a blank page. Roughly an hour per session instead of four.

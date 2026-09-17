@@ -53,6 +53,15 @@ Decision records that sit outside the meeting series, kept here so the flight pl
 
 > **There is no forward-planning date.** On 4 September Dorte raised next-phase planning, both agreed to wait for Michael's return, and Brett booked **25 September**. Max said within two minutes that *"no one's going to be able to do 25th of September"* and Brett agreed. The booking stands in the diary and is understood by both sides to be dead. **Dorte's own read makes late September unrealistic in any case:** Michael is back on 14 September but *"I expect them at least for two weeks to be completely snowed under... he just tries to get everything over the line for the launch. And that includes our testing as well and everything what you deliver for phase one."* So the realistic window for phase-two planning is **October**, after Novosapien returns on the 4th. See [[2026-09-04-domains-and-september-schedule]] and [[open-questions]] #54.
 
+> [!warning] The acceptance wording on the current plan is withdrawn (16-09-2026)
+> Ian read it back on the phase two call ([[2026-09-16-next-phase-discussion]]): acceptance *"down to be confirmed in writing on the 18th, so Friday"*, on the assertion that what was asked for is built and the speed work does not delay it.
+>
+> **Brett withdrew it:** *"it's poor articulation of our discussion. Essentially when you guys are finished with the UAT, then we can send an invoice, and based on that, anything still outstanding we'll still make sure we fix... **We just didn't get to a date.**"*
+>
+> **The agreed position:** acceptance triggers on **TXN finishing UAT**, the invoice follows, and outstanding items including the speed work are fixed afterwards. **There is still no date**, and both sides said so. The 18 September date should not appear on the next issue. See [[open-questions]] #54, and #51 for the testing that has to finish first.
+>
+> **A new completion bar arrived on the same call.** Ian: a feature that cannot be demonstrated *"lessens the sales proposition"*, so every AI feature for launch needs enough dummy transaction data behind it to be shown working, *"otherwise that whole ethos of show, not tell, goes out the window."* `txn-console-react` becomes the demo surface as well as the pilot experiment, with recorded Loom and website videos alongside. [[open-questions]] #90.
+
 ## What the current plan says
 
 ### Scope and presentation changes, 16 September

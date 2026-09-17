@@ -7,6 +7,7 @@ sources:
   - "[[09-06-2026-developer-support]]"
   - "[[10-06-2026-developer-support-and-internal-ops]]"
   - "[[18-06-2026-finalised-gap-analysis]]"
+  - "[[2026-09-16-next-phase-discussion]]"
 description: "Component doc for Developer Support — the portal's AI surfaces: hosted docs MCP server, co-pilot, sandbox assist, support triage and four-level access gating"
 ---
 
@@ -68,6 +69,25 @@ _(Note: the session also confirmed, from the client side, that **A2A is not a st
 | **TXN's internal team** (downstream) | Receive pre-triaged, well-formed tickets | Pre-diagnosed items (handed to [[internal-ops-agents]]) |
 
 ---
+
+> [!important] This is the next build, and the order was set on 16 September 2026
+> TXN chose the knowledge hub as the phase two priority ([[2026-09-16-next-phase-discussion]]). Michael's reasoning: *"if you look at the order we're putting things in, people integrating and getting on there would be first in the flow. The pilot is very much console... when a client reaches a console it's going to be much later than when they start integrating."*
+>
+> | Priority | Surface | Why |
+> |---|---|---|
+> | **1** | **[[docs-mcp-server]]**, exposed externally | Michael: *"having that MCP so they can not only navigate but start building towards the APIs... that for me is a number one."* Developers *"are going to know how to connect an MCP server"* |
+> | **2** | **[[portal-co-pilot]]**, unauthenticated | Question and answer over the docs. *"It provides a good base to push off of"* for authenticated features later |
+> | **Dropped** | `llms.txt` | *"A 20,000 line file is just going to bloat the context for their AI and potentially decrease the quality of the answer"* |
+>
+> **Three AI surfaces, named clearly for the first time:** the co-pilot in the knowledge hub or dev portal, the co-pilot in the Console, and the full agentic experience with alerts alongside. **MCP servers are portable microservices**, so the knowledge MCP is a separate server from the one the agentic experience uses, and either co-pilot could consume either.
+>
+> **The job the AI does here** is to rejoin two layers TXN deliberately keeps apart. The guides do not repeat the payload, *"because we don't want to update it all the time"*, and reference the API specification instead. Michael: *"the co-pilot layer would be merging those two things back together into one interface, where you can ask a simple question and it'll be, okay, you can see this account does this, and this is a field you need."*
+>
+> **Most of what TXN asked for is already specified here from 9 June**, including the four-level gate, the log-based diagnosis and the same 422 worked example. This session is a prioritisation of existing scope rather than an expansion of it.
+>
+> **Agreed next step: prototype it**, the way the agent Console was prototyped. Ian: *"Mike, I'm happy that we go with that as the next priority."* Michael offered the Stackworkz dev environment, the latest prototype and a UAT URL to build against. Ian also set the order for the DT conversation: *"let's be clear on what it is that we're going to deliver before that conversation takes place."*
+>
+> **Commercially, the hub feeds the Console.** Michael: by the time a prospect signs, *"we know what they want to build, who they are"*, and program onboarding starts from something *"that might be 95% fit."* That makes pre-signature context a delivery input, not just a lead record. Gating and cost are at [[open-questions]] #91; documentation anomalies at #92.
 
 ## 2. What Needs to Happen?
 

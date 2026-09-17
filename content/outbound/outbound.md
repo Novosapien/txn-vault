@@ -322,6 +322,15 @@ Positioning material from interview 1 (tagline, value proposition) is deliberate
 
 **What the 27-08 session settled.** Migration is a step rather than its own component track. The platform provenance ruling: the external claim is *the platform is TXN's*, with no statement of code lineage in either direction, and the confidence line is that it is hosted and managed by Direct Transact within their existing data governance and security frameworks. Positioning is **evolution, not disruptor**. The buying group compresses to **CTO, CPO, CFO**, with the product function sitting under CPO rather than becoming a fourth label; Head of Payments remains a targeting persona in [[prospecting-process]] but is not one of the three the offer writes pains against. Ian also ruled that questions digging into the platform's origins are **not automation territory**, which opens the wider boundary question at [[open-questions]] #65.
 
+> [!note] Ian's priorities for outbound, 16 September 2026
+> **The list comes before everything, and he thinks it is too small** ([[2026-09-16-next-phase-discussion]]): *"the number one thing before we do anything is, who are we doing it to? So how are we building this target list of accounts? I've obviously submitted something to you guys. **My initial assertion is it doesn't seem to be big enough.**"*
+>
+> **And it has to stay current.** *"How are we sourcing target companies? They might be in incubators, they might be very early stage startups... to make sure that we're not missing out on companies that might be in stealth, or they might not be in market yet."* That is the same population [[discovery-sources]] was built for and the early-stage watch list catches, so the answer largely exists and has not been shown to him.
+>
+> **He is not rushing the send.** *"It's not like we want to start the outbound stuff tomorrow."* Content can go earlier, because a LinkedIn post *"is not being sent specifically to somebody"*, but *"we just need to get it right rather than move super fast."*
+>
+> **One thing to confirm rather than assume.** Ian recalled *"five categories"* from the ICP work. The framework settled on 3 September has **four** card program statuses ([[icp-definition]]). Probably a slip, but he is the author of the original bucketing, so it is worth checking rather than correcting him silently.
+
 ## Open items
 
 | Item | Needs | Who |
