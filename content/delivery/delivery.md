@@ -51,6 +51,14 @@ Decision records that sit outside the meeting series, kept here so the flight pl
 | **The September diary, as fixed on 4 September.** Dorte's UAT Monday 7 September with written feedback by close of business Wednesday 9 September; **the final company content workshop Thursday 10 September at 10:00**, the morning the team flies; the Outbound wrap-up Monday 14 September at 10:00, run from the retreat. **Novosapien is away 10 Sep to 4 Oct** | 4 Sep 2026 | [[2026-09-04-domains-and-september-schedule]] |
 | **Domains: Novosapien buys and hands over.** Registered on a new account, login details passed to TXN, invoiced at **cost plus 10%**, built transferable from the start. TXN owns only `txnglobal.com`. Warming targeted mid week of 7 September | 4 Sep 2026 | [[delivery-schedule]], [[commercial]] |
 
+## Feedback reviews
+
+Reviews of the client's own console feedback queue, read from `txn.feedback` and the agent transcripts. They sit under delivery because they set the remediation agenda.
+
+| Review | Scope | Date |
+|--------|-------|------|
+| [[2026-09-17-dorte-feedback-review]] | **Dorte's 41 open records** from the 21 August, 8 September and 11 September UAT sessions, plus 14 September. Eight themes, the transcript evidence for each, and six questions only TXN can answer. Headline: 68 writes with no approval card between 8 and 14 September | 17 Sep 2026 |
+
 > **There is no forward-planning date.** On 4 September Dorte raised next-phase planning, both agreed to wait for Michael's return, and Brett booked **25 September**. Max said within two minutes that *"no one's going to be able to do 25th of September"* and Brett agreed. The booking stands in the diary and is understood by both sides to be dead. **Dorte's own read makes late September unrealistic in any case:** Michael is back on 14 September but *"I expect them at least for two weeks to be completely snowed under... he just tries to get everything over the line for the launch. And that includes our testing as well and everything what you deliver for phase one."* So the realistic window for phase-two planning is **October**, after Novosapien returns on the 4th. See [[2026-09-04-domains-and-september-schedule]] and [[open-questions]] #54.
 
 > [!warning] The acceptance wording on the current plan is withdrawn (16-09-2026)
