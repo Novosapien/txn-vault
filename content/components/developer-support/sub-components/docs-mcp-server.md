@@ -4,6 +4,7 @@ status: Defined
 sources:
   - "[[09-06-2026-developer-support]]"
   - "[[ux-txn-intelligence-enhanced-documentation-discovery]]"
+  - "[[2026-09-16-next-phase-discussion]]"
 description: "Sub-component spec for the hosted docs MCP server — a developer's own agent queries TXN docs (L1) or tests the sandbox (L2), API-key gated per level"
 ---
 
@@ -35,6 +36,15 @@ It has **two levels of capability**:
 - **Developer** (signed-up → client) — connects the server with an API key scoped to their level.
 
 ---
+
+> [!note] Search design and priority, 16 September 2026
+> **Priority one for phase two** ([[2026-09-16-next-phase-discussion]]), ahead of the portal co-pilot.
+>
+> **The search approach is a deliberate departure from the usual pattern**, and mirrors how Novosapien's own vault MCP works. George: *"when it comes to searching, some people put it in a vector database. I just don't think it's the best way any more. What we do with the MCP server is expose effectively like a bash tool, which will tell their Claude, write bash commands in here, which will execute and search through it in exactly the same way Claude Code did if it was a local file system, but it would all be in the cloud. So from their perspective, their Claude thinks they're searching a local file system."*
+>
+> **With the obvious risk handled:** *"you don't really want an agent executing random bash commands on a server, so all we do is severely limit the amount of commands that could be done. It'd be tightly scoped, it'd be all isolated."*
+>
+> **A hygiene requirement that makes the whole surface trustworthy:** pull the documentation continuously from **Umbraco**, *"so that there's not a point where the MCP server or the co-pilot is pulling in documentation that's a month old and there's been loads of changes."* Related: [[open-questions]] #92, where stale or wrong guides surface to the user as confident answers.
 
 ## 2. What Needs to Happen?
 

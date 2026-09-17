@@ -67,6 +67,15 @@ The offer, the four Card Program Status ICPs and the eleven buyer personas are a
 
 **The interview series is effectively closed.** Both sessions happened, on 2 and 3 September, and the second took the Content Workforce slot rather than a Friday one. What remains is offline: Brett builds the ICPs and personas as one artifact for asynchronous review. **The cost sits on the other engagement**, where the pillars and brand entity have now moved four times ([[content-workforce]]).
 
+> [!warning] There was no approval, and the domains bought may be wrong (16-09-2026)
+> George reported on the phase two call that TXN had approved the domain approach ([[2026-09-16-next-phase-discussion]]): *"we put it on hold till we'd spoken to Alex and got everything approved. Now we've got the approval."*
+>
+> **Dorte corrected him immediately:** *"**Maybe just a step back. There wasn't an approval.** We just discussed the approach, how we split it. **Alex** is going back to run it via **Gavin** to get **Kevin's** sign-off."*
+>
+> **And the names may not be right either:** *"the URLs are another one. What George and the team has already purchased might not fit in what your thinking is. So I made sure that you are in the loop of which ones we actually want to purchase."*
+>
+> So domains have been bought against an approach that is not signed off, with names Ian has not seen. Three new people appear on TXN's side of this: **Alex**, **Gavin** and **Kevin**. Dorte will send everything once Kevin comes back.
+
 ## The sending domains
 
 Sizing settled on 2 September ([[2026-09-02-outbound-workforce-icp-qualification]]). Ownership did not.
