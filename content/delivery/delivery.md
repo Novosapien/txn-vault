@@ -70,6 +70,16 @@ Reviews of the client's own console feedback queue, read from `txn.feedback` and
 >
 > **A new completion bar arrived on the same call.** Ian: a feature that cannot be demonstrated *"lessens the sales proposition"*, so every AI feature for launch needs enough dummy transaction data behind it to be shown working, *"otherwise that whole ethos of show, not tell, goes out the window."* `txn-console-react` becomes the demo surface as well as the pilot experiment, with recorded Loom and website videos alongside. [[open-questions]] #90.
 
+> [!note] Testing conditions, and a date for the speed work (17-09-2026)
+> **Two commitments made to TXN** ([[2026-09-17-agentic-standup]]):
+>
+> 1. **Always test the production URL.** George: *"the most up to date and the most durable and the best one to test is always going to be the production agent, and then testing will be for our testing."* He acknowledged how odd that reads, twice.
+> 2. **Announce every push before TXN tests.** *"It would be a lot easier if, when we're pushing up changes, we let you know, rather than you come in and suddenly [find] now it's doing this new weird behaviour."* Dorte and Michael accepted.
+>
+> **Neither answers what Dorte actually asked**, which was how to ring-fence a test round so the result means something. She has never had a fixed build to test against. That bears on acceptance, which now triggers on TXN finishing UAT. [[open-questions]] #93.
+>
+> **First date on the speed work:** the frontloaded SOPs, the composite tools and Dorte's feedback are expected *"in the next two to three days"*, so a testable build around **20 September**. That is also the first chance to measure before and after on the same workflows, which is what [[open-questions]] #87 asks for.
+
 ## What the current plan says
 
 ### Scope and presentation changes, 16 September

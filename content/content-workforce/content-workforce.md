@@ -35,6 +35,13 @@ The Content Workforce needs three configured inputs before it can generate on TX
 >
 > **Ian wants a separate strategy session**, and gave a fair criticism: *"the proposal is pretty high level, Brett. It's not a criticism, but it's pretty high level about a number of pieces of content that get produced. So we just need a bit more detail."* He also wants to know how readership is maximised for a company nobody knows yet. **Booked for 17 September, 11:00 to 12:00.**
 
+> [!warning] Two things to settle before the page goes live (17-09-2026)
+> **Nobody knows who brands the LinkedIn page** ([[2026-09-17-agentic-standup]]). Dorte: *"there was the miscommunication [about] who was doing it, you or Bronwyn... Brett couldn't really remember, he said it's not a problem, you guys can do it... for all I know, maybe Bronwyn has it already, because I made her admin."* Left to Ian. **Max separated it usefully:** a banner and a short bio do not need the tone of voice, so the branding is blocked on ownership, not on the messaging alignment above.
+>
+> **LinkedIn has no draft state, which makes the page's first appearance a launch decision.** Dorte: *"we don't want to put something on there if you're not ready to launch. **You don't have the not-publish option at LinkedIn.** So when you do a change, it is only visible."* Anything published is live to existing followers immediately.
+>
+> **Send documents as PDFs, not Google Docs links.** Dorte has to verify her Google account every time: *"this morning I just wanted to get everything open and I was like, oh, I can't be asked any more."* Her fix, and Ian's stated preference the day before: *"just send us a Word document or PDF, because I think that's what Ian prefers, rather than he has to go into other applications."* Tyler agreed. Two people, two days, the same request, so it is worth treating as the default for anything TXN has to read or forward.
+
 ## Method
 
 Max pre-loads everything known about the business, including TXN's own supplied documents, and generates a first draft of each output. The session is then a **refinement workshop** against that draft rather than a day-long interview from a blank page. Roughly an hour per session instead of four.

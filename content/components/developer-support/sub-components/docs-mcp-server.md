@@ -46,6 +46,11 @@ It has **two levels of capability**:
 >
 > **A hygiene requirement that makes the whole surface trustworthy:** pull the documentation continuously from **Umbraco**, *"so that there's not a point where the MCP server or the co-pilot is pulling in documentation that's a month old and there's been loads of changes."* Related: [[open-questions]] #92, where stale or wrong guides surface to the user as confident answers.
 
+> [!note] Started 17 September 2026, and dogfooded first
+> The build began the day after the priority was set ([[2026-09-17-agentic-standup]]). George's first step is internal use: *"get something built and tested on that front so we can all play around with our own Claude agents, and then that will bleed quite nicely into the co-pilot."*
+>
+> **One dependency on TXN, asked for and not yet granted:** access to **Umbraco**, *"so that we're not getting stale information and that it's constantly being updated."* Michael was on the call and did not respond. Tracked at [[open-questions]] #92.
+
 ## 2. What Needs to Happen?
 
 **Functional requirements:**

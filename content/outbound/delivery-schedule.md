@@ -76,6 +76,11 @@ The offer, the four Card Program Status ICPs and the eleven buyer personas are a
 >
 > So domains have been bought against an approach that is not signed off, with names Ian has not seen. Three new people appear on TXN's side of this: **Alex**, **Gavin** and **Kevin**. Dorte will send everything once Kevin comes back.
 
+> [!note] Sign-off received, 17 September 2026
+> Dorte reported it the morning after correcting George that no approval existed ([[2026-09-17-agentic-standup]]): *"I just got a written sign-off from Pay Corp CTO that he's fine with what we agreed yesterday. So I'm just sending it back to Ian, and I will ask him for the naming convention as well."*
+>
+> **So the approach is now genuinely approved, in writing.** What is still missing is the part Dorte flagged: **Ian has not given the naming convention**, and domains were purchased before he was asked. Next step is George with **Alex**, to get the domains onto **Cloudflare**, then set up, warm and send.
+
 ## The sending domains
 
 Sizing settled on 2 September ([[2026-09-02-outbound-workforce-icp-qualification]]). Ownership did not.
