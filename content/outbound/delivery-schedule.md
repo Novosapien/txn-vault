@@ -81,6 +81,11 @@ The offer, the four Card Program Status ICPs and the eleven buyer personas are a
 >
 > **So the approach is now genuinely approved, in writing.** What is still missing is the part Dorte flagged: **Ian has not given the naming convention**, and domains were purchased before he was asked. Next step is George with **Alex**, to get the domains onto **Cloudflare**, then set up, warm and send.
 
+> [!note] Still with Dorte and Ian, 22 September 2026
+> No movement in the five days since the sign-off ([[2026-09-22-agentic-standup]]). Dorte sent Ian an email that summarises what was agreed and will settle the rest with him offline: *"leave it with me. I'll pick that up with Ian afterwards."*
+>
+> **Outbound is stopped until then.** George: *"until we've got the domains, hands are tied"*, then set up, warm and *"get it firing."* The naming convention Ian owes is still the gating item.
+
 ## The sending domains
 
 Sizing settled on 2 September ([[2026-09-02-outbound-workforce-icp-qualification]]). Ownership did not.

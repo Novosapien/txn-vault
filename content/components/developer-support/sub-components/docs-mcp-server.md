@@ -51,6 +51,13 @@ It has **two levels of capability**:
 >
 > **One dependency on TXN, asked for and not yet granted:** access to **Umbraco**, *"so that we're not getting stale information and that it's constantly being updated."* Michael was on the call and did not respond. Tracked at [[open-questions]] #92.
 
+> [!note] Michael answered the Umbraco request, 22 September 2026
+> He responded the next working day ([[2026-09-22-agentic-standup]]): *"it's just a API key as far as I'm aware."* He will ask **Stackworkz**, who manage Umbraco, for a **separate key** for Novosapien, keeping it apart from the key TXN already reads the knowledge hub with. Asked, agreed, **not yet delivered** ([[open-questions]] #92).
+>
+> **There is content to index already:** Michael has loaded *"about 30 odd documents"* into the UAT knowledge hub this week, *"so at least it's going to have some text for it to read."* A production hub is being built alongside.
+>
+> **The refresh design George stated on the call:** query Umbraco through the API, hold **a representation of the content on the MCP server**, and refresh it *"be it on a timer or more webhook based where it's like content changed, update"*, so the next tool call always reads current content. That is the continuous-pull hygiene requirement from 16 September, now with a mechanism.
+
 ## 2. What Needs to Happen?
 
 **Functional requirements:**

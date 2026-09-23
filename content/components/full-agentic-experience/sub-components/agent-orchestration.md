@@ -86,6 +86,22 @@ It runs on the **same machinery as [[agent-inbox-alerts]]**, acts only through [
 >
 > **And a false answer.** The agent told Ian that spend controls are set at BIN sponsor level with no program filter, which is wrong, and explained it convincingly. Causes are a stale API version and unbuilt endpoints; the behaviour is the risk. [[open-questions]] #89.
 
+> [!note] The speed build reached production, 22 September 2026
+> George pushed it immediately after the standup ([[2026-09-22-agentic-standup]]). It is the build promised *"in the next two to three days"* on 17 September, so it arrived two days late.
+>
+> **What landed:**
+>
+> - **Bucketed tool calls.** *"It's not going one, two, three, four, all the way up to 11. It's bucketing them... so it's a bit more efficient."* George's own verdict on the result is *"a lot more noticeable"*, by feel, with no figures. [[open-questions]] #87.
+> - **One approval, up front.** *"Whereas before it would be here's this plan I'm proposing... then there's like four approval steps after, now it is let's push everything up front. I'll ask you what you need. Here's my plan. Once you've clicked approve on the plan, it's going to do everything."*
+> - **Card selection in the chat**, so a cardholder with two cards renders both and the user clicks one.
+> - **Inline forms** for structured input, on four or five workflows.
+>
+> **Two of Ian's three rules from 15 September are answered by this build**: ask for the identifier before fetching, and collect structured input in a form rather than a numbered chat list.
+>
+> **The forms are too strict, and George said so before TXN found it:** *"there was one form I didn't know one aspect. Let's say it was the last four digits and I kind of just wanted to put I don't know this, just look look it up for me. But it was saying no, this is a required field."* A required field that the agent could resolve itself turns the form into a dead end. He asked the group to test the workflows and *"rip it to shreds."*
+>
+> **A dependency worth naming on the last four digits.** The 21 September spec carries no `cardNumberMasked` on any card row, so last-four targeting has no field to match against once the build moves off the 10 August pin. A form that demands the last four digits and an API that cannot return them fail together. See [[txn-api-reference]] and [[open-questions]] #94.
+
 ## 2. What Needs to Happen?
 
 **Functional requirements:**
