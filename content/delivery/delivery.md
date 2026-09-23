@@ -80,6 +80,26 @@ Reviews of the client's own console feedback queue, read from `txn.feedback` and
 >
 > **First date on the speed work:** the frontloaded SOPs, the composite tools and Dorte's feedback are expected *"in the next two to three days"*, so a testable build around **20 September**. That is also the first chance to measure before and after on the same workflows, which is what [[open-questions]] #87 asks for.
 
+> [!note] The speed build shipped, and the test conditions are unchanged (22-09-2026)
+> George pushed the changes to production straight after the standup ([[2026-09-22-agentic-standup]]): bucketed tool calls, one up-front plan approval, card selection and inline forms. Detail in [[agent-orchestration]].
+>
+> **Three things to hold against it:**
+>
+> 1. **The date slipped by two days.** It was promised *"in the next two to three days"* on 17 September, so around the 20th.
+> 2. **The 17 September commitment was kept.** George announced the push on the call, before TXN test it.
+> 3. **Nothing else about the test conditions changed.** The speed claim is again by feel, *"a lot more noticeable"*, with no before-and-after figures on the same workflows ([[open-questions]] #87). TXN still has no ring-fenced build, and George told them more changes are coming ([[open-questions]] #93).
+>
+> **What TXN owes back:** test four or five workflows and report. The known defect to expect is an over-strict required field in the new forms.
+
+> [!warning] Ian asked what the API churn is costing, and got no date (22-09-2026)
+> The external spec now carries **46 operations against 98** in the 10 August build pin ([[txn-api-reference]]). Ian: *"we could be wasting a bunch of time and money because things are not settled... how far away are we from getting all of the APIs done and settled that's in MVP so that you guys could be starting from what is the final set?"*
+>
+> **Michael has no date**, will ask DT on the 10:00 project call, and confirmed **no endpoint is signed off yet**. The remaining build, FDS, transactions and spend controls, is expected around **October**.
+>
+> **The mock API rule agreed on the call keeps the slate moving** in the meantime: follow field changes, keep absent endpoints until DT confirms they are dropped.
+>
+> **The rework estimate given on the call is lower than the same day's analysis.** George told Ian *"most of it's going to be slight iterations or updates or an extra field"* and *"it's not days of work"*. The impact analysis run that morning (`specs/2026-09-22-txn-api-spec-refresh/impact-analysis.md`) returns the verdict **STOP**, from nested spend-control fields, two new enums that reject values the SOPs send, a missing masked card number, and 20 tools absent from the spec. Tracked at [[open-questions]] #94.
+
 ## What the current plan says
 
 ### Scope and presentation changes, 16 September

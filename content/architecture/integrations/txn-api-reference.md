@@ -13,7 +13,7 @@ maps-to:
   - "[[docs-mcp-server]]"
   - "[[sandbox-assist]]"
   - "[[agent-access-layer]]"
-description: "Index note for the DT-supplied TXN Global API OpenAPI spec (txn-api-spec.yaml) — 51 endpoints by resource group, and why the YAML grounds the portal"
+description: "Index note for DT's TXN Global API specs: the external and internal split, the 21 September drop to 46 operations, the gateway move, and the key state"
 ---
 
 # TXN Global API - OpenAPI Specs (index)
@@ -77,6 +77,42 @@ The specs are kept as raw `.yaml` artifacts rather than inlined here: they are a
 
 > For the full request/response schemas, parameters, and examples, open the YAML files directly.
 
+## The 21 September spec, and why the surface shrank
+
+**Sources:** [[2026-09-22-agentic-standup]], and the delta George ran the same day (`specs/2026-09-22-txn-api-spec-refresh/reference/api-delta.md`).
+
+| Spec | Paths | Operations | Schemas |
+|---|---|---|---|
+| Build pin, 10 Aug 2026 | 67 | 98 | 327 |
+| 25 Aug 2026 | 22 | 35 | 177 |
+| 21 Sep 2026 | 30 | 46 | 223 |
+
+George put the drop to Michael on the call: about 96 operations in August against *"40 48 or 46"* now. The areas he named as missing were transactions, spend control creates and updates, spend overrides, alerts, PIN, 3DS and digital wallets.
+
+**Michael's explanation is that the spec now shows only what DT has built.** *"They've moved now to a new open API spec service they've built. So before they've just uploaded everything. So you had everything that wasn't even built... now you're actually seeing the true live reflected."* The missing areas *"will be coming in in one way shape or the other"*, and the remaining build, mostly FDS, transactions and spend controls, is *"around there"* for October, because TXN needs it to go live.
+
+**There is no target spec to build against, which is the finding that matters.** Michael: *"there isn't one sort of one defined spec that keeps rotating. Basically we just have these small user stories unfortunately that that they're sort of building from... we have sort of documentation for it but not specifically you know a design YAML if you will."* He will ask DT what changed and why, because TXN follows the same YAML and its own test suite carries the same risk. **No endpoint is signed off yet.**
+
+**Two changes he named:** the spend control identifier moves **out of the URL and into the body**, and the rest are mostly **extra fields** that come out of the Visa mandates.
+
+> [!note] The mock API rule, agreed on the call (22-09-2026)
+> George proposed it and Michael accepted, *"Yeah. Yeah, definitely. I appreciate that."*
+>
+> - **The endpoint exists in both versions** → update the mock API to the new fields.
+> - **The endpoint is absent from the 21 September spec** → keep the 10 August version until DT confirms the drop, then update or remove it.
+>
+> **Why it matters:** the live API misses at least one tool call in **8 of 13 agent workflows** (George, on the call), so building against the live surface alone would stall most of the slate.
+
+**What the same-day delta found.** Of the 43 MCP tools, **20 keep their path and change shape**, **3 merchant-control tools move path**, and **20 are absent** (transactions, webhooks, alerts and fees, spend control writes, PIN, 3DS, digital wallet, spend overrides). The shape changes are not all field additions: spend control limits nest as `limits.amount`, the account transition `reason` and `fundingType` become enums that reject the values our SOPs send, and no card row carries `cardNumberMasked`, which the last-four targeting depends on. The impact analysis verdict is **STOP** until the paired SOP, prompt and code changes exist. Ian asked on the call how far away a settled MVP API is, because of rework cost; that question and this gap are tracked at [[open-questions]] #94.
+
+### Routing: program manager ID becomes card program ID
+
+Michael, 22 September: *"the program manager ID is what we pass in. We've switched that to car[d] program ID just so you don't have to give both IDs."* The internal API holds the full list of card programs, a user is assigned to one, and the identifier lets DT route the call to the right infrastructure. It is the last piece before Stackworkz start external UAT. Related: [[open-questions]] #48, the single-instance-versus-per-client question this routing serves.
+
+### Stackworkz hit the same schema gap
+
+Michael on their progress: the core work such as permissions is done, but *"we have now hit a point where they need to know the APIs, they need to know the schemas"*, so the build slowed. One gap is structural rather than a schema detail: listing **all cards** for a drop-down needs multiple calls and *"it's not sort of built for a public API, because obviously you don't normally search all cards."* DT and TXN are agreeing how to do it. Their focus is the internal side, program creation and setup, before the external API.
+
 ## Where the specs are served from (UAT)
 
 **Updated 27 August 2026.** Source: email from **Michael Moores** to Brett and George.
@@ -104,6 +140,23 @@ This is the part that matters operationally and it is easy to miss. Under the ol
 The fix is a one-line change, making the filename depend on the flag rather than being a constant. Tracked at [[open-questions]] #67.
 
 **Nothing is broken right now.** The pilot builds from the committed `spec/api-specification_10Aug2026.yaml`, pinned by sha, so no live fetch sits on the critical path. This bites the next time someone regenerates from the internal spec.
+
+### Updated 22 September 2026: the prefix moved again, and the key is rejected
+
+Michael sent the new spec URL by email on 21 September. DT moved the gateway prefix from `/api/stg/` to `/api/staging/`, so **every `/api/stg/...` route now returns 404**.
+
+| Route under `https://development.txn.global/api/staging/Txn/` | Result |
+|---|---|
+| `feApiTxnOpenSpecification/external/api-specification.yml` | 200, with or without a key |
+| `feApiTxnOpenSpecification/internal/api-specification.yml` | 401, invalid subscription key |
+| `feapiTxnGlobal/accounts`, `/cardholders`, `/products`, `/healths` | 401, invalid subscription key |
+| `feapiTxnInternalGlobal/bins` | 401, invalid subscription key |
+
+**The subscription key is rejected on every route that checks one.** George raised it on the call as *"not urgent"*, because the schemas and payloads are what the build needs today, *"but obviously when we get to testing on live APIs, I think that'd be something we might need to get sorted."* Michael's account: DT rebuilt the environment in **Azure API Management**, he received a new key that morning, and he will send it once he has tested it. Later there will be a **dedicated key per application**, production separated, and the authentication method itself will change. Tracked at [[open-questions]] #95.
+
+**The spec route does not check the key**, so a successful spec download proves nothing about the key.
+
+**The URL shape returns to what the script expects.** The two specs now sit at **different base paths under the same filename**, `external/api-specification.yml` and `internal/api-specification.yml`, which is the shape `fetch_spec.py` was written for. Point `TXN_EXTERNAL_BASE_URL` and `TXN_INTERNAL_BASE_URL` at the two new paths and the `--internal` flag is correct again, so the one-line fix at [[open-questions]] #67 may no longer be needed. Every URL in `txn/.env` still carries the old `/api/stg/` prefix. (Source: `specs/2026-09-22-txn-api-spec-refresh/reference/api-delta.md`, not the call.)
 
 ## Spend controls: the hierarchy, and a live gap
 

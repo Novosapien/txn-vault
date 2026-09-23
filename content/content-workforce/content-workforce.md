@@ -42,6 +42,11 @@ The Content Workforce needs three configured inputs before it can generate on TX
 >
 > **Send documents as PDFs, not Google Docs links.** Dorte has to verify her Google account every time: *"this morning I just wanted to get everything open and I was like, oh, I can't be asked any more."* Her fix, and Ian's stated preference the day before: *"just send us a Word document or PDF, because I think that's what Ian prefers, rather than he has to go into other applications."* Tyler agreed. Two people, two days, the same request, so it is worth treating as the default for anything TXN has to read or forward.
 
+> [!note] Two items left, and LinkedIn has an owner (22-09-2026)
+> The morning after the content call ([[2026-09-22-agentic-standup]]). **What remains is the personal pillars, plus a review of the content Tyler has already drafted** (Max). George set the expectation that it is iterative: *"some people go into it thinking it's going to be perfect first time. Sometimes it is... so it's making sure that both everyone and the AIs are all aligned. And it just gets better and better over time."*
+>
+> **LinkedIn ownership is settled.** Ian: *"Bronwyn's going to set up the company LinkedIn profile page"*, and he will tell Max when it is done. That closes the ownership gap reopened on 17 September ([[open-questions]] #63). The publishing gate above is unchanged: the page is live the moment it changes, and nothing publishes before the messaging is aligned.
+
 ## Method
 
 Max pre-loads everything known about the business, including TXN's own supplied documents, and generates a first draft of each output. The session is then a **refinement workshop** against that draft rather than a day-long interview from a blank page. Roughly an hour per session instead of four.

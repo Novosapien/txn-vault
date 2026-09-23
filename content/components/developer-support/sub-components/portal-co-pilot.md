@@ -37,6 +37,11 @@ It is **deliberately light**: Ian's explicit steer is to invest in the [[docs-mc
 
 ---
 
+> [!note] A UI prototype exists, and the position changes, 22 September 2026
+> George on the standup ([[2026-09-22-agentic-standup]]): *"I've been busy working away getting like a UI version of the knowledge hub of the co-pilot, just so that you can get a look and feel. Obviously very basic at the moment."* It is a look-and-feel prototype only, the same way the agent Console was prototyped first, and he expects *"something to show"* the week of 29 September. The MCP server behind it is not promised for that date.
+>
+> **The entry point moves.** Today it takes two steps, *"click one thing and then you click ask AI and then it pops up."* The intent is a **permanently available side panel**, *"more like a typical co-pilot where it's kind of always there. Click it, pops up straight away"*, without being intrusive. Ian: *"sounds good."*
+
 ## 2. What Needs to Happen?
 
 **Functional requirements:**
