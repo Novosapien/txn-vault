@@ -47,6 +47,15 @@ The Content Workforce needs three configured inputs before it can generate on TX
 >
 > **LinkedIn ownership is settled.** Ian: *"Bronwyn's going to set up the company LinkedIn profile page"*, and he will tell Max when it is done. That closes the ownership gap reopened on 17 September ([[open-questions]] #63). The publishing gate above is unchanged: the page is live the moment it changes, and nothing publishes before the messaging is aligned.
 
+> [!important] Three messaging documents now circulate, and none is authoritative (23-09-2026)
+> **Bronwyn has written her own playbook** ([[2026-09-23-pr-consultant-briefing]]): *"I have taken your offer file that you sent to Ian... probably about 10 days ago. And then I've combined that with everything that we've done, and created what I'm calling like a **brand positioning and messaging playbook**."* Its scope is wider than media, covering conference talks and Ian's pitch deck.
+>
+> **The loop has already closed without being managed.** Our offer output reached Ian around 13 September, Bron folded it into the playbook, sent it to Ian on the 22nd, Ian approved it and passed it to Max and Tyler, and Tyler confirmed on the 23rd: *"that I'm going to fix into the model as well."* Bron has asked for the **final** documentation so she can rebuild the playbook properly.
+>
+> **So three artefacts are in play**, our output, Bron's playbook and the press release, with no stated authority when they disagree. **Nicola asked the right question and it was not answered:** if the press release goes back into the tool, *"would it escalate any discrepancies to you at that point? At this starting-out point when we're launching the brand, is it absolutely inevitable we're going to have these inconsistencies?"* Brett said it was a good question, demonstrated content creation, and did not return to it. [[open-questions]] #96.
+>
+> **Nicola and Bron can both be given platform access**, and the pipeline is visible to everyone in the account.
+
 ## Method
 
 Max pre-loads everything known about the business, including TXN's own supplied documents, and generates a first draft of each output. The session is then a **refinement workshop** against that draft rather than a day-long interview from a blank page. Roughly an hour per session instead of four.
