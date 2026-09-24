@@ -149,7 +149,7 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
     <span class="kicker">Phase One Proposal &middot; October to mid-December 2026</span>
     <h1 class="headline" style="color:#fff; font-size:3rem; max-width:15ch;">Phase one of the <span class="accent">agentic layer.</span></h1>
     <p class="lead" style="color:var(--ns-dark-muted); max-width:60ch; margin-top:1.2rem;">
-      Four components across two and a half months, at the price already set for this stage. The knowledge hub first, demonstrable in the second week of October, then the wire-in to the live platform behind it.
+      Five components across two and a half months, at the price already set for this stage. The knowledge hub first, demonstrable in the second week of October, then the wire-in to the live platform behind it.
     </p>
   </div>
   <div class="cover-foot">
@@ -192,13 +192,13 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
 
 <!-- ============ 02 THE FOUR COMPONENTS ============ -->
 <section class="page">
-  <div class="fit" style="--s:0.85">
+  <div class="fit" style="--s:0.74">
   <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Phase One &middot; Proposal v1.0</span></div>
   <div class="sechead"><div class="bar"></div><div>
-    <div class="secno">02</div><h2 class="sect">The four components</h2>
+    <div class="secno">02</div><h2 class="sect">The five components</h2>
   </div></div>
 
-  <p class="lead">Everything in phase one sits under one of four headings. Two are new build, one finishes work the pilot carried forward, and one runs continuously underneath the other three. Each is broken down in full over the next three pages.</p>
+  <p class="lead">Everything in phase one sits under one of five headings. Three are new build, one finishes work the pilot carried forward, and one runs continuously underneath the rest. Each is broken down in full over the pages that follow.</p>
 
   <div class="cards cols-2">
     <div class="card" style="border-top:3px solid var(--txn-pink);">
@@ -221,12 +221,17 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
       <div class="cd">The last outstanding part of Internal Ops v1: the commercial onboarding process TXN runs when a client commits, taking the context a prospect gave the knowledge hub before signature as its starting configuration.</div>
       <div class="cd" style="margin-top:.5rem;color:var(--ns-navy);"><strong>Closes the pilot's carried-forward scope.</strong></div>
     </div>
+    <div class="card" style="border-top:3px solid var(--ns-primary); grid-column:1 / -1;">
+      <div class="ct">5 &middot; The Agent Inbox</div>
+      <div class="cd">Separated from Alerts and brought into phase one. The central queue where agent-proposed plans land for review and approval, so a proposal becomes an approved action without leaving the queue. The front end is already stood up; phase one makes it execute. <strong>Alert detection is a separate stream and stays in a later phase</strong>, because it needs the Console instrumented and live transaction volume behind it.</div>
+      <div class="cd" style="margin-top:.5rem;color:var(--ns-navy);"><strong>The queue in phase one. The detection that fills it comes later.</strong></div>
+    </div>
   </div>
 
   <h3>Explicitly not in phase one</h3>
   <p class="small muted" style="margin-bottom:.4rem;">The cheapest disappointment prevention there is. These are Phase 3 or later, and phase one is planned on their absence.</p>
   <div class="cards cols-3">
-    <div class="card"><div class="ct">Console Co-pilot and Alerts</div><div class="cd">In-Console assistance and proactive alerts with approvable plans. They need the Console instrumented, which follows the wire-in.</div></div>
+    <div class="card"><div class="ct">Console Co-pilot, and Alerts</div><div class="cd">In-Console page-aware assistance, and the alert detection stream: thresholds, scheduled analysis and data-lake anomalies. Both need the Console instrumented and live volume.</div></div>
     <div class="card"><div class="ct">Fraud and Risk, Reconciliation</div><div class="cd">Both depend on the data lake and on live transaction volume. Neither can be judged on evidence until the volume exists.</div></div>
     <div class="card"><div class="ct">Authenticated developer features</div><div class="cd">Sign-up, the four-level access model, and diagnosis from a developer's own sandbox logs, which needs per-user sandboxes that do not exist yet.</div></div>
   </div>
@@ -242,7 +247,7 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
     <div class="secno">03</div><h2 class="sect">Where phase one sits</h2>
   </div></div>
 
-  <p class="lead">The same architecture agreed at the start of the engagement, coloured by what the pilot actually delivered. Green is built. Blue is what phase one builds. Grey is a later phase. The pink line is the wire-in: taking what is already built off the simulation and onto the real platform.</p>
+  <p class="lead">The same architecture agreed at the start of the engagement, coloured by what the pilot actually delivered. <strong>Green is built.</strong> <strong>Blue is what phase one builds.</strong> Grey is a later phase. A <strong>dark outline</strong> marks everything phase one works on, so a green box inside a dark outline means built in the pilot and taken further in phase one. The pink line is the wire-in.</p>
 
   <div class="gantt">
     <svg viewBox="0 0 985 612" xmlns="http://www.w3.org/2000/svg" font-family="Geist, sans-serif">
@@ -299,20 +304,31 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
       <!-- ROW 2 surfaces -->
       <rect x="140" y="132" width="460" height="150" rx="10" fill="#FBFCFD" stroke="#09142F" stroke-dasharray="6 4"/>
       <text x="152" y="151" font-size="11" font-weight="700" fill="#09142F">TXN Console <tspan font-size="9" font-weight="400" fill="#64748B">&middot; Stackworkz</tspan></text>
-      <rect x="150" y="162" width="148" height="110" rx="8" fill="#e9eef3" stroke="#b6c4d1"/>
-      <text x="224" y="214" text-anchor="middle" font-size="12" font-weight="600" fill="#8094a6">Co-pilot</text>
-      <text x="224" y="232" text-anchor="middle" font-size="9.5" fill="#8094a6">Concept 1 &middot; later phase</text>
-      <rect x="308" y="162" width="140" height="110" rx="8" fill="#e9eef3" stroke="#b6c4d1"/>
-      <text x="378" y="206" text-anchor="middle" font-size="11.5" font-weight="600" fill="#8094a6">Agent Inbox</text>
-      <text x="378" y="222" text-anchor="middle" font-size="11.5" font-weight="600" fill="#8094a6">&amp; Alerts</text>
-      <text x="378" y="240" text-anchor="middle" font-size="9" fill="#8094a6">front end stood up &middot; later phase</text>
-      <rect x="458" y="162" width="124" height="110" rx="8" fill="#d6f5e2" stroke="#22C55E" stroke-width="1.6"/>
-      <text x="520" y="202" text-anchor="middle" font-size="11.5" font-weight="600" fill="#09142F">Full Agentic</text>
-      <text x="520" y="218" text-anchor="middle" font-size="11.5" font-weight="600" fill="#09142F">Experience</text>
-      <text x="520" y="234" text-anchor="middle" font-size="9" fill="#15803d">delivered on simulation</text>
-      <text x="520" y="248" text-anchor="middle" font-size="9" fill="#ed0a59">wired in, phase one</text>
+      <rect x="150" y="162" width="100" height="110" rx="8" fill="#e9eef3" stroke="#b6c4d1"/>
+      <text x="200" y="210" text-anchor="middle" font-size="11.5" font-weight="600" fill="#8094a6">Co-pilot</text>
+      <text x="200" y="226" text-anchor="middle" font-size="9" fill="#8094a6">Concept 1</text>
+      <text x="200" y="240" text-anchor="middle" font-size="9" fill="#8094a6">later phase</text>
+
+      <rect x="255" y="155" width="110" height="124" rx="11" fill="none" stroke="#3d4f63" stroke-width="2.4"/>
+      <rect x="260" y="162" width="100" height="110" rx="8" fill="#A1BCD1" stroke="#6f93ad" stroke-width="1.6"/>
+      <text x="310" y="204" text-anchor="middle" font-size="11.5" font-weight="600" fill="#09142F">Agent Inbox</text>
+      <text x="310" y="220" text-anchor="middle" font-size="9" fill="#33495f">front end stood up</text>
+      <text x="310" y="236" text-anchor="middle" font-size="8.5" font-weight="700" fill="#09142F">PHASE ONE</text>
+
+      <rect x="370" y="162" width="100" height="110" rx="8" fill="#e9eef3" stroke="#b6c4d1"/>
+      <text x="420" y="210" text-anchor="middle" font-size="11.5" font-weight="600" fill="#8094a6">Alerts</text>
+      <text x="420" y="226" text-anchor="middle" font-size="9" fill="#8094a6">detection</text>
+      <text x="420" y="240" text-anchor="middle" font-size="9" fill="#8094a6">later phase</text>
+
+      <rect x="475" y="155" width="112" height="124" rx="11" fill="none" stroke="#3d4f63" stroke-width="2.4"/>
+      <rect x="480" y="162" width="102" height="110" rx="8" fill="#d6f5e2" stroke="#22C55E" stroke-width="1.6"/>
+      <text x="531" y="200" text-anchor="middle" font-size="11" font-weight="600" fill="#09142F">Full Agentic</text>
+      <text x="531" y="215" text-anchor="middle" font-size="11" font-weight="600" fill="#09142F">Experience</text>
+      <text x="531" y="231" text-anchor="middle" font-size="8.5" fill="#15803d">delivered in pilot</text>
+      <text x="531" y="245" text-anchor="middle" font-size="8.5" font-weight="700" fill="#09142F">WIRED IN, PHASE ONE</text>
       <rect x="630" y="132" width="220" height="150" rx="10" fill="#FBFCFD" stroke="#09142F" stroke-dasharray="6 4"/>
       <text x="642" y="151" font-size="11" font-weight="700" fill="#09142F">Knowledge Hub &amp; Developer Portal <tspan font-size="9" font-weight="400" fill="#64748B">&middot; Stackworkz</tspan></text>
+      <rect x="636" y="155" width="208" height="124" rx="11" fill="none" stroke="#3d4f63" stroke-width="2.4"/>
       <rect x="642" y="162" width="196" height="110" rx="8" fill="#A1BCD1" stroke="#6f93ad" stroke-width="1.6"/>
       <text x="740" y="206" text-anchor="middle" font-size="12" font-weight="600" fill="#09142F">Developer Support</text>
       <text x="740" y="224" text-anchor="middle" font-size="9.5" fill="#33495f">docs MCP server &amp; co-pilot</text>
@@ -320,9 +336,10 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
 
       <!-- ROW 3 AAL -->
       <rect x="140" y="332" width="820" height="58" rx="10" fill="#cdddea" stroke="#6f93ad"/>
+      <rect x="194" y="338" width="352" height="46" rx="10" fill="none" stroke="#3d4f63" stroke-width="2.4"/>
       <rect x="200" y="344" width="340" height="34" rx="7" fill="#d6f5e2" stroke="#22C55E" stroke-width="1.6"/>
       <text x="370" y="360" text-anchor="middle" font-size="11.5" font-weight="600" fill="#09142F">MCP Server</text>
-      <text x="370" y="373" text-anchor="middle" font-size="8.5" fill="#15803d">45 tools delivered &middot; wired in, phase one</text>
+      <text x="370" y="373" text-anchor="middle" font-size="8.5" fill="#15803d">45 tools delivered in pilot &middot; wired in, phase one</text>
       <rect x="560" y="344" width="340" height="34" rx="7" fill="#e9eef3" stroke="#b6c4d1"/>
       <text x="730" y="360" text-anchor="middle" font-size="11.5" font-weight="600" fill="#8094a6">A2A Endpoint</text>
       <text x="730" y="373" text-anchor="middle" font-size="8.5" fill="#8094a6">later phase</text>
@@ -335,10 +352,11 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
       <rect x="530" y="438" width="180" height="54" rx="10" fill="#e9eef3" stroke="#b6c4d1"/>
       <text x="620" y="464" text-anchor="middle" font-size="11.5" font-weight="600" fill="#8094a6">Fraud &amp; Risk</text>
       <text x="620" y="480" text-anchor="middle" font-size="9.5" fill="#8094a6">later phase</text>
+      <rect x="724" y="432" width="242" height="66" rx="13" fill="none" stroke="#3d4f63" stroke-width="2.4"/>
       <rect x="730" y="438" width="230" height="54" rx="10" fill="#d6f5e2" stroke="#22C55E" stroke-width="1.6"/>
       <text x="845" y="460" text-anchor="middle" font-size="11.5" font-weight="600" fill="#09142F">Internal Ops Agents</text>
-      <text x="845" y="474" text-anchor="middle" font-size="9" fill="#15803d">2 of 3 parts delivered</text>
-      <text x="845" y="487" text-anchor="middle" font-size="9" fill="#09142F">onboarding agent, phase one</text>
+      <text x="845" y="474" text-anchor="middle" font-size="9" fill="#15803d">2 of 3 parts delivered in pilot</text>
+      <text x="845" y="487" text-anchor="middle" font-size="9" font-weight="700" fill="#09142F">ONBOARDING AGENT, PHASE ONE</text>
 
       <!-- ROW 5 platform/data -->
       <rect x="150" y="542" width="250" height="54" rx="9" fill="#e7edf2" stroke="#94a3b8"/>
@@ -356,13 +374,14 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
   <div style="display:flex; flex-wrap:wrap; gap:10px 22px; font-size:.72rem; color:var(--ns-muted); margin-top:2px;">
     <span><span style="display:inline-block;width:11px;height:11px;background:#d6f5e2;border:1.5px solid #22C55E;border-radius:3px;vertical-align:middle;"></span> <strong style="color:var(--ns-navy);">Delivered in the pilot</strong></span>
     <span><span style="display:inline-block;width:11px;height:11px;background:#A1BCD1;border:1.5px solid #6f93ad;border-radius:3px;vertical-align:middle;"></span> <strong style="color:var(--ns-navy);">Built in phase one</strong></span>
+    <span><span style="display:inline-block;width:13px;height:13px;background:transparent;border:2px solid #3d4f63;border-radius:4px;vertical-align:middle;"></span> <strong style="color:var(--ns-navy);">Worked on in phase one</strong></span>
     <span><span style="display:inline-block;width:11px;height:11px;background:#e9eef3;border:1px solid #b6c4d1;border-radius:3px;vertical-align:middle;"></span> Later phase</span>
     <span><span style="display:inline-block;width:11px;height:11px;background:#e7edf2;border:1px solid #94a3b8;border-radius:3px;vertical-align:middle;"></span> Direct Transact / TXN</span>
     <span><span style="display:inline-block;width:11px;height:11px;background:#FBFCFD;border:1px dashed #09142F;border-radius:3px;vertical-align:middle;"></span> Stackworkz surface, the agent renders inside</span>
     <span><span style="display:inline-block;width:11px;height:11px;background:#e7fdfd;border:1px solid #0bb6bb;border-radius:3px;vertical-align:middle;"></span> External client agent</span>
   </div>
 
-  <div class="callout txn"><strong>Read the green.</strong> The hardest component in the architecture, the Full Agentic Experience, and the foundation everything rides on, the MCP tool surface, are both built. Phase one does two things to that picture: it adds the one blue box, the knowledge hub, and it moves the green boxes across the pink line onto the real platform.</div>
+  <div class="callout txn"><strong>Read the outlines.</strong> Five boxes carry a dark outline and those five are phase one. Three of them are already green, which is the point: the hardest component in the architecture and the foundation everything rides on are built, and phase one takes them across the pink line onto the real platform. The other two are new build, the knowledge hub and the Agent Inbox. Everything without an outline is a later phase.</div>
     </div>
   <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 3</span></div>
 </section>
@@ -458,10 +477,10 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
 
 <!-- ============ 05 COMPONENTS 3 AND 4 ============ -->
 <section class="page">
-  <div class="fit" style="--s:0.87">
+  <div class="fit" style="--s:0.70">
   <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Phase One &middot; Proposal v1.0</span></div>
   <div class="sechead"><div class="bar"></div><div>
-    <div class="secno">06</div><h2 class="sect">Components 3 and 4</h2>
+    <div class="secno">06</div><h2 class="sect">Components 3, 4 and 5</h2>
   </div></div>
 
   <h3>3 &middot; Speed, stability and usability <span class="tag cont">continuous</span></h3>
@@ -485,14 +504,24 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
   </ul>
   <p class="small"><strong>Done means:</strong> a client can be onboarded end to end against test data, with the human-owned stages named.</p>
 
-  <div class="callout"><strong>Why these two sit together.</strong> Neither is a headline component and both are the kind of work that gets deferred indefinitely. Speed decides whether the agentic layer is used at all, and the onboarding agent is the one contracted item the pilot did not finish. Naming them as components rather than as background work is how they get done.</div>
+  <h3>5 &middot; The Agent Inbox</h3>
+  <p class="small muted" style="margin-bottom:.5rem;">Separated from Alerts, which stays in a later phase. The inbox is the queue; alert detection is what fills it, and only one of those is in phase one.</p>
+  <ul>
+    <li><strong>The central queue</strong> where agent-proposed plans land for review and approval, rather than each proposal interrupting whoever happens to be in the conversation.</li>
+    <li><strong>Approvable plans that execute.</strong> The front end is already stood up and demonstrated; phase one connects it, so approving a plan in the queue runs it through the same gate and audit trail as an action taken in the conversation.</li>
+    <li><strong>Scheduled reporting</strong>, created conversationally and landing in the queue on its schedule.</li>
+    <li><strong>Built on the simulation first</strong>, as everything else is, then moved across with the wire-in.</li>
+  </ul>
+  <p class="small"><strong>Done means:</strong> a plan proposed by the agent can be reviewed in the queue and executed from it, with the same approval and audit behaviour as the conversation. <strong>Not in phase one:</strong> alert detection, notification routing to Slack, Teams or email, and data-lake anomaly detection, all of which need the Console instrumented and live volume.</p>
+
+  <div class="callout"><strong>Why these three sit together.</strong> None is a headline component and all three are the kind of work that gets deferred indefinitely. Speed decides whether the agentic layer is used at all, the onboarding agent is the one contracted item the pilot did not finish, and the inbox turns work the agent already does into something a person can approve without watching for it. Naming them as components rather than as background work is how they get done.</div>
     </div>
   <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 6</span></div>
 </section>
 
 <!-- ============ 06 THE TWO AND A HALF MONTHS ============ -->
 <section class="page">
-  <div class="fit" style="--s:0.9">
+  <div class="fit" style="--s:0.84">
   <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Phase One &middot; Proposal v1.0</span></div>
   <div class="sechead"><div class="bar"></div><div>
     <div class="secno">07</div><h2 class="sect">How the two and a half months are used</h2>
@@ -501,15 +530,15 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
   <p class="lead">Two and a half months, from 1 October to 15 December. One fixed milestone in the second week of October; everything after it is sequenced against the partner dependencies rather than promised to a date it does not control.</p>
 
   <div class="gantt">
-    <svg viewBox="0 0 940 236" xmlns="http://www.w3.org/2000/svg" font-family="Geist, sans-serif">
+    <svg viewBox="0 0 940 262" xmlns="http://www.w3.org/2000/svg" font-family="Geist, sans-serif">
       <g font-size="11" fill="#64748B" font-weight="600">
         <text x="330" y="18">October</text><text x="560" y="18">November</text><text x="800" y="18">Dec, to the 15th</text>
       </g>
       <g stroke="#dbe3ea" stroke-width="1">
-        <line x1="250" y1="26" x2="250" y2="200"/><line x1="480" y1="26" x2="480" y2="200"/>
-        <line x1="710" y1="26" x2="710" y2="200"/><line x1="825" y1="26" x2="825" y2="200"/>
+        <line x1="250" y1="26" x2="250" y2="226"/><line x1="480" y1="26" x2="480" y2="226"/>
+        <line x1="710" y1="26" x2="710" y2="226"/><line x1="825" y1="26" x2="825" y2="226"/>
       </g>
-      <line x1="332" y1="26" x2="332" y2="200" stroke="#ed0a59" stroke-width="2" stroke-dasharray="4 3"/>
+      <line x1="332" y1="26" x2="332" y2="226" stroke="#ed0a59" stroke-width="2" stroke-dasharray="4 3"/>
       <text x="337" y="38" font-size="10" fill="#ed0a59" font-weight="600">Knowledge hub AI demonstrable</text>
 
       <g font-size="11" fill="#09142F">
@@ -517,6 +546,7 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
         <text x="6" y="98">2 &#183; Wire-in</text>
         <text x="6" y="138">3 &#183; Speed and stability</text>
         <text x="6" y="178">4 &#183; Onboarding agent</text>
+        <text x="6" y="204">5 &#183; Agent Inbox</text>
       </g>
 
       <rect x="250" y="47" width="82" height="16" rx="4" fill="#ed0a59" opacity="0.85"/>
@@ -533,10 +563,13 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
       <rect x="480" y="170" width="345" height="16" rx="4" fill="#A1BCD1"/>
       <text x="486" y="182" font-size="9" fill="#09142F">built on simulation, then connected, then handed over</text>
 
-      <rect x="250" y="212" width="24" height="12" rx="3" fill="#ed0a59" opacity="0.85"/><text x="280" y="222" font-size="10" fill="#64748B">to the milestone</text>
-      <rect x="390" y="212" width="24" height="12" rx="3" fill="#A8CDFF"/><text x="420" y="222" font-size="10" fill="#64748B">knowledge hub</text>
-      <rect x="520" y="212" width="24" height="12" rx="3" fill="#A1BCD1"/><text x="550" y="222" font-size="10" fill="#64748B">build</text>
-      <rect x="610" y="212" width="24" height="12" rx="3" fill="#22C55E"/><text x="640" y="222" font-size="10" fill="#64748B">continuous</text>
+      <rect x="410" y="196" width="415" height="16" rx="4" fill="#A1BCD1"/>
+      <text x="416" y="208" font-size="9" fill="#09142F">front end connected, plans execute from the queue</text>
+
+      <rect x="250" y="238" width="24" height="12" rx="3" fill="#ed0a59" opacity="0.85"/><text x="280" y="248" font-size="10" fill="#64748B">to the milestone</text>
+      <rect x="390" y="238" width="24" height="12" rx="3" fill="#A8CDFF"/><text x="420" y="248" font-size="10" fill="#64748B">knowledge hub</text>
+      <rect x="520" y="238" width="24" height="12" rx="3" fill="#A1BCD1"/><text x="550" y="248" font-size="10" fill="#64748B">build</text>
+      <rect x="610" y="238" width="24" height="12" rx="3" fill="#22C55E"/><text x="640" y="248" font-size="10" fill="#64748B">continuous</text>
     </svg>
   </div>
 
@@ -544,8 +577,8 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
     <thead><tr><th>Window</th><th>What happens</th><th>What done looks like</th></tr></thead>
     <tbody>
       <tr><td><strong>Weeks 1 and 2</strong><br><span class="muted xsmall">1 to 15 October</span></td><td>The documentation MCP server built and exposed, and the hub co-pilot taken from prototype to working. Speed measurement starts reporting figures</td><td><strong>The milestone.</strong> The knowledge hub AI demonstrable end to end, connectable from a developer's own agent</td></tr>
-      <tr><td><strong>Weeks 3 to 6</strong><br><span class="muted xsmall">mid-October to mid-November</span></td><td>Sandbox assist and the anomaly loop. Continuous Umbraco pull in place. The wire-in opens: production routing settled with Stackworkz, then tools moved to live endpoints as they land</td><td>A developer gets a failed request diagnosed, and the first tools call the real API</td></tr>
-      <tr><td><strong>Weeks 7 to 9</strong><br><span class="muted xsmall">mid-November to end November</span></td><td>The email gate and lead capture. The onboarding agent built against the simulation. Wire-in continues through the Access Layer and onto the agentic experience</td><td>An evaluator becomes a captured lead, and a client can be onboarded against test data</td></tr>
+      <tr><td><strong>Weeks 3 to 6</strong><br><span class="muted xsmall">mid-October to mid-November</span></td><td>Sandbox assist and the anomaly loop. Continuous Umbraco pull in place. The wire-in opens: production routing settled with Stackworkz, then tools moved to live endpoints as they land. The Agent Inbox front end connected so plans execute from the queue</td><td>A developer gets a failed request diagnosed, the first tools call the real API, and a proposed plan can be approved from the inbox</td></tr>
+      <tr><td><strong>Weeks 7 to 9</strong><br><span class="muted xsmall">mid-November to end November</span></td><td>The email gate and lead capture. The onboarding agent built against the simulation. The inbox taken to scheduled reporting. Wire-in continues through the Access Layer and onto the agentic experience</td><td>An evaluator becomes a captured lead, and a client can be onboarded against test data</td></tr>
       <tr><td><strong>Weeks 10 and 11</strong><br><span class="muted xsmall">1 to 15 December</span></td><td>Consolidation. The onboarding agent connected to the real sources, the phase handed over, and the Phase 3 scope agreed together against what actually exists</td><td>Phase one complete and documented, with Phase 3 scoped rather than assumed</td></tr>
     </tbody>
   </table>
@@ -623,7 +656,7 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
     <tbody>
       <tr><td style="width:32%"><strong>Term</strong></td><td>Two and a half months, 1 October to 15 December 2026. If kickoff moves, the window moves with it and the amounts do not change.</td></tr>
       <tr><td><strong>Fee</strong></td><td>&pound;90,312.50 exclusive of VAT: &pound;36,125 for October, &pound;36,125 for November, and &pound;18,062.50 for the half month to 15 December. Invoiced monthly in advance.</td></tr>
-      <tr><td><strong>Scope</strong></td><td>The four components in sections 02 to 05. Within them, TXN sets the weekly order in the standing review; the fee does not move with the mix.</td></tr>
+      <tr><td><strong>Scope</strong></td><td>The five components in sections 02 to 06. Within them, TXN sets the weekly order in the standing review; the fee does not move with the mix.</td></tr>
       <tr><td><strong>Team</strong></td><td>The same full-time three-person team that delivered the pilot: AI Product Owner, AI Engineer and Forward Deploy Engineer, with a named lead accountable.</td></tr>
       <tr><td><strong>Reporting</strong></td><td>A weekly flight plan carrying progress, measured response times and the week's risks, with fortnightly demonstrations of working software.</td></tr>
       <tr><td><strong>Needed from TXN</strong></td><td>A separate Umbraco API key for the knowledge hub, and for the wire-in a destination environment and the production routing decision with Stackworkz. Phase one starts without the last two; component 2 is paced by them.</td></tr>
