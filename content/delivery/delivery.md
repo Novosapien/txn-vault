@@ -100,6 +100,7 @@ Reviews of the client's own console feedback queue, read from `txn.feedback` and
 - **The additional work is carried with its detail**, per Brett. Four items at roughly 30 per cent of the pilot on an effort basis, cross-referenced to the handover document.
 - **The Workflow Status page is retired.** Its content is absorbed into the module ledger and the close-out page; thirteen SOPs against a settled slate no longer needs its own page.
 - **The diagram reframes to July 2026 to January 2027**, fourteen lanes, with the second-week-of-October milestone marked.
+- **The next-phase lanes are faded out and the chart is banded into three groups**, per Brett on 24 September: the pilot and its close-out at full strength, then **the next phase, not yet started** at a third opacity, then **GTM workforces, separate engagements** at full strength since they are live work rather than future work. The intent is that the eye lands on what is finished. A legend entry names the convention so the fade reads as deliberate rather than as a rendering fault.
 
 ### Scope and presentation changes, 16 September
 
