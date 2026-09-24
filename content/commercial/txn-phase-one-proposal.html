@@ -234,12 +234,145 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
   <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 2</span></div>
 </section>
 
+<!-- ============ 03 ARCHITECTURE ============ -->
+<section class="page">
+  <div class="fit" style="--s:0.93">
+  <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Phase One &middot; Proposal v1.0</span></div>
+  <div class="sechead"><div class="bar"></div><div>
+    <div class="secno">03</div><h2 class="sect">Where phase one sits</h2>
+  </div></div>
+
+  <p class="lead">The same architecture agreed at the start of the engagement, coloured by what the pilot actually delivered. Green is built. Blue is what phase one builds. Grey is a later phase. The pink line is the wire-in: taking what is already built off the simulation and onto the real platform.</p>
+
+  <div class="gantt">
+    <svg viewBox="0 0 985 612" xmlns="http://www.w3.org/2000/svg" font-family="Geist, sans-serif">
+      <defs>
+        <marker id="ah" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#64748B"/></marker>
+        <marker id="ahc" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#0bb6bb"/></marker>
+        <marker id="ahp" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#ed0a59"/></marker>
+      </defs>
+
+      <rect x="10" y="10"  width="965" height="76"  rx="8" fill="#f3f7fa"/>
+      <rect x="10" y="120" width="965" height="166" rx="8" fill="#eef3f7"/>
+      <rect x="10" y="320" width="965" height="72"  rx="8" fill="#f3f7fa"/>
+      <rect x="10" y="426" width="965" height="70"  rx="8" fill="#eef3f7"/>
+      <rect x="10" y="530" width="965" height="72"  rx="8" fill="#f3f7fa"/>
+
+      <g font-size="10" fill="#64748B" font-weight="600" letter-spacing="0.5">
+        <text x="22" y="52">USERS &amp; AGENTS</text>
+        <text x="22" y="207">TXN SURFACES</text>
+        <text x="22" y="360">ACCESS LAYER</text>
+        <text x="22" y="465">AGENTIC SERVICES</text>
+        <text x="22" y="569">PLATFORM &amp; DATA</text>
+      </g>
+
+      <g stroke="#64748B" stroke-width="1.5" fill="none">
+        <path d="M240,76 L240,130" marker-end="url(#ah)"/>
+        <path d="M740,76 L740,130" marker-end="url(#ah)"/>
+        <path d="M300,282 L300,330" marker-end="url(#ah)"/>
+        <path d="M730,282 L730,330" marker-end="url(#ah)"/>
+        <path d="M265,492 L265,540" marker-end="url(#ah)"/>
+        <path d="M525,492 L525,540" marker-end="url(#ah)"/>
+        <path d="M785,492 L785,540" marker-end="url(#ah)"/>
+        <path d="M400,569 L427,569" marker-end="url(#ah)"/>
+      </g>
+      <g stroke="#0bb6bb" stroke-width="1.6" fill="none">
+        <path d="M907,76 L907,308 L880,308 L880,330" marker-end="url(#ahc)"/>
+      </g>
+
+      <!-- the wire-in -->
+      <g stroke="#ed0a59" stroke-width="2.4" fill="none" stroke-dasharray="7 4">
+        <path d="M390,390 L390,540" marker-end="url(#ahp)"/>
+      </g>
+      <rect x="400" y="446" width="112" height="19" rx="5" fill="#fde8ef" stroke="#ed0a59"/>
+      <text x="456" y="459" text-anchor="middle" font-size="9.5" font-weight="700" fill="#ed0a59">PHASE ONE WIRE-IN</text>
+
+      <!-- ROW 1 actors -->
+      <rect x="150" y="30" width="180" height="46" rx="8" fill="#e7edf2" stroke="#94a3b8"/>
+      <text x="240" y="58" text-anchor="middle" font-size="11" fill="#09142F">Card Program Operators</text>
+      <rect x="650" y="30" width="180" height="46" rx="8" fill="#e7edf2" stroke="#94a3b8"/>
+      <text x="740" y="58" text-anchor="middle" font-size="11" fill="#09142F">Integrators &amp; Developers</text>
+      <rect x="850" y="30" width="115" height="46" rx="8" fill="#e7fdfd" stroke="#0bb6bb"/>
+      <text x="907" y="52" text-anchor="middle" font-size="10" fill="#09142F">Client's own agent</text>
+      <text x="907" y="66" text-anchor="middle" font-size="9" fill="#33495f">Claude (external)</text>
+
+      <!-- ROW 2 surfaces -->
+      <rect x="140" y="132" width="460" height="150" rx="10" fill="#FBFCFD" stroke="#09142F" stroke-dasharray="6 4"/>
+      <text x="152" y="151" font-size="11" font-weight="700" fill="#09142F">TXN Console <tspan font-size="9" font-weight="400" fill="#64748B">&middot; Stackworkz</tspan></text>
+      <rect x="150" y="162" width="148" height="110" rx="8" fill="#e9eef3" stroke="#b6c4d1"/>
+      <text x="224" y="214" text-anchor="middle" font-size="12" font-weight="600" fill="#8094a6">Co-pilot</text>
+      <text x="224" y="232" text-anchor="middle" font-size="9.5" fill="#8094a6">Concept 1 &middot; later phase</text>
+      <rect x="308" y="162" width="140" height="110" rx="8" fill="#e9eef3" stroke="#b6c4d1"/>
+      <text x="378" y="206" text-anchor="middle" font-size="11.5" font-weight="600" fill="#8094a6">Agent Inbox</text>
+      <text x="378" y="222" text-anchor="middle" font-size="11.5" font-weight="600" fill="#8094a6">&amp; Alerts</text>
+      <text x="378" y="240" text-anchor="middle" font-size="9" fill="#8094a6">front end stood up &middot; later phase</text>
+      <rect x="458" y="162" width="124" height="110" rx="8" fill="#d6f5e2" stroke="#22C55E" stroke-width="1.6"/>
+      <text x="520" y="202" text-anchor="middle" font-size="11.5" font-weight="600" fill="#09142F">Full Agentic</text>
+      <text x="520" y="218" text-anchor="middle" font-size="11.5" font-weight="600" fill="#09142F">Experience</text>
+      <text x="520" y="234" text-anchor="middle" font-size="9" fill="#15803d">delivered on simulation</text>
+      <text x="520" y="248" text-anchor="middle" font-size="9" fill="#ed0a59">wired in, phase one</text>
+      <rect x="630" y="132" width="220" height="150" rx="10" fill="#FBFCFD" stroke="#09142F" stroke-dasharray="6 4"/>
+      <text x="642" y="151" font-size="11" font-weight="700" fill="#09142F">Knowledge Hub &amp; Developer Portal <tspan font-size="9" font-weight="400" fill="#64748B">&middot; Stackworkz</tspan></text>
+      <rect x="642" y="162" width="196" height="110" rx="8" fill="#A1BCD1" stroke="#6f93ad" stroke-width="1.6"/>
+      <text x="740" y="206" text-anchor="middle" font-size="12" font-weight="600" fill="#09142F">Developer Support</text>
+      <text x="740" y="224" text-anchor="middle" font-size="9.5" fill="#33495f">docs MCP server &amp; co-pilot</text>
+      <text x="740" y="240" text-anchor="middle" font-size="9" font-weight="700" fill="#09142F">PHASE ONE, FIRST</text>
+
+      <!-- ROW 3 AAL -->
+      <rect x="140" y="332" width="820" height="58" rx="10" fill="#cdddea" stroke="#6f93ad"/>
+      <rect x="200" y="344" width="340" height="34" rx="7" fill="#d6f5e2" stroke="#22C55E" stroke-width="1.6"/>
+      <text x="370" y="360" text-anchor="middle" font-size="11.5" font-weight="600" fill="#09142F">MCP Server</text>
+      <text x="370" y="373" text-anchor="middle" font-size="8.5" fill="#15803d">45 tools delivered &middot; wired in, phase one</text>
+      <rect x="560" y="344" width="340" height="34" rx="7" fill="#e9eef3" stroke="#b6c4d1"/>
+      <text x="730" y="360" text-anchor="middle" font-size="11.5" font-weight="600" fill="#8094a6">A2A Endpoint</text>
+      <text x="730" y="373" text-anchor="middle" font-size="8.5" fill="#8094a6">later phase</text>
+
+      <!-- ROW 4 services -->
+      <text x="150" y="414" font-size="9" font-style="italic" fill="#64748B">exposes the Core API as permission-scoped tools</text>
+      <rect x="150" y="438" width="230" height="54" rx="10" fill="#e9eef3" stroke="#b6c4d1"/>
+      <text x="265" y="464" text-anchor="middle" font-size="11.5" font-weight="600" fill="#8094a6">Reconciliation</text>
+      <text x="265" y="480" text-anchor="middle" font-size="9.5" fill="#8094a6">later phase</text>
+      <rect x="530" y="438" width="180" height="54" rx="10" fill="#e9eef3" stroke="#b6c4d1"/>
+      <text x="620" y="464" text-anchor="middle" font-size="11.5" font-weight="600" fill="#8094a6">Fraud &amp; Risk</text>
+      <text x="620" y="480" text-anchor="middle" font-size="9.5" fill="#8094a6">later phase</text>
+      <rect x="730" y="438" width="230" height="54" rx="10" fill="#d6f5e2" stroke="#22C55E" stroke-width="1.6"/>
+      <text x="845" y="460" text-anchor="middle" font-size="11.5" font-weight="600" fill="#09142F">Internal Ops Agents</text>
+      <text x="845" y="474" text-anchor="middle" font-size="9" fill="#15803d">2 of 3 parts delivered</text>
+      <text x="845" y="487" text-anchor="middle" font-size="9" fill="#09142F">onboarding agent, phase one</text>
+
+      <!-- ROW 5 platform/data -->
+      <rect x="150" y="542" width="250" height="54" rx="9" fill="#e7edf2" stroke="#94a3b8"/>
+      <text x="275" y="568" text-anchor="middle" font-size="11.5" font-weight="600" fill="#09142F">Core API</text>
+      <text x="275" y="584" text-anchor="middle" font-size="9.5" fill="#64748B">issuer processing &middot; Direct Transact</text>
+      <rect x="430" y="542" width="230" height="54" rx="9" fill="#e7edf2" stroke="#94a3b8"/>
+      <text x="545" y="568" text-anchor="middle" font-size="11.5" font-weight="600" fill="#09142F">Data Lake</text>
+      <text x="545" y="584" text-anchor="middle" font-size="9.5" fill="#64748B">Direct Transact</text>
+      <rect x="690" y="542" width="230" height="54" rx="9" fill="#e7edf2" stroke="#94a3b8"/>
+      <text x="805" y="568" text-anchor="middle" font-size="11.5" font-weight="600" fill="#09142F">CRM &middot; Freshsales</text>
+      <text x="805" y="584" text-anchor="middle" font-size="9.5" fill="#64748B">TXN &middot; source of truth</text>
+    </svg>
+  </div>
+
+  <div style="display:flex; flex-wrap:wrap; gap:10px 22px; font-size:.72rem; color:var(--ns-muted); margin-top:2px;">
+    <span><span style="display:inline-block;width:11px;height:11px;background:#d6f5e2;border:1.5px solid #22C55E;border-radius:3px;vertical-align:middle;"></span> <strong style="color:var(--ns-navy);">Delivered in the pilot</strong></span>
+    <span><span style="display:inline-block;width:11px;height:11px;background:#A1BCD1;border:1.5px solid #6f93ad;border-radius:3px;vertical-align:middle;"></span> <strong style="color:var(--ns-navy);">Built in phase one</strong></span>
+    <span><span style="display:inline-block;width:11px;height:11px;background:#e9eef3;border:1px solid #b6c4d1;border-radius:3px;vertical-align:middle;"></span> Later phase</span>
+    <span><span style="display:inline-block;width:11px;height:11px;background:#e7edf2;border:1px solid #94a3b8;border-radius:3px;vertical-align:middle;"></span> Direct Transact / TXN</span>
+    <span><span style="display:inline-block;width:11px;height:11px;background:#FBFCFD;border:1px dashed #09142F;border-radius:3px;vertical-align:middle;"></span> Stackworkz surface, the agent renders inside</span>
+    <span><span style="display:inline-block;width:11px;height:11px;background:#e7fdfd;border:1px solid #0bb6bb;border-radius:3px;vertical-align:middle;"></span> External client agent</span>
+  </div>
+
+  <div class="callout txn"><strong>Read the green.</strong> The hardest component in the architecture, the Full Agentic Experience, and the foundation everything rides on, the MCP tool surface, are both built. Phase one does two things to that picture: it adds the one blue box, the knowledge hub, and it moves the green boxes across the pink line onto the real platform.</div>
+    </div>
+  <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 3</span></div>
+</section>
+
 <!-- ============ 03 COMPONENT 1 DETAIL ============ -->
 <section class="page">
   <div class="fit" style="--s:0.77">
   <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Phase One &middot; Proposal v1.0</span></div>
   <div class="sechead"><div class="bar"></div><div>
-    <div class="secno">03</div><h2 class="sect">Component 1 &middot; The Knowledge Hub</h2>
+    <div class="secno">04</div><h2 class="sect">Component 1 &middot; The Knowledge Hub</h2>
   </div></div>
 
   <p class="lead">The job the AI does here is to rejoin two layers TXN deliberately keeps apart. The guides stay business-level and stable; the API reference carries the payload. A developer asks one question and gets one answer drawn from both.</p>
@@ -276,7 +409,7 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
 
   <div class="callout txn"><strong>Done means:</strong> a developer outside TXN connects the MCP server to their own agent and gets correct answers grounded in both layers, and the hub co-pilot answers the same questions in the hub, demonstrable end to end. <strong>Needs from TXN:</strong> a separate Umbraco API key.</div>
     </div>
-  <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 3</span></div>
+  <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 4</span></div>
 </section>
 
 <!-- ============ 04 COMPONENT 2 DETAIL ============ -->
@@ -284,7 +417,7 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
   <div class="fit" style="--s:0.76">
   <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Phase One &middot; Proposal v1.0</span></div>
   <div class="sechead"><div class="bar"></div><div>
-    <div class="secno">04</div><h2 class="sect">Component 2 &middot; Wire-in to the live platform</h2>
+    <div class="secno">05</div><h2 class="sect">Component 2 &middot; Wire-in to the live platform</h2>
   </div></div>
 
   <p class="lead">Two components move off the simulation and onto the real platform: the <strong>Agent Access Layer</strong> and the <strong>Full Agentic Experience</strong>. Nothing else is wired in during phase one. Built synthetic-first throughout, so each piece runs against the mock until the real surface exists and then switches, which is why a late partner dependency slows one tool rather than stopping the phase.</p>
@@ -320,7 +453,7 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
 
   <div class="callout txn"><strong>Done means:</strong> the tools that exist on the live API call the live API, with approvals routed through the Console and the audit trail intact. <strong>Paced by:</strong> TXN's European environment, the remainder of Direct Transact's build expected around October, and the routing decision with Stackworkz. This is the most dependency-exposed component in the phase, which is exactly why it runs second rather than first.</div>
     </div>
-  <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 4</span></div>
+  <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 5</span></div>
 </section>
 
 <!-- ============ 05 COMPONENTS 3 AND 4 ============ -->
@@ -328,7 +461,7 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
   <div class="fit" style="--s:0.87">
   <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Phase One &middot; Proposal v1.0</span></div>
   <div class="sechead"><div class="bar"></div><div>
-    <div class="secno">05</div><h2 class="sect">Components 3 and 4</h2>
+    <div class="secno">06</div><h2 class="sect">Components 3 and 4</h2>
   </div></div>
 
   <h3>3 &middot; Speed, stability and usability <span class="tag cont">continuous</span></h3>
@@ -354,7 +487,7 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
 
   <div class="callout"><strong>Why these two sit together.</strong> Neither is a headline component and both are the kind of work that gets deferred indefinitely. Speed decides whether the agentic layer is used at all, and the onboarding agent is the one contracted item the pilot did not finish. Naming them as components rather than as background work is how they get done.</div>
     </div>
-  <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 5</span></div>
+  <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 6</span></div>
 </section>
 
 <!-- ============ 06 THE TWO AND A HALF MONTHS ============ -->
@@ -362,7 +495,7 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
   <div class="fit" style="--s:0.9">
   <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Phase One &middot; Proposal v1.0</span></div>
   <div class="sechead"><div class="bar"></div><div>
-    <div class="secno">06</div><h2 class="sect">How the two and a half months are used</h2>
+    <div class="secno">07</div><h2 class="sect">How the two and a half months are used</h2>
   </div></div>
 
   <p class="lead">Two and a half months, from 1 October to 15 December. One fixed milestone in the second week of October; everything after it is sequenced against the partner dependencies rather than promised to a date it does not control.</p>
@@ -419,7 +552,7 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
 
   <div class="callout txn"><strong>Standing something up is fast; making it dependable is not.</strong> A working version of any of this appears in days. The refinement, the unknowns that only surface once it exists, and the partner surfaces that do not move at our speed are what these eleven weeks protect. Where a dependency is late, the work in front of it fast-follows rather than holding the phase.</div>
     </div>
-  <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 6</span></div>
+  <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 7</span></div>
 </section>
 
 <!-- ============ 07 INVESTMENT ============ -->
@@ -427,7 +560,7 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
   <div class="fit" style="--s:0.76">
   <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Phase One &middot; Proposal v1.0</span></div>
   <div class="sechead"><div class="bar"></div><div>
-    <div class="secno">07</div><h2 class="sect">Investment</h2>
+    <div class="secno">08</div><h2 class="sect">Investment</h2>
   </div></div>
 
   <p class="lead">Two and a half months of the same full-time three-person team, at the same monthly rate as the pilot and the original build. The price for this stage has not moved. All figures exclusive of VAT.</p>
@@ -475,7 +608,7 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
   </table>
   <p class="small muted"><strong>The total has not changed.</strong> &pound;270,375 is the same figure as the Agentic Layer proposal. Phase one is the wire-in stage of it, at the same rate, scoped against what the pilot produced.</p>
     </div>
-  <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 7</span></div>
+  <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 8</span></div>
 </section>
 
 <!-- ============ 08 HOW TO PROCEED ============ -->
@@ -483,7 +616,7 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
   <div class="fit" style="--s:0.9">
   <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Phase One &middot; Proposal v1.0</span></div>
   <div class="sechead"><div class="bar"></div><div>
-    <div class="secno">08</div><h2 class="sect">Terms and how to proceed</h2>
+    <div class="secno">09</div><h2 class="sect">Terms and how to proceed</h2>
   </div></div>
 
   <table>
@@ -513,7 +646,7 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
     <div><strong>For Novosapien</strong><div class="sign-box">Name</div><div class="sign-box">Signature</div><div class="sign-box">Date</div></div>
   </div>
     </div>
-  <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 8</span></div>
+  <div class="pagefoot"><span>Prepared by Novosapien for TXN</span><span>Commercial in confidence &middot; 9</span></div>
 </section>
 
 <!-- ============ CLOSING ============ -->
