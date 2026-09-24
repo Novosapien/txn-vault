@@ -14,7 +14,8 @@ Delivery status for the engagement. Where [[commercial]] records what was sold a
 
 | Flight plan | Scope | Generated |
 |-------------|-------|-----------|
-| [flightplan-txn-2026-09-16.html](flightplan-txn-2026-09-16.html) | **Six pages.** Ian's hands-on verdict and the speed remediation, the flight plan diagram moved to the top of page one, the Control Center reframed as included in the delivery | **16 Sep 2026, current** |
+| [flightplan-txn-2026-09-24.html](flightplan-txn-2026-09-24.html) | **Nine pages.** The pilot close-out issue: the pilot complete, the speed and efficiency build in production, the September API contract absorbed, and the first full quarterly pipeline the plan has carried. New pages for Speed and Efficiency and for the three forward quarters | **24 Sep 2026, current** |
+| [flightplan-txn-2026-09-16.html](flightplan-txn-2026-09-16.html) | Superseded. **Six pages.** Ian's hands-on verdict and the speed remediation, the flight plan diagram moved to the top of page one, the Control Center reframed as included in the delivery | 16 Sep 2026 |
 | [flightplan-txn-2026-09-15.html](flightplan-txn-2026-09-15.html) | Superseded. | **Six pages.** Both GTM configurations closed, content generation and warming starting, and the pilot completion date passed with no recorded acceptance | **15 Sep 2026, current** |
 | [flightplan-txn-2026-08-28.html](flightplan-txn-2026-08-28.html) | Superseded. | **Six pages.** The pilot functionally complete, TXN into the build on 1 September, the UAT split, and the acceptance date with nowhere to sit | **28 Aug 2026, current** |
 | [flightplan-txn-2026-08-27.html](flightplan-txn-2026-08-27.html) | Superseded. | **Six pages.** Carries the **workflow-slate build** (13 SOPs, 43 tools, 19 gated writes), the corrected Content Workforce schedule, and the **Stackworkz code-sharing** session | **27 Aug 2026, current** |
@@ -81,6 +82,24 @@ Reviews of the client's own console feedback queue, read from `txn.feedback` and
 > **A new completion bar arrived on the same call.** Ian: a feature that cannot be demonstrated *"lessens the sales proposition"*, so every AI feature for launch needs enough dummy transaction data behind it to be shown working, *"otherwise that whole ethos of show, not tell, goes out the window."* `txn-console-react` becomes the demo surface as well as the pilot experiment, with recorded Loom and website videos alongside. [[open-questions]] #90.
 
 ## What the current plan says
+
+### The headline, 24 September
+
+- **The pilot is complete and the work that followed the first hands-on test is in production.** The speed and efficiency build shipped on 22 September: bucketed tool calls, one approval up front, card selection in the conversation, inline forms on four or five workflows. **Two of Ian's three rules from 15 September are answered by it**, ask for the identifier first and collect structured input on a form. **The third is not, deliberately**: whether simple actions belong in the agent at all is a decision to take once the speed is measured, and Ian framed it that way himself.
+- **211 commits across four repositories in the eight days since the last issue**, the densest period of the engagement, and all of it after the pilot's completion date. `txn-agentic-agent` 100, `txn-console-react` 77, `txn-mcp-server` 23, `txn-mock-api` 11.
+- **The September API contract is absorbed.** DT's specification dropped from 98 operations to 46 on 21 September. Rather than lose the eight of thirteen workflows that depend on the missing operations, the two contracts were merged into one **99-operation build document**, the catalogue regenerated to **45 tools**, the SOPs reconciled against the final schemas and the mock rebuilt on the result. Merged 24 September.
+- **The benchmark instrument exists and the figures still do not.** `e2e/sopBenchmark.spec.ts` and `benchStats.ts` are on `main` since 17 September: they time each SOP from send to first response and count agent turns from the tool trace, with a free-form benchmark for ad-hoc composition added 23 September. **No run has been reported.** The speed improvement is still described by feel, which is precisely what [[open-questions]] #87 asks us to stop doing. This is Novosapien's to close and it carries on the next issue.
+- **The next phase has already started.** A working prototype of the knowledge hub documentation assistant is being built in `txn-console-react`, against the second-week-of-October milestone.
+- **The plan carries a full quarterly pipeline for the first time.** Four blocks on the frame set 25 August: the committed quarter to 7 December, the scale quarter to 7 March, and two 2027 planning surfaces held deliberately free of P1 commitments.
+
+### Scope and presentation changes, 24 September
+
+- **Nine pages, up from six.** Two new pages: **Speed and Efficiency**, which sets out what changed and states plainly that the instrument exists and the figures do not; and three forward quarter pages carrying P1, P2, P3 and TXN-loaded items.
+- **The Pilot Release page becomes Pilot Close-out**, setting the frozen Pilot Order definition against what shipped, with the explicitly-not-in-this-build list and the two items that remain to close the stage.
+- **The permission model is presented as a deliberate deferral, not a shortfall**, per Brett on 24 September. The wording used is that the gate is built and the permission model is not, with the reason: Stackworkz own TXN's permission framework and the agent scopes against it.
+- **The additional work is carried with its detail**, per Brett. Four items at roughly 30 per cent of the pilot on an effort basis, cross-referenced to the handover document.
+- **The Workflow Status page is retired.** Its content is absorbed into the module ledger and the close-out page; thirteen SOPs against a settled slate no longer needs its own page.
+- **The diagram reframes to July 2026 to January 2027**, fourteen lanes, with the second-week-of-October milestone marked.
 
 ### Scope and presentation changes, 16 September
 
