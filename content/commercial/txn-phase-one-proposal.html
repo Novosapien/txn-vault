@@ -192,7 +192,7 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
 
 <!-- ============ 02 THE FOUR COMPONENTS ============ -->
 <section class="page">
-  <div class="fit" style="--s:0.92">
+  <div class="fit" style="--s:0.85">
   <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Phase One &middot; Proposal v1.0</span></div>
   <div class="sechead"><div class="bar"></div><div>
     <div class="secno">02</div><h2 class="sect">The four components</h2>
@@ -208,7 +208,7 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
     </div>
     <div class="card" style="border-top:3px solid var(--ns-primary);">
       <div class="ct">2 &middot; Wire-in to the live platform</div>
-      <div class="cd">The Agent Access Layer moved off the simulation and onto the real Core API, the production routing settled so agent actions pass through the Console authorisation path, and the agentic experience running on live data as the endpoints land.</div>
+      <div class="cd"><strong>Two components move off the simulation.</strong> The <strong>Agent Access Layer</strong>, meaning the 45 tools, the approval gate and the audit trail, from the mock onto the real Core API. And the <strong>Full Agentic Experience</strong>, meaning the thirteen workflow procedures, onto live data and the real Console component library. With them, the production routing settled so agent actions pass through the Console authorisation path.</div>
       <div class="cd" style="margin-top:.5rem;color:var(--ns-navy);"><strong>Paced by the partner surfaces, not by us.</strong></div>
     </div>
     <div class="card" style="border-top:3px solid var(--ns-success);">
@@ -281,13 +281,21 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
 
 <!-- ============ 04 COMPONENT 2 DETAIL ============ -->
 <section class="page">
-  <div class="fit" style="--s:0.86">
+  <div class="fit" style="--s:0.76">
   <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Phase One &middot; Proposal v1.0</span></div>
   <div class="sechead"><div class="bar"></div><div>
     <div class="secno">04</div><h2 class="sect">Component 2 &middot; Wire-in to the live platform</h2>
   </div></div>
 
-  <p class="lead">Moving the agentic layer off the simulation and onto the real platform. Built synthetic-first throughout, so each piece runs against the mock until the real surface exists and then switches, which is why a late partner dependency slows one tool rather than stopping the phase.</p>
+  <p class="lead">Two components move off the simulation and onto the real platform: the <strong>Agent Access Layer</strong> and the <strong>Full Agentic Experience</strong>. Nothing else is wired in during phase one. Built synthetic-first throughout, so each piece runs against the mock until the real surface exists and then switches, which is why a late partner dependency slows one tool rather than stopping the phase.</p>
+
+  <table style="margin-top:.4rem;">
+    <thead><tr><th>Component</th><th>What moves</th><th>What it moves onto</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Agent Access Layer</strong></td><td>45 tools, the approval gate on every record-changing write, the boot-time gate assertion, and the audit trail</td><td>The real Core API, in TXN's own European instance, through the Console authorisation path</td></tr>
+      <tr><td><strong>Full Agentic Experience</strong></td><td>The thirteen workflow procedures, the plan-then-confirm loop, and the generative interface</td><td>Live data, and the real Console component library rather than the Control Center build</td></tr>
+    </tbody>
+  </table>
 
   <h3>2.1 The Agent Access Layer onto the real Core API</h3>
   <ul>
