@@ -51,6 +51,16 @@ Decision records that sit outside the meeting series, kept here so the flight pl
 | **The September diary, as fixed on 4 September.** Dorte's UAT Monday 7 September with written feedback by close of business Wednesday 9 September; **the final company content workshop Thursday 10 September at 10:00**, the morning the team flies; the Outbound wrap-up Monday 14 September at 10:00, run from the retreat. **Novosapien is away 10 Sep to 4 Oct** | 4 Sep 2026 | [[2026-09-04-domains-and-september-schedule]] |
 | **Domains: Novosapien buys and hands over.** Registered on a new account, login details passed to TXN, invoiced at **cost plus 10%**, built transferable from the start. TXN owns only `txnglobal.com`. Warming targeted mid week of 7 September | 4 Sep 2026 | [[delivery-schedule]], [[commercial]] |
 
+## Pilot handover
+
+| Document | Scope | Date |
+|----------|-------|------|
+| [txn-agentic-pilot-handover.html](txn-agentic-pilot-handover.html) | **Pilot handover, v1.0.** Eleven pages. The three Pilot Order deliverables against what was built, the four pieces of work delivered outside the Pilot Order in detail, the handover pack contents, and the four items TXN owes before the transfer can complete | 24 Sep 2026 |
+
+**Two positions are settled in it rather than left open.** The **permission model is recorded as a deliberate deferral**, not a shortfall: Stackworkz build TXN's user and permission framework and the agent scopes against it, so building a second one inside a six-week pilot on simulated tools would have been work to throw away. The document states in terms that the gate is built and the permission model is not, because nineteen gated writes are easy to mistake for one. And the **handover is complete on Novosapien's side**: source, prompts, configurations, the simulation harness and the written guide are assembled and current. What is missing is a destination, which is TXN's to provide.
+
+**The additional work is set out in full, at Brett's instruction (24-09).** Four items, on an effort basis of roughly 30 per cent of the pilot: the Control Center React build, the Agent Inbox and Alerts front end, the workflow slate build of 25 to 26 August, and the speed and usability programme that reached production on 22 September. None carried a change order or a fee. It is stated so the next phase is planned against what exists rather than against the Pilot Order's original list.
+
 ## Feedback reviews
 
 Reviews of the client's own console feedback queue, read from `txn.feedback` and the agent transcripts. They sit under delivery because they set the remediation agenda.
