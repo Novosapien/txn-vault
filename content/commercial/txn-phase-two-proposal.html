@@ -218,7 +218,7 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
     </div>
     <div class="card" style="border-top:3px solid var(--ns-primary);">
       <div class="ct">4 &middot; Agent Inbox and Alerts v1</div>
-      <div class="cd">Kept as one component, because the queue, the alerts and the reports are one experience. Change-impact alerts, user-defined threshold monitors, scheduled and on-demand reporting, and the inbox where all of it lands for review and approval.</div>
+      <div class="cd">The queue where alerts, scheduled reports and agent-proposed plans land for review and approval, with the analysis attached and the action one click away. <strong>Not an alerting system:</strong> detection stays with Direct Transact and the Stackworkz Console, and the inbox presents what they raise.</div>
       <div class="cd" style="margin-top:.5rem;color:var(--ns-navy);"><strong>The proactive half, Concept 1 to Concept 2.</strong></div>
     </div>
     <div class="card" style="border-top:3px solid var(--ns-primary);">
@@ -236,6 +236,7 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
   <h3>Explicitly not in phase two</h3>
   <p class="small muted" style="margin-bottom:.4rem;">The cheapest disappointment prevention there is. These are Phase 3 or later, and phase two is planned on their absence.</p>
   <div class="cards cols-3">
+    <div class="card"><div class="ct">An alerting system</div><div class="cd">Novosapien does not build the detection, the monitoring or the thresholds. Those sit with Direct Transact and the Stackworkz Console; phase two builds the surface that presents what they raise and acts on it.</div></div>
     <div class="card"><div class="ct">The agent-to-agent endpoint</div><div class="cd">The inbound door for a client's own external agent. Productionising it is Phase 3, once the Access Layer is on the live platform and the permission model is settled.</div></div>
     <div class="card"><div class="ct">Fraud and Risk, Reconciliation</div><div class="cd">Both depend on the data lake and on live transaction volume. Neither can be judged on evidence until the volume exists, so both are Phase 3.</div></div>
     <div class="card"><div class="ct">Authenticated developer features</div><div class="cd">Sign-up, the four-level access model, and diagnosis from a developer's own sandbox logs, which needs per-user sandboxes that do not exist yet.</div></div>
@@ -320,8 +321,8 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
       <rect x="278" y="162" width="140" height="110" rx="8" fill="#A1BCD1" stroke="#6f93ad" stroke-width="1.6"/>
       <text x="348" y="196" text-anchor="middle" font-size="11" font-weight="600" fill="#09142F">Agent Inbox</text>
       <text x="348" y="210" text-anchor="middle" font-size="11" font-weight="600" fill="#09142F">&amp; Alerts v1</text>
-      <text x="348" y="225" text-anchor="middle" font-size="8.5" fill="#33495f">change impact, thresholds,</text>
-      <text x="348" y="236" text-anchor="middle" font-size="8.5" fill="#33495f">scheduled reports</text>
+      <text x="348" y="225" text-anchor="middle" font-size="8.5" fill="#33495f">presents and acts on alerts,</text>
+      <text x="348" y="236" text-anchor="middle" font-size="8.5" fill="#33495f">plus scheduled reports</text>
       <text x="348" y="250" text-anchor="middle" font-size="8" font-weight="700" fill="#09142F">PHASE TWO &middot; C1 to C2</text>
 
       <rect x="428" y="155" width="158" height="124" rx="11" fill="none" stroke="#3d4f63" stroke-width="2.4"/>
@@ -351,6 +352,7 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
 
       <!-- ROW 4 services -->
       <text x="150" y="414" font-size="9" font-style="italic" fill="#64748B">exposes the Core API as permission-scoped tools</text>
+      <text x="600" y="414" font-size="9" font-style="italic" fill="#64748B">alert detection stays with Direct Transact and the Console; the inbox presents it</text>
       <rect x="150" y="438" width="230" height="54" rx="10" fill="#e9eef3" stroke="#b6c4d1"/>
       <text x="265" y="464" text-anchor="middle" font-size="11.5" font-weight="600" fill="#8094a6">Reconciliation</text>
       <text x="265" y="480" text-anchor="middle" font-size="9.5" fill="#8094a6">Phase 3</text>
@@ -482,7 +484,7 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
 
 <!-- ============ 06 COMPONENTS 3 AND 4 ============ -->
 <section class="page">
-  <div class="fit" style="--s:0.80">
+  <div class="fit" style="--s:0.70">
   <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Phase Two &middot; Proposal v1.0</span></div>
   <div class="sechead"><div class="bar"></div><div>
     <div class="secno">06</div><h2 class="sect">Components 3 and 4</h2>
@@ -500,14 +502,18 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
   <p class="small"><strong>Done means:</strong> a Console user gets a useful, page-aware answer without leaving the page, and can complete a multi-step configuration by confirming rather than filling in.</p>
 
   <h3>4 &middot; Agent Inbox and Alerts v1 <span class="tag now">Concept 1 to 2</span></h3>
+  <p class="small" style="margin-bottom:.5rem;"><strong>Novosapien is not building an alerting system.</strong> Phase 2 builds the surface that receives an alert, explains it, proposes what to do about it and executes on approval. <strong>The detection itself stays with the platform:</strong> alerts are raised by Direct Transact and by the Stackworkz Console, and reach the inbox through an agreed contract.</p>
   <ul>
-    <li><strong>Change-impact alerts</strong> the moment a setting changes, whatever the channel it changed through: Console, API or the agent itself.</li>
-    <li><strong>User-defined threshold monitors</strong> on a standard observability platform, with the AI invoked only when a threshold trips, which is what keeps the cost of watching proportionate to the value of noticing.</li>
+    <li><strong>The Agent Inbox.</strong> The central queue where alerts, reports and agent-proposed plans land for review and approval. The front end is already stood up and demonstrated; phase two connects it, so approving a plan in the queue executes it through the same gate and audit trail as the conversation.</li>
+    <li><strong>Alerts presented, not generated.</strong> An alert arrives from the platform and the agent does the part a person would otherwise do: reads it in context, explains the driver behind it, and says what it means for this programme.</li>
+    <li><strong>Action attached to the alert.</strong> Where a finding implies something to do, the agent proposes it as a plan and executes on confirmation, so noticing and fixing are one step rather than two systems.</li>
+    <li><strong>Change-impact alerts</strong> when a setting changes, whatever channel it changed through, consumed from the platform's own change events rather than detected by watching for them.</li>
+    <li><strong>Threshold monitors</strong> defined on TXN's own observability platform, with the agent invoked when one trips rather than polling for it, which is what keeps the cost of watching proportionate to the value of noticing.</li>
     <li><strong>Scheduled analysis and reporting.</strong> Cadence summaries that carry the drivers behind the numbers, not just the numbers. Ian's bar: <em>"every Tuesday, a perfectly written summary of exactly what is going on."</em> Reports are described in a sentence rather than configured, the agent renders an example to correct, then takes a cadence.</li>
     <li><strong>On-demand reports and reusable templates.</strong> A custom report asked for in plain language and answered within the asker's own permissions, saveable as a template that re-runs later without AI processing.</li>
-    <li><strong>The Agent Inbox.</strong> The central queue where alerts, reports and agent-proposed plans land for review and approval. The front end is already stood up and demonstrated; phase two connects it, so approving a plan in the queue executes it through the same gate and audit trail as the conversation.</li>
   </ul>
-  <p class="small"><strong>Done means:</strong> a change or a threshold produces an alert in the inbox with the analysis attached, a scheduled report arrives written rather than raw, and a proposed plan can be approved and executed from the queue.</p>
+  <p class="small"><strong>Done means:</strong> an alert raised by the platform arrives in the inbox with the analysis attached and an action that can be approved from the queue, and a scheduled report arrives written rather than raw.</p>
+  <p class="small"><strong>Needed from TXN and its partners:</strong> an agreed feed of alert and change events from Direct Transact and the Stackworkz Console. Where no feed exists, the inbox can still carry the reports and the agent-proposed plans, and the alert stream is added when the platform raises one.</p>
 
   <div class="callout txn"><strong>This is the AI-first surface.</strong> A dashboard makes a person do the analysis. An alert that explains the driver, and a report that hands over the conclusion, do the analysis instead. That difference is the whole argument for an agentic layer rather than more screens.</div>
     </div>
@@ -593,7 +599,7 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
       <text x="416" y="142" font-size="9" fill="#09142F">page-scoped answers, guided configuration, plan then act</text>
 
       <rect x="410" y="170" width="415" height="16" rx="4" fill="#A1BCD1"/>
-      <text x="416" y="182" font-size="9" fill="#09142F">inbox connected, change-impact alerts, thresholds, scheduled reports</text>
+      <text x="416" y="182" font-size="9" fill="#09142F">inbox connected, alerts presented and actioned, scheduled reports</text>
 
       <rect x="480" y="210" width="345" height="16" rx="4" fill="#A1BCD1"/>
       <text x="486" y="222" font-size="9" fill="#09142F">built on simulation, then connected, then handed over</text>
@@ -613,7 +619,7 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
     <tbody>
       <tr><td><strong>Weeks 1 and 2</strong><br><span class="muted xsmall">1 to 15 October</span></td><td>The documentation MCP server built and exposed, and the hub co-pilot taken from prototype to working. Speed measurement starts reporting figures</td><td><strong>The milestone.</strong> The knowledge hub AI demonstrable end to end, connectable from a developer's own agent</td></tr>
       <tr><td><strong>Weeks 3 to 6</strong><br><span class="muted xsmall">mid-October to mid-November</span></td><td>Sandbox assist and the anomaly loop. Continuous Umbraco pull in place. The wire-in opens: production routing settled with Stackworkz, then tools moved to live endpoints as they land. Co-pilot v1 and the Agent Inbox both start</td><td>A developer gets a failed request diagnosed, the first tools call the real API, and the Console carries a page-aware assistant</td></tr>
-      <tr><td><strong>Weeks 7 to 9</strong><br><span class="muted xsmall">mid-November to end November</span></td><td>The email gate and lead capture. The onboarding agent built against the simulation. Change-impact alerts, thresholds and the first scheduled reports landing in the inbox. Wire-in continues onto the agentic experience</td><td>An evaluator becomes a captured lead, and a client can be onboarded against test data</td></tr>
+      <tr><td><strong>Weeks 7 to 9</strong><br><span class="muted xsmall">mid-November to end November</span></td><td>The email gate and lead capture. The onboarding agent built against the simulation. The first alerts presented and actioned in the inbox, and the first scheduled reports landing in it. Wire-in continues onto the agentic experience</td><td>An evaluator becomes a captured lead, and a client can be onboarded against test data</td></tr>
       <tr><td><strong>Weeks 10 and 11</strong><br><span class="muted xsmall">1 to 15 December</span></td><td>Consolidation. The onboarding agent connected to the real sources, the phase handed over, and the Phase 3 scope agreed together against what actually exists</td><td>Phase two complete and documented, with Phase 3 scoped rather than assumed</td></tr>
     </tbody>
   </table>
@@ -687,7 +693,7 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
 
 <!-- ============ 08 HOW TO PROCEED ============ -->
 <section class="page">
-  <div class="fit" style="--s:0.9">
+  <div class="fit" style="--s:0.78">
   <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Phase Two &middot; Proposal v1.0</span></div>
   <div class="sechead"><div class="bar"></div><div>
     <div class="secno">10</div><h2 class="sect">Terms and how to proceed</h2>
@@ -700,7 +706,7 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
       <tr><td><strong>Scope</strong></td><td>The six components in sections 02 to 07. Within them, TXN sets the weekly order in the standing review; the fee does not move with the mix.</td></tr>
       <tr><td><strong>Team</strong></td><td>The same full-time three-person team that delivered the pilot: AI Product Owner, AI Engineer and Forward Deploy Engineer, with a named lead accountable.</td></tr>
       <tr><td><strong>Reporting</strong></td><td>A weekly flight plan carrying progress, measured response times and the week's risks, with fortnightly demonstrations of working software.</td></tr>
-      <tr><td><strong>Needed from TXN</strong></td><td>A separate Umbraco API key for the knowledge hub, and for the wire-in a destination environment and the production routing decision with Stackworkz. Phase two starts without the last two; component 2 is paced by them.</td></tr>
+      <tr><td><strong>Needed from TXN</strong></td><td>A separate Umbraco API key for the knowledge hub. For the wire-in, a destination environment and the production routing decision with Stackworkz. For component 4, an agreed feed of alert and change events from Direct Transact and the Console. Phase two starts without them; the components that need them are paced by them.</td></tr>
       <tr><td><strong>AI consumption</strong></td><td>Model usage runs on TXN's own provider accounts and is not charged by Novosapien. Cloud and observability hosting are excluded.</td></tr>
       <tr><td><strong>IP</strong></td><td>TXN owns all intellectual property in the deliverables, assigned as created with full title guarantee and not conditional on payment, as under the Pilot Order.</td></tr>
       <tr><td><strong>Phase 3</strong></td><td>Not committed by this proposal. Its scope is agreed together in the final fortnight of phase two, against what exists rather than against a list written in July.</td></tr>
