@@ -558,16 +558,17 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
 
 <!-- ============ 06 THE TWO AND A HALF MONTHS ============ -->
 <section class="page">
-  <div class="fit" style="--s:0.84">
+  <div class="fit" style="--s:0.78">
   <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Phase Two &middot; Proposal v1.0</span></div>
   <div class="sechead"><div class="bar"></div><div>
     <div class="secno">08</div><h2 class="sect">How the two and a half months are used</h2>
   </div></div>
 
-  <p class="lead">Two and a half months, from 1 October to 15 December. One fixed milestone in the second week of October; everything after it is sequenced against the partner dependencies rather than promised to a date it does not control.</p>
+  <p class="lead">Two and a half months, from 1 October to 15 December. <strong>The knowledge hub starts on 1 October</strong> and is demonstrable in the second week, which is the one fixed milestone. <strong>The wire-in and Co-pilot v1 open a week later, on 8 October</strong>, so the hub reaches its milestone before the team spreads across the rest. Everything after that is sequenced against the partner dependencies rather than promised to a date it does not control.</p>
 
   <div class="gantt">
     <svg viewBox="0 0 940 316" xmlns="http://www.w3.org/2000/svg" font-family="Geist, sans-serif">
+      <text x="252" y="38" font-size="8" fill="#22C55E" font-weight="700">STARTS 1 OCT</text>
       <g font-size="11" fill="#64748B" font-weight="600">
         <text x="330" y="18">October</text><text x="560" y="18">November</text><text x="800" y="18">Dec, to the 15th</text>
       </g>
@@ -576,7 +577,7 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
         <line x1="710" y1="26" x2="710" y2="280"/><line x1="825" y1="26" x2="825" y2="280"/>
       </g>
       <line x1="332" y1="26" x2="332" y2="280" stroke="#ed0a59" stroke-width="2" stroke-dasharray="4 3"/>
-      <text x="337" y="38" font-size="10" fill="#ed0a59" font-weight="600">Knowledge hub AI demonstrable</text>
+      <text x="337" y="38" font-size="9.5" fill="#ed0a59" font-weight="600">Knowledge hub AI demonstrable</text>
 
       <g font-size="10.5" fill="#09142F">
         <text x="6" y="58">1 &#183; Knowledge Hub</text>
@@ -588,15 +589,15 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
       </g>
 
       <rect x="250" y="47" width="82" height="16" rx="4" fill="#ed0a59" opacity="0.85"/>
-      <text x="338" y="59" font-size="9" fill="#09142F">MCP server and co-pilot to the milestone</text>
+      <text x="338" y="59" font-size="9" fill="#09142F">from 1 Oct: MCP server and hub co-pilot to the milestone</text>
       <rect x="332" y="67" width="378" height="16" rx="4" fill="#A8CDFF"/>
       <text x="338" y="79" font-size="9" fill="#002c3c">sandbox assist, anomaly loop, email gate and lead capture</text>
 
-      <rect x="332" y="90" width="493" height="16" rx="4" fill="#A1BCD1"/>
-      <text x="338" y="102" font-size="9" fill="#09142F">routing settled, then tool by tool onto the live API as the endpoints land</text>
+      <rect x="302" y="90" width="523" height="16" rx="4" fill="#A1BCD1"/>
+      <text x="308" y="102" font-size="9" fill="#09142F">from 8 Oct: routing settled, then tool by tool onto the live API as the endpoints land</text>
 
-      <rect x="410" y="130" width="415" height="16" rx="4" fill="#A1BCD1"/>
-      <text x="416" y="142" font-size="9" fill="#09142F">page-scoped answers, guided configuration, plan then act</text>
+      <rect x="302" y="130" width="523" height="16" rx="4" fill="#A1BCD1"/>
+      <text x="308" y="142" font-size="9" fill="#09142F">from 8 Oct: page-scoped answers, guided configuration, plan then act</text>
 
       <rect x="410" y="170" width="415" height="16" rx="4" fill="#A1BCD1"/>
       <text x="416" y="182" font-size="9" fill="#09142F">inbox connected, alerts presented and actioned, scheduled reports</text>
@@ -617,8 +618,8 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
   <table>
     <thead><tr><th>Window</th><th>What happens</th><th>What done looks like</th></tr></thead>
     <tbody>
-      <tr><td><strong>Weeks 1 and 2</strong><br><span class="muted xsmall">1 to 15 October</span></td><td>The documentation MCP server built and exposed, and the hub co-pilot taken from prototype to working. Speed measurement starts reporting figures</td><td><strong>The milestone.</strong> The knowledge hub AI demonstrable end to end, connectable from a developer's own agent</td></tr>
-      <tr><td><strong>Weeks 3 to 6</strong><br><span class="muted xsmall">mid-October to mid-November</span></td><td>Sandbox assist and the anomaly loop. Continuous Umbraco pull in place. The wire-in opens: production routing settled with Stackworkz, then tools moved to live endpoints as they land. Co-pilot v1 and the Agent Inbox both start</td><td>A developer gets a failed request diagnosed, the first tools call the real API, and the Console carries a page-aware assistant</td></tr>
+      <tr><td><strong>Weeks 1 and 2</strong><br><span class="muted xsmall">1 to 15 October</span></td><td><strong>The knowledge hub starts on 1 October:</strong> the documentation MCP server built and exposed, then the hub co-pilot taken from prototype to working. <strong>The wire-in and Co-pilot v1 open on 8 October.</strong> Speed measurement starts reporting figures</td><td><strong>The milestone.</strong> The knowledge hub AI demonstrable end to end, connectable from a developer's own agent</td></tr>
+      <tr><td><strong>Weeks 3 to 6</strong><br><span class="muted xsmall">mid-October to mid-November</span></td><td>Sandbox assist and the anomaly loop. Continuous Umbraco pull in place. The wire-in continues: production routing settled with Stackworkz, then tools moved to live endpoints as they land. Co-pilot v1 builds out and the Agent Inbox starts</td><td>A developer gets a failed request diagnosed, the first tools call the real API, and the Console carries a page-aware assistant</td></tr>
       <tr><td><strong>Weeks 7 to 9</strong><br><span class="muted xsmall">mid-November to end November</span></td><td>The email gate and lead capture. The onboarding agent built against the simulation. The first alerts presented and actioned in the inbox, and the first scheduled reports landing in it. Wire-in continues onto the agentic experience</td><td>An evaluator becomes a captured lead, and a client can be onboarded against test data</td></tr>
       <tr><td><strong>Weeks 10 and 11</strong><br><span class="muted xsmall">1 to 15 December</span></td><td>Consolidation. The onboarding agent connected to the real sources, the phase handed over, and the Phase 3 scope agreed together against what actually exists</td><td>Phase two complete and documented, with Phase 3 scoped rather than assumed</td></tr>
     </tbody>
@@ -631,7 +632,7 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
 
 <!-- ============ 07 INVESTMENT ============ -->
 <section class="page">
-  <div class="fit" style="--s:0.68">
+  <div class="fit" style="--s:0.76">
   <div class="runhead"><span style="display:inline-flex;align-items:center;gap:5px;"><span class="brandmark" style="width:.72rem;height:.72rem;"></span><span class="wordmark">novo<span class="sp">sapien</span></span></span><span>TXN Phase Two &middot; Proposal v1.0</span></div>
   <div class="sechead"><div class="bar"></div><div>
     <div class="secno">09</div><h2 class="sect">Investment</h2>
@@ -657,21 +658,15 @@ td.num,th.num{text-align:right; font-family:'Geist Mono',monospace;}
     </div>
   </div>
 
-  <h3>Where the capacity lands, by component</h3>
+  <h3>How the price is built up</h3>
   <table>
-    <thead><tr><th>Component</th><th class="num">Indicative allocation</th></tr></thead>
+    <thead><tr><th>Basis</th><th class="num">Rate</th><th class="num">Amount</th></tr></thead>
     <tbody>
-    <tr><td>2 &middot; Wire-in: Full Agentic Experience to production</td><td class="num">&pound;34,000.00</td></tr>
-    <tr><td>2 &middot; Wire-in: Agent Access Layer, mock to real API</td><td class="num">&pound;20,000.00</td></tr>
-    <tr><td>3 &middot; Co-pilot v1</td><td class="num">&pound;16,000.00</td></tr>
-    <tr><td>1 &middot; The Knowledge Hub</td><td class="num">&pound;12,000.00</td></tr>
-    <tr><td>4 &middot; Agent Inbox and Alerts v1</td><td class="num">&pound;8,312.50</td></tr>
-    <tr><td>5 &middot; The customer onboarding agent</td><td class="num">Included</td></tr>
-    <tr><td>6 &middot; Speed, stability and usability</td><td class="num">Included</td></tr>
-    <tr class="grand"><td>Phase two fee &middot; 2.5 months at &pound;36,125</td><td class="num">&pound;90,312.50</td></tr>
+    <tr><td>Full-time three-person team, per month</td><td class="num">&pound;36,125</td><td class="num">&mdash;</td></tr>
+    <tr><td>Phase two duration</td><td class="num">2.5 months</td><td class="num">&mdash;</td></tr>
+    <tr class="grand"><td>Phase two fee (2.5 &times; &pound;36,125)</td><td class="num"></td><td class="num">&pound;90,312.50</td></tr>
     </tbody>
   </table>
-  <p class="small muted">The allocations are the ones set out in the Agentic Layer proposal and are indicative of where capacity lands, not a fixed price per component. Components 5 and 6 carry no separate allocation because they were not in that proposal's list; they are absorbed within the same team envelope, since the engagement buys the team for the period rather than a fixed scope.</p>
 
   <div class="callout txn"><strong>Fair by construction.</strong> At standard day rates the same three-person team over two and a half months is about &pound;133,875. Phase two is &pound;90,312.50, around a third less, because it is charged at the committed monthly team rate rather than a day rate. You are buying the team for the period, not a fixed scope, so the price does not move with what the team builds.</div>
 
