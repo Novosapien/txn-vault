@@ -18,9 +18,9 @@
   --border:#dbe3ea;
 }
 *{box-sizing:border-box; margin:0; padding:0;}
-html{-webkit-print-color-adjust:exact; print-color-adjust:exact;}
+html{-webkit-print-color-adjust:exact; print-color-adjust:exact; font-size:15px;}
 body{font-family:'Geist',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-  color:var(--ns-navy); background:#cdd6df; line-height:1.6; font-size:15px;}
+  color:var(--ns-navy); background:#cdd6df; line-height:1.58; font-size:14px;}
 
 .page{width:210mm; min-height:297mm; margin:10mm auto; background:var(--ns-bg-light);
   padding:22mm 20mm; position:relative; box-shadow:0 8px 40px rgba(9,20,47,.18); overflow:hidden;}
@@ -34,7 +34,7 @@ body{font-family:'Geist',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans
 @media print{
   body{background:#fff;}
   .page{margin:0; box-shadow:none; width:210mm; height:297mm; min-height:297mm; overflow:hidden;
-        padding:18mm 20mm 16mm; position:relative; page-break-after:always; break-after:page;}
+        padding:18mm 20mm 26mm; position:relative; page-break-after:always; break-after:page;}
   .page:last-child{page-break-after:auto; break-after:auto;}
   .page.cover-hero, .page.closing-hero{padding:22mm 20mm;}
   .pagefoot{position:absolute; bottom:10mm; left:20mm; right:20mm; display:flex; justify-content:space-between; padding-top:8px;}
