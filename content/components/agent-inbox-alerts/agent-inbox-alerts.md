@@ -81,6 +81,15 @@ Agent Inbox & Alerts
 >
 > **Ian's question is unanswered and it is the same one as [[open-questions]] #68, arriving from the other end:** *"What defines the need for an alert? How are we going to identify that something requires an alert?"* He set out the poles himself, either resource-heavy configuration or agentic determination, and noted the historical alternative of configuring alerts on a platform and letting them run. George's answer was partial: it depends on **what Direct Transact expose**. #68 records that DT has no alerting system at all, so if nothing on the platform side raises alerts, **the detection logic is ours to define as well as to build**.
 
+> [!important] The alert is a delivery obligation; the AI is a layer on top (29-09-2026)
+> Ian set the standard, treating an alert service as an always-on duty ([[2026-09-29-agentic-standup]]): *"if you offer an alert service, the fact that it's being powered by AI, I wouldn't care less as the client. I don't care. I expect this scenario happened, I expect an alert, you didn't deliver an alert, and this has been the impact to my business."* His comparison: *"I don't see it as any difference to one failover from one data centre to another."*
+>
+> **George's answer, and it is the design principle for this component:**
+>
+> *"There's level one alerts, which is just, here you go, here's the alert. **Without any AI, that can still be delivered.** The request would be consumed, alerted to the user... In the worst case, if every single LLM in the world is out, [we] can still make sure that that alert is delivered. It might not have all of the AI niceties with it, but at least it's still notifying the user that you've had 50 declines today, it's over your threshold of 10."*
+>
+> So the pipeline splits: **consume and deliver** must not depend on a model, and **investigate, plan and act** are enhancements that degrade. Above that sits a **provider hierarchy**, level one, two and three across Google, Anthropic and OpenAI. Neither is built. [[open-questions]] #85.
+
 ## 2. What Needs to Happen?
 
 **Functional requirements — three alert mechanisms:**

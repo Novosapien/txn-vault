@@ -100,6 +100,23 @@ Reviews of the client's own console feedback queue, read from `txn.feedback` and
 >
 > **The rework estimate given on the call is lower than the same day's analysis.** George told Ian *"most of it's going to be slight iterations or updates or an extra field"* and *"it's not days of work"*. The impact analysis run that morning (`specs/2026-09-22-txn-api-spec-refresh/impact-analysis.md`) returns the verdict **STOP**, from nested spend-control fields, two new enums that reject values the SOPs send, a missing masked card number, and 20 tools absent from the spec. Tracked at [[open-questions]] #94.
 
+> [!important] Phase two, and Ian's framing of it (29-09-2026)
+> The proposal is sent. **Ian had not read it** and left before the walkthrough, so Michael took it ([[2026-09-29-agentic-standup]]).
+>
+> | | Detail |
+> |---|---|
+> | Duration | **Two and a half months**, to the end of the year |
+> | Structure | **Six components** |
+> | Contents | Stitching everything in; co-pilots and MCP servers on the dev portal; the agentic AI layers; **a first co-pilot in the Console**; alerting |
+> | Scale | *"There's like **50, 60 workflows** that we're managing and building out"* |
+> | Shape | Deliberately loose in places, *"so we can add some more bits into it"* |
+>
+> **Ian: *"Phase 2 is what we will go to market with.*** Then there will be no diving into Phase 3, because we need to understand what the feedback is. **We need to have actual people using this thing** before we set an agreement."*
+>
+> **And his review test ties scope to messaging:** *"is there anything that is not in Phase 2 that we think we absolutely have to have at the point that we start servicing our clients, for it to meet what we've envisaged, **but also the message that we're giving to the market, because that's how we need to set the scope**."*
+>
+> **That collides with [[open-questions]] #96.** On 23 September Nicola and Bron agreed to announce the full proposition at launch, without Ian present. He has now said the market message sets the scope, so if the message is bullish and phase two is not, the gap lands in this proposal. He has read neither. [[open-questions]] #99.
+
 ## What the current plan says
 
 ### Scope and presentation changes, 16 September
