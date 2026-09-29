@@ -42,6 +42,17 @@ It is **deliberately light**: Ian's explicit steer is to invest in the [[docs-mc
 >
 > **The entry point moves.** Today it takes two steps, *"click one thing and then you click ask AI and then it pops up."* The intent is a **permanently available side panel**, *"more like a typical co-pilot where it's kind of always there. Click it, pops up straight away"*, without being intrusive. Ian: *"sounds good."*
 
+> [!note] Demonstrated and endorsed, 29 September 2026
+> Hasan showed a working co-pilot on the cardholder documentation page, reached through a small **Ask AI** icon ([[2026-09-29-agentic-standup]]). Built early: Brett, *"we've been a little bit cheeky just because we're worried about the timeline, and we've started building the co-pilot because we had some spare capacity."* It therefore arrived **before** the MCP server that was prioritised ahead of it on 16 September.
+>
+> **What it does today.** Answers a question such as *"how do I issue a card"* with required headers, key fields and optional fields; **cites the source and links to that page**; and produces an **example payload**, expandable for copy and paste.
+>
+> **Planned next:** chat history, export, one-click copy of the payload *"if you just want to paste it anywhere, into Claude, into ChatGPT"*, and navigating the reader to the relevant page from the answer.
+>
+> **Michael:** *"It looks fantastic so far. **Exactly what we're thinking** in terms of being there, asking the AI, using the guides, using the reference."* **51 documents** are in the CMS for it to work from.
+>
+> **The wider principle Ian set on the same call:** build for how developers work now. Marqeta's portal offers per-page export into a model, and Michael's specification for Stackworkz lists copy page, copy as LLM text, view as markdown, **open in ChatGPT**, **open in Claude**, ask in **Perplexity**, **connect with Cursor** and **connect with VS Code**. Stackworkz builds the first few; the MCP install follows from Novosapien. Ian: *"the people who build and connect to that platform will be building in a different way than they traditionally have, and therefore we need to make sure that we're fit for purpose."*
+
 ## 2. What Needs to Happen?
 
 **Functional requirements:**

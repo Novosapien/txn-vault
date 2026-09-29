@@ -331,6 +331,15 @@ Positioning material from interview 1 (tagline, value proposition) is deliberate
 >
 > **One thing to confirm rather than assume.** Ian recalled *"five categories"* from the ICP work. The framework settled on 3 September has **four** card program statuses ([[icp-definition]]). Probably a slip, but he is the author of the original bucketing, so it is worth checking rather than correcting him silently.
 
+> [!warning] An unvalidated cohort artefact is with the client (23-09-2026)
+> Brett demonstrated a research run across the four MVP markets, grading companies on their likelihood of buying or switching, and gave his own caveat plainly ([[2026-09-23-pr-consultant-briefing]]): *"I fired up the agents from an MCP server and said, okay, I want you to do something slightly different. And **this ran for three days** before it generated this. So I've sent this to them. **It's probably not that accurate, because I didn't run any validation agents against it.**"*
+>
+> His stated next step is the real pipeline: *"we compile lists based on those ICPs, and then we build out those lists, and then we do research on those lists, and then we make sure you guys are happy with what we're going to be targeting."*
+>
+> **Worth checking before treating Ian's verdict as a finding about the method.** On 16 September Ian said the target list *"doesn't seem to be big enough."* If what he saw was this artefact rather than a register built from [[icp-definition]] and [[discovery-sources]], his judgement was formed against a demonstration. He also offered it to Bron and Nicola.
+>
+> **One addition worth taking.** Nicola: *"occasionally people would post saying that they're putting out an RFP... 'would anyone recommend an issuer processor for the Hungarian market?'"* That sits against Ian's 2 September ruling that no RFP marketplace exists in card issuing, and both are true: no formal channel, but informal demand surfacing on social. The influencer and topic monitoring already built for content is the same mechanism pointed at a different list, so it is cheap to try.
+
 ## Open items
 
 | Item | Needs | Who |

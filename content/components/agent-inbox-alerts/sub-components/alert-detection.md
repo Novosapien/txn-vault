@@ -37,6 +37,27 @@ description: "Spec for cheap alert detection — threshold trips, config-change 
 >
 > **Creation is by natural language**, the same mechanism as [[scheduled-reporting]]: *"alert me when [x] is over a certain amount."*
 
+> [!important] Scope settled 29 September 2026: DT detects, Novosapien consumes
+> Ian challenged the phase two wording live, *"it says not an alerting system, so detection stays with DT. What is an alerting system?"* ([[2026-09-29-agentic-standup]]). Brett drew the line: *"the originating source of the alert... it's going to be difficult for us to build that. But **taking the alerts, putting it into an inbox, making sure it's delivered, and allowing it to take action, happy days.**"* And the principle: *"I want to just use the standard stuff that comes with Azure"* rather than rebuild.
+>
+> **So the [!warning] above resolves.** DT does not need to build an alerting system, because **Azure's native logging and alerting is the detection layer**. [[open-questions]] #68.
+>
+> **Two classes, needing different machinery:**
+>
+> | | Technical errors | Anomalies |
+> |---|---|---|
+> | Source | Azure built-in logging, webhooks, TXN-set baselines | The **data lake** |
+> | Example | An API call fails | *"You make a change and declines go down by 20%"* |
+> | Nature | Something is broken | *"Not an error, really, but it's a known configuration [change]"* |
+> | Trigger | Push, on failure | Scheduled jobs or agent routines looking for variance |
+> | Status | DT logging exists; Michael checking *"they're of appropriate quality"* | **Blocked.** DT has not returned the data lake architecture |
+>
+> **Detection must be variance-based, not threshold-based.** Michael, from Marqeta: *"not just 11 over 10, because maybe there's nine all the time. But it's the percentage difference. So if there was none and then we had 20, then obviously that was an issue, versus going from 20 to 21."*
+>
+> **Severity follows business impact, not error volume.** Transaction availability is highest, *"that's a purchase from a cardholder that doesn't work."* Then APIs grouped by whether failure breaks a user flow: a card that cannot be created is an app failure; a transaction list that will not load can be retried.
+>
+> **The remaining gap is instant detection.** Scheduled checks are straightforward; catching something the moment it happens needs a push, which is the webhook at [[open-questions]] #10, deprioritised behind Visa certification and now unblocked.
+
 ## 1. What Does This Sub-Component Do?
 
 **Functional purpose:**
