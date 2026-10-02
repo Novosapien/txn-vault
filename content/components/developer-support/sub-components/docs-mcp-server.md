@@ -58,6 +58,15 @@ It has **two levels of capability**:
 >
 > **The refresh design George stated on the call:** query Umbraco through the API, hold **a representation of the content on the MCP server**, and refresh it *"be it on a timer or more webhook based where it's like content changed, update"*, so the next tool call always reads current content. That is the continuous-pull hygiene requirement from 16 September, now with a mechanism.
 
+> [!important] How the documentation gets in, and the versioning gap (01-10-2026)
+> **The design is confirmed** ([[2026-10-01-agentic-standup]]). George: *"we're going to build a **local representation, or local file system version, of the documentation within the MCP server**. So when the agent is querying it, it acts exactly like a local file system, which these agents are really good at understanding and searching, rather than putting them in a vector database."*
+>
+> **Freshness is solved by the CMS webhooks.** *"When content published or unpublished or whatever event happens, we're going to update the representation for the agent, so that **every single time it's responding, it's directly aligned with what's published**. There's not going to be a case where it's answering from a piece of documentation that's two, three days, or even weeks old."* The API specification has no webhooks, so it is polled: *"it's quite a cheap operation."*
+>
+> **But nothing tells it which version of the specification a developer means.** Michael: **"as of now it's all manual versioning. There's no, nothing in place at the moment."** TXN keeps two versions, current plus upcoming or previous, across a staging, public sandbox, client UAT and production lifecycle, and the design goal is that *"you don't need to know the version number."* The gap is a developer who built against production and ignored the version in UAT. **Ian's resolution: ask which stage they are on, up front**, the same pattern as the suspend-card fix.
+>
+> **Two rulings worth following.** **Read the authored change log, never compute a diff**; Ian: a diff is *"more prone to potential errors... however good the models are, they still come up with some stuff that's just not accurate."* Change logs go into Umbraco, possibly on their own endpoint. George: *"all we need is the current version of the YAML and the change log, without doing any fancy stuff."* And **release notes must be sanitised in Umbraco, not by the agent**, because the hub is unauthenticated and the agent repeats what it is given. [[open-questions]] #101.
+
 ## 2. What Needs to Happen?
 
 **Functional requirements:**

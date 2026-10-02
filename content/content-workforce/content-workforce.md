@@ -56,6 +56,19 @@ The Content Workforce needs three configured inputs before it can generate on TX
 >
 > **Nicola and Bron can both be given platform access**, and the pipeline is visible to everyone in the account.
 
+> [!warning] Paused until January 2027 (01-10-2026)
+> Ian, by email before the 1 October standup and confirmed on it ([[2026-10-01-agentic-standup]]): *"given that the launch and the post-launch activity is the primary thing, we're just going to hand that over to the marketing team and the external PR agency to manage that piece, and then **we'll pick back up with you in January**."*
+>
+> **Two reasons.** Too much running at once with launch taking priority, and feedback on the drafts: *"some of the themes from Tyler's document were a bit more appropriate to a company that had been in the market a little bit longer."* What TXN wants is *"a plan of what it is we're trying to achieve over the course of the first kind of three to six months."*
+>
+> **A pause, not a cancellation:** *"you guys are very much part [of the] plans. It's just a case of just pausing while we get this first part done."* The marketing team's 2027 plan comes back before January. Tyler's drafts stay available for personal posting.
+>
+> **What parks with it:** the pillars, the brand entity, and **Michael's personal onboarding, the only one outstanding, which will not now happen before launch**. [[open-questions]] #86 and #82 become January problems.
+>
+> **Two things to carry into January.** The commercial position, since the engagement was only ever **verbally agreed** on 4 August and never papered ([[commercial]]). And [[open-questions]] #96, because the content now sits with Bronwyn and Nicola, the two people who agreed the bullish launch messaging on 23 September in a room Ian was not in. He should see that before they write to it.
+>
+> Full treatment at [[open-questions]] #100.
+
 ## Method
 
 Max pre-loads everything known about the business, including TXN's own supplied documents, and generates a first draft of each output. The session is then a **refinement workshop** against that draft rather than a day-long interview from a blank page. Roughly an hour per session instead of four.
