@@ -16,6 +16,19 @@ Cross-cutting technical decisions that affect the whole product. This directory 
 | Integrations | Third-party services, APIs, data feeds, build-partner environments | Collecting | [[integrations]] |
 | Workstream 1 & 2 deployment | TXN-controlled Azure multi-region platform (Front Door, WAF, IAM, API Management, AKS, Key Vault, SQL) | Confirmed · diagram 1st draft | [[workstream-1-2-architecture]] |
 
+> [!important] Where the AI layer is hosted, settled 6 October 2026
+> Michael, confirming the deployment shape ([[2026-10-06-agentic-standup]]). Today the Console and the APIs sit **inside DT's PCI environment**, *"so it is covered to hold that sort of data. Not PCI in plain text, but personal data and stuff like that."*
+>
+> For the agentic layer: *"in the initial designs there is console, knowledge hub, website. **All we would do is just spin up another node for any central AI layer**, and that's where it would basically live alongside the API in that same **European Azure stack**."*
+>
+> Status: *"pretty much finalised now. Still waiting for sort of documentation, but it's built, it's all there, looking at pushing that towards production."* Only *"small tweaks"* are expected on Novosapien's side to deploy into it.
+>
+> **So: a dedicated node for the AI layer, in DT's European Azure stack, inside the PCI-covered environment.** That answers [[open-questions]] #70 on hosting and most of #69 on storage, and it is the environment TXN's privacy policies will describe.
+>
+> **Still open.** Where the **checkpointing store** lives, the database the agents write conversation history and traces to. George raised it himself: *"if there's anything else we might need to use, then we're going to need to make sure that we strip out anything that could be sensitive data."* Those transcripts will hold whatever PII the agent retrieved (#102), so it should be decided rather than defaulted into.
+>
+> **And the model question this does not answer.** #70 originally asked whether hosting in DT's tenant constrains which models can be used. It was not raised, the list is still owed, and it now needs a third provider on it since the fallback chain reaches OpenAI (#103).
+
 ## Decisions
 
 _Cross-cutting calls made in client sessions._
