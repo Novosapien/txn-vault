@@ -53,6 +53,15 @@ It is **deliberately light**: Ian's explicit steer is to invest in the [[docs-mc
 >
 > **The wider principle Ian set on the same call:** build for how developers work now. Marqeta's portal offers per-page export into a model, and Michael's specification for Stackworkz lists copy page, copy as LLM text, view as markdown, **open in ChatGPT**, **open in Claude**, ask in **Perplexity**, **connect with Cursor** and **connect with VS Code**. Stackworkz builds the first few; the MCP install follows from Novosapien. Ian: *"the people who build and connect to that platform will be building in a different way than they traditionally have, and therefore we need to make sure that we're fit for purpose."*
 
+> [!note] Progress, and a reason to bring it forward (06-10-2026)
+> **In build, updates due Thursday** ([[2026-10-06-agentic-standup]]): **page navigation**, so asking about an endpoint takes the reader to that page; **chat export** to markdown or straight into Claude, ChatGPT or Perplexity; and next, **the agent making sandbox calls on the user's behalf**, showing the payload and request, with a copy button so a developer can take it into Postman. Michael: *"that's pretty much covered off what we expected to do."*
+>
+> **And a competitive reason to have it at launch rather than after.** Michael: *"especially now **Marqeta has redesigned their website to be very much co-pilot up front**. So that's quite a shift from them. I think at least matching that would be ideal, either at launch or very close afterwards."*
+>
+> Dorte wants it prioritised: *"when we go to market we need to have a differentiator to keep the interest, because the moment you launch something that doesn't look fairly interesting testing, people don't go any further. **So it's the one time we launch, we need to get it right.**"* **The decision is Ian's.** [[open-questions]] #105.
+>
+> **Retention position for the sandbox it sits on:** the public sandbox is kept *"for a very short window of time, obviously public data"*, and the **per-user personal sandbox arrives with sign-up as a later phase**, which confirms the phasing for log-based support at #102.
+
 ## 2. What Needs to Happen?
 
 **Functional requirements:**

@@ -158,6 +158,18 @@ Michael sent the new spec URL by email on 21 September. DT moved the gateway pre
 
 **The URL shape returns to what the script expects.** The two specs now sit at **different base paths under the same filename**, `external/api-specification.yml` and `internal/api-specification.yml`, which is the shape `fetch_spec.py` was written for. Point `TXN_EXTERNAL_BASE_URL` and `TXN_INTERNAL_BASE_URL` at the two new paths and the `--internal` flag is correct again, so the one-line fix at [[open-questions]] #67 may no longer be needed. Every URL in `txn/.env` still carries the old `/api/stg/` prefix. (Source: `specs/2026-09-22-txn-api-spec-refresh/reference/api-delta.md`, not the call.)
 
+## Why the specification shrank, and why that is good
+
+Explained on 1 October 2026 ([[2026-10-01-agentic-standup]]), answering [[open-questions]] #94.
+
+Michael, with DT's reply: *"the reason things have disappeared is there are sort of aligning to what's been built, specifically what's been deployed... **as they build and deploy these APIs, that's when they'll show up in the YAML.** Hence why the spend controls has disappeared. That's because the initial [one] was basically really quickly generated. Now it's actually built off the code."*
+
+His verdict: *"**in a way it's much better, much more accurate**, but obviously it does mean you've lost some of that future stuff that you did have before."*
+
+**So the 98 to 46 operation drop was never scope being cut.** The original specification was a forecast of what DT intended to build; the current one is generated from code that exists. Those operations were not removed, they were never built. Movement from here is additive.
+
+**DT say development finishes this sprint.** JWT endpoints land in the YAML within a day, after which the specification should be *"pretty much complete from an endpoint point of view"*, minus the cards endpoint. Michael still has to verify it and expects *"a few minor changes to the fields."* The YAML can be pulled from the new URLs without a full JWT key.
+
 ## Spend controls: the hierarchy, and a live gap
 
 Described by Michael on 15 September 2026 ([[2026-09-15-agentic-standup]]), after the agent gave a false answer about them ([[open-questions]] #89).
