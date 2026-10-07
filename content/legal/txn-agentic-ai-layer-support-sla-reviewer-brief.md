@@ -188,6 +188,16 @@ Schedule 4 mirrors MSA Schedule 3, and the same correction applies. **Read secti
 
 **Why this matters more here than in the MSA.** This Agreement is the one that runs for twelve months after the build stops, and it is the one under which Novosapien holds standing support access to a live card-issuing platform. If Dorte's external counsel reads one data schedule closely, it will be this one.
 
+### 15.3B The licensing handover, and why it usually lands before this Agreement starts
+
+Added 7 October 2026 on Brett's instruction. The Master Service Agreement now defines **Production Cutover**: the date a Deliverable first operates in the TXN Production Environment, confirmed in writing by both parties. **Before cutover** Novosapien licenses and runs the AI Model Services on its own accounts, so build and UAT are not held up waiting for TXN to contract with a model provider. **At cutover** the processing and the model licensing transfer to TXN, and the layer runs on TXN's LLM contracts. Full reasoning in section 14.4B of the MSA reviewer brief.
+
+**What that means for this Agreement specifically.** Support commences on **16 December 2026**, and the Deliverables are expected to be in the production environment by then. So the **normal position under this Agreement is that the model providers are TXN's processors, not Novosapien's sub-processors**, which is a materially lighter position for Novosapien than the MSA carries during Phase 2.
+
+Schedule 4 still lists the three providers in Part B, and that is deliberate. If any component of the Supported System has not cut over at the Commencement Date, the pre-cutover position applies to that component until it does. Listing them costs nothing and removes an argument. Part A(d) carries the same rule as the MSA: a provider used only as a failover is still a sub-processor.
+
+**The point for counsel.** Do not read Part B as a statement that Novosapien holds the model contracts during the support term. It is a fallback for an incomplete cutover. Clause 1.1 now imports the MSA's defined terms so the two documents cannot drift on this.
+
 ### 15.4 Open points for counsel, refreshed
 
 Carried forward and still open:
@@ -208,4 +218,5 @@ New with v0.2:
 
 **Not final legal advice.** It needs a qualified solicitor's review before execution. The service-level targets and the exclusions are Novosapien's commercial positions and have been taken deliberately; the legal mechanics have not been reviewed by a practising solicitor.
 
-9. **There is still no signed data processing agreement anywhere in this engagement** (vault open question #103). Dorte raised it on 6 October 2026 with the launch in view, and she intends a single trip to external counsel. This Agreement's Schedule 4 and the MSA's Schedule 3 should go to her as one pack, with the conversation-history storage question closed first.
+9. **Confirm Production Cutover happens before 16 December 2026.** If it does not, Novosapien is supporting a live service while still holding the model contracts, which is the heaviest combination of obligations in either document. It is also a commercial exposure: Novosapien would be paying for production model consumption under clause 3.7(c) of the MSA while charging a fixed support fee.
+10. **There is still no signed data processing agreement anywhere in this engagement** (vault open question #103). Dorte raised it on 6 October 2026 with the launch in view, and she intends a single trip to external counsel. This Agreement's Schedule 4 and the MSA's Schedule 3 should go to her as one pack, with the conversation-history storage question closed first.

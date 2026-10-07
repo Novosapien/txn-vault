@@ -10,10 +10,13 @@
   stated; the alerting boundary stated (Novosapien builds the inbox, not detection); the A2A endpoint, Fraud & Risk,
   Reconciliation and authenticated developer features moved out of Phase 2; Support & SLA commencement tied to the end
   of Phase 2 rather than to launch. Total engagement plan GBP 270,375, unchanged.
-  Schedule 3 (DPA) rebased on the 6 October 2026 standup: two operating models stated, so the model providers are
-  Novosapien's sub-processors while they run on Novosapien's accounts; OpenAI added as the second failover; hosting named
-  as a dedicated node in TXN's European Azure stack managed by Direct Transact; EU endpoint pinning made a commitment;
-  the conversation-history and trace store added as a confirm-in-writing item.
+  Schedule 3 (DPA) rebased on the 6 October 2026 standup: two stages divided by Production Cutover, so the model providers
+  are Novosapien's sub-processors while they run on Novosapien's accounts in dev and UAT and become TXN's processors when
+  licensing transfers at cutover; OpenAI added as the second failover; hosting named as a dedicated node in TXN's European
+  Azure stack managed by Direct Transact; EU endpoint pinning made a commitment; the conversation-history and trace store
+  added as a confirm-in-writing item.
+  Clause 1.2 defines Non-Production Environment, TXN Production Environment, AI Model Services and Production Cutover;
+  clause 3.7 carries the licensing handover and what each party does to effect it.
   TXN-completed fields are blank write-in lines; open points are tracked in the reviewer brief.
   Not final legal advice: for review by a qualified solicitor before execution.
   Print: Cmd+P -> Save as PDF (A4).
@@ -111,6 +114,17 @@
   through a breach of this Agreement; the receiving party already lawfully held; the receiving party develops independently; or
   the receiving party lawfully obtains from a third party free of any duty of confidence. "<strong>Business Day</strong>" means
   a day, other than a Saturday, Sunday, or public holiday, when banks in London are open for business.</p></div>
+  <div class="clause"><p>1.2 <strong>The environments, and the cutover between them.</strong> "<strong>Non-Production
+  Environment</strong>" means any environment in which the Deliverables are built, developed, or tested before they operate
+  in production, including Novosapien's own development environments and TXN's development and user-acceptance-testing
+  environments. "<strong>TXN Production Environment</strong>" means the production environment TXN and its other partners
+  provide for the Deliverables, being at the date of this Agreement a dedicated node for the agentic AI layer in TXN's
+  European Microsoft Azure environment managed by Direct Transact, rendering into the Console and Developer Portal surfaces
+  provided by Stackworkz. "<strong>AI Model Services</strong>" means the third-party generative AI model services the
+  Deliverables call. "<strong>Production Cutover</strong>" means, for a Deliverable, the date on which it first operates in
+  the TXN Production Environment, as confirmed in writing by both parties. Production Cutover may occur on different dates
+  for different Deliverables, and this Agreement applies to each Deliverable by reference to its own Production
+  Cutover.</p></div>
 
   <h2>2. How Statements of Work and Workforce Orders work</h2>
   <div class="clause"><p>2.1 This Agreement governs all Services. Each engagement is set out in a SoW or, for Novosapien's
@@ -181,6 +195,30 @@
   without taking down the TXN Platform. TXN may operate the control itself; Novosapien will also engage it on TXN's instruction,
   or on detecting an agent acting outside its authorised scope. Engaging the control is treated as a Priority 1 event under the
   Support &amp; SLA Agreement.</p></div>
+  <div class="clause"><p>3.7 <strong>Who licenses and runs the AI Model Services, and when that changes.</strong> The
+  Deliverables call third-party AI Model Services. Responsibility for licensing, contracting, and paying for them transfers
+  from Novosapien to TXN at Production Cutover:</p>
+  <p>(a) <strong>Before Production Cutover.</strong> While a Deliverable runs in a Non-Production Environment, Novosapien
+  licenses and runs the AI Model Services it needs <strong>on its own provider accounts and at its own cost</strong>, so
+  that build, development, and user-acceptance testing are not held up waiting for TXN to contract with a model provider.
+  Novosapien chooses the models and the fallback chain, tells TXN what it is using, and gives notice before changing it.
+  The data-protection consequence is set out in Schedule 3: <strong>while the AI Model Services run on Novosapien's
+  accounts, those providers are Novosapien's sub-processors</strong>.</p>
+  <p>(b) <strong>At Production Cutover.</strong> TXN takes over the licensing, contracting, and consumption of the AI Model
+  Services on <strong>TXN's own provider accounts</strong>, and the Deliverables are configured to call those accounts.
+  From that point the model providers are <strong>TXN's processors, not Novosapien's sub-processors</strong>, and TXN is
+  responsible for its contracts with them, for their commercial terms, and for the transfer mechanisms covering them.</p>
+  <p>(c) <strong>What each party does to make the cutover work.</strong> Not less than 20 Business Days before a planned
+  Production Cutover, Novosapien gives TXN: the list of AI Model Services, models, and fallback providers the Deliverable
+  uses; the configuration it has been running, including the regional endpoints and any zero-data-retention or no-training
+  settings; and an estimate of expected consumption. TXN puts the corresponding accounts, entitlements, and credentials in
+  place before the Production Cutover date. <strong>If TXN's accounts are not in place on that date</strong>, Novosapien
+  will, if TXN asks in writing, keep running the AI Model Services on its own accounts for a transitional period, and that
+  period is treated as before Production Cutover for the purposes of Schedule 3. <strong>Novosapien may recharge the model
+  consumption cost of any such transitional period to TXN at billed cost</strong>, having first told TXN it intends to.</p>
+  <p>(d) <strong>No gap and no silent change.</strong> Neither party treats a Deliverable as having cut over until both
+  have confirmed it in writing. A Deliverable that is partly live and partly in a Non-Production Environment is treated as
+  before Production Cutover until the whole Deliverable has cut over.</p></div>
 
   <h2>4. TXN dependencies and the multi-vendor environment</h2>
   <div class="clause"><p>4.1 Novosapien builds the agentic AI layer only. It does not build the TXN Platform. TXN is
@@ -348,10 +386,10 @@
   provide the Services, Novosapien acts as processor and TXN as controller, and the parties comply with Schedule 3 (Data
   Processing), which meets Article 28 of the EU GDPR and the UK GDPR, including on security, Novosapien's own sub-processors,
   audit rights, and breach notification within 24 hours (supporting TXN's own 72-hour notification obligations).
-  <strong>While the AI model services run on Novosapien's own provider accounts, those providers are Novosapien's
-  sub-processors and are listed in Schedule 3 Part B.</strong> Once the parties confirm in writing that those services have
-  transferred to TXN's own provider accounts, they become TXN's processors rather than Novosapien's sub-processors
-  (Schedule 3). Any transfer of personal data outside the UK or the EEA is made only under a valid transfer mechanism (the EU
+  <strong>Before Production Cutover the AI Model Services run on Novosapien's own provider accounts, and those providers
+  are Novosapien's sub-processors</strong>, listed in Schedule 3 Part B. <strong>At Production Cutover they transfer to
+  TXN's own provider accounts and become TXN's processors</strong> rather than Novosapien's sub-processors (clause 3.7 and
+  Schedule 3). Any transfer of personal data outside the UK or the EEA is made only under a valid transfer mechanism (the EU
   Standard Contractual Clauses and/or the UK IDTA or UK Addendum, as applicable) with a completed transfer risk assessment.
   TXN is established in Cyprus, so the EU GDPR governs TXN's processing as controller; the UK GDPR applies to Novosapien's
   processing in the UK. Transfers from the EEA to Novosapien in the UK rely on the European Commission's UK adequacy decision. If that decision is
@@ -538,10 +576,12 @@
     </ul>
     <p>Phase 2 commences without these in place. The components that need them are paced by them, and clause 4.2 applies.</p></div>
 
-    <div class="clause"><p><strong>AI consumption.</strong> Model usage is not charged by Novosapien. The intended model is
-    that it runs on <strong>TXN's own provider accounts</strong>. Until the parties confirm that transfer in writing it runs
-    on Novosapien's accounts at Novosapien's cost, with the data-protection consequence set out in Schedule 3. Cloud and
-    observability hosting are excluded from the Phase 2 charge and are TXN's.</p></div>
+    <div class="clause"><p><strong>AI consumption.</strong> Model usage is not charged by Novosapien within the Phase 2
+    fee. <strong>Before Production Cutover</strong> the AI Model Services run on Novosapien's own accounts at Novosapien's
+    cost, so that build and user-acceptance testing are not held up (clause 3.7(a)). <strong>At Production Cutover</strong>
+    the licensing and consumption transfer to TXN's own accounts and are TXN's cost from then on (clause 3.7(b)). The
+    data-protection consequence of each stage is set out in Schedule 3. Cloud and observability hosting are excluded from
+    the Phase 2 charge and are TXN's throughout.</p></div>
 
     <div class="clause"><p><strong>AI-specific scope.</strong> Advise-do-not-decide throughout; approval-queue and permission model
     respected; no auto-execution of fraud responses; cardholder PII limited and redacted before any model context; data residency
@@ -644,28 +684,53 @@
     handling support and Incidents. Where Novosapien does not access TXN personal data, it acts as a software supplier rather
     than a processor, and only its confidentiality obligations apply.</p>
 
-    <div class="clause"><p><strong>Two operating models, and which one applies.</strong> The parties record that the
-    operating model changes during the engagement, and that this determines who holds the model providers:</p>
-    <ul>
-      <li><strong>The current model (during Phase 2).</strong> The AI model services run on <strong>Novosapien's own
-      provider accounts</strong>. While that is the case, those providers are <strong>Novosapien's sub-processors</strong>,
-      are listed in Part B, and every obligation in Part A applies to them, including the notice and objection right in
-      Part A(d).</li>
-      <li><strong>The target model.</strong> On a date the parties confirm in writing, the AI model and hosting services
-      transfer to <strong>TXN's own provider accounts</strong>. From that date those providers are <strong>TXN's
-      processors</strong>, not Novosapien's sub-processors, and TXN determines and contracts for them directly. Novosapien
-      will give TXN the information it needs to make that appointment.</li>
-    </ul>
-    <p>Until the parties confirm that transfer in writing, <strong>the current model applies</strong> and Novosapien holds the
-    model providers as its sub-processors. Nothing in this Agreement, and no statement elsewhere in it about model usage
-    running on TXN's accounts, displaces that position for any period in which it is not actually the case.</p></div>
+    <div class="clause"><p><strong>Two stages, divided by Production Cutover.</strong> Who holds the AI Model Services
+    changes during the engagement, and that determines who is responsible for them under Article 28. The parties record the
+    position expressly so neither side has to infer it:</p>
+    <table>
+      <thead><tr><th></th><th>Stage 1: before Production Cutover</th><th>Stage 2: from Production Cutover</th></tr></thead>
+      <tr><td><strong>Where the Deliverables run</strong></td>
+          <td>Non-Production Environments: Novosapien's development environments, and TXN's development and
+          user-acceptance-testing environments</td>
+          <td>The TXN Production Environment: the dedicated agentic AI layer node in TXN's European Microsoft Azure
+          environment, managed by Direct Transact</td></tr>
+      <tr><td><strong>Whose accounts the AI Model Services run on</strong></td>
+          <td><strong>Novosapien's</strong>, under Novosapien's licences and at Novosapien's cost (clause 3.7(a))</td>
+          <td><strong>TXN's</strong>. Licensing, contracting, and consumption transfer to TXN (clause 3.7(b))</td></tr>
+      <tr><td><strong>Status of the model providers</strong></td>
+          <td><strong>Novosapien's sub-processors.</strong> Listed in Part B. Every obligation in Part A applies to them,
+          including the notice and objection right in Part A(d)</td>
+          <td><strong>TXN's processors.</strong> Not Novosapien's sub-processors. TXN determines and contracts for them
+          directly</td></tr>
+      <tr><td><strong>Who covers the transfer mechanism</strong></td>
+          <td><strong>Novosapien</strong>, including pinning European or regional endpoints and enabling
+          zero-data-retention or no-training options where the provider offers them</td>
+          <td><strong>TXN</strong>, on its own accounts. Novosapien assists, and hands over the configuration it was
+          running (clause 3.7(c))</td></tr>
+      <tr><td><strong>What Novosapien still processes</strong></td>
+          <td>TXN personal data it accesses to build, test, and support the Deliverables</td>
+          <td>TXN personal data it accesses to operate, support, and maintain the Deliverables, principally when handling
+          support and Incidents</td></tr>
+    </table>
+    <p><strong>Production Cutover is per Deliverable, and is confirmed in writing by both parties</strong> (clause 1.2). A
+    Deliverable that is partly live is treated as being in Stage 1 until the whole Deliverable has cut over. Until the
+    parties confirm Production Cutover for a Deliverable, <strong>Stage 1 applies to it</strong>, and nothing elsewhere in
+    this Agreement about model usage running on TXN's accounts displaces that for any period in which it is not actually
+    the case.</p></div>
 
-    <div class="clause"><p><strong>Where the Deliverables run.</strong> The Deliverables run in production on a dedicated
-    node for the agentic AI layer in TXN's European Microsoft Azure environment, provided and managed by Direct Transact
-    alongside the Core API, within Direct Transact's PCI-covered environment. Novosapien does not store, process, or transmit
-    cardholder data, and cardholder data is kept out of AI model context (clauses 4.5 and 6.6); the Deliverables sitting
-    inside a PCI-covered environment does not alter that, and does not make Novosapien responsible for TXN's or Direct
-    Transact's PCI-DSS compliance (clause 4.3).</p></div>
+    <div class="clause"><p><strong>Data minimisation before Production Cutover.</strong> In Stage 1 Novosapien will use
+    synthetic or test data in preference to TXN personal data wherever the work can be done with it, and will not use TXN
+    personal data in a Non-Production Environment except where TXN instructs it or where diagnosing a defect genuinely
+    requires it. Where TXN personal data is processed in Stage 1, every obligation in Part A applies to it in full, and it
+    is subject to the same security measures in Part C as production data.</p></div>
+
+    <div class="clause"><p><strong>Where the Deliverables run.</strong> Before Production Cutover the Deliverables run in
+    Non-Production Environments. From Production Cutover they run in the TXN Production Environment: a dedicated node for
+    the agentic AI layer in TXN's European Microsoft Azure environment, provided and managed by Direct Transact alongside
+    the Core API, within Direct Transact's PCI-covered environment. In both stages Novosapien does not store, process, or
+    transmit cardholder data, and cardholder data is kept out of AI model context (clauses 4.5 and 6.6); the Deliverables
+    sitting inside a PCI-covered environment does not alter that, and does not make Novosapien responsible for TXN's or
+    Direct Transact's PCI-DSS compliance (clause 4.3).</p></div>
 
     <p><strong>Part A: Processing obligations</strong></p>
     <div class="clause"><p>Where Novosapien processes personal data on TXN's behalf under this Agreement, Novosapien will:</p>
@@ -680,8 +745,8 @@
     on them in writing, remain fully responsible for their performance, and give TXN prior written notice of any intended
     addition or replacement so TXN may object on reasonable grounds. <strong>A provider that is used only as a failover is
     still a sub-processor</strong> and is listed in Part B accordingly. AI model and hosting providers engaged on TXN's own
-    accounts, once the transfer above has been confirmed in writing, are TXN's processors, not Novosapien's sub-processors,
-    and TXN is responsible for their appointment;</p>
+    accounts from Production Cutover are TXN's processors, not Novosapien's sub-processors, and TXN is responsible for their
+    appointment;</p>
     <p>(e) <strong>Data-subject rights.</strong> Taking into account the nature of the processing, help TXN by appropriate
     technical and organisational measures to respond to data subjects exercising their rights;</p>
     <p>(f) <strong>Assistance and breach notice.</strong> Help TXN meet its obligations on security, breach notification, and
@@ -702,16 +767,18 @@
       <tr><td>Data subjects</td><td>TXN's staff and client operators using the Console; developers and integrators using the Developer Portal; cardholders only if a later SoW brings them into scope</td></tr>
       <tr><td>Applicable regime</td><td>EU GDPR (TXN Global Limited is established in Cyprus); UK GDPR for Novosapien's processing in the UK</td></tr>
       <tr><td>Security measures</td><td>The technical and organisational measures set out in Part C of this Schedule</td></tr>
-      <tr><td>Novosapien sub-processors<br><span class="small">(the current operating model)</span></td><td><strong>AI model
-      providers, engaged on Novosapien's own accounts until the transfer to TXN's accounts is confirmed in writing:</strong>
+      <tr><td>Novosapien sub-processors<br><span class="small">(Stage 1, before Production Cutover)</span></td><td><strong>AI
+      Model Services, engaged on Novosapien's own accounts and under Novosapien's own licences until Production
+      Cutover:</strong>
       <br>1. <strong>Google</strong> (Gemini, via Google Cloud Platform), the primary model provider.
       <br>2. <strong>Anthropic</strong> (Claude), first failover.
       <br>3. <strong>OpenAI</strong>, second failover. Used only on failover, and listed because a failover provider is
       still a sub-processor.
       <br><br><strong>Other:</strong> none at the date of this Agreement. Novosapien's Agent Ops monitoring and support
       tooling is operated by Novosapien itself. Any future sub-processor, and any change to the failover chain above, is
-      engaged only with prior written notice and a right to object under Part A(d). On the transfer to TXN's accounts, the
-      three providers above cease to be Novosapien's sub-processors and become TXN's processors</td></tr>
+      engaged only with prior written notice and a right to object under Part A(d). <strong>At Production Cutover the three
+      providers above cease to be Novosapien's sub-processors and become TXN's processors</strong>, on TXN's own accounts
+      and under TXN's own licences (clause 3.7)</td></tr>
       <tr><td>Hosting</td><td>A dedicated node for the agentic AI layer in <strong>TXN's European Microsoft Azure
       environment</strong>, provided and managed by Direct Transact alongside the Core API, within Direct Transact's
       PCI-covered environment. Provided and managed by TXN or its other partners, not by Novosapien (clause 4.6)</td></tr>
@@ -726,12 +793,13 @@
       written</td></tr>
       <tr><td>International transfers</td><td>For Novosapien's own processing: EEA to UK under the European Commission's UK
       adequacy decision, and EU SCCs and/or the UK IDTA/UK Addendum with a transfer risk assessment for any transfer Novosapien
-      makes outside the UK or EEA. <strong>For the AI model providers, while they run on Novosapien's accounts:</strong>
-      Novosapien is responsible for the transfer mechanism, and will <strong>pin European or regional model endpoints and
-      enable zero-data-retention or equivalent no-training options where the provider offers them</strong>, so that the
-      European commitment holds in practice rather than only on paper. Where a provider offers no European endpoint,
-      Novosapien will tell TXN before routing TXN personal data to it. After the transfer to TXN's accounts, any transfer to
-      the model providers is TXN's to cover and Novosapien assists as above</td></tr>
+      makes outside the UK or EEA. <strong>Stage 1, before Production Cutover:</strong> Novosapien is
+      responsible for the transfer mechanism for the AI Model Services, and will <strong>pin European or regional model
+      endpoints and enable zero-data-retention or equivalent no-training options where the provider offers them</strong>, so
+      that the European commitment holds in practice rather than only on paper. Where a provider offers no European
+      endpoint, Novosapien will tell TXN before routing TXN personal data to it. <strong>Stage 2, from Production
+      Cutover:</strong> transfers to the model providers run on TXN's accounts and are TXN's to cover; Novosapien hands over
+      the endpoint and retention configuration it was running (clause 3.7(c)) and assists as above</td></tr>
       <tr><td>Breach notification</td><td>Without undue delay and in any event within 24 hours of becoming aware, with the information TXN needs for its own 72-hour notification obligations</td></tr>
       <tr><td>Audit rights</td><td>TXN and its auditors may audit compliance with this Schedule on reasonable notice, subject to confidentiality; regulator access per clause 4.4(a)</td></tr>
       <tr><td>Deletion / return</td><td>On termination, per clause 10.3: return in an accessible format, then deletion, at TXN's choice</td></tr>

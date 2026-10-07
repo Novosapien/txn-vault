@@ -5,7 +5,10 @@
   Scope grounded in txn-vault/content; commercials grounded in proposals/txn-agentic-layer-proposal_final (17 June 2026), section D.
   Targets settled with Brett on 6 July 2026: UK time, email + Slack support channels, England & Wales law.
   v0.2 change: commencement no longer hangs off an undefined Launch Date. Support commences the day after Phase 2 ends
-  (16 December 2026), per Brett on 7 October 2026, and moves with the Phase 2 window. No fee before that date.
+  (16 December 2026), per Brett on 7 October 2026, and moves with the Phase 2 window.
+  Schedule 4 aligned to the MSA's Production Cutover: the AI Model Services run on Novosapien's accounts in dev and UAT and
+  transfer to TXN's licences at cutover, so the model providers are normally TXN's processors under this Agreement.
+  No support fee is payable before the Commencement Date.
   Remaining [placeholders] are open points flagged in the reviewer brief (tier selection, entity details, DORA designation).
   Not final legal advice: for review by a qualified solicitor before execution.
   Print: Cmd+P -> Save as PDF (A4).
@@ -93,7 +96,9 @@
   as intended. "<strong>Priority</strong>" means the severity of an Incident under Schedule 2. "<strong>Availability</strong>"
   means the percentage of time the Supported System is available in a calendar month, measured under Schedule 2.
   "<strong>Support Allocation</strong>" means the monthly hours in clause 3.4. "<strong>Business Day</strong>" means a day,
-  other than a Saturday, Sunday, or public holiday, when banks in London are open for business.</p></div>
+  other than a Saturday, Sunday, or public holiday, when banks in London are open for business.
+  "<strong>AI Model Services</strong>", "<strong>TXN Production Environment</strong>" and "<strong>Production
+  Cutover</strong>" have the meanings given to them in clause 1.2 of the Master Service Agreement.</p></div>
   <div class="clause"><p>1.2 Automated monitoring and alerting under clause 3.1 runs continuously (24/7) at every Support Tier.
   The Support Tier determines when Novosapien's team responds.</p></div>
 
@@ -372,12 +377,17 @@
     data only where it accesses that data to operate, monitor, support, or maintain the Supported System, principally when
     handling Incidents. Where Novosapien does not access TXN personal data, only its confidentiality obligations apply.</p>
 
-    <p><strong>Who holds the AI model providers.</strong> This mirrors Schedule 3 of the Master Service Agreement. <strong>
-    While the AI model services run on Novosapien's own provider accounts, those providers are Novosapien's sub-processors
-    </strong> and are listed in Part B. Once the parties confirm in writing that those services have transferred to TXN's own
-    provider accounts, they become TXN's processors rather than Novosapien's sub-processors. The position under the Master
-    Service Agreement at the Commencement Date carries over to this Agreement, and the parties do not need to confirm it
-    twice.</p>
+    <p><strong>Who holds the AI Model Services.</strong> This mirrors Schedule 3 of the Master Service Agreement and uses
+    the same defined terms. Under that Agreement, responsibility for licensing and running the AI Model Services transfers
+    from Novosapien to TXN at <strong>Production Cutover</strong>, being the date a Deliverable first operates in the TXN
+    Production Environment. <strong>Before Production Cutover</strong> the model providers run on Novosapien's accounts and
+    are Novosapien's sub-processors, listed in Part B. <strong>From Production Cutover</strong> they run on TXN's own
+    accounts under TXN's own licences and are TXN's processors, not Novosapien's sub-processors.</p>
+    <p><strong>In practice this Agreement will usually begin after cutover.</strong> Support commences on 16 December 2026
+    and the Deliverables are expected to be in the TXN Production Environment by then, so the normal position under this
+    Agreement is that <strong>the model providers are TXN's</strong>. Part B lists them anyway, because if any Supported
+    System component has not cut over at the Commencement Date, the pre-cutover position applies to that component until it
+    does. The position confirmed under the Master Service Agreement carries over; the parties do not confirm it twice.</p>
 
     <p><strong>Part A: Processing obligations</strong></p>
     <div class="clause"><p>Where Novosapien processes personal data on TXN's behalf under this Agreement, Novosapien will:</p>
@@ -391,8 +401,8 @@
     <p>(d) <strong>Sub-processors.</strong> Engage only its own sub-processors listed in Part B, impose these same obligations
     on them in writing, remain fully responsible for their performance, and give TXN prior written notice of any intended
     addition or replacement so TXN may object on reasonable grounds. <strong>A provider used only as a failover is still a
-    sub-processor</strong> and is listed in Part B accordingly. AI model and hosting providers engaged on TXN's own accounts,
-    once that transfer has been confirmed in writing, are TXN's processors, not Novosapien's sub-processors;</p>
+    sub-processor</strong> and is listed in Part B accordingly. AI model and hosting providers engaged on TXN's own accounts
+    from Production Cutover are TXN's processors, not Novosapien's sub-processors;</p>
     <p>(e) <strong>Data-subject rights.</strong> Taking into account the nature of the processing, help TXN by appropriate
     technical and organisational measures to respond to data subjects exercising their rights;</p>
     <p>(f) <strong>Assistance and breach notice.</strong> Help TXN meet its obligations on security, breach notification, and
@@ -419,24 +429,25 @@
       Novosapien's own locations per MSA clause 4.4(b)</td></tr>
       <tr><td>Applicable regime</td><td>EU GDPR (TXN Global Limited is established in Cyprus); UK GDPR for Novosapien's processing in the UK</td></tr>
       <tr><td>Security measures</td><td>The technical and organisational measures set out in Part C of this Schedule</td></tr>
-      <tr><td>Novosapien sub-processors</td><td><strong>AI model providers, while engaged on Novosapien's own accounts:</strong>
+      <tr><td>Novosapien sub-processors<br><span class="small">(only while a component has not cut over)</span></td><td><strong>AI Model Services, while engaged on Novosapien's own accounts and licences:</strong>
       <br>1. <strong>Google</strong> (Gemini, via Google Cloud Platform), primary.
       <br>2. <strong>Anthropic</strong> (Claude), first failover.
       <br>3. <strong>OpenAI</strong>, second failover, used only on failover and listed because a failover provider is still
       a sub-processor.
       <br><br><strong>Other:</strong> none at the date of this Agreement; Novosapien's Agent Ops monitoring and support
       tooling is operated by Novosapien itself. Any future sub-processor, and any change to the failover chain, is engaged
-      only with prior written notice and a right to object under Part A(d). On transfer of the model accounts to TXN, the
-      three providers above become TXN's processors</td></tr>
+      only with prior written notice and a right to object under Part A(d). <strong>At Production Cutover the three
+      providers above become TXN's processors</strong>, on TXN's accounts and under TXN's licences</td></tr>
       <tr><td>Conversation history and traces</td><td>Agent conversation history and execution traces are written to a
       datastore whose location the parties confirm in writing; the intention is the same European Azure environment as the
       Supported System. Sensitive data is stripped before it is written</td></tr>
       <tr><td>International transfers</td><td>For Novosapien's own processing: EEA to UK under the European Commission's UK
       adequacy decision, and EU SCCs and/or the UK IDTA/UK Addendum with a transfer risk assessment for any transfer Novosapien
-      makes outside the UK or EEA. <strong>While the model providers run on Novosapien's accounts</strong>, Novosapien is
-      responsible for the transfer mechanism and will pin European or regional endpoints and enable zero-data-retention or
-      equivalent no-training options where the provider offers them. After transfer to TXN's accounts those transfers are
-      TXN's to cover and Novosapien assists as above</td></tr>
+      makes outside the UK or EEA. <strong>Before Production Cutover</strong>, Novosapien is responsible for the transfer
+      mechanism for the AI Model Services and will pin European or regional endpoints and enable zero-data-retention or
+      equivalent no-training options where the provider offers them. <strong>From Production Cutover</strong> those
+      transfers run on TXN's accounts and are TXN's to cover; Novosapien hands over the endpoint and retention
+      configuration it was running and assists as above</td></tr>
       <tr><td>Deletion / return</td><td>On termination, per clause 9.3: return in an accessible format, then deletion, at TXN's choice</td></tr>
     </table>
 
