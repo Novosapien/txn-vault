@@ -53,8 +53,21 @@
   table.sig td:first-child { width: 90px; color: var(--ns-muted); border-bottom: 0; padding-top: 14px; }
   .footer { margin-top: 22mm; padding-top: 6px; border-top: 1px solid var(--ns-rule);
             color: var(--ns-muted); font-size: 8.5pt; display: flex; justify-content: space-between; }
-  @page { size: A4; margin: 18mm 20mm 16mm; }
-  @media print { .page { max-width: none; margin: 0; padding: 0; } .footer { position: fixed; bottom: 8mm; left: 20mm; right: 20mm; } .ph { background: none; } }
+  @page { size: A4; margin: 16mm 20mm 14mm; }
+  @media print { .page { max-width: none; margin: 0; padding: 0; } .ph { background: none; } }
+
+  /* Running footer. A tfoot repeats on every printed page AND reserves its own
+     space in the page box, which a position:fixed footer does not: Chrome clamps
+     fixed elements into the content area, where they land on top of the text. */
+  table.runner { width: 100%; border-collapse: collapse; }
+  table.runner > tbody > tr > td,
+  table.runner > tfoot > tr > td { border: 0; padding: 0; }
+  table.runner > tfoot > tr > td { padding-top: 6mm; }
+  .runfoot { padding-top: 5px; border-top: 1px solid var(--ns-rule);
+             color: var(--ns-muted); font-size: 8.5pt;
+             display: flex; justify-content: space-between; }
+  @media screen { table.runner > tfoot { display: none; } }
+  @media print  { .footer { display: none; } }
 
   /* Print pagination: keep tables, captions, and headings intact across pages */
   thead { display: table-header-group; }
@@ -70,6 +83,12 @@
 </head>
 <body>
 <div class="page">
+<table class="runner"><tfoot><tr><td>
+  <div class="runfoot">
+    <span>Support &amp; SLA Agreement &middot; Novosapien &amp; TXN &middot; DRAFT v0.2, 7 October 2026</span>
+    <span class="wordmark" style="font-size:8.5pt">novo<span class="accent">sapien</span></span>
+  </div>
+</td></tr></tfoot><tbody><tr><td>
 
   <div class="wordmark">novo<span class="accent">sapien</span></div>
   <div class="doc-title">Support &amp; Service Level Agreement</div>
@@ -498,6 +517,7 @@
     <span class="wordmark" style="font-size:8.5pt">novo<span class="accent">sapien</span></span>
   </div>
 
+</td></tr></tbody></table>
 </div>
 </body>
 </html>
