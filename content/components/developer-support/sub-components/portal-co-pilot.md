@@ -62,6 +62,26 @@ It is **deliberately light**: Ian's explicit steer is to invest in the [[docs-mc
 >
 > **Retention position for the sandbox it sits on:** the public sandbox is kept *"for a very short window of time, obviously public data"*, and the **per-user personal sandbox arrives with sign-up as a later phase**, which confirms the phasing for log-based support at #102.
 
+> [!note] Demonstrated working, 8 October 2026
+> Hasan ran the demo alone, at Dorte's insistence, and everything promised two days earlier was working ([[2026-10-08-agentic-standup]]).
+>
+> | Feature | State |
+> |---|---|
+> | **Navigates the documentation itself** | Asked *"how do I issue a card"*, it answers **and opens the relevant API page**. Dorte checked it was the software rather than Hasan: *"it was the AI that did it"* |
+> | **Example payloads** | On request, with a copy button on each example |
+> | **Chat history** | Behind a clock icon, previous conversations browsable |
+> | **Export** | To clipboard or download, as a **handover document for another AI**: how to use it, a summary, **all the sources**, and the full transcript |
+> | **Execute API calls** | Next, showing payload and output |
+> | **MCP server** | Still being built, to be integrated after |
+>
+> **Storage, and it matters beyond the feature.** History is **not stored server-side**: *"it's stored inside the browser cache, and after 30 days it will just automatically clear itself out."* Persistent storage arrives only with sign-in. **Dorte: *"it's brilliant, because this goes to my bloody privacy policies."*** That narrows the legal surface at [[open-questions]] #103: no new data store, no retention schedule, no subject-access route for anonymous visitors.
+>
+> **Decision: the assistant gets no name.** Dorte: *"I don't think we need to name the assistant at all... this does the trick."* In contrast to Novosapien's own Nova in the Content Workforce.
+>
+> **Two notes.** The login seen in the demo is on **Novosapien's replica hub in staging**, not the real one, which stays public and unauthenticated at MVP (#91). And the co-pilot is **not yet linked from the admin portal**, reachable only at `/docs`.
+>
+> **Who to pitch it to.** Dorte, unprompted: *"the last time you demoed, I said to Mike afterwards, I'm glad you liked it, because I could not follow. But Mike needs to like it... **if Mike understands it, he's a happy customer.** And I just don't speak tech."* So Michael is the technical judge and Dorte's verdict is a judgement about Michael. Her own strongest contributions have been about consequences rather than mechanics.
+
 ## 2. What Needs to Happen?
 
 **Functional requirements:**
