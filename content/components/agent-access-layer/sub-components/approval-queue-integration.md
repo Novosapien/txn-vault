@@ -5,6 +5,7 @@ sources:
   - "[[01-06-2026-component-1-Agent-Access-Layer]]"
   - "[[2026-09-15-agentic-standup]]"
   - "[[2026-10-13-agentic-standup]]"
+  - "[[2026-10-14-alignment-txn-stackworkz-novosapien]]"
 description: "How AI-initiated changes route through the Console two-person approval queue: product and multi-card needs a second approver, single-card privileged does not"
 ---
 
@@ -53,6 +54,27 @@ Before any change — approval-required or not — the agent applies **prompted 
 - **The Console approval queue** (built by Stackworkz) — the existing system this integrates with
 
 ---
+
+> [!important] Stackworkz put a number on the duplication, and a breakout is booked (14-10-2026)
+> **The 13 October proposal now has an argument behind it** ([[2026-10-14-alignment-txn-stackworkz-novosapien]]). Ruan, framing it as architecture rather than objection:
+>
+> > *"A possible solution is for **the agent not to call the TXN API directly, but go through the control center**, which means what you'll get out of the box is all the approvals already and permissions and everything, because that's not simple. It's not trivial for the agent to know which user it is, what permissions they have. **That's not just available. That lives in the control center.** So if the agent lives separately to that, doesn't have that context. So that's a problem. But it's not a problem we can't solve."*
+>
+> **And the cost of declining:** *"if we don't address that, **you're going to duplicate a lot of the logic that we already built** within the control center."*
+>
+> **George's design, as built, reaches the same place by a different route.** The user's access is passed down to the agent, so *"the agent is only ever going to see tools that allow actions that the user would have been able to take in the console."*
+>
+> | Case | Behaviour |
+> |---|---|
+> | User holds the right | Agent **asks that user to approve** the sensitive action, then executes |
+> | User does not hold the right | Agent **requests it from a user who does**: *"this user is wanting to do this, do you authorize this action?"* It does not act |
+> | A second approver is required anyway | *"The agent's going to handle that as well"* |
+>
+> His principle: *"it's not as if users are going to be getting a different experience in the AI or full agentic experience in comparison to the console."* That is the same rule as the 15 September position below, now with the request path for an unauthorised operator spelled out.
+>
+> **Where it landed, honestly.** George accepted the logic and kept the mechanism open: *"maybe we might not be consuming the same services, but we'll be consuming the same logic. Maybe we're replicating it on our side, but as long as the logic's the same, perfect."* **A breakout session is booked for early next week**, Stackworkz sharing their build first. Michael's priority: *"the bigger one is going to be the authentication, the permissions... That's the main point for me that we just need to dig into."* Stackworkz then scope the work. [[open-questions]] #107.
+>
+> **Note for the Knowledge Hub:** none of this blocks it, because it works against the sandbox where *"authentication to the TXN API is simpler."*
 
 > [!important] The queue exists, and Stackworkz want the agent to come through it, 13 October 2026
 > **This stops being a model to agree and becomes a surface to integrate against** ([[2026-10-13-agentic-standup]]). Michael reported that Stackworkz have **built and demonstrated user permissions**, not merely specified them: *"they came back to me demoed it working... obviously I sent you those documents, but they've actually built it now."*
