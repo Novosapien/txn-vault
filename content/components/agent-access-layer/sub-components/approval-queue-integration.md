@@ -4,7 +4,8 @@ status: Defined
 sources:
   - "[[01-06-2026-component-1-Agent-Access-Layer]]"
   - "[[2026-09-15-agentic-standup]]"
-description: "How AI-initiated changes route through the Console two-person approval queue — product/multi-card needs a second approver; single-card privileged does not"
+  - "[[2026-10-13-agentic-standup]]"
+description: "How AI-initiated changes route through the Console two-person approval queue: product and multi-card needs a second approver, single-card privileged does not"
 ---
 
 # TXN — Approval-Queue Integration
@@ -52,6 +53,15 @@ Before any change — approval-required or not — the agent applies **prompted 
 - **The Console approval queue** (built by Stackworkz) — the existing system this integrates with
 
 ---
+
+> [!important] The queue exists, and Stackworkz want the agent to come through it, 13 October 2026
+> **This stops being a model to agree and becomes a surface to integrate against** ([[2026-10-13-agentic-standup]]). Michael reported that Stackworkz have **built and demonstrated user permissions**, not merely specified them: *"they came back to me demoed it working... obviously I sent you those documents, but they've actually built it now."*
+>
+> **What they built is wider than permissions.** Michael: *"they have basically **a layer over the API that has the access as well. So it has approval queue everything built in.** So their sort of suggestion was coming through that back end and routting that accordingly basically."*
+>
+> **Their proposal is that the agent routes through that back end** rather than calling the Core API directly. That would put Stackworkz in the path of every privileged AI action, and it is a different shape from the 15 September position below, which assumed Novosapien integrating with a permission model rather than entering through another vendor's queue.
+>
+> **Michael named the open piece himself:** *"the main one for us is how how to authenticate through that."* He has asked Stackworkz to walk Novosapien through it. **Live as of 13 October**, because the co-pilot now executes real calls with its own approve step in front of them ([[portal-co-pilot]]), so this is no longer a design question with slack in it. Three things unsettled: whether the agent holds its own identity or borrows the operator's, whether agent-raised approvals land in the Stackworkz queue or a Novosapien one, and how this squares with the dedicated TXN API credentials Michael is issuing. [[open-questions]] #107.
 
 > [!important] Approvals follow the Console permission model, 15 September 2026
 > Michael, on his return ([[2026-09-15-agentic-standup]]): *"for now, if we stick with the user permissions, **each permission has an approval field on it or not.** And then what we need to do is say, okay, this action attributes to this permission, and that permission needs approval."* Agreed before his leave to *"align that with the console."*

@@ -5,7 +5,8 @@ sources:
   - "[[09-06-2026-developer-support]]"
   - "[[ux-txn-intelligence-enhanced-documentation-discovery]]"
   - "[[ux-ai-user-stories-and-requirements]]"
-description: "Sub-component spec for the deliberately-light portal chat — semantic doc discovery and grounded Q&A with source references, plus a deterministic fallback"
+  - "[[2026-10-13-agentic-standup]]"
+description: "Sub-component spec for the portal chat: semantic doc discovery, grounded Q&A with source references, a deterministic fallback, and live sandbox execution"
 ---
 
 # TXN — Developer Support: Portal Co-pilot
@@ -81,6 +82,29 @@ It is **deliberately light**: Ian's explicit steer is to invest in the [[docs-mc
 > **Two notes.** The login seen in the demo is on **Novosapien's replica hub in staging**, not the real one, which stays public and unauthenticated at MVP (#91). And the co-pilot is **not yet linked from the admin portal**, reachable only at `/docs`.
 >
 > **Who to pitch it to.** Dorte, unprompted: *"the last time you demoed, I said to Mike afterwards, I'm glad you liked it, because I could not follow. But Mike needs to like it... **if Mike understands it, he's a happy customer.** And I just don't speak tech."* So Michael is the technical judge and Dorte's verdict is a judgement about Michael. Her own strongest contributions have been about consequences rather than mechanics.
+
+> [!important] First release, and it executes live calls, 13 October 2026
+> **Built, tested and sitting in UAT** ([[2026-10-13-agentic-standup]]). The team worked through the weekend of 10 to 12 October. Brett: it is *"all kind of in production phase, but sitting in UAT... We've run a bunch of tests. It's feeling good."* The only outstanding pieces are the API integration and the deployment into the Stackworkz console.
+>
+> **Everything promised on 6 October is now working.** The addition since 8 October is execution.
+>
+> | Capability | Behaviour as demonstrated |
+> |---|---|
+> | **Executes against the sandbox** | The agent makes the call itself and returns **the input, the output and the elapsed time** |
+> | **Approval before it runs** | Account ID and card type are shown for review first: *"if you think it's good, you can approve it"*, then it executes |
+> | **Version awareness** | It announces that the API has changed and what moved in the payload, **and tells a developer on an older version that a newer one exists** |
+> | **Portable code** | The call is offered for copy and paste, so the same request can be run in Postman |
+> | **Follow-on tests** | After one call it offers the next, for example a virtual card, fetching that payload and testing it too |
+>
+> Michael: ***"No, I think it was great."*** Then, at the close: ***"I think it looks great. Thank you."***
+>
+> **Two defects Hasan raised against himself:** the relevant page does not always open cleanly before a test runs, and the execution status renders too small, too far from the buttons it belongs to.
+>
+> **Caveat on the execution surface.** Testing against the real TXN sandbox still needs the Stackworkz integration; what was shown runs against what Novosapien controls. And the whole demo ran on a phone hotspot from a coffee shop, the office having burned down that afternoon, so the pauses on screen were the network rather than the agent.
+>
+> **Review path.** Michael and Dorte test it first, Ian being away, then it widens to **testers from DT and PayCorp**, deliberately spread *"from technical background to to not so technical"*, with **Dorte choosing the pool and Michael writing the test cases**, repeating the two rounds that worked for the knowledge hub. Access is through the admin panel until it is linked properly.
+>
+> **It is now likely to ship at launch.** Michael: *"it does look like we are ahead of sort of DT at this point... it's probably going to be much closer to launch having the AI functionality in then than it was before."* Planned as a later phase, pulled forward by DT slipping rather than by a decision. See [[open-questions]] #109 and #105.
 
 ## 2. What Needs to Happen?
 

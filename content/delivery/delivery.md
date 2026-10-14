@@ -117,6 +117,22 @@ Reviews of the client's own console feedback queue, read from `txn.feedback` and
 >
 > **That collides with [[open-questions]] #96.** On 23 September Nicola and Bron agreed to announce the full proposition at launch, without Ian present. He has now said the market message sets the scope, so if the message is bullish and phase two is not, the gap lands in this proposal. He has read neither. [[open-questions]] #99.
 
+> [!warning] The launch date goes open-ended, and Novosapien is now ahead of DT (13-10-2026)
+> **Brett asked whether the developer portal launch date still held. Michael: *"I'd say no at this rate."*** ([[2026-10-13-agentic-standup]])
+>
+> | Item | Position as of 13 October |
+> |---|---|
+> | **Launch vs go-live** | Separate dates. It does not need to work perfectly until the full go-live |
+> | **The gate** | **The first five endpoints**, *"what I consider core to transact. That's going to be our cut off point"* |
+> | **Sign-off** | **Nothing signed off**, *"quite a few defects on each"*. DT was due back with timelines on 13 October |
+> | **Knowledge hub code** | **Finished and in production**, tested. Only the back-end sync against DT's YAML is outstanding |
+> | **Marketing** | **About 50 pieces written**, held until the launch scope is known |
+> | **UAT lost** | *"About two weeks block so far on UAT testing"*, from QA and UAT overlapping |
+>
+> **A dedicated UAT environment was due 14 October**, with API credentials for Novosapien split from the console. That is the first structural answer to the moving-build problem at [[open-questions]] #93.
+>
+> **The sequencing risk is the real finding.** Michael: *"it does look like we are ahead of sort of DT at this point."* The AI layer is built and sitting in UAT while the API beneath it has nothing signed off, and the gate is controlled by DT's QA. Phase two was costed against a launch that now has no date. See #108, and #109 on the co-pilot entering the launch scope by default rather than by decision.
+
 ## What the current plan says
 
 ### Scope and presentation changes, 16 September
