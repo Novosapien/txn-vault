@@ -1,9 +1,15 @@
+---
+description: "Reviewer brief for the Novosapien x TXN Support & SLA Agreement v0.2: tier selection, service-level targets, liability anchoring, and open points for counsel"
+---
+
 # Reviewer Brief: Support & SLA Agreement (Novosapien x TXN)
 
-**Prepared by:** Novosapien commercial-lawyer skill (dry run) · **Date:** 2026-07-05 · **Draft version:** v0.1
+**Prepared by:** Novosapien commercial-lawyer skill · **Date:** 2026-07-05, updated 2026-10-07 · **Draft version:** v0.2
 **Instrument:** Support & Service Level Agreement (standalone; sits under the MSA)
 **Parties:** Novosapien and TXN
 **Governing law:** England and Wales
+
+> **CHANGELOG, 2026-10-07 (v0.2).** Commencement no longer hangs off an undefined Launch Date, and Schedule 1 is rebuilt to what Phase 1 and Phase 2 actually deliver. Read section 15 first.
 
 ## 1. What this is and what it is not
 
@@ -138,3 +144,79 @@ Recommendations from the TXN-side red-team review (`txn-counterparty-review.md`)
 - **Notices and insurance (9.4):** email notice added (Novosapien: info@novosapien.ai; TXN's notice email to insert; deemed received next Business Day), and Novosapien commits to maintaining the MSA insurance for this Agreement's term.
 
 **New decisions needed:** confirm the CPI+[3]% figure and TXN's notice email. Negotiation postures (credits concession path, chronic-failure trigger, Extended-tier pricing) remain as documented.
+
+## 15. Addendum (2026-10-07): v0.2, commencement fixed and the Supported System rebuilt
+
+### 15.1 Commencement: the Launch Date is gone
+
+v0.1 started this Agreement on a **"Launch Date"**, defined as the day the agentic AI layer was "officially deemed launched under the Master Service Agreement, as confirmed in writing by the parties". Two problems with that, both now fixed:
+
+1. **It was never going to be confirmed.** TXN's own launch sequencing has moved repeatedly (Dorte, 18 August 2026: pre-launch September, full launch October or November), and nothing in the MSA obliged either party to declare a launch date. A support agreement that cannot start is not a support agreement.
+2. **It was coupled to a Phase 3 retainer that no longer exists.** v0.1's clause 2.1 said the support fee began "only when the Phase 3 team retainer under the Master Service Agreement ends". The MSA's committed Phase 3 retainer was removed on 7 October 2026 (MSA v0.3, clause 7.3). That made the trigger circular.
+
+**New position, per Brett on 7 October 2026.** Clause 2.1: the **Commencement Date** is the day after Phase 2 under the MSA ends, being **16 December 2026**. If the Phase 2 window moves under MSA clause 7.2, the Commencement Date moves with it and the parties confirm it in writing. The 12-month initial term runs from that date.
+
+New clause 2.1A states three things that follow:
+
+- **No support fee before the Commencement Date.** During Phase 2, defect correction is inside the Phase 2 charge under the MSA, and no separate support fee is due. The same statement is in MSA clause 7.5 and Schedule 2, so the two documents agree.
+- **If a Phase 3 retainer is later agreed** and runs past the Commencement Date, that retainer's monthly charge covers support for the months it runs, and no separate support fee is payable for those months. This preserves the original no-double-charging intent without depending on Phase 3 existing.
+- **Support is not conditional on launch.** Stated expressly, so the Launch Date problem cannot return.
+
+### 15.2 Schedule 1, the Supported System, rebuilt
+
+v0.1's Schedule 1 listed the Agentic Layer proposal's full component set, written before anything was built. It included things Phase 2 is not building. Schedule 1 now lists what Phase 1 and Phase 2 actually deliver: the Agent Access Layer as wired to the live Core API, the Knowledge Hub, Co-pilot v1, Agent Inbox and Alerts v1, the Full Agentic Experience as wired to live data, and the Internal Ops agents (customer onboarding, knowledge engine, meeting capture).
+
+A new **"Not in the Supported System"** paragraph names what is excluded until delivered under a later SoW and added by written agreement: the **A2A endpoint**, **Fraud & Risk Assist**, **Reconciliation**, and **authenticated developer features**. v0.1 had the A2A endpoint inside the supported Agent Access Layer and excluded only Fraud & Risk and Reconciliation. Supporting an endpoint nobody has built is not a position worth holding.
+
+### 15.3 Detection and alerting are excluded, and that matters
+
+A new paragraph in Schedule 1 states that Novosapien supports the **Agent Inbox**, being the surface that receives an alert, explains it, proposes an action and executes it on approval. **Detection, monitoring and thresholds sit with Direct Transact and the Stackworkz Console.** A failure of those systems, or of the feed that carries alerts into the Agent Inbox, is **not an Incident** and is excluded from every service level, availability measurement and response or resolution target.
+
+This mirrors MSA clause 4.1A and the Phase Two proposal. It is deliberate and it is the single most important exclusion in this document, because it is the one most likely to be tested in a real incident: an alert that should have fired and did not is a detection failure, not an inbox failure, and the paper now says so.
+
+**Counsel point, stated plainly.** Novosapien's own automated monitoring of the agent fleet under clauses 1.2 and 3.1 is unaffected and still runs 24/7 at every tier. A reviewer should be able to see the line between "we monitor our own software" and "we do not monitor your transaction estate". A final paragraph in Schedule 1 says that expressly.
+
+### 15.3A Schedule 4, the data processing schedule, rebased
+
+Schedule 4 mirrors MSA Schedule 3, and the same correction applies. **Read section 14.4A of the MSA reviewer brief for the full reasoning.** In short:
+
+- v0.1 said the AI model services run on **TXN's** provider accounts and are therefore TXN's processors. On 6 October 2026 Dorte said *"all of the LLMs are via your contracts"* and Brett confirmed it. They run on **Novosapien's** accounts. Schedule 4 now states that **while that is the case the model providers are Novosapien's sub-processors**, and that the position confirmed under the MSA carries over to this Agreement so the parties do not confirm it twice.
+- Part B now names **three** providers: **Google** (Gemini via GCP) as primary, **Anthropic** (Claude) as first failover, and **OpenAI** as second failover. Part A(d) adds that **a provider used only as a failover is still a sub-processor**.
+- **Hosting is named and settled**: a dedicated node for the agentic AI layer in TXN's European Microsoft Azure environment, managed by Direct Transact alongside the Core API, inside Direct Transact's PCI-covered environment. The processing-locations row now reads European Union and United Kingdom, and Part C's opening paragraph matches.
+- **EU or regional endpoint pinning** and zero-data-retention options are now obligations in the transfers row rather than aspirations.
+- A **conversation history and traces** row records that the datastore location is still to be confirmed in writing, with sensitive data stripped before writing.
+
+**Why this matters more here than in the MSA.** This Agreement is the one that runs for twelve months after the build stops, and it is the one under which Novosapien holds standing support access to a live card-issuing platform. If Dorte's external counsel reads one data schedule closely, it will be this one.
+
+### 15.3B The licensing handover, and why it usually lands before this Agreement starts
+
+Added 7 October 2026 on Brett's instruction. The Master Service Agreement now defines **Production Cutover**: the date a Deliverable first operates in the TXN Production Environment, confirmed in writing by both parties. **Before cutover** Novosapien licenses and runs the AI Model Services on its own accounts, so build and UAT are not held up waiting for TXN to contract with a model provider. **At cutover** the processing and the model licensing transfer to TXN, and the layer runs on TXN's LLM contracts. Full reasoning in section 14.4B of the MSA reviewer brief.
+
+**What that means for this Agreement specifically.** Support commences on **16 December 2026**, and the Deliverables are expected to be in the production environment by then. So the **normal position under this Agreement is that the model providers are TXN's processors, not Novosapien's sub-processors**, which is a materially lighter position for Novosapien than the MSA carries during Phase 2.
+
+Schedule 4 still lists the three providers in Part B, and that is deliberate. If any component of the Supported System has not cut over at the Commencement Date, the pre-cutover position applies to that component until it does. Listing them costs nothing and removes an argument. Part A(d) carries the same rule as the MSA: a provider used only as a failover is still a sub-processor.
+
+**The point for counsel.** Do not read Part B as a statement that Novosapien holds the model contracts during the support term. It is a fallback for an incomplete cutover. Clause 1.1 now imports the MSA's defined terms so the two documents cannot drift on this.
+
+### 15.4 Open points for counsel, refreshed
+
+Carried forward and still open:
+
+1. **The tier selection is unticked.** Schedule 2 offers Business Hours, Extended and Mission Critical. The £4,250/month figure in Schedule 3 and in MSA clause 7.5 is the Business Hours price. TXN has not selected a tier. A payments business running live card programs may well need Extended or Mission Critical, which is a different price.
+2. **The entity particulars** mirror the MSA: TXN's Cyprus HE number, the effective date, and TXN's notice email are blank.
+3. **TXN's DORA designation** is unconfirmed, as in the MSA.
+4. **The security-measures Part C** still needs Brett's sign-off against the actual posture. The **hosting provider name is now resolved** (section 15.3A). Part C(h) commits that documented security-awareness onboarding will be in place before this Agreement commences; that date is now a real date, **16 December 2026**, so the commitment is now testable. Make sure it is met.
+5. **Insurance** figures must match policies in force.
+
+New with v0.2:
+
+6. **The 12-month initial term now runs from 16 December 2026 to 15 December 2027.** Clause 9.3 permits termination during the initial term only for uncured material breach. Confirm TXN will accept a 12-month commitment to support on a system it has not yet run in production, or whether a shorter initial term closes faster. This is the most likely redline in the document.
+7. **Availability measurement starts on a system wired to the live platform for the first time.** Phase 2 wires the Agent Access Layer and the Full Agentic Experience onto the real Core API. The availability target begins to bite on 16 December 2026, within days of that wire-in completing. Consider whether a short ramp period, for example the first full calendar month measured but not credited, is worth proposing before TXN asks for it.
+8. **Section 11 above is stale on the liability cap and should be read with care.** It records a cap of 30 per cent of the MSA implementation fee (£43,350). The document does not say that. **Clause 9.2 as drafted caps each party's liability at the greater of £50,000 and the total charges paid under this Agreement in the 12 months before the claim**, separately from the MSA caps. That is the operative position. Counsel should note the practical effect of the commencement change: in the first 12 months the 12-month charges figure cannot exceed about £51,000 at the Business Hours tier, so the £50,000 floor is doing almost all the work early on. The strategy in section 11 for conceding a capped, sole-remedy credit regime instead of raising the cap still stands.
+
+### 15.5 What this draft is still not
+
+**Not final legal advice.** It needs a qualified solicitor's review before execution. The service-level targets and the exclusions are Novosapien's commercial positions and have been taken deliberately; the legal mechanics have not been reviewed by a practising solicitor.
+
+9. **Confirm Production Cutover happens before 16 December 2026.** If it does not, Novosapien is supporting a live service while still holding the model contracts, which is the heaviest combination of obligations in either document. It is also a commercial exposure: Novosapien would be paying for production model consumption under clause 3.7(c) of the MSA while charging a fixed support fee.
+10. **There is still no signed data processing agreement anywhere in this engagement** (vault open question #103). Dorte raised it on 6 October 2026 with the launch in view, and she intends a single trip to external counsel. This Agreement's Schedule 4 and the MSA's Schedule 3 should go to her as one pack, with the conversation-history storage question closed first.

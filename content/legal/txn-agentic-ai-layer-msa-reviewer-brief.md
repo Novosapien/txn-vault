@@ -1,19 +1,21 @@
 ---
-description: "Reviewer brief for the Novosapien–TXN MSA v0.2 — positions taken, IP and liability decisions, EU regulatory addenda, and open points for counsel"
+description: "Reviewer brief for the Novosapien x TXN MSA v0.3: positions taken, IP and liability decisions, EU regulatory addenda, and open points for counsel"
 ---
 
 # Reviewer Brief: Master Service Agreement (Novosapien x TXN)
 
-**Prepared by:** Novosapien commercial-lawyer skill (dry run) · **Date:** 2026-07-03, updated 2026-07-22 · **Draft version:** v0.2
-**Instrument:** Master Service Agreement + Statement of Work 2 (Agentic AI Layer); the pilot is the adopted Statement of Work 1
+**Prepared by:** Novosapien commercial-lawyer skill · **Date:** 2026-07-03, updated 2026-07-22, updated 2026-10-07 · **Draft version:** v0.3
+**Instrument:** Master Service Agreement + Statement of Work 2 (Phase 2 of the Agentic AI Layer); Phase 1, the pilot, is the adopted Statement of Work 1
 **Parties:** Novosapien and TXN
 **Governing law:** England and Wales
 
-> **CHANGELOG — 2026-07-22 (pilot separation).** The six-week pilot has been carved out into a standalone **Pilot Order** (see `txn-agentic-pilot-order.html` + its reviewer brief) so TXN's CEO could authorise it before going on leave, ahead of signing this MSA. This MSA is edited to match:
+> **CHANGELOG, 2026-10-07 (v0.3: phase naming, Phase 1 completion, Phase 3 decommitted).** Read section 14 first. It is the current statement of the commercials and it supersedes anything below it that conflicts.
+
+> **CHANGELOG, 2026-07-22 (pilot separation).** The six-week pilot has been carved out into a standalone **Pilot Order** (see `txn-agentic-pilot-order.html` + its reviewer brief) so TXN's CEO could authorise it before going on leave, ahead of signing this MSA. This MSA is edited to match:
 > - New **clause 2.1A** adopts the pilot, delivered under the Pilot Order, as the **completed Statement of Work 1** on MSA signature (its Deliverables and already-assigned Foreground IP become Deliverables/Foreground IP here; no further charge; nothing rebuilt).
 > - The wider engagement (wire-in build + Phase 3) is now **Statement of Work 2** (Schedules 1 and 2); Schedule 1 heading and clause 2.1 updated.
-> - **Clause 7.2** repriced: build £144,500 (4 months) → **wire-in £90,312.50** (~2.5 months); new note that the pilot (£54,187.50) was charged under the Pilot Order and is not re-charged. Clause 7.1 now cites the **22 July 2026 proposal (v1.2)**.
-> - **Schedule 2** payment schedule and deliverable allocation rebuilt to the wire-in figures, with Sprint Zero and Pilot shown as reference rows. Month numbering "months 5 to 7" → "November to January".
+> - **Clause 7.2** repriced: build £144,500 (4 months) reduced to **wire-in £90,312.50** (~2.5 months); new note that the pilot (£54,187.50) was charged under the Pilot Order and is not re-charged. Clause 7.1 now cites the **22 July 2026 proposal (v1.2)**.
+> - **Schedule 2** payment schedule and deliverable allocation rebuilt to the wire-in figures, with Sprint Zero and Pilot shown as reference rows. Month numbering changed from "months 5 to 7" to "November to January".
 > - **Total committed engagement unchanged at £270,375** (Sprint Zero £17,500 + Pilot £54,187.50 + wire-in £90,312.50 + Phase 3 £108,375). Support £4,250/mo after Phase 3, unchanged.
 > - IP position is unchanged in substance: clause 6.3's present assignment now flows to the pilot via the Pilot Order (which lifts the same language) and the clause 2.1A adoption.
 >
@@ -25,21 +27,23 @@ A competent **first draft**, generated from Novosapien's standard house paper, w
 
 ## 2. The deal in one paragraph
 
-Novosapien builds the **agentic AI layer** across TXN's three surfaces (Core API, Console, Developer Portal) and its internal ops, delivered by a full-time team of three, bought by the month. Build phase is £144,500 over four months to the October 2026 launch (following a completed Sprint Zero), then an optional monthly retainer of £36,125 for Phase 3, plus £4,250/month managed support. TXN's platform is built by other partners (Direct Transact, Stackworkz, Super Ultra); Novosapien delivers the AI layer only.
+Novosapien builds the **agentic AI layer** across TXN's three surfaces (Core API, Console, Developer Portal) and its internal ops, delivered by a full-time team of three, bought by the month. TXN's platform is built by other partners (Direct Transact, Stackworkz, Super Ultra); Novosapien delivers the AI layer only.
+
+**The commercials in this section were superseded on 7 October 2026. See section 14.3 for the current position.** For the record, the figures this paragraph originally carried, a £144,500 four-month build to an October 2026 launch with a committed Phase 3 retainer, are no longer the deal. Phase 1 is delivered and accepted, Phase 2 is £90,312.50 over 28 September to 15 December 2026, and Phase 3 is not committed.
 
 ## 3. Key positions taken (and why)
 
 | Clause | Position taken | Rationale / source |
 |--------|----------------|--------------------|
-| Structure | MSA framework + SoW per engagement | Repeat/phased work (pilot → wire-in → Phase 3 menu); keeps legal terms stable |
-| Charges (7.2-7.5) | £144,500 in 4 tranches of £36,125; retainer £36,125/mo; support £4,250/mo | Directly from the proposal's payment schedule and commercial terms |
+| Structure | MSA framework + SoW per engagement | Repeat/phased work (Phase 1, then Phase 2, then Phase 3); keeps legal terms stable |
+| Charges (7.2-7.5) | **Superseded, see section 14.3.** Phase 2 £90,312.50 in tranches of £36,125, £36,125 and £18,062.50; Phase 3 not committed; support £4,250/mo from 16 December 2026 | Phase Two proposal, 28 September 2026 |
 | Late payment (7.4) | 4% above BoE base rate | Proposal (note: this is *below* the statutory 8%-above-base default under the Late Payment Act; it is a concession to TXN) |
 | Liability cap (9.4) | Total charges paid; carve-outs for confidentiality breach + wilful misconduct (plus the statutory carve-outs) | Proposal ("capped at total fees paid; no indirect or consequential damages, except confidentiality or wilful misconduct") |
 | Termination (10.2-10.3) | 30 days' notice; handover deployable + documented | Proposal |
-| AI output (3.3-3.4) | Advise-not-decide; no accuracy warranty; approvals + permission model respected; no fraud auto-execution | Vault §6 non-negotiables + trust concepts |
+| AI output (3.3-3.4) | Advise-not-decide; no accuracy warranty; approvals + permission model respected; no fraud auto-execution | Vault section 6 non-negotiables + trust concepts |
 | IP (6) | Three-way split: (6.2) Novosapien's delivery agents = Background IP, a build cost, excluded from what TXN gets; (6.3) the agents/AI/data built for the TXN platform = Deliverables, **exclusive to TXN and assigned to TXN on full payment** (full title guarantee, present assignment of future rights, embedded Background IP licensed as needed to use the Deliverables); (6.4) Novosapien's Content / Inbound / Outbound / Deal Lab Workforce products = **excluded**, available later only under a separate monthly consumption licence | Protects Novosapien's tooling and productised workforces while giving TXN clean ownership of its build. Assignment decided 6 July 2026: the 6.3 exclusivity promise had already removed the resale value of retaining ownership, and a regulated payments customer would demand ownership for exit/continuity anyway |
-| Compliance (4.3) | TXN owns all compliance frameworks; Novosapien builds to respect them | Vault §6 + proposal warranties (PCI-DSS, GDPR, FCA) |
-| Data (6.4, 8.2, Sch 3) | Novosapien = processor; Art 28 schedule; no training on TXN/client data; cardholder PII limited/redacted; UK/EU residency | Vault §6 (#16: limit + redact + EU residency) + ai-software-clauses |
+| Compliance (4.3) | TXN owns all compliance frameworks; Novosapien builds to respect them | Vault section 6 + proposal warranties (PCI-DSS, GDPR, FCA) |
+| Data (6.4, 8.2, Sch 3) | Novosapien = processor; Art 28 schedule; no training on TXN/client data; cardholder PII limited/redacted; UK/EU residency | Vault section 6 (#16: limit + redact + EU residency) + ai-software-clauses |
 
 ## 4. Assumptions made (confirm before execution)
 
@@ -63,7 +67,7 @@ Novosapien builds the **agentic AI layer** across TXN's three surfaces (Core API
 - **Multi-tenancy is unresolved** (vault open question #48: ring-fenced per-client stacks vs central orchestration) and **infra separation** (#49). This affects the AI layer's architecture. **Partially resolved (6 July 2026): hosting responsibility is settled.** New clause 4.6 records that hosting, infrastructure, and the multi-tenancy architecture are provided and managed by TXN or its other partners in every model; Novosapien carries no liability for their failure, and downtime they cause is excluded from delivery obligations, service levels, and the liability cap (clause 9.5). The architectural choice itself remains a `[placeholder]` dependency in Schedule 1.
 - **Dependency risk is high and partner-led.** Delivery dates depend on DT (Core API + YAML cadence, Data Lake schema) and Stackworkz (Console instrumentation, Portal plug-in points). Clause 4.2 gives relief for partner-caused delay; make sure TXN accepts that risk allocation.
 - **Payments/FCA context.** The proposal warrants the architecture "supports and does not impede" TXN's PCI-DSS/GDPR/FCA obligations. Keep that as a design commitment, not a compliance guarantee; the draft (4.3, 9.1) does this. A solicitor should confirm the framing is tight enough.
-- **Cardholder PII into LLM context** is a live risk (vault §8). Schedule 3 limits and redacts; confirm the data-residency mechanism if any personal data leaves the UK (model/hosting providers as sub-processors).
+- **Cardholder PII into LLM context** is a live risk (vault section 8). Schedule 3 limits and redacts; confirm the data-residency mechanism if any personal data leaves the UK (model/hosting providers as sub-processors).
 - **Fraud & Risk Assist and Reconciliation** are excluded from SoW 1 (data-dependent). Keep them to a later SoW so they are not read as in-scope now.
 
 ## 7. Open questions for counsel
@@ -154,3 +158,126 @@ A red-team review from TXN's perspective (`txn-counterparty-review.md`) was run 
 - **Removed:** "(numbering in the thousands)" from 6.2.
 
 **New decisions needed:** the 9.6 IP-indemnity cap figure, the 9.7 insurance figures (and confirming cover exists), the [2] failed-acceptance count, and TXN's notice email address. Negotiation postures on the general cap, credits, payment days, the 4.6 causation carve, and LCIA fallback remain as documented in `txn-counterparty-review.md`.
+
+## 14. Addendum (2026-10-07): v0.3, rebased on the Phase Two proposal and Phase 1 completion
+
+This section is the current statement of the commercials. Where anything earlier in this brief conflicts with it, this section governs.
+
+### 14.1 Why the draft moved
+
+v0.2 was written on 22 July 2026 against the Agentic Layer proposal of the same date. Three things have happened since, and the MSA had drifted from all three:
+
+1. **Phase 1, the pilot, finished and was accepted.** It ran from 27 July 2026, TXN accepted it **in writing on 16 September 2026**, and it was deemed complete at the end of the week commencing 14 September. The handover position is recorded in the Phase 1 handover document dated 24 September 2026.
+2. **The phases were renamed and renumbered** by Brett on 25 September 2026. **Phase 1 is the pilot** (complete). **Phase 2 is the next stage** at £90,312.50. **Phase 3 follows** at an indicative £108,375. The earlier "wire-in build" and "phase one" labels are withdrawn. v0.2 used the old names throughout.
+3. **A Phase Two proposal was issued** (v1.0, 28 September 2026), which scopes Phase 2 as six named components, fixes a single dated milestone, states the alerting boundary, and expressly declines to commit Phase 3. v0.2 contradicted the last of those.
+
+### 14.2 What changed in the document
+
+| Clause / Schedule | v0.2 | v0.3 |
+|---|---|---|
+| 2.1 | Schedules 1 and 2 = SoW 2, "the wire-in build and Phase 3" | Schedules 1 and 2 = SoW 2, **Phase 2 only** |
+| 2.1A | Pilot adopted as SoW 1, no dates, no acceptance recited | Phase 1 adopted as SoW 1, **accepted in writing 16 September 2026**, handover document referenced, acceptance expressly not reopened |
+| 2.1B (new) | Not present | Records the **four pieces of work delivered alongside Phase 1 at no charge** (Control Center build, Agent Inbox and Alerts front end, the workflow slate build to thirteen procedures and 43 tools, the speed and usability programme to production 22 September). TXN owns them; **no charge is or becomes due**; they do not extend Phase 2 scope |
+| 2.1C (new) | Not present | The **four TXN items that complete the Phase 1 transfer** (destination environment, repository destination and push access, named technical recipient, model and framework list approval), each a clause 4.1 dependency, and expressly **not a shortfall in Phase 1 or a condition of any charge** |
+| 4.1A (new) | Not present | **The alerting boundary.** Novosapien builds the inbox. Detection, monitoring and thresholds stay with Direct Transact and the Stackworkz Console. Alerts arrive on an agreed feed, which is a clause 4.1 dependency. TXN wanting Novosapien to own detection is a further SoW with a separate charge |
+| 7.1, 7.2 | "Wire-in build" £90,312.50, 22 July proposal | **Phase 2** £90,312.50, 28 September proposal. Adds the team-rate basis: TXN buys the team for the period, TXN sets the weekly order of work, **the charge does not move with the mix**. Adds that if the start date moves the window and invoice dates move and the amounts do not |
+| 7.3 | **TXN committed** to a 3-month Phase 3 at £36,125/mo (£108,375); neither party could exit | **Phase 3 is not committed.** Scope, duration and charge agreed in the **final fortnight of Phase 2**, under a further signed SoW. £36,125/mo stated as the indicative basis only |
+| 7.5 | Support "after launch", tier fee £4,250/mo | Support **commences at the end of Phase 2 (15 December 2026)**. No support fee before that date. Defect correction during Phase 2 is inside the Phase 2 charge |
+| 10.2 | No convenience termination during "build phase" or the committed Phase 3 term | No convenience termination of **Phase 2 before 15 December 2026**. Phase 3 carries no notice restriction unless its SoW says so. Clause 4.4A DORA rights expressly preserved |
+| Schedule 1 | Six generic deliverables; A2A endpoint inside the Agent Access Layer; "alert detection" inside Agent Inbox; timeline to "the October 2026 launch"; Phase 3 committed | **The six Phase 2 components**, named as in the proposal. New **"Explicitly not in Phase 2"** list. **Term 28 September to 15 December 2026** with the **15 October knowledge hub milestone** and the **8 October** opening of the wire-in and Co-pilot. TXN dependencies rewritten to the proposal's list. Team, AI consumption, and weekly flight plan / fortnightly demo reporting added |
+| Schedule 2 | One payment table mixing Phase 2 and a committed Phase 3; "deliverable price allocation" presented as prices | Four tables, separated by what is actually committed: **Phase 2 only** is charged here; Sprint Zero and Phase 1 shown for completeness; the **£270,375 plan marked indicative and not a committed spend**; the component allocation marked **indicative, for clauses 5.2 and 5.3 only** |
+
+### 14.3 Commercial position, as it now stands
+
+| Stage | Status under this Agreement | Charge |
+|---|---|---|
+| Sprint Zero | Delivered and invoiced, outside this Agreement | £17,500.00 |
+| Phase 1, the agentic pilot | Delivered, accepted 16 September 2026, charged under the Pilot Order | £54,187.50 |
+| Phase 2, SoW 2 | **Committed.** 28 September to 15 December 2026 | £90,312.50 |
+| Phase 3 | **Not committed.** Scoped in the final fortnight of Phase 2 | £108,375.00 indicative |
+| Support and maintenance | Separate agreement, commences 16 December 2026 | £4,250 / mo |
+
+**TXN's committed spend under this Agreement is £90,312.50.** The £270,375 figure is retained in Schedule 2 because it is the figure every proposal has carried and removing it would read as a change of plan, but it is now labelled as the indicative route to version one rather than as a commitment. Counsel on either side should read it that way.
+
+### 14.4 The decisions behind v0.3, and who made them
+
+- **Phase 3 decommitted. Brett, 7 October 2026.** v0.2's committed 3-month Phase 3 contradicted the Phase Two proposal Ian will read alongside this Agreement. A contradiction a counterparty's lawyer finds costs more than the commitment is worth. The commercial consequence is real and should be understood: Novosapien has given up a contractual claim to £108,375 and now has to earn Phase 3 on the evidence of Phase 2. That is consistent with Ian's own position on 9 September, that the next phase of spend depends on an honest assessment of delivered value.
+- **Phase 2 start date 28 September 2026. Brett, 7 October 2026.** The proposal said 1 October. The MSA now recites 28 September, which is the date the team actually started. Note the arithmetic: 28 September to 15 December is marginally over two and a half months, and the three invoice tranches are unchanged at £36,125, £36,125 and £18,062.50. **Counsel point:** if TXN's finance team reconciles the dates against the tranches, the half-month tranche is covering slightly more than half a month. This is in TXN's favour and is not worth reopening, but it should not come as a surprise.
+- **Support commences at the end of Phase 2. Brett, 7 October 2026.** v0.2 hung support off a "Launch Date" that was never defined and a Phase 3 retainer that no longer exists. Support now commences 16 December 2026, which is a date both parties can diarise. Carried into the Support & SLA Agreement at its clause 2.1 (now v0.2 of that document).
+- **The alerting boundary is now contractual, not just commercial.** It is in the proposal and it is now in clauses 4.1A and Schedule 1 of the MSA and in Schedule 1 of the SLA. This is deliberate and it will surface a conversation: TXN's open question #68 records Michael saying on 25 August 2026 that Direct Transact has **no** alerting system and that he wanted the AI to be the central one. If TXN's expectation is that Novosapien owns detection, the right place to discover that is before Phase 2 runs, not after.
+
+### 14.4A Schedule 3, the data processing appendix, rebased on the 6 October 2026 standup
+
+This was not in the original brief for this pass, and it is the most important change in v0.3. On **6 October 2026** Dorte asked Brett whether a data processing agreement had ever been signed. The answer was no. Her words: *"I need to gather all of the facts and then we go to external counsel. But for that I really need to have everything watertight that I can explain everything."* She intends to go to counsel **once**. That makes Schedule 3 the part of this pack most likely to be read by a lawyer who is not Novosapien's, and it had a false premise in it.
+
+**The false premise.** v0.2's Schedule 3 opened by stating that the AI model services *"are engaged on TXN's own provider accounts; those providers are TXN's processors, not Novosapien's sub-processors"*. That is the **target** operating model. It is not the current one. On the same call Dorte said *"all of the LLMs are via your contracts"* and Brett confirmed: *"Correct."* The models run on **Novosapien's** accounts today.
+
+**Why that mattered.** If the model providers run on Novosapien's accounts, they are Novosapien's **sub-processors** under Article 28, and every Part A obligation attaches to them: written flow-down, full responsibility for their performance, notice of change, and TXN's right to object. v0.2 disclaimed all of that on a factual basis that was wrong. A competent reviewer on TXN's side would have found it, and finding it in a document Novosapien drafted is worse than Novosapien raising it.
+
+**What v0.3 does instead.** Schedule 3 now states **two operating models** and which one applies:
+
+- **The current model (during Phase 2).** Models run on Novosapien's accounts. Those providers **are** Novosapien's sub-processors, are named in Part B, and Part A applies to them in full.
+- **The target model.** On a date the parties confirm **in writing**, the accounts transfer to TXN and the providers become TXN's processors. Novosapien supplies the information TXN needs to make that appointment.
+- A backstop sentence: until that transfer is confirmed in writing, the current model applies, and **nothing elsewhere in the Agreement about model usage running on TXN's accounts displaces it**. That is there because Schedule 1's AI-consumption paragraph and the Phase Two proposal both describe the target model, and a reader should not be able to use either to argue the point.
+
+**The sub-processor list now names three providers, not two.** v0.2 named Anthropic and Google. The architecture has a third. George described the fallback chain on 29 September as Google, then Anthropic, then **OpenAI**, and confirmed on 1 October that the live model is Gemini 3.8 Flash through GCP. Part B now lists Google as primary, Anthropic as first failover and **OpenAI as second failover**, and Part A(d) carries a new sentence: **a provider used only as a failover is still a sub-processor**. Omitting OpenAI because it only appears when two other providers are down would have been the kind of omission that costs credibility in a single question.
+
+**Hosting is named, because it is now settled.** Michael confirmed on 6 October that the AI layer gets *"another node for any central AI layer... alongside the API in that same sort of European Azure stack"*, inside Direct Transact's PCI-covered environment, and that it is already built. Part B carries a **Hosting** row saying exactly that, the processing-locations row now reads **European Union and United Kingdom** rather than deferring to TXN's configuration, and Part C's opening paragraph matches. The hosting-provider name that was a `[placeholder]` in earlier briefs is resolved.
+
+**Two commitments that were engineering notes are now contractual.** EU or regional **endpoint pinning** and **zero-data-retention or no-training options** were previously a counsel note in the brief and an aspiration in the text. The international-transfers row now obliges Novosapien to pin them while the providers run on its accounts, and to **tell TXN before routing TXN personal data to any provider that offers no European endpoint**. Novosapien should be clear-eyed that this is a real obligation it now has to meet in the architecture, not a drafting flourish.
+
+**The PCI point, raised rather than buried.** The AI node sits inside Direct Transact's PCI-covered environment. Schedule 3 says expressly that this does not change clause 4.5 (Novosapien does not store, process or transmit cardholder data, and cardholder data stays out of model context) and does not make Novosapien responsible for TXN's or Direct Transact's PCI-DSS compliance (clause 4.3). Counsel should confirm that framing is acceptable to TXN's compliance function, because a supplier operating inside a PCI environment is a question an auditor will ask.
+
+**One genuine open item is now written down rather than left out.** George raised on 6 October that the agents write conversation history and execution traces to a datastore, and that its location is undecided. Part B carries a **Conversation history and traces** row recording that the location is to be confirmed in writing, that the intention is the same European Azure environment, and that in the meantime Novosapien will not write TXN personal data outside that environment and strips sensitive data before writing. **Counsel point:** this is an honest placeholder rather than a resolved position, and it should be closed before the pack goes to Dorte's external counsel, because an undecided storage location is exactly the thing she will be asked about.
+
+**Carried into the SLA.** Schedule 4 of the Support & SLA Agreement mirrors all of the above, with a line saying the position confirmed under the MSA carries over so the parties do not have to confirm it twice.
+
+### 14.4B The licensing handover, and why the data position has two stages rather than one
+
+Added on Brett's instruction, 7 October 2026, after the first pass of 14.4A. It sharpens a trigger that was too vague to rely on.
+
+**The operational fact.** Novosapien builds all the code and the environments, and runs dev and user-acceptance testing, **on its own models under its own licences**. That is deliberate: waiting for TXN to contract with Google, Anthropic and OpenAI before anyone can test would hold the build up for no benefit. **Once the Deliverables move into TXN's production environment, the processing and the AI model licensing hand over to TXN**, and from then on the layer runs on TXN's LLM contracts rather than Novosapien's.
+
+**Why the first draft was not good enough.** 14.4A described two operating models separated by "a date the parties confirm in writing". That is a trigger with no content: it describes the paperwork without naming the event. A reviewer would reasonably ask what causes the confirmation, and neither party had an answer in the document.
+
+**What v0.3 does now.**
+
+- **New clause 1.2** defines four terms: **Non-Production Environment**, **TXN Production Environment** (the dedicated agentic AI layer node in TXN's European Azure environment managed by Direct Transact, rendering into the Stackworkz-provided Console and Developer Portal surfaces), **AI Model Services**, and **Production Cutover** (the date a Deliverable first operates in the TXN Production Environment, confirmed in writing by both parties).
+- **New clause 3.7** carries the handover itself: before cutover Novosapien licenses and runs the models on its own accounts at its own cost; at cutover TXN takes over licensing, contracting and consumption on its own accounts; and the data-protection consequence of each stage points to Schedule 3.
+- **Schedule 3** now presents the position as a **two-stage table**: where the Deliverables run, whose accounts the models run on, the status of the providers, who covers the transfer mechanism, and what Novosapien still processes, in each stage.
+
+**Four drafting points a reviewer will test, and the answers.**
+
+1. **Production Cutover is per Deliverable, not per engagement.** Phase 2 moves components across at different times; the wire-in and the knowledge hub will not cut over on the same day. Clause 1.2 says so, and clause 3.7(d) adds that a Deliverable which is partly live is treated as **before** cutover until the whole thing has moved. That resolves in favour of the stricter obligations, which is the right default.
+2. **The handover is a two-sided obligation with a lead time.** Clause 3.7(c) requires Novosapien to give TXN, **20 Business Days before a planned cutover**, the list of models and fallbacks, the configuration it has been running (including regional endpoints and any zero-data-retention settings), and an expected-consumption estimate. TXN puts its accounts and credentials in place before the date. Without that lead time the handover becomes a scramble on the day.
+3. **What happens if TXN's accounts are not ready.** Clause 3.7(c) says Novosapien keeps running on its own accounts if TXN asks in writing, the transitional period counts as pre-cutover for Schedule 3, and **Novosapien may recharge the model consumption at billed cost after telling TXN it intends to**. Novosapien should be comfortable with this: absorbing an open-ended production model bill because a counterparty's procurement was slow is a real commercial exposure, and this is the clause that closes it. It is also fair, because it only bites after notice.
+4. **Data minimisation before cutover.** A new paragraph in Schedule 3 commits Novosapien to using synthetic or test data in preference to TXN personal data in Non-Production Environments, and not to use TXN personal data there except on TXN's instruction or where diagnosing a defect genuinely requires it. **This is the paragraph that answers Dorte's actual worry.** Her concern on 6 October was <em>"the LLM sends something to the US"</em>. If TXN personal data largely does not reach Novosapien's model accounts in the first place, the pre-cutover exposure is small, and the clause says so without overclaiming.
+
+**One thing to confirm before this goes out.** Clause 3.7's data-minimisation commitment is drafted as a preference rather than an absolute. **If Phase 2 dev and UAT in fact run on synthetic data only, as the Pilot Order did, that should be stated as a flat prohibition instead**, which is both stronger for TXN and easier for Dorte to put in front of counsel. It is drafted as a preference because the vault does not record a Phase 2 decision on the point, and a flat prohibition that the team then breaches in a defect investigation is worse than an honest preference. **Confirm the Phase 2 test-data position and tighten the clause if it is synthetic-only.**
+
+**A naming point, raised not buried.** Brett described the destination as the Stackworkz environment. Michael described it on 6 October as a dedicated node in Direct Transact's European Azure stack, alongside the Core API. The definition in clause 1.2 names the Azure environment as the production location and Stackworkz as the provider of the Console and Developer Portal surfaces the layer renders into, which covers both descriptions. If the destination is in fact a Stackworkz-operated environment rather than a DT-operated one, the definition needs one word changed, and Schedule 3's hosting row with it.
+
+### 14.5 Open points for counsel, refreshed
+
+Still open from earlier sections, and still blocking execution:
+
+1. **TXN's Cyprus HE number** and the **effective date** are blank write-in lines.
+2. **TXN's DORA designation** (clause 4.4B) is unconfirmed. If the Services support a critical or important function, clause 4.4B's obligations switch on automatically, including unrestricted audit rights and a maintained exit strategy with a 6-month transition.
+3. **Insurance figures** (clause 9.7, £1m PI and £1m cyber) must match policies actually in force. Do not send otherwise.
+4. **The IP indemnity cap** (clause 9.6) is drafted as capped separately at the SoW charges; the earlier intention was a 2x multiple. Confirm which.
+5. **Schedule 3 security measures** need Brett's sign-off against the actual posture. The **hosting provider name is now resolved** (see 14.4A): a dedicated node in TXN's European Microsoft Azure environment, managed by Direct Transact.
+6. **The EEA-to-UK transfer position** rests on the Commission's UK adequacy decision; confirm it is in force at signature.
+7. **TXN's notice email address** is still to insert.
+
+New with v0.3:
+
+8. **The Phase 2 test-data position.** Confirm whether dev and UAT run on synthetic data only. If they do, tighten the Schedule 3 data-minimisation paragraph from a preference to a prohibition (see 14.4B).
+9. **Phase 2 has already started.** The MSA recites a commencement date of 28 September 2026, which is before signature. Clause 2.1 says SoW 2 takes effect on signature. Counsel should confirm whether the parties want the Agreement to operate retrospectively from 28 September, which is the commercial reality, or whether a short recital should say so expressly. As drafted the position is workable but it is the kind of thing a careful reviewer will raise.
+10. **The Phase Two proposal's status.** As at the last vault record (28 September 2026) it was with Brett for review and had not been sent to Ian. If it has since been issued and countersigned, this MSA should recite it. If it has not, the parties are signing an MSA whose SoW 2 scope has not been separately accepted. **Confirm before sending.**
+11. **The 10 per cent pass-through administration fee** quoted by Brett on 4 September 2026 for the Outbound Workforce domains has never been put to TXN in writing, and it is unresolved whether 10 per cent is the general pass-through rate or specific to the domains. It is not in this Agreement. It belongs in the Workforce Order under clause 2.3 and should be settled before it is quoted again.
+12. **The data processing appendix is the live commercial issue, not a background one.** There is no signed DPA, the MSA is not in play, and the current phase has only a proposal with no appendix (vault open question #103). Dorte has asked for the pack and intends one trip to external counsel. The drafting has been substantially complete since July and v0.3 has now corrected its premise, named the third model provider and resolved hosting. **What is missing is signature and an appendix for Phase 2, not drafting.** The practical sequence: close the conversation-history storage question, get Brett's sign-off on the Part C security row, then send the MSA, the SLA and both briefs as one pack.
+13. **The GTM Workforces order is still unsigned** and still carries voice-calling obligations at its clause 8.2 and an ElevenLabs usage pass-through, both of which are now out of scope (Ian ruled out AI voice, inbound and outbound, on 24 August 2026). That document was not updated in this pass. It should be corrected before signature.
+
+### 14.6 What this draft is still not
+
+A competent first draft, now accurate to the delivery record and the latest proposal. **Not final legal advice.** It needs a qualified solicitor's review before execution, particularly on the DORA provisions, the IP assignment formalities, and the data-transfer position. The commercial positions in it are Novosapien's and have been taken deliberately; the legal mechanics have not been reviewed by a practising solicitor.
