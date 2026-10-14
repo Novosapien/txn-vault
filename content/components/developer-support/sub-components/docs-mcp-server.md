@@ -5,7 +5,8 @@ sources:
   - "[[09-06-2026-developer-support]]"
   - "[[ux-txn-intelligence-enhanced-documentation-discovery]]"
   - "[[2026-09-16-next-phase-discussion]]"
-description: "Sub-component spec for the hosted docs MCP server — a developer's own agent queries TXN docs (L1) or tests the sandbox (L2), API-key gated per level"
+  - "[[2026-10-13-agentic-standup]]"
+description: "Sub-component spec for the hosted docs MCP server: a developer's own agent queries TXN docs (L1) or tests the sandbox (L2), API-key gated per level"
 ---
 
 # TXN — Developer Support: Docs MCP Server (hosted)
@@ -66,6 +67,13 @@ It has **two levels of capability**:
 > **But nothing tells it which version of the specification a developer means.** Michael: **"as of now it's all manual versioning. There's no, nothing in place at the moment."** TXN keeps two versions, current plus upcoming or previous, across a staging, public sandbox, client UAT and production lifecycle, and the design goal is that *"you don't need to know the version number."* The gap is a developer who built against production and ignored the version in UAT. **Ian's resolution: ask which stage they are on, up front**, the same pattern as the suspend-card fix.
 >
 > **Two rulings worth following.** **Read the authored change log, never compute a diff**; Ian: a diff is *"more prone to potential errors... however good the models are, they still come up with some stuff that's just not accurate."* Change logs go into Umbraco, possibly on their own endpoint. George: *"all we need is the current version of the YAML and the change log, without doing any fancy stuff."* And **release notes must be sanitised in Umbraco, not by the agent**, because the hub is unauthenticated and the agent repeats what it is given. [[open-questions]] #101.
+
+> [!warning] Who owns the document feed, and a name that may have come back from the dead (13-10-2026)
+> **The ownership split was agreed** ([[2026-10-13-agentic-standup]]), answering an email from Michael. Brett: *"most likely it'll probably be easier for us to **control the llm.txt as in from a consumption point of view**"*, with **Stackworkz populating it** and **DT doing the API versioning**. Michael agreed and put it on the 14 October agenda with Stackworkz. So Novosapien owns consumption, Stackworkz owns publication, DT owns the specification.
+>
+> **Hasan's reason is update latency, not ownership.** *"If we are going to integrate all of the MD files it'll be a lot easier on our side, because then if there's any updates then we are to update the MCP server and our agents as well. Instead of, if there's an update, we need to speak to the Stackworkz and then it's a lot of back and forth."* That is an argument for the **local filesystem representation already agreed on 1 October**, refreshed by the Umbraco webhooks, with Novosapien able to re-ingest without a partner in the loop.
+>
+> **But the artefact is unclear, and the name is a problem.** `llms.txt` was **dropped on 16 September** for a stated reason that has never been withdrawn: *"a 20,000 line file is just going to bloat the context for their AI and potentially decrease the quality of the answer"* ([[2026-09-16-next-phase-discussion]], and the routing table in [[developer-support]] still records it as dropped). Brett's "llm.txt" may mean that file, revived; or it may be loose wording for the markdown corpus, in which case nothing has changed. **Michael's email is not in the vault**, so the transcript cannot settle it. Resolve before Stackworkz starts populating anything: [[open-questions]] #110.
 
 ## 2. What Needs to Happen?
 
