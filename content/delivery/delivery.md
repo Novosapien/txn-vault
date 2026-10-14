@@ -117,6 +117,15 @@ Reviews of the client's own console feedback queue, read from `txn.feedback` and
 >
 > **That collides with [[open-questions]] #96.** On 23 September Nicola and Bron agreed to announce the full proposition at launch, without Ian present. He has now said the market message sets the scope, so if the message is bullish and phase two is not, the gap lands in this proposal. He has read neither. [[open-questions]] #99.
 
+> [!note] A working method with Stackworkz, at last (14-10-2026)
+> **The two build teams synced for the first time** ([[2026-10-14-alignment-txn-stackworkz-novosapien]]) and agreed how to work: **Novosapien implements the co-pilot inside Stackworkz's Knowledge Hub codebase and Stackworkz review it.** Stackworkz will show Novosapien how to run it locally, Novosapien push to whatever branches the test environments need, and Novosapien adopt any coding standards Stackworkz name.
+>
+> **Stackworkz cleared Novosapien's code**, having run it locally against a local model: *"I don't foresee any problems there."*
+>
+> **What is not agreed is the governance.** No standards have been named, there is no review turnaround, nobody said who deploys, and nothing covers a stalled review. The engagement is contractually Novosapien to TXN, while delivery now runs through a partner Novosapien has no agreement with. [[open-questions]] #111.
+>
+> **Next:** Stackworkz send codebase access and share what they have built for permissions and approvals, Michael sends the Control Center material, and a **breakout on authentication and approvals is booked for early next week** (#107).
+
 > [!warning] The launch date goes open-ended, and Novosapien is now ahead of DT (13-10-2026)
 > **Brett asked whether the developer portal launch date still held. Michael: *"I'd say no at this rate."*** ([[2026-10-13-agentic-standup]])
 >

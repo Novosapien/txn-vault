@@ -6,6 +6,7 @@ sources:
   - "[[ux-txn-intelligence-enhanced-documentation-discovery]]"
   - "[[ux-ai-user-stories-and-requirements]]"
   - "[[2026-10-13-agentic-standup]]"
+  - "[[2026-10-14-alignment-txn-stackworkz-novosapien]]"
 description: "Sub-component spec for the portal chat: semantic doc discovery, grounded Q&A with source references, a deterministic fallback, and live sandbox execution"
 ---
 
@@ -105,6 +106,30 @@ It is **deliberately light**: Ian's explicit steer is to invest in the [[docs-mc
 > **Review path.** Michael and Dorte test it first, Ian being away, then it widens to **testers from DT and PayCorp**, deliberately spread *"from technical background to to not so technical"*, with **Dorte choosing the pool and Michael writing the test cases**, repeating the two rounds that worked for the knowledge hub. Access is through the admin panel until it is linked properly.
 >
 > **It is now likely to ship at launch.** Michael: *"it does look like we are ahead of sort of DT at this point... it's probably going to be much closer to launch having the AI functionality in then than it was before."* Planned as a later phase, pulled forward by DT slipping rather than by a decision. See [[open-questions]] #109 and #105.
+
+> [!important] It moves into Stackworkz's codebase, and Stackworkz approve of the code (14-10-2026)
+> **The ways of working are settled** ([[2026-10-14-alignment-txn-stackworkz-novosapien]]). The replica Novosapien has been building against was always temporary. Michael: *"it was a kind of quickish thing that we were using to kind of get going, get ahead. So it's not perfect; it's just a base."* The aim now is *"to get it into where it's actually going to be used, obviously not just chuck it over the fence."*
+>
+> | Element | Agreed |
+> |---|---|
+> | **Codebase** | Novosapien gets access to the **Knowledge Hub codebase** and implements the co-pilot in it |
+> | **Review** | Stackworkz review, with standing permission to object early |
+> | **Standards** | Stackworkz name them, Novosapien follows them. **None named yet** |
+> | **Branches** | Whatever Stackworkz need for their test environments |
+> | **Access** | George sends the usernames straight after the call |
+> | **Local setup** | Stackworkz will show Novosapien how to run it |
+>
+> Ruan proposed it, George set the terms, and the reason both wanted it was the same: *"you guys have got like loads on your plate, so the last thing you need is getting access to a random codebase which is kind of similar."* What is not yet agreed is review turnaround, who deploys, or what happens when a review stalls: [[open-questions]] #111.
+>
+> **Stackworkz reviewed the code and cleared it.** Ruan: ***"it's actually very cool.*** We got it running with a local model... I got the thing working. So I don't foresee any problems there."* No issues with the AGUI front-end code. One reservation, raised up front and unrelated to the co-pilot: *"maybe one or two concerns about how authentication authorization will work, especially for the agent"* (#107).
+>
+> **A failure in the demo that was worth more than a clean run.** A test payload failed because the cardholder ID was still a placeholder, and the agent said so. Hasan: *"it'll be really handy if you want to do any sort of like debugging as well."* That is the behaviour behind Ian's standing requirement that sandbox error diagnosis should not need a human.
+>
+> **Why the history sits in the browser, stated for the first time.** Not a privacy design, a complexity one. Adding an authentication layer *"on top of what's already there for people who are not paying customers at the moment is obviously a big piece of work"*, so it stays out *"because obviously at the moment, we just need to move fast."* Proper storage arrives with sign-in and becomes the user's choice. The privacy benefit Dorte welcomed on 8 October is a by-product, which matters if the reason for it ever goes away.
+>
+> **Two small items.** The sidebar co-pilot *"might mess with some of the components that are already on there"*, flagged by Novosapien against itself. And the copy-to-AI buttons Michael asked for are *"an extra query into the string, which points to the page that's got that content."*
+>
+> **Cold start latency was visible** on the call, with a note to turn the thinking level down.
 
 ## 2. What Needs to Happen?
 

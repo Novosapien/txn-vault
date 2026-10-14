@@ -77,7 +77,7 @@ _(Note: the session also confirmed, from the client side, that **A2A is not a st
 > |---|---|---|
 > | **1** | **[[docs-mcp-server]]**, exposed externally | Michael: *"having that MCP so they can not only navigate but start building towards the APIs... that for me is a number one."* Developers *"are going to know how to connect an MCP server"* |
 > | **2** | **[[portal-co-pilot]]**, unauthenticated | Question and answer over the docs. *"It provides a good base to push off of"* for authenticated features later |
-> | **Dropped** | `llms.txt` | *"A 20,000 line file is just going to bloat the context for their AI and potentially decrease the quality of the answer"* |
+> | **Dropped, then redefined** | `llms.txt` | Dropped as a monolith: *"A 20,000 line file is just going to bloat the context for their AI and potentially decrease the quality of the answer"*. **Revived on 14-10 as a router**, an entry point carrying links to pages the agent fetches separately ([[2026-10-14-alignment-txn-stackworkz-novosapien]]), so the objection no longer applies. See [[docs-mcp-server]] and [[open-questions]] #110 |
 >
 > **Three AI surfaces, named clearly for the first time:** the co-pilot in the knowledge hub or dev portal, the co-pilot in the Console, and the full agentic experience with alerts alongside. **MCP servers are portable microservices**, so the knowledge MCP is a separate server from the one the agentic experience uses, and either co-pilot could consume either.
 >

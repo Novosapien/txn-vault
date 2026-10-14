@@ -29,6 +29,15 @@ Cross-cutting technical decisions that affect the whole product. This directory 
 >
 > **And the model question this does not answer.** #70 originally asked whether hosting in DT's tenant constrains which models can be used. It was not raised, the list is still owed, and it now needs a third provider on it since the fallback chain reaches OpenAI (#103).
 
+> [!warning] Stackworkz want the agent inside the Control Center, not beside it, 14 October 2026
+> **The first architectural challenge from outside the engagement** ([[2026-10-14-alignment-txn-stackworkz-novosapien]]), and it is a reasonable one. Ruan, having reviewed the architecture document Michael sent, judged it *"like 80% fine. Maybe with a small tweak here and there, it will work fine."* The tweak is where the agent sits.
+>
+> **Their position:** *"a possible solution is for the agent not to call the TXN API directly, but go through the control center, which means what you'll get out of the box is all the approvals already and permissions and everything... It's not trivial for the agent to know which user it is, what permissions they have. That's not just available. That lives in the control center."* And: *"if we don't address that, you're going to duplicate a lot of the logic that we already built."*
+>
+> **What it would change.** The AI layer currently has its own node in DT's European Azure stack and calls the Core API. Routing through the Control Center puts a partner's service in the path of every privileged agent action, and makes the agent's permission model a consumed service rather than a built one.
+>
+> **Unresolved, with a breakout booked for early next week.** George accepted the logic without conceding the mechanism: *"maybe we might not be consuming the same services, but we'll be consuming the same logic. Maybe we're replicating it on our side, but as long as the logic's the same, perfect."* The Knowledge Hub is unaffected either way. See [[approval-queue-integration]] and [[open-questions]] #107.
+
 ## Decisions
 
 _Cross-cutting calls made in client sessions._
