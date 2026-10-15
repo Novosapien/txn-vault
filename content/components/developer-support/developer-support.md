@@ -77,7 +77,7 @@ _(Note: the session also confirmed, from the client side, that **A2A is not a st
 > |---|---|---|
 > | **1** | **[[docs-mcp-server]]**, exposed externally | Michael: *"having that MCP so they can not only navigate but start building towards the APIs... that for me is a number one."* Developers *"are going to know how to connect an MCP server"* |
 > | **2** | **[[portal-co-pilot]]**, unauthenticated | Question and answer over the docs. *"It provides a good base to push off of"* for authenticated features later |
-> | **Dropped** | `llms.txt` | *"A 20,000 line file is just going to bloat the context for their AI and potentially decrease the quality of the answer"* |
+> | **Dropped, then redefined** | `llms.txt` | Dropped as a monolith: *"A 20,000 line file is just going to bloat the context for their AI and potentially decrease the quality of the answer"*. **Revived on 14-10 as a router**, an entry point carrying links to pages the agent fetches separately ([[2026-10-14-alignment-txn-stackworkz-novosapien]]), so the objection no longer applies. See [[docs-mcp-server]] and [[open-questions]] #110 |
 >
 > **Three AI surfaces, named clearly for the first time:** the co-pilot in the knowledge hub or dev portal, the co-pilot in the Console, and the full agentic experience with alerts alongside. **MCP servers are portable microservices**, so the knowledge MCP is a separate server from the one the agentic experience uses, and either co-pilot could consume either.
 >
@@ -88,6 +88,17 @@ _(Note: the session also confirmed, from the client side, that **A2A is not a st
 > **Agreed next step: prototype it**, the way the agent Console was prototyped. Ian: *"Mike, I'm happy that we go with that as the next priority."* Michael offered the Stackworkz dev environment, the latest prototype and a UAT URL to build against. Ian also set the order for the DT conversation: *"let's be clear on what it is that we're going to deliver before that conversation takes place."*
 >
 > **Commercially, the hub feeds the Console.** Michael: by the time a prospect signs, *"we know what they want to build, who they are"*, and program onboarding starts from something *"that might be 95% fit."* That makes pre-signature context a delivery input, not just a lead record. Gating and cost are at [[open-questions]] #91; documentation anomalies at #92.
+
+> [!note] The documentation state, and the authoring bottleneck (15-10-2026)
+> **Forty guides are published** at version one ([[2026-10-15-agentic-standup]]), with *"still a lot to be published"* on Michael's own account.
+>
+> **All of them hand-built, because the CMS allows nothing else.** *"They're all handwritten because that's what Umbraco requires. **So, no AI, unfortunately.**"* About **thirty minutes each**, roughly twenty hours, because *"every title's got to be its own component and every table's got to be. You can't just copy anything in. You've got to create a component for a title, create a table, add every single row and column."* Editing afterwards is cheap: *"once it's in, you can just add extra text to the text box. It's a structure more than anything."*
+>
+> **Payloads are omitted on purpose**, which is the deliberate two-layer split the co-pilot exists to rejoin.
+>
+> **Ian asked why AI cannot author them, and nobody had an answer.** Michael: *"I just need to have a look at the API. I guess there's no direct MCP. So we'd have to build something with Stackworkz or something to integrate that. **It's just not been built yet.**"* Unscoped and unowned: [[open-questions]] #118. The read path already exists, since the agent's representation refreshes on Umbraco publish webhooks; only the write path is missing.
+>
+> **Two quality routines already running, both on human channels.** A daily check of the published docs against TXN's own vault, *"a personal routine that I've got"*, and a Freshdesk check that incoming questions can be answered by the docs. **Neither watches what the co-pilot failed to answer**, which is the loop Ian has now asked for twice (#92).
 
 ## 2. What Needs to Happen?
 

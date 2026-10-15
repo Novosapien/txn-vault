@@ -6,6 +6,8 @@ sources:
   - "[[ux-txn-intelligence-enhanced-documentation-discovery]]"
   - "[[ux-ai-user-stories-and-requirements]]"
   - "[[2026-10-13-agentic-standup]]"
+  - "[[2026-10-14-alignment-txn-stackworkz-novosapien]]"
+  - "[[2026-10-15-agentic-standup]]"
 description: "Sub-component spec for the portal chat: semantic doc discovery, grounded Q&A with source references, a deterministic fallback, and live sandbox execution"
 ---
 
@@ -105,6 +107,53 @@ It is **deliberately light**: Ian's explicit steer is to invest in the [[docs-mc
 > **Review path.** Michael and Dorte test it first, Ian being away, then it widens to **testers from DT and PayCorp**, deliberately spread *"from technical background to to not so technical"*, with **Dorte choosing the pool and Michael writing the test cases**, repeating the two rounds that worked for the knowledge hub. Access is through the admin panel until it is linked properly.
 >
 > **It is now likely to ship at launch.** Michael: *"it does look like we are ahead of sort of DT at this point... it's probably going to be much closer to launch having the AI functionality in then than it was before."* Planned as a later phase, pulled forward by DT slipping rather than by a decision. See [[open-questions]] #109 and #105.
+
+> [!important] It moves into Stackworkz's codebase, and Stackworkz approve of the code (14-10-2026)
+> **The ways of working are settled** ([[2026-10-14-alignment-txn-stackworkz-novosapien]]). The replica Novosapien has been building against was always temporary. Michael: *"it was a kind of quickish thing that we were using to kind of get going, get ahead. So it's not perfect; it's just a base."* The aim now is *"to get it into where it's actually going to be used, obviously not just chuck it over the fence."*
+>
+> | Element | Agreed |
+> |---|---|
+> | **Codebase** | Novosapien gets access to the **Knowledge Hub codebase** and implements the co-pilot in it |
+> | **Review** | Stackworkz review, with standing permission to object early |
+> | **Standards** | Stackworkz name them, Novosapien follows them. **None named yet** |
+> | **Branches** | Whatever Stackworkz need for their test environments |
+> | **Access** | George sends the usernames straight after the call |
+> | **Local setup** | Stackworkz will show Novosapien how to run it |
+>
+> Ruan proposed it, George set the terms, and the reason both wanted it was the same: *"you guys have got like loads on your plate, so the last thing you need is getting access to a random codebase which is kind of similar."* What is not yet agreed is review turnaround, who deploys, or what happens when a review stalls: [[open-questions]] #111.
+>
+> **Stackworkz reviewed the code and cleared it.** Ruan: ***"it's actually very cool.*** We got it running with a local model... I got the thing working. So I don't foresee any problems there."* No issues with the AGUI front-end code. One reservation, raised up front and unrelated to the co-pilot: *"maybe one or two concerns about how authentication authorization will work, especially for the agent"* (#107).
+>
+> **A failure in the demo that was worth more than a clean run.** A test payload failed because the cardholder ID was still a placeholder, and the agent said so. Hasan: *"it'll be really handy if you want to do any sort of like debugging as well."* That is the behaviour behind Ian's standing requirement that sandbox error diagnosis should not need a human.
+>
+> **Why the history sits in the browser, stated for the first time.** Not a privacy design, a complexity one. Adding an authentication layer *"on top of what's already there for people who are not paying customers at the moment is obviously a big piece of work"*, so it stays out *"because obviously at the moment, we just need to move fast."* Proper storage arrives with sign-in and becomes the user's choice. The privacy benefit Dorte welcomed on 8 October is a by-product, which matters if the reason for it ever goes away.
+>
+> **Two small items.** The sidebar co-pilot *"might mess with some of the components that are already on there"*, flagged by Novosapien against itself. And the copy-to-AI buttons Michael asked for are *"an extra query into the string, which points to the page that's got that content."*
+>
+> **Cold start latency was visible** on the call, with a note to turn the thinking level down.
+
+> [!warning] Ian sees it for the first time: right track, wrong journey (15-10-2026)
+> **Two findings, and they must not be collapsed** ([[2026-10-15-agentic-standup]]). Ian had been travelling through every previous demo.
+>
+> **The demo ran badly.** *"It's been very difficult to follow it because I don't think it's been the sickest demo in the world and **I haven't been able to read the text for half of it**. Which is not obviously not ideal."* Fuzzy screen, unreadable text, and a cold start on every answer.
+>
+> **The product is on track.** He corrected himself unprompted: *"by the way, I always dive straight into the challenges rather than the good stuff. **So, it's great. It's on the right track of the things that we were thinking about.**"* He also noted Michael had seen it already and was *"pretty impressed"*.
+>
+> **The substantive gap goes at the positioning.** *"What we just looked at is **very heavy on the API reference**. But the part for me is **people who don't even know how to go about starting**... the reality with a card program is you have to have some understanding of what the sequence of things is."* Even the demo question begs it: *"how do I create a card, that question assumes that the person understands that there needs to be an account and a card holder set up."* And why it matters: *"it's such a key part of our messaging about **not needing to be a card expert to be able to launch a card program**. So we need to be able to show that that's the case."* [[open-questions]] #114.
+>
+> **He asked for a pattern this document does not specify.** A guided walkthrough that confirms each step:
+>
+> > *"One is explaining step by step and **asking them to make a positive approval to move to the next stage**... next step create card holder. **Would you like me to explain how to create a card holder?** Yes."*
+>
+> Because *"the ultimate goal is to make sure they can do it. **Just giving the information and assuming that they've read it and understood it without any kind of feedback doesn't really necessarily work.**"* Alongside it, the opposite mode for a different user: *"there might be people who just want the dump of the data because they're just going to go away and stick it in AI."* Two modes on one surface, with nothing deciding which user has arrived. #116.
+>
+> **Three personas named:** an operator who already runs a card programme and goes straight to the reference, an AI-savvy developer who takes the MCP server away, and someone who needs the relationships and the sequence first.
+>
+> **Cold start is the immediate blocker and the fix already exists.** George: *"that's a solved issue. You just need to propagate it to this."* Hasan: for a demo *"we need to turn off the cold starting."* Ian: ***"if the cold start is active, it won't go well."*** Commitment: *"we'll set up a small environment that's always on."*
+>
+> **Still untested against the guides.** Michael has not run queries against the 40 published guides and agreed to. **His reliability worry, which is #89 restated by the person who found it:** *"somebody goes in and asks a question and it just brain farts everywhere. Which is going to happen. The problem is **some people won't necessarily know that what they've just had back isn't accurate.**"*
+>
+> **The demo will run on Novosapien's environment**, which *"looks, feels, acts exactly like the real thing"*, with mock data, while the real integration proceeds in parallel. Divergences between the two are acknowledged and unenumerated. See #90 and #115.
 
 ## 2. What Needs to Happen?
 

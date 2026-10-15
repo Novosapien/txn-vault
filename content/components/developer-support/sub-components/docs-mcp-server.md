@@ -6,6 +6,8 @@ sources:
   - "[[ux-txn-intelligence-enhanced-documentation-discovery]]"
   - "[[2026-09-16-next-phase-discussion]]"
   - "[[2026-10-13-agentic-standup]]"
+  - "[[2026-10-14-alignment-txn-stackworkz-novosapien]]"
+  - "[[2026-10-15-agentic-standup]]"
 description: "Sub-component spec for the hosted docs MCP server: a developer's own agent queries TXN docs (L1) or tests the sandbox (L2), API-key gated per level"
 ---
 
@@ -74,6 +76,32 @@ It has **two levels of capability**:
 > **Hasan's reason is update latency, not ownership.** *"If we are going to integrate all of the MD files it'll be a lot easier on our side, because then if there's any updates then we are to update the MCP server and our agents as well. Instead of, if there's an update, we need to speak to the Stackworkz and then it's a lot of back and forth."* That is an argument for the **local filesystem representation already agreed on 1 October**, refreshed by the Umbraco webhooks, with Novosapien able to re-ingest without a partner in the loop.
 >
 > **But the artefact is unclear, and the name is a problem.** `llms.txt` was **dropped on 16 September** for a stated reason that has never been withdrawn: *"a 20,000 line file is just going to bloat the context for their AI and potentially decrease the quality of the answer"* ([[2026-09-16-next-phase-discussion]], and the routing table in [[developer-support]] still records it as dropped). Brett's "llm.txt" may mean that file, revived; or it may be loose wording for the markdown corpus, in which case nothing has changed. **Michael's email is not in the vault**, so the transcript cannot settle it. Resolve before Stackworkz starts populating anything: [[open-questions]] #110.
+
+> [!important] The llms.txt is a router, the server needs no gate, and it may not need Stackworkz (14-10-2026)
+> **#110 is answered, and it was a question of which artefact was meant** ([[2026-10-14-alignment-txn-stackworkz-novosapien]]). George, resolving it while answering Michael's email: the common approach is *"just one massive file... a couple of thousand lines, others 10,000 lines"*, and instead **TXN gets an entry point**.
+>
+> > *"There'll be an llms.txt, which will be that entry point, which **acts as kind of like a router**... It will have some high-level information about everything, all of the different pages, but more importantly, **it would contain links to other pages for it to consume**."*
+>
+> The agent reads the router, then fetches only the pages it needs from their own routes. **The September objection to `llms.txt`, that a 20,000 line file degrades answer quality, does not apply to this shape**, because the context never holds the corpus. What Stackworkz serve is *"literally normal text files, does not need to be rendered in any nice way... because users are never reading it, it's always their agents."*
+>
+> **The server is proposed unauthenticated.** George: no gate *"unless, Mike, you say there needs to be, because they're not accessing private data. It's data that they can access if they read the Knowledge Hub themselves."* **Michael did not answer on the call.** That leaves cost, lead capture and rate limiting undecided on the surface he ranked first for developers, against a co-pilot that does ask for a corporate email. [[open-questions]] #113.
+>
+> **The deliverable is one page.** A connection guide, *"if you're connecting via cURL, Claude Code, Codex, how you do that, and then it's just a URL."*
+>
+> **And it may not depend on Stackworkz at all.** Ruan: if the schema comes from DT then *"the MCP server for the Knowledge Hub can also be implemented independently of us because the upstream information sources is public anyway."*
+>
+> **The content pipeline is confirmed, with one thread left hanging.** Umbraco is the source and *"we'll be consuming it from the same source as you guys"*; the representation is cloud-hosted, *"I say local in quotations"*; the command set is *"not any bash commands, very, very limited"*; refresh is event-driven on publish and unpublish, *"it's not as if we're doing a cron job once a day or once a week."* **But Stackworkz have a delivery API serving the same content the hub renders**, Ruan asked whether Novosapien use it, and Hasan said not yet. Nobody decided. [[open-questions]] #112.
+
+> [!note] The router is a discovery surface, and the gating is still George's open question (15-10-2026)
+> **Stackworkz cleared the router design** ([[2026-10-15-agentic-standup]]). George: *"we were speaking to Stackworkz about this yesterday and there wouldn't be an issue."* One `llms.txt` acting as a router plus text files on the other routes, so *"even if a user hasn't connected the MCP server, they can paste in the handover message and they're going to get the source of truth for that page in a format that's easily digestible for the agent."*
+>
+> **A new argument for it that had not been made before: discovery.** *"If somebody's typing in, hey, I've seen this platform TXN, thinking about it, **it's going to be coming up in the search results**... So you're capturing people who actively want the MCP, but you're also giving more information to people that might be doing that **AI-assisted discovery**, because there's that content available in that easily digestible format for the AI."* That makes the router a marketing surface as well as a developer one, which is the same argument as the published skills list at [[open-questions]] #106.
+>
+> **The MCP server as a way to skip the interface entirely.** *"We can expose it to other people so that even if they don't want to use the docs assistant, they can put that MCP server into their own Claude within one or two commands... If people want to skip this step, they integrate the MCP server, bam, they're done."*
+>
+> **And George now flags the gating as unsettled himself:** it *"doesn't need to be authenticated, **what's up for debate**, but doesn't need to be, because all it's doing is accepting the information that's there already."* Michael has still not answered. #113.
+>
+> **The content state behind all of it.** **Forty guides published** at version one, with *"still a lot to be published"*. All hand-built, because *"that's what Umbraco requires. So, no AI, unfortunately"*, at about **thirty minutes each**. Payloads are omitted deliberately, which is the two-layer design this server exists to rejoin. **There is no write path for AI into Umbraco** and nobody has scoped one: #118.
 
 ## 2. What Needs to Happen?
 
