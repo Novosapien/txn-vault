@@ -7,6 +7,7 @@ sources:
   - "[[2026-09-16-next-phase-discussion]]"
   - "[[2026-10-13-agentic-standup]]"
   - "[[2026-10-14-alignment-txn-stackworkz-novosapien]]"
+  - "[[2026-10-15-agentic-standup]]"
 description: "Sub-component spec for the hosted docs MCP server: a developer's own agent queries TXN docs (L1) or tests the sandbox (L2), API-key gated per level"
 ---
 
@@ -90,6 +91,17 @@ It has **two levels of capability**:
 > **And it may not depend on Stackworkz at all.** Ruan: if the schema comes from DT then *"the MCP server for the Knowledge Hub can also be implemented independently of us because the upstream information sources is public anyway."*
 >
 > **The content pipeline is confirmed, with one thread left hanging.** Umbraco is the source and *"we'll be consuming it from the same source as you guys"*; the representation is cloud-hosted, *"I say local in quotations"*; the command set is *"not any bash commands, very, very limited"*; refresh is event-driven on publish and unpublish, *"it's not as if we're doing a cron job once a day or once a week."* **But Stackworkz have a delivery API serving the same content the hub renders**, Ruan asked whether Novosapien use it, and Hasan said not yet. Nobody decided. [[open-questions]] #112.
+
+> [!note] The router is a discovery surface, and the gating is still George's open question (15-10-2026)
+> **Stackworkz cleared the router design** ([[2026-10-15-agentic-standup]]). George: *"we were speaking to Stackworkz about this yesterday and there wouldn't be an issue."* One `llms.txt` acting as a router plus text files on the other routes, so *"even if a user hasn't connected the MCP server, they can paste in the handover message and they're going to get the source of truth for that page in a format that's easily digestible for the agent."*
+>
+> **A new argument for it that had not been made before: discovery.** *"If somebody's typing in, hey, I've seen this platform TXN, thinking about it, **it's going to be coming up in the search results**... So you're capturing people who actively want the MCP, but you're also giving more information to people that might be doing that **AI-assisted discovery**, because there's that content available in that easily digestible format for the AI."* That makes the router a marketing surface as well as a developer one, which is the same argument as the published skills list at [[open-questions]] #106.
+>
+> **The MCP server as a way to skip the interface entirely.** *"We can expose it to other people so that even if they don't want to use the docs assistant, they can put that MCP server into their own Claude within one or two commands... If people want to skip this step, they integrate the MCP server, bam, they're done."*
+>
+> **And George now flags the gating as unsettled himself:** it *"doesn't need to be authenticated, **what's up for debate**, but doesn't need to be, because all it's doing is accepting the information that's there already."* Michael has still not answered. #113.
+>
+> **The content state behind all of it.** **Forty guides published** at version one, with *"still a lot to be published"*. All hand-built, because *"that's what Umbraco requires. So, no AI, unfortunately"*, at about **thirty minutes each**. Payloads are omitted deliberately, which is the two-layer design this server exists to rejoin. **There is no write path for AI into Umbraco** and nobody has scoped one: #118.
 
 ## 2. What Needs to Happen?
 

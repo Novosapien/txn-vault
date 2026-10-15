@@ -6,6 +6,15 @@ description: "Index of the TXN commercial pack: proposals, Pilot Order, MSA and 
 
 The commercial pack for the Novosapien <> TXN engagement: the proposals that define what we are selling, and pointers to the legal instruments that paper it. Contracts themselves live in [legal/](../legal/) and are linked below so reviewers and agents can reach everything from one place.
 
+> [!note] The co-pilot becomes the proof of the positioning, and a language decision (15-10-2026)
+> **Ian tied the build directly to the sales claim** ([[2026-10-15-agentic-standup]]): *"it's such a key part of our messaging about **not needing to be a card expert to be able to launch a card program**. So we need to be able to show that that's the case."* As demonstrated on 15 October it does not yet show that, because it answers the API reference and skips the sequence a newcomer needs. [[open-questions]] #114.
+>
+> **An internal demo to TXN's own leadership is now the milestone**, ahead of anything market facing: **Steve the chairman**, **Gavin, CTO at PayCorp**, probably **Anthony and others at DT**. The chairman has been promoting the platform without having seen it. The two objectives are both positioning: that the room understands the no-card-expert claim, and that TXN will *"meet you wherever you are"*. See [[delivery]] and #115.
+>
+> **Decision: publish in English only and let the user's AI translate.** Prompted by an unplanned Hebrew demo Brett recounted from insurance work. Ian: *"we're not going to support clients in other languages early. So I don't think there's any point publishing assets, websites, knowledge hubs in a language that you can't support at the end. But with AI, they can take that information that's in English, dump it into Claude, and get Claude to do the translation... **So it takes a lot of onus off us in having to do all that translation stuff.**"* A real saving on localisation, and it rests on the content being machine-readable, which is what the `llms.txt` router and the docs MCP server provide ([[docs-mcp-server]]).
+>
+> **And a note on the next phase.** Ian, lightly but not idly: *"if you do a really good job, **it might help me secure more funding to do more AI things**."* Relevant to the phase two spend question at #88 and the open-ended launch at #108.
+
 ## Engagement documents
 
 | Document | What it is | Status |

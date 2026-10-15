@@ -89,6 +89,17 @@ _(Note: the session also confirmed, from the client side, that **A2A is not a st
 >
 > **Commercially, the hub feeds the Console.** Michael: by the time a prospect signs, *"we know what they want to build, who they are"*, and program onboarding starts from something *"that might be 95% fit."* That makes pre-signature context a delivery input, not just a lead record. Gating and cost are at [[open-questions]] #91; documentation anomalies at #92.
 
+> [!note] The documentation state, and the authoring bottleneck (15-10-2026)
+> **Forty guides are published** at version one ([[2026-10-15-agentic-standup]]), with *"still a lot to be published"* on Michael's own account.
+>
+> **All of them hand-built, because the CMS allows nothing else.** *"They're all handwritten because that's what Umbraco requires. **So, no AI, unfortunately.**"* About **thirty minutes each**, roughly twenty hours, because *"every title's got to be its own component and every table's got to be. You can't just copy anything in. You've got to create a component for a title, create a table, add every single row and column."* Editing afterwards is cheap: *"once it's in, you can just add extra text to the text box. It's a structure more than anything."*
+>
+> **Payloads are omitted on purpose**, which is the deliberate two-layer split the co-pilot exists to rejoin.
+>
+> **Ian asked why AI cannot author them, and nobody had an answer.** Michael: *"I just need to have a look at the API. I guess there's no direct MCP. So we'd have to build something with Stackworkz or something to integrate that. **It's just not been built yet.**"* Unscoped and unowned: [[open-questions]] #118. The read path already exists, since the agent's representation refreshes on Umbraco publish webhooks; only the write path is missing.
+>
+> **Two quality routines already running, both on human channels.** A daily check of the published docs against TXN's own vault, *"a personal routine that I've got"*, and a Freshdesk check that incoming questions can be answered by the docs. **Neither watches what the co-pilot failed to answer**, which is the loop Ian has now asked for twice (#92).
+
 ## 2. What Needs to Happen?
 
 **Functional requirements:**

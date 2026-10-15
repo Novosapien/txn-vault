@@ -117,6 +117,29 @@ Reviews of the client's own console feedback queue, read from `txn.feedback` and
 >
 > **That collides with [[open-questions]] #96.** On 23 September Nicola and Bron agreed to announce the full proposition at launch, without Ian present. He has now said the market message sets the scope, so if the message is bullish and phase two is not, the gap lands in this proposal. He has read neither. [[open-questions]] #99.
 
+> [!important] An internal demo becomes the gating milestone, with no date on it (15-10-2026)
+> **Ian wants the build shown to TXN's own leadership before it goes near the market** ([[2026-10-15-agentic-standup]]), and the reason is that they are already selling it.
+>
+> > *"I've spent multiple meetings these last two days with **Steve the chairman** where he's talking about the fact that we've got this amazing platform, and I'm thinking you're going totally on what we've told you, because **you have not seen it**... he absolutely does not know it to be true."*
+>
+> | Element | Position |
+> |---|---|
+> | **Audience** | **Steve**, group chairman, who *"won't know one end of an API from the other"*. **Gavin**, CTO at PayCorp. Probably **Anthony** and others at DT |
+> | **Scope** | **Knowledge Hub only**, not the Console: *"that's the first thing that will hit the market"* |
+> | **Environment** | **Novosapien's own**, with mock data. The real hub will not be ready in time |
+> | **Format** | **Live**, recorded walkthrough as backup. Brett overruled video-only: *"that's a backup. We need to be ultra prepped for a live demo"* |
+> | **Date** | **None.** Ian declined to press, *"I'm not going to push you guys for an answer right now"*. Novosapien owe him one |
+>
+> **It is also a lever on Direct Transact**, whose QA gates the launch at #108: *"we don't want any blockers with actually getting the stuff set up... if you can take people with you and they're like, yeah, this is great, what can we do to get this up and running, then it's going to be a lot easier."*
+>
+> **The trade-off Ian named and then resolved.** *"The longer it is to wait to get the demo set up, the further we've pushed before we can actually push on them"*, against *"the most important thing is the quality, the speed, and the completeness of the experience."* He chose quality. **His readiness test is not a clean rehearsal:** *"it doesn't matter if on Monday we did a live demo and everything went swimmingly... I'm not really interested in that bit. It's the functionality and hitting those different personas and a varying level of complexity in query."*
+>
+> **What it now depends on:** the guides journey (#114), the walkthrough pattern (#116), the cold start fix, enough mock data (#90), and the evaluation harness that would tell anyone whether it holds up (#117). [[open-questions]] #115.
+>
+> **Stackworkz access, as of today: code only.** George: *"just a code base for the time being"*, with a branch set up for Novosapien. Azure preferred, otherwise local or Novosapien's own infrastructure. Brett pushed for more: *"what are we waiting for on access to the environment... today, tomorrow, ASAP."* On the arrangement itself, George was candid that it could have gone badly: *"it could have gone two ways, where they might have liked a bit more control and said no, we'll write this."* Ian: *"Stackworkz have been excellent throughout."*
+>
+> **Two documents owed to Ian by Brett:** an updated flight plan, revised that morning, and **an architecture diagram covering the LLMs, data processing and licensing**, explicitly *"to help you with your data agreements and regulatory compliance"*. Brett admitted *"I started trying to do it and I was struggling."* That diagram is the missing input behind #80 and #103.
+
 > [!note] A working method with Stackworkz, at last (14-10-2026)
 > **The two build teams synced for the first time** ([[2026-10-14-alignment-txn-stackworkz-novosapien]]) and agreed how to work: **Novosapien implements the co-pilot inside Stackworkz's Knowledge Hub codebase and Stackworkz review it.** Stackworkz will show Novosapien how to run it locally, Novosapien push to whatever branches the test environments need, and Novosapien adopt any coding standards Stackworkz name.
 >
