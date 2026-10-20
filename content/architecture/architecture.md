@@ -28,6 +28,8 @@ Cross-cutting technical decisions that affect the whole product. This directory 
 > **Still open.** Where the **checkpointing store** lives, the database the agents write conversation history and traces to. George raised it himself: *"if there's anything else we might need to use, then we're going to need to make sure that we strip out anything that could be sensitive data."* Those transcripts will hold whatever PII the agent retrieved (#102), so it should be decided rather than defaulted into.
 >
 > **And the model question this does not answer.** #70 originally asked whether hosting in DT's tenant constrains which models can be used. It was not raised, the list is still owed, and it now needs a third provider on it since the fallback chain reaches OpenAI (#103).
+>
+> **Corrected 20 October 2026 ([[2026-10-20-agentic-standup]]). The node is not built, and nobody has asked DT for it.** Dorte confirmed that nobody has asked DT for anything about the AI. Michael now describes the node in the future tense: *"it should just be a brand new node that they do spin up alongside everything else."* The shape above holds. The build status does not. Novosapien sends DT the hosting requirements by the end of 21 or 22 October, and DT only host this time, with no support role. See [[open-questions]] #70 and #119.
 
 > [!warning] Stackworkz want the agent inside the Control Center, not beside it, 14 October 2026
 > **The first architectural challenge from outside the engagement** ([[2026-10-14-alignment-txn-stackworkz-novosapien]]), and it is a reasonable one. Ruan, having reviewed the architecture document Michael sent, judged it *"like 80% fine. Maybe with a small tweak here and there, it will work fine."* The tweak is where the agent sits.

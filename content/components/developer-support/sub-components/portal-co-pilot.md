@@ -8,6 +8,7 @@ sources:
   - "[[2026-10-13-agentic-standup]]"
   - "[[2026-10-14-alignment-txn-stackworkz-novosapien]]"
   - "[[2026-10-15-agentic-standup]]"
+  - "[[2026-10-20-agentic-standup]]"
 description: "Sub-component spec for the portal chat: semantic doc discovery, grounded Q&A with source references, a deterministic fallback, and live sandbox execution"
 ---
 
@@ -154,6 +155,15 @@ It is **deliberately light**: Ian's explicit steer is to invest in the [[docs-mc
 > **Still untested against the guides.** Michael has not run queries against the 40 published guides and agreed to. **His reliability worry, which is #89 restated by the person who found it:** *"somebody goes in and asks a question and it just brain farts everywhere. Which is going to happen. The problem is **some people won't necessarily know that what they've just had back isn't accurate.**"*
 >
 > **The demo will run on Novosapien's environment**, which *"looks, feels, acts exactly like the real thing"*, with mock data, while the real integration proceeds in parallel. Divergences between the two are acknowledged and unenumerated. See #90 and #115.
+
+> [!note] The test harness is built, and nobody at TXN has used the build (20-10-2026)
+> **The evaluation harness is built** ([[2026-10-20-agentic-standup]]). George: *"we've finished the testing harness today."* Michael's personas and questions go into it next, and the three personas from 15 October must be *"absolutely nailed"*. UI and speed changes are already in. [[open-questions]] #117.
+>
+> **Nobody at TXN has used the build.** George asked if anyone had tried the dev console. Ian: *"No."* The latest co-pilot goes to the test and production versions of Novosapien's admin console. George asked everyone to run a few questions and report wrong answers, UI bugs and improvements. He also said this is *"maybe not as urgent in the next day or two"*, because more changes are due.
+>
+> **The hosted shape.** Two deployables: the agent and the [[docs-mcp-server]], which George called *"quite lightweight"*. For the agent he wants an autoscaled container service, similar to Cloud Run, with minimum instances so that cold starts do not occur in production. The sandbox is the only DT dependency for the Knowledge Hub. The docs MCP server reads Umbraco, which is live. [[open-questions]] #49, #119.
+>
+> **The move into Stackworkz's codebase waits for Michael's sign-off.** Ian wants one version for launch, not a demo build and a production build. See [[delivery]].
 
 ## 2. What Needs to Happen?
 

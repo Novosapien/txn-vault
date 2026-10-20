@@ -3,6 +3,7 @@ component: "[[agent-access-layer]]"
 status: Defined
 sources:
   - "[[01-06-2026-component-1-Agent-Access-Layer]]"
+  - "[[2026-10-20-agentic-standup]]"
 description: "How the layer decides which tools an agent gets per user per turn — Console permissions plus a new AI permission config, narrowed by page and onboarding state"
 ---
 
@@ -21,6 +22,10 @@ description: "How the layer decides which tools an agent gets per user per turn 
 > **1. Approval thresholds vary by role.** The permission set does not only decide *which* tools a user gets, but *how much friction* each carries: a **super-admin** can take certain actions outright, while **more junior users** send the same actions for approval, with degrees in between. See [[approval-queue-integration]].
 >
 > **2. TXN has no field-level permissions today.** Michael confirmed the Console model is **page-level**: *"you can see this entire page or you can't"*, and *"we've sort of just given everyone everything so far."* So the first cut for the AI mirrors that — access by **product or page**, not by field — and field-level hiding is a later refinement rather than a launch requirement. Michael is reviewing which fields are suitable for everyone and will confirm the UI-side controls, which are still under internal discussion. Note the interaction with [[generative-ui-rendering]]: some field hiding is a *permission* question (you may not see this) and some is *user preference* (you would rather not) — the two need separating. (Source: standup 2026-08-03)
+
+> **20-10 update ([[2026-10-20-agentic-standup]]):** George's design for the Control Center, before the Stackworkz call on 21 October. The agent holds a token that the backend validates on behalf of the user. The first request returns a permissions payload, and that payload sets the MCP tools for the user.
+>
+> **New design choice: one skill set for each permission profile.** The alternative is one skill with permission branches (if the user has this permission, run this tool). With branches, the agent sometimes tries a tool it cannot use, *"one in a thousand times"*, and then tells the user that the tool is not available. With separate skill sets, the agent never sees the tool: *"It's not in any of its skill files."* [[open-questions]] #107.
 
 ---
 

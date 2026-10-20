@@ -117,6 +117,25 @@ Reviews of the client's own console feedback queue, read from `txn.feedback` and
 >
 > **That collides with [[open-questions]] #96.** On 23 September Nicola and Bron agreed to announce the full proposition at launch, without Ian present. He has now said the market message sets the scope, so if the message is bullish and phase two is not, the gap lands in this proposal. He has read neither. [[open-questions]] #99.
 
+> [!important] Launch on 16 November, and DT hosting is now the critical path (20-10-2026)
+> **TXN's go-to-market plan works back from 16 November** ([[2026-10-20-agentic-standup]]). Ian: *"our number one priority is to get to market on the 16th of November."*
+>
+> **Two work streams, one gate.** Ian: *"you've got two distinct work streams"*: the functionality, which moves into Stackworkz's codebase, and the hosting with DT. Both start after Michael signs off the Knowledge Hub AI. Ian rejected a separate demo build and production build: *"when we're ready to deploy it is the single version of what we want to put out in the wild on the 16th of November."*
+>
+> | Step | Owner | Date |
+> |---|---|---|
+> | Hosting requirements and package list to DT | Novosapien, sent through Michael | End of 21 or 22 October |
+> | Build fully tested | Novosapien | End of the week, 23 October |
+> | Demo dry runs | Novosapien | 26 and 27 October |
+> | Demo to DT and PayCorp | Novosapien | 28 to 30 October, a week earlier than the previous plan |
+> | DT provision the AI node | DT | Weeks of 26 October and 2 November |
+> | Checks in the hosted environment | Michael, with Novosapien | At least one week before launch |
+> | Launch | TXN | 16 November |
+>
+> **The hosting no longer waits for the demo.** Nobody has asked DT for anything about the AI. Ian: *"we need to break the link between assuming a demo is needed in order for us to get this set up."* DT treat almost every change as a change request, so the requirements must be exact. [[open-questions]] #119.
+>
+> **A correction to the flight plan.** The 16 October flight plan says that the AI node *"is already built. What remains is access."* The node is not built. The MSA reviewer brief says the same. Both need a correction from Brett. #70.
+
 > [!important] An internal demo becomes the gating milestone, with no date on it (15-10-2026)
 > **Ian wants the build shown to TXN's own leadership before it goes near the market** ([[2026-10-15-agentic-standup]]), and the reason is that they are already selling it.
 >
