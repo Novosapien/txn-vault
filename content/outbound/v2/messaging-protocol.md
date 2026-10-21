@@ -1,5 +1,5 @@
 ---
-description: "TXN messaging protocol v2: the rules that every outbound message follows, for every ICP and persona. What a message may and may not say, the claims that wait for Ian, the language rules, the channel rules, and the rules for one ICP or one persona; each rule with its source and status. Draft for the session with Ian"
+description: "The rules every outbound message follows, each with its source and status: what a message may claim, the language and channel rules, and sequence length by ICP"
 status: draft, 20 Oct 2026. Not reviewed by Ian. Not loaded into the product
 ---
 
@@ -15,6 +15,27 @@ status: draft, 20 Oct 2026. Not reviewed by Ian. Not loaded into the product
 >
 > **For the session with Ian.** Go through sections 1 and 2 with him. Every rule marked Novosapien or Ian (record) needs his yes.
 
+> [!important] Rulings from the 21 October call with Ian
+> ([[2026-10-21-icp-revision-outbound]])
+>
+> **M4 is confirmed by Ian, and sharpened.** Pricing stays out of every message. What is allowed is the shape: *"a headline of simple pricing structure"*. **Avoid "usage based fees"**, because *"people could say, well, is that APIs"*. The positioning is simplicity against opacity, never a number. **Q12 is closed.**
+>
+> **Three claims in §2 are resolved:**
+>
+> | Claim | Now |
+> |---|---|
+> | Card schemes | **Name none.** And never "Mastercard coming soon": *"we don't need to see Mastercard coming soon"* |
+> | BIN sponsors | **"Existing BIN sponsor relationships."** No target market, and **no sponsor named**. Bring-your-own may be offered briefly |
+> | AI capability not live at launch | **A capability gated behind client access may be described.** The per-feature list is unsettled, so every specific claim in §2 still waits. [[open-questions]] #121 |
+>
+> **A new rule, M13: sequence length is set by ICP and signal, not fixed.** Ian, on companies with a live card and no sign of moving: *"you wouldn't want to contact them on a six touch sequence, because in reality if they are unhappy, something lands in their inbox or on LinkedIn, it's opportunity... **if they do nothing with the first one or two, chances are they're just not interested. Full stop**... you don't want to go through a full sequence because you're literally just spamming people that are not going to move."* So **ICP 4 gets one or two touches**, and the full sequence is reserved for ICPs where intent is evidenced.
+>
+> **A new rule, M14: never lose a contact.** Ian: *"coming out of this we should never lose any single company or persona or contact, because outside of the outbound workforce there might be other stuff that we want to do with those people."* A company that is discounted, graded D or unresponsive stays on record and may enter another sequence later. One sequence is not one lifetime.
+>
+> **And a constraint on personas rather than messages: do not narrow by job title.** *"It's difficult to know, because you don't know who's doing what in these organisations despite what their title says... if you try to go too focused on that, you might miss somebody who's actually got the responsibility for it."*
+>
+> **Channel routing, as confirmed on the call.** Grade **A to LinkedIn**, *"because LinkedIn's the highest response rate. So you want the cream of the crop there"*. **B and C to email. D are not contacted at all**, because *"it's a waste of a message. It's going to harm deliverability"*.
+
 ## 1. Rules for every message
 
 | # | Rule | Source | Status |
@@ -22,7 +43,7 @@ status: draft, 20 Oct 2026. Not reviewed by Ian. Not loaded into the product
 | M1 | **Never name a competitor of TXN.** Contrast only against categories (a first-wave modern processor, a legacy processor, building in-house), also when the prospect names a competitor first. | 2 Sep rulings (`R1`, no transcript line); [[offer]] vocabulary doctrine | Ian (record); [[questions-for-ian]] Q36 |
 | M2 | **Never criticise the competition, named, implied or by category, and never the prospect's current processor.** State what TXN does, never what another platform cannot do. No "unlike your current processor", no "if your provider cannot". A buyer may criticise their processor; TXN does not. | Ian, 3 Sep L673-691: Brett offered to attack the incumbent or to state TXN's strengths, and Ian chose *"the latter"*; *"I just don't believe in criticizing the competition"*. It binds in all four ICPs | Ian. Whether messages may use the offer's §5 "why us" lines: Q41 |
 | M3 | **Claim as available only what is live at launch.** Describe the rest as what TXN is building. Say which parts are proven and which are targets. | Ian, 10 Sep L471-475: *"for absolute sure when we launch this not everything that we're planning to do will be available"*; grand claims that are not there *"that's going to be really difficult"* | Ian. Which features are live at launch: Q10 |
-| M4 | **No pricing.** No price figures, no price structure (the licence fee and volume fees), and no cost comparison with the current supplier. Figures are a conversation for a person. | Ian, 24 Aug L547-549: asked whether outbound may disclose prices, *"no"*. George, 20 Oct: the price structure is out too, because a message could carry it wrongly | George. Whether a message may ever state the structure: Q12 |
+| M4 | **No pricing.** No price figures, no price structure (the licence fee and volume fees), and no cost comparison with the current supplier. Figures are a conversation for a person. | Ian, 24 Aug L547-549: asked whether outbound may disclose prices, *"no"*. George, 20 Oct: the price structure is out too, because a message could carry it wrongly | **Ian, 21 Oct.** Confirmed: *"I don't think pricing in a message is necessary, as long as you go with a headline of simple pricing structure."* The structure stays out because it *"becomes quite wordy to explain"*. Avoid "usage based fees" too |
 | M5 | **No cost figure that is not TXN's,** including Ian's estimate of the reissue cost per card. | George, 20 Oct | George. Q29 |
 | M6 | **The ten-day figure only as a target.** "TXN targets under ten business days from contract signature to the first live transaction." Never describe how a launch happens: no test environment, no promotion to production, no steps. | [[txn-offer-v2]] §2 step 2: the mechanism is not written down. 4 Sep rules | Novosapien. Who does each launch step: Q27 |
 | M7 | **Never lead with the owners.** Direct Transact and Paycorp do not appear in the first message or the follow-up sequence. A person introduces them later, when the prospect asks who is behind TXN. A sentence that mentions an owner ends on what TXN delivers. | 2 Sep rulings (`R1`); [[offer]] vocabulary doctrine and §6 | Ian (record); Q36 |

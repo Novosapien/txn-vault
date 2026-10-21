@@ -163,6 +163,25 @@ Section 8.1.10, the scheme and BIN sponsor DQ, drew the same objection on the sa
 
 **These three rulings would not have fixed it on their own.** P7 is worth at most 4 of the 12.7-point gap between greenfield and migration accounts, and Ian withdrew the licence-status *gate* rather than its points. What actually closes it is the 3 September rewrite, which retired the parameter entirely and put Card Program Status at the top. **On paper.** The register is still scored on the old weights, so nothing has moved in the list anyone is working from.
 
+> [!note] The pipeline, as George described it to Ian (21-10-2026)
+> The clearest account of how the outbound workforce actually runs ([[2026-10-21-icp-revision-outbound]]).
+>
+> | Stage | What happens |
+> |---|---|
+> | **1. Sourcing** | **Firmographic only.** *"A neobank that's based in Bulgaria, not based in Ukraine, is between this size and that size."* Ian: *"very very very top of the potential funnel."* Driven by [[market-profiles]], same criteria every run |
+> | **2. Research** | *"It finds out everything and anything about the lead"* |
+> | **3. ICP match** | *"Given all of these ICPs that you've got, which one is it most likely to fit, or does it just not fit anything at all?"* |
+> | **4. Grading** | Against that ICP's criteria, **A to D** |
+> | **5. Channel routing** | **A to LinkedIn**, highest response rate. **B and C to email. D are not contacted** |
+> | **6. Persona match** | The same match-and-rank, for the buyer personas |
+> | **7. Writing** | Agents write from scratch against a **message skeleton** |
+>
+> **Why the ICPs needed revising.** Not because they were wrong. Brett: targeting worked small and *"we have to expand this out to thousands, we're going to struggle to extrapolate it out"*, and *"the worst thing you want to do is run it against ICPs that are not quite the ICPs you want."* George's diagnosis was about placement: the ICPs are *"exactly what they should be. That's who you want to target. It's their different buying stages"*, but the first pass is firmographic, so they belong at the ranking stage. Hence the market profiles.
+>
+> **What a message skeleton is.** George traced outreach from one identical message, to mail-merge variables, *"hey first name, I see you work at company name"*, to this: a structure such as *"first maybe talk about a pain point, then talk about a potential solution, then go for a CTA"*, with the agent writing all content from the matched ICP, the persona, the offer and the research. ***"So there's no, the only templating really is the structure."*** Which leaves the structure itself as the testable variable.
+>
+> **A rule from Ian that sits above the pipeline:** *"coming out of this we should never lose any single company or persona or contact."* Already true of the build. Every lead, message and research record is tracked and visible on the dashboard, a contacted company may enter another sequence later, and an inbound website lead can be matched against existing research before the meeting.
+
 ## The targeting model
 
 Ian's own funnel, stated in full at the end of the 2 September session.

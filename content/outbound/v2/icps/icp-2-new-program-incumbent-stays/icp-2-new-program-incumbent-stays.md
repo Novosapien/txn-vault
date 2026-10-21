@@ -1,5 +1,5 @@
 ---
-description: "TXN ICP 2 v2, new program where the incumbent stays: the ICP definition in the guideline structure (archetype, core thesis, Tier 1/2/3, anti-signals, pain mapping), ready to load, with its sources and gaps kept below it"
+description: "TXN ICP 2 v2, new program where the incumbent stays: the full ICP definition, Ian's ruling that expansion not unhappiness is the signal, and its gaps"
 status: draft, 19 Oct 2026, revised after the source audit
 ---
 
@@ -64,6 +64,35 @@ Connects observable signals to the specific needs of a new program, stated as wh
 | Infrastructure across several regions, with the card live in one | **`The company is multi-market and its card is not yet.`** The rest of the business already runs across markets. The card has to catch up before customers in the new markets can use it. | Each new market starts from configuration. PSD2 strong customer authentication and 3DS sit inside the platform, and clearing and settlement are reconciled in the Console for every program. |
 
 ---
+
+> [!important] Rulings from Ian, 21 October 2026
+> From the ICP revision call ([[2026-10-21-icp-revision-outbound]]). These bind this ICP. The rulings that apply to every ICP are repeated in each file so that a writer loading one file alone is not misled.
+>
+> **Applies to every ICP:**
+>
+> | Ruling | Effect here |
+> |---|---|
+> | **Mastercard is not a disqualifier** | *"We shouldn't really care too much if it's Mastercard... by the time somebody's made a decision that they're going to move, the chances are we'll have Mastercard certification anyway."* **Remove the Mastercard anti-signal.** And no message says "Mastercard coming soon": *"we don't need to see Mastercard coming soon"* |
+> | **Geography is two layers** | TXN *"can only contract with companies that are in Europe or the UK"*. Where cards may be issued *"is not something that we can determine. It's determined by a BIN sponsor."* **So: mark down on published non-European issuance, do not disqualify, and do not try to identify the licensed issuer.** *"For the level of complexity that might be involved... I think we can pass on that"* |
+> | **Every vertical carries every ICP** | *"If the ICP and status are the same thing, then my argument is they are the same for every vertical."* Some verticals will simply contain no ICP 1s, and those companies fall through to 2, 3 or 4 |
+> | **Lose nothing** | *"Coming out of this we should never lose any single company or persona or contact."* A discounted company stays on record and may be contacted later |
+> | **Do not narrow by job title** | *"Chief product officer, head of payments, possibly the founder. It's difficult to know, because you don't know who's doing what in these organisations despite what their title says."* And: *"if you try to go too focused on that, you might miss somebody who's actually got the responsibility for it"* |
+>
+> **Specific to this ICP: the premise was wrong.**
+>
+> **"Constraint" is confirmed** as the dominant pain. Ian was comfortable with it.
+>
+> **But a second program does not imply unhappiness with the first processor.**
+>
+> > *"You could be perfectly happy with a processor for doing what the program you've got today needs them to do, but then you're launching a new card program that has got a set of requirements, whether that be where they can serve regionally, the type of cards they can serve, the functionality they've got, that they wouldn't book with that processor."*
+>
+> **The public signal is expansion, not dissatisfaction.** *"It's incredibly difficult to find where that would be. I think the signal that you get is **if they announce that they've got investment to launch into new markets or to launch a new product**. It doesn't mean they're unhappy with a processor and it doesn't mean they won't do it with that processor, but at least it's an indication of there might be some opportunity because they're doing something new."*
+>
+> **And the default where nothing is published:** *"you have to assume they're not doing anything, because you wouldn't know any alternative."*
+>
+> **Drop the sales-led and product-led distinction.** Ian: *"I can't even remember the distinguishing between sales-led and product-led in the whole ICP piece."* It is also hard to read off a website. Remove it from Tier 2 and from the anti-signals.
+>
+> **A correction to this document's method, raised by George and agreed by Ian.** Several of this ICP's defining signals are not publicly observable. *"We need to investigate if these signals that are not necessarily going to be public are holding too much weight in the ICPs... they should be a signal but shouldn't be **the** signal that defines this is either this or that."* See [[open-questions]] #122.
 
 ## Sources
 

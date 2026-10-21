@@ -1,5 +1,5 @@
 ---
-description: "TXN ICP 1 v2, first program where the card is essential: the ICP definition in the guideline structure (archetype, core thesis, Tier 1/2/3, anti-signals, pain mapping), ready to load, with its sources and gaps kept below it"
+description: "TXN ICP 1 v2, first program where the card is essential: the full ICP definition, Ian's rewrite of its dominant pain, and its sources and gaps"
 status: draft, 19 Oct 2026, revised after the source audit
 ---
 
@@ -65,6 +65,31 @@ Connects observable signals to the exposure of a company that launches its first
 | An incubator or accelerator cohort, with the card named in the proposition | **`Nobody has told them what a card program costs in time, money or risk.`** They have not chosen a vendor, and they do not know the domain yet. They will learn it from whichever vendor reaches them first. | Their engineers can integrate through the API and a sandbox that behaves like production, with no sales conversation in the way. Program changes later are settings in the Console, not a new project. |
 
 ---
+
+> [!important] Rulings from Ian, 21 October 2026
+> From the ICP revision call ([[2026-10-21-icp-revision-outbound]]). These bind this ICP. The rulings that apply to every ICP are repeated in each file so that a writer loading one file alone is not misled.
+>
+> **Applies to every ICP:**
+>
+> | Ruling | Effect here |
+> |---|---|
+> | **Mastercard is not a disqualifier** | *"We shouldn't really care too much if it's Mastercard... by the time somebody's made a decision that they're going to move, the chances are we'll have Mastercard certification anyway."* **Remove the Mastercard anti-signal.** And no message says "Mastercard coming soon": *"we don't need to see Mastercard coming soon"* |
+> | **Geography is two layers** | TXN *"can only contract with companies that are in Europe or the UK"*. Where cards may be issued *"is not something that we can determine. It's determined by a BIN sponsor."* **So: mark down on published non-European issuance, do not disqualify, and do not try to identify the licensed issuer.** *"For the level of complexity that might be involved... I think we can pass on that"* |
+> | **Every vertical carries every ICP** | *"If the ICP and status are the same thing, then my argument is they are the same for every vertical."* Some verticals will simply contain no ICP 1s, and those companies fall through to 2, 3 or 4 |
+> | **Lose nothing** | *"Coming out of this we should never lose any single company or persona or contact."* A discounted company stays on record and may be contacted later |
+> | **Do not narrow by job title** | *"Chief product officer, head of payments, possibly the founder. It's difficult to know, because you don't know who's doing what in these organisations despite what their title says."* And: *"if you try to go too focused on that, you might miss somebody who's actually got the responsibility for it"* |
+>
+> **Specific to this ICP: the dominant pain is wrong, and Ian rewrote it.**
+>
+> This document leads on **exposure**. Ian replaced it. The worry is **the fear of getting an irreversible decision wrong**, by a team with no experience to judge the answer by:
+>
+> > *"If you're launching a first card program and a card is essential to your product, for me that is the one where you need to be working with somebody who takes some of the complexity out of it. I've seen it firsthand at Marqeta where **people just can't make a decision because they don't want to get the decision wrong because it's so important**, and they've got no background or experience in doing this necessarily, and because it's core to their business, get it wrong and their concern is things go awry. So they can spend an overly extended period of time trying to make a selection. So I don't know if that's risk of failure, or fear to make a decision, or fear of the unknown, whatever it is. **I realise it's not one word, but ultimately that's kind of their biggest worry.**"*
+>
+> **The condition underneath it:** *"often they don't know what they don't know. So they come to this green and not really understand it."*
+>
+> **Note the failure mode is the opposite of what exposure implies.** Exposure suggests a company moving fast and carrying risk. Ian describes a company that **stalls**: an extended selection process driven by fear. A message that leads on risk may reinforce the stall. One that removes the need to be a card expert addresses it, which is his own standard: *"if a client feels that they need to have card expertise to be able to launch a card program on TXN, then we failed."*
+>
+> **Still to do:** the §5 pain mapping and the core thesis both say "exposure" and need rewriting against this. Section 5's underlying signal-to-pain pairs survive; the heading does not.
 
 ## Sources
 

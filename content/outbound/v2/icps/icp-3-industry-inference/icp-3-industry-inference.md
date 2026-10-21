@@ -1,5 +1,5 @@
 ---
-description: "TXN ICP 3 v2, industry inference (card-adjacent businesses with no card program, in a vertical where peers run one): the ICP definition in the guideline structure, ready to load, with its sources and gaps kept below it"
+description: "TXN ICP 3 v2, industry inference: card-adjacent companies with no card in a vertical where peers run one, the full ICP definition, and why banks wait"
 status: draft, 19 Oct 2026, revised after the source audit
 ---
 
@@ -67,6 +67,27 @@ Connects observable signals to the gap a company has not noticed yet: peers in i
 | Investment in loyalty, rewards or membership, with no card | **`They are buying engagement the hard way.`** They already spend money to keep customers close, through points and perks. The instrument they chose sits outside the spend itself. | Spend and merchant controls by merchant category, geography and transaction type decide where the card works. Every card event is reachable through the API, events and webhooks, so their own loyalty systems can act on it. |
 
 ---
+
+> [!important] Rulings from Ian, 21 October 2026
+> From the ICP revision call ([[2026-10-21-icp-revision-outbound]]). These bind this ICP. The rulings that apply to every ICP are repeated in each file so that a writer loading one file alone is not misled.
+>
+> **Applies to every ICP:**
+>
+> | Ruling | Effect here |
+> |---|---|
+> | **Mastercard is not a disqualifier** | *"We shouldn't really care too much if it's Mastercard... by the time somebody's made a decision that they're going to move, the chances are we'll have Mastercard certification anyway."* **Remove the Mastercard anti-signal.** And no message says "Mastercard coming soon": *"we don't need to see Mastercard coming soon"* |
+> | **Geography is two layers** | TXN *"can only contract with companies that are in Europe or the UK"*. Where cards may be issued *"is not something that we can determine. It's determined by a BIN sponsor."* **So: mark down on published non-European issuance, do not disqualify, and do not try to identify the licensed issuer.** *"For the level of complexity that might be involved... I think we can pass on that"* |
+> | **Every vertical carries every ICP** | *"If the ICP and status are the same thing, then my argument is they are the same for every vertical."* Some verticals will simply contain no ICP 1s, and those companies fall through to 2, 3 or 4 |
+> | **Lose nothing** | *"Coming out of this we should never lose any single company or persona or contact."* A discounted company stays on record and may be contacted later |
+> | **Do not narrow by job title** | *"Chief product officer, head of payments, possibly the founder. It's difficult to know, because you don't know who's doing what in these organisations despite what their title says."* And: *"if you try to go too focused on that, you might miss somebody who's actually got the responsibility for it"* |
+>
+> **Specific to this ICP.**
+>
+> **"Falling behind" is confirmed** as the dominant pain. Ian was comfortable with it.
+>
+> **Banks are a low priority, and he gave the reason.** *"They are definitely low priority for later. That's just an understanding of the fact that **we need to get some scores on the board and some credibility** before you're going to win with banks, in my opinion."* This matters here because a third of the live-card companies on the 6 October list were banks, and industry inference is where a regional, savings or cooperative bank would otherwise land. Keep them sourced and ranked, do not load them for outreach now.
+>
+> **The non-public signal problem applies here too**, and more sharply, because industry inference leans on peer behaviour that is rarely published. [[open-questions]] #122.
 
 ## Sources
 

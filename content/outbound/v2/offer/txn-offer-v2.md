@@ -1,5 +1,5 @@
 ---
-description: "TXN's offer v2: only the seven Offer Structure v2 sections (what it is, how it works, pain points, what changes, why us, proof, commercial shape), taken unchanged from the 2 September offer, as the base for the section-by-section review"
+description: "TXN's offer v2 in its seven sections, with Ian's 21 October rulings on BIN sponsor wording, card schemes, pricing and what may be claimed at launch"
 status: draft, 19 Oct 2026. Copy of the approved sections only; content not yet reviewed or cut; not signed off by Ian
 ---
 
@@ -12,6 +12,25 @@ status: draft, 19 Oct 2026. Copy of the approved sections only; content not yet 
 > **What is not here, and where it stays.** The earlier [[offer]] keeps four more sections: the build notes, the **vocabulary doctrine** (needed for the [[messaging-protocol|messaging protocol]]), the gaps list, and the self-review gate. None of them is deleted. The open gaps move to [[questions-for-ian]] as they are reviewed.
 >
 > **Source key** for the tags in the text (from the earlier offer's build notes): `S1` offer session 24-08-2026 · `S2` offer session 27-08-2026 · `ICP2` ICP session 25-08-2026 (no transcript) · `S3` ICP statuses session 03-09-2026 · `R1` rulings taken 02-09-2026 · `PO` Product Overview v1.0 · `CM` Core Messaging v2.5 · `AITO` AI Target Outcomes Framework v1.0 · `OH` Objection Handling v1.1 · `CL` Competitive Landscape v0.2 · `JV` JV Messaging Framework v2.3
+
+> [!important] Ian's wording rulings on BIN sponsors, schemes and price (21-10-2026)
+> From the ICP revision call ([[2026-10-21-icp-revision-outbound]]). These change what this document may claim.
+>
+> | This document says | Ruling |
+> |---|---|
+> | *"Pre-integrated BIN sponsor relationships in each target market"* | **Cut "in each target market"**, because *"typically a BIN sponsor in Europe can cover all of Europe because they've passported their licence"*, and naming a market makes the reader ask whether they are in it: *"how does somebody receiving this know whether they're in the target market or not? Because you've mentioned it, whereas I don't think there's any need to."* **And prefer "existing" to "pre-integrated":** *"I would prefer existing BIN sponsor relationships is the better way of doing it"* |
+> | Naming BIN sponsors | **Never.** *"I wouldn't list the actual BIN sponsors"* |
+> | *"Visa and Mastercard"* | **Name no scheme**, and never "Mastercard coming soon". But Mastercard is **no longer a disqualifier** for a target: *"by the time somebody's made a decision that they're going to move, the chances are we'll have Mastercard certification anyway"* |
+>
+> **Why the silence on sponsors helps TXN.** *"If somebody likes your tech and they want to go with your tech, but they don't necessarily want to work with the BIN sponsor you've got, they're too expensive, they don't want to approve their program, then they're going to ask you if you can work with the BIN sponsor they're talking to, and then that starts the conversation with the BIN sponsor about what does it take to become integrated with them, **which by the way typically is not very significant**."* And not naming them prompts the question: *"the prospect doesn't know whether or not the BIN sponsor they're talking to is one of the established partners. So that's like to ask the question."*
+>
+> **Bring your own BIN sponsor may be offered as a point**, carefully. *"I don't think it does any harm"*, but keep it brief or it *"becomes a bit mealy-mouthed"*. In his experience prospects ask regardless of what is published.
+>
+> **The commercial shape, for internal context and not for any message.** Ian set it out on the call: **an onboarding fee, a monthly platform or licence fee, a fee per settled transaction, and a fee per 3DS authentication**, the last two on volume-based tiers, *"where the more you process, the less you pay on a unit price basis"*. The monthly fee includes all API calls.
+>
+> **What outreach may claim is the shape, not the numbers:** *"a headline of simple pricing structure"*. The positioning is simplicity against opacity, from his own Marqeta story: *"it was almost impossible to predict how much you're going to be paying each month. A classic example is companies that charge per API call."* Avoid "usage based fees", which invites *"well, is that APIs"*. See rule M4 in [[messaging-protocol]].
+>
+> **A capability may be described even when it is not live on 16 November**, if the reason is that it sits behind client access: *"not talking about them, even though we know by the time they become a client they will be there, would be the wrong thing to do."* **Which features that covers is not settled**, so §2 of [[messaging-protocol]] still holds. [[open-questions]] #121.
 
 ## Section 1: What it is
 
