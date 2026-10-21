@@ -1,11 +1,11 @@
 ---
-description: "TXN ICP 4 buyer persona v2: the CFO or Finance Director who must sign a one-off reissue and transition cost to move a live card program; economic buyer. The 12-section persona, ready to load when ICP 4 is active, with its sources, gaps and cuts below"
-status: draft, 19 Oct 2026, reworked from personas-icp-4.md (4 Sep), on hold with ICP 4
+description: "TXN ICP 4 buyer persona v2: the CFO or Finance Director who must sign a one-off reissue and transition cost to move a live card program; economic buyer. The 12-section persona, ready to load, with its sources, gaps and cuts below"
+status: draft, 19 Oct 2026, reworked from personas-icp-4.md (4 Sep); loads with ICP 4 on a short sequence (21 Oct)
 ---
 
 # ICP 4 persona: CFO or Finance Director
 
-> **Up:** [[icp-4-full-switch|ICP 4]]. **On hold with ICP 4** (no reference customers, no migration tooling): the persona is ready and does not load until Ian decides whether ICP 4 gets outreach. The text between the two horizontal rules follows the 12-section persona standard (`cofounder: …/concepts/guidelines/buyer-persona.md`) and is what loads into the product's persona `definition`. Message rules live in the [[messaging-protocol|messaging protocol]], not here. Every quote is derived, not heard from a buyer.
+> **Up:** [[icp-4-full-switch|ICP 4]]. **Loads with ICP 4, on a short sequence.** ICP 4 now takes any company with a live card and no visible new program; a sign of intent to move adds weight (George, 21 Oct). Ian, 21 Oct ([[2026-10-21-icp-revision-outbound]]): *"if you don't contact them, they'll never know necessarily you exist"*, but not *"on a six touch sequence"* (L753); *"If they do nothing with the first one or two, I don't know what the exact what the right number is"* (L757). Variable sequence length is not built yet. The two gates (reference customers, migration tooling) are still open: [[questions-for-ian]] Q45, [[open-questions]] #120. The text between the two horizontal rules follows the 12-section persona standard (`cofounder: …/concepts/guidelines/buyer-persona.md`) and is what loads into the product's persona `definition`. Message rules live in the [[messaging-protocol|messaging protocol]], not here. Every quote is derived, not heard from a buyer.
 
 ---
 
@@ -39,12 +39,12 @@ The saving is not the hard part: they believe the run rate improves, and they co
   - **"Every business case I get leads with the run rate and buries the transition."** I keep sending them back, and they keep coming back the same way.
 - **5.2 Strategic & Political Pains:**
   - **"Approving this makes it mine at every board meeting until it is done."** A visible one-off cost has an owner in a way an ongoing saving never does.
-  - **"The exit is a negotiation, and the other side holds the notice period."** They know we are leaving.
+  - **"The exit is a negotiation, and the other side holds the notice period."** Once we give notice, they know we are leaving.
   - **"If activation drops after the reissue, the saving shrinks and the cost does not."** The downside is lopsided, and it lands after I have signed.
 - **5.3 The Deepest Fear:** That they approve a migration on a payback case, the transition costs run over, the ongoing saving arrives later and smaller than modelled, and the company spends years on a platform that is better in ways nobody can see and was expensive in ways everyone remembers. Not the cost: being the person who approved a number that turned out to be wrong.
 
 **6.0 What They've Already Tried (and Why It Disappointed)**
-- **Used the threat of moving as a bargaining position at the last renewal:** it settled the price but not the reasons for leaving, so the position became an intention.
+- **Used the threat of moving as a bargaining position at the last renewal:** it settled the price but not the reasons that made them raise it, and those reasons are still there.
 - **Asked for a business case that includes the full transition cost:** each one underweighted the reissue, so they now build the reissue line themselves.
 - **Explored running to expiry to avoid the reissue cost:** cheaper in cash and longer in time, which means paying two platforms for years rather than months, and the arithmetic did not clearly favour it.
 - **Asked what leaving costs under the current contract:** the answer was accurate, and it showed that the exit is a negotiation rather than a clause.
@@ -77,7 +77,6 @@ The saving is not the hard part: they believe the run rate improves, and they co
 - From a business case that leads with the run rate, to one that states the transition cost first and in full.
 - From a payback expressed as a range, to a payback date they will stand behind.
 - From paying two platforms as an unmodelled surprise, to a bounded, funded period with an end.
-- From unit costs that stay flat, to a cost per active card that falls as volume rises.
 
 **11.0 The Message That Lands**
 Open on the transition cost, which this buyer rarely hears first: the reissue is the dominant line. Stating it before they ask earns more credibility than any capability claim.
@@ -101,17 +100,18 @@ Chief Financial Officer · Finance Director · VP Finance · Head of Commercial 
 
 | Gap | Why it matters |
 |---|---|
-| Does the CEO or founder become the economic buyer for a full switch? | Ian's economic-buyer scaffold ([[persona-economic-buyer]] §3.1, §3.4) says the CEO steps in on strategic deals, and a full switch may be one. It decides whether this persona needs a second economic buyer |
+| Does the CEO or founder become the economic buyer for a full switch? | Ian's economic-buyer scaffold ([[persona-economic-buyer]] §3.1, §3.4) says the CEO steps in on strategic deals, and a full switch may be one. It decides whether this persona needs a second economic buyer. Ian, 21 Oct ([[2026-10-21-icp-revision-outbound]]): a title does not show who holds the job, and he named *"possibly the founder"* (L805) |
 | The reissue estimate in a message | Removed from the persona (George, 20 Oct). [[questions-for-ian]] Q29 asks Ian whether a message may ever state it |
 | Term, minimums and notice | `unknown` in [[offer]] Section 7, so the CFO's term-and-notice objection has no answer yet |
 | Real buyer language for the quotes | Every quote is derived; Ian and Dorte should correct them |
 | Triggers and information diet | Derived from the ICP signals and role conventions, not from real deals |
+| ICP 4's dominant pain | The interim word is Novosapien's: "the risk of the move" (21 Oct), until Ian gives his own ([[questions-for-ian]] Q44). §5.2 (the exit as a negotiation) sits close to "entrapment", which Ian declined (L703); check it when he answers |
 
 ## What was cut from the 4 Sep version
 
 | Where | What changed | Why |
 |---|---|---|
-| 4 Sep preamble | Not carried. The on-hold status and its two gates are in this file's header line. The two message bans (never criticise the current processor; never offer to share the reissue cost) stay in [[messaging-protocol]] | Status belongs in the header; message rules belong in the [[messaging-protocol|messaging protocol]] |
+| 4 Sep preamble | Not carried. The status (on hold until 21 Oct) and the two gates are in this file's header line. The two message bans (never criticise the current processor; never offer to share the reissue cost) stay in [[messaging-protocol]] | Status belongs in the header; message rules belong in the [[messaging-protocol|messaging protocol]] |
 | 1.0 | "The Reissue Arithmetic" replaced with "The Reissue Signatory" | The old name named an object, not a person |
 | 2.2 | Removed "which is short, certain and rarely modelled" from the responsibility to fund two platforms at once | Repeated 5.1 |
 | 2.3 | "holds the veto that most often postpones this deal by a year" replaced with "holds a commercial veto that can postpone the deal" | Invented duration. "Most often" was never stated, and the 4 Sep CTO persona made the same claim for its own veto |
@@ -126,5 +126,8 @@ Chief Financial Officer · Finance Director · VP Finance · Head of Commercial 
 | 8.0 | Removed "A card range approaching mass expiry" and the incident half of "A price increase or a material incident on the incumbent" | Repeated across the three personas. Mass expiry stays with the CPO, the incident with the CTO |
 | 9.0 | Removed "Reachable by a short message that opens on the transition cost rather than the run rate" | A message instruction that repeated 11.0 |
 | 11.0 | Cut from seven sentences to three. Removed: the list of what the reissue figure covers (kept in 5.1); "with figures in a conversation rather than in a message"; "Never offer to share or subsidise the reissue cost. It is not an existing lever, and offering it would be a commitment TXN has not made"; "Say nothing about the incumbent" | 11.0 holds the angle and one claim. The rest are message rules, held in [[messaging-protocol]] |
-| 11.0 (20 Oct, from v2) | The pricing shape: "a fixed monthly licence fee plus volume fees that step down as monthly volume rises" | George, 20 Oct: no pricing in a message. The offer forbids leading on price and calls the wording not quotable (offer §7). Ian answers [[questions-for-ian]] Q12. The reissue estimate in the opening waits on issue 6 of the final review |
+| 11.0 (20 Oct, from v2) | The pricing shape: "a fixed monthly licence fee plus volume fees that step down as monthly volume rises" | George, 20 Oct: no pricing in a message. The offer forbids leading on price and calls the wording not quotable (offer §7). Ian, 21 Oct, confirmed it: the structure stays out, and a headline of simple pricing structure is allowed (L831, L855). The reissue estimate in the opening waits on issue 6 of the final review |
 | 5.1 and 11.0 (20 Oct, from v2) | Ian's estimate, "about £2 or €2 a card all in" | George, 20 Oct: no cost figure in the persona, because the writer could use it in a message and it may be wrong. Q29 asks Ian |
+| Header, status, description (21 Oct, from v2) | "On hold" replaced with "Loads with ICP 4, on a short sequence" | Ian: contact them, on a short sequence (L753-L757). George, 21 Oct: ICP 4 takes any company with a live card and no visible new program. The gates stay open (Q45) |
+| 5.2, 6.0 (21 Oct, from v2) | "They know we are leaving"; "so the position became an intention" | Both assumed the move was decided. ICP 4 now includes companies with no sign of moving (George, 21 Oct) |
+| 10.0 (21 Oct, from v2) | "From unit costs that stay flat, to a cost per active card that falls as volume rises" | It points a writer at the price structure, which Ian keeps out (L831, L859). TXN's volume tiers are per settled transaction and per 3DS authentication (L843) |

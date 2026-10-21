@@ -1,6 +1,6 @@
 ---
-description: "TXN market profile P-3, lending, FX and embedded finance (SMB and consumer lending, FX and multi-currency, payment and e-money institutions, BaaS): the firmographic criteria that feed ICP 2 and ICP 3"
-status: draft, 19 Oct 2026
+description: "TXN market profile P-3, lending, FX and embedded finance (lenders, FX, payment and e-money institutions, BaaS): the criteria that feed ICP 2, 3 and 4"
+status: draft, 19 Oct 2026; revised 21 Oct 2026 after the call with Ian
 ---
 
 # P-3 Lending, FX and embedded finance
@@ -11,11 +11,11 @@ status: draft, 19 Oct 2026
 
 **Who it finds.** Financial companies where a card is one surface of a broader product: lenders, FX and cross-border payment companies, payment and e-money institutions, and banking-as-a-service platforms. Ian counts these as card-adjacent: a demonstrable use case, but optional to the product `[Ian, 3 Sep L901; §4.2.1]`. TXN's Core Messaging names this as its third cluster: "Lending, FX, and Embedded Finance" `[TXN, core-messaging.md §3.1]`.
 
-**Feeds:** ICP 2 (live card, new product or market), ICP 3 (no card, a peer runs one), ICP 4 when it is active. The research decides which.
+**Feeds:** ICP 2 (live card, new product or market), ICP 3 (no card, a peer runs one), ICP 4 (live card, no visible new program). The research decides which. Every vertical carries every ICP `[Ian, 21 Oct L681-691]`.
 
 ## Geography
 
-The same as [[market-profile-1-digital-banking|P-1]], and a guide, not a strict filter (search by where the company operates, not only by its HQ): EEA and UK, in Ian's phase order (Poland, Czech Republic, Romania, Hungary first) `[Ian, §4.4]`. Germany LinkedIn only `[TXN, prospecting-process.md:319]`. Card programs that serve Asia or Ukraine are out `[Ian, 9 Oct email]`.
+The same as [[market-profile-1-digital-banking|P-1]], and a guide, not a strict filter (search by where the company operates, not only by its HQ): EEA and UK, in Ian's phase order (Poland, Czech Republic, Romania, Hungary first) `[Ian, §4.4]`. Germany LinkedIn only `[TXN, prospecting-process.md:319]`. TXN contracts only with companies in Europe or the UK `[Ian, 21 Oct L637]`; a company with no entity there takes an anti-signal in every ICP, on evidence only. Published card issuance outside Europe and the UK, or for Ukraine, is a mark-down in each ICP, not an exclusion `[Ian, 21 Oct L641-657]` · Ukraine `[Derived]`.
 
 ## Industries
 
@@ -61,7 +61,7 @@ All `[Derived]`. Not tested yet: run a free Prospeo search through Nova for each
 
 ## Exclusions
 
-Companies and types that a sourcing run leaves out. Exclusions that need research (a Mastercard-only program, a program that serves Asia or Ukraine, a card for staff only, insolvency) are not here: the ICP anti-signals block them after the research.
+Companies and types that a sourcing run leaves out. Exclusions that need research (a card for staff only, insolvency, no company in Europe or the UK to contract with) are not here: the ICP anti-signals grade them D after the research and keep them on record. Mastercard and published card issuance outside Europe and the UK are no longer exclusions `[Ian, 21 Oct L609-613, L653]`: issuance is a mark-down in each ICP.
 
 | Exclusion | Kind | Source |
 |---|---|---|
@@ -70,8 +70,8 @@ Companies and types that a sourcing run leaves out. Exclusions that need researc
 | Petrol retail, including fuel card programs | Industry | `[Ian, §7]` |
 | BIN sponsors (for example Paynetics, DiPocket, Modulr, Transact Payments, Railsr): TXN works with them directly, outside outreach | Named list | `[Ian, 2 Sep L642-645; §6]` |
 | Card issuer processors that compete with TXN, and TXN's owners Direct Transact and Paycorp | Named list | `[Derived, §6]` |
-| Marqeta clients removed by Ian: Payhawk, Capital on Tap, Tymit, Zilch, Zopa Bank, Trading 212, Raiffeisen Digital Bank (not the other Raiffeisen group banks) | Named companies | `[Ian, 9 Oct email]` · all Marqeta clients or only these `[Gap]` |
-| Other companies removed by Ian: ClearBank, Allica Bank, Altery (Mastercard), ZEN.COM (Asia, Ukraine), Outpayce, of Amadeus ("Amadeus won't go with us"), WiZink, Soldo (Ian's previous company), Ecommpay (already engaged) | Named companies | `[Ian, 9 Oct email]` · reasons for ClearBank, Allica Bank, WiZink `[Gap]` |
+| Marqeta clients removed by Ian: Payhawk, Capital on Tap, Tymit, Zilch, Zopa Bank, Trading 212, Raiffeisen Digital Bank (not the other Raiffeisen group banks) | Named companies | `[Ian, 9 Oct email]` · only these seven, as Ian's own judgement; other Marqeta clients are sourced and scored `[Ian, 21 Oct L563-577]` |
+| Other companies removed by Ian: ClearBank, Allica Bank, Altery (Mastercard), ZEN.COM (Asia, Ukraine), Outpayce, of Amadeus ("Amadeus won't go with us"), WiZink, Soldo (Ian's previous company), Ecommpay (already engaged) | Named companies | `[Ian, 9 Oct email]` · reasons for ClearBank, Allica Bank, WiZink `[Gap]` · the reasons for Altery and ZEN.COM no longer hold after 21 Oct (L609-613, L653): restore them? `[Gap]` |
 | Companies TXN is already talking to | Named companies | `[Gap]`: list requested from Ian |
 
 ## Gaps to settle
@@ -80,5 +80,5 @@ Companies and types that a sourcing run leaves out. Exclusions that need researc
 |---|---|
 | BaaS without cards: a prospect, or a competitor category? (questions-for-ian Q24) | Decides whether BaaS stays in this profile |
 | Use cases beyond the twelve sub-sectors (Q14) | May add verticals here |
-| The UK's place (Q13); markets besides Asia and Ukraine (Q3) | As P-1 |
+| The UK's place (Q13); Ukraine and Switzerland in the geography; Altery and ZEN.COM | As P-1 |
 | Every keyword list | Not tested yet |

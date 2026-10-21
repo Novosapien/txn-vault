@@ -1,6 +1,6 @@
 ---
 description: "TXN ICP 3 buyer persona v2: the CPO, Head of Product or Head of Customer who owns the customer relationship at a card-adjacent company and has seen a peer launch a card; champion, co-leads. The 12-section persona, ready to load, with its sources and gaps below"
-status: draft, 19 Oct 2026, reworked from personas-icp-3.md (4 Sep)
+status: draft, 19 Oct 2026, reworked from personas-icp-3.md (4 Sep); updated after the 21 Oct call with Ian
 ---
 
 # ICP 3 persona: CPO, Head of Product or Head of Customer
@@ -78,7 +78,7 @@ Someone sends them a screenshot of a peer's new card. Their first reaction is th
 - From a proposition they can only improve, to one they have extended.
 
 **11.0 The Message That Lands**
-Open with what card programs have done for companies in their vertical, without naming a company, so the first case is for a card program at all and TXN comes second. Then answer the question that stops the idea inside the company: whether they are allowed. The claim is that TXN is the platform for any company launching and operating a card program, so the company does not have to be a bank, and it can run the program without employing card experts.
+Open with what card programs have done for companies in their vertical, so the first case is for a card program at all and TXN comes second. Then answer the question that stops the idea inside the company: whether they are allowed. The claim is that TXN is the platform for any company launching and operating a card program, so the company does not have to be a bank: the cards come from a licensed issuer that TXN already works with, and the company can run the program without employing card experts.
 
 **12.0 Example Titles**
 Chief Product Officer · Head of Product · Head of Customer Experience · Director of Loyalty and Membership · Head of Digital · General Manager, Consumer
@@ -94,16 +94,19 @@ Chief Product Officer · Head of Product · Head of Customer Experience · Direc
 | The two-stage sale (7.0 first criterion, 11.0) | Ian, 2 Sep L862: first why launch a card program, then *"If they think it's a good idea, then your second part is to sell why they should do it with you."* Ian, 3 Sep L583: *"there's a period of convincing in the value of the card program before you get into [why] TXN"* |
 | Section 5 pains | Derived from the ICP 3 pain mapping (the peer, the stored balance, the payouts, the loyalty scheme) and the 4 Sep persona. Every quote is derived |
 | Section 7 objections | The 4 Sep persona (Novosapien). "Show me what a card would do for a business like ours": Ian's champion scaffold ([[persona-champion]] §6 and §8.2: specific use cases, not generic platform capability statements) |
-| Section 11 | [[offer]] Section 1: the tagline, *"TXN is the platform for any company launching and operating a card program"* (Ian, 24 Aug L657: *"You don't have to be a bank"*), and the primary job, run a card program without employing card experts. The sector opening: Ian, 2 Sep L732 (*"Here's what your competitors done. Here's the benefit they've got"*) |
+| Section 11 | [[offer]] Section 1: the tagline, *"TXN is the platform for any company launching and operating a card program"* (Ian, 24 Aug L657: *"You don't have to be a bank"*), and the primary job, run a card program without employing card experts. The sector opening: Ian, 2 Sep L732 (*"Here's what your competitors done. Here's the benefit they've got"*). The licensed issuer: Ian, 21 Oct L641 (*"a bin sponsor or the actual um licensed issuer"*) and L781 (*"existing bin sponsor relationships"*) |
+| Dominant pain (5.3) | Ian, 21 Oct ([[2026-10-21-icp-revision-outbound]] L703): *"constraint and falling behind comfortable with"* |
 
 ## Gaps to settle
 
 | Gap | Why it matters |
 |---|---|
 | The ICP 3 buying group: CPO and CFO together, the CTO later | Novosapien's, and Ian's confirmation is not in the transcript. It sets who gets the first message, and whether ICP 3 needs a CTO persona |
-| The full answer to "are we allowed?" | Ian: a launch needs a licensed entity, the BIN sponsor, and a processor (2 Sep L620). The offer holds pre-integrated BIN sponsor relationships (Section 2, step 11). Whether the message names the BIN sponsor step is not settled |
+| The full answer to "are we allowed?" | Ian, 21 Oct: say "existing BIN sponsor relationships", with no target market and no sponsor named (L777-L787). He named the CPO for this point (L805). §11 now says it in plain words: a licensed issuer that TXN already works with. Open: whether "licensed issuer" passes rule P2 (no payments vocabulary this persona has to look up) |
+| A head of payments at a card-adjacent company (a lender, a payout platform) | Ian names the head of payments for the BIN sponsor point and warns against narrow titles (L805). This persona "does not think of themselves as a payments person" (§3), so a head of payments matches it badly. Decide whether such a person matches this persona or needs another |
 | Real buyer language for the quotes | Every quote is derived; Ian and Dorte should correct them |
 | Triggers and information diet | Derived from the ICP signals and role conventions, not from real deals |
+| §11 rests on the primary job (run a card program without employing card experts), which [[messaging-protocol]] holds as O3, a claim that waits for Ian | Ian, 21 Oct: a capability that a prospect can reach only as a client may be described if it will be live by the time they become a client (L617). His mission line supports the claim (L715-L719). Which AI capabilities meet that test: [[questions-for-ian]] Q46, [[open-questions]] #121 |
 
 ## What was cut from the 4 Sep version
 
@@ -140,3 +143,6 @@ Line numbers refer to [[personas-icp-3]]. The preamble (L7-21) served both perso
 | 10.0 L95-98 | Kept | The CFO's matching payout and loyalty metrics (L179-180) were removed instead |
 | 11.0 L101 | Cut from eight sentences to three: the angle (the peer, then the case for a card program before TXN) and the claim (any company, not only a bank, and no card experts needed) | Removed: "the only ICP where a competitor's success is the opening... a company that has never considered it" (commentary, and the revised ICP drops "never considered"); "Ian's own framing carries it" (folded into the claim); never name the processor, do not open with the owners, no payments vocabulary (message rules). "By name where one is known": the peer is no longer a gate |
 | 11.0 (20 Oct, from v2) | The named peer: "by name where one is known" / "what a peer in their vertical did" | George, 20 Oct: no named peer. The workforce cannot confirm a peer's card, and a peer named from model memory can be wrong. The opening stays at the level of the vertical (Ian, 2 Sep L732) |
+| Gaps, "are we allowed?" (21 Oct, from v2) | "pre-integrated BIN sponsor relationships"; "not settled" | Ian's wording: "existing", no market, no names (L777-L787) |
+| 11.0 (21 Oct, from v2) | The licensed issuer added to the "are we allowed?" answer | Ian, 21 Oct L641, L781 |
+| 11.0 (21 Oct, from v2) | "without naming a company" | A message rule, held in [[messaging-protocol]] (M10, I2). The persona guideline keeps message rules out of §11 |

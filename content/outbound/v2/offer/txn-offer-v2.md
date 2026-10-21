@@ -1,36 +1,19 @@
 ---
-description: "TXN's offer v2 in its seven sections, with Ian's 21 October rulings on BIN sponsor wording, card schemes, pricing and what may be claimed at launch"
-status: draft, 19 Oct 2026. Copy of the approved sections only; content not yet reviewed or cut; not signed off by Ian
+description: "TXN's offer v2: only the seven Offer Structure v2 sections (what it is, how it works, pain points, what changes, why us, proof, commercial shape), taken from the 2 September offer as the base for the section-by-section review; the BIN sponsor, scheme and fee-structure lines updated for Ian's 21 October call"
+status: draft, 19 Oct 2026; 21 Oct, BIN sponsor, scheme and fee-structure lines updated for Ian's call. Copy of the approved sections only; content not yet reviewed or cut; not signed off by Ian
 ---
 
 # TXN Offer (v2)
 
 > **Up:** [[market-profiles]] · the full earlier version: [[offer]] (2 Sep 2026).
 >
-> **What this is.** The seven Offer Structure v2 sections from [[offer]], copied unchanged. The next step is a section-by-section review and cut, to about the length of Novosapien's own product offers (about 4,500 words).
+> **What this is.** The seven Offer Structure v2 sections from [[offer]], copied unchanged, except the 21 Oct changes below. The next step is a section-by-section review and cut, to about the length of Novosapien's own product offers (about 4,500 words).
+>
+> **Changed on 21 Oct, for Ian's call** ([[2026-10-21-icp-revision-outbound]]; "L777" is a line of its transcript). Nothing is cut. The BIN sponsor wording in step 11, the integrations line, D5 and D6 is now "existing BIN sponsor relationships", with no market and no names. The scheme line in Section 1 adds Ian's "no 'Mastercard coming soon'". The fee structure is marked context-not-quotable: an agent may know it and never voices it (Section 7). What a message may claim about a capability that is not live at launch is rule M3 of [[messaging-protocol]].
 >
 > **What is not here, and where it stays.** The earlier [[offer]] keeps four more sections: the build notes, the **vocabulary doctrine** (needed for the [[messaging-protocol|messaging protocol]]), the gaps list, and the self-review gate. None of them is deleted. The open gaps move to [[questions-for-ian]] as they are reviewed.
 >
 > **Source key** for the tags in the text (from the earlier offer's build notes): `S1` offer session 24-08-2026 · `S2` offer session 27-08-2026 · `ICP2` ICP session 25-08-2026 (no transcript) · `S3` ICP statuses session 03-09-2026 · `R1` rulings taken 02-09-2026 · `PO` Product Overview v1.0 · `CM` Core Messaging v2.5 · `AITO` AI Target Outcomes Framework v1.0 · `OH` Objection Handling v1.1 · `CL` Competitive Landscape v0.2 · `JV` JV Messaging Framework v2.3
-
-> [!important] Ian's wording rulings on BIN sponsors, schemes and price (21-10-2026)
-> From the ICP revision call ([[2026-10-21-icp-revision-outbound]]). These change what this document may claim.
->
-> | This document says | Ruling |
-> |---|---|
-> | *"Pre-integrated BIN sponsor relationships in each target market"* | **Cut "in each target market"**, because *"typically a BIN sponsor in Europe can cover all of Europe because they've passported their licence"*, and naming a market makes the reader ask whether they are in it: *"how does somebody receiving this know whether they're in the target market or not? Because you've mentioned it, whereas I don't think there's any need to."* **And prefer "existing" to "pre-integrated":** *"I would prefer existing BIN sponsor relationships is the better way of doing it"* |
-> | Naming BIN sponsors | **Never.** *"I wouldn't list the actual BIN sponsors"* |
-> | *"Visa and Mastercard"* | **Name no scheme**, and never "Mastercard coming soon". But Mastercard is **no longer a disqualifier** for a target: *"by the time somebody's made a decision that they're going to move, the chances are we'll have Mastercard certification anyway"* |
->
-> **Why the silence on sponsors helps TXN.** *"If somebody likes your tech and they want to go with your tech, but they don't necessarily want to work with the BIN sponsor you've got, they're too expensive, they don't want to approve their program, then they're going to ask you if you can work with the BIN sponsor they're talking to, and then that starts the conversation with the BIN sponsor about what does it take to become integrated with them, **which by the way typically is not very significant**."* And not naming them prompts the question: *"the prospect doesn't know whether or not the BIN sponsor they're talking to is one of the established partners. So that's like to ask the question."*
->
-> **Bring your own BIN sponsor may be offered as a point**, carefully. *"I don't think it does any harm"*, but keep it brief or it *"becomes a bit mealy-mouthed"*. In his experience prospects ask regardless of what is published.
->
-> **The commercial shape, for internal context and not for any message.** Ian set it out on the call: **an onboarding fee, a monthly platform or licence fee, a fee per settled transaction, and a fee per 3DS authentication**, the last two on volume-based tiers, *"where the more you process, the less you pay on a unit price basis"*. The monthly fee includes all API calls.
->
-> **What outreach may claim is the shape, not the numbers:** *"a headline of simple pricing structure"*. The positioning is simplicity against opacity, from his own Marqeta story: *"it was almost impossible to predict how much you're going to be paying each month. A classic example is companies that charge per API call."* Avoid "usage based fees", which invites *"well, is that APIs"*. See rule M4 in [[messaging-protocol]].
->
-> **A capability may be described even when it is not live on 16 November**, if the reason is that it sits behind client access: *"not talking about them, even though we know by the time they become a client they will be there, would be the wrong thing to do."* **Which features that covers is not settled**, so §2 of [[messaging-protocol]] still holds. [[open-questions]] #121.
 
 ## Section 1: What it is
 
@@ -58,7 +41,7 @@ Software as a service, cloud-native on Microsoft Azure. (`PO` 5.3.)
 The client operates their own program; TXN operates the platform. The platform is hosted and managed by Direct Transact within their existing data governance and security frameworks. (`S2`, and this sentence is the approved confidence line.)
 
 **Buying model**
-A fixed monthly licence fee per client to access the platform, plus volume-tiered variable fees. Shape only; the economics are in Section 7.
+A fixed monthly licence fee per client to access the platform, plus volume-tiered variable fees. Shape only; the economics are in Section 7. **Context-not-quotable** (Ian, 21 Oct; see Section 7).
 
 **Mechanism arc**
 A client brings a card product idea and its own customers; TXN configures and certifies the card program, processes every scheme message those cards generate, and returns a running program with the settlement position, the cardholder data, and the controls to change it. *(Derived from `PO` and the `S1` transaction-flow description. Ian has never said this sentence.)*
@@ -151,6 +134,7 @@ Regulatory: PSD2 and SCA, 3DS 2.x step-up authentication.
 Auditability: immutable audit logging with a minimum seven-year retention, carrying actor, action, timestamp and outcome on every event.
 Accessibility: WCAG 2.1 AA across interactive surfaces.
 Scheme: launch certifies one scheme first, currently expected to be Visa, with Visa due diligence under way. Mastercard follows and is the number one priority once MVP launch completes. Ian is comfortable naming both schemes in outbound because the sequencing can be handled in conversation. (`S1`, `PO` 6.)
+**21 Oct: never "Mastercard coming soon".** Ian: *"by the time somebody's made a decision that they're going to move and all of that stuff, the chances are we'll have Mastercard certification anyway. We don't need to see Mastercard say Mastercard coming soon"* (L609). He did not rule on which schemes a message names. Until he does, a message names no scheme as supported: Novosapien's default, not his ruling ([[messaging-protocol]] §2; Q34 in [[questions-for-ian]]).
 
 **Notable names**
 None. Permission-gated field, and there is nothing in it.
@@ -226,8 +210,9 @@ This is the longest section in the document by design, and one step in it is a h
 
 ### Step 11. Structure BINs and program routing
 
-**What happens.** BINs and BIN ranges are structured and allocated across the BIN sponsor, program owner and issuer-processor roles, and transactions are routed to the correct program. TXN treats BIN sponsorship as a first-class role in the platform and works with pre-integrated BIN sponsor relationships in each target market. TXN is the issuer processor and does not outsource its processing. (`PO` 3.1, 6.)
+**What happens.** BINs and BIN ranges are structured and allocated across the BIN sponsor, program owner and issuer-processor roles, and transactions are routed to the correct program. TXN treats BIN sponsorship as a first-class role in the platform and works with existing BIN sponsor relationships. TXN is the issuer processor and does not outsource its processing. (`PO` 3.1, 6.)
 **Contributes.** So that a client does not have to assemble a sponsor relationship and a routing model before they can start.
+**The wording, Ian, 21 Oct** (L777-797). *"I would prefer existing bin sponsor relationships is the better way of doing it"* (L781). No target market: *"typically a bin sponsor in Europe can cover all of Europe because they've passported their license"*, and a named market makes the reader ask if they are in it (L777). No sponsor named in outbound: *"I wouldn't list the actual bin sponsors"* (L787); the website will name them *"eventually"* (L793). No explicit bring-your-own line: with no names, the prospect asks. For a person in a later conversation: to integrate a prospect's own sponsor *"typically is not very significant"* (L787). Which sponsors TXN has today, and so whether the plural holds, is open (Q43 in [[questions-for-ian]]).
 
 ### Step 12. Migrate an existing program
 
@@ -238,7 +223,7 @@ This is the longest section in the document by design, and one step in it is a h
 
 ### Integrations and onboarding path
 
-**Pre-integrated.** KYC, BIN sponsor and card manufacturing relationships, with scheme certifications managed by TXN. (`CM` 6.2, `OH` 3.)
+**Pre-integrated.** KYC and card manufacturing relationships, with scheme certifications managed by TXN. Existing BIN sponsor relationships (Ian's wording, 21 Oct; see step 11). (`CM` 6.2, `OH` 3.)
 **Multi-tenancy, stated honestly.** The standard shape is shared platform components with segregated databases per client. A client that needs it can stand up a completely separate environment. Ian, `S1`, asked whether one client flooding the system with bad API calls could affect others: *"Yes, we believe there still is a risk that it could impact other clients."* This is an active conversation between TXN and Direct Transact about the architecture. **It is in the fact base because it will be asked in procurement, and a denial would be false.**
 **Onboarding path.** `unknown`, pending Dorte's write-up. See step 2.
 
@@ -412,7 +397,7 @@ Before: the program is something the business owns commercially and does not con
 ### O7. Cost per active card falls as the program grows
 
 **Before state.** Volume grows and the unit cost does not move, so scale does not produce headroom.
-**After state.** Per-transaction rates step down as monthly volume rises, and the operational load that normally grows with volume is absorbed by the platform rather than by hires.
+**After state.** Per-transaction rates step down as monthly volume rises, and the operational load that normally grows with volume is absorbed by the platform rather than by hires. *The first half describes the fee structure: context-not-quotable (Section 7).*
 **Value lever.** Money.
 **Produced by.** Section 2 step 10, and the fee structure in Section 7.
 **Pairs with pain.** P9.
@@ -485,13 +470,13 @@ A business that needs a card program today has four realistic moves, and three o
 ### D5. Europe is the whole business, not a region of a larger home market
 
 **Versus.** First-wave modern processors.
-**Substance.** A processor headquartered elsewhere prioritises its own larger home market for roadmap, budget and support. TXN's markets, phasing and scheme and BIN sponsor relationships are European, and the sub-sector coverage is built around European fintech categories rather than adapted to them.
+**Substance.** A processor headquartered elsewhere prioritises its own larger home market for roadmap, budget and support. TXN's markets, phasing and scheme relationships are European, TXN works with existing BIN sponsor relationships (Ian's wording, 21 Oct; see step 11), and the sub-sector coverage is built around European fintech categories rather than adapted to them.
 **Barrier countered.** "We will just use the platform the US market uses."
 
 ### D6. Scheme neutrality on BIN sponsorship
 
 **Versus.** First-wave modern processors, specifically any owned by a scheme.
-**Substance.** TXN treats BIN sponsorship as a first-class role in the platform and works with pre-integrated sponsor relationships in each target market, with no scheme ownership sitting behind the recommendation. A processor owned by a scheme cannot demonstrate the same neutrality on sponsor choice.
+**Substance.** TXN treats BIN sponsorship as a first-class role in the platform and works with existing BIN sponsor relationships (Ian's wording, 21 Oct; see step 11), with no scheme ownership sitting behind the recommendation. A processor owned by a scheme cannot demonstrate the same neutrality on sponsor choice.
 **Barrier countered.** "Whose interest is being served when they pick our sponsor?"
 
 ### D7. The scheme mandate treadmill is absorbed rather than passed on
@@ -545,6 +530,8 @@ Owner heritage only, attributed separately to each owner every time, with the se
 ## Section 7: Commercial shape
 
 Buying TXN is a licence plus usage. There is a fixed monthly fee for access to the platform, and then variable fees that track what the program actually does, falling per unit as the program grows. Ian's stated position on disclosure is unambiguous and it governs everything below: **no pricing numbers go into outbound, at all.**
+
+**Context-not-quotable, by Ian's ruling of 21 Oct** (L843-859). The fee structure in this section, and every other line in this offer that describes it (the buying model in Section 1, the first half of O7), is context: an agent may know it and never voices it. A message may say only that TXN has *"a simple pricing structure"* (L855), and never "usage based fees" ([[messaging-protocol]] M4). Ian set out the full structure on 21 Oct (L843). It is not copied here, so that it stays out of the agents' context.
 
 **Pricing**
 Two core principles. A **fixed monthly licence fee per client** to access the platform, covering the Control Center, the Knowledge Hub and unlimited API calls. Plus **volume-tiered variable fees**: one fee per settled transaction and one fee per 3D Secure authentication, with the unit fee falling as monthly volume rises. The intelligence layer is currently included in the licence fee. (`S1`. Ian noted that the pricing language as currently written has issues, so the wording here is his description of the model rather than a quotable rate card.)

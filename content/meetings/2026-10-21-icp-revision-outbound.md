@@ -1,306 +1,306 @@
 ---
 date: 2026-10-21
 type: general
-description: "Ian answers all twelve call questions on targeting: Marqeta clients are deprioritised not excluded, incumbents get tiered, and pricing stays out of messages"
+description: "Novosapien's analysis of the 21 Oct targeting call with Ian: his answers to call questions 1 to 12 in his own words, what each decided and left open, George's decisions D1 to D5 after the call, and the new questions 44 to 47"
 scope:
   - "[[outbound]]"
   - "[[market-profiles]]"
   - "[[messaging-protocol]]"
 status: extracted
 extracted-to:
-  - "[[questions-for-ian]]"
   - "[[icp-1-first-program-card-essential]]"
   - "[[icp-2-new-program-incumbent-stays]]"
   - "[[icp-3-industry-inference]]"
   - "[[icp-4-full-switch]]"
+  - "[[cpo-the-promised-launcher]]"
+  - "[[cto-the-reluctant-first-mover]]"
+  - "[[founder-ceo-cfo-the-funder-of-an-unpriced-line]]"
+  - "[[cpo-the-boxed-in-roadmap-owner]]"
+  - "[[cto-the-two-stack-owner]]"
+  - "[[cfo-the-second-supplier-approver]]"
+  - "[[cpo-the-peer-shadowed-operator]]"
+  - "[[cfo-the-underwriter-of-an-absent-line]]"
+  - "[[cpo-the-keeper-of-the-cardholder]]"
+  - "[[cto-the-escape-planner]]"
+  - "[[cfo-the-reissue-signatory]]"
   - "[[market-profiles]]"
   - "[[txn-offer-v2]]"
   - "[[messaging-protocol]]"
+  - "[[questions-for-ian]]"
   - "[[open-questions]]"
-  - "[[index]]"
+  - "[[outbound]]"
 ---
 
 # TXN: ICP Revision, Outbound (2026-10-21)
 
-> **Source:** Gemini transcript, 21 October 2026, 10:00 BST, 55m. **Novosapien:** George Westbrook, Brett StClair. **TXN:** Ian Johnson. Brett dialled in from holiday, having spent its first days in hospital with his son.
+> **Source:** the computer-generated transcript below, 21 October 2026, about 55 minutes (L919). **Novosapien:** George Westbrook, Brett StClair. **TXN:** Ian Johnson.
 >
-> **The working session George had been building towards.** Every one of the twelve call questions in [[questions-for-ian]] was put to Ian and answered. Finished five minutes early.
+> **How to read this page.** This is Novosapien's analysis of the call. It replaces the first digest, which misread several answers. The transcript is the only evidence. "L" numbers are lines of this file, and the transcript starts at L307. Quotes are word for word and keep the transcript's spelling (for example "Marqueta", "car program", "bin sponsor"). `...` marks a cut. Each statement names its speaker. Novosapien's own reading says so.
 
-## Why the ICPs needed revising at all
+**What the call was for.** Brett opened it (L435 to L449). Targeting worked on a small set, but *"we have to expand this out to thousands. we're going to struggle"* (L435). He did not want to *"run it against ICPs that are not quite the ICPS you want"* (L435). George then explained the change (L457 to L505). The ICPs are right as ICPs: *"They're exactly what they should be. Um that's who you want to target. It's their different buying stages."* (L457). But the first targeting step works on firmographics (the transcript reads "thermographics"), so the ICPs apply later in the pipeline.
 
-**Brett's framing.** Targeting worked at small scale and would not survive the jump: *"we managed to get a fair amount, but then we started thinking actually we have to expand this out to thousands, we're going to struggle to extrapolate it out."* Ian had raised the same thing independently. The cost of getting it wrong: *"the worst thing you want to do is run it against ICPs that are not quite the ICPs you want... you're just burning [spend] for the sake of it when we know we can tighten it up."*
+George put twelve questions to Ian. With the answers, Novosapien finalises the ICPs, buyer personas and market profiles (L505). Messaging was not on the agenda: *"the messaging won't be today"* (George, L457), because TXN's core messaging document already holds the detail.
 
-**George's diagnosis, which is a diagnosis of fit rather than quality.** The ICPs are correct as ICPs: *"that's who you want to target. It's their different buying stages. There's different things that they're going to value."* The problem is where they were being applied. The first sourcing pass runs on **firmographics**, so the ICPs belong later in the pipeline, not at the top. Hence the new [[market-profiles]].
+## The pipeline George described
 
-## The pipeline George described, in order
+George described the stages (L457 to L493). Ian commented on the first stage only (L463). Later he restated the routing: *"you've talked about LinkedIn and then email for the other two and then just don't bother."* (L745)
 
-This is the clearest account of the outbound workforce in the vault so far.
-
-| Stage | What happens |
+| Stage | George's words |
 |---|---|
-| **1. Sourcing** | Firmographic only. *"A neobank that's based in Bulgaria, not based in Ukraine, is between this size and that size."* The *"very very very top of the potential funnel"*, in Ian's words. Same criteria for every search |
-| **2. Research** | In-depth research per lead: *"it finds out everything and anything about the lead"* |
-| **3. ICP match** | *"Given all of these ICPs that you've got, which one is it most likely to fit, or does it just not fit anything at all?"* |
-| **4. Grading** | Against that ICP's criteria, **A to D** |
-| **5. Channel routing** | **A to LinkedIn**, *"because LinkedIn's the highest response rate. So you want the cream of the crop there."* **B and C to email. D are not contacted** |
-| **6. Persona match** | The same match-and-rank process again, for the buyer personas |
-| **7. Writing** | Agents write every message from scratch against a **message skeleton** |
+| 1. Sourcing, on firmographics | *"a a neo bank that's based in um Bulgaria not based in Ukraine is between this size and that size"* (L461). Ian: *"very very very top of the potential funnel essentially we're talking about."* (L463) |
+| 2. Research | *"so it finds out everything and anything about about the lead"* (L473) |
+| 3. ICP match | *"given all of these ICPS that you've got, which one does is it most likely to fit? um or does it just not fit anything at all?"* (L473) |
+| 4. Grade A to D | *"it's going to select an ICP that it thinks is a fit and then look through the criteria to grade them from A B C to D."* (L477) |
+| 5. Channel routing | *"A tier leads go to LinkedIn um because LinkedIn's the the highest response rate. So you want the cream of the crop there. Um and then B and C go to email and D are removed. they're not they're not contacted."* (L477) |
+| 6. Persona match | *"The same thing then happens for the buyer personas."* (L477) |
+| 7. Writing from a message skeleton | *"the agent writes everything from scratch but has like a deep guideline um we call them message skeletons"* (L493) |
 
-**Why D are dropped rather than mailed anyway:** *"you don't really want to be spamming people who are never ever going to be responding to you. One, because it's a waste of a message. It's going to harm deliverability. And if they're the wrong person it's a waste of resources."*
+**Why a D is not contacted** (George, L477): *"you don't really want to be spamming people who are never ever going to be responding to you one because it's a waste of a message. It's going to harm deliverability"*.
 
-**Message skeletons, and what templating survives.** George traced the evolution: one identical message to everyone, then mail-merge variables, *"hey first name, I see you work at company name"*, then this. The skeleton is a structure only, for example *"first maybe talk about a pain point, then talk about a potential solution, then go for a CTA"*, and the agent writes the content from the selected ICP, the persona, the offer and all the collected research. ***"So there's no, the only templating really is the structure."*** Which leaves sequence structure as a testable variable.
+**What a skeleton fixes** (George, L493): the structure only, for example *"first maybe talk about a painoint then talk about a potential solution then go for a CTA"*. *"So there's no the only templating really is the structure"*. The agent writes the content from the selected ICP, the persona, the offer and the research.
 
-## Ian's twelve answers
+## Ian's answers, Q1 to Q12
 
-### 1. Marqeta: not excluded, deprioritised, and the incumbent gets tiered
+The question numbers are those of [[questions-for-ian]]. George read the questions in short form, so each "Asked" line gives his version.
 
-**He rejected the question as posed.** *"It's not about removing them. It's about understanding that it's highly unlikely that we'll get any traction with them unless there's another proof point out there or indicator that suggests Marqeta are having problems."*
+### Q1. Marqeta
 
-**And he gave the scoring order to use instead**, which is a layered score rather than a filter:
+**Asked** (George, L561): remove every published Marqeta client, or only the seven? How do we know a company is on Marqeta: a block list?
 
-1. The company, what it does, **its propensity to launch a card program**. *"All of those things should be the first level of the score."*
-2. **Has it already got a card program live?** No live card scores higher, *"because that's kind of to some degree green field"*.
-3. **Who is it live with?**
-4. **Is there published data about that incumbent suggesting challenges?**
+**Ian's words:**
+- *"their propensity to have a car program or launch a car program. You know, all all of those things should be the first level of the score. But then you've got, have they already got a card program live?"* (L563). *"Followed by who is it live with? And is there any published data about those companies that suggest there've been challenges?"* (L567)
+- *"if they haven't already got a pro car program they should score higher because ultimately that's kind of to to some degree green field"* (L573)
+- *"with Marqueta, I've discounted them as a human intervention because I know that they don't have any significant problems. That doesn't mean that there aren't, you know, that's my working knowledge of Marqueta"* (L573). *"It's not about removing them. It's about understanding that it's highly unlikely that we'll get any traction with them unless there's another um proof point out there or indicator that suggests that Marqueta are having problems."* (L577)
+- *"the the the place that it floats up most is LinkedIn."* (L581). George had proposed to track the people who react to competitors' LinkedIn posts (L509). Ian: *"Same goes the other way that are there people posting negative stuff on um on LinkedIn about a particular competitor."* And: *"so it's not it's not the highest priority thing."* (L591)
+- *"is it worth the outreach without having any indicators that there's likely to be any success? And the answer is probably not because people really don't want to move"* (L591)
+- *"perhaps um we tiered the processes"* (L597). His example: *"they've gone with I2C, which I immediately know is legacy and known not to be very good."* Such a company *"might be higher up the list"* (L597).
+- *"you could just write off anybody who's already got a card program in the market as not being the highest level of ICP because it's not a small thing to to move processor to be really clear. But there is it's more nuance than that."* (L601)
 
-**He named his own removal as a human override, not a rule.** *"With Marqeta, I've discounted them as a human intervention because I know that they don't have any significant problems. That doesn't mean that there aren't. That's my working knowledge of Marqeta, but [the agent] doesn't necessarily have that same understanding."*
+**Decided.** Marqeta clients are not excluded. They are deprioritised. Ian's score order:
+1. The company and its propensity to launch a card program.
+2. Whether a card is live. No live card scores higher.
+3. Who the card is live with.
+4. Published data on that incumbent's problems.
 
-**The new idea in the answer: tier the incumbents.** A weak incumbent is itself a signal, with no public trigger needed.
+A weak incumbent is itself a signal. Proof points surface mostly on LinkedIn, and they are not high priority.
 
-> *"I was talking to somebody in Bulgaria last week. It's not a relevant sales opportunity because they've got a US credit program, but they've gone with I2C, which **I immediately know is legacy and known not to be very good**. So if you did a list of people that have got an incumbent, and the incumbent matched this particular type of incumbent, even without any kind of trigger or proof point in the market, they might be higher up the list... we know they've probably got some gripes. Maybe the technology is not as flexible as they wanted it to be."*
+**Left open.** Which processors count as weak or strong. The tiers are Ian's working knowledge, not a published list (Q47). He did not take up the block list. With no exclusion, no block list is needed (Novosapien's reading). His "probably not" (L591) and his Q9 answer pull in different directions. George's D2 and D5 settle the routing.
 
-**The headline rule, with his own caveat attached:** *"As a general rule of thumb, at the top level, you could just write off anybody who's already got a card program in the market as not being the highest level of ICP, because it's not a small thing to move processor, to be really clear. **But there is, it's more nuance than that.**"*
+**Files.** The four ICPs (score order, incumbent signal); [[questions-for-ian]].
 
-**Where the proof points surface.** Brett pushed on this, suspecting they are not public: *"a lot of those proof points are getting into the network and it's a sales job... when you're in the network and you're plugging into the gossip line."* Ian agreed the public proxy is narrow: ***"the place that it floats up most is LinkedIn."*** Only a major outage reaches general news, and he cited the Google Cloud outage of the previous day reaching the BBC, against *"a bunch of people on LinkedIn straight away talking about Revolut is down"*. **So the mechanism is the same one George proposed for competitor tracking, pointed the other way: people posting negative things about a competitor.** Ian's priority on it: *"it's not the highest priority thing."*
+### Q2. Mastercard
 
-### 2. Mastercard: stop treating it as a gate
+**Asked** (George, L603 to L607): Mastercard is a priority after launch. Should the agents know that it is possible but not live yet?
 
-**The question dissolved.** *"We shouldn't really care too much if it's Mastercard."* Three reasons:
+**Ian's words:**
+- *"we shouldn't really care too much if it's Mastercard. It's if there's an indication that they're with one of those processors that we don't think are a top tier processor."* (L609)
+- *"by the time somebody's made a decision that they're going to move and all of that stuff, the chances are we'll have Mastercard certification anyway. We don't need to see Mastercard say Mastercard coming soon."* (L609)
+- *"people might be so pissed off that they choose to leave to move scheme and processor at the same time."* (L609)
+- *"the Mastercard thing is not something that rules somebody out. It's more there's an incumbent program."* (L613). *"if you're happy with Marqueta, you're not going to engage with TXN."* (L613)
 
-- **Timing.** *"By the time somebody's made a decision that they're going to move and all of that stuff, the chances are we'll have Mastercard certification anyway."*
-- **So do not pre-announce it.** *"We don't need to see Mastercard coming soon."*
-- **A prospect may change scheme and processor together.** *"It's not unheard of that actually we don't know necessarily if they're frustrated with the scheme that they're with, and they might want to choose to move."*
+**Decided.** Mastercard is not a gate and not an anti-signal. No "Mastercard coming soon". The real test is the incumbent, and whether the company wants to look at alternatives.
 
-**What replaces it as the real test:** *"the Mastercard thing is not something that rules somebody out. It's more there's an incumbent program. So in human terms, how likely are we being able to engage with that company about TXN? How interested are they going to be in that conversation? **If you're happy with Marqeta, you're not going to engage with TXN. It's the last thing in the world that you want to spend any of your time on**... they just generally won't bother. If they were in the market trying to look at other things and compare Marqeta's capability to others, because there's something that they've identified that they need that Marqeta doesn't give them, then they're in market."*
+**Left open.** When certification comes: George did not ask. Which scheme a message names: Ian did not rule on it (nearest: Q34).
 
-### 3. Markets: two separate layers, and a deliberate refusal to resolve the second
+**Files.** ICP 1, ICP 2 and ICP 4 (the Mastercard anti-signal); [[txn-offer-v2]] (the scheme line); [[messaging-protocol]]; [[questions-for-ian]].
 
-**Layer one, contracting.** *"We can only contract with companies that are in Europe or the UK."*
+### Q3. Markets
 
-**Layer two, card issuance, which is not TXN's call.** *"When it comes to where cards can be issued, that's not something that we can determine. **It's determined by a BIN sponsor.**"* He set out the roles: the scheme (Visa, Mastercard), then the **BIN sponsor or licensed issuer**, and the **processor**, which is TXN.
+**Asked** (George, L631 to L635): are Europe and the UK the markets, and is that where the card program must run? Could an Asian company run a card program only in Bulgaria?
 
-**How to read it off a website.** *"Typically on the homepage or somewhere on the website it will state who issues the cards."* If the issuer name matches the company's own domain, that suggests they issue themselves. A different name *"might be an indication that that company has got a willingness to allow cards to be issued in Ukraine"*.
+**Ian's words:**
+- *"You've got the the the layer of who can you contract with and we can only contract with companies that are in Europe or the UK"* (L637)
+- *"The second thing is when it comes to where cards can be issued, that's not something that we can determine. It's determined by a bin sponsor."* (L641)
+- *"typically on the homepage or somewhere on the website it will state who who issues the cards."* (L645). *"it's increasingly difficult for these companies to be able to issue cards in Asia as an example to Asian citizens if they're not based in Asia."* (L649)
+- *"it's probably easier if there's something that's published about the fact that they're issuing cards for Middle East, Africa, Asia, whatever it is, is to mark them down essentially. Otherwise,"* (L653) *"we've got a lot of work to do to try to find out who the actual licensed issuer is. Um, and I think we can we can pass on that."* (L657)
 
-**And then he declined to chase it.** *"It's increasingly difficult for these companies to issue cards in Asia to Asian citizens if they're not based in Asia. So for the level of complexity that might be involved, it's probably easier if there's something published about the fact that they're issuing cards for Middle East, Africa, Asia, whatever it is, is to **mark them down** essentially. Otherwise we've got a lot of work to do to try to find out who the actual licensed issuer is. And **I think we can pass on that**."*
+**Decided.** Two layers. First, TXN contracts only with companies in Europe or the UK. Second, the BIN sponsor decides where cards may be issued. On published non-European issuance, mark the company down (weight). Do not exclude it, and do not try to identify the licensed issuer.
 
-**A retention rule came with it, and it is wider than this question.** *"As long as we don't lose anything that's been discounted, it's always a record there. It's something we could come back to at a later date."*
+**Left open.** Two parts of the written question were not asked: Switzerland, and a company with no card yet whose customers are mostly outside Europe (nearest: Q13).
 
-### 4. Banks: low priority, and he said why
+**Files.** The four ICPs (the geography signal, and George's D4); [[market-profiles]]; [[questions-for-ian]].
 
-***"They are definitely low priority for later. That's just an understanding of the fact that we need to get some scores on the board and some credibility before you're going to win with banks, in my opinion."***
+### Q4. Banks
 
-### 5. Verticals per status: the same for every vertical, once the words were sorted out
+**Asked** (George, L667): target regional, savings and cooperative banks now, or treat them as low priority for later?
 
-The question nearly failed on terminology. Ian first answered *"the verticals are the same for every status. So the status is the same for every vertical. Right. But not the wrong way around."* George clarified that the transcripts use **status and ICP interchangeably**, and Ian then gave a clean answer: *"if the ICP and status are the same thing, then my argument is they are the same for every vertical."*
+**Ian's words:** *"They are definitely low priority... for later. That's just a an understanding of the fact that we we need to get some scores on the board and some credibility before you're going to win with banks in my opinion."* (L669)
 
-**The consequence he drew out:** *"some verticals there'll be no ICP 1s, because that vertical doesn't contain any companies where a card program is essential. Meaning that you then go down and follow the list through two, three, four."*
+**Decided.** Banks are low priority for later, until TXN has credibility.
 
-**George's note that it matters less than it looks:** the ranking stage assigns an ICP anyway, so *"let's say we've got loads in vertical A, they're never going to be ICP 1, but they're going to be ranked and categorised, so they're going to fit into ICP 2."*
+**Left open.** When TXN has enough credibility. The question named traditional banks only, not digital banks.
 
-### 6. Sales-led versus product-led: drop it
+**Files.** The ICPs where a bank can land, and [[market-profiles]] (George's D1).
 
-***"I can't even remember the distinguishing between sales-led and product-led in the whole ICP piece."*** George closed it himself: *"we'll just leave it as it's not ultra relevant"*, adding that it is hard to detect from a website anyway, *"how do you check, is there a demo button or is there a kind of quick serve?"*
+### Q5. Verticals per ICP
 
-### 7. The main worry: two words confirmed, one rewritten, one still open
+**Asked** (George, L671 to L675): should every ICP take every vertical, or should some ICPs skip some verticals?
 
-**Novosapien had written exposure, constraint, falling behind and entrapment**, for ICP 1 to 4, and told Ian they were Novosapien's words.
+**Ian's words:**
+- *"to the verticals are the same for every status. So the status is the same for every vertical. Right. But not the wrong way around."* (L677). George explained that "status" means ICP (L679).
+- *"So, so if the ICP and status are the same thing, then my argument is they are the same for every vertical."* (L681)
+- *"So some verticals there'll be no ICP1s because that vertical doesn't contain any companies where a card program is essential."* (L687). Then *"you follow the list through two three four"* (L691).
 
-**He changed the first and the last, and kept the middle two.** *"I think the first and the last one probably the ones that need changing. Constraint and falling behind, comfortable with."*
+**Decided.** Every vertical carries every ICP. Some verticals contain no ICP 1s. Nothing is left open.
 
-**For ICP 1 he gave the replacement, at length, and it is not exposure.** It is the fear of getting an irreversible decision wrong:
+**Files.** ICP 2 and ICP 4 (their ideal verticals); [[market-profiles]].
 
-> *"If you're launching a first card program and a card is essential to your product, for me that is the one where you need to be working with somebody who takes some of the complexity out of it. I've seen it firsthand at Marqeta where **people just can't make a decision because they don't want to get the decision wrong because it's so important**, and they've got no background or experience in doing this necessarily, and because it's core to their business, get it wrong and their concern is things go awry. So they can spend an overly extended period of time trying to make a selection. So I don't know if that's risk of failure, or fear to make a decision, or fear of the unknown, whatever it is. **I realise it's not one word, but ultimately that's kind of their biggest worry.**"*
+### Q6. Sales-led versus product-led
 
-**And the condition behind it:** *"often they don't know what they don't know. So they come to this green and not really understand it."*
+**Asked** (George, L693): should a product-led company that fits everything else be disqualified? George added: *"in my opinion I can't imagine it would?"*
 
-**Which he tied back to the mission statement:** *"if a client feels that they need to have card expertise to be able to launch a card program on TXN, then we failed."*
+**Ian's words:** *"I can't even remember the the the um distinguishing between salesled and productled in the whole ICP piece."* (L699)
 
-**ICP 4's word was flagged and never replaced.** He said the last one needs changing and the conversation moved on. Entrapment stands unendorsed. New row [[open-questions]] #120.
+**Decided.** Dropped, **by George**: *"so we'll just leave it as it's just not it's it's not ultra relevant."* He added that it is hard to tell from a website (L701). Ian did not rule, and he did not object. Nothing is left open.
 
-### 8. ICP 2: unhappiness is the wrong premise, and the signal is new money
+**Files.** ICP 2 and ICP 4 (the sales-led line).
 
-**Is a second program usually a sign of unhappiness? No.** *"You could be perfectly happy with a processor for doing what the program you've got today needs them to do, but then you're launching a new card program that has got a set of requirements, whether that be where they can serve regionally, the type of cards they can serve, the functionality they've got, that they wouldn't book with that processor."*
+### Q7. The main worry, in Ian's words
 
-**The public signal is not dissatisfaction, it is expansion.** *"It's incredibly difficult to find where that would be. I think the signal that you get is **if they announce that they've got investment to launch into new markets or to launch a new product**. It doesn't mean they're unhappy with a processor and it doesn't mean they won't do it with that processor, but at least it's an indication of there might be some opportunity because they're doing something new."*
+**Asked** (George, L701): for each ICP, the company's main worry in Ian's words. Novosapien had written "exposure", "constraint", "falling behind" and "entrapment".
 
-**And the default when nothing is published:** *"if there's nothing out there, then you have to assume they're not doing anything, because you wouldn't know any alternative."*
+**Ian's words:**
+- *"I think I think the first and the last one probably the ones that need changing constraint and falling behind comfortable with"* (L703)
+- ICP 1: *"if you're launching a first card program and you're and a card is essential to your product, for me, that is the one where you need to be working with somebody who takes some of the complexity out of it."* (L703)
+- *"people just can't make a decision because they don't want to get the decision wrong because it's so important and they've got"* (L707) *"no background or experience in doing this necessarily"* (L711)
+- *"they can spend an you know overly extended period of time trying to make a selection. So, I don't know if that's risk of failure or um you know, fear to fear to make a decision or fear of the unknown, whatever it is. I realize it's not one word, but ultimately that's kind of their biggest worry."* (L711)
+- *"they don't know what they don't know. So they come to this green and not really understand it."* (L715). And: *"if a client feels that they need to have card expertise to be able to launch a card program on TXN."* (L715) *"Then we failed"* (L719)
 
-**George drew the right conclusion against his own work.** *"We need to investigate if these signals that are not necessarily going to be public are holding too much weight in the ICPs... they should be a signal but shouldn't be **the** signal that defines this is either this or that."* Ian agreed. That is a methodological correction to the v2 ICPs, not a detail.
+**Decided.** ICP 1's worry is Ian's description: the fear of getting the decision wrong when the card is core and the team has no experience, so they stall in a long selection. "Irreversible" is not his word. "Constraint" (ICP 2) and "falling behind" (ICP 3) stay. "Entrapment" (ICP 4) must change. His "probably" is a hedge.
 
-### 9. ICP 4: contact them, but on a short sequence
+**Left open.** ICP 4's word: he gave no replacement (Q44). George's interim word is D3.
 
-**Ian did not answer the gates he was asked about.** The question offered two gates, reference customers and migration tooling, and asked what clears them. He reframed it as a question about sequence length:
+**Files.** ICP 1 and ICP 4 (the dominant pain), and their personas that carry the old words.
 
-> *"My question is whether or not the sequencing and approach can be flexed. So for example, these with a live card and no sign of moving, no sign of moving, but we don't know. There might be a chance, but **if you don't contact them, they'll never know you exist**. But you wouldn't want to contact them on a six touch sequence, because in reality if they are unhappy, something lands in their inbox or on LinkedIn, it's opportunity. It's the right timing and they're more likely to do something about it. If they do nothing with the first one or two, chances are they're just not interested. Full stop... you don't want to go through a full sequence because you're literally just spamming people that are not going to move."*
+### Q8. ICP 2: a second program
 
-**So: contact, with one or two touches, not six.** George's response: *"a way to have variable sequences based on the ICP and the signals that we've got."*
+**Asked** (George, L721): is a second program usually a sign of unhappiness with the processor? What public signal shows it?
 
-**The gates remain unanswered.** Reference customers and migration tooling were never addressed. #120 carries this too.
+**Ian's words:**
+- *"you could be perfectly happy with a processor for doing what the program you've got today needs them to do but then you're launching a new car program that"* (L727) *"has got a set of requirements whether that be where they can serve regionally the type of cars they can serve the functionality they've got that they that they they wouldn't put book with that processor because they've got experience of working with them."* (L731)
+- *"I think the signal that you get is if they announce that they've got investment to launch into new markets or to launch a new"* (L731) *"product, etc. It doesn't mean they're unhappy with a processor and it doesn't mean they won't do it with that processor, but at least it's an indication of there might be some opportunity because they're doing something new."* (L735). If nothing is published: *"you have to assume they're not doing anything because you wouldn't know any alternative."* (L741)
 
-### Lose nothing, ever
+**Decided.** A second program is not a sign of unhappiness. It is expansion. The public signal is an announced investment to launch into new markets or a new product. If nothing is published, assume the company is not doing anything new.
 
-Ian raised this himself and it is wider than any one ICP:
+**Left open.** Real cases of a second processor (Q18 stays open).
 
-> *"Coming out of this we should **never lose any single company or persona or contact**, because outside of the outbound workforce there might be other stuff that we want to do with those people."*
+**Files.** ICP 2 and its three personas.
 
-He compared it to list-building through newsletters: *"if you want to download this piece of content, give us your email address... just so that you're there"*, while not proposing that TXN do exactly that.
+### Q9. ICP 4: full switch
 
-**George confirmed it is already true of the build.** Every lead, every message and all the research is tracked and visible from the dashboard. A contacted lead can enter another sequence later, *"just because they've been contacted once, let's call it one sequence, not one message, doesn't mean to say that you can't contact them again."* And the research pays off on inbound: *"suddenly you get an inbound lead from the website, we can check that against the information we've got, so that when you're sat down in a meeting, that information is already there."*
+**Asked** (George, L743): should full-switch companies get outreach now? If not, what clears the gates (reference customers, migration tooling)? Live-card companies with no sign of moving: contact now, or hold?
 
-### 10. What may be claimed: the client-access distinction
+**Ian's words:**
+- *"my question is whether or not the sequencing and approach can be flexed. So that for example, these with a live card and no sign of moving, no sign of moving, but we don't know. So to your point, there might be a chance, but if you don't contact them, they'll never know necessarily you exist. But you wouldn't want to contact them on a six touch sequence"* (L753)
+- *"If they do nothing with the first one or two, I don't know what the exact what the right number is. Chances are they're just not interested. Full stop."* (L757)
+- *"you don't want to go through a full sequence because you're literally just spamming people that are not going to move."* (L757)
 
-**This is the answer with the most consequence, and it needs stating precisely.**
+**Decided.** Contact live-card companies with no sign of moving, on a short sequence. Ian hedged the length: "the first one or two", and *"I don't know what the exact what the right number is"* (L757).
 
-> *"For me, what we go to market with on the 16th is two things. A, it's a website that talks about our capability, **which already describes some of the things that won't be there on the 16th, but those are not there on the 16th because you can't access those AI capabilities until you're a client**. So not talking about them, even though we know by the time they become a client they will be there, would be the wrong thing to do."*
+**Left open.** The two gates. The question asked about them only "if not". Ian said to contact, so the gates did not come up (Q45). The number of touches. Variable sequence length is George's idea, not built: *"maybe having a way to have variable sequences based on the ICP and the signals that we've got"* (L761).
 
-**So the test he is applying is not built-versus-unbuilt, it is reachable-versus-gated.** A capability that exists but sits behind client access may be described. **He did not go through the feature list George asked about**, so which specific features qualify is still unsettled, and several of the claims parked in [[messaging-protocol]] §2 are not merely gated. See #121.
+**Files.** ICP 4 and its three personas; [[messaging-protocol]]; [[questions-for-ian]]; [[open-questions]].
 
-**He raised the obvious follow-on himself.** *"How do you demo what's coming on something they can't get access to?"* And answered it with the mirrored Console: *"the beauty of the work that we're doing with you guys is that we can do that without necessarily the control center being live and stood up in production, because the fact you've mirrored the control center."*
+### Q10. What may be claimed before it is live
 
-**On the fidelity of the mirror, he was relaxed.** *"It's unlikely to be exactly the same. Nobody will remember or care about that in the demo. They just want to get a flavour of what you're talking about."* George: *"oh, that colour is slightly different to the colour that I've seen."* Ian: *"I do know plenty of people who would pick up on that, but they're not people who would be looking at the demo and we're trying to sell to. **They all work in marketing.**"* That endorses the demo-environment decision at #115 and the demonstrability requirement at #90.
+**Asked** (George, L607): *"do we want to be talking about AI features and functionality that's maybe not going to be there on the 16th, um, but is going to be there very soon thereafter?"*
 
-### 11. BIN sponsors: three wording changes and a reason for silence
+**Ian's words:**
+- *"what we go to market with on the 16th is two things, right? A, it's a website that talks about our capability, which already describes some of the things that won't be there on the 16th, but those are not there on the 16th because you can't access those AI capabilities until you're a client. So not talking about them even though we know by the time that they be they would become a client they will be there would be the wrong thing to do."* (L617). He called these capabilities *"what's coming"* (L621).
 
-| The offer says | Ian's ruling |
-|---|---|
-| *"in each target market"* | **Cut it.** *"Typically a BIN sponsor in Europe can cover all of Europe because they've passported their licence."* And it raises a question in the reader: *"how does somebody receiving this know whether they're in the target market or not? Because you've mentioned it, whereas I don't think there's any need to"* |
-| *"pre-integrated"* | **Prefer "existing".** *"I would prefer existing BIN sponsor relationships is the better way of doing it"* |
-| Naming the sponsors | **Do not.** *"I wouldn't list the actual BIN sponsors"* |
+**Decided.** The test is timing, and it covers the AI capabilities. A message may describe an AI capability that is not live on the 16th, if it will be live by the time the prospect becomes a client. To say nothing about it "would be the wrong thing to do".
 
-**The reason for not naming them is tactical, and it works in TXN's favour.** *"What will happen is if somebody likes your tech and they want to go with your tech, but they don't necessarily want to work with the BIN sponsor you've got, they're too expensive, they don't want to approve their program, then they're going to ask you if you can work with the BIN sponsor they're talking to, and then that starts the conversation with the BIN sponsor about what does it take to become integrated with them, **which by the way typically is not very significant**."*
+**Left open.** George did not read out the feature list, and Ian ruled on no single feature. Which AI capabilities will be live by the time a prospect becomes a client (Q46). The ruling does not cover balance-based authorisation, which is not an AI capability. It does not say if a message may use the present tense.
 
-And silence does the prospecting for you: *"if you don't talk about who the partners are, but you say established, the prospect doesn't know whether or not the BIN sponsor they're talking to is one of the established partners. So that's like to ask the question."*
+**Files.** [[messaging-protocol]] (M3 and §2); [[txn-offer-v2]]; [[questions-for-ian]]; [[open-questions]].
 
-**On making bring-your-own-sponsor an explicit selling point**, George's suggestion: *"I don't think it does any harm."* But he warned against the phrasing getting heavy: *"established relationships, willingness to work with additional BIN sponsors, which all becomes a bit mealy-mouthed."* And from experience it is moot: *"even if you've got on your website the BIN sponsors that you're working with, or you've put press out there, they're still going to ask you the question if they don't want to work with that [one]."*
+### Q11. BIN sponsors
 
-### 12. Pricing: stays out, and the calculator is rejected
+**Asked** (George, L775): the offer says *"pre-integrated bin sponsors relationships in each target market"*. Which sponsors does TXN have today, and what may a message say?
 
-**Rule M4 is confirmed.** *"I don't think pricing in a message is necessary, as long as you go with a headline of simple pricing structure."* And the reason is length, not secrecy: spelling the structure out *"becomes quite wordy to explain"*.
+**Ian's words:**
+- *"I'm not sure about the the use of kind of in each target market anyway because typically a bin sponsor in Europe can cover all of Europe because they've passported their license."* (L777)
+- *"I would prefer existing bin sponsor relationships is the better way of doing it."* (L781)
+- *"I wouldn't list the actual bin sponsors."* (L787). A prospect who does not want TXN's sponsor will raise it: *"they're going to ask you if you can work with the bin sponsor they're talking to"*. Integration with a new sponsor *"typically is not very significant again."* (L787)
+- George asked if bring-your-own is a selling point (L789). Ian: *"Yeah, I don't think it do any harm."* Then: *"let me just make sure we don't over complicate this."* And: *"if you don't talk about who the partners are, but you say establish, the prospect doesn't know whether or not the bin sponsor they're talking to is one of the established partners. So that's like to ask the question"* (L793). The explicit version, *"willingness to work with you know additional bin sponsors"*, *"all becomes a bit mey mouse"* (L797). ("mey mouse" is the transcript's text. It is likely "Mickey Mouse".)
 
-**He gave the structure for internal context**, which the vault did not have in this form:
+**Decided.** Say "existing BIN sponsor relationships". Drop "in each target market". Name no sponsor. Add no explicit "bring your own sponsor" line: "existing" with no names makes the prospect ask.
 
-- An onboarding fee
-- A monthly platform or licence fee
-- A fee per settled transaction
-- A fee per 3DS authentication
-- The last two on **volume-based tiers**, *"where the more you process, the less you pay on a unit price basis"*
+**Left open.** Which BIN sponsors TXN has today, and how many: not answered (nearest: Q43). Ian expects the website to name the partners "eventually" (L793).
 
-**Even "usage based fees" is too loose**, because *"people could say, well, is that APIs etc. So it's just better to try to limit what you say in this area."*
+**Files.** [[txn-offer-v2]]; [[messaging-protocol]]; [[questions-for-ian]].
 
-**The positioning that is allowed is simplicity against opacity**, and it is his own founding story at Marqeta Europe:
+### Q12. Pricing in messages
 
-> *"One of the first things that I did was I looked at the issuer processor pricing and just went, I don't understand. I don't understand it, and therefore I don't understand how a client would understand it, because it was almost impossible to predict how much you're going to be paying each month. A classic example of it is companies that charge per API call. It was like, **how the f\*\*\* do I know how many API calls I'm going to make.**"*
+**Asked** (George, L813): is there a pricing structure worth talking about, or is pricing standard and expected?
 
-TXN's monthly platform access fee includes all API calls, *"the same thing we do now"*, and *"it was greatly received. We're not trying to be opaque."*
+**Ian's words:**
+- *"it was almost impossible to predict how much you're going to be paying each month"* (L819), of the pricing he found at Marqeta Europe.
+- *"So I think it's really about it's two things. It is s it's a simple pricing structure and which is selling against opaque and complex pricing structures. So I wouldn't want to get into what the pricing structure is."* (L831)
+- His own caveat: *"you could argue that if you don't if you don't say it then you being opaque yourself."* (L831)
+- *"I just don't think pricing in a message is necessary as long as you if you go with a headline of it simple uh pricing structure"* (L855). And: *"even if you say usage based fees people could say a well is that APIs etc."* (L855)
+- *"So it's just better to try to limit what you say in this area in my opinion."* (L859)
+- On the pricing calculator (Brett's idea, relayed by George, L861): *"The problem with that is if I knew that one of those existed and I competed the website, I'd go to it straight away."* (L863). *"these things don't get signed up online."* (L873). *"I I understand the idea. I just think you there's more risk than there is benefit to it."* (L881)
 
-**He rejected the pricing calculator**, which Brett had proposed and George relayed as a website lead magnet. Two reasons:
+**Decided.** Pricing stays out of messages. A headline of "simple pricing structure" is allowed. The pricing calculator is rejected.
 
-- **Competitors.** *"If I knew that one of those existed and I competed the website, I'd go to it straight away."*
-- **It serves no purpose here.** *"If you put pricing out there where you have to put pricing out there on plans where you are looking to sign people up online, you can't sign them without the pricing plan being there. **This is not, these things don't get signed up online.** So therefore whatever you put out there serves no purpose. It doesn't get you to the point somebody can make a decision."*
+**The price structure, for internal context only** (L827, L843). Never put it in a message, or in a file that the writer agents load:
+- An onboarding fee.
+- A monthly platform fee (or licence fee) that includes all API calls.
+- A fee per settled transaction, and a fee per 3DS authentication, both on volume tiers: *"the more you process, the less you pay on a unit price basis."* (L843)
 
-**Verdict:** *"I understand the idea. I just think there's more risk than there is benefit to it."*
+**Left open.** No reply line exists yet for Ian's own caveat (silence can look opaque). "Selling against opaque" pricing may conflict with rule M2 (never criticise the competition). Until that is settled, a message says "simple pricing structure" only (Novosapien's reading).
 
-## Buying groups: do not narrow by job title
+**Files.** [[messaging-protocol]] (M4); [[txn-offer-v2]].
 
-Asked in passing, and it answers part of the standing question on buying groups. Who is the BIN sponsor point for?
+## Other points Ian raised
 
-*"Chief product officer, head of payments, possibly the founder. It's difficult to know, because you don't know who's doing what in these organisations despite what their title says. Mine says CEO, but I can't remember the last day I worked at TXN where I felt like one of those."*
+**Never lose a company or contact.** Ian, L661 to L665: *"As long as we don't lose anything that's been discounted,"* *"it's always a record there. It's something we could come back to at a later date."* Ian, L763: *"coming out of this we should never lose any single company or persona or contact because outside of the outbound workforce, there might be other stuff that we want to do with those people."* George, L767: *"just because they've been contacted once, let's call it one sequence, not one message, doesn't mean to say that that you can't contact them again."* And: *"we're tracking we're tracking every single thing about the lead, the messages that have been sent, all of that information. Um, which you'll be able to view from from that dashboard."* George spoke of contacted leads. Novosapien's record, not said on the call: the build already keeps every company and contact, and a D-grade company stays on record.
 
-**The warning matters more than the list:** ***"if you try to go too focused on that, you might miss somebody who's actually got the responsibility for it."***
+**Do not narrow buyers by job title.** George asked who the BIN sponsor point is most relevant to (L803). Ian, L805: *"Chief products officer, head of payments is possibly the founder. It's difficult to know because of you don't know who's doing what in these organizations despite what their title says."* And: *"if you try to go too focused on that, you might miss somebody who's actually the responsibility for it."* He said it of the BIN sponsor point. Novosapien reads it as a general rule for the personas.
 
-## Sourcing beyond the databases
+**Early-stage sourcing.** Ian raised it himself (L519 to L533): *"we we need to not miss those guys"* (L519). *"if you're a startup the first thing you do is you go and get money"* (L523). Then, L529: *"it's pretty difficult to get hold of uh companies that are bootstrap strapping in to be perfectly honest because it tends not to be too visible. You've got then people who are taking money and they're whether they're announcing that round or the investors are announcing it. You've got the incubators and then outside of that the next step is probably somebody's talking to a card scheme if they're thinking about launching a card program."* The schemes are Visa and Mastercard (L533). He said "incubators", not accelerators. George proposed a test of other sources, such as job postings (L545): *"we start pure human, then human with AI, then just AI."* Brett suggested Total Jobs as a source (L551).
 
-**Ian answered his own 9 October ask about early-stage companies**, with a sequence based on how a startup behaves: *"if you're a startup, the first thing you do is you go and get money."*
+**The mirrored Console for demos.** Ian, L621: *"how do you demo what's coming on a on something they can't get access to? And the beauty of what the work that we're doing with you guys is that we can do that without necessarily the control center being live and stood up in production because the fact you've mirrored the control center"*. On small differences, L625: *"Nobody nobody will remember or care about that in the demo. They just want to get a flavor of what you're talking about."* No outbound file changes for this.
 
-| Source | Note |
-|---|---|
-| **Funding rounds** | Announced by the company or by the investors |
-| **Incubators and accelerators** | |
-| **The card schemes** | *"The next step is probably somebody's talking to a card scheme if they're thinking about launching a card program"*, Visa and Mastercard |
-| **Bootstrapped companies** | Effectively unreachable: *"it's pretty difficult to get hold of companies that are bootstrapping, to be perfectly honest, because it tends not to be too visible"* |
+**George's own finding on the call.** George, L721: *"we need to investigate if these signals that are that are not necessarily going to be public are holding too much weight in the ICPS."* L725: *"they should be a signal but shouldn't be the signal that defines this is either this or that."* Ian, L727: *"Yeah. Know I I agree. I think it is difficult to know some of those things"*. Result: a signal that a website cannot show adds weight. It never defines an ICP. Files: the four ICPs.
 
-His point was about coverage: *"making sure that we don't miss those that might not be as obvious a source as some of the other ones."*
+## George's decisions after the call
 
-**Two new ideas, both parked as separate conversations.**
+These are George's decisions of 21 October, made after the call. They are not Ian's rulings.
 
-- **Competitor LinkedIn tracking.** George: track competitors' posts and *"see the people that are liking, commenting, and then pull in that information, because they're maybe warmer leads. They're showing intent on a product that's adjacent or similar."* Ian extended it to negative posts about competitors, which is the Marqeta proof-point mechanism.
-- **Job postings.** Brett: approach Total Jobs for API access *"and we'll do like a rev share"*. George: LinkedIn jobs. He framed it as a test of Novosapien's own method: ***"our style of how we're developing things is we start pure human, then human with AI, then just AI."***
+- **D1 Banks.** An anti-signal worded as a deferral. A traditional bank (retail, savings, cooperative or regional; not a digital bank or neobank) is *"low priority... for later"* (Ian, L669). It gets D, stays on record, and is revisited later. It applies in every ICP where a bank can land.
+- **D2 ICP 4 widened.** ICP 4 is any company with a live card and no visible new program. A sign of intent to move adds weight. ICP 4 is no longer on hold. It gets a short sequence (Ian's hedged "the first one or two", L757). Variable sequence length is not built yet. The 20 Oct "exception to the ICP principle" is removed: ICP 4 now rests on observable facts.
+- **D3 ICP 4's dominant pain.** An interim word, "the risk of the move". It is Novosapien's word until Ian gives his own (Q44).
+- **D4 Contracting.** A new anti-signal in every ICP: the company has no entity in Europe or the UK that TXN could contract with (Ian's first layer, L637). It fires only on evidence.
+- **D5 Strong incumbent with no published problem.** Weight only. The company scores low and the grade follows. No cap.
 
-## What happens next, as agreed on the call
+## What is still open
 
-- **More questions by email**, *"not in the same depth as this, don't worry."*
-- **Ian replies by voice note**, at George's request: *"you record a voice note or something rather than having to type them all out, because I know I'm lazy... send that over to us. We can ingest it."*
-- **Then the documents are finalised.** George expects *"only minor minor tweaks"* to the ICPs and buyer personas, and more work on the market profiles, *"just picking out some things that might be key red flags."*
-- **Then messaging**, from TXN's core messaging documents, which George was glad to have: *"rather than us going through a call being like, what do you want your messaging to be, we've got the detail."* Work with the agents to define the message skeletons, generate examples, and *"same as always, rip them to shreds. We'll get the feedback. We'll iterate."*
-- **Timed against inbox warming**, which should finish in the same window.
+**New questions, by email** (in [[questions-for-ian]]):
+- **Q44.** ICP 4's main worry, in Ian's words. He said "entrapment" probably needs to change (L703), and gave no replacement.
+- **Q45.** The ICP 4 gates: reference customers and migration tooling. They did not come up, because Ian said to contact (L753 to L757).
+- **Q46.** Which AI capabilities will be live by the time a prospect becomes a client (L617).
+- **Q47.** The incumbent processor tiers: which processors count as weak or legacy. He named I2C (L597).
 
-## Findings and where they landed
+**Parts of the call questions with no answer and no new number:**
+- Q2: when Mastercard certification comes; which scheme a message names.
+- Q3: Switzerland; a company with no card yet whose customers are mostly outside Europe.
+- Q9: the number of touches for ICP 4.
+- Q11: which BIN sponsors TXN has today, and how many.
+- Q12: a reply line for when a prospect calls the silence on pricing opaque.
 
-| Finding | Destination | Action |
-|---|---|---|
-| **Marqeta clients are deprioritised, not excluded**, on a four-layer score | [[icp-2-new-program-incumbent-stays]], [[icp-4-full-switch]], [[questions-for-ian]] | **Q1 answered** |
-| **Tier the incumbent processors**; a weak incumbent is a signal without a public trigger | [[icp-4-full-switch]], [[open-questions]] | Recorded; new row **#122** |
-| Proof points surface on LinkedIn, not in the press. Not high priority | [[icp-4-full-switch]] | Recorded |
-| **Mastercard is not a disqualifier and gets no "coming soon"** | all four ICPs, [[messaging-protocol]], [[txn-offer-v2]] | **Q2 answered**; anti-signal removed |
-| **Contracting is Europe and the UK; issuance is the BIN sponsor's call** | [[market-profiles]], [[questions-for-ian]] | **Q3 answered** |
-| **Mark down on published non-European issuance; do not chase the licensed issuer** | all four ICPs | Rule recorded |
-| **Never lose a discounted company**, Ian's own rule | [[outbound]], [[open-questions]] | Recorded; confirmed already built |
-| **Banks are low priority until TXN has credibility** | [[market-profiles]], [[icp-3-industry-inference]] | **Q4 answered** |
-| **Every vertical carries every ICP**; some verticals simply have no ICP 1s | [[market-profiles]], all four ICPs | **Q5 answered** |
-| **Sales-led versus product-led is dropped** | [[icp-2-new-program-incumbent-stays]], [[icp-4-full-switch]] | **Q6 answered**; signal removed |
-| **ICP 1's pain is fear of getting an irreversible decision wrong**, not exposure | [[icp-1-first-program-card-essential]] | **Q7 part answered** |
-| **ICP 4's word still has no replacement** | [[open-questions]] | New row **#120** |
-| **ICP 2 is about expansion, not unhappiness**; the signal is new investment | [[icp-2-new-program-incumbent-stays]] | **Q8 answered** |
-| **Non-public signals carry too much weight in the v2 ICPs**, George's own finding | all four ICPs, [[open-questions]] | Recorded at **#122** |
-| **ICP 4 gets one or two touches, not six**; variable sequence length by ICP | [[icp-4-full-switch]], [[messaging-protocol]] | **Q9 part answered** |
-| **The ICP 4 gates were never answered** | [[open-questions]] | Recorded at **#120** |
-| **A capability may be claimed if it is gated behind client access** | [[messaging-protocol]], [[open-questions]] | **Q10 part answered**; new row **#121** |
-| **The mirrored Console is endorsed for the demo**, fidelity gaps and all | [[portal-co-pilot]] | Recorded; supports #90 and #115 |
-| **BIN sponsors: "existing", no target market, no names** | [[txn-offer-v2]], [[messaging-protocol]] | **Q11 answered** |
-| **Bring-your-own BIN sponsor is allowed as a point, carefully** | [[txn-offer-v2]] | Recorded |
-| **Pricing stays out; "simple pricing structure" is allowed** | [[messaging-protocol]] | **Q12 answered**, M4 confirmed |
-| **The real price structure, for internal context** | [[txn-offer-v2]] | Recorded, not for messages |
-| **The pricing calculator is rejected** | [[open-questions]] | Recorded |
-| **Do not narrow personas by job title** | the persona files, [[questions-for-ian]] | Q26 part answered |
-| Early-stage sourcing: funding rounds, incubators, the schemes | [[discovery-sources]] | Ian's 9 Oct ask answered |
-| Competitor LinkedIn tracking, and job postings as sources | [[open-questions]] | Parked as separate conversations |
-| **The pipeline: source, research, match, grade, route, write** | [[outbound]] | Recorded in full |
+**Ian's three asks of 9 October.** The criteria for each category: George offered the finished files *"if you want to have a final review"* (L505), so this waits until Ian has them. Early-stage sourcing: discussed above, not built. The sample messages: still owed.
 
-### Context, no action
+## Next steps agreed at the end of the call
 
-| Finding | Note |
-|---|---|
-| Brett joined from holiday | Its first days were spent in hospital with his son |
-| George needs a doctor | A cyst under his arm, *"I can't lower my arm"* |
-| The twelve questions were AI-drafted | George warned they might read abruptly: *"it's because the AI's written them"* |
-| Ian plays over-35s football on Fridays | Kick-off at 8:30 |
-| Ian's next meeting was Brett and legal | *"That won't have five minutes to spare"* |
+George set them out (L883 to L895). Ian: *"Sounds good."* (L897)
 
-## Open actions from the call
-
-| Action | Owner | Note |
-|---|---|---|
-| Send the remaining questions by email | George | Shallower than the call set |
-| **Answer them by voice note** | Ian | So Novosapien can ingest it directly |
-| Finalise the ICPs and buyer personas | Novosapien | Minor tweaks expected |
-| Rework the market profiles more substantially | Novosapien | Looking for key red flags |
-| Rewrite ICP 1's dominant pain | Novosapien | To fear of the wrong decision |
-| **Give ICP 4 a replacement word** | Ian | He rejected entrapment and offered nothing |
-| **Answer the ICP 4 gates** | Ian | Reference customers and migration tooling |
-| Reweight the non-public signals across all four ICPs | George | His own finding |
-| Build variable sequence lengths by ICP and signal | Novosapien | One or two touches for ICP 4 |
-| Define the message skeletons from the core messaging documents | Novosapien | Then generate examples for Ian to tear apart |
-| Confirm which AI features may be described as capability | Ian | He set the principle, not the list |
+1. Novosapien sends the remaining questions by email: *"Not in the same depth as this, don't worry."* (L887)
+2. Ian answers by voice note: *"you record a voice note or something rather than having to type them all out"*, then *"send that over to us. We can ingest it. We can update it."* (L891)
+3. Novosapien finalises the ICPs, buyer personas and market profiles: *"there's only going to be minor minor tweaks given this. Um the market profiles might be the ones where that's worth looking at them a little bit more."* (L891)
+4. Novosapien defines the message skeletons from TXN's core messaging documents, then writes example messages for Ian to review: *"same as always rip them to shreds."* (L895)
+5. The first messages go out when the inboxes are warm (L505, L895).
 
 ---
 

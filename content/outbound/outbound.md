@@ -168,19 +168,19 @@ Section 8.1.10, the scheme and BIN sponsor DQ, drew the same objection on the sa
 >
 > | Stage | What happens |
 > |---|---|
-> | **1. Sourcing** | **Firmographic only.** *"A neobank that's based in Bulgaria, not based in Ukraine, is between this size and that size."* Ian: *"very very very top of the potential funnel."* Driven by [[market-profiles]], same criteria every run |
-> | **2. Research** | *"It finds out everything and anything about the lead"* |
-> | **3. ICP match** | *"Given all of these ICPs that you've got, which one is it most likely to fit, or does it just not fit anything at all?"* |
+> | **1. Sourcing** | **Firmographic only.** George: *"a neo bank that's based in um Bulgaria not based in Ukraine is between this size and that size"* (L461). Ian: *"very very very top of the potential funnel"* (L463). Driven by [[market-profiles]], same criteria every run |
+> | **2. Research** | *"it finds out everything and anything about about the lead"* (L473) |
+> | **3. ICP match** | *"given all of these ICPS that you've got, which one does is it most likely to fit? um or does it just not fit anything at all?"* (L473) |
 > | **4. Grading** | Against that ICP's criteria, **A to D** |
-> | **5. Channel routing** | **A to LinkedIn**, highest response rate. **B and C to email. D are not contacted** |
+> | **5. Channel routing** | **A to LinkedIn**, highest response rate. **B and C to email. D are not contacted** (George, L477; Ian later restated it, L745) |
 > | **6. Persona match** | The same match-and-rank, for the buyer personas |
 > | **7. Writing** | Agents write from scratch against a **message skeleton** |
 >
-> **Why the ICPs needed revising.** Not because they were wrong. Brett: targeting worked small and *"we have to expand this out to thousands, we're going to struggle to extrapolate it out"*, and *"the worst thing you want to do is run it against ICPs that are not quite the ICPs you want."* George's diagnosis was about placement: the ICPs are *"exactly what they should be. That's who you want to target. It's their different buying stages"*, but the first pass is firmographic, so they belong at the ranking stage. Hence the market profiles.
+> **Why the ICPs needed revising.** Not because they were wrong. Brett: targeting worked small, but *"we have to expand this out to thousands. we're going to struggle and we're going to struggle to kind of extrapolate it out"*, and *"the worst thing you want to do is run it against ICPs that are not quite the ICPS you want"* (L435). George's diagnosis was about placement: the ICPs are *"exactly what they should be. Um that's who you want to target. It's their different buying stages"* (L457), but the first pass is firmographic, so they belong at the ranking stage. Hence the market profiles.
 >
-> **What a message skeleton is.** George traced outreach from one identical message, to mail-merge variables, *"hey first name, I see you work at company name"*, to this: a structure such as *"first maybe talk about a pain point, then talk about a potential solution, then go for a CTA"*, with the agent writing all content from the matched ICP, the persona, the offer and the research. ***"So there's no, the only templating really is the structure."*** Which leaves the structure itself as the testable variable.
+> **What a message skeleton is.** George traced outreach from one identical message, to mail-merge variables, *"hey first name I see you work at company name"* (L489), to this: a structure such as *"first maybe talk about a painoint then talk about a potential solution then go for a CTA"* (L493), with the agent writing all content from the matched ICP, the persona, the offer and the research. ***"So there's no the only templating really is the structure"*** (L493). Which leaves the structure itself as the testable variable.
 >
-> **A rule from Ian that sits above the pipeline:** *"coming out of this we should never lose any single company or persona or contact."* Already true of the build. Every lead, message and research record is tracked and visible on the dashboard, a contacted company may enter another sequence later, and an inbound website lead can be matched against existing research before the meeting.
+> **A rule from Ian that sits above the pipeline:** *"coming out of this we should never lose any single company or persona or contact because outside of the outbound workforce, there might be other stuff that we want to do with those people"* (L763). Earlier, of companies that are marked down: *"As long as we don't lose anything that's been discounted, it's always a record there"* (L661-665). George answered for contacted leads (L767). A lead contacted in one sequence can be contacted again later. *"we're tracking every single thing about the lead, the messages that have been sent, all of that information. Um, which you'll be able to view from from that dashboard."* An inbound website lead: *"we can probably check that against the information we've got"*. Novosapien, 21 Oct: in the build, a D-grade lead keeps its record and its grade. Not confirmed for a company that sourcing filters out.
 
 ## The targeting model
 

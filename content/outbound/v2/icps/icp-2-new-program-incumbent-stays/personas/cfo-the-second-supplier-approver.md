@@ -1,6 +1,6 @@
 ---
 description: "TXN ICP 2 buyer persona v2: the CFO or Finance Director who must approve a second processing contract when the company already pays for one; economic buyer. The 12-section persona, ready to load, with its sources and gaps below"
-status: draft, 19 Oct 2026, reworked from personas-icp-2.md (4 Sep)
+status: draft, 19 Oct 2026, reworked from personas-icp-2.md (4 Sep); updated after the 21 Oct call with Ian
 ---
 
 # ICP 2 persona: CFO or Finance Director
@@ -62,9 +62,9 @@ They are being asked to approve a second supplier in a category where the compan
   - "You are pre-launch. What is my position if you are not here in three years?"
 
 **8.0 Trigger Events (Why Now)**
+- An announcement of investment to launch into new markets or a new product, which changes the second program from optional to expected.
 - The annual planning cycle, when the second program either gets a budget line or does not exist.
 - A renewal date on the existing contract, which is the only moment the whole vendor position is genuinely open.
-- A funding round earmarked for expansion, which changes the second program from optional to expected.
 - A distribution or co-brand deal with committed volumes, which turns upside into a contractual number.
 - A board question about why a signalled new market has not launched, which puts the cost of not deciding on the table.
 
@@ -76,15 +76,14 @@ They are being asked to approve a second supplier in a category where the compan
 
 **10.0 Success Metrics (What "Good" Looks Like)**
 - From a cost line they cannot forecast, to one they can predict month by month before it is committed.
-- From unit economics that stay flat as volume grows, to a cost per active card that falls with volume.
 - From a second program that only works if volume moves across, to one whose economics stand on their own.
 - From an optional business case, to a signed commercial commitment with volumes attached to it.
 
 **11.0 The Message That Lands**
-This buyer's first question is why the company needs a second supplier at all, not the price. The claim that cuts through is that the program is designed to run without employing card experts, so a second program does not bring a second team to run it.
+This buyer's first question is why the company needs a second supplier at all, not the price. The claim that cuts through is that the program is designed to run without employing card experts, so a second program does not bring a second team to run it. An optional second point: the pricing structure is simple, which meets their need to forecast the cost month by month before they sign.
 
 **12.0 Example Titles**
-Chief Financial Officer · Finance Director · VP Finance · Head of Commercial Finance · Group Financial Controller · Director of Procurement and Vendor Management
+Chief Financial Officer · Finance Director · VP Finance · Head of Commercial Finance · Founder or CEO (smaller companies) · Director of Procurement and Vendor Management
 
 ---
 
@@ -99,16 +98,18 @@ Chief Financial Officer · Finance Director · VP Finance · Head of Commercial 
 | Sections 2, 3, 4, 6, 8, 9, 10 | Derived by Novosapien from ICP 2, the offer and the 4 Sep persona. No buyer was interviewed |
 | Section 5 pains | Derived from the ICP 2 thesis and pain mapping (row 3, people added per program) and from Ian's economic-buyer scaffold ([[persona-economic-buyer]] §3.2: vendor consolidation; §5: platform minimums, cost that scales with volume). Every quote is derived |
 | Section 7 objections | Ian's economic-buyer scaffold ([[persona-economic-buyer]] §7): total cost over three years, including implementation and ongoing change requests. The other objections are from the 4 Sep persona |
-| Section 11 | [[offer]]: the primary job (run a card program without employing card experts). ICP 2 pain mapping, row 3 (every new program adds people to run it). The first question: this persona's §3 |
+| Section 11 | [[offer]]: the primary job (run a card program without employing card experts). ICP 2 pain mapping, row 3 (every new program adds people to run it). The first question: this persona's §3. The optional point: Ian, 21 Oct L855 (*"a headline of it simple uh pricing structure"*); the structure itself stays out (L831, L859) |
+| §8 first trigger, §12 (21 Oct) | Ian, 21 Oct ([[2026-10-21-icp-revision-outbound]]): the public signal is an announcement of investment to launch into new markets or a new product (L731-L735). A title does not show who holds the job (L805) |
 
 ## Gaps to settle
 
 | Gap | Why it matters |
 |---|---|
 | Term, minimums and notice are `unknown` in [[offer]] Section 7 | Two of this persona's objections and one criterion turn on them, and no agent can answer them |
-| Who signs at a small company: the CFO, or a founder or CEO? ICP 2 has no headcount band, and Ian's economic-buyer scaffold names the CEO or founder as the secondary economic buyer | Decides whether this persona needs a founder variant |
+| Who signs at a small company: the CFO, or a founder or CEO? ICP 2 has no headcount band, and Ian's economic-buyer scaffold names the CEO or founder as the secondary economic buyer | Decides whether this persona needs a founder variant. Ian, 21 Oct: *"you don't know who's doing what in these organizations despite what their title says"* (L805). §12 now lists a founder or CEO |
 | Real buyer language for the quotes | Every quote is derived; Ian and Dorte should correct them |
 | Triggers and information diet | Derived from the ICP signals and role conventions, not from real deals |
+| §11 rests on the primary job (run a card program without employing card experts), which [[messaging-protocol]] holds as O3, a claim that waits for Ian | Ian, 21 Oct: a capability that a prospect can reach only as a client may be described if it will be live by the time they become a client (L617). His mission line supports the claim (L715-L719). Which AI capabilities meet that test: [[questions-for-ian]] Q46, [[open-questions]] #121 |
 
 ## What was cut from the 4 Sep version
 
@@ -137,4 +138,8 @@ Chief Financial Officer · Finance Director · VP Finance · Head of Commercial 
 | §11 "Say directly that figures come in a conversation" | Cut | A pricing rule |
 | §11 "Never claim to be cheaper than their existing supplier, never mention that supplier at all, and do not introduce the owners here" | Cut | Message rules |
 | §11 "Their first question will be why the incumbent cannot do this, and the correct answer is silence on the incumbent and precision about TXN" | Cut | A message rule |
-| §11 the remaining message | Kept on 19 Oct: the angle (the pricing shape in TXN's words) and the claim (no card experts, the largest avoidable cost). Cut on 20 Oct: the pricing shape, and "the largest avoidable cost" (no source); the angle is now the buyer's first question from §3 | George, 20 Oct: no pricing in a message. The offer forbids leading on price and calls the wording not quotable (offer §7). Ian answers [[questions-for-ian]] Q12 |
+| §11 the remaining message | Kept on 19 Oct: the angle (the pricing shape in TXN's words) and the claim (no card experts, the largest avoidable cost). Cut on 20 Oct: the pricing shape, and "the largest avoidable cost" (no source); the angle is now the buyer's first question from §3 | George, 20 Oct: no pricing in a message. The offer forbids leading on price and calls the wording not quotable (offer §7). Ian, 21 Oct, confirmed it: the structure stays out, and a headline of simple pricing structure is allowed (L831, L855) |
+| §8 (21 Oct, from v2) | "A funding round earmarked for expansion" moved to first, in Ian's words | Ian's one public signal (L731-L735) |
+| §10 (21 Oct, from v2) | "From unit economics that stay flat as volume grows, to a cost per active card that falls with volume" | It points a writer at the price structure, which Ian keeps out (L831, L859). TXN's volume tiers are per settled transaction and per 3DS authentication (L843). The forecast metric stays (L819) |
+| §11 (21 Oct, from v2) | Added the optional point that the pricing structure is simple | Ian allows a headline of simple pricing (L855) |
+| §12 (21 Oct, from v2) | "Group Financial Controller" replaced with "Founder or CEO (smaller companies)" | ICP 2 has no headcount band, and a title does not show who holds the job (L805) |
