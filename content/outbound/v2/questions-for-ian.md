@@ -1,6 +1,6 @@
 ---
-description: "The open questions for Ian Johnson on TXN's targeting (market profiles, ICPs, personas, offer and messaging): the call agenda and its questions, the email questions, his three open asks from 9 October, and what he has already answered. Kept current"
-status: living list, last updated 20 Oct 2026 (call questions reviewed with George; renumbered)
+description: "Open questions for Ian on TXN targeting: the email questions still to ask, what the 21 October call settled, and everything already answered. Kept current"
+status: living list, last updated 21 Oct 2026 (the call happened; Q1 to Q12 answered and moved down)
 ---
 
 # Open questions for Ian
@@ -13,7 +13,7 @@ status: living list, last updated 20 Oct 2026 (call questions reviewed with Geor
 
 ## Ian's three open asks from 9 October
 
-These come first on the call. He asked; we owe him.
+Two of the three are now answered ([[2026-10-21-icp-revision-outbound]]). The third is still owed.
 
 - **"What are the criteria used for each of the categories to search for matching accounts?"** The market profiles ([[market-profiles]]) for sourcing, and the ICPs ([[icp-1-first-program-card-essential|ICP 1]], [[icp-2-new-program-incumbent-stays|ICP 2]], [[icp-3-industry-inference|ICP 3]], [[icp-4-full-switch|ICP 4]]) for sorting each researched company into a category.
 - **"What are you doing to source from incubators etc. for early-stage start-ups?"** Three parts.
@@ -22,66 +22,31 @@ These come first on the call. He asked; we owe him.
     - *The gap:* coverage is weakest in the first markets (Hungary weakest, Poland moderate, `discovery-sources.md:117-118`). It joins his own early-stage watch list (`prospecting-process.md:101-107`).
 - **"Please send a sample email / LinkedIn message for each of the categories."** Not drafted yet (George, 20 Oct). The call starts on messaging with [[messaging-protocol]]; the samples follow from it.
 
-## For the call
+## The call happened, 21 October
 
-Agenda, in this order:
+All twelve call questions were answered ([[2026-10-21-icp-revision-outbound]]). They are in **Answered** below, with his words. Four things he was asked and did not settle are carried as new questions, 27 to 30.
 
-1. Ian's three asks (above).
-2. Sourcing: questions 1 to 6 (5 and 6 as one discussion point).
-3. The ICPs: questions 7 to 9.
-4. Messaging: questions 10 and 11, then a walk through [[messaging-protocol]] sections 1, 2 and 7. Question 12 comes up at rule M4.
-
-**1. Marqeta.** On 9 October you removed seven companies as "all Marqeta". Your own prospecting process calls a published Marqeta customer "a proven ICP fit". Should we remove every Marqeta client, or only those seven? And why?
-- *Before:* 9 Oct: removed seven, "all Marqeta". His prospecting process: a published Marqeta customer is "a proven ICP fit by definition" (`prospecting-process.md:90`). 25 Aug (no transcript; Novosapien's record): Trade Republic is an ideal customer on fit
-- *Decides:* ICP 2, ICP 4, the live-card group
-
-**2. Mastercard.** You told us TXN does not support Mastercard yet, and that certification is the first priority after MVP. Do we drop a company whose program runs only on Mastercard, or keep it for later? When do you expect certification? Until then, may a message say "Mastercard coming soon", or should it name no scheme at all?
-- *Before:* 9 Oct: "we don't support MC". 24 Aug L573-577: Mastercard certification is "number one" after MVP. The offer says "Visa and Mastercard" (`txn-offer-v2.md:18`, `:188`)
-- *Decides:* The Mastercard anti-signal in ICP 1, 2 and 4; the scheme line in the offer
-
-**3. Markets.** You removed ZEN.COM, a Polish company, because its new cards go to Asia and Ukraine. So we read the rule as being about where the cards are used, not where the company is based. Is that right? Which other markets can TXN's cards not serve: Switzerland, the Middle East, Africa? A company with no card yet whose customers are mostly in those markets: is it out too?
-- *Before:* 9 Oct: Asia and Ukraine. 2 Sep L852: "we can only operate in Europe". v0.4: MENA and Africa later-phase, not disqualified (`icp-definition.md:224`)
-- *Decides:* The geography anti-signal in every ICP, ICP 3 included
-
-**4. Banks.** On 3 September you named banking as card-essential, next to digital banking, expense management and crypto. Dorte said she did not expect TXN to land a bank at the start. A third of the live-card companies on the 6 October list are banks. Should we target banks now (regional, savings and cooperative banks), or treat them as a low priority for later?
-- *Before:* 3 Sep L901. Dorte, 3 Sep L771: "I don't think we will land a bank to start this". 32 of the 93 live-card companies on the 6 Oct list are banks
-- *Decides:* ICP 1 versus ICP 3; the market profiles
-
-**5. Discussion: verticals per status** (ask with Q6). On 2 September you said the verticals are the same for every status. But our ICPs for a new program and for a full switch list only five verticals, so a payments company with a live card ranks lower than a neobank. Should every status take every vertical?
-- *Before:* 2 Sep L824: *"proposed verticals will be the same irrespective of whether or not it's one, two or three"*. 2 Sep L834: *"I still think that all the verticals are relevant"*. The five-vertical lists are Novosapien's (§10)
-- *Decides:* The ideal verticals of ICP 2 and ICP 4
-
-**6. Discussion: how a target sells** (ask with Q5). Some of our ICPs describe the target as sales-led and others as product-led. The workforce rejects a product-led company where we wrote sales-led. Does it matter to TXN how a target sells to its own customers?
-- *Before:* Nothing: the sales-led line is Novosapien's (§10)
-- *Decides:* Tier 2 of ICP 2 and ICP 4
-
-**7. The main worry, in your words.** For each of the four statuses (first program, new program, industry inference, full switch): what is the company's main worry, in your words? We wrote "exposure", "constraint", "falling behind" and "entrapment", but those are our words, not yours.
-- *Before:* We wrote "exposure", "constraint", "falling behind" and "entrapment". You never used these words in a transcript. 24 Aug L669-673: card-core companies "probably know more". 2 Sep L628 is a conditional: some first-program companies may have a person who launched a card before
-- *Decides:* The dominant pain the writer leads on, in every ICP
-
-**8. ICP 2: a second processor.** A company launching a second program while the first stays with its processor: is it usually unhappy with that processor? And what public sign shows that the new program will go to a different processor?
-- *Before:* 2 Sep L764-768: they arrive with "a bunch of knowns and experiences". 3 Sep L489: "launch the next product with somebody else"
-- *Decides:* ICP 2's pain and its signals
-
-**9. ICP 4: full switch.** You ranked full switch last and named two gates: reference customers and migration tooling. You also asked for a sample message for every category. Should full-switch companies get any outreach now? If not, what clears each gate: how many reference customers, and which migration tooling by when? Companies with a live card and no sign of moving: contact them lightly now, or hold?
-- *Before:* 3 Sep: ranked last, compared to a Tier 1 bank. 9 Oct: asked for a sample for each category; removed none of the three full-switch companies. The old question on static live programs is merged here
-- *Decides:* Whether ICP 4 loads at all
-
-**10. Now or near future.** Should messages mention only what is live on launch day, or also what is coming in the near future, as "coming soon"? If the second, how near is near? And which of these will be live on launch day: the Console and its assistant; AI-assisted card setup; compliance requirements surfaced and applied; the explanation of a change before it is made; card spend authorised against a balance that TXN holds? (Your AI Target Outcomes document sets some of these as goals, for example 75% within 12 months of launch.)
-- *Before:* 10 Sep L471-475: only what is built may be claimed as available. Product Overview §3: the MVP list. 24 Aug L465: balance-based authorisation, "it's both, not an either or"
-- *Decides:* What the offer (O3, O8, steps 4 and 10) and every message may claim as available
-
-**11. BIN sponsors.** Our offer says TXN has "pre-integrated BIN sponsor relationships in each target market". On 2 September you said TXN was getting its first one on board. Which BIN sponsors does TXN have today, and in which markets? What may a message say about them?
-- *Before:* 2 Sep L644: "getting the first one on board". `txn-offer-v2.md:210`
-- *Decides:* What the offer (step 11, the integrations line, D5, D6) and the messages may claim
-
-**12. Pricing in messages** (ask during the messaging protocol walk-through, at rule M4). We have kept all pricing out of messages, including the price structure (a monthly licence fee plus volume fees). Is that right, or do you want messages to mention the structure?
-- *Before:* 24 Aug L547-553: no prices in outbound. 24 Aug L541: "there's some issues with the language that's written"
-- *Decides:* The messages to the CFO and founder personas (ICP 1, 2 and 4)
+**His three asks from 9 October:** the criteria question is answered by the pipeline he was walked through. The early-stage sourcing question he answered himself, see Answered. The sample messages are still owed: George starts them from TXN's core messaging documents, with examples for Ian to tear apart.
 
 ## By email
 
 Facts and smaller rulings.
+
+**27. ICP 4's dominant pain, in your words.** On 21 October you said the first and the last of our four words needed changing. You rewrote the first: ICP 1's worry is the fear of getting an irreversible decision wrong, not "exposure". You never gave a replacement for the last. What is a full-switch company's main worry? "Entrapment" is still Novosapien's word and you have now declined it.
+- *Before:* 21 Oct: *"the first and the last one probably the ones that need changing. Constraint and falling behind, comfortable with"*. Constraint (ICP 2) and falling behind (ICP 3) are confirmed
+- *Decides:* The dominant pain the writer leads on in ICP 4
+
+**28. The ICP 4 gates.** You ranked full switch last and named two gates, reference customers and migration tooling. On 21 October you answered a different question, how long the sequence should be, and settled that: one or two touches, not six. The gates are still open. How many reference customers, and which migration tooling, by when?
+- *Before:* 3 Sep: ranked last, two gates named. 21 Oct: *"if you don't contact them, they'll never know you exist"*, but *"you don't want to go through a full sequence"*
+- *Decides:* When ICP 4 moves off a short sequence
+
+**29. Which AI capabilities may be described.** On 21 October you set the principle: a capability may be described even if it is not live on 16 November, when the reason it is not live is that **it is gated behind being a client**. You did not go through the list. Which of these is gated rather than unbuilt: the Console assistant; AI-assisted card setup; compliance requirements surfaced and applied; the explanation of a change before it is made; card spend authorised against a balance TXN holds?
+- *Before:* 21 Oct: *"those are not there on the 16th because you can't access those AI capabilities until you're a client. So not talking about them... would be the wrong thing to do"*. Against 10 Sep L471-475, which is where rule M3 comes from. The two can be reconciled, but only per feature
+- *Decides:* Rule M3, and §2 of [[messaging-protocol]]
+
+**30. The incumbent processor tiers.** On 21 October you tiered incumbents by hand: Marqeta has no significant problems, I2C is *"legacy and known not to be very good"*. You said a weak incumbent raises a company up the list with no public trigger at all. The workforce cannot know this. Which processors sit in which tier, and how often should the list be revisited?
+- *Before:* 21 Oct: the Bulgarian company on I2C, *"we know they've probably got some gripes"*; the seven Marqeta removals were *"a human intervention because I know that they don't have any significant problems"*
+- *Decides:* The incumbent signal in ICP 2 and ICP 4, and the ranking weights
 
 **13. The UK.** Your documents disagree on the UK. Some put it in Phase 1b with the Netherlands, Belgium and Austria. Others call it opportunistic. It is the largest market on the 6 October list. Where does it sit in the order?
 - *Before:* v0.4 §4.4 and Core Messaging: opportunistic; v0.4 §8.1.4 and the Outbound Content Playbook: Phase 1b
@@ -192,6 +157,29 @@ Facts and smaller rulings.
 - *Decides:* The BIN sponsor exclusion in every profile
 
 ## Answered: do not ask again
+
+### Answered on 21 October 2026
+
+All from [[2026-10-21-icp-revision-outbound]].
+
+- **Q1, Marqeta clients:** Not removed, **deprioritised**, on a four-layer score: what the company does and its propensity to launch; then whether a card is already live (no live card scores higher, *"green field"*); then who it is live with; then whether anything published suggests that incumbent has problems. *"It's not about removing them. It's about understanding that it's highly unlikely that we'll get any traction with them unless there's another proof point."* His own seven removals were *"a human intervention because I know that they don't have any significant problems"*. General rule, with his caveat: *"you could just write off anybody who's already got a card program in the market as not being the highest level of ICP... but there is, it's more nuance than that."* Proof points surface on **LinkedIn**, not the press, and it is *"not the highest priority thing"*. Incumbent tiering is now Q30
+- **Q2, Mastercard:** **Not a disqualifier, and no "coming soon".** *"We shouldn't really care too much if it's Mastercard... by the time somebody's made a decision that they're going to move, the chances are we'll have Mastercard certification anyway. We don't need to see Mastercard coming soon."* A prospect may change scheme and processor together. The real test is engageability: *"if you're happy with Marqeta, you're not going to engage with TXN"*
+- **Q3, markets:** **Two separate layers.** TXN *"can only contract with companies that are in Europe or the UK"*. Where cards may be issued *"is not something that we can determine. It's determined by a BIN sponsor"*. Read the issuer off the website; a name matching the company's own domain suggests self-issuance. **Rule: mark down on published non-European issuance, and do not chase the licensed issuer.** *"For the level of complexity that might be involved... I think we can pass on that"*
+- **Q4, banks:** **Low priority for later.** *"We need to get some scores on the board and some credibility before you're going to win with banks, in my opinion"*
+- **Q5, verticals per status:** **Every vertical carries every ICP.** *"If the ICP and status are the same thing, then my argument is they are the same for every vertical."* Consequence: *"some verticals there'll be no ICP 1s, because that vertical doesn't contain any companies where a card program is essential. Meaning that you then go down and follow the list through two, three, four"*
+- **Q6, how a target sells:** **Dropped.** *"I can't even remember the distinguishing between sales-led and product-led in the whole ICP piece."* Hard to detect from a website in any case
+- **Q7, the main worry (part):** **Constraint (ICP 2) and falling behind (ICP 3) confirmed.** ICP 1 is **not** exposure: it is the fear of getting an irreversible decision wrong. *"People just can't make a decision because they don't want to get the decision wrong because it's so important, and they've got no background or experience in doing this... I realise it's not one word, but ultimately that's kind of their biggest worry."* And *"often they don't know what they don't know."* ICP 4's word is now Q27
+- **Q8, ICP 2:** **Unhappiness is the wrong premise.** *"You could be perfectly happy with a processor for doing what the program you've got today needs them to do, but then you're launching a new card program that has got a set of requirements... that they wouldn't book with that processor."* **The public signal is expansion, not dissatisfaction:** *"if they announce that they've got investment to launch into new markets or to launch a new product"*. Where nothing is published, *"you have to assume they're not doing anything"*
+- **Q9, ICP 4 (part):** **Contact them, on a short sequence.** *"If you don't contact them, they'll never know you exist. But you wouldn't want to contact them on a six touch sequence... if they do nothing with the first one or two, chances are they're just not interested."* One or two touches. The gates are now Q28
+- **Q10, now or near future (part):** **The test is client access, not build state.** A capability gated behind being a client may be described: *"not talking about them, even though we know by the time they become a client they will be there, would be the wrong thing to do."* The per-feature list is now Q29
+- **Q11, BIN sponsors:** **Cut "in each target market"** (a European sponsor *"can cover all of Europe because they've passported their licence"*, and naming a target market makes the reader ask whether they are in it). **Prefer "existing" to "pre-integrated".** **Do not name the sponsors**, because a prospect who wants their own will ask, *"which by the way typically is not very significant"*, and silence prompts that question. Bring-your-own as a selling point: *"I don't think it does any harm"*, but keep it short or it *"becomes a bit mealy-mouthed"*
+- **Q12, pricing:** **Stays out of messages.** *"I don't think pricing in a message is necessary, as long as you go with a headline of simple pricing structure."* Spelling it out *"becomes quite wordy"*, and even "usage based fees" invites *"well, is that APIs"*. The position is simplicity against opacity, from his own Marqeta story: *"companies that charge per API call. How the f\*\*\* do I know how many API calls I'm going to make."* **The structure, for internal context only:** an onboarding fee, a monthly platform or licence fee, a fee per settled transaction, a fee per 3DS authentication, the last two on volume tiers. **The pricing calculator is rejected:** competitors would read it, and *"these things don't get signed up online. So therefore whatever you put out there serves no purpose"*
+- **Q26, buying groups (part):** **Do not narrow by job title.** *"Chief product officer, head of payments, possibly the founder. It's difficult to know, because you don't know who's doing what in these organisations despite what their title says."* The warning: *"if you try to go too focused on that, you might miss somebody who's actually got the responsibility for it"*
+- **Early-stage sourcing (his own 9 Oct ask):** *"If you're a startup, the first thing you do is you go and get money."* So: **funding rounds** (announced by the company or the investors), **incubators**, and **the card schemes**, *"somebody's talking to a card scheme if they're thinking about launching a card program"*, Visa and Mastercard. **Bootstrapped companies are effectively unreachable:** *"it tends not to be too visible"*
+- **Never lose a discounted company:** *"coming out of this we should never lose any single company or persona or contact, because outside of the outbound workforce there might be other stuff that we want to do with those people."* Already true of the build, and a contacted lead may enter another sequence later
+- **The mirrored Console is fine for demos:** *"it's unlikely to be exactly the same. Nobody will remember or care about that in the demo. They just want to get a flavour."*
+
+### Answered earlier
 
 - **Company size:** Size rules no one out; headcount "doesn't warrant a significant score"; sub-10 is in scope (2 Sep L852; 3 Sep L909-921)
 - **Anti-profile:** The same for all four statuses (3 Sep L991)

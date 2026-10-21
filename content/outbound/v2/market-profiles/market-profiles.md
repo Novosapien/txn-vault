@@ -1,5 +1,5 @@
 ---
-description: "Router for TXN's market profiles v2: the firmographic account selection criteria (geography, industries, verticals, company types, headcount, funding stage, keywords), split by sector into four profiles in their own files, with the ICPs each feeds and the gaps to settle"
+description: "Router for TXN's four market profiles v2: the firmographic criteria for the first sourcing pass, the ICPs each feeds, and Ian's rulings of 21 October"
 status: draft, 19 Oct 2026, split by sector
 ---
 
@@ -14,6 +14,21 @@ status: draft, 19 Oct 2026, split by sector
 > **Guides, not strict filters (George, 20 Oct).** Geography, company types and keywords guide the sourcing agent: it may drop, add or change terms, search by where a company operates rather than only by its HQ, and widen a search that returns too few fitting companies. Headcount and funding stage are Any. Only the Exclusions are strict. Nova today applies every stated dimension as a strict filter, so a profile must say this in words.
 >
 > **Tags.** `[Ian]` = Ian ruled it, with the place. `[TXN]` = TXN's own documents. `[Derived]` = our inference, for Ian to confirm. `[Gap]` = not known yet.
+
+> [!important] Ian confirmed the sourcing role, and two rulings land here (21-10-2026)
+> **The split these profiles exist for is now confirmed by Ian** ([[2026-10-21-icp-revision-outbound]]). The first pass is firmographic only, *"a neobank that's based in Bulgaria, not based in Ukraine, is between this size and that size"*, which Ian restated as *"very very very top of the potential funnel"*. The ICPs are applied afterwards, when a researched company is sorted and graded.
+>
+> **Every vertical carries every ICP.** *"If the ICP and status are the same thing, then my argument is they are the same for every vertical."* The consequence is a property of the data, not a rule to encode: *"some verticals there'll be no ICP 1s, because that vertical doesn't contain any companies where a card program is essential. Meaning that you then go down and follow the list through two, three, four."* So the same search criteria run for every profile, and the ranking stage decides the ICP.
+>
+> **Geography is two separate layers.** TXN *"can only contract with companies that are in Europe or the UK"*. Where cards may be issued is not TXN's to decide: *"it's determined by a BIN sponsor"*. A company publishing that it issues for the Middle East, Africa or Asia is **marked down, not excluded**, and nobody chases the licensed issuer: *"for the level of complexity that might be involved... I think we can pass on that"*.
+>
+> **Banks are sourced but not loaded.** *"They are definitely low priority for later... we need to get some scores on the board and some credibility before you're going to win with banks."*
+>
+> **Early-stage sourcing, answering his own 9 October ask.** *"If you're a startup, the first thing you do is you go and get money."* So the channels are **funding rounds** announced by the company or its investors, **incubators**, and **the card schemes**, since *"somebody's talking to a card scheme if they're thinking about launching a card program"*. Bootstrapped companies are effectively out of reach: *"it tends not to be too visible."* See [[discovery-sources]].
+>
+> **Two new sources were raised and parked:** competitor LinkedIn tracking, pulling in the people who like and comment on a competitor's posts as warmer leads, and **job postings**, with Brett suggesting a commercial arrangement with a job board for API access. George framed the second as a test of Novosapien's own progression, *"we start pure human, then human with AI, then just AI"*.
+>
+> **Still to do, and the biggest piece of work from the call.** George expects *"only minor minor tweaks"* to the ICPs and personas, but *"the market profiles might be the ones where that's worth looking at a little bit more... just picking out some things that might be key red flags."*
 
 ## The profiles
 

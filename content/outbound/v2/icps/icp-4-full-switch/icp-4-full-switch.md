@@ -1,5 +1,5 @@
 ---
-description: "TXN ICP 4 v2, full switch (a live card program moving everything to a new processor): the ICP definition in the guideline structure, ready to load when the ICP is active, with its sources, conversation questions and gaps kept below it"
+description: "TXN ICP 4 v2, full switch: the full ICP definition, Ian's ruling that it runs on one or two touches, incumbent tiering, and the two things he left open"
 status: draft, 19 Oct 2026, revised after the source audit, on hold
 ---
 
@@ -67,6 +67,41 @@ Connects observable signals to what a company needs before it can move a live ca
 | Several separate providers visible around a live program | **`Nobody owns the whole chain when something fails.`** Processing, authentication, controls and settlement sit with different providers. Moving means untangling several relationships at once, which is why they have not moved yet. | Issuing, authorisation, spend controls, PSD2 authentication, and clearing and settlement sit in one platform, with pre-integrated KYC and card manufacturing relationships. The move reduces the number of providers rather than moving the same tangle. |
 
 ---
+
+> [!important] Rulings from Ian, 21 October 2026
+> From the ICP revision call ([[2026-10-21-icp-revision-outbound]]). These bind this ICP. The rulings that apply to every ICP are repeated in each file so that a writer loading one file alone is not misled.
+>
+> **Applies to every ICP:**
+>
+> | Ruling | Effect here |
+> |---|---|
+> | **Mastercard is not a disqualifier** | *"We shouldn't really care too much if it's Mastercard... by the time somebody's made a decision that they're going to move, the chances are we'll have Mastercard certification anyway."* **Remove the Mastercard anti-signal.** And no message says "Mastercard coming soon": *"we don't need to see Mastercard coming soon"* |
+> | **Geography is two layers** | TXN *"can only contract with companies that are in Europe or the UK"*. Where cards may be issued *"is not something that we can determine. It's determined by a BIN sponsor."* **So: mark down on published non-European issuance, do not disqualify, and do not try to identify the licensed issuer.** *"For the level of complexity that might be involved... I think we can pass on that"* |
+> | **Every vertical carries every ICP** | *"If the ICP and status are the same thing, then my argument is they are the same for every vertical."* Some verticals will simply contain no ICP 1s, and those companies fall through to 2, 3 or 4 |
+> | **Lose nothing** | *"Coming out of this we should never lose any single company or persona or contact."* A discounted company stays on record and may be contacted later |
+> | **Do not narrow by job title** | *"Chief product officer, head of payments, possibly the founder. It's difficult to know, because you don't know who's doing what in these organisations despite what their title says."* And: *"if you try to go too focused on that, you might miss somebody who's actually got the responsibility for it"* |
+>
+> **Specific to this ICP: it loads, but on a short sequence.**
+>
+> **The question asked was whether ICP 4 gets outreach at all. Ian answered a different and more useful question: how much.**
+>
+> > *"My question is whether or not the sequencing and approach can be flexed. So for example, these with a live card and no sign of moving, no sign of moving, but we don't know. There might be a chance, but **if you don't contact them, they'll never know you exist**. But you wouldn't want to contact them on a six touch sequence, because in reality if they are unhappy, something lands in their inbox or on LinkedIn, it's opportunity. It's the right timing and they're more likely to do something about it. **If they do nothing with the first one or two, chances are they're just not interested. Full stop**... you don't want to go through a full sequence because you're literally just spamming people that are not going to move."*
+>
+> **So: one or two touches, not six.** Sequence length becomes a variable set by ICP and signal, not a constant. See [[messaging-protocol]].
+>
+> **Marqeta clients are deprioritised, not removed**, and the score is layered: what the company does and its propensity to launch; then whether a card is live; then who it is live with; then whether anything published suggests that incumbent has problems. *"It's not about removing them. It's about understanding that it's highly unlikely that we'll get any traction with them unless there's another proof point."*
+>
+> **A weak incumbent is itself a signal, with no public trigger needed.** This is new.
+>
+> > *"I was talking to somebody in Bulgaria last week... they've gone with I2C, which **I immediately know is legacy and known not to be very good**. So if you did a list of people that have got an incumbent, and the incumbent matched this particular type of incumbent, even without any kind of trigger or proof point in the market, **they might be higher up the list**... we know they've probably got some gripes. Maybe the technology is not as flexible as they wanted it to be."*
+>
+> The workforce cannot know which processors those are. Ian holds it as working knowledge: [[open-questions]] #122, and question 30 in [[questions-for-ian]].
+>
+> **Where a proof point surfaces:** *"the place that it floats up most is LinkedIn."* Only a major outage reaches the press. The mechanism is the competitor-tracking idea pointed the other way, at people posting negative things about a competitor. Ian's own weighting: *"it's not the highest priority thing."*
+>
+> **Drop the sales-led and product-led distinction**, as in ICP 2.
+>
+> **Two things Ian did not settle.** The dominant pain: he said the last of the four words needed changing and never replaced it, so **"entrapment" is unendorsed**. And the two gates he set in September, reference customers and migration tooling, were never answered. [[open-questions]] #120.
 
 ## Sources
 
