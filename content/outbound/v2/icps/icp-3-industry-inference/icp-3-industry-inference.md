@@ -1,6 +1,6 @@
 ---
-description: "TXN ICP 3 v2, industry inference: card-adjacent companies with no card in a vertical where peers run one, the full ICP definition, and why banks wait"
-status: draft, 19 Oct 2026, revised after the source audit
+description: "TXN ICP 3 v2, industry inference (no card, in a vertical where peers run one): the loadable ICP definition, revised after the 21 Oct call, with its gaps"
+status: draft, 19 Oct 2026, revised after the source audit; revised 21 Oct 2026 after the call with Ian
 ---
 
 # ICP 3: Industry inference (v2)
@@ -26,10 +26,10 @@ status: draft, 19 Oct 2026, revised after the source audit
 **3. Rubric-Aligned Profile**
 
 - **Tier 1: Specific Business Type (50% Weight)**
-    - **Primary Industry:** `Financial Services`, `Retail`, `E-commerce`
-    - **Ideal Verticals:** `SMB lending`, `Consumer lending`, `FX payments`, `Investment management and trading apps`, `Disbursement and payouts`, `Payments`, `Banking as a service (BaaS)`, `Retail`, `E-commerce and marketplaces`.
+    - **Primary Industry:** `FinTech`, `Financial Services`, `Banking`, `Retail`, `E-commerce`
+    - **Ideal Verticals:** `Digital banking for consumers (neobanks)`, `Digital banking for businesses (SME accounts)`, `Crypto platforms with fiat rails`, `Expense management and corporate cards`, `Travel and expense`, `Accounts payable`, `SMB lending`, `Consumer lending`, `FX payments and multi-currency accounts`, `Payments`, `Banking as a service (BaaS)`, `Investment management and trading apps`, `Disbursement and payouts`, `Retail`, `E-commerce and marketplaces`. Every vertical carries this ICP. The Core Identity decides the fit, not the vertical.
     - **Defining Characteristics & Offerings (The "Idiot's Guide"):**
-        - **Core Identity:** A company in a card-adjacent vertical, with no card that customers can order or use, that holds a direct customer relationship and already moves money to or from those customers.
+        - **Core Identity:** A company whose product is not an account, a spend platform or crypto converted into money to spend, with no card that customers can order or use, that holds a direct customer relationship and already moves money to or from those customers.
         - **Website Evidence:** No live card. What is present instead: a customer account or login; a stored balance, wallet, store credit or loyalty scheme; a payout or disbursement flow; a subscription or recurring billing relationship.
     - **State Modifiers (Observable Signals of this Archetype):**
         - **GTM Motion:** Investment in their own customer relationship: the careers page lists customer, loyalty, retention or product roles.
@@ -41,18 +41,19 @@ status: draft, 19 Oct 2026, revised after the source audit
     - **Tech Stack Signal:** An acquirer for payments in, with nothing for payments out. A loyalty or rewards platform. A customer identity or account system.
 - **Tier 3: Firmographics (20% Weight)**
     - **Employee Count (Range):** `Any`. Headcount does not rank this ICP: a company of any size is in scope, including companies with fewer than 10 people.
-    - **Geography (Ideal):** `EEA` and `United Kingdom`, with `Poland`, `Czech Republic`, `Romania` and `Hungary` first.
+    - **Geography (Ideal):** `EEA` and `United Kingdom`, with `Poland`, `Czech Republic`, `Romania` and `Hungary` first. TXN contracts only with companies in Europe or the UK. A company whose website shows its customers mainly outside Europe and the UK, or in Ukraine, ranks lower here. It is not disqualified.
 
 **4. Disqualification Criteria (Anti-Signals)**
 
 - **Customers can already order or use a card from the company (a live card):** a card page with an order or sign-up flow, live cardholder terms that name an issuer, a usable card in the app store listing, or a help page about using or replacing the card. Card art, a waitlist, "coming soon" or "beta" on its own is not a live card. The company is then a new-program, full-switch or static case.
-- **A card-essential vertical** (digital banking, expense management, crypto with fiat rails): a company there with no card is a first-program case, which ranks higher.
+- **The product needs a card to work** (an account, a spend platform, or crypto converted into money to spend): a company like this with no card is a first-program case, which ranks higher.
 - **The company sells only wholesale, or business-to-business-to-business with no end customer:** there is nobody to give a card to.
 - **The business moves no money to or from its customers,** for example a pure software licence: there is no use case for a card.
 - **A card program for the company's own staff only:** outside TXN's sub-sectors.
 - **A BIN sponsor:** a bank or e-money institution that issues cards for other companies' programs under its own licence. TXN works with BIN sponsors directly, as a separate channel, outside outreach.
-- **The company's customers are mainly in Asia or Ukraine:** a card for them would serve markets TXN does not support.
+- **No company in Europe or the UK to contract with:** the website shows the company and its group registered only outside Europe and the UK. TXN can contract only with companies in Europe or the UK. A European or UK subsidiary of a group based elsewhere is not disqualified, and a website that does not say where the company is registered is not evidence.
 - **Petrol retail, a government body, a state-owned company, or a Tier 1 bank itself:** outside TXN's scope.
+- **A traditional bank (a retail, savings, cooperative or regional bank), not a digital bank or neobank:** a low priority for later. TXN needs reference clients and credibility before it can win banks. The company stays on record and is revisited later.
 - **In administration, insolvency or wind-down, or reported for regulator difficulty or sanctions:** the company cannot commit to a launch.
 
 **5. Archetype-to-Pain Mapping (Sharpened for FALLING BEHIND)**
@@ -68,41 +69,22 @@ Connects observable signals to the gap a company has not noticed yet: peers in i
 
 ---
 
-> [!important] Rulings from Ian, 21 October 2026
-> From the ICP revision call ([[2026-10-21-icp-revision-outbound]]). These bind this ICP. The rulings that apply to every ICP are repeated in each file so that a writer loading one file alone is not misled.
->
-> **Applies to every ICP:**
->
-> | Ruling | Effect here |
-> |---|---|
-> | **Mastercard is not a disqualifier** | *"We shouldn't really care too much if it's Mastercard... by the time somebody's made a decision that they're going to move, the chances are we'll have Mastercard certification anyway."* **Remove the Mastercard anti-signal.** And no message says "Mastercard coming soon": *"we don't need to see Mastercard coming soon"* |
-> | **Geography is two layers** | TXN *"can only contract with companies that are in Europe or the UK"*. Where cards may be issued *"is not something that we can determine. It's determined by a BIN sponsor."* **So: mark down on published non-European issuance, do not disqualify, and do not try to identify the licensed issuer.** *"For the level of complexity that might be involved... I think we can pass on that"* |
-> | **Every vertical carries every ICP** | *"If the ICP and status are the same thing, then my argument is they are the same for every vertical."* Some verticals will simply contain no ICP 1s, and those companies fall through to 2, 3 or 4 |
-> | **Lose nothing** | *"Coming out of this we should never lose any single company or persona or contact."* A discounted company stays on record and may be contacted later |
-> | **Do not narrow by job title** | *"Chief product officer, head of payments, possibly the founder. It's difficult to know, because you don't know who's doing what in these organisations despite what their title says."* And: *"if you try to go too focused on that, you might miss somebody who's actually got the responsibility for it"* |
->
-> **Specific to this ICP.**
->
-> **"Falling behind" is confirmed** as the dominant pain. Ian was comfortable with it.
->
-> **Banks are a low priority, and he gave the reason.** *"They are definitely low priority for later. That's just an understanding of the fact that **we need to get some scores on the board and some credibility** before you're going to win with banks, in my opinion."* This matters here because a third of the live-card companies on the 6 October list were banks, and industry inference is where a regional, savings or cooperative bank would otherwise land. Keep them sourced and ranked, do not load them for outreach now.
->
-> **The non-public signal problem applies here too**, and more sharply, because industry inference leans on peer behaviour that is rarely published. [[open-questions]] #122.
-
 ## Sources
 
-**Who wrote what.** Section 10 of [[icp-definition]] is **Novosapien's drafting of 3–4 Sep 2026**, shown to Ian on 3 Sep. Where this file takes from section 10, it is Novosapien's work unless a transcript line is cited.
+**Who wrote what.** Section 10 of [[icp-definition]] is **Novosapien's drafting of 3–4 Sep 2026**, shown to Ian on 3 Sep. Where this file takes from section 10, it is Novosapien's work unless a transcript line is cited. "21 Oct" lines are from the raw transcript in [[2026-10-21-icp-revision-outbound]].
 
 | Part | Source |
 |---|---|
 | The status itself | Ian, 3 Sep L491-493: no card program, *"we believe they're in an industry where there are other companies that have launched card programs with use cases"* |
-| Archetype name, dominant pain "falling behind" | Novosapien, section 10. Ian never uses the phrase in a transcript |
+| Archetype name, dominant pain "falling behind" | Novosapien, section 10. Ian kept "falling behind" on 21 Oct (L703) |
 | Core thesis | Ian, 3 Sep L491-493 (the status); Ian, 2 Sep L860-862 (the two-stage sale applies even when a signal exists). "No stated plan" from the earlier v2 is removed: it is not in Ian's definition |
-| Verticals | Ian's card-adjacent tagging, 3 Sep L901 ("the others are optional"), and §4.2 of his v0.4 |
-| Core identity | Novosapien, section 10. The named peer is removed (George, 20 Oct): the workforce cannot see a peer's card on the prospect's website, so it was a weak signal, and a named peer could come from model memory. Ian's own peer example (2 Sep L580: Trading 212 and Trade Republic) supports the verticals, not a signal per company. Pain row 1 now rests on the vertical, and "in the last 24 months" (no source) is gone with it |
+| Primary industry and verticals | Ian, 21 Oct L681-691: every vertical carries every ICP. The list is the union of the four market profiles, without traditional banks; `Travel and expense` and `Accounts payable` are still our inference. Earlier: Ian's card-adjacent tagging, 3 Sep L901 ("the others are optional"), and §4.2 of his v0.4 |
+| Core identity | Novosapien, section 10. The named peer is removed (George, 20 Oct): the workforce cannot see a peer's card on the prospect's website, so it was a weak signal, and a named peer could come from model memory. Ian's own peer example (2 Sep L580: Trading 212 and Trade Republic) supports the verticals, not a signal per company. Pain row 1 now rests on the vertical, and "in the last 24 months" (no source) is gone with it. On 21 Oct "a company in a card-adjacent vertical" became the status test, the mirror of ICP 1's (ours), because every vertical now carries every ICP (Ian, L681-691) |
 | Website evidence, state modifiers, Tier 2 | Novosapien, section 10, rewritten to what the company's own website shows |
 | Employee count `Any` | Ian, 3 Sep L909 and L917-921; 2 Sep L852 |
-| Anti-signals | Ian's anti-profile §7, the same for all statuses (3 Sep L991); staff-card-only §8.1.2; state-owned enterprises (Core Messaging v2.5 §3.2); BIN sponsors out of outreach (Ian, 2 Sep L642-645); Asia and Ukraine (9 Oct email), tested on where the customers are, because an ICP 3 company has no card plan to test (20 Oct); the live-card evidence list (ours, 20 Oct, the same in all four ICPs). The Mastercard anti-signal does not apply: a company with no card has no scheme. "No named peer" is removed as an anti-signal: it would fire on missing evidence |
+| Geography | Ian's phases, §4.4. Contracting in Europe or the UK only: Ian, 21 Oct L637. The mark-down on where the customers are is ours, by analogy with his ruling on published issuance (L653): an ICP 3 company has no card whose issuance can be tested, and Q3's case of a company with no card was not answered |
+| Anti-signals | Ian's anti-profile §7, the same for all statuses (3 Sep L991); staff-card-only §8.1.2; state-owned enterprises (Core Messaging v2.5 §3.2); BIN sponsors out of outreach (Ian, 2 Sep L642-645); the live-card evidence list (ours, 20 Oct, the same in all four ICPs). A Mastercard anti-signal never applied here: a company with no card has no scheme. "No named peer" is removed as an anti-signal: it would fire on missing evidence |
+| Anti-signals: changes of 21 Oct | "A card-essential vertical" is now "the product needs a card to work", because a vertical no longer decides the ICP (L681-691). "Customers mainly in Asia or Ukraine" is now the Tier 3 mark-down (ours, see Geography). No company in Europe or the UK: George's decision D4, from Ian's L637; it fires only on evidence. Traditional bank: George's decision D1, from Ian's *"They are definitely low priority... for later"* (L669). The 32 live-card banks on the 6 Oct list cannot land here, because a live card is an anti-signal; they land in ICP 2 or ICP 4, which carry the same bank line |
 | Pain mapping | Novosapien, section 10, expansions lengthened |
 | Relevance | [[offer]]: the primary job, step 3, step 4 (authorise against a held balance, or route to the client), step 5, step 9 (API, events, webhooks), step 10. The earlier rewards claim is removed: the offer does not carry it |
 | BaaS note | The "likeliest misclassification" note in §4.2.1 is Novosapien's, not Ian's |
@@ -112,10 +94,10 @@ Connects observable signals to the gap a company has not noticed yet: peers in i
 | Gap | Why it matters |
 |---|---|
 | **Closed-loop cards:** does a company's own gift, store or loyalty card count as a card program? | Decides whether those retailers belong here |
-| **A bank with no card:** ICP 1 or ICP 3? Ian named "banking" as card-essential (3 Sep L901) | Seven ICP 3 leads on the 6 Oct list are banks |
+| **A bank with no card: ICP 1 or ICP 3?** Ian named "banking" as card-essential (3 Sep L901). On 21 Oct he set banks as a low priority for later (L669), but did not say which ICP a bank with no card belongs to | Seven ICP 3 leads on the 6 Oct list are banks. Matters when banks are revisited. Until then every ICP grades a traditional bank D |
 | **Use cases beyond the twelve sub-sectors** (online travel, on-demand services, media buying, fleet, creator payouts) from his prospecting process | Sets the vertical list |
 | **Rewards and card-linked offers tooling** at launch? | Decides what the loyalty row may claim |
 | **BaaS without cards:** a prospect, or a competitor category? | Sets whether BaaS stays in the verticals |
-| **Mastercard, Asia and Ukraine:** do they apply to a company with no card yet? | Decides whether those anti-signals belong here |
+| **Customers mainly outside Europe and the UK.** Q3 asked whether a company with no card, whose customers are mostly in markets TXN cannot serve, is out; Ian did not answer. The Tier 3 mark-down is ours, and it names Ukraine from his 9 Oct email | For George, or Ian, to confirm |
 | **The two-stage sale:** the workforce has never been set up to sell "why a card program at all" first ([[open-questions]] #76) | Novosapien's to solve. The messages for this ICP need a different shape |
 | **The buying group** (CPO and CFO): section 10 says Ian confirmed it on 3 Sep; the transcript does not show it | Not part of the ICP structure. It goes to the personas |

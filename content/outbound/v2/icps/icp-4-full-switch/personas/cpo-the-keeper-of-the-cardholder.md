@@ -1,11 +1,11 @@
 ---
-description: "TXN ICP 4 buyer persona v2: the CPO or Head of Product who owns what moving a live card program means for the cardholder, and the reissue-or-expiry choice; champion. The 12-section persona, ready to load when ICP 4 is active, with its sources, gaps and cuts below"
-status: draft, 19 Oct 2026, reworked from personas-icp-4.md (4 Sep), on hold with ICP 4
+description: "TXN ICP 4 buyer persona v2: the CPO or Head of Product who owns what moving a live card program means for the cardholder, and the reissue-or-expiry choice; champion. The 12-section persona, ready to load, with its sources, gaps and cuts below"
+status: draft, 19 Oct 2026, reworked from personas-icp-4.md (4 Sep); loads with ICP 4 on a short sequence (21 Oct)
 ---
 
 # ICP 4 persona: CPO or Head of Product
 
-> **Up:** [[icp-4-full-switch|ICP 4]]. **On hold with ICP 4** (no reference customers, no migration tooling): the persona is ready and does not load until Ian decides whether ICP 4 gets outreach. The text between the two horizontal rules follows the 12-section persona standard (`cofounder: …/concepts/guidelines/buyer-persona.md`) and is what loads into the product's persona `definition`. Message rules live in the [[messaging-protocol|messaging protocol]], not here. Every quote is derived, not heard from a buyer.
+> **Up:** [[icp-4-full-switch|ICP 4]]. **Loads with ICP 4, on a short sequence.** ICP 4 now takes any company with a live card and no visible new program; a sign of intent to move adds weight (George, 21 Oct). Ian, 21 Oct ([[2026-10-21-icp-revision-outbound]]): *"if you don't contact them, they'll never know necessarily you exist"*, but not *"on a six touch sequence"* (L753); *"If they do nothing with the first one or two, I don't know what the exact what the right number is"* (L757). Variable sequence length is not built yet. The two gates (reference customers, migration tooling) are still open: [[questions-for-ian]] Q45, [[open-questions]] #120. The text between the two horizontal rules follows the 12-section persona standard (`cofounder: …/concepts/guidelines/buyer-persona.md`) and is what loads into the product's persona `definition`. Message rules live in the [[messaging-protocol|messaging protocol]], not here. Every quote is derived, not heard from a buyer.
 
 ---
 
@@ -14,12 +14,12 @@ status: draft, 19 Oct 2026, reworked from personas-icp-4.md (4 Sep), on hold wit
 **1.0 Archetype Name** The Keeper of the Cardholder
 
 **2.0 Role & Functional Identity**
-- **2.1 Primary Function:** Owns what the move feels like to the person who holds the card, which in this ICP is the difference between a technical project and a customer event.
+- **2.1 Primary Function:** Owns what a move would feel like to the person who holds the card, which in this ICP is the difference between a technical project and a customer event.
 - **2.2 Core Responsibilities:**
   - Deciding with the CTO between reissuing every card and running the existing base to expiry, and owning the customer consequence of either.
   - Designing what cardholders are told, when, and how often before their card changes.
   - Protecting activation and spend through a period when customers are asked to do something they did not ask for.
-  - Holding the product roadmap still while the migration runs, and defending that pause inside the company.
+  - Holding the product roadmap still while a migration runs, and defending that pause inside the company.
   - Judging which cohorts can absorb a change and which cannot, because the base is not uniform.
 - **2.3 Scope, Seniority & Authority:** Scope: business. Seniority: executive. Decision Authority: owns the customer experience and the reissue approach; does not own the technical decision or the commercial signature; can stall the deal by refusing the impact on cardholders.
 
@@ -30,24 +30,24 @@ status: draft, 19 Oct 2026, reworked from personas-icp-4.md (4 Sep), on hold wit
 - **Worldview & Biases Toward This Category:** Knows that infrastructure decisions become customer experiences, and that the customer is usually the last to be considered.
 
 **4.0 A Day in the Life**
-Everyone else is discussing platforms; they are discussing a letter. If the company reissues, every cardholder receives a card they did not ask for, with instructions, and some of them will not activate it. Some of those were the best customers, and they will not come back. If the company runs to expiry instead, it operates two platforms for years. They spent the morning segmenting the base by how much change each cohort can absorb. The engineering conversation has no interest in that segmentation, and it is the largest variable in the outcome.
+Whenever a change of platform comes up, everyone else discusses platforms; they discuss a letter. If the company reissues, every cardholder receives a card they did not ask for, with instructions, and some of them will not activate it. Some of those were the best customers, and they will not come back. If the company runs to expiry instead, it operates two platforms for years. They have already segmented the base by how much change each cohort can absorb, because the question comes back each time the platform is discussed. The engineering conversation has no interest in that segmentation, and it is the largest variable in the outcome.
 
 **5.0 Pains & Fears (Expanded Dossier)**
 - **5.1 Operational Pains (Daily Fires):**
   - **"Every migration option puts a task on the customer, and every task loses a share of them."** Activation decides whether this was worth it, and nobody upstream is tracking it.
   - **"Cards that renewed recently are stranded outside any run-to-expiry window."** Three to five more years, then a second exercise, and it lands on my team.
-  - **"I am being asked to approve a date, not a plan."** The migration timeline arrives as a fact, and the customer communication is expected to fit inside it.
+  - **"Any move will reach me as a date, not a plan."** The migration timeline arrives as a fact, and the customer communication is expected to fit inside it.
 - **5.2 Strategic & Political Pains:**
-  - **"The roadmap stops for this, and I have to defend that to people who did not choose it."** A pause in new product, in exchange for a platform nobody outside this building will see.
+  - **"A move stops the roadmap, and I would have to defend that to people who did not choose it."** A pause in new product, in exchange for a platform nobody outside this building will see.
   - **"If activation drops, it will be read as a product failure, not a migration cost."** The attribution will not survive the quarter.
-  - **"I did not ask for this migration, and I carry its most visible consequence."** Engineering wanted it, finance sized it, and I explain it to customers.
+  - **"Whoever asks for a migration, I carry its most visible consequence."** Engineering wants it, finance sizes it, and I explain it to customers.
 - **5.3 The Deepest Fear:** That a segment of long-standing, high-value cardholders quietly stop using the card during the reissue, never say why, and the company finds out months later that it traded part of its best cohort for a platform change. Not a bad launch: a silent loss they could have prevented if anyone had asked them earlier.
 
 **6.0 What They've Already Tried (and Why It Disappointed)**
 - **Ran a smaller card change before (new card design, a new range, a rebrand):** learned what an activation drop looks like, which is why they are the most cautious person in this process.
 - **Modelled a phased reissue by cohort:** better on paper and worse in operation, because the base sits in two states for a long period and support has to hold both.
 - **Asked the current processor what a managed migration would look like:** the answer removed the last hope of a route with no customer impact.
-- **Pushed for the migration to wait until after a major product release:** granted once, and the delay cost the company its renewal window, so nobody will grant it again.
+- **Pushed for a planned migration to wait until after a major product release:** granted once, and the delay cost the company its renewal window, so nobody will grant it again.
 
 **7.0 Decision Criteria & Objections**
 - **What they weigh evaluating this category:**
@@ -75,10 +75,10 @@ Everyone else is discussing platforms; they are discussing a letter. If the comp
 - From an activation cliff at reissue, to activation flat through the change.
 - From a base in two states for years, to a single platform on a timeline they set.
 - From customer communication squeezed into a technical schedule, to a schedule built around the communication.
-- From a card product that changes because the platform changed, to one where the customer experience is the same on both sides of the move.
+- From a card change that the platform imposes on the customer, to cardholder disruption kept small and planned, with no surprise for the customer.
 
 **11.0 The Message That Lands**
-This persona is rarely addressed directly, so a message that treats the move as a customer event stands out. Lead on the choice, not the platform: reissue or run to expiry is their decision, it depends on why the company is moving, and there is no single right answer. The one claim is that program behaviour is set as configuration, so the card product can be set up as it stands and the cardholder experience does not have to change because the platform did.
+This persona is rarely addressed directly, so a message that treats a move as a customer event stands out. Lead on what a move would ask of their cardholders: reissue or run to expiry is their choice, each route puts a task on the customer, and the right one depends on why the company would move. The claim is that migration is a work stream inside the launch, not a separate engagement, and the capture-and-configure work is the same as for a new program.
 
 **12.0 Example Titles**
 Chief Product Officer · VP Product · Head of Product · Director of Product · Head of Card Products
@@ -94,7 +94,7 @@ Chief Product Officer · VP Product · Head of Product · Director of Product ·
 | Section 5 pains | Derived from the ICP 4 pain mapping and [[offer]] step 12: reissue or run to expiry, and recently renewed cards stranded outside the window for another three to five years (Ian). The champion carrying the cost of the change: Ian's champion scaffold ([[persona-champion]] §5). Every quote is derived |
 | Section 7 objections | "How long will the migration take, and what is the approach?": Ian's champion scaffold ([[persona-champion]] §7). The rest: Novosapien, from the 4 Sep persona |
 | Section 8 triggers | The new product or rebrand: [[offer]] step 12 (a move to launch something new usually brings new branding anyway). The rest derived |
-| Section 11 | [[offer]]: step 12 (the route depends on why the client is moving), step 1 (program behaviour is configuration). "Set up as it stands" is Novosapien's reading of step 1 |
+| Section 11 | [[offer]]: step 12 (migration is a work stream inside the launch; the capture-and-configure work is the same as for a new program; the route depends on why the client is moving). The task on the cardholder: this persona's §5.1 |
 | Section 12 titles | Ian's champion scaffold ([[persona-champion]] §3.1): Chief Product Officer, Head of Product, VP Product, Director of Product. "Head of Card Products" from the ICP 1 v2 CPO persona |
 
 ## Gaps to settle
@@ -102,15 +102,17 @@ Chief Product Officer · VP Product · Head of Product · Director of Product ·
 | Gap | Why it matters |
 |---|---|
 | Who owns the reissue choice: the CPO, the CTO, or both? | The ICP 4 buying group is Novosapien's drafting. It decides which persona carries the reissue message |
-| Can a live card product be set up on TXN as it stands? | 11.0 rests on it. Offer step 1 says program behaviour is configuration; nobody has said a live product can be reproduced unchanged |
+| Can a live card product be set up on TXN as it stands? | 11.0 no longer rests on it (21 Oct). Offer step 1 says program behaviour is configuration; nobody has said a live product can be reproduced unchanged. Open: [[questions-for-ian]] Q30 |
 | Real buyer language for the quotes | Every quote is derived; Ian and Dorte should correct them |
 | Triggers and information diet | Derived from the ICP signals and role conventions, not from real deals |
+| Which ICP 4 persona does a head of payments match? | Ian names the head of payments and warns against narrow titles (L805). The 19 Oct cut moved this list to product titles only (cut table, 12.0). A head of payments who owns the processor relationship fits neither this persona nor the CTO well |
+| ICP 4's dominant pain | Ian said "entrapment" needs changing and gave no replacement (L703). The interim word is Novosapien's: "the risk of the move" (21 Oct), until Ian gives his own ([[questions-for-ian]] Q44). §11 does not use either word; check it when he answers |
 
 ## What was cut from the 4 Sep version
 
 | Where | What changed | Why |
 |---|---|---|
-| 4 Sep preamble | Not carried. The on-hold status and its two gates are in this file's header line. The two message bans (never criticise the current processor; never offer to share the reissue cost) stay in [[messaging-protocol]] | Status belongs in the header; message rules belong in the [[messaging-protocol|messaging protocol]] |
+| 4 Sep preamble | Not carried. The status (on hold until 21 Oct) and the two gates are in this file's header line. The two message bans (never criticise the current processor; never offer to share the reissue cost) stay in [[messaging-protocol]] | Status belongs in the header; message rules belong in the [[messaging-protocol|messaging protocol]] |
 | Throughout | The 4 Sep word for the upheaval to cardholders replaced with "impact on cardholders" or "change" | It matches the literal vocabulary check |
 | 3.0 | Removed "has watched a previous technical change land badly on customers who were not considered until late" | Repeated 6.0 (the earlier card change) |
 | 4.0 | Third person. Removed "several thousand people" and "another three or four" years | Invented count; "three or four" also disagreed with Ian's three to five |
@@ -124,3 +126,6 @@ Chief Product Officer · VP Product · Head of Product · Director of Product ·
 | 9.0 | Merged "Their own customer research, support tickets and churn analysis" with "Their own base, segmented"; removed "Reachable by a message that treats the migration as a customer event" | Two items said the same thing; the message line repeated 11.0 |
 | 11.0 | Cut from six sentences to three. Removed: naming the stranded-cards trap; "Do not describe the migration as painless, because they have done this before and will stop reading"; "Never offer to share the reissue cost, and say nothing about the incumbent" | The trap stays in 5.1. The rest are message rules for the [[messaging-protocol|messaging protocol]] |
 | 12.0 | "Head of Product, Cards · Director of Customer Experience · Head of Card Portfolio · VP Product, Consumer · Head of Lifecycle Marketing" replaced with "VP Product · Head of Product · Director of Product · Head of Card Products" | The titles had drifted into customer experience and lifecycle marketing. Now the product roles from the ICP and Ian's champion scaffold |
+| Header, status, description (21 Oct, from v2) | "On hold with ICP 4 ... does not load until Ian decides whether ICP 4 gets outreach" replaced with "Loads with ICP 4, on a short sequence" | Ian: contact them, on a short sequence (L753-L757). George, 21 Oct: ICP 4 takes any company with a live card and no visible new program. The gates stay open (Q45) |
+| 2.1, 2.2, 4.0, 5.1, 5.2, 6.0, 11.0 (21 Oct, from v2) | Wording that assumed the company has decided to move: "the move feels like", "the migration runs", "Everyone else is discussing platforms", "spent the morning segmenting", "I am being asked to approve a date", "The roadmap stops for this", "I did not ask for this migration", "Pushed for the migration to wait", "why the company is moving" | ICP 4 now includes companies with no sign of moving (George, 21 Oct). The persona now holds for a move that is decided or only possible |
+| 11.0, 10.0 (21 Oct, from v2) | The claim "program behaviour is set as configuration, so the card product can be set up as it stands and the cardholder experience does not have to change because the platform did"; the lead "Lead on the choice, not the platform"; the §10 metric "From a card product that changes because the platform changed, to one where the customer experience is the same on both sides of the move", now a goal the buyer can reach with a reissue | No source, a blocking finding in the 19 Oct review (B8), and it breaks rule I3 (Ian, 27 Aug record: reissue is the cleanest route; he doubts migration without reissue). §11 now leads on what a move asks of cardholders (§5.1) and claims offer step 12 |

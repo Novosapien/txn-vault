@@ -1,6 +1,6 @@
 ---
 description: "TXN ICP 2 buyer persona v2: the CTO or Head of Engineering who carries the cost of running two processors with one team; approver, weight in this buying group unconfirmed. The 12-section persona, ready to load, with its sources and gaps below"
-status: draft, 19 Oct 2026, reworked from personas-icp-2.md (4 Sep)
+status: draft, 19 Oct 2026, reworked from personas-icp-2.md (4 Sep); checked after the 21 Oct call with Ian
 ---
 
 # ICP 2 persona: CTO or Head of Engineering
@@ -94,7 +94,7 @@ Chief Technology Officer · VP Engineering · Head of Payments Engineering · He
 |---|---|
 | Role (approver, weighting unconfirmed) | [[icp-definition]] §10 (Novosapien drafting, 3–4 Sep): "CTO weighting is open", because this is the only status where the company runs two processors in parallel. **Not confirmed by Ian.** The technical veto comes from Ian's primary-user scaffold ([[persona-primary-user]] §3.4), which was written for a switch, not for this status |
 | Experience from the first integration (§3, §4) | Ian, 2 Sep L764-768: they arrive *"with a bunch of knowns and experiences they've had that they're going to want to make sure they're not going to have with you again"*. The revised [[icp-2-new-program-incumbent-stays\|ICP 2]] core thesis |
-| How the pains are framed | Ian, 3 Sep L669-679 (*"it's the latter"*): the current processor is never attacked. Every pain here is about running two, not about the first processor |
+| How the pains are framed | Ian, 3 Sep L669-679 (*"it's the latter"*): the current processor is never attacked. Every pain here is about running two, not about the first processor. Ian, 21 Oct ([[2026-10-21-icp-revision-outbound]] L727-L735) confirms it: a second program does not imply unhappiness, and the company may keep its current processor for it (L735) |
 | Sections 2, 3, 4, 6, 8, 9, 10 | Derived by Novosapien from ICP 2, [[icp-definition]] §10, the offer and the 4 Sep persona. No buyer was interviewed |
 | Section 5 pains | Derived from the two-processor cost in [[icp-definition]] §10 (two integrations, two reconciliations, two sets of scheme reporting, one team) and from Ian's primary-user scaffold ([[persona-primary-user]] §5: integration that becomes a long-term constraint; being trapped in a vendor-specific API shape). Every quote is derived |
 | Section 7 objections | Ian's primary-user scaffold ([[persona-primary-user]] §7): where state lives and how it is reconciled. The intelligence layer, pre-launch and certification objections are from the 4 Sep persona; the offer's credentials section holds the certification answer |
@@ -135,3 +135,4 @@ Chief Technology Officer · VP Engineering · Head of Payments Engineering · He
 | §11 the accreditation paragraph (TXN holds none; PCI with the co-founding owner; the operated environment) | Cut | A message rule, and it names an owner; it lives in [[messaging-protocol]] (M8) |
 | §11 "be equally direct about the pre-launch position" | Cut | A message instruction; the pre-launch objection stays in §7 |
 | §11 the remaining message | Kept as the angle (the years after the integration) and the claim (operators self-serve, API first), with reconciliation named | Cut to three sentences |
+| All (21 Oct, from v2) | No change. Checked against Ian's ICP 2 ruling (L727-L735) | No line implies unhappiness with the first processor. The persona describes the cost when the company chooses a second platform |

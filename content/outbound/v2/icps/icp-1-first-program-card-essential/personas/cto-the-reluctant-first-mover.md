@@ -1,6 +1,6 @@
 ---
 description: "TXN ICP 1 buyer persona v2: the CTO or Head of Engineering who must approve an integration in a domain the team has not worked in; technical veto. The 12-section persona, ready to load, with its sources and gaps below"
-status: draft, 19 Oct 2026, reworked from personas-icp-1.md (4 Sep)
+status: draft, 19 Oct 2026, reworked from personas-icp-1.md (4 Sep); checked after the 21 Oct call with Ian
 ---
 
 # ICP 1 persona: CTO or Head of Engineering
@@ -94,6 +94,7 @@ Chief Technology Officer · VP Engineering · Head of Engineering · Head of Pla
 | Section 5 pains | Derived from the ICP 1 pains and from Ian's primary-user scaffold ([[persona-primary-user]] §5: authorisation control, failure behaviour). Every quote is derived |
 | Section 7 objections | Ian's primary-user scaffold ([[persona-primary-user]] §7): real-time authorisation control, system down, retry and webhook failure, sandbox in an afternoon. "No live clients yet": Novosapien, from Ian's 25 Aug remark on track record ([[outbound]], no transcript). The PCI question: the 4 Sep persona; the offer's credentials section holds the answer |
 | Section 11 | [[offer]]: step 9 (API first), step 10 (intelligence layer outside the transaction path, a person in the loop) |
+| ICP 1 pain | Ian, 21 Oct ([[2026-10-21-icp-revision-outbound]] L703-L719): the decision they cannot afford to get wrong, and *"they don't know what they don't know"*. Sections 4 and 5.2 already match it; no change |
 
 ## Gaps to settle
 
@@ -102,6 +103,7 @@ Chief Technology Officer · VP Engineering · Head of Engineering · Head of Pla
 | Does the CTO hold a veto in ICP 1? | Sets how the CTO message is pitched |
 | Real buyer language for the quotes | Every quote is derived; Ian and Dorte should correct them |
 | Triggers and information diet | Derived from the ICP signals and role conventions, not from real deals |
+| §11 describes the intelligence layer ([[offer]] step 10) | Ian, 21 Oct: a capability that a prospect can reach only as a client may be described if it will be live by the time they become a client (L617). Which AI capabilities meet that test: [[questions-for-ian]] Q46 |
 
 ## What was cut from the 4 Sep version
 
@@ -117,3 +119,4 @@ Chief Technology Officer · VP Engineering · Head of Engineering · Head of Pla
 | 9 | "Scheme and regulatory primary sources"; "reachable through technical substance rather than outreach" | Low value; channel guidance belongs in the [[messaging-protocol|messaging protocol]] |
 | 11 | "Acknowledge the pre-launch position"; the accreditation wording (PCI held by Direct Transact); "do not lead with the owners"; "do not compare with a named competitor" | Message rules, now in the [[messaging-protocol|messaging protocol]]. The PCI answer stays in the offer |
 | 12 | "Director of Payments Engineering" | Trimmed list |
+| All (21 Oct, from v2) | No change. Checked against Ian's ICP 1 pain (L703-L719) | Sections 4, 5.2 and 10 already carry it, and §11 leads on mechanism, not risk |

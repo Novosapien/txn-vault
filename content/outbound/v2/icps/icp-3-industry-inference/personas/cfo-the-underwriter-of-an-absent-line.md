@@ -1,6 +1,6 @@
 ---
 description: "TXN ICP 3 buyer persona v2: the CFO or Commercial Director asked to fund a card program the company has done without, on evidence from a peer's business; economic buyer, co-leads. The 12-section persona, ready to load, with its sources and gaps below"
-status: draft, 19 Oct 2026, reworked from personas-icp-3.md (4 Sep)
+status: draft, 19 Oct 2026, reworked from personas-icp-3.md (4 Sep); updated after the 21 Oct call with Ian
 ---
 
 # ICP 3 persona: CFO or Commercial Director
@@ -78,7 +78,7 @@ One of the cost lines they always look at is what it costs to move money to cust
 - From a card program that looks like a new department, to one run without employing card experts.
 
 **11.0 The Message That Lands**
-Make the case for a card program before the case for TXN: start from what card programs have done in their vertical, without naming a company, and set it against two costs they already carry, paying customers out and a loyalty budget with an arguable return. Then answer the regulatory question, because it decides: TXN surfaces the scheme and regulatory requirements that apply, in plain English, and applies them once the client confirms. This is compliance confidence, not compliance replacement, because TXN does not accept regulatory liability on the client's behalf.
+Make the case for a card program before the case for TXN: start from what card programs have done in their vertical, and set it against two costs they already carry, paying customers out and a loyalty budget with an arguable return. Then answer the regulatory question, because it decides: TXN surfaces the scheme and regulatory requirements that apply, in plain English, and applies them once the client confirms. This is compliance confidence, not compliance replacement, because TXN does not accept regulatory liability on the client's behalf.
 
 **12.0 Example Titles**
 Chief Financial Officer · Finance Director · Commercial Director · VP Finance · Head of Finance and Operations · Managing Director, Owner-Operator
@@ -95,6 +95,7 @@ Chief Financial Officer · Finance Director · Commercial Director · VP Finance
 | Section 5 pains | Derived from the ICP 3 pain mapping (the payouts, the loyalty spend, the peer) and the 4 Sep persona. Every quote is derived |
 | Section 7 objections | The 4 Sep persona (Novosapien). The pricing question at volumes nobody can predict: Ian's economic-buyer scaffold ([[persona-economic-buyer]] §5: pricing tied to volumes the business cannot predict accurately) |
 | Section 11 | [[offer]]: the secondary job (scheme and regulatory requirements as a delivered outcome, not a burden carried in-house); Section 2, steps 6 and 10; outcome O8 (requirements surfaced in plain English and offered for application, the client confirms; compliance confidence, not compliance replacement; TXN does not accept regulatory liability). The peer opening: Ian, 2 Sep L732 (*"Here's what your competitors done. Here's the benefit they've got"*) |
+| Dominant pain (ICP 3) | Ian, 21 Oct ([[2026-10-21-icp-revision-outbound]] L703): *"constraint and falling behind comfortable with"* |
 
 ## Gaps to settle
 
@@ -106,6 +107,7 @@ Chief Financial Officer · Finance Director · Commercial Director · VP Finance
 | What a card adds for a company that is already regulated | Many ICP 3 verticals (lending, FX, payments, investment) carry regulation today; the 4 Sep persona assumed an unregulated company. The offer does not say what a card adds in either case |
 | Real buyer language for the quotes | Every quote is derived; Ian and Dorte should correct them |
 | Triggers and information diet | Derived from the ICP signals and role conventions, not from real deals |
+| §11 rests on O8 (requirements surfaced in plain English and applied once the client confirms), a claim that waits for Ian in [[messaging-protocol]] | Ian, 21 Oct: a capability that a prospect can reach only as a client may be described if it will be live by the time they become a client (L617). Whether O8 meets that test: [[questions-for-ian]] Q46, [[open-questions]] #121. If it does not, §11 needs another claim. A candidate is the licensed issuer route (L641, L781), subject to Q38 (what a card adds for a regulated company) |
 
 ## What was cut from the 4 Sep version
 
@@ -142,3 +144,5 @@ Line numbers refer to [[personas-icp-3]]. The preamble (L7-21) served both perso
 | 10.0 | Added "From a default 'no'... to a decision taken on evidence" and "From a card program that looks like a new department, to one run without employing card experts" | Restated from this persona's own 5.2 and 7.0, to keep four metrics. The second keeps the headcount point that left 11.0 |
 | 11.0 L184 | Cut from seven sentences to three: the angle (the peer and the costs they carry, before TXN) and the claim (compliance confidence, not compliance replacement, with its boundary) | Removed: "This buyer is not resisting..." (repeats 4.0 and 5.2); "That boundary must be stated, not blurred" (a rule; the boundary stays in the claim); "Close on the headcount point" (one claim per persona; it is in 10.0 here and in the CPO's claim); "Name the peer. Never name the peer's processor, never name a TXN competitor, and do not raise the owners" (message rules) |
 | 11.0 (20 Oct, from v2) | The named peer: "by name where one is known" / "what a peer in their vertical did" | George, 20 Oct: no named peer. The workforce cannot confirm a peer's card, and a peer named from model memory can be wrong. The opening stays at the level of the vertical (Ian, 2 Sep L732) |
+| 11.0 (21 Oct, from v2) | "without naming a company" | A message rule, held in [[messaging-protocol]] (M10, I2). The persona guideline keeps message rules out of §11 |
+| All (21 Oct, from v2) | No other change. Checked: banks low priority (L669), every vertical for every ICP (L681-L691), "falling behind" kept (L703) | Nothing in this persona targets a bank or lists verticals. §11 keeps O8 until Q46 (see Gaps) |

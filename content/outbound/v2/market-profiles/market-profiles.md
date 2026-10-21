@@ -1,6 +1,6 @@
 ---
-description: "Router for TXN's four market profiles v2: the firmographic criteria for the first sourcing pass, the ICPs each feeds, and Ian's rulings of 21 October"
-status: draft, 19 Oct 2026, split by sector
+description: "Router for TXN's four market profiles v2: the firmographic sourcing criteria, the ICPs each feeds, the exclusions and the gaps, revised after the 21 Oct call"
+status: draft, 19 Oct 2026, split by sector; revised 21 Oct 2026 after the call with Ian
 ---
 
 # TXN market profiles (v2)
@@ -15,21 +15,6 @@ status: draft, 19 Oct 2026, split by sector
 >
 > **Tags.** `[Ian]` = Ian ruled it, with the place. `[TXN]` = TXN's own documents. `[Derived]` = our inference, for Ian to confirm. `[Gap]` = not known yet.
 
-> [!important] Ian confirmed the sourcing role, and two rulings land here (21-10-2026)
-> **The split these profiles exist for is now confirmed by Ian** ([[2026-10-21-icp-revision-outbound]]). The first pass is firmographic only, *"a neobank that's based in Bulgaria, not based in Ukraine, is between this size and that size"*, which Ian restated as *"very very very top of the potential funnel"*. The ICPs are applied afterwards, when a researched company is sorted and graded.
->
-> **Every vertical carries every ICP.** *"If the ICP and status are the same thing, then my argument is they are the same for every vertical."* The consequence is a property of the data, not a rule to encode: *"some verticals there'll be no ICP 1s, because that vertical doesn't contain any companies where a card program is essential. Meaning that you then go down and follow the list through two, three, four."* So the same search criteria run for every profile, and the ranking stage decides the ICP.
->
-> **Geography is two separate layers.** TXN *"can only contract with companies that are in Europe or the UK"*. Where cards may be issued is not TXN's to decide: *"it's determined by a BIN sponsor"*. A company publishing that it issues for the Middle East, Africa or Asia is **marked down, not excluded**, and nobody chases the licensed issuer: *"for the level of complexity that might be involved... I think we can pass on that"*.
->
-> **Banks are sourced but not loaded.** *"They are definitely low priority for later... we need to get some scores on the board and some credibility before you're going to win with banks."*
->
-> **Early-stage sourcing, answering his own 9 October ask.** *"If you're a startup, the first thing you do is you go and get money."* So the channels are **funding rounds** announced by the company or its investors, **incubators**, and **the card schemes**, since *"somebody's talking to a card scheme if they're thinking about launching a card program"*. Bootstrapped companies are effectively out of reach: *"it tends not to be too visible."* See [[discovery-sources]].
->
-> **Two new sources were raised and parked:** competitor LinkedIn tracking, pulling in the people who like and comment on a competitor's posts as warmer leads, and **job postings**, with Brett suggesting a commercial arrangement with a job board for API access. George framed the second as a test of Novosapien's own progression, *"we start pure human, then human with AI, then just AI"*.
->
-> **Still to do, and the biggest piece of work from the call.** George expects *"only minor minor tweaks"* to the ICPs and personas, but *"the market profiles might be the ones where that's worth looking at a little bit more... just picking out some things that might be key red flags."*
-
 ## The profiles
 
 - [[market-profile-1-digital-banking|P-1 Digital banking]]
@@ -41,29 +26,45 @@ status: draft, 19 Oct 2026, split by sector
 
 | | P-1 Digital banking | P-2 Commercial card and expense | P-3 Lending, FX and embedded finance | P-4 Card-adjacent |
 |---|---|---|---|---|
-| **Feeds** | ICP 1, ICP 2 (ICP 4) | ICP 1, ICP 2 (ICP 4) | ICP 2, ICP 3 (ICP 4) | ICP 3 (ICP 2 if a card is live) |
+| **Feeds** | ICP 1, ICP 2, ICP 4 | ICP 1, ICP 2, ICP 4 | ICP 2, ICP 3, ICP 4 | ICP 3, ICP 2, ICP 4 |
 | **Card relevance (Ian)** | Card-essential | Card-essential | Card-adjacent | Card-adjacent |
 | **Geography** | EEA + UK, MVP countries first | Same | Same | Same |
 | **Industries** | Banking, Financial Services | Financial Services, Software Development, Software Products | Financial Services, Credit Intermediation, Banking | Investment Management, Capital Markets, Financial Services, General Retail, Online and Mail Order Retail |
-| **Verticals** | Consumer and business digital banking, crypto with fiat rails, banks (pending Ian) | Expense management, corporate and commercial cards, travel and expense, accounts payable | SMB lending, consumer lending, FX payments, payments, BaaS | Investment and trading apps, disbursement and payouts, retail, e-commerce and marketplaces |
+| **Verticals** | Consumer and business digital banking, crypto with fiat rails, banks (low priority for later) | Expense management, corporate and commercial cards, travel and expense, accounts payable | SMB lending, consumer lending, FX payments, payments, BaaS | Investment and trading apps, disbursement and payouts, retail, e-commerce and marketplaces |
 | **Company types** | Private, Public; FinTech | Private, Public; FinTech, SaaS; b2b | Private, Public; FinTech | Private, Public; Marketplace, E-commerce, Retail, FinTech; b2c, b2b2c |
 | **Headcount** | Any | Any | Any | Any |
 | **Funding stage** | Any | Any | Any | Any |
 | **Keywords** | 4 vertical groups | 4 vertical groups | 5 vertical groups | 4 vertical groups |
 
+**Feeds.** Every vertical carries every ICP (Ian, 21 Oct L681-691: *"they are the same for every vertical"*). So each profile's search serves every ICP, and the ranking stage decides the ICP after the research. The Feeds row shows where each ICP can appear: ICP 1 only where the product needs a card (*"some verticals there'll be no ICP1s"*, L687), and ICP 3 only where it does not. All four ICPs carry the same vertical list, the union of the four profiles without traditional banks.
+
+## Rulings of 21 October that land here
+
+From the raw transcript in [[2026-10-21-icp-revision-outbound]].
+
+- **The first pass is firmographic.** George described it (*"a neo bank that's based in um Bulgaria not based in Ukraine is between this size and that size"*, L461), and Ian restated it as *"very very very top of the potential funnel"* (L463).
+- **Banks are a low priority for later.** Ian: *"They are definitely low priority... for later... we we need to get some scores on the board and some credibility before you're going to win with banks"* (L669). Every ICP carries the same bank line (George's decision D1): a traditional bank, not a digital bank or neobank, is graded D and kept on record.
+- **Markets: two layers.** TXN can contract only with companies in Europe or the UK (L637). Every ICP carries this as an anti-signal that fires only on evidence (George's decision D4). Where the cards are issued is the BIN sponsor's decision (L641): published issuance outside Europe and the UK is a mark-down in each ICP's Tier 3, not an exclusion (L653), and the workforce does not try to identify the licensed issuer (L657).
+- **Mastercard is not an exclusion** (L609, L613).
+- **Marqeta clients are not all excluded.** Ian scores a company on its propensity to launch a card program, whether a card is live, who it is live with, and published problems with that incumbent (L563-573). His seven stay out as his own judgement (L573); other Marqeta clients are sourced and scored, with the incumbent weight in ICP 2 and ICP 4.
+- **Early-stage companies.** Ian asked that sourcing not miss start-ups: funding rounds that the company or its investors announce, incubators, and companies talking to a card scheme (L519-533). Novosapien's reading: no scheme publishes who it talks to, so scheme leads come through TXN's own scheme relationships (*"we do have other channels for it"*, L523), not through the workforce, unless TXN passes the names in. Bootstrapped companies are *"pretty difficult"* to find, because *"it tends not to be too visible"* (L529).
+- **Never lose a company.** *"As long as we don't lose anything that's been discounted... it's always a record there"* (L661-665).
+- **Competitor LinkedIn tracking** was raised and parked by George (L509-513: *"that's a different conversation"*).
+
 ## Exclusions
 
-Each profile ends with the same **Exclusions** section (decided by George, 19 Oct): the company types and named companies that a sourcing run leaves out, including the 15 companies Ian removed on 9 October. Exclusions that need research (Mastercard-only programs, programs that serve Asia or Ukraine, staff-only cards, insolvency) stay in every ICP's anti-signals, so the ranking blocks them after the research.
+Each profile ends with the same **Exclusions** section (decided by George, 19 Oct): the company types and named companies that a sourcing run leaves out, including the 15 companies Ian removed on 9 October. The seven Marqeta clients among them stay out as Ian's own judgement (21 Oct L573: *"I've discounted them as a human intervention"*) and stay on record. Other Marqeta clients are sourced and scored. Exclusions that need research (a staff-only card, insolvency, no company in Europe or the UK to contract with) stay in every ICP's anti-signals, so the ranking grades them D after the research and keeps them on record. Mastercard is no longer an exclusion. Published card issuance outside Europe and the UK is a mark-down in each ICP's Tier 3, not an exclusion.
 
 ## Gaps to settle
 
 | Gap | Profile | Where |
 |---|---|---|
-| Banks as targets; is a bank with no card a first-program target? | P-1, P-3 | [[questions-for-ian]] Q4 |
+| A bank with no card: ICP 1 or ICP 3? The priority is answered: low priority for later (Ian, 21 Oct L669) | P-1, P-3 | [[questions-for-ian]] Q4, answered in part. Matters when banks are revisited |
 | The UK's place in the order | All | Q13 |
-| Markets besides Asia and Ukraine that TXN does not support | All | Q3 |
+| Ukraine in the issuance mark-down (from Ian's 9 Oct email), and Switzerland (in Europe, not in the EEA) | All | Novosapien's reading of Q3; for George to confirm |
+| Altery (removed on 9 Oct for Mastercard) and ZEN.COM (removed for Asia and Ukraine): the 21 Oct rulings remove both reasons. Restore them to sourcing? | All | For George or Ian |
 | Use cases beyond the twelve sub-sectors | P-3, P-4 | Q14 |
 | BaaS: prospect or competitor category | P-3 | Q24 |
 | Closed-loop cards | P-4 | Q22 |
-| The extra verticals in P-2 (travel and expense, accounts payable) and the software industries | P-2 | Our inference |
+| The extra verticals in P-2 (travel and expense, accounts payable), now in every ICP's verticals, and the software industries | P-2 | Our inference |
 | Every keyword list | All | Not tested yet: run a free Prospeo search through Nova for each keyword before the first sourcing run |

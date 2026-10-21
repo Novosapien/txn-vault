@@ -1,6 +1,6 @@
 ---
-description: "TXN market profile P-1, digital banking (neobanks, digital banks, crypto with fiat rails, and banks pending Ian): the firmographic criteria that feed ICP 1 and ICP 2"
-status: draft, 19 Oct 2026
+description: "TXN market profile P-1, digital banking (neobanks, digital banks, crypto with fiat rails; banks for later): the firmographic criteria that feed ICP 1, 2 and 4"
+status: draft, 19 Oct 2026; revised 21 Oct 2026 after the call with Ian
 ---
 
 # P-1 Digital banking
@@ -9,9 +9,9 @@ status: draft, 19 Oct 2026
 >
 > **Tags.** `[Ian]` = Ian ruled it, with the place. `[TXN]` = TXN's own documents. `[Derived]` = our inference, for Ian to confirm. `[Gap]` = not known yet.
 
-**Who it finds.** Companies whose product is an account: neobanks, digital banks for consumers and businesses, crypto platforms that convert to spendable money, and (pending Ian) banks. Ian counts these as card-essential: without a card, the product looks odd `[Ian, 3 Sep L901]`. TXN's Core Messaging names this cluster first and calls it "the highest-priority sub-sector" `[TXN, core-messaging.md §3.1]`.
+**Who it finds.** Companies whose product is an account: neobanks, digital banks for consumers and businesses, crypto platforms that convert to spendable money, and banks, which are a low priority for later `[Ian, 21 Oct L669]`. Ian counts these as card-essential: without a card, the product looks odd `[Ian, 3 Sep L901]`. TXN's Core Messaging names this cluster first and calls it "the highest-priority sub-sector" `[TXN, core-messaging.md §3.1]`.
 
-**Feeds:** ICP 1 (no card yet), ICP 2 (live card, new product or market), ICP 4 when it is active. The research decides which.
+**Feeds:** ICP 1 (no card yet), ICP 2 (live card, new product or market), ICP 4 (live card, no visible new program). The research decides which. Every vertical carries every ICP `[Ian, 21 Oct L681-691]`.
 
 ## Geography
 
@@ -26,7 +26,8 @@ status: draft, 19 Oct 2026
 - **A guide, not a strict filter.** Search by where the company operates or employs people, not only by its HQ, so a local subsidiary of a parent outside the EEA is found `[Ian, 2 Sep L672-676]`. The HQ sets the order only.
 - Germany: LinkedIn only, no cold email (UWG) `[TXN, prospecting-process.md:319]`.
 - A subsidiary of a parent outside the EEA is not excluded `[Ian, 2 Sep L672-676]`.
-- TXN does not support card programs that serve Asia or Ukraine `[Ian, 9 Oct email]`. Other markets `[Gap]`.
+- TXN contracts only with companies in Europe or the UK `[Ian, 21 Oct L637]`. A company with no entity there takes an anti-signal in every ICP, on evidence only.
+- Where the cards are issued is the BIN sponsor's decision, not TXN's. Published card issuance outside Europe and the UK, or for Ukraine, is a mark-down in each ICP, not an exclusion, and the workforce does not try to identify the licensed issuer `[Ian, 21 Oct L641-657]` · Ukraine `[Derived]` · Switzerland `[Gap]`.
 
 ## Industries
 
@@ -39,7 +40,7 @@ Banking; Financial Services `[Ian, §4.1]`. Both are Prospeo industry values.
 | Digital banking for consumers | A neobank or digital bank: an account and an app for consumers | `[Ian, 3 Sep L901; §4.2]` |
 | Digital banking for businesses | Business or SME accounts in an app | `[Ian, §4.2]` · the split from consumers `[Derived]` |
 | Crypto with fiat rails | Converts crypto into money that customers can spend. Crypto-only, with no fiat rails, is out | `[Ian, 3 Sep L901; §8.1.2]` |
-| Banks | Traditional, savings, cooperative or regional banks | `[Ian, 3 Sep L901: "banking"]` · in scope pending Ian `[Gap]` |
+| Banks (low priority for later) | Traditional, savings, cooperative or regional banks. Every ICP grades a traditional bank D and keeps it on record. A sourcing run may leave this vertical out until banks are revisited | `[Ian, 3 Sep L901: "banking"]` · low priority for later `[Ian, 21 Oct L669]` · leave out for now `[Derived]` |
 
 ## Company types
 
@@ -65,13 +66,13 @@ Banking; Financial Services `[Ian, §4.1]`. Both are Prospeo industry values.
 | Digital banking for consumers | neobank, digital bank, challenger bank, mobile bank, current account, e-money account, debit card | core banking software, banking software vendor, bank consultancy |
 | Digital banking for businesses | business account, SME banking, business banking app, multi-user business account | accounting software, bookkeeping services |
 | Crypto with fiat rails | crypto exchange, crypto wallet, crypto card, buy crypto, crypto to fiat, off-ramp, stablecoin payments | mining, NFT, DeFi protocol, blockchain development |
-| Banks | savings bank, cooperative bank, regional bank, retail bank | investment bank, private bank, central bank |
+| Banks (low priority for later) | savings bank, cooperative bank, regional bank, retail bank | investment bank, private bank, central bank |
 
 All `[Derived]`. Not tested yet: run a free Prospeo search through Nova for each keyword, and check that it returns the right companies, before the first sourcing run.
 
 ## Exclusions
 
-Companies and types that a sourcing run leaves out. Exclusions that need research (a Mastercard-only program, a program that serves Asia or Ukraine, a card for staff only, insolvency) are not here: the ICP anti-signals block them after the research.
+Companies and types that a sourcing run leaves out. Exclusions that need research (a card for staff only, insolvency, no company in Europe or the UK to contract with) are not here: the ICP anti-signals grade them D after the research and keep them on record. Mastercard and published card issuance outside Europe and the UK are no longer exclusions `[Ian, 21 Oct L609-613, L653]`: issuance is a mark-down in each ICP.
 
 | Exclusion | Kind | Source |
 |---|---|---|
@@ -80,15 +81,16 @@ Companies and types that a sourcing run leaves out. Exclusions that need researc
 | Petrol retail, including fuel card programs | Industry | `[Ian, §7]` |
 | BIN sponsors (for example Paynetics, DiPocket, Modulr, Transact Payments, Railsr): TXN works with them directly, outside outreach | Named list | `[Ian, 2 Sep L642-645; §6]` |
 | Card issuer processors that compete with TXN, and TXN's owners Direct Transact and Paycorp | Named list | `[Derived, §6]` |
-| Marqeta clients removed by Ian: Payhawk, Capital on Tap, Tymit, Zilch, Zopa Bank, Trading 212, Raiffeisen Digital Bank (not the other Raiffeisen group banks) | Named companies | `[Ian, 9 Oct email]` · all Marqeta clients or only these `[Gap]` |
-| Other companies removed by Ian: ClearBank, Allica Bank, Altery (Mastercard), ZEN.COM (Asia, Ukraine), Outpayce, of Amadeus ("Amadeus won't go with us"), WiZink, Soldo (Ian's previous company), Ecommpay (already engaged) | Named companies | `[Ian, 9 Oct email]` · reasons for ClearBank, Allica Bank, WiZink `[Gap]` |
+| Marqeta clients removed by Ian: Payhawk, Capital on Tap, Tymit, Zilch, Zopa Bank, Trading 212, Raiffeisen Digital Bank (not the other Raiffeisen group banks) | Named companies | `[Ian, 9 Oct email]` · only these seven, as Ian's own judgement; other Marqeta clients are sourced and scored `[Ian, 21 Oct L563-577]` |
+| Other companies removed by Ian: ClearBank, Allica Bank, Altery (Mastercard), ZEN.COM (Asia, Ukraine), Outpayce, of Amadeus ("Amadeus won't go with us"), WiZink, Soldo (Ian's previous company), Ecommpay (already engaged) | Named companies | `[Ian, 9 Oct email]` · reasons for ClearBank, Allica Bank, WiZink `[Gap]` · the reasons for Altery and ZEN.COM no longer hold after 21 Oct (L609-613, L653): restore them? `[Gap]` |
 | Companies TXN is already talking to | Named companies | `[Gap]`: list requested from Ian |
 
 ## Gaps to settle
 
 | Gap | Why it matters |
 |---|---|
-| Banks: in scope as targets, or a low priority? Is a bank with no card a first-program target? (questions-for-ian Q4) | Decides the Banks vertical |
+| A bank with no card: a first-program or an industry-inference target? The priority is answered: low priority for later (Ian, 21 Oct L669; questions-for-ian Q4) | Matters when banks are revisited |
 | The UK's place in the order (Q13) | Sets the sourcing order |
-| Markets besides Asia and Ukraine that TXN does not support (Q3) | Decides which companies are out |
+| Ukraine in the issuance mark-down (from Ian's 9 Oct email), and Switzerland (in Europe, not in the EEA) | Novosapien's reading of Ian's 21 Oct answer (Q3); for George to confirm |
+| Altery and ZEN.COM: restore them to sourcing, now that their 9 Oct reasons no longer hold? | For George or Ian |
 | Every keyword list | Not tested yet |
