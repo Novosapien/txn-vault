@@ -41,7 +41,7 @@ status: draft, 19 Oct 2026, revised after the source audit; revised 21 Oct 2026 
     - **Tech Stack Signal:** An acquirer for payments in, with nothing for payments out. A loyalty or rewards platform. A customer identity or account system.
 - **Tier 3: Firmographics (20% Weight)**
     - **Employee Count (Range):** `Any`. Headcount does not rank this ICP: a company of any size is in scope, including companies with fewer than 10 people.
-    - **Geography (Ideal):** `EEA` and `United Kingdom`, with `Poland`, `Czech Republic`, `Romania` and `Hungary` first. TXN contracts only with companies in Europe or the UK. A company whose website shows its customers mainly outside Europe and the UK, or in Ukraine, ranks lower here. It is not disqualified.
+    - **Geography (Ideal):** `EEA` and `United Kingdom`, with `Poland`, `Czech Republic`, `Romania` and `Hungary` first. TXN contracts only with companies in Europe (Switzerland included) or the UK. A company whose website shows its customers mainly outside Europe and the UK, or in Ukraine, ranks lower here. It is not disqualified.
 
 **4. Disqualification Criteria (Anti-Signals)**
 
@@ -98,6 +98,5 @@ Connects observable signals to the gap a company has not noticed yet: peers in i
 | **Use cases beyond the twelve sub-sectors** (online travel, on-demand services, media buying, fleet, creator payouts) from his prospecting process | Sets the vertical list |
 | **Rewards and card-linked offers tooling** at launch? | Decides what the loyalty row may claim |
 | **BaaS without cards:** a prospect, or a competitor category? | Sets whether BaaS stays in the verticals |
-| **Customers mainly outside Europe and the UK.** Q3 asked whether a company with no card, whose customers are mostly in markets TXN cannot serve, is out; Ian did not answer. The Tier 3 mark-down is ours, and it names Ukraine from his 9 Oct email | For George, or Ian, to confirm |
 | **The two-stage sale:** the workforce has never been set up to sell "why a card program at all" first ([[open-questions]] #76) | Novosapien's to solve. The messages for this ICP need a different shape |
 | **The buying group** (CPO and CFO): section 10 says Ian confirmed it on 3 Sep; the transcript does not show it | Not part of the ICP structure. It goes to the personas |
