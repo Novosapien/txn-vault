@@ -8,6 +8,7 @@ sources:
   - "[[2026-10-13-agentic-standup]]"
   - "[[2026-10-14-alignment-txn-stackworkz-novosapien]]"
   - "[[2026-10-15-agentic-standup]]"
+  - "[[2026-10-22-agentic-standup]]"
   - "[[2026-10-20-agentic-standup]]"
 description: "Sub-component spec for the portal chat: semantic doc discovery, grounded Q&A with source references, a deterministic fallback, and live sandbox execution"
 ---
@@ -164,6 +165,27 @@ It is **deliberately light**: Ian's explicit steer is to invest in the [[docs-mc
 > **The hosted shape.** Two deployables: the agent and the [[docs-mcp-server]], which George called *"quite lightweight"*. For the agent he wants an autoscaled container service, similar to Cloud Run, with minimum instances so that cold starts do not occur in production. The sandbox is the only DT dependency for the Knowledge Hub. The docs MCP server reads Umbraco, which is live. [[open-questions]] #49, #119.
 >
 > **The move into Stackworkz's codebase waits for Michael's sign-off.** Ian wants one version for launch, not a demo build and a production build. See [[delivery]].
+
+> [!important] Live on the production demo, and retention drops to 72 hours (22-10-2026)
+> **It is testable** ([[2026-10-22-agentic-standup]]). The co-pilot sits on *"the production demo version"*, open to TXN: *"whenever you got any spare time, feel free to test."* **Knowledge Hub only**, confirmed when Ian asked. The evaluation harness is running with Michael's personas and questions (#117).
+>
+> **TXN's own testing is deliberately narrow: three flows.** George cut it down rather than up, because breadth is not feasible for them: *"appreciate you guys don't want to be going in and going through 40, 50 different questioning styles and testing each one multiple times. It's not feasible."* So Michael checks three named flows are *"exactly how you want them to be, both in terms of the responses and the way that the UI is functioning"*, and the changes carry over to the rest.
+>
+> **Retention: 30 days becomes 72 hours.** Ian asked how long chat is kept. Michael set the number, and the driver is the public sandbox rather than the chat: TXN will be *"dropping the data in there every 72 hours... whilst we tell people not to put real data in there, [they] could do, and we don't want to store that."* George aligned the chat to it: *"at the moment we've got it 30 days for the knowledge hub. Drop that to 72."* Michael's reason for aligning them: *"if that chat ends, the data is also gone."*
+>
+> **Plus a second tier, which is the mechanism #92 has been waiting for.** George: *"when it's being stored long term, **we strip out any tool calls that are going to hold anything potentially sensitive**, but retaining the data that's valuable... in terms of improving, be it the docs, the experience, or any aspect of TXN."* Michael: *"removing that means we can store as long as we need."* So **full chat for 72 hours, sanitised chat indefinitely**, read for documentation gaps.
+>
+> **Ian's defence of 72 hours is a statement of what this page is for, and it is worth keeping.**
+>
+> > *"Really the idea was **to enable them to do the thing that they're looking to do rather than build up their knowledge of card programs**. If they want to build up their knowledge of card programs, then... you can copy what the response is, put it somewhere that you can keep it, because **it's only meant to be effectively a shortcut to reading all the docs and deciphering it yourself**. So nothing's being removed from them, the source material is still there."*
+>
+> And on the balance: *"we've gone from a position where most people don't have anything, or if they do it's not very good, to, okay, we've got something we think is really good, and it'll still be there 72 hours later. Seems more than fair to me."*
+>
+> **Hold that next to #114.** On 15 October he wanted a step-by-step walkthrough because *"they don't know what they don't know"*. Here he says this is not a tool for building knowledge of card programs. They reconcile as teaching the task rather than the domain, but the line matters when the guides journey is designed.
+>
+> **Where the chat actually lives:** mostly the browser, because Knowledge Hub chats are short. *"Whereas the agent in the console, although it appears it's doing one tool call, behind the scene it might be 10 or 20."* **The MCP server raises nothing**, since its data is *"only really going to be information about the docs"*.
+>
+> **No per-user rate limit yet.** Ian asked about cost exposure; George called it tractable and deprioritised behind look, feel and tone. See #97.
 
 ## 2. What Needs to Happen?
 

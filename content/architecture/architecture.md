@@ -40,6 +40,17 @@ Cross-cutting technical decisions that affect the whole product. This directory 
 >
 > **Unresolved, with a breakout booked for early next week.** George accepted the logic without conceding the mechanism: *"maybe we might not be consuming the same services, but we'll be consuming the same logic. Maybe we're replicating it on our side, but as long as the logic's the same, perfect."* The Knowledge Hub is unaffected either way. See [[approval-queue-integration]] and [[open-questions]] #107.
 
+> [!important] The agent gets its own database, outside DT's PCI environment (22-10-2026)
+> **Settled in principle** ([[2026-10-22-agentic-standup]]). George asked where the agent's traces and chat history should live, and whether tenant location constrains it: *"are we going to have to put the traces for the agent within certain locations depending on where the tenant is? So does that mean we need access to update the schema of certain databases that exist, or do we isolate them, so it's just an AI database?"*
+>
+> **Michael's answer draws the boundary at PCI.** TXN has *"a database per program manager or TXN client"*, and *"that is governed under **DT's PCI environment**, so be careful there about where we put that in. So I think **there'll be pushback from DT** on putting that in there. So potentially having **a database on that node for the AI specifically** might be the best way to go."* With a **data lake** as the eventual join: *"that's where the data will connect back together."* His conclusion: *"it'll probably be an **AI-specific database away from the PCI stuff**."*
+>
+> **So the AI node carries the agent's own store as well as the agent**, which widens what DT is being asked for, on a node DT has not yet been asked to build at all (#119).
+>
+> **On the cloud itself, the choice matters less than it looks.** Everything is in GCP today and containerised. George: *"**a Docker container is a Docker container.** We could put it on AWS, GCP, Azure, and it's going to look, feel, act exactly the same."* The differences he named are configuration: request timeouts of 300 seconds on GCP against 240 on Azure, *"we're never really going to have that issue"*, and CPU and RAM allocated in different increments. He asked for **Azure Container Apps** as the Cloud Run equivalent, and Michael knew of no limitation. **Fallback if it is unavailable:** a VM with Docker installed.
+>
+> **One real unknown: Azure Front Door and server-sent events.** It already fronts the API, and the nodes *"sort of sit to the side, but they are governed by the same thing"*, so the AI node would inherit it. George says a proper solution exists but did not say what it is. [[open-questions]] #124.
+
 ## Decisions
 
 _Cross-cutting calls made in client sessions._

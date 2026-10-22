@@ -136,6 +136,24 @@ Reviews of the client's own console feedback queue, read from `txn.feedback` and
 >
 > **A correction to the flight plan.** The 16 October flight plan says that the AI node *"is already built. What remains is access."* The node is not built. The MSA reviewer brief says the same. Both need a correction from Brett. #70.
 
+> [!note] The co-pilot is testable, and the DT request is held on purpose (22-10-2026)
+> ([[2026-10-22-agentic-standup]])
+>
+> | Item | Position |
+> |---|---|
+> | **Co-pilot** | Live on the **production demo**, Knowledge Hub only, open for TXN to test |
+> | **TXN's testing** | **Three named flows**, not breadth. The harness covers breadth in the background |
+> | **Demo** | Still the 28 to 30 October window (#115) |
+> | **Hosting request to DT** | **Deliberately not sent yet** |
+> | **Owed by Michael** | The list of what TXN is already charged for, and the ecosystem diagram |
+> | **Owed by Michael, urgently** | The Azure Front Door question to DT, *"I'll send that question now"* |
+>
+> **The held request is a choice, not a slip.** George: *"taking what you said the other day, we don't want to rush it. We want to make sure it's well thought [through], **hence why we haven't sent something over already**."* Against #119, where the requirements were due to DT on 21 or 22 October, that trades a day or two of DT's lead time for a better-specified ask, with the 16 November launch unchanged. **It has also grown:** the agent now needs its own database on that node, outside DT's PCI environment ([[architecture]]).
+>
+> **And George asked for fallbacks agreed before the request goes in**, not after a refusal: *"making sure that if that's not the case, that we've got a fallback, so that if they say no, we're not sat there thinking, what are we going to do."* No fallback is written down yet (#124).
+>
+> **One governance item that needs an owner.** Ian asked for assurance *"that this thing can't go rogue and do anything it's not meant to"*. George offered malicious-persona testing at volume and volunteered that *"there's bound to be one out of a thousand where it is able to do something"*. There is no threshold, no owner and no date on that work, and it covers the Console agent. [[open-questions]] #123.
+
 > [!important] An internal demo becomes the gating milestone, with no date on it (15-10-2026)
 > **Ian wants the build shown to TXN's own leadership before it goes near the market** ([[2026-10-15-agentic-standup]]), and the reason is that they are already selling it.
 >

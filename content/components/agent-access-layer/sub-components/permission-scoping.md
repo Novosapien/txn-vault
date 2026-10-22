@@ -4,7 +4,8 @@ status: Defined
 sources:
   - "[[01-06-2026-component-1-Agent-Access-Layer]]"
   - "[[2026-10-20-agentic-standup]]"
-description: "How the layer decides which tools an agent gets per user per turn — Console permissions plus a new AI permission config, narrowed by page and onboarding state"
+  - "[[2026-10-22-agentic-standup]]"
+description: "How the layer decides which tools an agent gets per user per turn: the full Console permission list, narrowed by page and onboarding state, never widened"
 ---
 
 # TXN — Permission & Authorization Scoping
@@ -70,6 +71,23 @@ Beyond the static permission set, the exposed tool set is further narrowed by **
 - AI permission config drifts from the Console model → see Risks.
 
 ---
+
+> [!important] The full permission list, and the agent can never widen it (22-10-2026)
+> **Two changes** ([[2026-10-22-agentic-standup]]), and the second corrects what was recorded two days earlier.
+>
+> **1. The agent cannot add users or roles.** Michael, as the single change out of the Stackworkz call:
+>
+> > *"We'll be **revoking the ability to update a user to the agent credential**. So just to avoid that ability where you give yourself more permission... So you can have access to everything the user does **bar any user or role addition**. We're going to **force that through the console** for that user... You know what you hear about them going in and managing to change the permission to do something."*
+>
+> Stackworkz are building it, TXN are mandating it. The agent inherits the operator's rights and cannot extend them, its own included. **With two validation layers behind it**, per George: *"the first layer of validation on the MCP server, the second layer in the control center. So we're catching any potential errors, no matter how small they would be, at two points."*
+>
+> **2. Permissions arrive as a full list, not as one of four profiles.** This supersedes the 20 October position of one skill set per permission profile. George, reasoning it out on the call:
+>
+> > *"There could be four buckets. A user fits into one bucket, **but they might have some custom permissions associated with that**, and that would obviously be overlaid onto the Control Center as well... what might be better is **we get back their full permissions list, and then given that we turn them off. So it mimics the console or Control Center exactly**, rather than being like, no, we can only do it for these four buckets."*
+>
+> Michael agreed. **The reason the profile model fails:** a per-profile skill set cannot express a per-user override, so it would diverge from the Console the moment anyone was given a custom permission. The rule is now subtractive: start from everything the user holds, remove what the agent must not do.
+>
+> **What this does not cover, and Ian asked for it.** The guard stops the agent widening its rights. It says nothing about the agent doing something the operator legitimately can do but did not want. Ian's assurance request and George's malicious-persona harness are at [[open-questions]] #123.
 
 ## 3. Entity Journeys
 

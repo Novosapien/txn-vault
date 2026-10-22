@@ -6,6 +6,11 @@ description: "Index of the TXN commercial pack: proposals, Pilot Order, MSA and 
 
 The commercial pack for the Novosapien <> TXN engagement: the proposals that define what we are selling, and pointers to the legal instruments that paper it. Contracts themselves live in [legal/](../legal/) and are linked below so reviewers and agents can reach everything from one place.
 
+> [!note] Dörte: publish the questions the co-pilot gets asked (22-10-2026)
+> Off the back of George joking that someone will ask the co-pilot how to make spaghetti bolognese, **Dörte proposed turning it into content** ([[2026-10-22-agentic-standup]]): *"I think we should put that in, one day a week our co-pilot does something funky. So like **Monzo has a LinkedIn account** with these, from fancy tech, where everyone is talking about [it]."* Ian extended it to *"the questions they got asked"*.
+>
+> **Not taken as a decision**, but it is the third instance in a month of TXN wanting the AI made visible as marketing, alongside the published skills list (#106) and the co-pilot as a launch differentiator (#105). Worth remembering when the launch content is chosen, and worth noting that it would mean publishing real user queries, which the 72-hour retention and the sanitised long-term store ([[portal-co-pilot]]) both bear on.
+
 > [!note] The co-pilot becomes the proof of the positioning, and a language decision (15-10-2026)
 > **Ian tied the build directly to the sales claim** ([[2026-10-15-agentic-standup]]): *"it's such a key part of our messaging about **not needing to be a card expert to be able to launch a card program**. So we need to be able to show that that's the case."* As demonstrated on 15 October it does not yet show that, because it answers the API reference and skips the sequence a newcomer needs. [[open-questions]] #114.
 >
