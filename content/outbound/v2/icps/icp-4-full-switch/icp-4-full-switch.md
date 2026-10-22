@@ -21,7 +21,7 @@ status: draft, 19 Oct 2026, revised after the source audit; revised 21 Oct 2026,
 
 ### ICP Definition: Full Switch
 
-**1. ICP Archetype Name:** `Full-Switch Candidate - The Established Program Owner`
+**1. ICP Archetype Name:** `Full-Switch Migrator - The Blocked Escapee`
 
 **2. Core Thesis:** A company that runs a live card program and shows no new program, so the existing program is the subject, and the sale is a full switch of that program, its cardholders and data, to a new processor. Most such companies are not looking to move, because moving processor is a large step; a few are, often because they need something the current setup does not give them. Those that look arrive with clear requirements and with experiences they do not want to repeat. The question they weigh is whether a move is survivable for a live cardholder base: the cardholders, the reissue question and a route that keeps live customers' cards working. Their single dominant pain is **the risk of the move**.
 
@@ -43,7 +43,7 @@ status: draft, 19 Oct 2026, revised after the source audit; revised 21 Oct 2026,
     - **Tech Stack Signal:** A card issuer processor in place for the live program. Several separate providers visible around the program (processing, authentication, controls, settlement). Where the research can identify the processor: a processor that TXN rates as legacy raises the fit, even with no other trigger, and published problems with it raise the fit further. A processor that TXN rates as top tier, with no published problem, lowers the fit. These add weight only; their absence never blocks a lead. They are for ranking only: a message never names or criticises the current processor.
 - **Tier 3: Firmographics (20% Weight)**
     - **Employee Count (Range):** `Any`. Headcount does not rank this ICP: a company of any size is in scope.
-    - **Geography (Ideal):** `EEA` and `United Kingdom`, with `Poland`, `Czech Republic`, `Romania` and `Hungary` first. TXN contracts only with companies in Europe or the UK. Where the cards may be issued is the BIN sponsor's decision, not TXN's. A company that publishes card issuance for markets outside Europe and the UK (for example Asia, the Middle East or Africa), or for Ukraine, ranks lower here. It is not disqualified. Do not try to identify the licensed issuer.
+    - **Geography (Ideal):** `EEA` and `United Kingdom`, with `Poland`, `Czech Republic`, `Romania` and `Hungary` first. TXN contracts only with companies in Europe (Switzerland included) or the UK. Where the cards may be issued is the BIN sponsor's decision, not TXN's. A company that publishes card issuance for markets outside Europe and the UK (for example Asia, the Middle East or Africa), or for Ukraine, ranks lower here. It is not disqualified. Do not try to identify the licensed issuer.
 
 **4. Disqualification Criteria (Anti-Signals)**
 
@@ -77,7 +77,6 @@ Connects observable signals to what a company needs before it can move a live ca
 |---|---|
 | The status itself | Ian, 3 Sep L489: *"a full switch"*. Widened on 21 Oct by George's decision D2: every company with a live card and no visible new program. Ian ruled that companies *"with a live card and no sign of moving"* are contacted on a short sequence (L753-757) |
 | Status and gates | Ian's ranking and the Tier 1 comparison (3 Sep); the gates as recorded in [[outbound]] and [[open-questions]] #78. No longer on hold from 21 Oct (L753-757). The gates were put to Ian on 21 Oct (Q9) and not answered: [[questions-for-ian]] Q45 |
-| Archetype name | Novosapien. Renamed on 21 Oct from `Full-Switch Migrator - The Blocked Escapee`, which carried "entrapment" and assumed a decision to move |
 | Dominant pain | Novosapien's interim word (21 Oct), because Ian said the last of the four words, "entrapment", needs changing (L703) and gave no replacement. It rests on his *"it's not a small thing to to move processor"* (L601) and *"people really don't want to move... processes"* (L591-597). [[questions-for-ian]] Q44 |
 | Core thesis | Ian, 2 Sep L764-768 (*"a bunch of knowns and experiences"*). Ian, 21 Oct: moving processor is a large step (L601); a company is in market when *"there's something that they've identified that they need"* that its processor *"doesn't give them"* (L613). The rest is Novosapien |
 | Primary industry and verticals | Ian, 21 Oct L681-691: every vertical carries every ICP. Earlier: 2 Sep L824, L830. The list is the union of the four market profiles, without traditional banks; `Travel and expense` and `Accounts payable` are still our inference |
@@ -112,5 +111,4 @@ From the 27 Aug offer session record (no transcript) and the offer's step 12. No
 | **"The risk of the move" as the dominant pain.** Novosapien's interim word. [[questions-for-ian]] Q44 | The writer leads every message on it |
 | **The processor ratings:** which processors TXN rates as legacy and which as top tier. Ian gave one legacy example on 21 Oct (L597). [[questions-for-ian]] Q47 | The incumbent weight works only when TXN supplies the ratings and the research can find who the company is live with. Not checked: whether the workforce can take such a list today |
 | **Ian's score order, layer 2:** a company with no live card *"should score higher"* (21 Oct L573), and a live program is *"not... the highest level of ICP"* (L601) | A grade is set within one ICP, so this definition cannot rank ICP 4 below the others. The short sequence carries part of it. Open for George |
-| **Ukraine and Switzerland in the geography.** The mark-down names Ukraine from Ian's 9 Oct email; on 21 Oct he listed *"Middle East, Africa, Asia, whatever it is"* (L653). Switzerland is in Europe but not in the EEA; Ian did not answer it (Q3) | Novosapien's reading, for George to confirm |
 | **The lead buyer** (the CTO lead is our proposal) | Not part of the ICP structure. It goes to the personas |

@@ -70,7 +70,7 @@ Companies and types that a sourcing run leaves out. Exclusions that need researc
 | BIN sponsors (for example Paynetics, DiPocket, Modulr, Transact Payments, Railsr): TXN works with them directly, outside outreach | Named list | `[Ian, 2 Sep L642-645; §6]` |
 | Card issuer processors that compete with TXN, and TXN's owners Direct Transact and Paycorp | Named list | `[Derived, §6]` |
 | Marqeta clients removed by Ian: Payhawk, Capital on Tap, Tymit, Zilch, Zopa Bank, Trading 212, Raiffeisen Digital Bank (not the other Raiffeisen group banks) | Named companies | `[Ian, 9 Oct email]` · only these seven, as Ian's own judgement; other Marqeta clients are sourced and scored `[Ian, 21 Oct L563-577]` |
-| Other companies removed by Ian: ClearBank, Allica Bank, Altery (Mastercard), ZEN.COM (Asia, Ukraine), Outpayce, of Amadeus ("Amadeus won't go with us"), WiZink, Soldo (Ian's previous company), Ecommpay (already engaged) | Named companies | `[Ian, 9 Oct email]` · reasons for ClearBank, Allica Bank, WiZink `[Gap]` · the reasons for Altery and ZEN.COM no longer hold after 21 Oct (L609-613, L653): restore them? `[Gap]` |
+| Other companies removed by Ian: ClearBank, Allica Bank, Altery (Mastercard), ZEN.COM (Asia, Ukraine), Outpayce, of Amadeus ("Amadeus won't go with us"), WiZink, Soldo (Ian's previous company), Ecommpay (already engaged) | Named companies | `[Ian, 9 Oct email]` · reasons for ClearBank, Allica Bank, WiZink `[Gap]` · Altery and ZEN.COM stay excluded on Ian's instruction `[Ian, 9 Oct email]` |
 | Companies TXN is already talking to | Named companies | `[Gap]`: list requested from Ian |
 
 ## Gaps to settle
@@ -79,5 +79,5 @@ Companies and types that a sourcing run leaves out. Exclusions that need researc
 |---|---|
 | Travel and expense, and accounts payable, as verticals | Our inference from the expense management vertical. Ian's list names only expense management. Since 21 Oct they are also in every ICP's Ideal Verticals |
 | The software industries | Our inference, so that expense platforms listed as software are not missed |
-| The UK's place in the order (Q13); Ukraine and Switzerland in the geography; Altery and ZEN.COM | As P-1 |
+| The UK's place in the order (Q13) | As P-1 |
 | Every keyword list | Not tested yet |

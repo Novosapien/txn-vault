@@ -39,7 +39,7 @@ status: draft, 19 Oct 2026, revised after the source audit; revised 21 Oct 2026 
     - **Tech Stack Signal:** The website's integrations or careers pages name a core banking or ledger platform (`Mambu`, `Thought Machine`, `10x`, `Tuum`) and no card issuer processor, or name a KYC vendor (`Onfido`, `Sumsub`, `Veriff`).
 - **Tier 3: Firmographics (20% Weight)**
     - **Employee Count (Range):** `Any`. Headcount does not rank this ICP: a company of any size is in scope, including companies with fewer than 10 people.
-    - **Geography (Ideal):** `EEA` and `United Kingdom`, with `Poland`, `Czech Republic`, `Romania` and `Hungary` first. TXN contracts only with companies in Europe or the UK. Where the cards may be issued is the BIN sponsor's decision, not TXN's. A company that publishes that its card will be issued for markets outside Europe and the UK (for example Asia, the Middle East or Africa), or for Ukraine, ranks lower here. It is not disqualified. Do not try to identify the licensed issuer.
+    - **Geography (Ideal):** `EEA` and `United Kingdom`, with `Poland`, `Czech Republic`, `Romania` and `Hungary` first. TXN contracts only with companies in Europe (Switzerland included) or the UK. Where the cards may be issued is the BIN sponsor's decision, not TXN's. A company that publishes that its card will be issued for markets outside Europe and the UK (for example Asia, the Middle East or Africa), or for Ukraine, ranks lower here. It is not disqualified. Do not try to identify the licensed issuer.
 
 **4. Disqualification Criteria (Anti-Signals)**
 
@@ -92,5 +92,4 @@ Connects observable signals to the fear of a company that must choose a processo
 | Gap | Why it matters |
 |---|---|
 | **A bank with no card: ICP 1 or ICP 3?** Ian named "banking" as card-essential (3 Sep L901). On 21 Oct he set banks as a low priority for later (L669), but did not say which ICP a bank with no card belongs to | Matters when banks are revisited. Until then every ICP grades a traditional bank D |
-| **Ukraine and Switzerland in the geography.** The mark-down names Ukraine from Ian's 9 Oct email; on 21 Oct he listed *"Middle East, Africa, Asia, whatever it is"* (L653). Switzerland is in Europe but not in the EEA; Ian did not answer it (Q3) | Novosapien's reading, for George to confirm |
 | **The economic buyer** (founder or CFO) | Not part of the ICP structure. It goes to the personas |

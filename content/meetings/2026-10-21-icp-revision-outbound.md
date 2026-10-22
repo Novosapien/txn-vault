@@ -116,7 +116,7 @@ A weak incumbent is itself a signal. Proof points surface mostly on LinkedIn, an
 
 **Decided.** Two layers. First, TXN contracts only with companies in Europe or the UK. Second, the BIN sponsor decides where cards may be issued. On published non-European issuance, mark the company down (weight). Do not exclude it, and do not try to identify the licensed issuer.
 
-**Left open.** Two parts of the written question were not asked: Switzerland, and a company with no card yet whose customers are mostly outside Europe (nearest: Q13).
+**Covered by the answer.** Switzerland is in Europe, so it falls inside the contracting layer. A company whose cards are issued outside Europe follows the issuance layer: marked down, not excluded.
 
 **Files.** The four ICPs (the geography signal, and George's D4); [[market-profiles]]; [[questions-for-ian]].
 
@@ -285,7 +285,7 @@ These are George's decisions of 21 October, made after the call. They are not Ia
 
 **Parts of the call questions with no answer and no new number:**
 - Q2: when Mastercard certification comes; which scheme a message names.
-- Q3: Switzerland; a company with no card yet whose customers are mostly outside Europe.
+- Q3: none left open (Switzerland is in Europe; issuance outside Europe is a mark-down).
 - Q9: the number of touches for ICP 4.
 - Q11: which BIN sponsors TXN has today, and how many.
 - Q12: a reply line for when a prospect calls the silence on pricing opaque.

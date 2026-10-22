@@ -61,8 +61,6 @@ Each profile ends with the same **Exclusions** section (decided by George, 19 Oc
 |---|---|---|
 | A bank with no card: ICP 1 or ICP 3? The priority is answered: low priority for later (Ian, 21 Oct L669) | P-1, P-3 | [[questions-for-ian]] Q4, answered in part. Matters when banks are revisited |
 | The UK's place in the order | All | Q13 |
-| Ukraine in the issuance mark-down (from Ian's 9 Oct email), and Switzerland (in Europe, not in the EEA) | All | Novosapien's reading of Q3; for George to confirm |
-| Altery (removed on 9 Oct for Mastercard) and ZEN.COM (removed for Asia and Ukraine): the 21 Oct rulings remove both reasons. Restore them to sourcing? | All | For George or Ian |
 | Use cases beyond the twelve sub-sectors | P-3, P-4 | Q14 |
 | BaaS: prospect or competitor category | P-3 | Q24 |
 | Closed-loop cards | P-4 | Q22 |

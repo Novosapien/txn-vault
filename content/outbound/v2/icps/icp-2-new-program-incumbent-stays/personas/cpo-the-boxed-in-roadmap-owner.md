@@ -11,7 +11,7 @@ status: draft, 19 Oct 2026, reworked from personas-icp-2.md (4 Sep); updated aft
 
 ### CPO, Head of Product or Head of Payments (Champion, leads the deal)
 
-**1.0 Archetype Name** The Expansion Roadmap Owner
+**1.0 Archetype Name** The Boxed-In Roadmap Owner
 
 **2.0 Role & Functional Identity**
 - **2.1 Primary Function:** Owns the roadmap for the company's next card program, a new segment, a new region or a second card product, while the first program stays where it is.
@@ -96,7 +96,6 @@ Chief Product Officer · Head of Product · Head of Payments · Head of Cards ·
 | Experiences carried from the first launch (§3, §4, §7) | Ian, 2 Sep L764-768: they arrive *"with a bunch of knowns and experiences they've had that they're going to want to make sure they're not going to have with you again"*. The revised [[icp-2-new-program-incumbent-stays\|ICP 2]] core thesis |
 | How the pains are framed | Ian, 3 Sep L669-679 (*"it's the latter"*): TXN's strengths are stated and the current processor is never attacked. Pains are written as needs of the new program, as in the ICP 2 pain mapping. Ian, 21 Oct ([[2026-10-21-icp-revision-outbound]] L727-L735): a second program does not imply unhappiness, *"you could be perfectly happy with a processor"* (L727); the public signal is announced investment to launch into new markets or a new product (L731-L735) |
 | Sections 2, 3, 4, 6, 8, 9, 10 | Derived by Novosapien from ICP 2, the offer and the 4 Sep persona. No buyer was interviewed |
-| Archetype name | Novosapien, 21 Oct; replaces "The Boxed-In Roadmap Owner", which could read as boxed in by the current processor |
 | §6 attempts, §8 first trigger, §5.1 (21 Oct) | §6 is Novosapien wording on Ian's points: the needs of a new program (L731: where they can serve regionally, the type of card, the functionality); the experiences they will not repeat (2 Sep L764-768) and engineering capacity (the champion scaffold §5); people added per program (ICP 2 pain mapping, row 3). §8: Ian's public signal (L731-L735). §5.1: a BIN sponsor in Europe covers all of Europe (L777) |
 | Section 5 pains | Derived from the ICP 2 pain mapping (rows 1, 2 and 4) and from Ian's champion scaffold ([[persona-champion]] §5: a new processor could become the next constraint; engineering capacity consumed by integration rather than features). Every quote is derived |
 | Section 7 objections | Ian's champion scaffold ([[persona-champion]] §7): launch in several countries, with the extra cost and engineering effort. "The thing we need next" follows the same scaffold's §5. The other objections are from the 4 Sep persona. The BIN sponsor objection: Ian, 21 Oct L787, L797 |
@@ -110,7 +109,6 @@ Chief Product Officer · Head of Product · Head of Payments · Head of Cards ·
 |---|---|
 | Real buyer language for the quotes | Every quote is derived; Ian and Dorte should correct them |
 | Answered 21 Oct: is the buyer unhappy with the current processor? Not usually: *"you could be perfectly happy with a processor"* (L727) | §3, §5 and §6 carry the new program's needs and the lessons of the first launch, not grievances |
-| The archetype name | Renamed on 21 Oct to "The Expansion Roadmap Owner" (Novosapien). The file keeps its old name so that the links hold. Rename the file only together with the links in the ICP 2 file |
 | Triggers and information diet | Derived from the ICP signals and role conventions, not from real deals |
 
 ## What was cut from the 4 Sep version
@@ -160,5 +158,4 @@ Chief Product Officer · Head of Product · Head of Payments · Head of Cards ·
 | §10 (21 Oct, from v2) | "From scoping the new product down to fit, to launching the version that tested well" | It rested on the §6 attempt that was cut. Replaced by a metric framed as the new market's needs |
 | §2.2 (21 Oct, from v2) | "a roadmap where the constraint is external" | It read as the current platform. The constraint is the new program's needs (L703, L727-L731) |
 | §4 (21 Oct, from v2) | Added the announced expansion with the funding behind it | Ian's public signal (L731-L735) |
-| §1 (21 Oct, from v2) | "The Boxed-In Roadmap Owner" | It could read as boxed in by the current processor. Ian: *"It doesn't mean they're unhappy with a processor"* (L735) |
 | Heading, §7, §12 (21 Oct, from v2) | "Head of Payments" added to the heading; "VP Product, Payments" replaced with "Head of Payments"; the BIN sponsor objection added | Ian, 21 Oct L805 (titles) and L787 (the BIN sponsor question) |

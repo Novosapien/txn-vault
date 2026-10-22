@@ -26,7 +26,7 @@ status: draft, 19 Oct 2026; revised 21 Oct 2026 after the call with Ian
 - **A guide, not a strict filter.** Search by where the company operates or employs people, not only by its HQ, so a local subsidiary of a parent outside the EEA is found `[Ian, 2 Sep L672-676]`. The HQ sets the order only.
 - Germany: LinkedIn only, no cold email (UWG) `[TXN, prospecting-process.md:319]`.
 - A subsidiary of a parent outside the EEA is not excluded `[Ian, 2 Sep L672-676]`.
-- TXN contracts only with companies in Europe or the UK `[Ian, 21 Oct L637]`. A company with no entity there takes an anti-signal in every ICP, on evidence only.
+- TXN contracts only with companies in Europe (Switzerland included) or the UK `[Ian, 21 Oct L637]`. A company with no entity there takes an anti-signal in every ICP, on evidence only.
 - Where the cards are issued is the BIN sponsor's decision, not TXN's. Published card issuance outside Europe and the UK, or for Ukraine, is a mark-down in each ICP, not an exclusion, and the workforce does not try to identify the licensed issuer `[Ian, 21 Oct L641-657]` · Ukraine `[Derived]` · Switzerland `[Gap]`.
 
 ## Industries
@@ -82,7 +82,7 @@ Companies and types that a sourcing run leaves out. Exclusions that need researc
 | BIN sponsors (for example Paynetics, DiPocket, Modulr, Transact Payments, Railsr): TXN works with them directly, outside outreach | Named list | `[Ian, 2 Sep L642-645; §6]` |
 | Card issuer processors that compete with TXN, and TXN's owners Direct Transact and Paycorp | Named list | `[Derived, §6]` |
 | Marqeta clients removed by Ian: Payhawk, Capital on Tap, Tymit, Zilch, Zopa Bank, Trading 212, Raiffeisen Digital Bank (not the other Raiffeisen group banks) | Named companies | `[Ian, 9 Oct email]` · only these seven, as Ian's own judgement; other Marqeta clients are sourced and scored `[Ian, 21 Oct L563-577]` |
-| Other companies removed by Ian: ClearBank, Allica Bank, Altery (Mastercard), ZEN.COM (Asia, Ukraine), Outpayce, of Amadeus ("Amadeus won't go with us"), WiZink, Soldo (Ian's previous company), Ecommpay (already engaged) | Named companies | `[Ian, 9 Oct email]` · reasons for ClearBank, Allica Bank, WiZink `[Gap]` · the reasons for Altery and ZEN.COM no longer hold after 21 Oct (L609-613, L653): restore them? `[Gap]` |
+| Other companies removed by Ian: ClearBank, Allica Bank, Altery (Mastercard), ZEN.COM (Asia, Ukraine), Outpayce, of Amadeus ("Amadeus won't go with us"), WiZink, Soldo (Ian's previous company), Ecommpay (already engaged) | Named companies | `[Ian, 9 Oct email]` · reasons for ClearBank, Allica Bank, WiZink `[Gap]` · Altery and ZEN.COM stay excluded on Ian's instruction `[Ian, 9 Oct email]` |
 | Companies TXN is already talking to | Named companies | `[Gap]`: list requested from Ian |
 
 ## Gaps to settle
@@ -91,6 +91,4 @@ Companies and types that a sourcing run leaves out. Exclusions that need researc
 |---|---|
 | A bank with no card: a first-program or an industry-inference target? The priority is answered: low priority for later (Ian, 21 Oct L669; questions-for-ian Q4) | Matters when banks are revisited |
 | The UK's place in the order (Q13) | Sets the sourcing order |
-| Ukraine in the issuance mark-down (from Ian's 9 Oct email), and Switzerland (in Europe, not in the EEA) | Novosapien's reading of Ian's 21 Oct answer (Q3); for George to confirm |
-| Altery and ZEN.COM: restore them to sourcing, now that their 9 Oct reasons no longer hold? | For George or Ian |
 | Every keyword list | Not tested yet |
