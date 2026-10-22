@@ -11,7 +11,7 @@ status: draft, 19 Oct 2026, reworked from personas-icp-4.md (4 Sep); loads with 
 
 ### CTO or Head of Engineering (Approver, technical veto, proposed lead)
 
-**1.0 Archetype Name** The Escape Planner
+**1.0 Archetype Name** The Migration Owner
 
 **2.0 Role & Functional Identity**
 - **2.1 Primary Function:** Owns the question that decides any move: whether moving a live card program is survivable.
@@ -98,6 +98,7 @@ Chief Technology Officer · VP Engineering · Head of Payments Engineering · Di
 |---|---|
 | Role (approver, technical veto, proposed lead) | The ICP 4 buying group in [[icp-definition]] §10 (Novosapien drafting, 3–4 Sep): the CTO leads, proposed and **not confirmed by Ian**. The technical veto: the buying-group roles in [[offer]] Section 3 (`S2`) and Ian's primary-user scaffold ([[persona-primary-user]] §3.4) |
 | Sections 2, 3, 4, 6, 9, 10 | Derived by Novosapien from ICP 4, the offer and the 4 Sep persona. No buyer was interviewed |
+| Archetype name | Novosapien, 21 Oct: "The Migration Owner", a neutral name until Ian gives ICP 4's worry in his own words ([[questions-for-ian]] Q44). It replaces "The Escape Planner", which carried "entrapment" |
 | Section 5 pains | Derived from the ICP 4 pain mapping and [[offer]] P10 (the CTO owns a migration risk they cannot fully scope from inside the current processor). The data question: [[offer]] step 12 (the client owns extracting its data). Every quote is derived |
 | Section 7 objections | "Where does state live": Ian's primary-user scaffold ([[persona-primary-user]] §7). Migration tooling: Ian's gate, 3 Sep, *"they don't expect a 15 year old approach"* (recorded in [[icp-definition]] §10). The accreditation question: the answer is in [[messaging-protocol]] (M8). The rest: Novosapien, from the 4 Sep persona |
 | Section 8 triggers | The hire whose remit reads as migration, and the new head of technology: the state modifiers in [[icp-4-full-switch]]. The unmet requirement: Ian, 21 Oct L613 (*"because there's something that they've identified that they need that Marquette doesn't give them, then they're in market"*). The change of scheme: Ian, 21 Oct L609 (*"people might be so pissed off that they choose to leave to move scheme and processor at the same time"*). The rest derived |
@@ -135,6 +136,7 @@ Chief Technology Officer · VP Engineering · Head of Payments Engineering · Di
 | 9.0 | Removed "Reachable by a message about migration mechanics specifically", and the line after it on which topics are noise | A message instruction that repeated 11.0 |
 | 11.0 | Cut from seven sentences to three. Removed: the consolidation point (processing, controls, authentication and settlement in one platform); "say nothing about their incumbent"; the instruction to acknowledge the pre-launch position; the accreditation position; "never offer to share the reissue cost" | 11.0 holds the angle and one claim. The consolidation point stays in 10.0 and in the ICP 4 pain mapping. The rest are message rules, held in [[messaging-protocol]] |
 | Header, status, description (21 Oct, from v2) | "On hold" replaced with "Loads with ICP 4, on a short sequence" | Ian: contact them, on a short sequence (L753-L757). George, 21 Oct: ICP 4 takes any company with a live card and no visible new program. The gates stay open (Q45) |
+| 1.0 (21 Oct, from v2) | "The Escape Planner" replaced with "The Migration Owner" | Ian said "entrapment" needs changing (L703), and the old name carried it. The new name is Novosapien's until Q44. The file keeps its old name so that the links hold |
 | 2.1, 2.3, 3.0, 4.0, 5.2, 6.0 (21 Oct, from v2) | Wording that assumed the move was decided: "not whether to move", "leads the evaluation", "argued for the move", "Now that it is real", "keeps the project in the slow lane", "I argued for this", "is treating this as procurement", "did not change the decision to move", "made this a full switch" | ICP 4 now includes companies with no sign of moving (George, 21 Oct) |
 | 8.0 (21 Oct, from v2) | Added the unmet requirement that puts the company in the market, and the wish to change card scheme | Ian, 21 Oct L613, L609. Neither names a processor or a scheme |
 | 11.0 (21 Oct, from v2) | "This buyer has already decided to move" | ICP 4 now includes companies with no sign of moving. Ian: a message to an unhappy company is *"kind of the right timing"* (L757) |

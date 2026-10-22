@@ -21,7 +21,7 @@ status: draft, 19 Oct 2026, revised after the source audit; revised 21 Oct 2026,
 
 ### ICP Definition: Full Switch
 
-**1. ICP Archetype Name:** `Full-Switch Migrator - The Blocked Escapee`
+**1. ICP Archetype Name:** `Full-Switch Candidate - The Established Program Owner`
 
 **2. Core Thesis:** A company that runs a live card program and shows no new program, so the existing program is the subject, and the sale is a full switch of that program, its cardholders and data, to a new processor. Most such companies are not looking to move, because moving processor is a large step; a few are, often because they need something the current setup does not give them. Those that look arrive with clear requirements and with experiences they do not want to repeat. The question they weigh is whether a move is survivable for a live cardholder base: the cardholders, the reissue question and a route that keeps live customers' cards working. Their single dominant pain is **the risk of the move**.
 
@@ -77,6 +77,7 @@ Connects observable signals to what a company needs before it can move a live ca
 |---|---|
 | The status itself | Ian, 3 Sep L489: *"a full switch"*. Widened on 21 Oct by George's decision D2: every company with a live card and no visible new program. Ian ruled that companies *"with a live card and no sign of moving"* are contacted on a short sequence (L753-757) |
 | Status and gates | Ian's ranking and the Tier 1 comparison (3 Sep); the gates as recorded in [[outbound]] and [[open-questions]] #78. No longer on hold from 21 Oct (L753-757). The gates were put to Ian on 21 Oct (Q9) and not answered: [[questions-for-ian]] Q45 |
+| Archetype name | Novosapien. Renamed on 21 Oct from `Full-Switch Migrator - The Blocked Escapee`, which carried "entrapment" and assumed a decision to move |
 | Dominant pain | Novosapien's interim word (21 Oct), because Ian said the last of the four words, "entrapment", needs changing (L703) and gave no replacement. It rests on his *"it's not a small thing to to move processor"* (L601) and *"people really don't want to move... processes"* (L591-597). [[questions-for-ian]] Q44 |
 | Core thesis | Ian, 2 Sep L764-768 (*"a bunch of knowns and experiences"*). Ian, 21 Oct: moving processor is a large step (L601); a company is in market when *"there's something that they've identified that they need"* that its processor *"doesn't give them"* (L613). The rest is Novosapien |
 | Primary industry and verticals | Ian, 21 Oct L681-691: every vertical carries every ICP. Earlier: 2 Sep L824, L830. The list is the union of the four market profiles, without traditional banks; `Travel and expense` and `Accounts payable` are still our inference |
