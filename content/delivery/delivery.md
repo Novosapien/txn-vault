@@ -14,7 +14,8 @@ Delivery status for the engagement. Where [[commercial]] records what was sold a
 
 | Flight plan | Scope | Generated |
 |-------------|-------|-----------|
-| [flightplan-txn-2026-09-16.html](flightplan-txn-2026-09-16.html) | **Six pages.** Ian's hands-on verdict and the speed remediation, the flight plan diagram moved to the top of page one, the Control Center reframed as included in the delivery | **16 Sep 2026, current** |
+| [flightplan-txn-2026-10-26.html](flightplan-txn-2026-10-26.html) | **Thirteen pages.** The fifteenth issue, planned backwards from the 16 November launch. New Launch page carrying the frozen build definition, the ordered must-land list and the risk register; new Hosting page carrying the request to Direct Transact, what has been built against it and the fallbacks. Corrects the 16 October claim that the AI node is built. The 15 and 16 October issues are superseded and were never issued | **26 Oct 2026, current** |
+| [flightplan-txn-2026-09-16.html](flightplan-txn-2026-09-16.html) | Superseded. **Six pages.** Ian's hands-on verdict and the speed remediation, the flight plan diagram moved to the top of page one, the Control Center reframed as included in the delivery | 16 Sep 2026 |
 | [flightplan-txn-2026-09-15.html](flightplan-txn-2026-09-15.html) | Superseded. | **Six pages.** Both GTM configurations closed, content generation and warming starting, and the pilot completion date passed with no recorded acceptance | **15 Sep 2026, current** |
 | [flightplan-txn-2026-08-28.html](flightplan-txn-2026-08-28.html) | Superseded. | **Six pages.** The pilot functionally complete, TXN into the build on 1 September, the UAT split, and the acceptance date with nowhere to sit | **28 Aug 2026, current** |
 | [flightplan-txn-2026-08-27.html](flightplan-txn-2026-08-27.html) | Superseded. | **Six pages.** Carries the **workflow-slate build** (13 SOPs, 43 tools, 19 gated writes), the corrected Content Workforce schedule, and the **Stackworkz code-sharing** session | **27 Aug 2026, current** |
@@ -153,6 +154,21 @@ Reviews of the client's own console feedback queue, read from `txn.feedback` and
 > **And George asked for fallbacks agreed before the request goes in**, not after a refusal: *"making sure that if that's not the case, that we've got a fallback, so that if they say no, we're not sat there thinking, what are we going to do."* No fallback is written down yet (#124).
 >
 > **One governance item that needs an owner.** Ian asked for assurance *"that this thing can't go rogue and do anything it's not meant to"*. George offered malicious-persona testing at volume and volunteered that *"there's bound to be one out of a thousand where it is able to do something"*. There is no threshold, no owner and no date on that work, and it covers the Console agent. [[open-questions]] #123.
+
+> [!important] The flight plan is reissued for 26 October, and the AI-node error is corrected (26-10-2026)
+> **The 15 and 16 October issues are superseded and were never issued to TXN.** They were written before the launch date existed and before the hosting position was corrected, and the 16 October issue carried the claim at #70 that the AI node *"is already built. What remains is access."* The 26 October issue replaces them and states the correction on its Home page rather than quietly dropping it. **The outstanding correction recorded on 20 October against Brett is now closed.**
+>
+> **Two new pages, both because the launch changed what the plan is for.** A **Launch page** carrying the frozen build definition, an explicit "not in this build" list, the ordered must-land sequence with owners, and the risk register reported in full. A **Hosting page** carrying what Direct Transact is being asked for, what Novosapien has already built against it (the hosted specification at its sixth revision and container definitions for both services, committed 25 October), and the fallbacks chosen in advance of a refusal.
+>
+> **Three positions taken in the issue that are Novosapien's judgement rather than TXN's instruction**, and that should be read as such:
+>
+> | Position | Reasoning |
+> |---|---|
+> | **The hosting pack should go this week** | The hold was right for a day or two and is not right for a week. Every day it is held comes out of the only buffer in the plan, and #119 is the risk that cannot be recovered by working harder |
+> | **If the node is not provisioned by the end of w/c 2 November, propose launching on Novosapien's hosted environment behind TXN's domain** and migrating after launch | It protects the date at the cost of a second deployment. It needs Ian's and Dorte's agreement, so it is named now rather than proposed in the final week |
+> | **The first month of live running has no service levels** | The product goes live 16 November and the SLA commences 16 December, so 16 November to 15 December is covered by Phase 2, which promises a team and not a response time. If TXN wants service levels from launch, the SLA needs an earlier commencement |
+>
+> **And the guides journey is reported as being built against an unconfirmed displacement.** Ian has not agreed moving the customer onboarding agent to Priority 2, and the first journeys were built on 19 October anyway because the launch is three weeks out. The issue says so rather than presenting it as settled. [[open-questions]] #114, #116.
 
 > [!important] An internal demo becomes the gating milestone, with no date on it (15-10-2026)
 > **Ian wants the build shown to TXN's own leadership before it goes near the market** ([[2026-10-15-agentic-standup]]), and the reason is that they are already selling it.
