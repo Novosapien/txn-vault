@@ -136,6 +136,22 @@ Reviews of the client's own console feedback queue, read from `txn.feedback` and
 >
 > **A correction to the flight plan.** The 16 October flight plan says that the AI node *"is already built. What remains is access."* The node is not built. The MSA reviewer brief says the same. Both need a correction from Brett. #70.
 
+> [!warning] The demo slips to 2 November, and a two-week delay is already expected (27-10-2026)
+> ([[2026-10-27-agentic-standup]]). Ian was not on the call.
+>
+> | Item | Position |
+> |---|---|
+> | **Demo to DT** | **Monday 2 November at the earliest**, outside the 28 to 30 October window (#115). DT's South Africa side is busy with another release |
+> | **What the demo is** | A **courtesy**: what DT will host, then the architecture. Not a sales pitch, and no opening for DT to comment on behaviour |
+> | **Infrastructure documents** | With Michael, **to DT this week**. The hosting request held on 22 October is moving (#119) |
+> | **LLM section** | **Held back on purpose**, for an internal call with Dörte, Ian and Novosapien, **Thursday 29 October, 3 to 4pm** |
+> | **Stackworkz** | Dörte expects a **two-week delay** from DT's code standards (#125) |
+> | **Loom** | Fallback recordings done. A walkthrough goes out after the demo for anyone absent |
+>
+> **The date is now "very tight".** Dörte: *"at the moment we're very tight already till the 16th."* The two-week delay is her expectation, not a notice from Stackworkz, and she has challenged DT on it: *"You're just hosting AI. You're not owning the code as such."* Whether it sits inside or outside the 16 November plan was not said. [[open-questions]] #125.
+>
+> **Why the demo stopped being a pitch.** Dörte: *"We don't want them to give any input on how it's behaving because this is set by us... It's too late."* Michael: DT *"have a habit of saying things and trying to change things."* The one failure that must not happen is the one from 15 October: *"connection issues and cold start."*
+
 > [!note] The co-pilot is testable, and the DT request is held on purpose (22-10-2026)
 > ([[2026-10-22-agentic-standup]])
 >
