@@ -6,6 +6,11 @@ description: "Index of the TXN commercial pack: proposals, Pilot Order, MSA and 
 
 The commercial pack for the Novosapien <> TXN engagement: the proposals that define what we are selling, and pointers to the legal instruments that paper it. Contracts themselves live in [legal/](../legal/) and are linked below so reviewers and agents can reach everything from one place.
 
+> [!note] Hosting liability goes into the agreement, and the demo video becomes a sales tool (27-10-2026)
+> ([[2026-10-27-agentic-standup]]) **Liability.** Dörte expects DT to ask about cyber security from the hosting side: *"where is that all sitting, are you liable because you're hosting"*. Her answer: *"that's down for Ian and I to make sure that the agreement is very tight with the roles and responsibilities."* No agreement is named, and there is still no signed data processing agreement (#103).
+>
+> **Video.** The Loom walkthrough made as a demo fallback goes out afterwards, and Dörte: *"we also could use it as a sales tool going forward."* George proposed videos on the website for what is not live on 16 November, such as the agent inbox, because people *"find it hard to conceptualise"* an agent until they see one. Not decided.
+
 > [!note] Dörte: publish the questions the co-pilot gets asked (22-10-2026)
 > Off the back of George joking that someone will ask the co-pilot how to make spaghetti bolognese, **Dörte proposed turning it into content** ([[2026-10-22-agentic-standup]]): *"I think we should put that in, one day a week our co-pilot does something funky. So like **Monzo has a LinkedIn account** with these, from fancy tech, where everyone is talking about [it]."* Ian extended it to *"the questions they got asked"*.
 >
