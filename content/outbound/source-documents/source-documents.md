@@ -47,7 +47,7 @@ Five of Ian's documents already had a home in the vault before this: [[icp-defin
 | `TXN_GTM_Persona_Economic_Buyer_v0.1.docx` | Persona: Economic Buyer v0.1 | [[persona-economic-buyer]] |
 | `TXN_GTM_Persona_Primary_User_v0.1.docx` | Persona: Primary User v0.1 | [[persona-primary-user]] |
 | `TXN_GTM_Qualification_Matrix_v0.7.xlsx` | Qualification Matrix v0.7 (the scored register) | [[qualification-matrix]] |
-| `txn branding presso 25-06-2025.pdf` | TXN branding presentation, 25 June 2026 | not mirrored |
+| `txn branding presso 25-06-2025.pdf` | **TXN brand development deck, 25 June 2025**, 43 slides, by Bronwyn Watt with the agency The Looking Glass. Brand strategy, archetypes, personality, tone of voice, campaign lines and several visual routes shown as applications. **Not a brand manual:** no palette, type, clear-space or misuse specification | Read 05-11-2026. Copied into the corporate identity pack at `shared/clients/txn/CI/09-client-brand-deck/` and written up as `txn-brand-platform-2026-11-05.html` |
 
 ## Reading order Ian recommends
 
