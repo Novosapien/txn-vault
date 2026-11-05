@@ -10,6 +10,7 @@ sources:
   - "[[2026-10-15-agentic-standup]]"
   - "[[2026-10-22-agentic-standup]]"
   - "[[2026-10-20-agentic-standup]]"
+  - "[[2026-10-27-agentic-standup]]"
 description: "Sub-component spec for the portal chat: semantic doc discovery, grounded Q&A with source references, a deterministic fallback, and live sandbox execution"
 ---
 
@@ -186,6 +187,19 @@ It is **deliberately light**: Ian's explicit steer is to invest in the [[docs-mc
 > **Where the chat actually lives:** mostly the browser, because Knowledge Hub chats are short. *"Whereas the agent in the console, although it appears it's doing one tool call, behind the scene it might be 10 or 20."* **The MCP server raises nothing**, since its data is *"only really going to be information about the docs"*.
 >
 > **No per-user rate limit yet.** Ian asked about cost exposure; George called it tractable and deprioritised behind look, feel and tone. See #97.
+
+> [!important] The harness scores climb, the demo script is agreed, and approvals collapse to one (27-10-2026)
+> **The harness has results** ([[2026-10-27-agentic-standup]]). Hasan has run Michael's question pack since 23 October. Scores started *"extremely low"*: a partner asking how to issue a card got *"random facts"*. **Guardrails that keep the agent to the key facts**, and changes to how it lays out answers, brought most cases to *"doing extremely well"*, split by persona (a partner, a prospect and others). The harness flags failures for a human to check, because some are only wording. **Grey "held" cases are excluded**: Michael's questions the docs cannot answer yet, waiting on values from DT. **It is reusable**, with more personas and cases to come, and a Console version is planned. Still no pass mark (#117).
+>
+> **The approval clicks go.** In the sandbox flow the user approves every step. George: *"here's what I'm going to do. Do you approve it? Still going to show the payloads... that **progressive disclosure** where it's going to show the higher level part, and then if the user wants more detail they can get it."* One approval for a stated plan. This is close to the confirm-and-advance pattern Ian asked for at #116, applied to execution rather than explanation.
+>
+> **The demo script, agreed with Michael.** Three flows typed live: what TXN does; *"I want to give my customer a card but I've never done this"*; then a sandbox walkthrough into the lost card flow, node code, and **the markdown export pasted into Claude**. Michael: *"just showing the ease of developing into, I think, is a big one."* **Added on the call:** copy to Claude or Perplexity, and **the docs MCP server and the LLMs.txt** (#110). Architecture goes at the end. George exports the chats for TXN to read.
+>
+> **Some latency is the API, not the model.** *"It's not the model being slow, it's just sending the requests."* Holding text before the call is the plan.
+>
+> **Retention: 48 or 72 hours?** George said personal data is stored *"for what was it 48 hours"*, then stripped. The figure agreed on 22 October was **72 hours**, aligned to the sandbox drop, and nobody corrected it. **This page keeps 72 hours** until it is confirmed. Review of the stored chats is manual: there is no continual learning.
+>
+> **How DT see it is open.** Without the admin vault link DT cannot find the build, or Novosapien can set up an environment with a single login. TXN's choice.
 
 ## 2. What Needs to Happen?
 

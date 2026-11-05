@@ -51,6 +51,15 @@ Cross-cutting technical decisions that affect the whole product. This directory 
 >
 > **One real unknown: Azure Front Door and server-sent events.** It already fronts the API, and the nodes *"sort of sit to the side, but they are governed by the same thing"*, so the AI node would inherit it. George says a proper solution exists but did not say what it is. [[open-questions]] #124.
 
+> [!note] The model is named, the LLM section is held back, and nobody is monitoring (27-10-2026)
+> ([[2026-10-27-agentic-standup]])
+>
+> **The model, on the record for the first time.** George: a Gemini Flash model, *"available for you through Azure"* (the transcript renders the version as "3.8 8 flash"). If DT mandate another model, the test cases are run again and fixed. That is the first concrete answer toward the model list owed at #70.
+>
+> **The LLM section is held back from DT on purpose.** The infrastructure documents go to DT this week without it: fallback, where data goes, and whether only Azure models are allowed. Brett: *"That could just light a fire in your data space."* Dörte, Ian and Novosapien settle it first, scoped to the Knowledge Hub, on Thursday 29 October.
+>
+> **Nobody is monitoring the AI layer yet.** Dörte: *"we want to know before a customer tells us something is not working."* Novosapien use Sentry. Michael: DT and Stackworkz have *"only what's built in Azure. They've got nothing else."* George will check the architecture document. With no support role for DT (#119), whoever is alerted when the agent fails is undecided. [[open-questions]] #126.
+
 ## Decisions
 
 _Cross-cutting calls made in client sessions._
