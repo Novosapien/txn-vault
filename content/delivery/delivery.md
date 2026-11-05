@@ -14,7 +14,7 @@ Delivery status for the engagement. Where [[commercial]] records what was sold a
 
 | Flight plan | Scope | Generated |
 |-------------|-------|-----------|
-| [flightplan-txn-v7-2026-11-05.html](flightplan-txn-v7-2026-11-05.html) | **Twelve pages**, eleven days from launch. Tables rather than narrative, no verbatim quotations, open actions dated from when each was raised; the demonstration page is retired. **Ian has asked for the launch to run as a test run on Novosapien's own Azure environment**, stood up by 11 November, which is the reason for the deviation from the node named in the Agreement. **Version 7 reconciles against the 3 November records:** the 29 October internal LLM call did not happen and the claim that it did is corrected; the model is Gemini called directly rather than through Azure; Direct Transact found no deal-breaker and owe a design and a cost model, both gated on Villi's questions with masking unanswered and no deployment time given; the API gate is 82 endpoints at 58 per cent; the Knowledge Hub build is finished; the first Stackworkz migration is done; and Novosapien support the AI code until TXN takes it over. | **5 Nov 2026, current** |
+| [flightplan-txn-v7-2026-11-05.html](flightplan-txn-v7-2026-11-05.html) | **Twelve pages**, eleven days from launch. Tables rather than narrative, no verbatim quotations, open actions dated from when each was raised; the demonstration page is retired. **Ian has asked for the launch to run as a test run on Novosapien's own Azure environment**, stood up by 11 November, which is the reason for the deviation from the node named in the Agreement. **Version 7 reconciles against the 3 November records:** the 29 October internal LLM call did not happen and the claim that it did is corrected; the model is Gemini called directly rather than through Azure; Direct Transact found no deal-breaker and owe a design and a cost model, both gated on Willie Olivier's questions with masking unanswered and no deployment time given; the API gate is 82 endpoints at 58 per cent; the Knowledge Hub build is finished; the first Stackworkz migration is done; and Novosapien support the AI code until TXN takes it over. | **5 Nov 2026, current** |
 | flightplan-txn-v3-2026-10-27.html | Superseded. The fifteenth issue, version 3. Not carried in the vault | 27 Oct 2026 |
 | [flightplan-txn-2026-09-16.html](flightplan-txn-2026-09-16.html) | Superseded. **Six pages.** Ian's hands-on verdict and the speed remediation, the flight plan diagram moved to the top of page one, the Control Center reframed as included in the delivery | 16 Sep 2026 |
 | [flightplan-txn-2026-09-15.html](flightplan-txn-2026-09-15.html) | Superseded. | **Six pages.** Both GTM configurations closed, content generation and warming starting, and the pilot completion date passed with no recorded acceptance | **15 Sep 2026, current** |
@@ -145,7 +145,7 @@ Reviews of the client's own console feedback queue, read from `txn.feedback` and
 > |---|---|
 > | **Demo to Steve and DT** | **Held 3 November.** Landed: *"It looks great."* Fallback videos not needed. #115 answered |
 > | **Hosting documents** | With DT, via Jack. *"Nothing that's really a deal-breaker"* |
-> | **DT's design and cost model** | **Not started.** Waits on Villi's questions, about five, by email (#127) |
+> | **DT's design and cost model** | **Not started.** Waits on Willie's questions, about five, by email (#127) |
 > | **Deployment time** | **Unknown**, deferred to a separate conversation |
 > | **UAT** | **Complete, not signed off.** All 82 launch endpoints tested, **58 percent passing**, most failures one back-end validation defect |
 > | **Code into Stackworkz** | First migration done. **Coding standards still owed** by Michael (#125) |
@@ -153,7 +153,7 @@ Reviews of the client's own console feedback queue, read from `txn.feedback` and
 > | **Internal LLM call** | **Did not happen.** Dörte preparing it |
 > | **Control Center demo to DT** | *"In the next few weeks"* |
 >
-> **Two weeks to launch and nobody can say how long deployment takes.** Ian asked; the answer was put off, and Ian named the room: *"Deafening silence. Understandably, this is what this is, this is the challenge."* The chain is Villi's questions, then Novosapien's answers, then DT's design and cost, then a deployment of unknown length, then checks. **Ian said 17 November**; every other record says the 16th, and this page keeps the 16th until it is confirmed.
+> **Two weeks to launch and nobody can say how long deployment takes.** Ian asked; the answer was put off, and Ian named the room: *"Deafening silence. Understandably, this is what this is, this is the challenge."* The chain is Willie's questions, then Novosapien's answers, then DT's design and cost, then a deployment of unknown length, then checks. **Ian said 17 November**; every other record says the 16th, and this page keeps the 16th until it is confirmed.
 >
 > **UAT reads worse than it is.** Michael: one defect *"will clearly wipe out 30% of the test cases. So we're not as far away as I thought originally."* DT now order defects by how visible they are at launch, and the Knowledge Hub only needs the YAML to be right, so back-end validation can follow.
 >
