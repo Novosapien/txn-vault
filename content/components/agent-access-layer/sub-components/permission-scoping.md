@@ -5,6 +5,8 @@ sources:
   - "[[01-06-2026-component-1-Agent-Access-Layer]]"
   - "[[2026-10-20-agentic-standup]]"
   - "[[2026-10-22-agentic-standup]]"
+  - "[[2026-11-03-dt-demo-and-infrastructure]]"
+  - "[[2026-11-03-agentic-standup]]"
 description: "How the layer decides which tools an agent gets per user per turn: the full Console permission list, narrowed by page and onboarding state, never widened"
 ---
 
@@ -88,6 +90,11 @@ Beyond the static permission set, the exposed tool set is further narrowed by **
 > Michael agreed. **The reason the profile model fails:** a per-profile skill set cannot express a per-user override, so it would diverge from the Console the moment anyone was given a custom permission. The rule is now subtractive: start from everything the user holds, remove what the agent must not do.
 >
 > **What this does not cover, and Ian asked for it.** The guard stops the agent widening its rights. It says nothing about the agent doing something the operator legitimately can do but did not want. Ian's assurance request and George's malicious-persona harness are at [[open-questions]] #123.
+
+> [!note] A blocked action becomes an approval request, and the JWT scope moves to card program (03-11-2026)
+> **Explained to DT** ([[2026-11-03-dt-demo-and-infrastructure]]). The two layers stand: the agent never sees a tool the user lacks, and the Control Center back end blocks anything that gets through. **New detail:** the block is a route, not a dead end. The error tells the agent the action was unauthorised, and it can raise an approval request to someone who can approve it, *"you need to speak to Sally for approval"*, the same path as without AI. Separately, some actions always need the user's explicit click when an agent performs them, deleting a card for example. Typed approval is possible, but the button is preferred for sensitive actions.
+>
+> **The JWT scope changes** ([[2026-11-03-agentic-standup]]). Michael: a *"large-ish JWT change to how it's scoped from program manager level to card program"*, being settled with DT, and he will send it over. George: not a blocker, since the mapping from permissions to tools and skills is a process, *"it was X, now it's Y, let's update it."* Agent authentication through the Stackworkz layer is still waiting on Stackworkz (#107).
 
 ## 3. Entity Journeys
 

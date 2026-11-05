@@ -11,6 +11,8 @@ sources:
   - "[[2026-10-22-agentic-standup]]"
   - "[[2026-10-20-agentic-standup]]"
   - "[[2026-10-27-agentic-standup]]"
+  - "[[2026-11-03-dt-demo-and-infrastructure]]"
+  - "[[2026-11-03-agentic-standup]]"
 description: "Sub-component spec for the portal chat: semantic doc discovery, grounded Q&A with source references, a deterministic fallback, and live sandbox execution"
 ---
 
@@ -200,6 +202,15 @@ It is **deliberately light**: Ian's explicit steer is to invest in the [[docs-mc
 > **Retention: 48 or 72 hours?** George said personal data is stored *"for what was it 48 hours"*, then stripped. The figure agreed on 22 October was **72 hours**, aligned to the sandbox drop, and nobody corrected it. **This page keeps 72 hours** until it is confirmed. Review of the stored chats is manual: there is no continual learning.
 >
 > **How DT see it is open.** Without the admin vault link DT cannot find the build, or Novosapien can set up an environment with a single login. TXN's choice.
+
+> [!note] Shown to the chairman and DT, and the build is finished (03-11-2026)
+> **The demo landed** ([[2026-11-03-dt-demo-and-infrastructure]]). Steve: *"It looks great."* The **one-approval sandbox flow is built** and was shown live: *"these are going to be the three operations that I'm going to do in this sequence."* The docs MCP server and the export to Claude and Perplexity were shown too.
+>
+> **Ian's statement of what this page is for:** *"What we've designed is to make sure that it doesn't matter how you want to work."* Reading the docs, asking the co-pilot, or copying pages into a coding agent.
+>
+> **New APIs need no rework.** Guides arrive from Umbraco on publish and the API reference from the YAML, *"so there is no rework for the Novo guys to do."*
+>
+> **The build is done; migration and deployment are left** ([[2026-11-03-agentic-standup]]). The first migration into Stackworkz's environment is complete, and Hasan's local testing is *"all seeming good"*. See [[delivery]].
 
 ## 2. What Needs to Happen?
 

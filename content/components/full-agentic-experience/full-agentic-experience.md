@@ -20,6 +20,8 @@ description: "Component doc for TXN's Level-4 agent-as-interface — chat that r
 
 ---
 
+> **03-11 update ([[2026-11-03-agentic-standup]]):** back in active work, in tandem with the Knowledge Hub and Console co-pilots. George described it to DT the same day ([[2026-11-03-dt-demo-and-infrastructure]]) as the place where *"they go directly from thought to action with the agent"*, with components rendered in the chat, and claimed no one else in the market offers it alongside a co-pilot. Ian: *"We haven't seen it."*
+
 ## 1. What Does This Component Do?
 
 **Functional purpose:**

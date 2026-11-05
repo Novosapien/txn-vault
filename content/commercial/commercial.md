@@ -6,6 +6,13 @@ description: "Index of the TXN commercial pack: proposals, Pilot Order, MSA and 
 
 The commercial pack for the Novosapien <> TXN engagement: the proposals that define what we are selling, and pointers to the legal instruments that paper it. Contracts themselves live in [legal/](../legal/) and are linked below so reviewers and agents can reach everything from one place.
 
+> [!important] Novosapien support the AI code until TXN takes it over (03-11-2026)
+> **Ian, to DT** ([[2026-11-03-dt-demo-and-infrastructure]]): *"that AI code is going to be **supported by Novo until such time that TXN decides to take it over**. Which would mean us employing our own AI engineers and also having a period of handover between Novo and those guys so we could take ownership of it."* DT host only. **No support terms, hours or handover plan exist yet**, and this is now an ongoing service commitment said in front of a partner.
+>
+> **Marketing the AI: show, don't tell.** Steve asked how to explain it on the website without giving away a competitive edge. Ian: *"the answer is not to tell people, but to show them"*, with short video snippets, already under discussion with Bronwyn and Nicola, above all for the Control Center, which prospects cannot try.
+>
+> **Scribe.** At the standup ([[2026-11-03-agentic-standup]]) George proposed a conversation in the next week or two, after Dörte's talk with Vanessa and Lily. Dörte: *"Are you trying to upsell now?... No, absolutely. I mean it's brilliant."*
+
 > [!note] Hosting liability goes into the agreement, and the demo video becomes a sales tool (27-10-2026)
 > ([[2026-10-27-agentic-standup]]) **Liability.** Dörte expects DT to ask about cyber security from the hosting side: *"where is that all sitting, are you liable because you're hosting"*. Her answer: *"that's down for Ian and I to make sure that the agreement is very tight with the roles and responsibilities."* No agreement is named, and there is still no signed data processing agreement (#103).
 >

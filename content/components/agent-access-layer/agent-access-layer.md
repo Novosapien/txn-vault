@@ -37,6 +37,9 @@ It also exposes the **[[a2a-endpoint]]** — the inbound agent-to-agent door for
 
 If the Agent Access Layer is wrong, every agent is wrong. That is why it is the first deep-dive — but note it is also the component most dependent on materials and decisions that sit with TXN (see Dependencies).
 
+> [!note] The audit trail for agent actions is the tool-call traces, and nobody has asked if that is enough (03-11-2026)
+> **DT asked** ([[2026-11-03-dt-demo-and-infrastructure]]): *"We have audit trail on every click you do. If it's an AI instruction and the action is taken, how do you retain audit trail?"* George: a trace of every tool call, *"obviously redacting some of the sensitive data in the tracing... you understand everything that the agent said and everything that is done."* The traces also feed workflow improvements. **Unasked:** whether redacted traces meet TXN's obligations as a card program, how long they are kept against the 72-hour chat retention, and how they join the Console's own click trail in [[audit-attribution]]. [[open-questions]] #128.
+
 ## Scope
 
 **The Agent Access Layer IS:**

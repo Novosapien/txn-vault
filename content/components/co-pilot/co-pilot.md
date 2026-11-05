@@ -23,6 +23,8 @@ description: "Component doc for the TXN Co-pilot — Console assistant that answ
 
 ---
 
+> **03-11 update ([[2026-11-03-agentic-standup]]):** work on the Console co-pilot is making good progress. George wants TXN's feedback on **Thursday 5 November**, then a deploy to the test environments. Ian, to DT the same day ([[2026-11-03-dt-demo-and-infrastructure]]): a Control Center demo for DT *"in the next few weeks"*.
+
 ## 1. What Does This Component Do?
 
 **Functional purpose:**
