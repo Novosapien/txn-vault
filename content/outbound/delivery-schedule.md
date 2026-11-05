@@ -126,6 +126,9 @@ The Workforce runs on **email and LinkedIn**. Emails send from **named individua
 | GTM Workforces Order, clause 8.2 | Novosapien is responsible for screening **UK voice calls against TPS and CTPS**, for the **voice agent disclosing at the start of each call** that it is an AI calling on behalf of TXN under Regulation (EU) 2024/1689, and for call recording rules by jurisdiction | The Order is not signed. These are obligations for a channel that will not run. Leaving them in creates a compliance surface with nothing behind it, and invites a reviewer question that has no good answer |
 | [[commercial]], Outbound pricing | Usage pass-through is listed as Claude compute, Apollo lead data and **ElevenLabs voice**, at billed cost plus an administration fee | The ElevenLabs line is now obsolete. Small, but it is a stated cost component in a priced structure |
 
+> [!warning] Still warming on 3 November (03-11-2026)
+> George, at the standup ([[2026-11-03-agentic-standup]]): *"there's still some warm-up to do for the inboxes. It's just letting that finish, making sure that the deliverability is there."* Messaging also needs aligning with Ian before anything sends. **The table above has warming starting 16 September and finishing around 29 September**, so this is a slip or a restart. The cause is not recorded.
+
 ## Nothing sends before the market announcement
 
 The agreed launch sequence puts Direct Transact and Pay Corp channels first, then the personal networks of Ian, Michael and Dorte, and only then TXN's own outbound. Warming is preparation for that sequence, not a start to it. There is no scenario in which an email goes to a prospect during the pilot's acceptance window.

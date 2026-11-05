@@ -138,6 +138,29 @@ Reviews of the client's own console feedback queue, read from `txn.feedback` and
 >
 > **A correction to the flight plan.** The 16 October flight plan says that the AI node *"is already built. What remains is access."* The node is not built. The MSA reviewer brief says the same. Both need a correction from Brett. #70.
 
+> [!important] The demo is done, UAT is measured, and hosting has no design, cost or deployment time (03-11-2026)
+> ([[2026-11-03-dt-demo-and-infrastructure]], [[2026-11-03-agentic-standup]])
+>
+> | Item | Position |
+> |---|---|
+> | **Demo to Steve and DT** | **Held 3 November.** Landed: *"It looks great."* Fallback videos not needed. #115 answered |
+> | **Hosting documents** | With DT, via Jack. *"Nothing that's really a deal-breaker"* |
+> | **DT's design and cost model** | **Not started.** Waits on Villi's questions, about five, by email (#127) |
+> | **Deployment time** | **Unknown**, deferred to a separate conversation |
+> | **UAT** | **Complete, not signed off.** All 82 launch endpoints tested, **58 percent passing**, most failures one back-end validation defect |
+> | **Code into Stackworkz** | First migration done. **Coding standards still owed** by Michael (#125) |
+> | **Agent authentication** | Waiting on Stackworkz. JWT scope moving to card program (#107) |
+> | **Internal LLM call** | **Did not happen.** Dörte preparing it |
+> | **Control Center demo to DT** | *"In the next few weeks"* |
+>
+> **Two weeks to launch and nobody can say how long deployment takes.** Ian asked; the answer was put off, and Ian named the room: *"Deafening silence. Understandably, this is what this is, this is the challenge."* The chain is Villi's questions, then Novosapien's answers, then DT's design and cost, then a deployment of unknown length, then checks. **Ian said 17 November**; every other record says the 16th, and this page keeps the 16th until it is confirmed.
+>
+> **UAT reads worse than it is.** Michael: one defect *"will clearly wipe out 30% of the test cases. So we're not as far away as I thought originally."* DT now order defects by how visible they are at launch, and the Knowledge Hub only needs the YAML to be right, so back-end validation can follow.
+>
+> **The meeting itself was not run well.** Dörte: *"no one had a plan, that this one was a two-stage call. They hadn't read the documentation."* Jack sent the invite and lost its purpose. Several people were unsure the documents had been sent.
+>
+> **Support is settled.** Ian told DT that Novosapien support the AI code *"until such time that TXN decides to take it over"*, by hiring AI engineers after a handover. DT host only. See [[commercial]].
+
 > [!warning] The demo slips to 2 November, and a two-week delay is already expected (27-10-2026)
 > ([[2026-10-27-agentic-standup]]). Ian was not on the call.
 >
