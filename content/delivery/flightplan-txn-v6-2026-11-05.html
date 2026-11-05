@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TXN Delivery Flight Plan &middot; 2026-11-05 v5</title>
+<title>TXN Delivery Flight Plan &middot; 2026-11-05 v6</title>
 <style>:root {
  --primary:#A1BCD1; --primary-foreground:#051225;
  --background:#051225; --foreground:#FFFFFF;
@@ -81,14 +81,14 @@
 
 <section id="home" class="page active">
 <h2>Eleven days to launch, and the launch environment moves to Novosapien.</h2>
-<p class="lede">Sixteenth issue, version 5, generated 5 November 2026. Reconciled from the repositories, the proposals
+<p class="lede">Sixteenth issue, version 6, generated 5 November 2026. Reconciled from the repositories, the proposals
 and the vault.</p>
 
 <div class="grid">
  <div class="kpi bad"><div class="n">11 days</div><div class="l">to launch on 16 November</div></div>
  <div class="kpi good"><div class="n">Demoed</div><div class="l">Direct Transact saw the build on 3 November. Their questions and feedback are awaited</div></div>
  <div class="kpi good"><div class="n">Hardened</div><div class="l">demo build: 24 fixes, one-approval batching, harness scores low to high in four days</div></div>
- <div class="kpi good"><div class="n">11 Nov</div><div class="l">Novosapien's own Azure environment stood up, and the launch runs on it</div></div>
+ <div class="kpi good"><div class="n">11 Nov</div><div class="l">Novosapien's own Azure environment stood up. Ian has asked for launch to run on it as a test run</div></div>
 </div>
 
 <div class="flag good">
@@ -106,7 +106,7 @@ so the record needs catching up, but neither is an open question on this plan.
     resolved by the row below</td></tr>
 <tr><td><strong>11 Nov 2026</strong></td>
     <td><strong>Novosapien's own Azure environment stood up</strong>, inside the Novosapien ecosystem.
-    This becomes the launch environment</td>
+    Ian has asked for the launch to run on it as a test run</td>
     <td><span class="chip committed">Wednesday</span> Five days of margin before launch</td></tr>
 <tr><td><strong>w/c 9 Nov</strong></td><td>Checks in the hosted environment, Michael with Novosapien</td>
     <td><span class="chip committed">on the Novosapien environment</span> No longer waiting on the Direct
@@ -239,9 +239,10 @@ so the record needs catching up, but neither is an open question on this plan.
 <h3>What changed since 27 October</h3>
 <table>
 <thead><tr><th>Item</th><th>Position</th></tr></thead>
-<tr><td><strong>The launch environment moves to Novosapien's own Azure</strong></td>
-    <td><strong>Stood up by Wednesday 11 November.</strong> The launch no longer waits on Direct Transact
-    provisioning the node. The move into their environment becomes a post-launch migration</td></tr>
+<tr><td><strong>Ian has asked for the launch to run as a test run on Novosapien's own Azure</strong></td>
+    <td><strong>Environment stood up by Wednesday 11 November.</strong> That is the reason for the
+    deviation from the environment named in the Agreement. The launch no longer waits on Direct Transact
+    provisioning the node, and the move into their environment follows the test run</td></tr>
 <tr><td><strong>Direct Transact saw the build on 3 November</strong></td>
     <td>All key stakeholders. A courtesy showing, as agreed. Their questions and feedback are awaited</td></tr>
 <tr><td><strong>The models, fallback and data questions were settled on 29 October</strong></td>
@@ -377,7 +378,7 @@ repositories read across all branches, including the two repositories that carry
 the documentation server. The Phase Two proposal of 28 September and Statement of Work 2 of the Master Service
 Agreement. <strong>Data freshness:</strong> the vault and the repositories are live as at 25 October 2026. No
 call has been held since 22 October, so every position attributed to TXN is four days old or older.</p>
-<p class="small" style="margin-top:34px;border-top:1px solid var(--border);padding-top:10px">TXN Delivery Flight Plan &middot; sixteenth issue, version 5, generated 5 November 2026 &middot; Prepared by Novosapien &middot; prior versions remain in the folder as the audit trail.</p>
+<p class="small" style="margin-top:34px;border-top:1px solid var(--border);padding-top:10px">TXN Delivery Flight Plan &middot; sixteenth issue, version 6, generated 5 November 2026 &middot; Prepared by Novosapien &middot; prior versions remain in the folder as the audit trail.</p>
 </section>
 
 <section id="launch" class="page">
@@ -400,7 +401,7 @@ anything on it has moved.</p>
     calls stripped</td>
     <td><span class="chip committed">confirmed at 48 hours, not yet built</span></td></tr>
 <tr><td><strong>Running in Novosapien's own Azure environment</strong>, two container applications and
-    the agent's own database. Direct Transact's node becomes a post-launch migration</td>
+    the agent's own database. A test run at Ian's request. Direct Transact's node follows it</td>
     <td><span class="chip committed">stood up by 11 November</span></td></tr>
 <tr><td><strong>Published response-time figures</strong>, measured on the hosted build</td>
  <td><span class="chip committed">committed</span></td></tr>
@@ -455,9 +456,9 @@ anything on it has moved.</p>
 <tr><td><strong>Direct Transact provisioning.</strong> Still not started, and now a post-launch item
     rather than a launch one</td>
     <td><span class="chip attempting">medium, no longer a launch risk</span></td>
-    <td>Launch moves to Novosapien's own Azure environment. Direct Transact hold the documents, the
-    demonstration has been given, and the migration into their node follows launch rather than gating
-    it</td><td>downgraded from high</td></tr>
+    <td>Ian has asked for a test run on Novosapien's own Azure environment. Direct Transact hold the
+    documents, the demonstration has been given, and the migration into their node follows the test run
+    rather than gating launch</td><td>downgraded from high</td></tr>
 <tr><td><strong>Cloud environment breakage.</strong> The launch environment does not exist yet and is
     stood up five days before launch</td><td><span class="chip attempting">medium</span></td>
     <td>Novosapien builds it and controls it, which is the material change from last week. Containerised,
@@ -482,14 +483,13 @@ anything on it has moved.</p>
 </table>
 
 <div class="flag good">
-<strong>The call, and it has been taken.</strong> The launch runs on Novosapien's own Azure environment,
-stood up by Wednesday 11 November, with five days of margin before 16 November. Direct Transact's node
-becomes a migration after launch rather than a condition of it. <strong>One thing to confirm with Ian and
-Dorte:</strong> the Agreement names a dedicated node in TXN's European environment as the production home
-of the AI layer, so running the first month elsewhere is a deliberate departure and should be recorded as
-one rather than discovered later.
+<strong>The call, and Ian has made it.</strong> <strong>Ian asked for the launch to run as a test run on
+Novosapien's own Azure environment</strong>, which is why it departs from the dedicated node in TXN's
+European environment that the Agreement names. The environment is stood up by Wednesday 11 November, five
+days before launch. Direct Transact's node becomes a migration after the test run rather than a condition
+of launching, and the documents they already hold are what that migration will be built from.
 </div>
-<p class="small" style="margin-top:34px;border-top:1px solid var(--border);padding-top:10px">TXN Delivery Flight Plan &middot; sixteenth issue, version 5, generated 5 November 2026 &middot; Prepared by Novosapien &middot; prior versions remain in the folder as the audit trail.</p>
+<p class="small" style="margin-top:34px;border-top:1px solid var(--border);padding-top:10px">TXN Delivery Flight Plan &middot; sixteenth issue, version 6, generated 5 November 2026 &middot; Prepared by Novosapien &middot; prior versions remain in the folder as the audit trail.</p>
 </section>
 
 <section id="hosting" class="page">
@@ -519,8 +519,8 @@ page that decides 16 November.</p>
 <tr><td><strong>Provisioning at Direct Transact</strong></td><td><span class="chip attempting">not
     started, and no longer a launch dependency</span> It becomes a post-launch migration</td></tr>
 <tr><td><strong>The launch environment</strong></td><td><span class="chip committed">Novosapien's own
-    Azure, stood up by 11 November</span> Same platform, different tenant, so the container definitions
-    already written carry over</td></tr>
+    Azure, stood up by 11 November</span> A test run at Ian's request. Same platform, different tenant, so
+    the container definitions already written carry over unchanged</td></tr>
 </table>
 
 <h3>What Direct Transact is being asked for</h3>
@@ -555,11 +555,10 @@ page that decides 16 November.</p>
  <td>Re-run the harness against the new model</td></tr>
 <tr><td><strong>The node itself, in time</strong></td><td><strong>Launch on Novosapien's own Azure
     environment, migrate afterwards</strong></td>
-    <td><span class="chip delivered">taken</span> Environment stood up by 11 November. The cost is a second
-    deployment after launch, and a departure from the Agreement's named production environment that Ian and
-    Dorte should record</td></tr>
+    <td><span class="chip delivered">Ian's decision</span> Requested as a test run. Environment stood up by
+    11 November. The cost is a second deployment once Direct Transact provision the node</td></tr>
 </table>
-<p class="small" style="margin-top:34px;border-top:1px solid var(--border);padding-top:10px">TXN Delivery Flight Plan &middot; sixteenth issue, version 5, generated 5 November 2026 &middot; Prepared by Novosapien &middot; prior versions remain in the folder as the audit trail.</p>
+<p class="small" style="margin-top:34px;border-top:1px solid var(--border);padding-top:10px">TXN Delivery Flight Plan &middot; sixteenth issue, version 6, generated 5 November 2026 &middot; Prepared by Novosapien &middot; prior versions remain in the folder as the audit trail.</p>
 </section>
 
 <section id="uat" class="page">
@@ -822,7 +821,7 @@ server both already support that route.
  far from the controls</td><td>Named rather than discovered, which is the right way round</td>
  <td><span class="chip attempting">minor</span></td></tr>
 </table>
-<p class="small" style="margin-top:34px;border-top:1px solid var(--border);padding-top:10px">TXN Delivery Flight Plan &middot; sixteenth issue, version 5, generated 5 November 2026 &middot; Prepared by Novosapien &middot; prior versions remain in the folder as the audit trail.</p>
+<p class="small" style="margin-top:34px;border-top:1px solid var(--border);padding-top:10px">TXN Delivery Flight Plan &middot; sixteenth issue, version 6, generated 5 November 2026 &middot; Prepared by Novosapien &middot; prior versions remain in the folder as the audit trail.</p>
 </section>
 
 <section id="phase2" class="page">
@@ -1016,7 +1015,7 @@ TXN has wanted the AI made visible as marketing, alongside the published skills 
 launch differentiator. It is worth deciding deliberately before launch day rather than improvising it
 afterwards, since it depends on the sanitised store that is now committed work.</li>
 </ul>
-<p class="small" style="margin-top:34px;border-top:1px solid var(--border);padding-top:10px">TXN Delivery Flight Plan &middot; sixteenth issue, version 5, generated 5 November 2026 &middot; Prepared by Novosapien &middot; prior versions remain in the folder as the audit trail.</p>
+<p class="small" style="margin-top:34px;border-top:1px solid var(--border);padding-top:10px">TXN Delivery Flight Plan &middot; sixteenth issue, version 6, generated 5 November 2026 &middot; Prepared by Novosapien &middot; prior versions remain in the folder as the audit trail.</p>
 </section>
 
 <section id="q2" class="page">
@@ -1101,7 +1100,7 @@ any time and they cost nothing to park.</li>
 <li><strong>The Content Workforce restart</strong>, January, with a plan coming from TXN's marketing team and
 PR agency. Tracked on its own page.</li>
 </ul>
-<p class="small" style="margin-top:34px;border-top:1px solid var(--border);padding-top:10px">TXN Delivery Flight Plan &middot; sixteenth issue, version 5, generated 5 November 2026 &middot; Prepared by Novosapien &middot; prior versions remain in the folder as the audit trail.</p>
+<p class="small" style="margin-top:34px;border-top:1px solid var(--border);padding-top:10px">TXN Delivery Flight Plan &middot; sixteenth issue, version 6, generated 5 November 2026 &middot; Prepared by Novosapien &middot; prior versions remain in the folder as the audit trail.</p>
 </section>
 
 <section id="q34" class="page">
@@ -1145,7 +1144,7 @@ commitment implied. Moving an item from here into a committed quarter goes throu
 Novosapien names what moves down a band or across a quarter to make room, with the rationale, and TXN decides.
 Loading is free; committing is not.
 </div>
-<p class="small" style="margin-top:34px;border-top:1px solid var(--border);padding-top:10px">TXN Delivery Flight Plan &middot; sixteenth issue, version 5, generated 5 November 2026 &middot; Prepared by Novosapien &middot; prior versions remain in the folder as the audit trail.</p>
+<p class="small" style="margin-top:34px;border-top:1px solid var(--border);padding-top:10px">TXN Delivery Flight Plan &middot; sixteenth issue, version 6, generated 5 November 2026 &middot; Prepared by Novosapien &middot; prior versions remain in the folder as the audit trail.</p>
 </section>
 
 <section id="phase1" class="page">
@@ -1281,7 +1280,7 @@ is not a constraint on the agent, <strong>provided the agent gets a static IP</s
 That leaves one piece of work on Novosapien's side rather than a negotiation with DT, and it protects the
 parallelism the speed gain depends on.
 </div>
-<p class="small" style="margin-top:34px;border-top:1px solid var(--border);padding-top:10px">TXN Delivery Flight Plan &middot; sixteenth issue, version 5, generated 5 November 2026 &middot; Prepared by Novosapien &middot; prior versions remain in the folder as the audit trail.</p>
+<p class="small" style="margin-top:34px;border-top:1px solid var(--border);padding-top:10px">TXN Delivery Flight Plan &middot; sixteenth issue, version 6, generated 5 November 2026 &middot; Prepared by Novosapien &middot; prior versions remain in the folder as the audit trail.</p>
 </section>
 
 <section id="ledger" class="page">
@@ -1385,7 +1384,7 @@ tagged build is item 1 of what is outstanding on Novosapien's side.</p>
  coherent answer. The underlying editorial question remains TXN's, and Ian's feedback loop, that an
  unanswerable or ambiguous question should flow back into the documentation, is the right mechanism</td></tr>
 </table>
-<p class="small" style="margin-top:34px;border-top:1px solid var(--border);padding-top:10px">TXN Delivery Flight Plan &middot; sixteenth issue, version 5, generated 5 November 2026 &middot; Prepared by Novosapien &middot; prior versions remain in the folder as the audit trail.</p>
+<p class="small" style="margin-top:34px;border-top:1px solid var(--border);padding-top:10px">TXN Delivery Flight Plan &middot; sixteenth issue, version 6, generated 5 November 2026 &middot; Prepared by Novosapien &middot; prior versions remain in the folder as the audit trail.</p>
 </section>
 
 <section id="commercial" class="page">
@@ -1585,7 +1584,7 @@ drafting disclaimed all of that on a basis that was wrong.</p>
  Outbound domains? It has never been put to TXN in writing</td><td>Brett</td>
  <td>It gets quoted again without being settled</td><td>Before the next quote</td></tr>
 </table>
-<p class="small" style="margin-top:34px;border-top:1px solid var(--border);padding-top:10px">TXN Delivery Flight Plan &middot; sixteenth issue, version 5, generated 5 November 2026 &middot; Prepared by Novosapien &middot; prior versions remain in the folder as the audit trail.</p>
+<p class="small" style="margin-top:34px;border-top:1px solid var(--border);padding-top:10px">TXN Delivery Flight Plan &middot; sixteenth issue, version 6, generated 5 November 2026 &middot; Prepared by Novosapien &middot; prior versions remain in the folder as the audit trail.</p>
 </section>
 
 <section id="contentwf" class="page">
@@ -1652,7 +1651,7 @@ feeds Phase 2 component 1, and it would be <strong>TXN's first externally writte
 document shared so far has been internally focused. Worth chasing on the agentic side rather than leaving it
 with the paused engagement.</li>
 </ul>
-<p class="small" style="margin-top:34px;border-top:1px solid var(--border);padding-top:10px">TXN Delivery Flight Plan &middot; sixteenth issue, version 5, generated 5 November 2026 &middot; Prepared by Novosapien &middot; prior versions remain in the folder as the audit trail.</p>
+<p class="small" style="margin-top:34px;border-top:1px solid var(--border);padding-top:10px">TXN Delivery Flight Plan &middot; sixteenth issue, version 6, generated 5 November 2026 &middot; Prepared by Novosapien &middot; prior versions remain in the folder as the audit trail.</p>
 </section>
 
 <section id="outboundwf" class="page">
@@ -1748,7 +1747,7 @@ paper the whole GTM set properly.
 <tr><td>A decision on the administration fee percentage</td><td>Brett</td></tr>
 <tr><td>A corrected and signed GTM Workforces Order</td><td>Both</td></tr>
 </table>
-<p class="small" style="margin-top:34px;border-top:1px solid var(--border);padding-top:10px">TXN Delivery Flight Plan &middot; sixteenth issue, version 5, generated 5 November 2026 &middot; Prepared by Novosapien &middot; prior versions remain in the folder as the audit trail.</p>
+<p class="small" style="margin-top:34px;border-top:1px solid var(--border);padding-top:10px">TXN Delivery Flight Plan &middot; sixteenth issue, version 6, generated 5 November 2026 &middot; Prepared by Novosapien &middot; prior versions remain in the folder as the audit trail.</p>
 </section>
 
 <script>
