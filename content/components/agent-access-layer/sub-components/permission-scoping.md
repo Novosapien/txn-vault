@@ -96,6 +96,11 @@ Beyond the static permission set, the exposed tool set is further narrowed by **
 >
 > **The JWT scope changes** ([[2026-11-03-agentic-standup]]). Michael: a *"large-ish JWT change to how it's scoped from program manager level to card program"*, being settled with DT, and he will send it over. George: not a blocker, since the mapping from permissions to tools and skills is a process, *"it was X, now it's Y, let's update it."* Agent authentication through the Stackworkz layer is still waiting on Stackworkz (#107).
 
+> [!important] Built now from Michael's document, with a harness for tools that must never appear (05-11-2026)
+> **Novosapien will not wait for Stackworkz** ([[2026-11-05-agentic-standup]]). Tool gating and skill changes by access level are built now from Michael's permission layout document, accepted as *"subject to change a little bit"*. When the Stackworkz authentication arrives, the permissions come through it instead.
+>
+> **The permission harness.** For each user and workflow: the tools expected, and the tools that must never appear. **The stricter test is the second:** *"even if it thinks about calling it there's an issue, because it shouldn't even really know of its existence."* So passing means a forbidden tool is absent from the agent's view, not merely refused. It replaces manual UAT across workflow and access level. Michael: *"That sounds great."* This is the first concrete method behind #123, still without a pass mark.
+
 ## 3. Entity Journeys
 
 ### 3a. Isolated Journeys

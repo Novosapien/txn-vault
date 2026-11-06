@@ -138,6 +138,24 @@ Reviews of the client's own console feedback queue, read from `txn.feedback` and
 >
 > **A correction to the flight plan.** The 16 October flight plan says that the AI node *"is already built. What remains is access."* The node is not built. The MSA reviewer brief says the same. Both need a correction from Brett. #70.
 
+> [!warning] DT say the hosting cannot be ready for launch, and Novosapien will stand it up to time it (05-11-2026)
+> ([[2026-11-05-agentic-standup]])
+>
+> | Item | Position |
+> |---|---|
+> | **DT on the hosting** | Pete: no way to stand it up *"to support a go-to-market launch on the 17th"*. Nothing done with the 27 October documents |
+> | **DT on scope** | Say they did not know the AI was part of launch. Ian and Dörte: *"It's not true"* |
+> | **Novosapien's answer** | **Stand it up in Azure themselves**, starting 6 November, done by **Tuesday 10 November**, and record how long it took |
+> | **Code into Stackworkz** | Aligned to the coding standards: **82 percent against an 80 percent check** |
+> | **Agent authentication** | Not blocking the Knowledge Hub. Michael chases Stackworkz on 6 November |
+> | **Billy's questions** | **None received**, and Ian does not think they gate anything (#127) |
+>
+> **The point of timing it is the argument, not the proof.** Ian: *"If you take away the actual doing of it then what you're left with is just process... if we can actually say, well, we've stood it up with Novo in exactly the way we're asking you to stand it up, then it will just help if the conversation gets tricky. Well, not, it will get tricky."* George's caveat: DT's environment has locked-down existing services, so the timing will not be like for like.
+>
+> **No fallback is recorded if DT cannot host by launch.** Ian: *"not a lot of choice really"*, because the AI is a key part of the launch message. George asked on 22 October for fallbacks to be agreed before the request went in. None is written down, and the remaining option nobody has named is launching the Knowledge Hub without the AI.
+>
+> **Launch date:** Ian said the 17th again, quoting Pete. This page keeps the 16th until confirmed.
+
 > [!important] The demo is done, UAT is measured, and hosting has no design, cost or deployment time (03-11-2026)
 > ([[2026-11-03-dt-demo-and-infrastructure]], [[2026-11-03-agentic-standup]])
 >
@@ -145,7 +163,7 @@ Reviews of the client's own console feedback queue, read from `txn.feedback` and
 > |---|---|
 > | **Demo to Steve and DT** | **Held 3 November.** Landed: *"It looks great."* Fallback videos not needed. #115 answered |
 > | **Hosting documents** | With DT, via Jack. *"Nothing that's really a deal-breaker"* |
-> | **DT's design and cost model** | **Not started.** Waits on Villi's questions, about five, by email (#127) |
+> | **DT's design and cost model** | **Not started.** Waits on Billy's questions, about five, by email (#127) |
 > | **Deployment time** | **Unknown**, deferred to a separate conversation |
 > | **UAT** | **Complete, not signed off.** All 82 launch endpoints tested, **58 percent passing**, most failures one back-end validation defect |
 > | **Code into Stackworkz** | First migration done. **Coding standards still owed** by Michael (#125) |
@@ -153,7 +171,7 @@ Reviews of the client's own console feedback queue, read from `txn.feedback` and
 > | **Internal LLM call** | **Did not happen.** Dörte preparing it |
 > | **Control Center demo to DT** | *"In the next few weeks"* |
 >
-> **Two weeks to launch and nobody can say how long deployment takes.** Ian asked; the answer was put off, and Ian named the room: *"Deafening silence. Understandably, this is what this is, this is the challenge."* The chain is Villi's questions, then Novosapien's answers, then DT's design and cost, then a deployment of unknown length, then checks. **Ian said 17 November**; every other record says the 16th, and this page keeps the 16th until it is confirmed.
+> **Two weeks to launch and nobody can say how long deployment takes.** Ian asked; the answer was put off, and Ian named the room: *"Deafening silence. Understandably, this is what this is, this is the challenge."* The chain is Billy's questions, then Novosapien's answers, then DT's design and cost, then a deployment of unknown length, then checks. **Ian said 17 November**; every other record says the 16th, and this page keeps the 16th until it is confirmed.
 >
 > **UAT reads worse than it is.** Michael: one defect *"will clearly wipe out 30% of the test cases. So we're not as far away as I thought originally."* DT now order defects by how visible they are at launch, and the Knowledge Hub only needs the YAML to be right, so back-end validation can follow.
 >
