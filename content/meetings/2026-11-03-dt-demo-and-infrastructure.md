@@ -1,7 +1,7 @@
 ---
 date: 2026-11-03
 type: general
-description: "Knowledge Hub demo to TXN's chairman and DT, then the first hosting talk: no deal-breaker, but no design or cost until Villi's questions are answered"
+description: "Knowledge Hub demo to TXN's chairman and DT, then the first hosting talk: no deal-breaker, but no design or cost until Billy's questions are answered"
 scope:
   - "[[portal-co-pilot]]"
   - "[[architecture]]"
@@ -20,12 +20,14 @@ extracted-to:
 
 # TXN: Knowledge Hub Demo and AI Infrastructure, with DT (2026-11-03)
 
-> **Source:** transcript from a new notetaker, titled "Fw: AI Infrastructure Context", 3 November 2026, 14:00, about 53 minutes. **Novosapien:** George Westbrook, Brett StClair, Hasan Ahmed (camera off, does not speak). **TXN:** Ian Johnson, Steve (group chairman). **Direct Transact and others:** Anthony, Villi, Marco, Zane, Jacques, Pete, Shaul, named in passing. Michael was expected and is not heard. This is the demo #115 has tracked since 15 October, held a day later than the earliest date given on 27 October.
+> **Source:** transcript from a new notetaker, titled "Fw: AI Infrastructure Context", 3 November 2026, 14:00, about 53 minutes. **Novosapien:** George Westbrook, Brett StClair, Hasan Ahmed (camera off, does not speak). **TXN:** Ian Johnson, Steve (group chairman). **Direct Transact and others:** Anthony, Billy, Marco, Zane, Jacques, Pete, Shaul, named in passing. Michael was expected and is not heard. This is the demo #115 has tracked since 15 October, held a day later than the earliest date given on 27 October.
+>
+> **Name corrected 5 November** ([[2026-11-05-agentic-standup]]): Ian, *"It's not Willy, it's Billy."* This page first recorded him as Villi. The transcript below keeps its own spellings.
 >
 > **The speaker labels are unreliable, so this page attributes by content.** The transcript has three named voices for at least six people:
 >
 > - **The demo prompts** George typed are labelled *Anthony De Gray Birch*.
-> - **The technical questions in the second half**, labelled *Anthony*, are **Villi's**: Brett answers *"Right questions, Willie"*, the speaker asks *"do you use OK, if"*, the Open Knowledge Format George looked up afterwards ([[2026-11-03-agentic-standup]]), and Michael says Villi works on the data lake. The audit and federated access questions earlier, also labelled *Anthony*, are a DT voice who says *"I'm not a technical person"*, most likely Anthony himself.
+> - **The technical questions in the second half**, labelled *Anthony*, are **Billy's**: Brett answers *"Right questions, Willie"*, the speaker asks *"do you use OK, if"*, the Open Knowledge Format George looked up afterwards ([[2026-11-03-agentic-standup]]), and Michael says Billy works on the data lake. The audit and federated access questions earlier, also labelled *Anthony*, are a DT voice who says *"I'm not a technical person"*, most likely Anthony himself.
 > - **"Steven Kark"** is Steve the chairman (*"it's all Greek to me"*, addressed as Steve by Ian), and also a DT lead who promises a design and a cost model, and someone asking about Gemini, possibly Marco.
 
 ## The demo landed with the audience it was for
@@ -96,19 +98,19 @@ On 27 October the LLM section was held back from DT for an internal call between
 
 **LLM costs go into DT's infrastructure cost.** DT asked whether that should be included. Brett: *"Yes"*, and Novosapien have sent estimates across a couple of providers, because TXN should *"really want it in your ecosystem and lock it down."* See [[architecture]] and #70.
 
-### Villi's questions gate the design and the cost
+### Billy's questions gate the design and the cost
 
-**Villi asked the sharpest questions of the call.** Is Foundry used for indexing the documentation, or are pipelines feeding the context window? *"And how do you limit the data that's actually passing into the large language models? How do you separate that? How do you split that out? **Do you use something that masks it** beforehand, afterward, or within the pipeline?"*
+**Billy asked the sharpest questions of the call.** Is Foundry used for indexing the documentation, or are pipelines feeding the context window? *"And how do you limit the data that's actually passing into the large language models? How do you separate that? How do you split that out? **Do you use something that masks it** beforehand, afterward, or within the pipeline?"*
 
 **George answered the first half.** No indexing and no vector database. At start-up the agent reads Umbraco into an in-memory copy and searches it with read, glob and grep, *"the tools that they've been trained on"*, isolated so it can only touch those files and never run anything destructive. **The masking question was not answered.**
 
-**Villi pushed on cost:** *"we all understand that it takes everything out of the context. We know it takes a hell of a lot of tokens."* No vector database means no double storage, *"which in the first case saves some money"*, but there are transfer, token and conversion costs, and he asked whether OKF structures the files. George: *"No, I don't think so"*, to check with Hasan. (After the call George found that OKF is effectively what Novosapien built.)
+**Billy pushed on cost:** *"we all understand that it takes everything out of the context. We know it takes a hell of a lot of tokens."* No vector database means no double storage, *"which in the first case saves some money"*, but there are transfer, token and conversion costs, and he asked whether OKF structures the files. George: *"No, I don't think so"*, to check with Hasan. (After the call George found that OKF is effectively what Novosapien built.)
 
-**He will email about five questions.** Ian confirmed the order: the answers come first, then DT's design and costing. Villi on the cost model: Azure charges for indexing per region, token usage, storage and Foundry, and failover regions add cost. New [[open-questions]] #127.
+**He will email about five questions.** Ian confirmed the order: the answers come first, then DT's design and costing. Billy on the cost model: Azure charges for indexing per region, token usage, storage and Foundry, and failover regions add cost. New [[open-questions]] #127.
 
 ### Two weeks to launch, and no deployment time
 
-Ian asked for *"a sense of the actual deployment of the capability once we're settled on a design and the associated costing... how long it would actually take to deploy"*, against go-to-market *"currently planned to be the 17th of November, which is two weeks away."* Then: ***"Deafening silence. Understandably, this is what this is, this is the challenge."*** Deployment time was deferred to a separate conversation. Villi: *"most of us have rolled out in Azure before. It's not going to be the complication."*
+Ian asked for *"a sense of the actual deployment of the capability once we're settled on a design and the associated costing... how long it would actually take to deploy"*, against go-to-market *"currently planned to be the 17th of November, which is two weeks away."* Then: ***"Deafening silence. Understandably, this is what this is, this is the challenge."*** Deployment time was deferred to a separate conversation. Billy: *"most of us have rolled out in Azure before. It's not going to be the complication."*
 
 > [!warning] Ian said 17 November.
 > Every other record, including the standup an hour later, says **16 November**. The vault keeps the 16th until the date is confirmed.
@@ -128,7 +130,7 @@ Ian asked for *"a sense of the actual deployment of the capability once we're se
 | Novosapien support the AI code until TXN hires and takes over | [[commercial]], [[delivery]], [[open-questions]] #126 | Callouts added; row updated |
 | DT: no deal-breaker; design and cost model to follow; cost to optimise | [[delivery]], [[open-questions]] #119 | Callout added; row updated |
 | LLM discussed with DT despite the hold; Gemini API direct in testing; Databricks or Foundry on Azure; fallback built; LLM cost in DT's cost | [[architecture]], [[open-questions]] #70 | Callout added, corrects 27 October; row updated |
-| Villi's questions, masking unanswered, gate design and costing | [[architecture]], [[open-questions]] #127 | Callout added; **new row** |
+| Billy's questions, masking unanswered, gate design and costing | [[architecture]], [[open-questions]] #127 | Callout added; **new row** |
 | No deployment time, two weeks to launch | [[delivery]], [[open-questions]] #119, #125 | In callout; rows updated |
 | Ian said 17 November | [[delivery]] | Flagged, not changed |
 | Brett: journeys are not pre-designed | n/a | Context, recorded on this page |
@@ -137,10 +139,10 @@ Ian asked for *"a sense of the actual deployment of the capability once we're se
 
 | Action | Owner | When |
 |---|---|---|
-| Email his questions (about five) | Villi | Not dated |
-| Answer Villi's questions, including data masking | Novosapien | As soon as they arrive |
+| Email his questions (about five) | Billy | Not dated |
+| Answer Billy's questions, including data masking | Novosapien | As soon as they arrive |
 | Check with Hasan whether OKF is used | George | Done after the call: effectively yes |
-| Send a design and an infrastructure cost model | DT | After Villi's answers |
+| Send a design and an infrastructure cost model | DT | After Billy's answers |
 | Say how long deployment takes | DT and Novosapien | Separate conversation, not booked |
 | Show DT the Control Center | Ian, Novosapien | In the next few weeks |
 

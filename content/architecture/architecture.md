@@ -60,14 +60,21 @@ Cross-cutting technical decisions that affect the whole product. This directory 
 >
 > **Nobody is monitoring the AI layer yet.** Dörte: *"we want to know before a customer tells us something is not working."* Novosapien use Sentry. Michael: DT and Stackworkz have *"only what's built in Azure. They've got nothing else."* George will check the architecture document. With no support role for DT (#119), whoever is alerted when the agent fails is undecided. [[open-questions]] #126.
 
-> [!important] The model path corrected, Villi's questions, and Console data flows to map (03-11-2026)
+> [!important] The model path corrected, Billy's questions, and Console data flows to map (03-11-2026)
 > ([[2026-11-03-dt-demo-and-infrastructure]], [[2026-11-03-agentic-standup]])
 >
 > **Correction to 27 October.** Testing uses Gemini **directly from the Gemini API**, not through Azure. George, to DT: on Azure, Gemini is reachable through **Azure Databricks**, per token rather than deployed, and OpenAI or Anthropic models through **Azure AI Foundry**. **Fallback across models is built**, for a region or provider outage. **LLM costs go into DT's infrastructure cost**, and Novosapien have sent estimates across a couple of providers. The LLM section held back on 27 October was discussed with DT anyway, because the internal call never happened. #70.
 >
-> **How the agent reads the docs, as told to DT.** No indexing and no vector database. At start-up it reads Umbraco into an in-memory copy and searches it with read, glob and grep, isolated to those files. **Villi (DT, data lake, long-context AI research)** asked how data is limited and masked before it reaches the LLM. **Not answered.** He also raised grep's token cost, and asked whether OKF structures the files. After the call George found that the **Open Knowledge Format**, markdown with metadata for an agent to traverse, is effectively what Novosapien built. Villi's emailed questions gate DT's design and cost model. [[open-questions]] #127.
+> **How the agent reads the docs, as told to DT.** No indexing and no vector database. At start-up it reads Umbraco into an in-memory copy and searches it with read, glob and grep, isolated to those files. **Billy (DT, data lake, long-context AI research)** asked how data is limited and masked before it reaches the LLM. **Not answered.** He also raised grep's token cost, and asked whether OKF structures the files. After the call George found that the **Open Knowledge Format**, markdown with metadata for an agent to traverse, is effectively what Novosapien built. Billy's emailed questions gate DT's design and cost model. [[open-questions]] #127.
 >
 > **Console data: map the flows before choosing.** Dörte, at the standup: card and cardholder data would pass through the Console agent, and *"quite often they process them outside of Europe."* George: Azure pins services to regions, and Anthropic and OpenAI models can run in the UK region; Gemini through Databricks needs more detail. Dörte wants the flows mapped now, **South Africa included**, *"don't forget the data sits in South Africa as well"*, to make the DPA simpler (#103).
+
+> [!note] Untested on Azure, so Novosapien deploy it themselves, and Container Apps meet AKS (05-11-2026)
+> ([[2026-11-05-agentic-standup]]) **Ian asked:** *"You guys have not spun this up in Azure, right?... So you don't actually know if it will work in Azure the way that you've designed it."* It has run on GCP only. Novosapien will stand it up in Azure by 10 November and time it.
+>
+> **The service choice is the likely friction.** The plan is **Azure Container Apps**, a managed service like Cloud Run. **DT run everything else on AKS**, Kubernetes. George had expected that to be the sticking point; DT raised nothing on 3 November. The remaining blocker for the Knowledge Hub is a **DT-approved environment, including the data and the database**. [[open-questions]] #49, #119.
+>
+> **OKF:** a variant of the Open Knowledge Format, *"not the exact format... a different permutation of it."*
 
 ## Decisions
 
