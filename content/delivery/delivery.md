@@ -138,6 +138,22 @@ Reviews of the client's own console feedback queue, read from `txn.feedback` and
 >
 > **A correction to the flight plan.** The 16 October flight plan says that the AI node *"is already built. What remains is access."* The node is not built. The MSA reviewer brief says the same. Both need a correction from Brett. #70.
 
+> [!important] The AI already runs in Novosapien's Azure, and Novosapien host it for launch (06-11-2026)
+> ([[2026-11-06-ai-hosting-sync]]) **George:** *"We've already deployed it. It's already running in Azure."* The Stackworkz Knowledge Hub code runs in Novosapien's own Azure, most of the security is done, and Hasan reported the last Front Door issues fixed during the call. The 5 November action is done ahead of Tuesday.
+>
+> | Item | Position |
+> |---|---|
+> | **Hosting for launch** | **Novosapien host the AI, temporarily**; the Knowledge Hub stays in DT's environment and calls it as an API |
+> | **Moving it to DT later** | Same design; small changes where DT have things locked down |
+> | **Monday 9 November** | The Stackworkz, Novosapien and TXN call becomes a connection call; *"by the end of the week... done, tested and ready"* |
+> | **What DT must enable** | An outbound call to an external service. Ian is confident (Umbraco already does this; Charles, DT's CTO, sees no issue), but **the exact ask is not written down** (#129) |
+> | **Code standards** | Sonar at 82 percent against 80; George will raise it before Roanne reviews next week |
+> | **Cost** | TXN pay; Brett passes it through on the invoice ([[commercial]]) |
+>
+> **This is the fallback the 5 November callout said was missing**, and it is now the launch plan. #119.
+>
+> **Launch date, still split.** George: *"ready. For the 16th."* Ian, in the same call: *"we are going to go on the 17th."* This page keeps the 16th until confirmed.
+
 > [!warning] DT say the hosting cannot be ready for launch, and Novosapien will stand it up to time it (05-11-2026)
 > ([[2026-11-05-agentic-standup]])
 >
