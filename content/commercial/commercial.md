@@ -6,6 +6,15 @@ description: "Index of the TXN commercial pack: proposals, Pilot Order, MSA and 
 
 The commercial pack for the Novosapien <> TXN engagement: the proposals that define what we are selling, and pointers to the legal instruments that paper it. Contracts themselves live in [legal/](../legal/) and are linked below so reviewers and agents can reach everything from one place.
 
+> [!important] DT come off future development, Ian forecasts 18 months of support, and London on 24 November (06-11-2026)
+> ([[2026-11-06-ai-hosting-sync]]) **DT out of future development.** Ian will tell DT within a couple of days that they **will not take on future development of the Knowledge Hub or the Control Center**. Stackworkz keep supporting and maintaining both, and front-end changes that need AI work go straight to Stackworkz.
+>
+> **Support forecast: January 2027 to June 2028**, 18 months, until TXN hires its own AI team and takes a handover three months later. Ian: the £4,250 a month proposal *"never closed down when it started and when it ended"*. He had pictured a pause in build, then about four months more from August 2027, but is open to a flatter, higher monthly rate covering both. Brett: a different rate on different deliverables. **This conflicts with the SLA**, which starts support on **16 December 2026**. #130.
+>
+> **Hosting is paid for.** Novosapien host the AI for now, and Ian expects to pay. Brett: *"we'll just pass through the transaction cost on the invoice."* The proposal says AI usage runs on TXN's own accounts, and **no terms cover Novosapien hosting** yet. #130.
+>
+> **24 November, London.** Ian and Michael come to Novosapien's office for a session and then dinner: what is left of the planned scope, support, and the commercial model. Brett will show Project Genesis. Brett organises it.
+
 > [!important] Novosapien support the AI code until TXN takes it over (03-11-2026)
 > **Ian, to DT** ([[2026-11-03-dt-demo-and-infrastructure]]): *"that AI code is going to be **supported by Novo until such time that TXN decides to take it over**. Which would mean us employing our own AI engineers and also having a period of handover between Novo and those guys so we could take ownership of it."* DT host only. **No support terms, hours or handover plan exist yet**, and this is now an ongoing service commitment said in front of a partner.
 >

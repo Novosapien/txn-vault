@@ -76,6 +76,15 @@ Cross-cutting technical decisions that affect the whole product. This directory 
 >
 > **OKF:** a variant of the Open Knowledge Format, *"not the exact format... a different permutation of it."*
 
+> [!note] Deployed on Azure: WebSockets, North Europe, and 15-minute data copies (06-11-2026)
+> ([[2026-11-06-ai-hosting-sync]]) The agent service now runs in **Novosapien's Azure on Container Apps**, with the Knowledge Hub in DT's environment calling it as an API through the **AG-UI** package.
+>
+> - **SSE became WebSockets.** Azure ruled out the SSE method of streaming agent messages to the front end, so the code and the deployment use WebSockets.
+> - **Region: North Europe (Ireland).** DT use West Europe (the Netherlands) for other services; George can switch region if needed.
+> - **Latency** is not a Knowledge Hub concern; Michael's worry is the Console. An LLM reply takes two or three seconds, so about 100 milliseconds extra hardly matters.
+> - **Resilience:** Container Apps restarts on its own, and Brett sets up **a copy of the data every 15 minutes**. Michael accepts that for the Knowledge Hub; **the Console needs a proper resilience design**.
+> - **Open:** whether DT do the connection work themselves or give Novosapien a service account. #129.
+
 ## Decisions
 
 _Cross-cutting calls made in client sessions._
