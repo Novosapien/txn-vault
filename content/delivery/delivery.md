@@ -138,6 +138,21 @@ Reviews of the client's own console feedback queue, read from `txn.feedback` and
 >
 > **A correction to the flight plan.** The 16 October flight plan says that the AI node *"is already built. What remains is access."* The node is not built. The MSA reviewer brief says the same. Both need a correction from Brett. #70.
 
+> [!important] A week out: Novosapien's side finishes on 11 November, and the Console date slips (10-11-2026)
+> ([[2026-11-10-agentic-standup]])
+>
+> | Item | Position |
+> |---|---|
+> | **Novosapien's side** | Agent migrated; DT's key in; Stackworkz have the token. Left: the AI Resources page (MCP URL, `llms.txt`, copy page to AI). **Done by end of Wednesday 11 November** |
+> | **Stackworkz** | Ruan has it working locally; one .NET back-end PR rejected and being fixed. PRs with DT, comments expected cleared on 10 November |
+> | **Umbraco** | The AI has been reading **staging** (about 40 documents), not production (three or four). Michael moves them this week. **No webhook yet for Novosapien**, so new documents are not picked up |
+> | **One-click examples** | Failing on poor examples in DT's YAML and a duplicate ID; DT redeploy on 10 November and pre-load the public sandbox |
+> | **Checks** | Michael has IP-restricted production access for validation as it deploys; public sandbox checks come after |
+> | **Thursday 12 November** | George joins the DT and Stackworkz standup, moved to the afternoon |
+> | **Console** | Planned for later in November, **will be pushed out**: Stackworkz blocked on DT's APIs, first client delayed. Ian sets a date after launch. API UAT about 82 percent |
+>
+> **Launch date.** George now says *"the 17th"* twice, and Ian has said it since 3 November. Nobody has withdrawn the 16th, so this page still carries the flag until George confirms.
+
 > [!important] The AI already runs in Novosapien's Azure, and Novosapien host it for launch (06-11-2026)
 > ([[2026-11-06-ai-hosting-sync]]) **George:** *"We've already deployed it. It's already running in Azure."* The Stackworkz Knowledge Hub code runs in Novosapien's own Azure, most of the security is done, and Hasan reported the last Front Door issues fixed during the call. The 5 November action is done ahead of Tuesday.
 >
