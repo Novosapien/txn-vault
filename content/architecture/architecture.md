@@ -85,6 +85,11 @@ Cross-cutting technical decisions that affect the whole product. This directory 
 > - **Resilience:** Container Apps restarts on its own, and Brett sets up **a copy of the data every 15 minutes**. Michael accepts that for the Knowledge Hub; **the Console needs a proper resilience design**.
 > - **Open:** whether DT do the connection work themselves or give Novosapien a service account. #129.
 
+> [!important] The browser calls the AI directly, and OpenAI stays off (10-11-2026)
+> ([[2026-11-10-agentic-standup]]) **No .NET proxy.** Stackworkz prefer the Knowledge Hub front end to call the agent service directly from the browser: *"it's public anyway, anybody can use it. The rate limits are going to be there."* A proxy would need two WebSocket connections, front end to .NET and .NET to the AI, or a way to route through. **Michael agreed.** That leaves rate limits as the only guard on a public, ungated endpoint, and no limit is written down. #91.
+>
+> **Models: Gemini, Claude as backup, OpenAI not switched on**, because OpenAI could process data outside Europe. George is *"like 95 sure"* Azure's OpenAI deployments have UK and EU regions. This is what Dörte gives TXN's lawyer.
+
 ## Decisions
 
 _Cross-cutting calls made in client sessions._

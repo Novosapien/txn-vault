@@ -27,6 +27,8 @@ description: "Component doc for the TXN Co-pilot — Console assistant that answ
 
 > **05-11 update ([[2026-11-05-agentic-standup]]): first working version, demoed by Hasan.** It navigates (*"take me to the transactions"*), explains the page on screen (*"tell me about this page"*; one attempt failed live), and opens a named cardholder through a tool call. **Mostly question and answer for now**: actions with an approval card, such as cancelling a card, are not added. **Unlike the [[full-agentic-experience]], no generative UI**: it takes the user to the screen and acts there. **Next:** memory across the session, where the user has been and what they did, so it can help someone who is stuck. Michael: *"Yes, that was great."*
 
+> **10-11 update ([[2026-11-10-agentic-standup]]): the Console date slips.** It was planned for later in November; Michael: *"we are probably going to push that one out"*, because Stackworkz were blocked on DT's APIs and the first client is delayed. Ian sets a date after launch. After the 17th Novosapien work on permissions, skills by access level, testing, then UI and UX tweaks.
+
 ## 1. What Does This Component Do?
 
 **Functional purpose:**

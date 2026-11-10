@@ -13,6 +13,7 @@ sources:
   - "[[2026-10-27-agentic-standup]]"
   - "[[2026-11-03-dt-demo-and-infrastructure]]"
   - "[[2026-11-03-agentic-standup]]"
+  - "[[2026-11-10-agentic-standup]]"
 description: "Sub-component spec for the portal chat: semantic doc discovery, grounded Q&A with source references, a deterministic fallback, and live sandbox execution"
 ---
 
@@ -211,6 +212,13 @@ It is **deliberately light**: Ian's explicit steer is to invest in the [[docs-mc
 > **New APIs need no rework.** Guides arrive from Umbraco on publish and the API reference from the YAML, *"so there is no rework for the Novo guys to do."*
 >
 > **The build is done; migration and deployment are left** ([[2026-11-03-agentic-standup]]). The first migration into Stackworkz's environment is complete, and Hasan's local testing is *"all seeming good"*. See [[delivery]].
+
+> [!warning] Reading staging, no webhook, and 24 hours to the lawyer (10-11-2026)
+> ([[2026-11-10-agentic-standup]]) **The AI has been reading staging Umbraco**, about 40 documents; production has three or four test ones. Michael moves the validated documents across this week. **No webhook is set up for Novosapien**, so a document Michael added was not picked up; Novosapien need to give him an endpoint.
+>
+> **The last pages to migrate** are the AI Resources page: MCP server URL, `llms.txt` and copy page to AI, done by 11 November.
+>
+> **Retention.** Dörte will tell TXN's lawyer chat is held **24 hours**. This page says **72 hours**, agreed 22 October. Nobody corrected it on the call. #131.
 
 ## 2. What Needs to Happen?
 
