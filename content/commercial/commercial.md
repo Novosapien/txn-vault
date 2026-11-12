@@ -6,6 +6,13 @@ description: "Index of the TXN commercial pack: proposals, Pilot Order, MSA and 
 
 The commercial pack for the Novosapien <> TXN engagement: the proposals that define what we are selling, and pointers to the legal instruments that paper it. Contracts themselves live in [legal/](../legal/) and are linked below so reviewers and agents can reach everything from one place.
 
+> [!warning] The DPA must be signed before go-live, and it is due on 13 November (12-11-2026)
+> ([[2026-11-12-agentic-standup]]) **Brett sends Ian the data processing agreement on Friday 13 November.** Ian: *"we do have to have that in place before we launch and somebody from our board is going to need to sign it."* About seven or eight pages, from standard clauses and George's analysis with its GDPR sources.
+>
+> **Scope, set by Ian:** security for the **temporary hosting** of the AI service, and what counts as personal data in that period: the **random ID, which can be linked to an IP address**, the **chat ID**, and the chat. Both are **kept 72 hours and then dropped**; chat with no personal identifier can move to Novosapien's long-term store. The privacy policy will not mention cookies, and refers to the back-to-back agreement with Novosapien.
+>
+> **DT's 17 pages and 33 questions are not needed for launch.** Charles told Ian *"nothing is needed for the 17th... they're all systems go."* Brett's draft is checked against the letter already agreed with DT on IP addresses and public sandbox logs. #103, #129, #131.
+
 > [!important] DT come off future development, Ian forecasts 18 months of support, and London on 24 November (06-11-2026)
 > ([[2026-11-06-ai-hosting-sync]]) **DT out of future development.** Ian will tell DT within a couple of days that they **will not take on future development of the Knowledge Hub or the Control Center**. Stackworkz keep supporting and maintaining both, and front-end changes that need AI work go straight to Stackworkz.
 >

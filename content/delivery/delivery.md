@@ -138,6 +138,19 @@ Reviews of the client's own console feedback queue, read from `txn.feedback` and
 >
 > **A correction to the flight plan.** The 16 October flight plan says that the AI node *"is already built. What remains is access."* The node is not built. The MSA reviewer brief says the same. Both need a correction from Brett. #70.
 
+> [!important] Go-live is Monday 16 November, and the press release is the 17th (12-11-2026)
+> ([[2026-11-12-agentic-standup]]) **The date question is settled: both were right.** Michael, after speaking to Ian: *"Monday morning we'll be putting the Knowledge Hub live with the website as well, obviously, then press release the day after."* The Knowledge Hub goes **an hour before the marketing website**, which takes about half an hour to deploy and refresh. The flag carried on this page since 3 November is closed.
+>
+> | Item | Position |
+> |---|---|
+> | **`llms.txt`** | Being served at its own address, done on 12 November. Dynamic, built from the published guides like the Docs MCP server |
+> | **Credentials** | **Production Umbraco** and **DT's production sandbox** still awaited. Only credential swaps |
+> | **Click-and-go** | Only the **create card product** endpoint needs a unique name; the fix adds a timestamp. Future unique checks need the same care |
+> | **Public sandbox** | Locked to approved IP addresses; Novosapien send the addresses that call it. The lock comes off on Monday |
+> | **Umbraco webhook** | Michael sends the details and sets one up |
+> | **DT** | Release endpoint by endpoint, **authentication first** (blocking George) by the end of the week. Stackworkz test the full setup in Dev |
+> | **DPA** | Due from Brett **13 November**; must be signed by a TXN board member **before go-live** ([[commercial]]) |
+
 > [!important] A week out: Novosapien's side finishes on 11 November, and the Console date slips (10-11-2026)
 > ([[2026-11-10-agentic-standup]])
 >

@@ -14,6 +14,7 @@ sources:
   - "[[2026-11-03-dt-demo-and-infrastructure]]"
   - "[[2026-11-03-agentic-standup]]"
   - "[[2026-11-10-agentic-standup]]"
+  - "[[2026-11-12-agentic-standup]]"
 description: "Sub-component spec for the portal chat: semantic doc discovery, grounded Q&A with source references, a deterministic fallback, and live sandbox execution"
 ---
 
@@ -219,6 +220,13 @@ It is **deliberately light**: Ian's explicit steer is to invest in the [[docs-mc
 > **The last pages to migrate** are the AI Resources page: MCP server URL, `llms.txt` and copy page to AI, done by 11 November.
 >
 > **Retention.** Dörte will tell TXN's lawyer chat is held **24 hours**. This page says **72 hours**, agreed 22 October. Nobody corrected it on the call. #131.
+
+> [!important] Retention is 72 hours, and there are no cookies (12-11-2026)
+> ([[2026-11-12-agentic-standup]]) **Ian confirms 72 hours** as the basis for the DPA: the random ID and the chat ID are kept 72 hours, then dropped, and chat with no personal identifier can go to the long-term store. That overrides the 24 hours from 10 November.
+>
+> **Nothing in the browser is a cookie.** The docs session (the random ID) and the docs thread (the chat's ID) sit in **session storage**; the only item in local storage is the co-pilot's layout, docked, floating or expanded, which can be removed. The random ID is cleared from the browser and from its link to the chat in the database.
+>
+> **`llms.txt` is dynamic**, built from the published guides like the Docs MCP server, and served at its own address from 12 November.
 
 ## 2. What Needs to Happen?
 
