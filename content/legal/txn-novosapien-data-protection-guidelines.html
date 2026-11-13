@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<title>Data Protection Guidelines: TXN Knowledge Hub AI Assistant</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ns-primary: #A1BCD1;
+    --ns-navy:    #09142F;
+    --ns-ink:     #14181F;
+    --ns-muted:   #64748B;
+    --ns-rule:    #D9E1E8;
+    --ns-wash:    #F6F9FB;
+    --ns-good:    #2F7A5B;
+    --ns-warn:    #9A6214;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    font-family: Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: var(--ns-ink); font-size: 10.5pt; line-height: 1.55;
+    margin: 0; background: #fff;
+  }
+  .page { max-width: 196mm; margin: 0 auto; padding: 16mm 8mm 0; }
+
+  .wordmark { font-weight: 700; font-size: 12pt; color: var(--ns-navy); letter-spacing: -0.01em; }
+  .wordmark .accent { color: var(--ns-primary); }
+  .doc-title { font-size: 20pt; font-weight: 700; color: var(--ns-navy); margin: 12px 0 2px; letter-spacing: -0.015em; line-height: 1.15; }
+  .doc-sub { font-size: 12pt; font-weight: 500; color: var(--ns-muted); margin: 2px 0 0; }
+  .title-rule { height: 2px; width: 64px; background: var(--ns-primary); border: 0; margin: 10px 0 14px; }
+  .meta { color: var(--ns-muted); font-size: 9.5pt; margin: 0 0 20px; }
+  .meta span { margin-right: 18px; }
+
+  h2 { font-size: 13.5pt; font-weight: 700; color: var(--ns-navy); margin: 1.9em 0 .5em; letter-spacing: -0.01em; break-after: avoid;
+       padding-bottom: 5px; border-bottom: 1px solid var(--ns-rule); }
+  h2 .num { color: var(--ns-primary); font-weight: 700; margin-right: 8px; }
+  h3 { font-size: 11pt; font-weight: 600; color: var(--ns-navy); margin: 1.3em 0 .35em; break-after: avoid; }
+  p { margin: .45em 0; }
+  p, li { orphans: 2; widows: 2; }
+  ul { margin: .4em 0; padding-left: 20px; }
+  li { margin: .22em 0; }
+  strong { font-weight: 600; color: var(--ns-navy); }
+  .lead { font-size: 11pt; color: #2B3340; }
+
+  table { width: 100%; border-collapse: collapse; margin: .7em 0; font-size: 9.8pt; }
+  th, td { border: 1px solid var(--ns-rule); padding: 6px 8px; text-align: left; vertical-align: top; }
+  th { background: var(--ns-wash); font-weight: 600; color: var(--ns-navy); }
+  tr { break-inside: avoid; }
+  td.k { font-weight: 600; color: var(--ns-navy); }
+
+  .callout { border-left: 3px solid var(--ns-primary); background: var(--ns-wash); padding: 10px 14px; margin: 1em 0; break-inside: avoid; }
+  .callout p:first-child { margin-top: 0; }
+  .callout p:last-child { margin-bottom: 0; }
+  .callout.warn { border-left-color: var(--ns-warn); background: #FDF8F0; }
+
+  .quote { border-left: 3px solid var(--ns-rule); padding: 2px 0 2px 14px; margin: .8em 0; color: #3A4250; font-style: italic; }
+  .quote cite { display: block; font-style: normal; font-size: 9.3pt; color: var(--ns-muted); margin-top: 4px; }
+
+  .pill { display: inline-block; font-size: 8.5pt; font-weight: 600; letter-spacing: .04em; text-transform: uppercase;
+          padding: 2px 7px; border-radius: 3px; background: var(--ns-wash); color: var(--ns-muted); border: 1px solid var(--ns-rule); }
+  .pill.ns { background: #EEF4F9; color: #1E4868; border-color: #C9DCEA; }
+  .pill.txn { background: #F2F1F7; color: #413A6B; border-color: #D7D4E6; }
+  .pill.done { background: #EFF6F2; color: var(--ns-good); border-color: #C6E2D4; }
+  .pill.open { background: #FDF6EC; color: var(--ns-warn); border-color: #EEDCC2; }
+
+  .section { break-inside: auto; }
+  .pagebreak { break-before: page; }
+
+  .footer { margin-top: 20mm; padding-top: 6px; border-top: 1px solid var(--ns-rule);
+            color: var(--ns-muted); font-size: 8.5pt; display: flex; justify-content: space-between; }
+
+  @page { size: A4; margin: 16mm 14mm 14mm; }
+  @media print {
+    .page { max-width: none; margin: 0; padding: 0; }
+    .footer { position: fixed; bottom: 7mm; left: 14mm; right: 14mm; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="wordmark">novo<span class="accent">sapien</span></div>
+  <div class="doc-title">Data Protection Guidelines</div>
+  <div class="doc-sub">TXN Knowledge Hub AI Assistant: interim hosting by Novosapien</div>
+  <hr class="title-rule">
+  <p class="meta">
+    <span><strong>Version</strong> 1.0</span>
+    <span><strong>Date</strong> 13 November 2026</span>
+    <span><strong>Parties</strong> TXN Global Limited and Novosapien Global Ltd</span>
+    <span><strong>Status</strong> Working document</span>
+  </p>
+
+  <p class="lead">This is the agreed factual position on personal data in the TXN Knowledge Hub AI assistant while
+  Novosapien hosts it. It is the companion to the <strong>Data Processing Agreement (Interim Hosting)</strong>: this
+  document explains what happens to data and why, the Agreement makes it binding. It is written to be given to TXN's
+  counsel, to answer Direct Transact's interim launch questions in one place, and to be updated as the position changes.</p>
+
+  <div class="callout">
+    <p><strong>The one thing to read first.</strong> For this interim period Novosapien <em>hosts</em> the AI assistant, in
+    Novosapien's own Azure subscription, using Novosapien's own model account. That makes Microsoft, Google and Sentry
+    <strong>Novosapien's sub-processors</strong>, and makes Novosapien accountable for the hosting itself. That is a
+    different position from the rest of the engagement, where Direct Transact hosts and those providers are TXN's. It is
+    the reason a separate agreement is needed now rather than later, and it reverses at Production Cutover.</p>
+  </div>
+
+  <!-- 1 -->
+  <div class="section">
+  <h2><span class="num">1</span>What the interim service is, and what it is not</h2>
+
+  <p>The interim service is the <strong>documentation co-pilot</strong> and the <strong>documentation server</strong> behind
+  the Knowledge Hub. It answers a developer's question from TXN's published documentation. It runs in Novosapien's Azure
+  subscription in <strong>North Europe (Ireland)</strong> until it moves to hosting provided by Direct Transact in the TXN
+  Azure subscription.</p>
+
+  <table>
+    <tr><th style="width:50%">It does</th><th>It does not</th></tr>
+    <tr>
+      <td>
+        <ul>
+          <li>Answer questions from TXN's <strong>public documentation</strong></li>
+          <li>Run example API calls against a <strong>mock API</strong></li>
+          <li>Let a visitor return to their own chat within 72 hours</li>
+          <li>Rate limit per visitor to protect the service</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>Hold any <strong>TXN client data</strong></li>
+          <li>Hold any <strong>cardholder data</strong></li>
+          <li>Hold any <strong>TXN credentials</strong></li>
+          <li>Reach <strong>TxnGlobal.API</strong></li>
+          <li>Require a sign-in, or hold names or email addresses</li>
+          <li>Carry over the pilot sign-up records</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+
+  <p>That scope is written into clause 1.2 of the Agreement and cannot change without TXN's written agreement. It is also
+  what keeps the risk small: the most sensitive thing the service can hold is text a visitor chose to type.</p>
+  </div>
+
+  <!-- 2 -->
+  <div class="section">
+  <h2><span class="num">2</span>The data map</h2>
+
+  <table>
+    <tr><th style="width:20%">Data</th><th style="width:26%">Where it lives</th><th style="width:16%">How long</th><th>Who can reach it</th></tr>
+    <tr>
+      <td class="k">Visitor IP address</td>
+      <td>Azure Front Door firewall logs only. The assistant itself never reads, stores or logs it</td>
+      <td><strong>30 days</strong></td>
+      <td>Ireland. Authorised Novosapien engineers could technically open the logs. Clause 6.2 of the Agreement says they will not, except for a named security or support purpose, and logs every access</td>
+    </tr>
+    <tr>
+      <td class="k">Browser identifier</td>
+      <td>A random value in the visitor's browser that links them to their own chats. Session storage, so it dies when the tab closes</td>
+      <td><strong>72 hours</strong> after last activity, server side</td>
+      <td>Nobody outside the browser. It is never sent to the model</td>
+    </tr>
+    <tr>
+      <td class="k">Chat content</td>
+      <td>The assistant's own database</td>
+      <td><strong>72 hours</strong> after the last message</td>
+      <td>Ireland. The application's own database role and authorised Novosapien engineers</td>
+    </tr>
+    <tr>
+      <td class="k">Sanitised chat content</td>
+      <td>The long-term store, used to find where the documentation needs to improve</td>
+      <td>As long as the purpose requires</td>
+      <td>Ireland, with the <strong>browser identifier stripped</strong> before it is written</td>
+    </tr>
+    <tr>
+      <td class="k">Application logs</td>
+      <td>Azure Log Analytics. Tool-call arguments and results, plus a one-line request summary. No IP addresses, no browser identifiers, and <strong>not the visitor's message as typed</strong></td>
+      <td><strong>30 days</strong></td>
+      <td>Ireland. Can be forwarded to Direct Transact's Microsoft Sentinel</td>
+    </tr>
+    <tr>
+      <td class="k">Error reports</td>
+      <td>Sentry, on Novosapien's account, configured not to send IP addresses</td>
+      <td>Provider default</td>
+      <td>Frankfurt, Germany</td>
+    </tr>
+    <tr>
+      <td class="k">Database backups</td>
+      <td>Azure managed backups</td>
+      <td><strong>7 days</strong></td>
+      <td>Ireland</td>
+    </tr>
+  </table>
+
+  <div class="callout">
+    <p><strong>The IP address never reaches the model.</strong> The only reason it exists at all is Azure Front Door, which
+    needs it to run a firewall and a per-visitor rate limit on a surface with no sign-in. No model provider sees it, and
+    neither does the browser identifier.</p>
+  </div>
+
+  <h3>Where 72 hours came from</h3>
+  <p>It is a <strong>functional number, not a regulatory one</strong>. Comparable services commonly use 24 hours. TXN chose
+  72 so a visitor can return to a chat the next day, while keeping the exposure short. It is the same number TXN has asked
+  Direct Transact to apply to the public sandbox, which is still to be confirmed with Direct Transact in writing.</p>
+  </div>
+
+  <!-- 3 -->
+  <div class="section pagebreak">
+  <h2><span class="num">3</span>Who is who under the GDPR</h2>
+
+  <table>
+    <tr><th style="width:21%">Party</th><th style="width:17%">Role</th><th>What it means in practice</th></tr>
+    <tr>
+      <td class="k">TXN Global Limited</td>
+      <td><span class="pill txn">Controller</span></td>
+      <td>Decides why and how the data is processed. Owns the privacy notice, the acceptable use policy, the lawful basis and the legitimate interest assessment. Established in Cyprus, so the <strong>EU GDPR</strong> applies</td>
+    </tr>
+    <tr>
+      <td class="k">Novosapien Global Ltd</td>
+      <td><span class="pill ns">Processor</span></td>
+      <td>Processes only on TXN's documented instructions. Hosts the interim service, holds the model account, engages the three sub-processors below and is fully liable for them. Processes in the United Kingdom, so the <strong>UK GDPR</strong> applies to that processing</td>
+    </tr>
+    <tr>
+      <td class="k">Microsoft (Azure)</td>
+      <td><span class="pill ns">Novosapien sub-processor</span></td>
+      <td>Hosting, database, backups and all logs, including the firewall logs that hold IP addresses. North Europe (Ireland)</td>
+    </tr>
+    <tr>
+      <td class="k">Google (Gemini on Vertex AI)</td>
+      <td><span class="pill ns">Novosapien sub-processor</span></td>
+      <td>Receives the visitor's question and the public documentation. No IP address, no browser identifier. EU multi-region. Google acts as processor under its own Data Processing Addendum</td>
+    </tr>
+    <tr>
+      <td class="k">Sentry</td>
+      <td><span class="pill ns">Novosapien sub-processor</span></td>
+      <td>Error reports and performance data, configured to send no IP addresses. EU region, Frankfurt</td>
+    </tr>
+    <tr>
+      <td class="k">Direct Transact</td>
+      <td><span class="pill">Not a party to this processing</span></td>
+      <td>Does not host or access the interim service. From Production Cutover it hosts the service in the TXN subscription as TXN's own provider, and this arrangement ends</td>
+    </tr>
+    <tr>
+      <td class="k">Stackworx</td>
+      <td><span class="pill">Not a party to this processing</span></td>
+      <td>Builds and supports the Knowledge Hub, not the AI assistant. Confirmed on 11 November that nothing is needed from Stackworx here</td>
+    </tr>
+    <tr>
+      <td class="k">Umbraco, TXN's auth server</td>
+      <td><span class="pill">Not sub-processors</span></td>
+      <td>Umbraco is the source of the documentation and receives nothing from visitors. The assistant only reads the auth server's public signing keys</td>
+    </tr>
+  </table>
+
+  <p>LangSmith tracing and Supabase are <strong>not used</strong> by the interim service, and the outbound firewall blocks
+  both.</p>
+  </div>
+
+  <!-- 4 -->
+  <div class="section">
+  <h2><span class="num">4</span>The lawful basis</h2>
+
+  <p>TXN owns the lawful basis as controller. The position the parties have taken, and the reasoning behind it:</p>
+
+  <table>
+    <tr><th style="width:26%">Processing</th><th style="width:24%">Basis</th><th>Why</th></tr>
+    <tr>
+      <td class="k">Firewall and security logs (IP addresses)</td>
+      <td>Legitimate interest, Article 6(1)(f)</td>
+      <td><strong>Recital 49</strong> names network and information security as a legitimate interest, and gives prevention of unauthorised access and denial-of-service attacks as examples. Thirty days is unremarkable for this purpose</td>
+    </tr>
+    <tr>
+      <td class="k">Chat content and the browser identifier</td>
+      <td>Legitimate interest, Article 6(1)(f)</td>
+      <td>The visitor has asked for the service. The identifier exists only so they get their own chat back</td>
+    </tr>
+    <tr>
+      <td class="k">Sanitised chats, to improve the documentation</td>
+      <td>Legitimate interest, Article 6(1)(f)</td>
+      <td>The browser identifier is stripped, so the retained record cannot be tied back to a visitor. The purpose is improving TXN's own documentation</td>
+    </tr>
+  </table>
+
+  <div class="callout warn">
+    <p><strong>Open item.</strong> A short written <strong>legitimate interest assessment</strong> does not exist yet. EDPB
+    Guidelines 1/2024 set a three-step test: a lawful interest, necessity, and a balance against the individual's rights.
+    One page covers it for each of the three rows above. It should be in place before the privacy notice is finalised.</p>
+  </div>
+
+  <h3>Is an IP address personal data? Yes, and it is treated as such.</h3>
+  <p>An IP address is personal data where the holder has a lawful route to link it to a person, which the Court of Justice
+  established in <strong>Breyer (C-582/14)</strong>; Recital 30 names IP addresses as online identifiers. The parties do not
+  argue the point. The firewall logs are treated as holding personal data, with a basis, a retention period and a line in
+  the privacy notice.</p>
+
+  <h3>And the random browser identifier?</h3>
+  <p>Also personal data while it exists. Article 4(1) lists an online identifier as a means of identification, and
+  <strong>EDPS v SRB (C-413/23 P, September 2025)</strong> confirmed the test is whether the holder has means reasonably
+  likely to identify the person. The exposure is small and getting smaller: it survives one tab session in the browser, the
+  server deletes it 72 hours after the last activity, it is stripped from anything kept longer, and the model never
+  receives it.</p>
+  </div>
+
+  <!-- 5 -->
+  <div class="section pagebreak">
+  <h2><span class="num">5</span>The principles both parties operate to</h2>
+
+  <p>These are the working rules behind the Agreement. They came out of the alignment call on 11 November 2026, and they
+  are what should be applied to any question this document does not answer.</p>
+
+  <table>
+    <tr><th style="width:32%">Principle</th><th>What it means</th></tr>
+    <tr>
+      <td class="k">Personal data is never asked for</td>
+      <td>No field, prompt or journey requests it. The acceptable use policy tells visitors not to enter it. If a visitor enters it anyway, nothing is done with it beyond the retention periods above. The sandbox reinforces this: the APIs need no cardholder name or address, so a completely blank cardholder can be created</td>
+    </tr>
+    <tr>
+      <td class="k">Store it in Europe, and keep access inside Europe or adequacy</td>
+      <td>Everything is stored in Europe. Model inference runs on the EU multi-region endpoint, never a global one. The only access from outside the EU is Novosapien's engineers in the United Kingdom, which the European Commission's adequacy decision covers</td>
+    </tr>
+    <tr>
+      <td class="k">The control is the agreement, not a claim that access is impossible</td>
+      <td>Novosapien's engineers can technically open the Front Door logs. Nobody can credibly promise otherwise in any IT system. What matters is what access is granted, what anyone would use it for, and what happens if it is misused. Clause 6.2 of the Agreement makes the limit binding, requires every access to be by a named person and logged, and forbids approaching an internet provider to identify an IP address</td>
+    </tr>
+    <tr>
+      <td class="k">Minimise what links one record to another</td>
+      <td>The chain of browser to identifier to chat to IP address is broken at the one point it could have been joined: the identifier moves to session storage, and is stripped from anything kept beyond 72 hours</td>
+    </tr>
+    <tr>
+      <td class="k">Risk-based, proportionate</td>
+      <td>Controls are sized to a public documentation assistant that holds no client data, not to a system handling cardholder records. Where a control costs more than the risk it removes, say so and record the decision rather than engineering around a hypothetical</td>
+    </tr>
+    <tr>
+      <td class="k">Write the position down once, and keep it current</td>
+      <td>This document and the Agreement are the single answer to a questionnaire, a privacy notice, a counsel review or a Direct Transact control. When the service changes, they change in the same week</td>
+    </tr>
+  </table>
+  </div>
+
+  <!-- 6 -->
+  <div class="section">
+  <h2><span class="num">6</span>Browser storage, and whether a consent banner is needed</h2>
+
+  <p>Article 5(3) of the ePrivacy Directive requires consent to store information on a visitor's device, but exempts storage
+  strictly necessary for a service the visitor has asked for. <strong>EDPB Guidelines 2/2023</strong> confirm the rule covers
+  browser storage and not only cookies, and <strong>WP29 Opinion 04/2012</strong> treats a session identifier for a
+  user-requested function as exempt.</p>
+
+  <p>The browser identifier exists only to give the visitor their own chat back, and it lasts one tab session. The exemption
+  applies, so <strong>no consent banner is needed for it</strong>. Cyprus applies the rule through its own national law, and
+  TXN's counsel should confirm the local implementation.</p>
+  </div>
+
+  <!-- 7 -->
+  <div class="section">
+  <h2><span class="num">7</span>What the privacy notice has to say</h2>
+
+  <p>The notice is TXN's, and it needs four things for this service:</p>
+  <ul>
+    <li><strong>The purposes and the lawful basis</strong> for each of the three rows in section 4.</li>
+    <li><strong>The retention periods</strong>: 30 days for security logs, 72 hours after the last message for chats.</li>
+    <li><strong>The recipients, or the categories of recipient</strong> (Article 13(1)(e)).</li>
+    <li>A line telling visitors <strong>not to enter personal data</strong>, matching the acceptable use policy.</li>
+  </ul>
+
+  <h3>Does it have to name Microsoft and Google?</h3>
+  <p>No, not in the notice itself. The WP29 transparency guidelines (WP260) say to name recipients where possible and
+  otherwise give categories that are as specific as possible, so <strong>"cloud hosting provider" and "AI model
+  provider"</strong> is sufficient. But in <strong>Österreichische Post (C-154/21)</strong> the Court held that a person
+  making an access request under Article 15 is entitled to the <em>actual</em> recipients. So TXN must be able to name them
+  on request, which is what Annex C of the Agreement provides. The practical observation from the 11 November call holds:
+  naming a cloud provider in a privacy notice is unusual, and TXN's sample notices are worth checking before deciding.</p>
+  </div>
+
+  <!-- 8 -->
+  <div class="section">
+  <h2><span class="num">8</span>Access, deletion and other data subject requests</h2>
+
+  <p>The service has no accounts and holds no names or email addresses. <strong>Article 11</strong> says a controller does
+  not have to collect extra data purely to identify a person, and Articles 15 to 20 then do not apply unless the person
+  supplies information that allows identification.</p>
+
+  <table>
+    <tr><th style="width:38%">Request</th><th>What happens</th></tr>
+    <tr><td class="k">"Delete my data", with no identifier</td><td>TXN cannot find the chats, and is not required to collect more data in order to. The chats delete themselves 72 hours after the last message in any case</td></tr>
+    <tr><td class="k">"Delete my data", with a chat identifier</td><td>Novosapien deletes or exports that chat on TXN's instruction within 5 Business Days, provided it has not already expired</td></tr>
+    <tr><td class="k">A request about the pilot sign-up records</td><td>Out of scope here. Those records are not on the interim service and do not migrate to it</td></tr>
+    <tr><td class="k">A request received by Novosapien directly</td><td>Passed to TXN without responding. TXN answers as controller</td></tr>
+  </table>
+  </div>
+
+  <!-- 9 -->
+  <div class="section pagebreak">
+  <h2><span class="num">9</span>What changes at Production Cutover</h2>
+
+  <p>Production Cutover is the point, confirmed in writing by both parties, at which the assistant moves to hosting in the
+  TXN Azure subscription operated by Direct Transact. Nearly every line in this document changes with it.</p>
+
+  <table>
+    <tr><th style="width:26%"></th><th style="width:37%">Now (interim)</th><th>From Production Cutover</th></tr>
+    <tr><td class="k">Who hosts</td><td>Novosapien, in Novosapien's Azure subscription, North Europe</td><td>Direct Transact, in the TXN Azure subscription</td></tr>
+    <tr><td class="k">Who holds the model account</td><td>Novosapien's Google Cloud account; cost recharged to TXN</td><td>TXN or Direct Transact. The change is configuration only</td></tr>
+    <tr><td class="k">Microsoft, Google, Sentry</td><td><strong>Novosapien's sub-processors</strong></td><td><strong>TXN's processors.</strong> TXN contracts for them directly</td></tr>
+    <tr><td class="k">Who controls access to production</td><td>Authorised Novosapien engineers</td><td>Direct Transact. Novosapien holds no standing production access</td></tr>
+    <tr><td class="k">Who deploys</td><td>Novosapien</td><td>Direct Transact only, through its own pipeline and gates</td></tr>
+    <tr><td class="k">Transfer mechanisms</td><td>Novosapien's responsibility</td><td>TXN's responsibility, on TXN's own accounts</td></tr>
+    <tr><td class="k">This Agreement</td><td>In force</td><td>Ends. Novosapien deletes the interim database, logs and backups and confirms in writing within 10 Business Days</td></tr>
+  </table>
+
+  <p>Support is a separate question from hosting, and it does not end at cutover. Novosapien supports and maintains the AI
+  layer; Stackworx supports and maintains the Knowledge Hub. That split needs its own paper, which is the Support and
+  Maintenance agreement on the list below.</p>
+  </div>
+
+  <!-- 10 -->
+  <div class="section">
+  <h2><span class="num">10</span>Where Direct Transact's interim launch questions are answered</h2>
+
+  <p>Direct Transact issued 41 items, of which 9 are gated on the interim launch. The six that concern Novosapien are
+  answered in the <em>Knowledge Hub AI Assistant: Interim Hosting Answers</em> paper of 11 November, and are now carried into
+  binding form as follows.</p>
+
+  <table>
+    <tr><th style="width:11%">Item</th><th style="width:30%">Topic</th><th>Where it now lives</th></tr>
+    <tr><td class="k">Q01</td><td>Interim hosting: scope, tenant, connection, authentication, Sentinel, access, cutover, deletion</td><td>Agreement clauses 1.1, 1.2, 5.4, 10, 11.3; Annex A; Annex B(a), B(b), B(d)</td></tr>
+    <tr><td class="k">Q03</td><td>Third-line support and incident notification</td><td>Incident notification: clause 7 (24 hours). Support hours and escalation: the Support and Maintenance agreement, still to be papered</td></tr>
+    <tr><td class="k">Q15</td><td>Model product, tier and account owner</td><td>Annex C: Gemini on Vertex AI, Novosapien's Google Cloud account, transferable to a TXN or Direct Transact project by configuration</td></tr>
+    <tr><td class="k">Q16</td><td>Model terms: training, retention, region, DPA</td><td>Agreement clauses 5.1 to 5.3; Annex C</td></tr>
+    <tr><td class="k">Q18</td><td>Other parties receiving data</td><td>Annex C, including the parties that are expressly not sub-processors</td></tr>
+    <tr><td class="k">Q21</td><td>Storage, retention, encryption, access and access logging</td><td>Annex A retention schedule; Annex B(c), B(d), B(g)</td></tr>
+    <tr><td class="k">Q23</td><td>Logs and telemetry: what captures prompts or tool results</td><td>Annex A; Annex B(g)</td></tr>
+    <tr><td class="k">X1</td><td>TXN decision: final retention</td><td>Annex A. 72 hours for chats, checkpoints and session data. No sign-up records on the interim service</td></tr>
+    <tr><td class="k">X2</td><td>TXN decision: model provider and processing region</td><td>Annex C. Gemini on Vertex AI, EU multi-region, public documentation only</td></tr>
+  </table>
+
+  <p>Two Direct Transact recommendations differ from what is in place, both in TXN's favour, and both are deliberate:
+  retention is <strong>72 hours rather than 30 days</strong> for chats and checkpoints, and <strong>no pilot sign-up records
+  migrate</strong> at all.</p>
+  </div>
+
+  <!-- 11 -->
+  <div class="section pagebreak">
+  <h2><span class="num">11</span>Open items</h2>
+
+  <p>What is still to be done, who owns it, and by when. This is the live list; it should be reviewed at the standing
+  weekly review until it is empty.</p>
+
+  <table>
+    <tr><th style="width:40%">Item</th><th style="width:17%">Owner</th><th style="width:17%">By when</th><th>Status</th></tr>
+    <tr><td>Move the browser identifier to session storage</td><td>Novosapien</td><td>Before launch</td><td><span class="pill open">Open</span></td></tr>
+    <tr><td>Strip the browser identifier when a chat is written to the long-term store</td><td>Novosapien</td><td>Before launch</td><td><span class="pill open">Open</span></td></tr>
+    <tr><td>Disable model prompt caching, and request the abuse-monitoring exception</td><td>Novosapien</td><td>Before go-live</td><td><span class="pill open">Open</span></td></tr>
+    <tr><td>Decide whether a browser identifier is needed at all</td><td>Novosapien</td><td>Not dated</td><td><span class="pill open">Open</span></td></tr>
+    <tr><td>Put personal data out of scope in the acceptable use policy</td><td>TXN (D&ouml;rte)</td><td>Before launch</td><td><span class="pill open">Open</span></td></tr>
+    <tr><td>Write the legitimate interest assessment for the three rows in section 4</td><td>Both</td><td>Before the privacy notice is finalised</td><td><span class="pill open">Open</span></td></tr>
+    <tr><td>Decide whether the privacy notice names cloud and model providers, against TXN's sample notices</td><td>TXN (Ian)</td><td>Before the privacy notice is finalised</td><td><span class="pill open">Open</span></td></tr>
+    <tr><td>Confirm how Cyprus implements Article 5(3) of the ePrivacy Directive</td><td>TXN's counsel</td><td>Before the privacy notice is finalised</td><td><span class="pill open">Open</span></td></tr>
+    <tr><td>Confirm the 72-hour sandbox clearing with Direct Transact in writing</td><td>TXN (Michael)</td><td>Not dated</td><td><span class="pill open">Open</span></td></tr>
+    <tr><td>Agree the Sentinel log forwarding connection</td><td>Both, with Direct Transact</td><td>Not dated</td><td><span class="pill open">Open</span></td></tr>
+    <tr><td>Supply TXN's company (HE) number and the named contact for Annex A</td><td>TXN</td><td>Before signature</td><td><span class="pill open">Open</span></td></tr>
+    <tr><td>Confirm the launch date: 16 or 17 November</td><td>TXN (Ian)</td><td>Now</td><td><span class="pill open">Open</span></td></tr>
+    <tr><td>Paper the Support and Maintenance agreement for the AI layer</td><td>Both</td><td>Immediately after launch</td><td><span class="pill open">Open</span></td></tr>
+    <tr><td>Sign the Master Service Agreement, with this arrangement appended</td><td>Both</td><td>Agenda for 24 November</td><td><span class="pill open">Open</span></td></tr>
+  </table>
+  </div>
+
+  <!-- 12 -->
+  <div class="section">
+  <h2><span class="num">12</span>Sources</h2>
+
+  <table>
+    <tr><th style="width:26%">Category</th><th>Reference</th></tr>
+    <tr><td class="k">Legislation</td><td>Regulation (EU) 2016/679 (EU GDPR), Articles 4(1), 5, 6(1)(f), 11, 13, 15, 28, 32 to 36; Recitals 26, 30, 49. UK GDPR and Data Protection Act 2018. Directive 2002/58/EC (ePrivacy), Article 5(3). Regulation (EU) 2022/2554 (DORA)</td></tr>
+    <tr><td class="k">Case law</td><td>CJEU C-582/14 <em>Breyer</em> (dynamic IP addresses as personal data). CJEU C-154/21 <em>&Ouml;sterreichische Post</em> (right to know the actual recipients). CJEU C-413/23 P <em>EDPS v SRB</em> (pseudonymised data)</td></tr>
+    <tr><td class="k">Regulator guidance</td><td>EDPB Guidelines 1/2024 on legitimate interest. WP29 Guidelines on transparency, WP260 rev.01. EDPB Guidelines 2/2023 on the technical scope of Article 5(3). WP29 Opinion 04/2012 on cookie consent exemption, WP194</td></tr>
+    <tr><td class="k">Transfers</td><td>European Commission adequacy decision for the United Kingdom, renewed December 2025 and running to 27 December 2031</td></tr>
+    <tr><td class="k">Provider terms</td><td>Microsoft Products and Services Data Protection Addendum. Google Cloud Data Processing Addendum, Vertex AI data residency and zero data retention. Sentry Data Processing Addendum and data storage location</td></tr>
+    <tr><td class="k">Project documents</td><td><em>Knowledge Hub AI Assistant: Interim Hosting Answers</em>, Novosapien, 11 November 2026. <em>TXN AI Services: Questions and Decisions Required from TXN</em> v1.6, Direct Transact, November 2026. Personal data alignment call, 11 November 2026</td></tr>
+  </table>
+
+  <div class="callout">
+    <p><strong>Not legal advice.</strong> This document records the factual position and the parties' reasoning. TXN's own
+    counsel should confirm the Cyprus-specific points, the legitimate interest assessment and the privacy notice before
+    launch.</p>
+  </div>
+  </div>
+
+  <div class="footer">
+    <span>Data Protection Guidelines &middot; TXN Knowledge Hub AI Assistant &middot; Novosapien &amp; TXN</span>
+    <span>v1.0, 13 November 2026</span>
+  </div>
+
+</div>
+</body>
+</html>
