@@ -363,3 +363,20 @@ A clean in-portal chat / contextual search field; answers in-place with **source
 ## Sub-Sub-Components
 
 Leaf node — no further decomposition needed.
+
+> [!important] The random ID, and what has to change before launch (11-11-2026)
+> ([[2026-11-11-personal-data-alignment]])
+>
+> **Ian's decision:** retaining chat beyond 72 hours is fine **as long as the random ID attached to that chat is dropped**. The random ID exists only so a visitor can return to their own chat. It adds nothing to the purpose of the long-term store, which is reading sentiment and recurring questions to find where the documentation needs to change.
+>
+> **A correction found live on the call:** the random ID is in **local storage, not session storage**. Local storage persists until it is manually cleared.
+>
+> **Three build items, all Novosapien's:**
+>
+> 1. Move the random ID to **session storage**, so it dies with the tab.
+> 2. **Strip the random ID** when a chat is written to the long-term store, so a visitor who leaves a tab open for a week still has no persistent link.
+> 3. Decide whether a random ID is needed at all, or whether the chat can carry its own identifier with no browser link.
+>
+> **What this buys:** it breaks the only place where browser, chat content and the IP address in the Front Door logs could have been joined up. See [[open-questions]] #92.
+>
+> **Two facts worth keeping.** The IP address never reaches the model; it exists only for Azure Front Door, held 30 days in Europe. And the APIs require no cardholder personal details at all, so a visitor testing the sandbox can create a completely blank cardholder.

@@ -14,7 +14,11 @@ Delivery status for the engagement. Where [[commercial]] records what was sold a
 
 | Flight plan | Scope | Generated |
 |-------------|-------|-----------|
-| [flightplan-txn-v3-2026-11-05.html](flightplan-txn-v3-2026-11-05.html) | **Thirteen pages.** The sixteenth issue, eleven days from launch. Tables rather than narrative, **every verbatim quotation removed**, and open actions carrying the date each was raised. **Version 3 moves the chart to the real position:** guides journey and walkthrough complete, migration into the Stackworkz codebase started, hosting and wire-in conversations started with Direct Transact, **Co-pilot v1 in the Console demonstrated on 5 November**, Agent Inbox architecture started, and the **customer onboarding agent removed from the plan entirely** rather than carried as a Priority 2 nobody intends to start. | **5 Nov 2026, current** |
+| [flightplan-txn-v3-2026-11-13.html](flightplan-txn-v3-2026-11-13.html) | **Twentieth issue.** Reissued again the same day because support got its instrument: [[txn-agentic-ai-layer-support-sla]] **v0.3**. Records the two operating modes, the removal of **16 December** as a commencement date TXN no longer has for the Console, the new per-component Service Commencement Date, the hosting and model **pass-through at cost plus 10%**, and the v0.2 defect it closes: a 99.5% availability commitment with a termination right attached, on components Direct Transact hosts and deploys. | **13 Nov 2026, current** |
+| [flightplan-txn-v2-2026-11-13.html](flightplan-txn-v2-2026-11-13.html) | _Superseded same day by v3._ **Nineteenth issue.** Same day, reissued because the first critical date moved: **the hosting arrangement is now drafted**. Records the standalone [[txn-novosapien-dpa-interim-hosting]], the sub-processor list Dörte's counsel has waited for since 6 October delivered as its Annex C, and **the error the drafting found**: MSA Schedule 3 and SLA Schedule 4 both say Direct Transact hosts production, which is not true of the interim assistant. What is left on the DPA is signature, not drafting. | Superseded same day by v3 |
+| [flightplan-txn-2026-11-13.html](flightplan-txn-2026-11-13.html) | **Thirteen pages**, three days from launch. Carries the 11 November data alignment call: the data map settled, the random ID dropped from anything kept beyond 72 hours, the support split on the record, and **the paperwork now tighter than the build**. The hosting arrangement is the first critical date. The launch date itself is flagged as unconfirmed, 16 or 17 November. | Superseded same day by v2 |
+| [flightplan-txn-v2-2026-11-06.html](flightplan-txn-v2-2026-11-06.html) | **Thirteen pages**, ten days from launch. **Rebuilt on Dorte's feedback of 6 November:** the Knowledge Hub and the Console are separated into their own pages and their own bands on the chart; the chart is grouped by project with short labels; the what-changed table is cut to five rows; open actions carry a **Blocks** column and completed items move to the foot of the page; Stackworkz is corrected to **Stackworx** throughout. The Novosapien Azure environment is brought forward to 6 November. A consolidated list of what is outstanding with Stackworx sits on the Console page for the weekly call. | 6 Nov 2026 |
+| flightplan-txn-v3-2026-11-05.html | Superseded. The sixteenth issue; versions 4 to 12 ran through 5 November and are not carried in the vault | 5 Nov 2026 |
 | flightplan-txn-v3-2026-10-27.html | Superseded. The fifteenth issue, version 3. Not carried in the vault | 27 Oct 2026 |
 | [flightplan-txn-2026-09-16.html](flightplan-txn-2026-09-16.html) | Superseded. **Six pages.** Ian's hands-on verdict and the speed remediation, the flight plan diagram moved to the top of page one, the Control Center reframed as included in the delivery | 16 Sep 2026 |
 | [flightplan-txn-2026-09-15.html](flightplan-txn-2026-09-15.html) | Superseded. | **Six pages.** Both GTM configurations closed, content generation and warming starting, and the pilot completion date passed with no recorded acceptance | **15 Sep 2026, current** |
@@ -148,7 +152,7 @@ Reviews of the client's own console feedback queue, read from `txn.feedback` and
 > | **Novosapien's answer** | **Stand it up in Azure themselves**, starting 6 November, done by **Tuesday 10 November**, and record how long it took |
 > | **Code into Stackworkz** | Aligned to the coding standards: **82 percent against an 80 percent check** |
 > | **Agent authentication** | Not blocking the Knowledge Hub. Michael chases Stackworkz on 6 November |
-> | **Billy's questions** | **None received**, and Ian does not think they gate anything (#127) |
+> | **Willie Olivier's questions** | **None received**, and Ian does not think they gate anything (#127) |
 >
 > **The point of timing it is the argument, not the proof.** Ian: *"If you take away the actual doing of it then what you're left with is just process... if we can actually say, well, we've stood it up with Novo in exactly the way we're asking you to stand it up, then it will just help if the conversation gets tricky. Well, not, it will get tricky."* George's caveat: DT's environment has locked-down existing services, so the timing will not be like for like.
 >
@@ -163,7 +167,7 @@ Reviews of the client's own console feedback queue, read from `txn.feedback` and
 > |---|---|
 > | **Demo to Steve and DT** | **Held 3 November.** Landed: *"It looks great."* Fallback videos not needed. #115 answered |
 > | **Hosting documents** | With DT, via Jack. *"Nothing that's really a deal-breaker"* |
-> | **DT's design and cost model** | **Not started.** Waits on Billy's questions, about five, by email (#127) |
+> | **DT's design and cost model** | **Not started.** Waits on Willie's questions, about five, by email (#127) |
 > | **Deployment time** | **Unknown**, deferred to a separate conversation |
 > | **UAT** | **Complete, not signed off.** All 82 launch endpoints tested, **58 percent passing**, most failures one back-end validation defect |
 > | **Code into Stackworkz** | First migration done. **Coding standards still owed** by Michael (#125) |
@@ -171,7 +175,7 @@ Reviews of the client's own console feedback queue, read from `txn.feedback` and
 > | **Internal LLM call** | **Did not happen.** Dörte preparing it |
 > | **Control Center demo to DT** | *"In the next few weeks"* |
 >
-> **Two weeks to launch and nobody can say how long deployment takes.** Ian asked; the answer was put off, and Ian named the room: *"Deafening silence. Understandably, this is what this is, this is the challenge."* The chain is Billy's questions, then Novosapien's answers, then DT's design and cost, then a deployment of unknown length, then checks. **Ian said 17 November**; every other record says the 16th, and this page keeps the 16th until it is confirmed.
+> **Two weeks to launch and nobody can say how long deployment takes.** Ian asked; the answer was put off, and Ian named the room: *"Deafening silence. Understandably, this is what this is, this is the challenge."* The chain is Willie's questions, then Novosapien's answers, then DT's design and cost, then a deployment of unknown length, then checks. **Ian said 17 November**; every other record says the 16th, and this page keeps the 16th until it is confirmed.
 >
 > **UAT reads worse than it is.** Michael: one defect *"will clearly wipe out 30% of the test cases. So we're not as far away as I thought originally."* DT now order defects by how visible they are at launch, and the Knowledge Hub only needs the YAML to be right, so back-end validation can follow.
 >
@@ -291,6 +295,17 @@ Reviews of the client's own console feedback queue, read from `txn.feedback` and
 > **A dedicated UAT environment was due 14 October**, with API credentials for Novosapien split from the console. That is the first structural answer to the moving-build problem at [[open-questions]] #93.
 >
 > **The sequencing risk is the real finding.** Michael: *"it does look like we are ahead of sort of DT at this point."* The AI layer is built and sitting in UAT while the API beneath it has nothing signed off, and the gate is controlled by DT's QA. Phase two was costed against a launch that now has no date. See #108, and #109 on the co-pilot entering the launch scope by default rather than by decision.
+
+> [!important] Personal data settled, and two agreements now sit on the critical path (11-11-2026)
+> ([[2026-11-11-personal-data-alignment]])
+>
+> **The data position is closed.** The visitor IP lives in Azure Front Door logs only, for 30 days, in Europe, and never reaches the model. Chat is held 72 hours. **Ian's decision: the random ID is dropped from anything retained beyond 72 hours**, which clears the long-term sanitised store to go ahead. Three build items follow for Novosapien: move the random ID to session storage, strip it on write to the long-term store, and decide whether it is needed at all.
+>
+> **The support split is on the record.** Novosapien support and maintain the AI layer; Stackworx support and maintain the Knowledge Hub. **Only Direct Transact can deploy to the running production service**, which answers the question Ian was really asking about production access.
+>
+> **The commercial position is now the tighter one.** There is no signed agreement and no DPA. Ian wants standard terms with an appendix per service, and named two things to put in place: **the hosting arrangement, papered before launch**, and the support and maintenance agreement immediately after. He also raised, unprompted, **spreading the Phase 2 work into a monthly retainer**, and wants it discussed at the 24 November session in Aldgate East. See [[commercial]] and #103.
+>
+> **And he said Tuesday again.** Launch before "Tuesday" on a Wednesday call means **17 November**, the second time he has named it against a record that says the 16th. #130.
 
 ## What the current plan says
 

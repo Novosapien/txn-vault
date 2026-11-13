@@ -32,9 +32,9 @@ extracted-to:
 
 Michael: *"No, I think it was so good."* Both recordings, with and without voiceover, are with TXN, and George offered shorter cuts for circulation.
 
-**Billy is an ally.** Michael: *"one of the good ones... he's very open to this stuff"*, pushing DT *"to do things differently than they have done in the past"*, and the person doing the data lake. Dörte's read was less generous: *"he wanted to learn more for himself than for our project."* George looked him up: head of research at a long-context AI company.
+**Willie Olivier is an ally.** Michael: *"one of the good ones... he's very open to this stuff"*, pushing DT *"to do things differently than they have done in the past"*, and the person doing the data lake. Dörte's read was less generous: *"he wanted to learn more for himself than for our project."* George looked him up: head of research at a long-context AI company.
 
-**The OKF question, answered after the call.** Billy asked whether Novosapien use OKF, and George said on the call he did not think so. Afterwards he and Hasan found it is the **Open Knowledge Format**, markdown files carrying the metadata an agent needs to traverse them, and *"pretty much what we've done... we just didn't know the name."* See [[architecture]].
+**The OKF question, answered after the call.** Willie asked whether Novosapien use OKF, and George said on the call he did not think so. Afterwards he and Hasan found it is the **Open Knowledge Format**, markdown files carrying the metadata an agent needs to traverse them, and *"pretty much what we've done... we just didn't know the name."* See [[architecture]].
 
 **The infrastructure documents.** George: *"I can't remember who said it, but they were like they've not seen anything that's like a deal-breaker."* He allowed for the other reading: *"at least maybe none of them actually read any page of it."*
 
@@ -92,7 +92,7 @@ He will send it to Novosapien too. George: not a blocker, because the process fr
 | Finding | Destination | Action |
 |---------|-------------|--------|
 | Demo great, meeting unplanned; DT had not read the documents | [[delivery]] | In the 3 November callout |
-| Billy an ally; OKF is what Novosapien built | [[architecture]] | In callout |
+| Willie an ally; OKF is what Novosapien built | [[architecture]] | In callout |
 | UAT complete, 82 endpoints, 58 percent passing, one defect most of the failures, defects ordered by launch visibility | [[delivery]], [[open-questions]] #108, #32 | Callout added; rows updated |
 | First migration done; coding standards still owed | [[delivery]], [[open-questions]] #125, #111 | In callout; rows updated |
 | Knowledge Hub build finished; migration and deploy left | [[portal-co-pilot]] | In callout |

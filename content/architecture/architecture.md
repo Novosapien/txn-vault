@@ -60,12 +60,12 @@ Cross-cutting technical decisions that affect the whole product. This directory 
 >
 > **Nobody is monitoring the AI layer yet.** Dörte: *"we want to know before a customer tells us something is not working."* Novosapien use Sentry. Michael: DT and Stackworkz have *"only what's built in Azure. They've got nothing else."* George will check the architecture document. With no support role for DT (#119), whoever is alerted when the agent fails is undecided. [[open-questions]] #126.
 
-> [!important] The model path corrected, Billy's questions, and Console data flows to map (03-11-2026)
+> [!important] The model path corrected, Willie Olivier's questions, and Console data flows to map (03-11-2026)
 > ([[2026-11-03-dt-demo-and-infrastructure]], [[2026-11-03-agentic-standup]])
 >
-> **Correction to 27 October.** Testing uses Gemini **directly from the Gemini API**, not through Azure. George, to DT: on Azure, Gemini is reachable through **Azure Databricks**, per token rather than deployed, and OpenAI or Anthropic models through **Azure AI Foundry**. **Fallback across models is built**, for a region or provider outage. **LLM costs go into DT's infrastructure cost**, and Novosapien have sent estimates across a couple of providers. The LLM section held back on 27 October was discussed with DT anyway, because the internal call never happened. #70.
+> **Correction to 27 October.** Testing uses Gemini **directly from the Gemini API**, not through Azure. George, to DT: on Azure, Gemini is reachable through **Azure Databricks**, per token rather than deployed, and OpenAI or Anthropic models through **Azure AI Foundry**. **A third route, recorded 13-11-2026:** models can also be **natively hosted on Azure**, so the Azure options are three rather than two and the choice is still open. **Fallback across models is built**, for a region or provider outage. **LLM costs go into DT's infrastructure cost**, and Novosapien have sent estimates across a couple of providers. The LLM section held back on 27 October was discussed with DT anyway, because the internal call never happened. #70.
 >
-> **How the agent reads the docs, as told to DT.** No indexing and no vector database. At start-up it reads Umbraco into an in-memory copy and searches it with read, glob and grep, isolated to those files. **Billy (DT, data lake, long-context AI research)** asked how data is limited and masked before it reaches the LLM. **Not answered.** He also raised grep's token cost, and asked whether OKF structures the files. After the call George found that the **Open Knowledge Format**, markdown with metadata for an agent to traverse, is effectively what Novosapien built. Billy's emailed questions gate DT's design and cost model. [[open-questions]] #127.
+> **How the agent reads the docs, as told to DT.** No indexing and no vector database. At start-up it reads Umbraco into an in-memory copy and searches it with read, glob and grep, isolated to those files. **Willie (DT, data lake, long-context AI research)** asked how data is limited and masked before it reaches the LLM. **Not answered.** He also raised grep's token cost, and asked whether OKF structures the files. After the call George found that the **Open Knowledge Format**, markdown with metadata for an agent to traverse, is effectively what Novosapien built. Willie's emailed questions gate DT's design and cost model. [[open-questions]] #127.
 >
 > **Console data: map the flows before choosing.** Dörte, at the standup: card and cardholder data would pass through the Console agent, and *"quite often they process them outside of Europe."* George: Azure pins services to regions, and Anthropic and OpenAI models can run in the UK region; Gemini through Databricks needs more detail. Dörte wants the flows mapped now, **South Africa included**, *"don't forget the data sits in South Africa as well"*, to make the DPA simpler (#103).
 
@@ -119,3 +119,21 @@ Ruan Sunkel of Stackworkz asked where the MCP server sits and what it talks to, 
 The emerging shape is a split by traffic type: **system-to-system** (agent to agent) direct to DT endpoints, and **user-to-system** through the Console. The pilot's approval gating is in-chat against the mock, so nothing has tested it. Tracked at [[open-questions]] #74 and it gates the wire-in.
 
 Also from that session: Michael raised whether an agent should carry **more** permission than the user driving it, *"a user can't do this without approval but an agent can"*, and whether agent actions enter Stackworkz's approval queue or bypass it. The **data lake structure went to DT on 25 August** with AI access considered, and Michael is pushing for a joint presentation to Novosapien and Stackworkz ([[open-questions]] #69).
+
+> [!important] The personal data map, and who can deploy (11-11-2026)
+> ([[2026-11-11-personal-data-alignment]])
+>
+> | Data | Where | How long | Reaches the model |
+> |---|---|---|---|
+> | Visitor IP address | **Azure Front Door logs only**, in Europe | 30 days | **Never** |
+> | Random ID | The visitor's browser | Session, once moved out of local storage | Never |
+> | Chat content | The agent's store, Europe | 72 hours | Yes, as the conversation |
+> | Sanitised chat content | The long-term store, Europe | As long as useful, random ID stripped | No |
+>
+> **Legal basis, as worked through on the call:** security logs under legitimate interest, **Recital 49**, network and information security. Chat history and the random ID also legitimate interest, because the visitor asks for the service. **The written assessment does not exist**, which is #129.
+>
+> **Deployment rights, settled.** Novosapien and Stackworx can see the source in GitHub, pull it and push to branches. **Only Direct Transact can deploy to the running production service**, behind multiple gates, deliberately. The distinction Ian was pressing on is source code versus the executable delivering the service.
+>
+> **Support split:** Novosapien support and maintain the AI layer. Stackworx support and maintain the Knowledge Hub.
+>
+> **72 hours is a functional number, not a regulatory one.** Michael set it: most comparable services use 24, TXN went to 72 to keep the value of returning to a chat. It has never been confirmed with Direct Transact in writing for the sandbox.

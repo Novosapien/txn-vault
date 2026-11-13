@@ -85,8 +85,8 @@ So the test is stricter than refusing a forbidden call: a forbidden tool must no
 
 ## Corrections to 3 November
 
-- **His name is Billy, not Villi.** Ian: *"It's not Willy, it's Billy."* Ian met Billy and Peter (Pete) in South Africa. The 3 November pages, [[architecture]], [[delivery]] and #127 are corrected; the transcripts are left as they are.
-- **Ian does not think Billy's questions gate anything.** *"What that was was just an AI pissing contest... It had nothing to do with what the task in hand is... I'm not sure any questions are coming from him that actually are anything to do with DT."* No questions have arrived. #127 recorded those questions as gating DT's design; it is revised to say that what gates the hosting is DT not having started, and the masking question is kept for the Console.
+- **His name is Willie Olivier.** The page first recorded him as Villi. On this call Ian said *"It's not Willy, it's Billy"*, and the vault took it literally and corrected everything to Billy. **Brett confirmed on 13 November that Ian was joking**, so the name is **Willie Olivier** and the Billy correction is withdrawn. Ian met him and Peter (Pete) in South Africa. The transcript on this page is left verbatim, so Ian's line still reads as he said it.
+- **Ian does not think Willie's questions gate anything.** *"What that was was just an AI pissing contest... It had nothing to do with what the task in hand is... I'm not sure any questions are coming from him that actually are anything to do with DT."* No questions have arrived. #127 recorded those questions as gating DT's design; it is revised to say that what gates the hosting is DT not having started, and the masking question is kept for the Console.
 - **OKF, more precisely.** George: *"we're not using the exact format, we're using a different permutation of it."*
 
 ## Context, no action
@@ -106,8 +106,8 @@ So the test is stricter than refusing a forbidden call: a forbidden tool must no
 | Agent authentication does not block the Knowledge Hub | [[delivery]] | In callout |
 | Permissions built now from Michael's document; harness with expected and never-expected tools | [[permission-scoping]], [[open-questions]] #107, #123 | Callout added; rows updated |
 | Console co-pilot first version: navigation, page awareness, Q&A; no actions yet; no generative UI; session memory next | [[co-pilot]] | Note added |
-| Billy, not Villi | 3 November pages, [[architecture]], [[delivery]], [[index]], [[open-questions]] | Corrected |
-| Ian: Billy's questions do not gate anything | [[open-questions]] #127 | Row revised |
+| Name: Willie Olivier. Ian's "Billy" was a joke, confirmed by Brett 13-11 | 3 November pages, [[architecture]], [[delivery]], [[index]], [[open-questions]] | Corrected, then re-corrected |
+| Ian: Willie's questions do not gate anything | [[open-questions]] #127 | Row revised |
 | Launch 16th or 17th | [[delivery]] | Flagged again, sent to George |
 | Claude usage, SSO, SharePoint guide, flight plan | n/a | Context, no action |
 
