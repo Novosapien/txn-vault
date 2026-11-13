@@ -32,6 +32,24 @@ The commercial pack for the Novosapien <> TXN engagement: the proposals that def
 >
 > **And a note on the next phase.** Ian, lightly but not idly: *"if you do a really good job, **it might help me secure more funding to do more AI things**."* Relevant to the phase two spend question at #88 and the open-ended launch at #108.
 
+> [!important] No signed agreement, no DPA, and Ian now wants two instruments in place (11-11-2026)
+> ([[2026-11-11-personal-data-alignment]])
+>
+> **Ian, directly: there is no signed agreement and no data processing agreement.** The reason it has become urgent is specific and he named it himself: the GDPR position was not a live issue two or three months ago because Novosapien was not storing or hosting any data. **It now is.**
+>
+> **The structure agreed on the call** is the one already drafted: standard terms, with an appendix per service bought. The newest service is the hosting.
+>
+> | Instrument | Ian's timing |
+> |---|---|
+> | **The hosting arrangement** | **Before launch.** He called it absolutely necessary and does not expect it to be large |
+> | **Support and maintenance** | Immediately. He believes nothing exists for it, and he is right |
+> | The full agreement signed | Before launch, which he accepts is a big ask |
+>
+> **And an opening he offered without being asked:** *spreading the Phase 2 work into a monthly retainer*. He is open-minded and wants it discussed at the **24 November session**, Novosapien's offices in Aldgate East from 16:00, then dinner in Soho. That is the same conversation as the Phase 3 shape, and it should be prepared for rather than improvised.
+>
+> **Also on him:** Direct Transact's requirements list comes to Novosapien to turn around, and he will check whether TXN's sample privacy policies name a cloud provider at all, which decides whether Azure needs calling out. See [[open-questions]] #103.
+
+
 ## Engagement documents
 
 | Document | What it is | Status |

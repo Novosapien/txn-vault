@@ -14,7 +14,8 @@ Delivery status for the engagement. Where [[commercial]] records what was sold a
 
 | Flight plan | Scope | Generated |
 |-------------|-------|-----------|
-| [flightplan-txn-v2-2026-11-06.html](flightplan-txn-v2-2026-11-06.html) | **Thirteen pages**, ten days from launch. **Rebuilt on Dorte's feedback of 6 November:** the Knowledge Hub and the Console are separated into their own pages and their own bands on the chart; the chart is grouped by project with short labels; the what-changed table is cut to five rows; open actions carry a **Blocks** column and completed items move to the foot of the page; Stackworkz is corrected to **Stackworx** throughout. The Novosapien Azure environment is brought forward to 6 November. A consolidated list of what is outstanding with Stackworx sits on the Console page for the weekly call. | **6 Nov 2026, current** |
+| [flightplan-txn-2026-11-13.html](flightplan-txn-2026-11-13.html) | **Thirteen pages**, three days from launch. Carries the 11 November data alignment call: the data map settled, the random ID dropped from anything kept beyond 72 hours, the support split on the record, and **the paperwork now tighter than the build**. The hosting arrangement is the first critical date. The launch date itself is flagged as unconfirmed, 16 or 17 November. | **13 Nov 2026, current** |
+| [flightplan-txn-v2-2026-11-06.html](flightplan-txn-v2-2026-11-06.html) | **Thirteen pages**, ten days from launch. **Rebuilt on Dorte's feedback of 6 November:** the Knowledge Hub and the Console are separated into their own pages and their own bands on the chart; the chart is grouped by project with short labels; the what-changed table is cut to five rows; open actions carry a **Blocks** column and completed items move to the foot of the page; Stackworkz is corrected to **Stackworx** throughout. The Novosapien Azure environment is brought forward to 6 November. A consolidated list of what is outstanding with Stackworx sits on the Console page for the weekly call. | 6 Nov 2026 |
 | flightplan-txn-v3-2026-11-05.html | Superseded. The sixteenth issue; versions 4 to 12 ran through 5 November and are not carried in the vault | 5 Nov 2026 |
 | flightplan-txn-v3-2026-10-27.html | Superseded. The fifteenth issue, version 3. Not carried in the vault | 27 Oct 2026 |
 | [flightplan-txn-2026-09-16.html](flightplan-txn-2026-09-16.html) | Superseded. **Six pages.** Ian's hands-on verdict and the speed remediation, the flight plan diagram moved to the top of page one, the Control Center reframed as included in the delivery | 16 Sep 2026 |
@@ -292,6 +293,17 @@ Reviews of the client's own console feedback queue, read from `txn.feedback` and
 > **A dedicated UAT environment was due 14 October**, with API credentials for Novosapien split from the console. That is the first structural answer to the moving-build problem at [[open-questions]] #93.
 >
 > **The sequencing risk is the real finding.** Michael: *"it does look like we are ahead of sort of DT at this point."* The AI layer is built and sitting in UAT while the API beneath it has nothing signed off, and the gate is controlled by DT's QA. Phase two was costed against a launch that now has no date. See #108, and #109 on the co-pilot entering the launch scope by default rather than by decision.
+
+> [!important] Personal data settled, and two agreements now sit on the critical path (11-11-2026)
+> ([[2026-11-11-personal-data-alignment]])
+>
+> **The data position is closed.** The visitor IP lives in Azure Front Door logs only, for 30 days, in Europe, and never reaches the model. Chat is held 72 hours. **Ian's decision: the random ID is dropped from anything retained beyond 72 hours**, which clears the long-term sanitised store to go ahead. Three build items follow for Novosapien: move the random ID to session storage, strip it on write to the long-term store, and decide whether it is needed at all.
+>
+> **The support split is on the record.** Novosapien support and maintain the AI layer; Stackworx support and maintain the Knowledge Hub. **Only Direct Transact can deploy to the running production service**, which answers the question Ian was really asking about production access.
+>
+> **The commercial position is now the tighter one.** There is no signed agreement and no DPA. Ian wants standard terms with an appendix per service, and named two things to put in place: **the hosting arrangement, papered before launch**, and the support and maintenance agreement immediately after. He also raised, unprompted, **spreading the Phase 2 work into a monthly retainer**, and wants it discussed at the 24 November session in Aldgate East. See [[commercial]] and #103.
+>
+> **And he said Tuesday again.** Launch before "Tuesday" on a Wednesday call means **17 November**, the second time he has named it against a record that says the 16th. #130.
 
 ## What the current plan says
 
