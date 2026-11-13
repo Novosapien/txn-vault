@@ -66,15 +66,18 @@
   .pill.open { background: #FDF6EC; color: var(--ns-warn); border-color: #EEDCC2; }
 
   .section { break-inside: auto; }
-  .pagebreak { break-before: page; }
 
-  .footer { margin-top: 20mm; padding-top: 6px; border-top: 1px solid var(--ns-rule);
-            color: var(--ns-muted); font-size: 8.5pt; display: flex; justify-content: space-between; }
+  .footer { margin-top: 14mm; padding-top: 7px; border-top: 1px solid var(--ns-rule);
+            color: var(--ns-muted); font-size: 8.5pt; line-height: 1.3;
+            white-space: nowrap; overflow: hidden; break-inside: avoid; }
 
-  @page { size: A4; margin: 16mm 14mm 14mm; }
+  @page { size: A4; margin: 18mm 20mm 18mm; }
   @media print {
     .page { max-width: none; margin: 0; padding: 0; }
-    .footer { position: fixed; bottom: 7mm; left: 14mm; right: 14mm; }
+    /* Schedules break onto a fresh page but are not atomic: they must be
+       allowed to flow across pages or they strand half-empty ones. */
+    .schedule { break-inside: auto; }
+    h2, h3 { break-after: avoid; }
   }
 </style>
 </head>
@@ -205,7 +208,7 @@
   </div>
 
   <!-- 3 -->
-  <div class="section pagebreak">
+  <div class="section">
   <h2><span class="num">3</span>Who is who under the GDPR</h2>
 
   <table>
@@ -302,7 +305,7 @@
   </div>
 
   <!-- 5 -->
-  <div class="section pagebreak">
+  <div class="section">
   <h2><span class="num">5</span>The principles both parties operate to</h2>
 
   <p>These are the working rules behind the Agreement. They came out of the alignment call on 11 November 2026, and they
@@ -390,7 +393,7 @@
   </div>
 
   <!-- 9 -->
-  <div class="section pagebreak">
+  <div class="section">
   <h2><span class="num">9</span>What changes at Production Cutover</h2>
 
   <p>Production Cutover is the point, confirmed in writing by both parties, at which the assistant moves to hosting in the
@@ -439,7 +442,7 @@
   </div>
 
   <!-- 11 -->
-  <div class="section pagebreak">
+  <div class="section">
   <h2><span class="num">11</span>Open items</h2>
 
   <p>What is still to be done, who owns it, and by when. This is the live list; it should be reviewed at the standing
@@ -485,10 +488,7 @@
   </div>
   </div>
 
-  <div class="footer">
-    <span>Data Protection Guidelines &middot; TXN Knowledge Hub AI Assistant &middot; Novosapien &amp; TXN</span>
-    <span>v1.0, 13 November 2026</span>
-  </div>
+  <div class="footer">Data Protection Guidelines &middot; TXN Knowledge Hub AI Assistant &middot; Novosapien &amp; TXN &middot; v1.0, 13 November 2026</div>
 
 </div>
 </body>
