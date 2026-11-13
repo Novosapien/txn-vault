@@ -14,7 +14,7 @@ Delivery status for the engagement. Where [[commercial]] records what was sold a
 
 | Flight plan | Scope | Generated |
 |-------------|-------|-----------|
-| [flightplan-txn-2026-11-06.html](flightplan-txn-2026-11-06.html) | **Thirteen pages**, ten days from launch. **Rebuilt on Dorte's feedback of 6 November:** the Knowledge Hub and the Console are separated into their own pages and their own bands on the chart; the chart is grouped by project with short labels; the what-changed table is cut to five rows; open actions carry a **Blocks** column and completed items move to the foot of the page; Stackworkz is corrected to **Stackworx** throughout. The Novosapien Azure environment is brought forward to 6 November. A consolidated list of what is outstanding with Stackworx sits on the Console page for the weekly call. | **6 Nov 2026, current** |
+| [flightplan-txn-v2-2026-11-06.html](flightplan-txn-v2-2026-11-06.html) | **Thirteen pages**, ten days from launch. **Rebuilt on Dorte's feedback of 6 November:** the Knowledge Hub and the Console are separated into their own pages and their own bands on the chart; the chart is grouped by project with short labels; the what-changed table is cut to five rows; open actions carry a **Blocks** column and completed items move to the foot of the page; Stackworkz is corrected to **Stackworx** throughout. The Novosapien Azure environment is brought forward to 6 November. A consolidated list of what is outstanding with Stackworx sits on the Console page for the weekly call. | **6 Nov 2026, current** |
 | flightplan-txn-v3-2026-11-05.html | Superseded. The sixteenth issue; versions 4 to 12 ran through 5 November and are not carried in the vault | 5 Nov 2026 |
 | flightplan-txn-v3-2026-10-27.html | Superseded. The fifteenth issue, version 3. Not carried in the vault | 27 Oct 2026 |
 | [flightplan-txn-2026-09-16.html](flightplan-txn-2026-09-16.html) | Superseded. **Six pages.** Ian's hands-on verdict and the speed remediation, the flight plan diagram moved to the top of page one, the Control Center reframed as included in the delivery | 16 Sep 2026 |
@@ -149,7 +149,7 @@ Reviews of the client's own console feedback queue, read from `txn.feedback` and
 > | **Novosapien's answer** | **Stand it up in Azure themselves**, starting 6 November, done by **Tuesday 10 November**, and record how long it took |
 > | **Code into Stackworkz** | Aligned to the coding standards: **82 percent against an 80 percent check** |
 > | **Agent authentication** | Not blocking the Knowledge Hub. Michael chases Stackworkz on 6 November |
-> | **Billy's questions** | **None received**, and Ian does not think they gate anything (#127) |
+> | **Willie Olivier's questions** | **None received**, and Ian does not think they gate anything (#127) |
 >
 > **The point of timing it is the argument, not the proof.** Ian: *"If you take away the actual doing of it then what you're left with is just process... if we can actually say, well, we've stood it up with Novo in exactly the way we're asking you to stand it up, then it will just help if the conversation gets tricky. Well, not, it will get tricky."* George's caveat: DT's environment has locked-down existing services, so the timing will not be like for like.
 >
@@ -164,7 +164,7 @@ Reviews of the client's own console feedback queue, read from `txn.feedback` and
 > |---|---|
 > | **Demo to Steve and DT** | **Held 3 November.** Landed: *"It looks great."* Fallback videos not needed. #115 answered |
 > | **Hosting documents** | With DT, via Jack. *"Nothing that's really a deal-breaker"* |
-> | **DT's design and cost model** | **Not started.** Waits on Billy's questions, about five, by email (#127) |
+> | **DT's design and cost model** | **Not started.** Waits on Willie's questions, about five, by email (#127) |
 > | **Deployment time** | **Unknown**, deferred to a separate conversation |
 > | **UAT** | **Complete, not signed off.** All 82 launch endpoints tested, **58 percent passing**, most failures one back-end validation defect |
 > | **Code into Stackworkz** | First migration done. **Coding standards still owed** by Michael (#125) |
@@ -172,7 +172,7 @@ Reviews of the client's own console feedback queue, read from `txn.feedback` and
 > | **Internal LLM call** | **Did not happen.** Dörte preparing it |
 > | **Control Center demo to DT** | *"In the next few weeks"* |
 >
-> **Two weeks to launch and nobody can say how long deployment takes.** Ian asked; the answer was put off, and Ian named the room: *"Deafening silence. Understandably, this is what this is, this is the challenge."* The chain is Billy's questions, then Novosapien's answers, then DT's design and cost, then a deployment of unknown length, then checks. **Ian said 17 November**; every other record says the 16th, and this page keeps the 16th until it is confirmed.
+> **Two weeks to launch and nobody can say how long deployment takes.** Ian asked; the answer was put off, and Ian named the room: *"Deafening silence. Understandably, this is what this is, this is the challenge."* The chain is Willie's questions, then Novosapien's answers, then DT's design and cost, then a deployment of unknown length, then checks. **Ian said 17 November**; every other record says the 16th, and this page keeps the 16th until it is confirmed.
 >
 > **UAT reads worse than it is.** Michael: one defect *"will clearly wipe out 30% of the test cases. So we're not as far away as I thought originally."* DT now order defects by how visible they are at launch, and the Knowledge Hub only needs the YAML to be right, so back-end validation can follow.
 >
